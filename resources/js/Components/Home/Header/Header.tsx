@@ -4,6 +4,7 @@ import logo_img from '../../../../assets/logoimg.svg'
 import search_logo from '../../../../assets/logoimg.svg'
 import Nav from './Nav/Nav'
 import Lang from './Lang/Lang'
+import Search from './Search'
 import { Link } from '@inertiajs/react'
 
 const Header = () => {
@@ -16,9 +17,7 @@ const Header = () => {
                     <img src={logo_img} alt="" className=''/>
                 </Link>
                 <div className='mx-[20px] flex justify-around items-center w-full'>
-                    <div className={`w-[58px] h-[58px] rounded-full bg-[url('../../../../assets/sersh_icon.svg')] cursor-pointer`}>
-
-                    </div>
+                    <Search/>
                     <Nav/>
                 </div>
             </div>
