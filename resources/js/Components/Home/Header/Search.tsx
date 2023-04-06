@@ -16,7 +16,7 @@ const Search = () => {
             {/* <img src={main_search_icon} alt="" className='w-[58px] h-[58px] object-cover object-center'/> */}
             <div className='relative flex justify-center items-center'>
                 {/* <img src={clicking_indicator} alt="" className='absolute w-[51px] h-[51px] top-[7px] left-[3px]'/> */}
-                {search ? <div className='shadow-[0px_4.69775px_4.69775px_rgba(0,0,0,0.25),inset_11.7444px_11.7444px_23.4887px_rgba(5,59,66,0.16),inset_-11.7444px_-11.7444px_23.4887px_#08262C,inset_11.7444px_11.7444px_23.4887px_rgba(12,64,70,0.54)] absolute w-[50.5px] h-[50.5px] top-[2px] left-[2px] bg-[#002D31] rounded-full'></div> : ''}
+                {search ? <div className='shadow-[0px_4.69775px_4.69775px_rgba(0,0,0,0.25),inset_11.7444px_11.7444px_23.4887px_rgba(5,59,66,0.16),inset_-11.7444px_-11.7444px_23.4887px_#08262C,inset_11.7444px_11.7444px_23.4887px_rgba(12,64,70,0.54)] absolute w-[50.5px] h-[50.5px] top-[3.5px] left-[3.5px] bg-[#002D31] rounded-full'></div> : ''}
                 <img src={mgg} alt="" className='absolute w-[35px] h-[35px] top-[12px] left-[12px]'/>
             </div>
         </div>
