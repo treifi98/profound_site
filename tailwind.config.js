@@ -11,6 +11,10 @@ module.exports = {
     safelist: [
         'w-[83px]',
         'h-[101px]',
+        'w-[116px]',
+        'h-[24px]',
+        'w-[142px]',
+        'h-[27px]',
       ],
 
     theme: {

@@ -6,7 +6,7 @@ const Test = () => {
   return (
     <>
 
-        <InfoBox w='83' h='101' img={img} upperText='Price Starting from AED' lowerText='Test'/>
+        <InfoBox w='83' h='101' img={img} upperText='Price Starting from AED' lowerText='1,125,0000'/>
     </>
 
   )

@@ -17,7 +17,7 @@ const Search = () => {
             <div className='relative flex justify-center items-center'>
                 {/* <img src={clicking_indicator} alt="" className='absolute w-[51px] h-[51px] top-[7px] left-[3px]'/> */}
                 {search ? <div className='shadow-[0px_4.69775px_4.69775px_rgba(0,0,0,0.25),inset_11.7444px_11.7444px_23.4887px_rgba(5,59,66,0.16),inset_-11.7444px_-11.7444px_23.4887px_#08262C,inset_11.7444px_11.7444px_23.4887px_rgba(12,64,70,0.54)] absolute w-[51px] h-[51px] top-[4px] left-[4px] bg-[#002D31] rounded-full'></div> : ''}
-                <img src={mgg} alt="" className='absolute w-[35px] h-[35px] top-[10px] left-[13px]'/>
+                <img src={mgg} alt="" className='absolute w-[35px] h-[35px] top-[12px] left-[12px]'/>
             </div>
         </div>
 
