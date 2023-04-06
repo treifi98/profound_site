@@ -9,7 +9,7 @@ import email_icon from '../../assets/email_icon.svg'
 const HeroVideo = () => {
   return (
     <>
-        <div className='h-[calc(100vh-30px)] w-full  absolute top-[30px] z-0'>
+        <div className='h-[calc(100vh-30px)] w-full  absolute top-[30px] z-0 font-[nova]'>
             <div className='relative'>
                 <div className='absolute right-0 top-[70px] z-10 opacity-[0.2]'>
                     <img src={logo_completion} alt="" className='w-[135px]'/>
@@ -21,7 +21,7 @@ const HeroVideo = () => {
                     Your browser does not support HTML video.
                 </video>
                 <div className='absolute top-[180px] z-20 w-[80%] mx-[10%] h-[100px] text-center flex justify-center items-center flex-col'>
-                    <div className='text-[36px] font-[600px] text-[#fff]'>
+                    <div className='text-[36px] text-[#fff] font-[600]'>
                         WE MAKE THE DREAM OF OWNING PERFECT HOME A REALITY.
                     </div>
                     <div className=' mt-[44px] flex justify-center items-center w-full h-[40px] gap-[40px] select-none'>

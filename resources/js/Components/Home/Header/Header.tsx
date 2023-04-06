@@ -9,7 +9,7 @@ import { Link } from '@inertiajs/react'
 
 const Header = () => {
   return (
-    <div className='w-[100vw] h-[100px] relative z-10'>
+    <div className='w-[100vw] h-[100px] relative z-10 font-[nova]'>
         <div className={` w-[100vw] h-full bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right`}>
             <div className='w-[calc(100%-80px)] flex justify-between items-center h-[calc(100%-10px)] mr-[80px]'>
                 <Link href='/' className='max-h-[100%] self-center'>
