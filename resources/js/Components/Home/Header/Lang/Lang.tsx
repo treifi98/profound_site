@@ -12,9 +12,10 @@ const Lang = () => {
         document.querySelectorAll('.lang_none').forEach((elmnt:any) => elmnt.style.boxShadow = 'none')
     }
   return (
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='lang_effect select-none w-[69px] h-[35px] bg-[#002D31] border-[1px] border-[#007680] rounded-md shadow-[-3.12128px_-3.12128px_5.19175px_-1.73058px_#007580,3.12128px_3.12128px_4.08176px_#011618] text-[#fff] flex justify-between items-center cursor-pointer px-[10px]'>
-        <div  className='inline lang_none' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>EN</div>
-        <img src={eng_flag} alt="" className='w-[20px] h-[20px] object-cover object-center lang_none'onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+    <div  className='relative lang_effect select-none w-[69px] h-[35px] bg-[#002D31] border-[1px] border-[#007680] rounded-md shadow-[-3.12128px_-3.12128px_5.19175px_-1.73058px_#007580,3.12128px_3.12128px_4.08176px_#011618] text-[#fff] flex justify-between items-center cursor-pointer px-[10px]'>
+        <div  className='inline lang_none' >EN</div>
+        <img src={eng_flag} alt="" className='w-[20px] h-[20px] object-cover object-center lang_none'/>
+        <div className='absolute w-[69px] h-[35px] rounded-md z-20 opacity-0 top-0 left-0'onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}></div>
     </div>
   )
 }
