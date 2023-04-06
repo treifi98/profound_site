@@ -12,7 +12,7 @@ const Search = () => {
     }
   return (
     <>
-        <div className='select-none rounded-full w-[58px] h-[58px] relative bg-[#002D31] shadow-[inset_-4px_-4px_5px_-3px_#04626B,inset_4px_4px_6px_#011618] border-[1px] border-[#1F5B62] cursor-pointer' onClick={handleClick}>
+        <div className='select-none rounded-full w-[57.55px] h-[57.55px] relative bg-[#002D31] shadow-[inset_-4px_-4px_5px_-3px_#04626B,inset_4px_4px_6px_#011618] border-[1px] border-[#1F5B62] cursor-pointer' onClick={handleClick}>
             {/* <img src={main_search_icon} alt="" className='w-[58px] h-[58px] object-cover object-center'/> */}
             <div className='relative flex justify-center items-center'>
                 {/* <img src={clicking_indicator} alt="" className='absolute w-[51px] h-[51px] top-[7px] left-[3px]'/> */}
