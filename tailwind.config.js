@@ -22,6 +22,19 @@ module.exports = {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            keyframes: {
+                wiggle: {
+                    '0%': { transform: 'translateY(0px)' },
+                    '50%': { transform: 'translateY(-5px)' },
+                    '100%': { transform: 'translateY(0px)' },
+                    // '50%': { transform: 'translateY(-5px)' },
+                    // '75%': { transform: 'translateY(5px)' },
+                    // '100%': { transform: 'translateY(5px)' },
+                }
+              },
+              animation: {
+                wiggle: 'wiggle 0.5s ease-in-out infinite',
+              }
         },
     },
 
