@@ -1,11 +1,12 @@
 import React from 'react'
+import InfoBox from '@/Components/Home/Cards/Common/InfoBox'
+import img from '../../assets/price_tag_icon.svg'
 
 const Test = () => {
   return (
     <>
 
-        <div>Tessdsdsdst</div>
-        <div>gggg</div>
+        <InfoBox w='83' h='101' img={img} upperText='Price Starting from AED' lowerText='Test'/>
     </>
 
   )

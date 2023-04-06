@@ -8,6 +8,10 @@ module.exports = {
         './resources/views/**/*.blade.php',
         './resources/js/**/*.tsx',
     ],
+    safelist: [
+        'w-[83px]',
+        'h-[101px]',
+      ],
 
     theme: {
         extend: {

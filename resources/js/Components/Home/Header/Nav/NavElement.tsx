@@ -7,7 +7,7 @@ interface props{
 }
 const NavElement = (props:props) => {
     const handleMouseEnter=(e:any)=>{
-        e.target.style.boxShadow = 'inset 0px 4px 4px rgba(0, 0, 0, 0.25)'
+        e.target.style.boxShadow = 'inset -3px -3px 4px #04626B, inset 4px 4px 6px #011618'
     }
     const handleMouseLeave=(e:any)=>{
         e.target.style.boxShadow = '-3.12128px -3.12128px 5.19175px -1.73058px #007580, 3.12128px 3.12128px 4.08176px #011618'
