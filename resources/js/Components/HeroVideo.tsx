@@ -14,8 +14,8 @@ const HeroVideo = () => {
                 <div className='absolute right-0 top-[70px] z-10 opacity-[0.2]'>
                     <img src={logo_completion} alt="" className='w-[135px]'/>
                 </div>
-                <div className='absolute bg-[#01141666] z-[1] h-[calc(100vh-30px)] w-full '></div>
-                <video  autoPlay loop className='h-[calc(100vh-30px)] w-full object-cover mix-blend-overlay'>
+                <div className='absolute bg-[#01141666] z-[1] h-[calc(100vh-30px)] w-full mix-blend-overlay '></div>
+                <video  autoPlay loop className='h-[calc(100vh-30px)] w-full object-cover '>
                     <source src="../../assets/dubai.mp4" type="video/mp4"/>
                     {/* <source src="mov_bbb.ogg" type="video/ogg"/> */}
                     Your browser does not support HTML video.
