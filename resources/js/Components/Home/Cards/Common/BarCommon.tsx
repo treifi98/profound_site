@@ -13,12 +13,13 @@ interface Props{
 const BarCommon = (props:Props) => {
 
   return (
-    <div className='relative z-30 w-full h-[50px] rounded-[100px] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center px-[19px] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[5px]'>
-        <div className='flex gap-[30px] items-center w-[50%] justify-start'>
+    <div className='relative z-30 w-[calc(100%-10px)] mx-[5px] h-[50px] rounded-[100px] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center px-[19px] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[5px]'>
+        <div className='flex  items-center w-[50%] justify-start'>
             <img src={props.icon} alt="" className='w-[86px] h-[45px] '/>
+            <div className='h-[50px] w-[1px] bg-[#CED7D8] ml-[6px] mr-[15px]'></div>
             <div className='text-grade text-[30px] font-[600]'>{props.text}</div>
-            <a href="#" className=' hover:shadow-[inset_-3.26471px_-3.26471px_4.35294px_#FFFFFF,inset_3.26471px_3.26471px_4.35294px_#B6C3C5] flex justify-center items-center gap-[12px] w-[120px] h-[35px] border-[#DCE3E3] border-[1px] rounded-[40.26px] shadow-[-3.26471px_-3.26471px_4.35294px_#FFFFFF,3.26471px_3.26471px_4.35294px_#B6C3C5] cursor-pointer'>
-                <div className='text-grade'>
+            <a href="#" className=' ml-[35px] hover:shadow-[inset_-3.26471px_-3.26471px_4.35294px_#FFFFFF,inset_3.26471px_3.26471px_4.35294px_#B6C3C5] flex justify-center items-center gap-[12px] w-[120px] h-[35px] border-[#DCE3E3] border-[1px] rounded-[40.26px] shadow-[-3.26471px_-3.26471px_4.35294px_#FFFFFF,3.26471px_3.26471px_4.35294px_#B6C3C5] cursor-pointer'>
+                <div className='text-grade '>
                     View All
                 </div>
                 <img src={view_all_icon} alt="" className='w-[9.41px] h-[12.48px]' />

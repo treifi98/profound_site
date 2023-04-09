@@ -37,6 +37,9 @@ module.exports = {
         'h-[34px]',
         'w-[19.24px]',
         'h-[19.24px]',
+        'mt-[9.64px]',
+        'mb-[3.05px]',
+        'mx-[13px]',
       ],
 
     theme: {
