@@ -30,3 +30,11 @@
   .text-grade {
     @apply text-transparent bg-clip-text bg-gradient-to-b from-[#002E33] via-[#18494E] to-[#00474D];
   }
+body{
+    background-color: #E6EDED;
+}
+.mySwiper{
+    background-color: #E6EDED;
+    /* border-radius: 15px; */
+    /* height: 200%; */
+}

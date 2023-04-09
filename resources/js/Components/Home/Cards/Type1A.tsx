@@ -22,13 +22,14 @@ interface Props{
     info:string[],
     actions:string[],
     developer_img:string,
+    // className:string,
 
 }
 const Type1A = (props:Props) => {
   return (
-    <div className={`w-[${props.w}px] h-[${props.h}px] rounded-[15px] bg-[#E6EDED] border-[1px] border-[#CAD4D5] shadow-[-6px_-6px_12px_3px_#FFFFFF,6px_6px_12px_#BABFBF] flex flex-col justify-center items-center font-[nova]`}>
+    <div className={`m-[10px] w-[${props.w}px] h-[${props.h}px] rounded-[15px] bg-[#E6EDED] border-[1px] border-[#CAD4D5] shadow-[-6px_-6px_12px_#FFFFFF,6px_6px_12px_#BABFBF] flex flex-col justify-center items-center font-[nova] `}>
 
-        <div className='w-[363px] h-[636px] flex flex-col justify-between mt-[18px]'>
+        <div className='w-[363px] h-[636px] flex flex-col justify-between mt-[18px] mb-[5px]'>
 
             <CardImage src={card_back} w='363' h='287'/>
 

@@ -19,7 +19,7 @@ const InfoBox = (props:Props) => {
     }
   return (
 
-        <div className={`relative font-[nova] cursor-pointer bg-[#E6EDED] border-[1px] border-[#DDE4E4] rounded-[4.8px] shadow-[-4.819px_-4.819px_5.49454px_#F7FFFF,3.66303px_3.66303px_5.49454px_#B6C3C5] top-0 left-0 w-[${props.w}px] h-[${props.h}px] flex flex-col justify-between py-[3px] items-center`}>
+        <div className={`relative font-[nova] bg-[#E6EDED] border-[1px] border-[#DDE4E4] rounded-[4.8px] shadow-[-4.819px_-4.819px_5.49454px_#F7FFFF,3.66303px_3.66303px_5.49454px_#B6C3C5] top-0 left-0 w-[${props.w}px] h-[${props.h}px] flex flex-col justify-between py-[3px] items-center`}>
             <img src={props.img} className={`w-[${props.icon_w ?? '34'}px] h-[${props.icon_h ?? '34'}px]  object-center`}/>
                 <p className='text-[12px] font-[400] w-[70px] text-center text-transparent bg-clip-text bg-gradient-to-b from-[#002E33] via-[#18494E] to-[#00474D]'>
                 {props.upperText}
@@ -28,7 +28,7 @@ const InfoBox = (props:Props) => {
             <div className='text-transparent bg-clip-text bg-gradient-to-b from-[#002E33] via-[#18494E] to-[#00474D] text-[12px]'>
                 {props.lowerText}
             </div>
-            <div className='absolute top-0 left-0 w-full h-full z-30 opacity-0' onMouseEnter={hanldeMouseEnter} onMouseLeave={handleMouseLeave}></div>
+            {/* <div className='absolute top-0 left-0 w-full h-full z-30 opacity-0' onMouseEnter={hanldeMouseEnter} onMouseLeave={handleMouseLeave}></div> */}
         </div>
   )
 }

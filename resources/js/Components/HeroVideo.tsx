@@ -9,6 +9,7 @@ import email_icon from '../../assets/email_icon.svg'
 const HeroVideo = () => {
   return (
     <>
+        <div className='h-[calc(100vh-30px)] w-full relative top-[30px] z-[-1] font-[nova]'></div>
         <div className='h-[calc(100vh-30px)] w-full  absolute top-[30px] z-0 font-[nova]'>
             <div className='relative'>
                 <div className='absolute right-0 top-[70px] z-10 opacity-[0.2]'>
