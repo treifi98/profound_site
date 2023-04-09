@@ -1,5 +1,4 @@
 import React from 'react'
-import offplan_icon from '../../../../../assets/offplan_icon.svg'
 import view_all_icon from '../../../../../assets/view_all_icon.svg'
 import arrow_right from '../../../../../assets/arrow_right.svg'
 import arrow_left from '../../../../../assets/arrow_left.svg'
@@ -7,15 +6,17 @@ import arrow_left from '../../../../../assets/arrow_left.svg'
 interface Props{
     handleNext:Function,
     handlePrev:Function,
+    text:string,
+    icon:string
 }
 
 const BarCommon = (props:Props) => {
 
   return (
-    <div className='w-full h-[50px] rounded-[100px] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center px-[19px] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[34px]'>
+    <div className='relative z-30 w-full h-[50px] rounded-[100px] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center px-[19px] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[5px]'>
         <div className='flex gap-[30px] items-center w-[50%] justify-start'>
-            <img src={offplan_icon} alt="" className='w-[86px] h-[45px] '/>
-            <div className='text-grade'>Off-plan Latest Launches</div>
+            <img src={props.icon} alt="" className='w-[86px] h-[45px] '/>
+            <div className='text-grade text-[30px] font-[600]'>{props.text}</div>
             <a href="#" className=' hover:shadow-[inset_-3.26471px_-3.26471px_4.35294px_#FFFFFF,inset_3.26471px_3.26471px_4.35294px_#B6C3C5] flex justify-center items-center gap-[12px] w-[120px] h-[35px] border-[#DCE3E3] border-[1px] rounded-[40.26px] shadow-[-3.26471px_-3.26471px_4.35294px_#FFFFFF,3.26471px_3.26471px_4.35294px_#B6C3C5] cursor-pointer'>
                 <div className='text-grade'>
                     View All

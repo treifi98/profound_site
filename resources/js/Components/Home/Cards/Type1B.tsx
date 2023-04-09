@@ -13,7 +13,7 @@ import card_back from '../../../../assets/cardBack.png'
 import map_icon from '../../../../assets/map_icon.svg'
 import bed_icon from '../../../../assets/bed.svg'
 import size_icon from '../../../../assets/size_icon.svg'
-import emar from '../../../../assets/emar.svg'
+import bath from '../../../../assets/bath_icon.svg'
 interface Props{
     // children:ReactNode,
     w:string,
@@ -21,11 +21,11 @@ interface Props{
     tags:string[],
     info:string[],
     actions:string[],
-    developer_img:string,
+    // developer_img:string,
     // className:string,
 
 }
-const Type1A = (props:Props) => {
+const Type1B = (props:Props) => {
   return (
     <div className={`m-[30px] w-[${props.w}px] h-[${props.h}px] rounded-[15px] bg-[#E6EDED] border-[1px] border-[#CAD4D5] shadow-[-6px_-6px_12px_#FFFFFF,6px_6px_12px_#BABFBF] flex flex-col justify-center items-center font-[nova] `}>
 
@@ -63,13 +63,12 @@ const Type1A = (props:Props) => {
                 <Tag text={props.tags[2]} w='116' h='24'/>
             </div>
             <div className='flex gap-[11px]'>
-                <InfoBox w='83' h='101' img={img} upperText='Price Starting from AED' lowerText={props.info[0]}/>
-                <InfoBox w='83' h='101' img={bed_icon} upperText='Number Of Bedrooms' lowerText={props.info[1]}/>
-                <InfoBox w='83' h='101' img={size_icon} upperText='Area in Sq.ft (Min-Max)' lowerText={props.info[2]}/>
-                <InfoBox w='83' h='101' icon_h='34' icon_w='58.79' img={props.developer_img} upperText='Year Of Established' lowerText={props.info[3]}/>
+                <InfoBox shadow={'shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]'}w='83' h='101' img={img} upperText='Price Starting from AED' lowerText={props.info[0]}/>
+                <InfoBox shadow={'shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]'}w='83' h='101' img={bed_icon} upperText='Number Of Bedrooms' lowerText={props.info[1]}/>
+                <InfoBox shadow={'shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]'}  w='83' h='101' icon_h='34' icon_w='58.79' img={bath} upperText='Year Of Established' lowerText={props.info[3]}/>
+                <InfoBox shadow={'shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]'}w='83' h='101' img={size_icon} upperText='Area in Sq.ft (Min-Max)' lowerText={props.info[2]}/>
             </div>
-            <div className='flex gap-[13px] mb-[20px]'>
-                <Action img={video_call_action} text="test" w='50' h='50' action=''/>
+            <div className='flex justify-between  mb-[20px]'>
                 <Action img={video_call_action} text="test" w='50' h='50' action=''/>
                 <Action img={video_call_action} text="test" w='50' h='50' action=''/>
                 <Action img={video_call_action} text="test" w='50' h='50' action=''/>
@@ -82,4 +81,4 @@ const Type1A = (props:Props) => {
   )
 }
 
-export default Type1A
+export default Type1B

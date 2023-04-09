@@ -20,6 +20,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import BarCommon from './Cards/Common/BarCommon'
+import offplan_icon from '../../../assets/offplan_icon.svg'
+
 import { Pagination } from 'swiper'
 
 const SwiperType1A = () => {
@@ -33,12 +35,12 @@ const SwiperType1A = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Off-plan Latest Launches'} icon={offplan_icon}/>
 
         <Swiper
             slidesPerView={1}
             // slidesPerGroupSkip={3}
-            spaceBetween={0}
+            spaceBetween={20}
             breakpoints={{
                 810: {
                 slidesPerView: 2,

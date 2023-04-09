@@ -28,7 +28,12 @@
     font-weight: 900;
   }
   .text-grade {
-    @apply text-transparent bg-clip-text bg-gradient-to-b from-[#002E33] via-[#18494E] to-[#00474D];
+    /* @apply text-transparent bg-clip-text bg-gradient-to-b from-[#002E33] via-[#18494E] to-[#00474D]; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(126.52deg, #003B40 7.69%, #005961 26.91%, #00818C 46.93%, #005961 67.49%, #003B40 86.7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 body{
     background-color: #E6EDED;
@@ -36,5 +41,7 @@ body{
 .mySwiper{
     background-color: #E6EDED;
     /* border-radius: 15px; */
+    overflow: hidden;
+    box-sizing: border-box;
     /* height: 200%; */
 }
