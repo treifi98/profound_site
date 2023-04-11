@@ -16,12 +16,22 @@ import Type1B from '@/Components/Home/Cards/Type1B'
 import { useRef, useEffect } from 'react';
 import 'swiper/css';
 import Slider from '@/Components/Home/Cards/Common/Slider'
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import BarCommon from './Cards/Common/BarCommon'
 import property from '../../../assets/props.svg'
-import { Pagination } from 'swiper'
+// import React, { useRef, useState } from "react";
+// Import Swiper React components
+// import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { EffectCoverflow, Pagination } from "swiper";
+
+// import "../../../assets/style.css";
 
 const SwiperType1B = () => {
     const swiperRef = useRef(null);
@@ -30,93 +40,64 @@ const SwiperType1B = () => {
     const next = () => {
         swiper.slideNext()
     }
+    const arr = [1,2,3,4,5,6,7,8]
 
+    const handleSliding = (e:any) => {
+        let slides = document.querySelectorAll('.sliders_to_scale');
+        slides.forEach((slide) => {
+            if(slide.classList.contains('swiper-slide-active')){
+                slide.classList.add('xxxxscale(1.2)')
+            }
+            else{
+
+                slide.classList.remove('xxxxscale(1.2)')
+            }
+        })
+    }
+    // const swiperSlide = useSwiperSlide();
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Buying Properties in Dubai'} icon={property}/>
 
         <Swiper
-            slidesPerView={1}
-            // slidesPerGroupSkip={3}
-            spaceBetween={20}
-            breakpoints={{
-                810: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-                },
-                1500: {
-                slidesPerView: 4,
-                spaceBetween: 240,
-                },
-                1700: {
-                slidesPerView: 4,
-                spaceBetween: 140,
-                },
-                2000: {
-                slidesPerView: 5,
-                spaceBetween: 50,
-                },
-            }}
+             slidesPerView={1}
+             // slidesPerGroupSkip={3}
+             spaceBetween={20}
+             breakpoints={{
+                 810: {
+                 slidesPerView: 2,
+                 spaceBetween: 40,
+                 },
+                 1500: {
+                 slidesPerView: 4,
+                 spaceBetween: 240,
+                 },
+                 1700: {
+                 slidesPerView: 4,
+                 spaceBetween: 140,
+                 },
+                 2000: {
+                 slidesPerView: 5,
+                 spaceBetween: 50,
+                 },
+             }}
 
-            onSwiper={(swiper) => setSwiper(swiper)}
-            loop={true}
-            className="mySwiper"
+             onSwiper={(swiper) => setSwiper(swiper)}
+             loop={true}
+             className="mySwiper"
         >
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['81/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['82/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['84/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['50/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['90/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['81/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['82/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['84/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1B w='398' h='636' tags={['50/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
-            </SwiperSlide>
+
+           {
+                arr.map((a) => {
+
+                    return (
+                     <SwiperSlide className='transition-all sliders_to_scale' key={a}>
+
+                        <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
+                    </SwiperSlide>
+                )})
+           }
         </Swiper>
     </>
     // </div>

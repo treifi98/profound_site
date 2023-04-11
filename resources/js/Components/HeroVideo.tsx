@@ -9,7 +9,7 @@ import email_icon from '../../assets/email_icon.svg'
 const HeroVideo = () => {
   return (
     <>
-        <div className='h-[calc(100vh-30px)] w-full relative top-[30px] z-[-1] font-[nova]'></div>
+        <div className='h-[calc(100vh-100px)] w-full relative z-[-1] font-[nova]'></div>
         <div className='h-[calc(100vh-30px)] w-full  absolute top-[30px] z-0 font-[nova]'>
             <div className='relative'>
                 <div className='absolute right-0 top-[70px] z-10 opacity-[0.2]'>
@@ -26,9 +26,9 @@ const HeroVideo = () => {
                         WE MAKE THE DREAM OF OWNING PERFECT HOME A REALITY.
                     </div>
                     <div className=' mt-[44px] flex justify-center items-center w-full h-[40px] gap-[40px] select-none'>
-                        <div className='transition-all cursor-pointer hover:bg-[#1125244D] text-[18px] font-[600] w-[240px] flex justify-center items-center h-[40px] rounded-[50px] border-[2px] border-[#002D31] text-[#fff]'>Off-plan & investment</div>
-                        <div className='transition-all cursor-pointer hover:bg-[#1125244D] text-[18px] font-[600] w-[240px] flex justify-center items-center h-[40px] rounded-[50px] border-[2px] border-[#002D31] text-[#fff]'>List your property</div>
-                        <div className='transition-all cursor-pointer hover:bg-[#1125244D] text-[18px] font-[600] w-[240px] flex justify-center items-center h-[40px] rounded-[50px] border-[2px] border-[#002D31] text-[#fff]'>Profound ultimate luxary</div>
+                        <div className='transition-all cursor-pointer hover:bg-[#dbe9e94d] text-[18px] font-[600] w-[240px] flex justify-center items-center h-[40px] rounded-[50px] border-[2px] border-[#eee] text-[#fff]'>Off-plan & investment</div>
+                        <div className='transition-all cursor-pointer hover:bg-[#dbe9e94d] text-[18px] font-[600] w-[240px] flex justify-center items-center h-[40px] rounded-[50px] border-[2px] border-[#eee] text-[#fff]'>List your property</div>
+                        <div className='transition-all cursor-pointer hover:bg-[#dbe9e94d] text-[18px] font-[600] w-[240px] flex justify-center items-center h-[40px] rounded-[50px] border-[2px] border-[#eee] text-[#fff]'>Profound ultimate luxary</div>
                     </div>
                 </div>
             </div>

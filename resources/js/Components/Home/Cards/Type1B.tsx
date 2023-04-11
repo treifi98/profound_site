@@ -67,10 +67,10 @@ const Type1B = (props:Props) => {
                     <Tag text={props.tags[2]} w='116' h='24'/>
                 </div>
                 <div className='flex gap-[12px] mt-[5px]'>
-                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' img={img} upperText='Price Starting from AED' lowerText={props.info[0]}/>
-                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' img={bed_icon} upperText='Number Of Bedrooms' lowerText={props.info[1]}/>
-                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' icon_h='34' icon_w='58.79' img={bath} upperText='Year Of Established' lowerText={props.info[3]}/>
-                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' img={size_icon} upperText='Area in Sq.ft (Min-Max)' lowerText={props.info[2]}/>
+                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' img={img} upperText='Price AED' lowerText={props.info[0]}/>
+                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' img={bed_icon} upperText='Bedrooms' lowerText={props.info[1]}/>
+                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' icon_h='34' icon_w='58.79' img={bath} upperText='Bathrooms' lowerText={props.info[3]}/>
+                    <InfoBox shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='83' h='101' img={size_icon} upperText='Area in Sq.ft' lowerText={props.info[2]}/>
                 </div>
                 <div className='flex gap-[29.18px] mb-[16.62px] mt-[5px]'>
                     <Action img={video_call_action} text="test" w='50' h='50' action=''/>

@@ -1,16 +1,4 @@
 import React, { useState } from 'react'
-import InfoBox from '@/Components/Home/Cards/Common/InfoBox'
-import img from '../../../assets/price_tag_icon.svg'
-import Tag from '@/Components/Home/Cards/Common/Tag'
-import share_icon from '../../../assets/share_icon.svg'
-import InfoSocial from '@/Components/Home/Cards/Common/InfoSocial'
-import video_call_action from '../../../assets/video_call_action.svg'
-import Action from '@/Components/Home/Cards/Common/Action'
-import CardImage from '@/Components/Home/Cards/Common/CardImage'
-import card_back from '../../../assets/cardBack.png'
-import map_icon from '../../../assets/map_icon.svg'
-import bed_icon from '../../../assets/bed.svg'
-import size_icon from '../../../assets/size_icon.svg'
 import emar from '../../../assets/emar.svg'
 import Type1A from '@/Components/Home/Cards/Type1A'
 import { useRef, useEffect } from 'react';
@@ -25,12 +13,8 @@ import offplan_icon from '../../../assets/offplan_icon.svg'
 import { Pagination } from 'swiper'
 
 const SwiperType1A = () => {
-    const swiperRef = useRef(null);
     const [swiper, setSwiper] = useState<any>();
-    const [swiperx, setSwiperx] = useState<any>(0);
-    const next = () => {
-        swiper.slideNext()
-    }
+
 
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
