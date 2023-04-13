@@ -9,9 +9,9 @@ interface Props{
 
 const CardImage = (props:Props) => {
   return (
-    <div className={`w-[${props.w}px] h-[${props.h}px] rounded-[${props.rounded ?? '15'}px] relative flex justify-center items-center`}>
-        <img src={props.src} alt="" className={`w-[${props.w}px] h-[${props.h}px] rounded-[15px] object-cover object-center `} />
-        <div className={`w-[${props.w}px] h-[${props.h}px] rounded-[15px] absolute top-0 left-0 bg-[#01141666] mix-blend-overlay`}></div>
+    <div className={`w-[${props.w}rem] h-[${props.h}rem] rounded-[${props.rounded ?? '0.9375'}rem] relative flex justify-center items-center`}>
+        <img src={props.src} alt="" className={`w-[${props.w}rem] h-[${props.h}rem] rounded-[0.9375rem] object-cover object-center `} />
+        <div className={`w-[${props.w}rem] h-[${props.h}rem] rounded-[0.9375rem] absolute top-0 left-0 bg-[#01141666] mix-blend-overlay`}></div>
     </div>
   )
 }

@@ -6,10 +6,12 @@ interface Props{
 }
 const MainLayout = (props:Props) => {
   return (
-    <>
+    <div>
+
         <Header/>
         {props.children}
-    </>
+    </div>
+
   )
 }
 

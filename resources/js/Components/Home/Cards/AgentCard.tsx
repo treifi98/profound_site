@@ -15,40 +15,40 @@ interface Props{
 }
 const AgentCard = (props:Props) => {
   return (
-    <div className={`mt-[60px] mb-[30px] mx-[30px] w-[${props.w}px] h-[${props.h}px] bg-[#E6EDED] border-[1px] border-[#CAD4D5] rounded-[70px_10px] shadow-[-6px_-6px_12px_3px_#FFFFFF,6px_6px_12px_#BABFBF] flex flex-col justify-start items-center`}>
-        <div className='mt-[14px] h-[171px] w-[171px] bg-[#00464D] border-[1px] border-[#CED7D8] rounded-[90px_5px] shadow-[inset_-3.38286px_-3.38286px_5.62686px_-1.87562px_#007580,inset_3.38286px_3.38286px_4.42385px_#011618]'>
-            <div className='h-[137px] w-[137px] bg-[#E6EDED] rounded-[72.22px_5px] shadow-[-2.64375px_-2.64375px_4.39746px_-1.46582px_#007580,2.64375px_2.64375px_3.45729px_#011618] mt-[17px] ml-[17px] pt-[9px] pl-[7px]'>
-                <div className='w-[122.18px] h-[120px] rounded-[67.64px_0px]'>
-                    <img src={props.img} alt="" className='w-[122.18px] h-[120px] rounded-[67.64px_0px] '/>
+    <div className={`mt-[3.75rem] mb-[1.875rem] mx-[1.875rem] w-[${props.w}rem] h-[${props.h}rem] bg-[#E6EDED] border-[1px] border-[#CAD4D5] rounded-[70px_10px] shadow-[-6px_-6px_12px_3px_#FFFFFF,6px_6px_12px_#BABFBF] flex flex-col justify-start items-center`}>
+        <div className='mt-[0.875rem] h-[10.6875rem] w-[10.6875rem] bg-[#00464D] border-[1px] border-[#CED7D8] rounded-[5.625rem_0.3125rem] shadow-[inset_-3.38286px_-3.38286px_5.62686px_-1.87562px_#007580,inset_3.38286px_3.38286px_4.42385px_#011618]'>
+            <div className='h-[8.5625rem] w-[8.5625rem] bg-[#E6EDED] rounded-[4.51375rem_0.3125rem] shadow-[-2.64375px_-2.64375px_4.39746px_-1.46582px_#007580,2.64375px_2.64375px_3.45729px_#011618] mt-[1.0625rem] ml-[1.0625rem] pt-[0.5625rem] pl-[0.4375rem]'>
+                <div className='w-[7.63625rem] h-[7.5rem] rounded-[4.2275rem_0rem]'>
+                    <img src={props.img} alt="" className='w-[7.63625rem] h-[7.5rem] rounded-[4.2275rem_0rem] '/>
 
                 </div>
 
             </div>
         </div>
-        <div className='flex items-end gap-[10.12px] justify-center mt-[10px]'>
-                <div className='h-[26.88px] w-[26.88px]'>
-                <img src={verified} alt="" className='h-[26.88px] w-[26.88px]'/>
+        <div className='flex items-end gap-[0.6325rem] justify-center mt-[0.625rem]'>
+                <div className='h-[1.68rem] w-[1.68rem]'>
+                <img src={verified} alt="" className='h-[1.68rem] w-[1.68rem]'/>
             </div>
-            <div className='text-grade h-[36px] text-[30px]'>
+            <div className='text-grade h-[2.25rem] text-[1.875rem]'>
                 {props.name}
             </div>
         </div>
-        <div className='text-[20px] justify-center items-start mt-[9px] text-grade'>
+        <div className='text-[1.25rem] justify-center items-start mt-[0.5625rem] text-grade'>
             {props.title}
         </div>
-        <div className='text-center h-[27px] mt-[3px] text-grade text-[20px]'>
+        <div className='text-center h-[1.6875rem] mt-[0.1875rem] text-grade text-[1.25rem]'>
             {
                 props.langs.join(' / ')
             }
         </div>
-        <div className='flex gap-[30px] mt-[22px]'>
-            <Action img={video_call_action} text="test" w='50' h='50' action=''/>
-            <Action img={video_call_action} text="test" w='50' h='50' action=''/>
-            <Action img={video_call_action} text="test" w='50' h='50' action=''/>
-            <Action img={video_call_action} text="test" w='50' h='50' action=''/>
+        <div className='flex gap-[1.875rem] mt-[1.375rem]'>
+            <Action img={video_call_action} text="test" w='3.125' h='3.125' action=''/>
+            <Action img={video_call_action} text="test" w='3.125' h='3.125' action=''/>
+            <Action img={video_call_action} text="test" w='3.125' h='3.125' action=''/>
+            <Action img={video_call_action} text="test" w='3.125' h='3.125' action=''/>
         </div>
-        <div className='mt-[20px] flex justify-center'>
-            <ViewAllButton w='160' h='40' ml='0' text='View Profile'/>
+        <div className='mt-[2rem] flex justify-center'>
+            <ViewAllButton w='10' h='2.5' ml='0' text='View Profile'/>
         </div>
 
     </div>

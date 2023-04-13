@@ -3,7 +3,7 @@ import NavElement from './NavElement'
 import Lang from '../Lang/Lang'
 const Nav = () => {
   return (
-    <div className='flex justify-center gap-[20px] items-center w-auto mr-[30px]'>
+    <div className='flex justify-center gap-[1.25rem] items-center w-auto mr-[1.875rem]'>
         <NavElement link="/" text="Buy"/>
         <NavElement link="/" text="Rent"/>
         <NavElement link="/" text="Projects"/>

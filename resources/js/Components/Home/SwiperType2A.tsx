@@ -59,20 +59,12 @@ const SwiperType2A = () => {
             spaceBetween={0}
             breakpoints={{
                 810: {
-                slidesPerView: 1,
+                slidesPerView: 2.4,
                 spaceBetween: 0,
                 },
                 1500: {
                 slidesPerView: 1.8,
                 spaceBetween: -70,
-                },
-                1700: {
-                slidesPerView: 2,
-                spaceBetween: 60,
-                },
-                2000: {
-                    slidesPerView: 2.4,
-                    spaceBetween: 25,
                 },
             }}
 
@@ -81,28 +73,28 @@ const SwiperType2A = () => {
             className="mySwiper"
         >
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='867' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
 
         </Swiper>

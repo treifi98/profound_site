@@ -35,15 +35,7 @@ const SwiperAgent = () => {
                 1500: {
                 slidesPerView: 4,
                 spaceBetween: 150,
-                },
-                1700: {
-                slidesPerView: 4,
-                spaceBetween: 140,
-                },
-                2000: {
-                slidesPerView: 5,
-                spaceBetween: 50,
-                },
+                }
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}
@@ -51,28 +43,28 @@ const SwiperAgent = () => {
             className="mySwiper"
         >
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
             <SwiperSlide>
-                <AgentCard h={'450'} w={'340'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
+                <AgentCard h={'29.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
             </SwiperSlide>
 
         </Swiper>

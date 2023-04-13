@@ -35,15 +35,7 @@ const SwiperDeveloper = () => {
                 1500: {
                 slidesPerView: 4,
                 spaceBetween: 240,
-                },
-                1700: {
-                slidesPerView: 4,
-                spaceBetween: 140,
-                },
-                2000: {
-                slidesPerView: 5,
-                spaceBetween: 50,
-                },
+                }
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}

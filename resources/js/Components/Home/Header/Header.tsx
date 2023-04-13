@@ -9,19 +9,19 @@ import { Link } from '@inertiajs/react'
 
 const Header = () => {
   return (
-    <div className='w-[100vw] h-[100px] relative z-10 font-[nova]'>
-        <div className={` w-[100vw] h-full bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom`}>
-            <div className='w-[calc(100%-80px)] flex justify-between items-center h-[calc(100%-10px)] mr-[80px]'>
+    <div className={`w-full h-[6.25rem] relative z-10 font-[nova] bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom`}>
+        {/* <div className={` w-full h-full `}> */}
+            <div className='w-[calc(100%-5rem)] flex justify-between items-center h-[calc(100%-0.625rem)] mr-[5rem]'>
                 <Link href='/' className='max-h-[100%] self-center'>
 
-                    <img src={logo_img} alt="" className='w-[213px] object-cover object-center'/>
+                    <img src={logo_img} alt="" className='w-[13.31rem] object-cover object-center'/>
                 </Link>
-                <div className='mx-[20px] flex justify-around items-center w-[calc(100%-253px)]'>
+                    <div className='mx-[1.25rem] flex justify-around items-center w-[calc(100%-15.81rem)]'>
                     <Search/>
                     <Nav/>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
     </div>
   )
 }

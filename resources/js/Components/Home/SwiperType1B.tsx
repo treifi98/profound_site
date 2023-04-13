@@ -73,14 +73,6 @@ const SwiperType1B = () => {
                  slidesPerView: 4,
                  spaceBetween: 240,
                  },
-                 1700: {
-                 slidesPerView: 4,
-                 spaceBetween: 140,
-                 },
-                 2000: {
-                 slidesPerView: 5,
-                 spaceBetween: 50,
-                 },
              }}
 
              onSwiper={(swiper) => setSwiper(swiper)}
@@ -94,7 +86,7 @@ const SwiperType1B = () => {
                     return (
                      <SwiperSlide className='transition-all sliders_to_scale' key={a}>
 
-                        <Type1B w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
+                        <Type1B w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} />
                     </SwiperSlide>
                 )})
            }

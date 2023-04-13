@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import emar from '../../../assets/emar.svg'
+import React, { ReactNode, useState } from 'react'
 import Type1A from '@/Components/Home/Cards/Type1A'
 import { useRef, useEffect } from 'react';
 import 'swiper/css';
@@ -12,8 +11,15 @@ import offplan_icon from '../../../assets/offplan_icon.svg'
 
 import { Pagination } from 'swiper'
 
-const SwiperType1A = () => {
+interface Props{
+    children:ReactNode[]
+    counter?:number
+}
+
+const SwiperType1A = (props:Props) => {
     const [swiper, setSwiper] = useState<any>();
+    let counter = props.counter
+
 
 
   return (
@@ -22,6 +28,9 @@ const SwiperType1A = () => {
         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Off-plan Latest Launches'} icon={offplan_icon}/>
 
         <Swiper
+        // touchReleaseOnEdges={true}
+        // touchMoveStopPropagation
+        // nested={true}
             slidesPerView={1}
             // slidesPerGroupSkip={3}
             spaceBetween={20}
@@ -34,74 +43,22 @@ const SwiperType1A = () => {
                 slidesPerView: 4,
                 spaceBetween: 240,
                 },
-                1700: {
-                slidesPerView: 4,
-                spaceBetween: 140,
-                },
-                2000: {
-                slidesPerView: 5,
-                spaceBetween: 50,
-                },
+
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}
             loop={true}
             className="mySwiper"
         >
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['81/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['82/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['84/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['50/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['90/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['81/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['82/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['84/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Type1A w='398' h='636' tags={['50/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
-            </SwiperSlide>
+            {
+                props.children.map((child) => (
+
+                    <SwiperSlide key={counter++}>
+                       {child}
+                    </SwiperSlide>
+                ))
+            }
+
         </Swiper>
     </>
     // </div>

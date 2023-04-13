@@ -31,12 +31,15 @@ import '../../assets/x.css'
 import { Pagination } from 'swiper'
 import BarCommon from '@/Components/Home/Cards/Common/BarCommon'
 import NewsCard from '@/Components/Home/Cards/NewsCard'
-    import SwiperNews from '@/Components/Home/SwiperNews'
+import NewsLetter from '@/Components/Home/Cards/NewsLetter'
+import InfoBoxtype2 from '@/Components/Home/Cards/Common/InfoBoxType2'
 const Test = () =>{
 
   return (
     <>
-        <SwiperNews/>
+        <div className='m-[20px]'>
+        <InfoBoxtype2 shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='5.1875' h='6.3125' img={size_icon} upperText='Area in Sq.ft' lowerText='999999'/>
+        </div>
     </>
 
   )

@@ -8,6 +8,9 @@ import SwiperType3A from '@/Components/Home/SwiperType3A'
 import SwiperAgent from '@/Components/Home/SwiperAgent'
 import SwiperDeveloper from '@/Components/Home/SwiperDeveloper'
 import SwiperNews from '@/Components/Home/SwiperNews'
+import NewsLetter from '@/Components/Home/Cards/NewsLetter'
+import emar from '../../../assets/emar.svg'
+import Type1A from '@/Components/Home/Cards/Type1A'
 
 
 const Home = () => {
@@ -20,28 +23,43 @@ const Home = () => {
 
         </div>
 
-        <SwiperType1A/>
+        <div className='w-full'>
 
-        <div className='w-full mt-[7px]'>
+            <SwiperType1A counter={7}>
+                <Type1A key={1}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type1A key={2}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type1A key={3}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type1A key={4}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type1A key={5}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type1A key={6}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type1A key={6}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type1A key={6}w='24.875' h='39.75' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+            </SwiperType1A>
+        </div>
+
+        <div className='w-full mt-[0.4375rem]'>
 
             <SwiperType2A/>
         </div>
 
-        <div className='w-full mt-[40px]'>
+        <div className='w-full mt-[2.5rem]'>
             <SwiperType3A/>
         </div>
-        <div className='mt-[34px]'>
+        <div className='mt-[2.125rem]'>
 
             <SwiperType1B/>
         </div>
-        <div className='mt-[40px]'>
+        <div className='mt-[2.5rem]'>
             <SwiperAgent/>
         </div>
-        <div className='mt-[40px]'>
+        <div className='mt-[2.5rem]'>
             <SwiperDeveloper/>
         </div>
-        <div className='mt-[40px]'>
+        <div className='mt-[2.5rem]'>
             <SwiperNews/>
+        </div>
+        <div className='w-full flex justify-center items-center mt-[1.875rem]'>
+            <NewsLetter/>
         </div>
     </MainLayout>
   )

@@ -6,7 +6,7 @@ interface Props{
 }
 const Contact = (props:Props) => {
   return (
-      <div className='h-[265px] w-[62px] mr-[30px] flex flex-col justify-start items-center gap-[10px] absolute top-[170px] right-0 z-30'>
+      <div className='h-[16.5625rem] w-[3.875rem] mr-[1.875rem] flex flex-col justify-start items-center gap-[0.625rem] absolute top-[10.625rem] right-0 z-30'>
             {/* {console.log(props.nodes)} */}
             {
                 props.nodes.map((node:any) => {

@@ -1,21 +1,9 @@
 import React, { useState } from 'react'
-import InfoBox from '@/Components/Home/Cards/Common/InfoBox'
-import img from '../../../assets/price_tag_icon.svg'
-import Tag from '@/Components/Home/Cards/Common/Tag'
-import share_icon from '../../../assets/share_icon.svg'
-import InfoSocial from '@/Components/Home/Cards/Common/InfoSocial'
-import video_call_action from '../../../assets/video_call_action.svg'
-import Action from '@/Components/Home/Cards/Common/Action'
-import CardImage from '@/Components/Home/Cards/Common/CardImage'
-import card_back from '../../../assets/cardBack.png'
-import map_icon from '../../../assets/map_icon.svg'
-import bed_icon from '../../../assets/bed.svg'
-import size_icon from '../../../assets/size_icon.svg'
+
 import emar from '../../../assets/emar.svg'
 import Type3A from '@/Components/Home/Cards/Type3A'
 import { useRef, useEffect } from 'react';
 import 'swiper/css';
-import Slider from '@/Components/Home/Cards/Common/Slider'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -50,14 +38,6 @@ const SwiperType3A = () => {
                 slidesPerView: 1.4,
                 spaceBetween: 71,
                 },
-                1700: {
-                slidesPerView: 1.4,
-                spaceBetween: 71,
-                },
-                2000: {
-                slidesPerView: 1.5,
-                spaceBetween: 71,
-                },
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}
@@ -65,28 +45,28 @@ const SwiperType3A = () => {
             className="mySwiper"
         >
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type3A w='1098' h='393' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+                <Type3A w='68.625' h='24.5625' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
             </SwiperSlide>
 
         </Swiper>
