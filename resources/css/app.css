@@ -1,6 +1,11 @@
 @tailwind base;
+/* ::selection {
+    color: #E6EDED !important;
+    background-color: #003B40;
+  } */
 @tailwind components;
 @tailwind utilities;
+
 
 @font-face {
     font-family: "nova";
@@ -44,4 +49,65 @@ body{
     overflow: hidden;
     box-sizing: border-box;
     /* height: 200%; */
+}
+
+
+
+@keyframes inAnimation {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes outAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+div.select_component::-webkit-scrollbar {
+    width: 0.4375rem;
+    /* color: #E6EDED; */
+    background-color: #E6EDED;
+    box-shadow: inset -2.53846px -2.53846px 4.23077px #FFFFFF, inset 4.23077px 4.23077px 5.92308px #B6C3C5;
+    height: 10px;
+    /* padding: 50px 0; */
+    /* margin: 50px 0; */
+    border-radius: 100px;
+}
+div.select_component::-webkit-scrollbar-thumb {
+    width: 0.4375rem;
+    /* color: #00494F; */
+    background-color: #00494F;
+    /* height: 10px !important; */
+    height: 10px;
+    border-radius: 100px;
+    /* padding: 50px 0;
+    margin: 50px 0; */
+    /* border-radius: 100px; */
+
+
+}
+div.select_component::-moz-scrollbar-track {
+    width: 0.4375rem;
+    /* color: #E6EDED; */
+    /* background-color: #E6EDED; */
+    /* background-color: #00494F; */
+}
+.select_component{
+    width: thin;
+    color: blue;
+    /* background-color: blue; */
+    scrollbar-color: #00494F #E6EDED;
+    scrollbar-track-color: #E6EDED;
+    /* scrollbar-shadow-color: #B6C3C5; */
+    /* scrollbar-width:90px !important; */
 }

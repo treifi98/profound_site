@@ -33,12 +33,46 @@ import BarCommon from '@/Components/Home/Cards/Common/BarCommon'
 import NewsCard from '@/Components/Home/Cards/NewsCard'
 import NewsLetter from '@/Components/Home/Cards/NewsLetter'
 import InfoBoxtype2 from '@/Components/Home/Cards/Common/InfoBoxType2'
+import ReviewCard from '@/Components/Home/Cards/ReviewCard'
+import ReviewSwiper from '@/Components/Home/ReviewSwiper'
+// import TwoThumbs from '@/Components/Home/Test/Test'
+import RangeComponent from '@/Components/Home/FiltersAndSearch/RangeComponent'
+import ButtonSelect from '@/Components/Home/FiltersAndSearch/ButtonSelect'
+import Select from '@/Components/Home/FiltersAndSearch/Select'
+import CheckComponent from '@/Components/Home/FiltersAndSearch/CheckComponent'
+import {Test as BT}   from '@/Components/Home/Test/Test'
 const Test = () =>{
-
+ const x = (nums:string[]) => setNumberOfBeds(nums)
+ const [numberOfBeds,setNumberOfBeds] = useState([])
+ useEffect(()=>{
+    console.log(numberOfBeds)
+ },[numberOfBeds])
   return (
     <>
+        <div className='m-[100px] w-[calc(500px)]'>
+
+            <RangeComponent RTL={false} min={400000} max={100000000} step={1000}/>
+        </div>
+
+        <div className='m-[40px] w-[13.75rem] h-[2.25rem]'>
+            <ButtonSelect options={[{lable:'Studio',value:'studio'},{lable:'1',value:'1'},{lable:'2',value:'2'},{lable:'3',value:'3'},{lable:'4',value:'4'},{lable:'5',value:'5'},{lable:'6',value:'6'},{lable:'7',value:'7'},{lable:'8',value:'8'},{lable:'9',value:'9'},{lable:'10+',value:'10'}]} lable={'Bedrooms'} func={x}/>
+        </div>
+
+
+        <div className='m-[80px]'>
+            <Select id={'multi'} options={[{lable:'Studio',value:'studio'},{lable:'1',value:'1'},{lable:'2',value:'2'},{lable:'3',value:'3'},{lable:'4',value:'4'},{lable:'5',value:'5'},{lable:'6',value:'6'},{lable:'7',value:'7'},{lable:'8',value:'8'},{lable:'9',value:'9'},{lable:'10+',value:'10'}]} lable={'Bedrooms'} func={x} single={true}/>
+        </div>
+        <div className='m-[80px]'>
+            <Select id={'single'} options={[{lable:'Studio',value:'studio'},{lable:'1',value:'1'},{lable:'2',value:'2'},{lable:'3',value:'3'},{lable:'4',value:'4'},{lable:'5',value:'5'},{lable:'6',value:'6'},{lable:'7',value:'7'},{lable:'8',value:'8'},{lable:'9',value:'9'},{lable:'10+',value:'10'}]} lable={'Bedrooms'} func={x} single={false}/>
+        </div>
+        <div className='m-[40px]'>
+            <CheckComponent func={() => console.log('f')}/>
+        </div>
+
         <div className='m-[20px]'>
-        <InfoBoxtype2 shadow='shadow-[inset_-3.66303px_-3.66303px_5.49454px_#F7FFFF,inset_3.66303px_3.66303px_5.49454px_#B6C3C5]' w='5.1875' h='6.3125' img={size_icon} upperText='Area in Sq.ft' lowerText='999999'/>
+            <BT id={1}/>
+            <BT id={2}/>
+            <BT id={3}/>
         </div>
     </>
 
