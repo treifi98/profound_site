@@ -19,10 +19,13 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@reduxjs/toolkit": "^1.9.4",
         "@types/node": "^18.15.11",
         "@types/react": "^18.0.33",
         "@types/react-dom": "^18.0.11",
         "react-id-swiper": "^4.0.0",
+        "react-range": "^1.8.14",
+        "react-redux": "^8.0.5",
         "swiper": "^9.2.0",
         "typescript": "^5.0.3"
     }
