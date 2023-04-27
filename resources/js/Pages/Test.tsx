@@ -46,6 +46,7 @@ import HoverCardProperty from '@/Components/Home/Cards/HoverCardProperty'
 import {Test as BT}   from '@/Components/Home/Test/Test'
 import card_image from '../../assets/cardhover.png'
 import OneCardSwiper from '@/Components/Home/Header/Nav/OneCardSwiper'
+import Price from '@/Components/Home/Cards/Common/Boxes/OffPlan/Price'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -54,12 +55,15 @@ const Test = () =>{
  },[numberOfBeds])
   return (
     <>
-    <div className='w-[28rem] flex justify-center'>
+    {/* <div className='w-[28rem] flex justify-center'>
 
         <OneCardSwiper/>
     </div>
     <div className='m-[20px]'>
 
+    </div> */}
+    <div className='m-[20px]'>
+        <Price/>
     </div>
     </>
 

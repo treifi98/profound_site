@@ -111,3 +111,18 @@ div.select_component::-moz-scrollbar-track {
     /* scrollbar-shadow-color: #B6C3C5; */
     /* scrollbar-width:90px !important; */
 }
+
+
+.flip:hover .flip-content {
+    transform: rotateY(180deg);
+    transition: transform 0.3s;
+  }
+
+  .vvv
+{
+    transform: rotateY(180deg);
+}
+
+.vvinitial{
+    transform: rotateY(0deg);
+}

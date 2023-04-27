@@ -217,6 +217,9 @@ module.exports = {
                 // 'xxl': '2255px',
                 // => @media (min-width: 1280px) { ... }
               },
+              backgroundImage: {
+                'custom-gradient': 'linear-gradient(178.83deg, #002D31 1.2%, #194549 50.36%, #002326 99.19%)',
+              },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
@@ -225,10 +228,22 @@ module.exports = {
                     '0%': { transform: 'translateY(0px)' },
                     '50%': { transform: 'translateY(-5px)' },
                     '100%': { transform: 'translateY(0px)' },
-                }
+                },
+                flip:{
+                  '0%':{transform:'rotateY(0deg)'},
+                  '50%':{transform:'rotateY(90deg)'},
+                  '100%':{transform:'rotateY(180deg)'},
+                },
+                flipBack:{
+                    '0%':{transform:'rotateY(180deg)'},
+                    '50%':{transform:'rotateY(90deg)'},
+                    '100%':{transform:'rotateY(0deg)'},
+                },
               },
               animation: {
                 wiggle: 'wiggle 0.5s ease-in-out forwards',
+                flip: 'flip 0.8s ease-in-out forwards',
+                flipBack: 'flipBack 0s ease-in-out forwards',
               }
         },
     },
