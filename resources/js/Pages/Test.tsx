@@ -20,7 +20,9 @@ import { useRef, useEffect } from 'react';
 import 'swiper/css';
 import Slider from '@/Components/Home/Cards/Common/Slider'
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import MoreFilter from '@/Components/Home/FiltersAndSearch/MoreFilter'
+import Expandable from '@/Components/Home/FiltersAndSearch/Expandable'
+import SelectByCheck from '@/Components/Home/FiltersAndSearch/CoreFilters/SelectByCheck'
 // import Swiper, { Pagination } from "swiper";
 
 
@@ -39,8 +41,11 @@ import ReviewSwiper from '@/Components/Home/ReviewSwiper'
 import RangeComponent from '@/Components/Home/FiltersAndSearch/RangeComponent'
 import ButtonSelect from '@/Components/Home/FiltersAndSearch/ButtonSelect'
 import Select from '@/Components/Home/FiltersAndSearch/Select'
-import CheckComponent from '@/Components/Home/FiltersAndSearch/CheckComponent'
+import CheckComponent from '@/Components/Home/FiltersAndSearch/CoreFilters/CheckComponent'
+import HoverCardProperty from '@/Components/Home/Cards/HoverCardProperty'
 import {Test as BT}   from '@/Components/Home/Test/Test'
+import card_image from '../../assets/cardhover.png'
+import OneCardSwiper from '@/Components/Home/Header/Nav/OneCardSwiper'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -49,31 +54,13 @@ const Test = () =>{
  },[numberOfBeds])
   return (
     <>
-        <div className='m-[100px] w-[calc(500px)]'>
+    <div className='w-[28rem] flex justify-center'>
 
-            <RangeComponent RTL={false} min={400000} max={100000000} step={1000}/>
-        </div>
+        <OneCardSwiper/>
+    </div>
+    <div className='m-[20px]'>
 
-        <div className='m-[40px] w-[13.75rem] h-[2.25rem]'>
-            <ButtonSelect options={[{lable:'Studio',value:'studio'},{lable:'1',value:'1'},{lable:'2',value:'2'},{lable:'3',value:'3'},{lable:'4',value:'4'},{lable:'5',value:'5'},{lable:'6',value:'6'},{lable:'7',value:'7'},{lable:'8',value:'8'},{lable:'9',value:'9'},{lable:'10+',value:'10'}]} lable={'Bedrooms'} func={x}/>
-        </div>
-
-
-        <div className='m-[80px]'>
-            <Select id={'multi'} options={[{lable:'Studio',value:'studio'},{lable:'1',value:'1'},{lable:'2',value:'2'},{lable:'3',value:'3'},{lable:'4',value:'4'},{lable:'5',value:'5'},{lable:'6',value:'6'},{lable:'7',value:'7'},{lable:'8',value:'8'},{lable:'9',value:'9'},{lable:'10+',value:'10'}]} lable={'Bedrooms'} func={x} single={true}/>
-        </div>
-        <div className='m-[80px]'>
-            <Select id={'single'} options={[{lable:'Studio',value:'studio'},{lable:'1',value:'1'},{lable:'2',value:'2'},{lable:'3',value:'3'},{lable:'4',value:'4'},{lable:'5',value:'5'},{lable:'6',value:'6'},{lable:'7',value:'7'},{lable:'8',value:'8'},{lable:'9',value:'9'},{lable:'10+',value:'10'}]} lable={'Bedrooms'} func={x} single={false}/>
-        </div>
-        <div className='m-[40px]'>
-            <CheckComponent func={() => console.log('f')}/>
-        </div>
-
-        <div className='m-[20px]'>
-            <BT id={1}/>
-            <BT id={2}/>
-            <BT id={3}/>
-        </div>
+    </div>
     </>
 
   )

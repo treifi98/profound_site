@@ -6,10 +6,11 @@ import Nav from './Nav/Nav'
 import Lang from './Lang/Lang'
 import Search from './Search'
 import { Link } from '@inertiajs/react'
+import MenueHover from '../MenueHover'
 
 const Header = () => {
-  return (
-    <div className={`w-full h-[6.25rem] relative z-10 font-[nova] bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom`}>
+    return (
+        <div className={`w-full h-[6.25rem] relative z-10 font-[nova] bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom`}>
         {/* <div className={` w-full h-full `}> */}
             <div className='w-[calc(100%-5rem)] flex justify-between items-center h-[calc(100%-0.625rem)] mr-[5rem]'>
                 <Link href='/' className='max-h-[100%] self-center'>
@@ -21,9 +22,10 @@ const Header = () => {
                     <Nav/>
                 </div>
             </div>
+        <MenueHover/>
         {/* </div> */}
     </div>
-  )
+    )
 }
 
 export default Header

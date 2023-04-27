@@ -79,6 +79,20 @@ module.exports = {
         'w-[3.75rem]',
         'h-[0.0625rem]',
         'h-[1rem]',
+        'w-[15.0625rem]',
+        'h-[20.1875rem]',
+        'w-[7.75rem]',
+        'h-[2.1875rem]',
+        'w-[5.81375rem]',
+        'h-[1.433125rem]',
+        'w-[14.8125rem]',
+        'h-[11.39125rem]',
+        'w-[1.26625rem]',
+        'h-[0.72375rem]',
+        'w-[0.4825rem]',
+        'h-[0.4825rem]',
+        'w-[0.72375rem]',
+        'h-[0.72375rem]',
         // 'w-[1rem]',
 
 
@@ -186,19 +200,21 @@ module.exports = {
 
         'text-[0.6875rem]',
         'text-[0.554375rem]',
+        'text-[0.41375rem]',
 
         'rounded-[15px]',
         'rounded-[19.03px]',
 
         'rounded-[0.9375rem]',
         'rounded-[1.189375rem]',
+        'rounded-[0.625rem]',
         'rounded-[0]',
       ],
 
     theme: {
         extend: {
             screens: {
-                'xxl': '1560px',
+                // 'xxl': '2255px',
                 // => @media (min-width: 1280px) { ... }
               },
             fontFamily: {

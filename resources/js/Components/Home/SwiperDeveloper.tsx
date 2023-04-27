@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DeveloperCard from './Cards/DeveloperCard';
 import { useRef, useEffect } from 'react';
-import 'swiper/css';
+// import 'swiper/css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -43,28 +43,44 @@ const SwiperDeveloper = () => {
             className="mySwiper"
         >
             <SwiperSlide>
-                <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className=''>
+                    <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                    <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                    <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                    <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                    <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                    <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                    <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
             <SwiperSlide>
-                <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                    <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                </div>
             </SwiperSlide>
 
         </Swiper>

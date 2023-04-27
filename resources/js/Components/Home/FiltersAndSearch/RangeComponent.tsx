@@ -6,7 +6,8 @@ interface Props{
     step:number,
     min:number,
     max:number,
-    rtl:boolean
+    rtl:boolean,
+
 }
 // const STEP = 0.1;
 // const MIN = 0;
@@ -66,37 +67,40 @@ function ThumbLabel({
   );
 }
 
-const RangeComponent: React.FC<{ RTL: boolean, max:number, min:number, step:number }> = ({ RTL, max, min, step }) => {
+const RangeComponent: React.FC<{ RTL: boolean, max:number, min:number, step:number,MinStep:number, MaxStep:number, StepDefault:boolean }> = ({ RTL, max, min, step,MinStep, MaxStep,StepDefault }) => {
   const rtl = RTL
   const MIN = min
   const MAX = max
   const STEP = step
-  const [values, setValues] = React.useState([400000,100000000]);
+  const [values, setValues] = React.useState([min,max]);
 
 
   const handleOnChange = (newValues) => {
     const [minValue, maxValue] = newValues;
 
     // Define different steps for min and max thumbs
-    let minStep = 100000;
-    let maxStep = 10000000;
-    if (minValue >= 1000000){
-        minStep = 500000
-    }
-    else if (minValue >= 5000000){
-        minStep = 1000000
-    }
-    else if (minValue >= 50000000){
-        minStep = 10000000
-    }
-    if (maxValue <= 10000000){
-        maxStep = 1000000
-    }
-    else if (maxValue <= 500000){
-        maxStep = 500000
-    }
-    else if (maxValue <= 100000){
-        maxStep = 100000
+    let minStep = MinStep;
+    let maxStep = MaxStep;
+    if(!StepDefault){
+
+        if (minValue >= 1000000){
+            minStep = 500000
+        }
+        else if (minValue >= 5000000){
+            minStep = 1000000
+        }
+        else if (minValue >= 50000000){
+            minStep = 10000000
+        }
+        if (maxValue <= 10000000){
+            maxStep = 1000000
+        }
+        else if (maxValue <= 500000){
+            maxStep = 500000
+        }
+        else if (maxValue <= 100000){
+            maxStep = 100000
+        }
     }
 
     // Calculate the new values based on the desired steps

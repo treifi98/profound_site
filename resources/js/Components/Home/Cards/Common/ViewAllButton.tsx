@@ -6,6 +6,7 @@ interface Props{
     w:string,
     ml?:string,
     text?:string,
+    textSize?:string
 }
 const ViewAllButton = (props:Props) => {
   return (

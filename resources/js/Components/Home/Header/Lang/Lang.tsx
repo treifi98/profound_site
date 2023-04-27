@@ -1,20 +1,55 @@
 //@ts-nocheck
 import React from 'react'
 import eng_flag from '../../../../../assets/engflag.svg'
+// import en_flag
 
 const Lang = () => {
     // const handleMouseEnter=(e:any)=>{
-    //     document.querySelector('.lang_effect').style.boxShadow = 'inset -3px -3px 4px #04626B, inset 4px 4px 6px #011618'
+    //     document.querySelector('.lang_effect').style.boxShadow = 'inset -0.1875rem -0.1875rem 0.25rem #04626B, inset 0.25rem 0.25rem 6px #011618'
     //     document.querySelectorAll('.lang_none').forEach((elmnt:any) => elmnt.style.boxShadow = 'none')
     // }
     // const handleMouseLeave=(e:any)=>{
-    //     document.querySelector('.lang_effect').style.boxShadow = '-3.12128px -3.12128px 5.19175px -1.73058px #007580, 3.12128px 3.12128px 4.08176px #011618'
+    //     document.querySelector('.lang_effect').style.boxShadow = '-0.19508rem -0.19508rem 0.324484375rem -0.10816125rem #007580, 0.19508rem 0.19508rem 0.25511rem #011618'
     //     document.querySelectorAll('.lang_none').forEach((elmnt:any) => elmnt.style.boxShadow = 'none')
     // }
   return (
-    <div  className='hover:shadow-[inset_-3px_-3px_4px_#04626B,inset_4px_4px_6px_#011618] relative lang_effect select-none w-[4.312rem] h-[2.187rem] bg-[#002D31] border-[1px] border-[#1F5B62] rounded-[0.312rem] shadow-[-3.12128px_-3.12128px_5.19175px_-1.73058px_#007580,3.12128px_3.12128px_4.08176px_#011618] text-[#fff] flex justify-between items-center cursor-pointer px-[0.625rem]'>
+    <div  className='hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618] relative lang_effect select-none w-[4.312rem] h-[2.187rem] bg-[#002D31] border-[0.0625rem] border-[#1F5B62] rounded-[0.312rem] shadow-[-0.19508rem_-0.19508rem_0.324484375rem_-0.10816125rem_#007580,0.19508rem_0.19508rem_0.25511rem_#011618] text-[#fff] flex justify-between items-center cursor-pointer px-[0.625rem] group relativr'>
         <div  className='inline lang_none' >EN</div>
         <img src={eng_flag} alt="" className='w-[1.25rem] h-[1.25rem] object-cover object-center lang_none'/>
+        <div className='absolute w-[4.125rem] h-[0rem] top-[4.27rem] left-0 group-hover:h-[10.4775rem] transition-all overflow-hidden'>
+            <div className='w-full h-[2.0625rem] flex justify-evenly items-center bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] hover:shadow-[inset_-0.150815rem_-0.150815rem_0.201086875rem_#FFFFFF,inset_0.150815rem_0.150815rem_0.201086875rem_#AEBBBD]'>
+                <div className='text-grade'>
+                    EN
+                </div>
+                <div>
+                    <img src={eng_flag} alt="" />
+                </div>
+            </div>
+            <div className='w-full h-[2.0625rem] flex justify-evenly items-center bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] hover:shadow-[inset_-0.150815rem_-0.150815rem_0.201086875rem_#FFFFFF,inset_0.150815rem_0.150815rem_0.201086875rem_#AEBBBD]'>
+                <div className='text-grade'>
+                    EN
+                </div>
+                <div>
+                    <img src={eng_flag} alt="" />
+                </div>
+            </div>
+            <div className='w-full h-[2.0625rem] flex justify-evenly items-center bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] hover:shadow-[inset_-0.150815rem_-0.150815rem_0.201086875rem_#FFFFFF,inset_0.150815rem_0.150815rem_0.201086875rem_#AEBBBD]'>
+                <div className='text-grade'>
+                    EN
+                </div>
+                <div>
+                    <img src={eng_flag} alt="" />
+                </div>
+            </div>
+            <div className='w-full h-[2.0625rem] flex justify-evenly items-center bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] hover:shadow-[inset_-0.150815rem_-0.150815rem_0.201086875rem_#FFFFFF,inset_0.150815rem_0.150815rem_0.201086875rem_#AEBBBD]'>
+                <div className='text-grade'>
+                    EN
+                </div>
+                <div>
+                    <img src={eng_flag} alt="" />
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
