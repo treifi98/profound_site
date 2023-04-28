@@ -47,6 +47,13 @@ import {Test as BT}   from '@/Components/Home/Test/Test'
 import card_image from '../../assets/cardhover.png'
 import OneCardSwiper from '@/Components/Home/Header/Nav/OneCardSwiper'
 import Price from '@/Components/Home/Cards/Common/Boxes/OffPlan/Price'
+import Bed from '@/Components/Home/Cards/Common/Boxes/OffPlan/Bed'
+import Size from '@/Components/Home/Cards/Common/Boxes/OffPlan/Size'
+import PaymentPlan from '@/Components/Home/Cards/Common/Boxes/OffPlan/PaymentPlan'
+import Developer from '@/Components/Home/Cards/Common/Boxes/OffPlan/Developer'
+import CompleationDate from '@/Components/Home/Cards/Common/Boxes/OffPlan/CompleationDate'
+import Agent from '@/Components/Home/Cards/Common/Boxes/OffPlan/Agent'
+import Contact from '@/Components/Home/Cards/Common/Boxes/OffPlan/Contact'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -62,8 +69,29 @@ const Test = () =>{
     <div className='m-[20px]'>
 
     </div> */}
-    <div className='m-[20px]'>
+    <div className='m-[60px]'>
         <Price/>
+    </div>
+    <div className='m-[60px]'>
+        <Bed/>
+    </div>
+    <div className='m-[60px]'>
+        <Size/>
+    </div>
+    <div className='m-[200px]'>
+        <PaymentPlan/>
+    </div>
+    <div className='m-[200px]'>
+        <Developer/>
+    </div>
+    <div className='m-[200px]'>
+        <CompleationDate/>
+    </div>
+    <div className='m-[400px]'>
+        <Agent/>
+    </div>
+    <div className='m-[400px]'>
+        <Contact/>
     </div>
     </>
 

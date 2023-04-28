@@ -219,6 +219,7 @@ module.exports = {
               },
               backgroundImage: {
                 'custom-gradient': 'linear-gradient(178.83deg, #002D31 1.2%, #194549 50.36%, #002326 99.19%)',
+                'custom-gradient1': 'linear-gradient(178.83deg, #002D31 -6.55%, #194549 42.61%, #002326 91.44%)',
               },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
@@ -242,7 +243,7 @@ module.exports = {
               },
               animation: {
                 wiggle: 'wiggle 0.5s ease-in-out forwards',
-                flip: 'flip 0.8s ease-in-out forwards',
+                flip: 'flip 0.3s ease-in-out forwards',
                 flipBack: 'flipBack 0s ease-in-out forwards',
               }
         },
