@@ -12,8 +12,8 @@ const HeroVideo = () => {
         <div className='h-[calc(100vh-6.25rem)] w-full relative z-[-1] font-[nova]'></div>
         <div className='h-[calc(100vh-1.875rem)] w-full  absolute top-[1.875rem] z-0 font-[nova]'>
             <div className='relative'>
-                <div className='absolute right-0 top-[4.375rem] z-10 opacity-[0.2]'>
-                    <img src={logo_completion} alt="" className='w-[8.437rem]'/>
+                <div className='absolute right-0 top-[4.375rem] z-10 opacity-[0.2] text-[0.95vw]'>
+                    <img src={logo_completion} alt="" className='w-[8.437em]'/>
                 </div>
                 <div className='absolute bg-[#01141666] z-[1] h-[calc(100vh-1.875rem)] w-full mix-blend-overlay '></div>
                 <video  autoPlay loop muted className='h-[calc(100vh-1.875rem)] w-full object-cover '>

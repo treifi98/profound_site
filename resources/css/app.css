@@ -126,3 +126,7 @@ div.select_component::-moz-scrollbar-track {
 .vvinitial{
     transform: rotateY(0deg);
 }
+
+.mySwiperxx .swiper-slide{
+    padding: 0.0725rem;
+}

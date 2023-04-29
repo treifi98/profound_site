@@ -22,7 +22,7 @@ const Contact = () => {
         }
     }
     const handleMouseleave = () => {
-        
+        text.current.innerHTML = 'Contact Us'
     }
 
     return (

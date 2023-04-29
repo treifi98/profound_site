@@ -54,6 +54,8 @@ import Developer from '@/Components/Home/Cards/Common/Boxes/OffPlan/Developer'
 import CompleationDate from '@/Components/Home/Cards/Common/Boxes/OffPlan/CompleationDate'
 import Agent from '@/Components/Home/Cards/Common/Boxes/OffPlan/Agent'
 import Contact from '@/Components/Home/Cards/Common/Boxes/OffPlan/Contact'
+import CircleCard from '@/Components/Home/Cards/New/CircleCard'
+import beatchFront from '../../assets/beachFront.png'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -92,6 +94,9 @@ const Test = () =>{
     </div>
     <div className='m-[400px]'>
         <Contact/>
+    </div>
+    <div className='m-[400px]'>
+        <CircleCard img={beatchFront}/>
     </div>
     </>
 

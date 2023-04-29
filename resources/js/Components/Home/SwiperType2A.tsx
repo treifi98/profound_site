@@ -23,6 +23,7 @@ import BarCommon from './Cards/Common/BarCommon'
 import chandelier from '../../../assets/chandelier.svg'
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Pagination } from "swiper";
+import OffplanCard from './Cards/New/OffplanCard'
 // import '../../../assets/x.css'
 
 
@@ -64,7 +65,7 @@ const SwiperType2A = () => {
                 },
                 1500: {
                 slidesPerView: 1.8,
-                spaceBetween: -70,
+                spaceBetween: 0,
                 },
             }}
 
@@ -73,28 +74,28 @@ const SwiperType2A = () => {
             className="mySwiper"
         >
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
             <SwiperSlide>
-                <Type2A w='54.1875' h='613' tags={['80/20 Payment','Handover 2025','Apartment']} info={['1,125,0000','1,2,3,4,5,6','881 - 4590','1997']} developer_img={emar}/>
+               <OffplanCard/>
             </SwiperSlide>
 
         </Swiper>
