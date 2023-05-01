@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="lg:text-[0.8vw] font-[nova]">
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class=" font-[nova]">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">

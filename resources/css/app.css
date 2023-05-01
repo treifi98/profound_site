@@ -130,3 +130,19 @@ div.select_component::-moz-scrollbar-track {
 .mySwiperxx .swiper-slide{
     padding: 0.0725rem;
 }
+.mySwiperxxy .swiper-slide{
+    padding: 0.0725rem;
+}
+
+.mySwiperxxy .swiper-pagination-horizontal {
+    position: absolute;
+    /* top: -1.5rem !important; */
+        z-index: 99999999999999999;
+    /* left: 4rem; */
+    /* padding: 2rem; */
+}
+.hovercontainer:hover .swiper-pagination-horizontal{
+    transform: scale(1) !important;
+    height: min-content;
+    transition: all 0.2s ease-in-out;
+}

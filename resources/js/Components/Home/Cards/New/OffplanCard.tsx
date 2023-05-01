@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "../../../../../css/pagination.css";
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper'
+import { Pagination, Navigation, Autoplay } from 'swiper'
 import NewTag from '../Common/NewTag';
 import Brochure from '../Common/Brochure';
 import NewSocial from '../Common/NewSocial';
@@ -36,8 +36,12 @@ const OffplanCard = () => {
 
                 <Swiper
                 pagination={pagination}
-                modules={[Pagination]}
+                modules={[Autoplay, Pagination]}
                 slidesPerView={1}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: true,
+                  }}
                 // slidesPerGroupSkip={3}
                 spaceBetween={20}
                 breakpoints={{

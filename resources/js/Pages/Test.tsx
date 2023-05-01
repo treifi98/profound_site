@@ -15,6 +15,7 @@ import emar from '../../assets/emar.svg'
 import Type1A from '@/Components/Home/Cards/Type1A'
 import Type1B from '@/Components/Home/Cards/Type1B'
 import newsImg from '../../assets/news.png'
+import ArchCard from '@/Components/Home/Cards/New/ArchCard'
 
 import { useRef, useEffect } from 'react';
 import 'swiper/css';
@@ -96,7 +97,8 @@ const Test = () =>{
         <Contact/>
     </div>
     <div className='m-[400px]'>
-        <CircleCard img={beatchFront}/>
+        {/* <CircleCard img={beatchFront}/> */}
+        <ArchCard/>
     </div>
     </>
 

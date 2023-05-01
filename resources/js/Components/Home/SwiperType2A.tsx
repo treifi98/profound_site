@@ -22,7 +22,7 @@ import "swiper/css/pagination";
 import BarCommon from './Cards/Common/BarCommon'
 import chandelier from '../../../assets/chandelier.svg'
 import "swiper/css/effect-coverflow";
-import { EffectCoverflow, Pagination } from "swiper";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import OffplanCard from './Cards/New/OffplanCard'
 // import '../../../assets/x.css'
 
@@ -44,6 +44,10 @@ const SwiperType2A = () => {
 
         <Swiper
             slidesPerView={1}
+            // autoplay={{
+            //     delay: 2500,
+            //     disableOnInteraction: true,
+            //   }}
             effect={"coverflow"}
             centeredSlides={true}
             coverflowEffect={{
@@ -54,7 +58,7 @@ const SwiperType2A = () => {
                 scale:0.7,
                 slideShadows: false,
               }}
-              modules={[EffectCoverflow, Pagination]}
+              modules={[Autoplay, EffectCoverflow, Pagination]}
 
             // slidesPerGroupSkip={3}
             spaceBetween={0}
@@ -69,7 +73,13 @@ const SwiperType2A = () => {
                 },
             }}
 
-            onSwiper={(swiper) => setSwiper(swiper)}
+
+            onSwiper={(swiper) => {
+                setSwiper(swiper)
+                // alert('ddddd')
+            }}
+            // onChange={(swiper) => alert('ddddd')}
+            // onSlideChangeTransitionEnd={(swiper) => alert(swiper.activeIndex)}
             loop={true}
             className="mySwiper"
         >

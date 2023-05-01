@@ -4,7 +4,10 @@ import whatsapp from '../../../../../../../assets/whatsapp_icon.svg'
 import email from '../../../../../../../assets/email_icon.svg'
 import video from '../../../../../../../assets/video_cam.svg'
 import phone from '../../../../../../../assets/phone_icon.svg'
-const Contact = () => {
+interface Props{
+    scale?:string
+}
+const Contact = (props:Props) => {
 
     const text = useRef(null)
     const handleMouseEnter = (e) => {
@@ -26,7 +29,7 @@ const Contact = () => {
     }
 
     return (
-        <div className=' w-[5.3125rem] h-[6.375rem] relative cursor-pointer'>
+        <div className=' w-[5.3125rem] h-[6.375rem] relative cursor-pointer' style={{ transform:props.scale?`scale(${props.scale})`:'scale(1)' }}>
         <div className='w-[5.3125rem] h-[6.375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.3125rem] shadow-[-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]  perspective-[1000px] group-hover:shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5] duration-[0.1s]'>
             <div className='flex flex-col justify-between items-center h-full w-full group-hover:opacity-0 duration-[0.1s]'>
 
