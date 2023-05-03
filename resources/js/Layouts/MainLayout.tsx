@@ -6,7 +6,7 @@ interface Props{
 }
 const MainLayout = (props:Props) => {
   return (
-    <div>
+    <div className='font-[nova]'>
 
         <Header/>
         {props.children}

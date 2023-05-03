@@ -12,7 +12,7 @@ interface Props{
 const BarCommon = (props:Props) => {
 
   return (
-    <div className='relative z-30 w-[calc(100%-0.625rem)] mx-[0.3125] h-[3.125rem] rounded-[6.25rem] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center px-[1.1875rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[0.3125rem]'>
+    <div className='relative z-30 w-[calc(100%-0.625rem)] mx-auto h-[3.125rem] rounded-[6.25rem] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center px-[1.1875rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[0.3125rem]'>
         <div className='flex  items-center w-[50%] justify-start'>
             <img src={props.icon} alt="" className='w-[5.375rem] h-[2.8125rem] '/>
             <div className='h-[3.125rem] w-[1px] bg-[#CED7D8] ml-[0.375rem] mr-[0.9375rem]'></div>

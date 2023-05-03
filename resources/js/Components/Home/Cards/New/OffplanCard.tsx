@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import NewCardImage from '../Common/NewCardImage'
 
 import offplanImage from '../../../../../assets/offplanImage.png'
@@ -16,26 +16,60 @@ import mapIcon from '../../../../../assets/map_icon.svg'
 import shareIcon from '../../../../../assets/share_icon.svg'
 import viewIcon from '../../../../../assets/view_icon.svg'
 import favIcon from '../../../../../assets/fav_icon.svg'
+import SliderPagination from '../Common/SliderPagination';
 
 
 const OffplanCard = () => {
     const [swiper, setSwiper] = useState<any>();
-    const pagination = {
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '"> <div class="inpagination"> </div> </span>';
-        },
-    };
+    const [activeIndex, setActiveIndex] = useState(0)
+    const outerNavigation = (callBack) => {
+        useEffect(() => callBack(activeIndex),[activeIndex])
+    }
+    const innerNavigation = (slide) => {
+        // alert('f')
+        // swiper.slideTo(slide)
+        const x = slide - swiper.activeIndex
+        console.log (x)
+        if(x > 0){
+            const y = (((x)%5)+1)-1
+            for(let i = 0 ; i<y ;i++){
+                swiper.slideNext()
+            }
+        }
+        else{
+            const y = (((Math.abs(x))%5)+1)-1
+            for(let i = 0 ; i<y ;i++){
+                swiper.slidePrev()
+            }
+        }
+        // setSwiper(slide)
+        setActiveIndex(swiper.activeIndex)
+
+    }
+
+
+
+
+
+
+    const imageref = useRef(null)
+    const handleMouseEnter = () => {
+        imageref.current.style.transform = 'scale(1.05)'
+        // alert('d')
+    }
+    const handleMouseLeave = () => {
+        imageref.current.style.transform = 'scale(1)'
+    }
 
     return (
-        <div className='flex justify-evenly items-center rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] w-[62.25rem] h-[37.0625rem] overflow-hidden m-[1.25rem] '>
+        <div className='flex justify-evenly items-center rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] w-[62.25rem] h-[37.0625rem] overflow-hidden m-[1.25rem] ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='w-[43.5625rem] h-[35.375rem] flex flex-col gap-[0.39rem] '>
-                <div className='w-[43.5625rem] h-[27.7725rem] rounded-[0.9375rem] hover:scale-[1.05] origin-bottom transition-all'>
+                <div className='relative w-[43.5625rem] h-[27.7725rem] rounded-[0.9375rem]  origin-bottom transition-all' ref={imageref}>
 
 
 
                 <Swiper
-                pagination={pagination}
+                // pagination={pagination}
                 modules={[Autoplay, Pagination]}
                 slidesPerView={1}
                 autoplay={{
@@ -55,7 +89,15 @@ const OffplanCard = () => {
                     }
                 }}
                 onSwiper={(swiper) => setSwiper(swiper)}
-                loop={true}
+                // loop={true}
+                rewind={true}
+                onSlideChangeTransitionEnd={(swiper) => {
+                    // alert(swiper.activeIndex)
+
+                    setActiveIndex(swiper.activeIndex)
+                    // setSwiper(swiper)
+
+                }}
                 className="mySwiperxx"
 
                 >
@@ -74,18 +116,14 @@ const OffplanCard = () => {
                     <SwiperSlide>
                         <NewCardImage src={offplanImage} rounded='0.9375'/>
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <NewCardImage src={offplanImage} rounded='0.9375'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <NewCardImage src={offplanImage} rounded='0.9375'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <NewCardImage src={offplanImage} rounded='0.9375'/>
-                    </SwiperSlide>
+                
 
 
                 </Swiper>
+                <div className='absolute bottom-[1.21875rem] left-[calc(50%-2.46625rem)] z-[999999]'>
+                    <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
+
+                </div>
 
 
 

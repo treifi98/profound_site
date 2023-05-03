@@ -7,6 +7,7 @@ import phone_icon from '../../assets/phone_icon.svg'
 import email_icon from '../../assets/email_icon.svg'
 
 const HeroVideo = () => {
+    
   return (
     <>
         <div className='h-[calc(100vh-6.25rem)] w-full relative z-[-1] font-[nova]'></div>

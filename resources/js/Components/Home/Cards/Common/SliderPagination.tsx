@@ -11,11 +11,20 @@ const SliderPagination = (props:Props) => {
     const items = Array(props.numberOfItems).fill(0)
     const [active,setActive] = useState( 0)
     props.outerNavigation((x) => {
-        // console.log(x)
+        console.log(x)
         if(typeof(x) != 'object'){
             x = Math.abs(x)
-            // alert(x)
-            setActive((((x)%3)+1)-1)
+            if(x >= (props.numberOfItems)){
+
+                // alert(x)
+
+                    // setActive(0)
+                    setActive(((x)%(props.numberOfItems)))
+
+            }
+            else{
+                setActive(x)
+            }
 
         }
         // console.log(x)

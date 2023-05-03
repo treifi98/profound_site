@@ -7,8 +7,9 @@ interface Props{
 }
 import starIcon from '../../../../assets/star.svg'
 const ReviewCard = (props:Props) => {
+    const stars = new Array(props.stars).fill(0)
   return (
-    <div className='w-[30.3125rem] h-[29.1875rem] bg-[#E6EDED] border-[#CAD4D5] border-[1px] rounded-[0.9375rem] shadow-[inset_-6px_-6px_12px_3px_#FFFFFF,inset_6px_6px_12px_#BABFBF] flex flex-col justify-center items-center'>
+    <div className='w-[30.3125rem] h-[29.75rem] bg-[#E6EDED] border-[#CAD4D5] border-[1px] rounded-[0.9375rem] shadow-[inset_-6px_-6px_12px_3px_#FFFFFF,inset_6px_6px_12px_#BABFBF] flex flex-col justify-center items-center'>
         <div className='mt-[2rem] mx-[2.75rem] w-[calc(100%-5.5rem)] h-[calc(100%-2rem)] '>
 
             <div className=' text-grade text-[2rem] h-[5.375rem] w-[20.75rem ] font-[400]'>
@@ -26,14 +27,11 @@ const ReviewCard = (props:Props) => {
 
                 <div className='mt-[0.875rem] w-[18.5rem] h-[2.894375rem] flex items-center justify-center gap-[1.006875rem]'>
                     {
-                        (
-                            () => {
-                                for(let i=0;i<props.stars;i++){
 
-                                    return (<img src={starIcon} alt="" className='w-[2.894375rem] h-[2.894375rem]'/>)
-                                }
-                            }
-                        )()
+                        stars.map((star) =>
+                            (<img src={starIcon} alt="" className='w-[2.894375rem] h-[2.894375rem]'/>)
+                        )
+
                     }
                     {/* <img src={starIcon} alt="" className='w-[2.894375rem] h-[2.894375rem]'/>
                     <img src={starIcon} alt="" className='w-[2.894375rem] h-[2.894375rem]'/>

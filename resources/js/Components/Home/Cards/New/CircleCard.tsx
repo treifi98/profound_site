@@ -5,7 +5,7 @@ import "swiper/css";
 import "../../../../../css/pagination.css";
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper'
-import SliderPagination from '../Common/SliderPagination';
+import SliderPaginationcircle from '../Common/SliderPaginationcircle';
 
 import NewCardImage from '../Common/NewCardImage'
 import mapIcon from '../../../../../assets/map_icon.svg'
@@ -64,7 +64,7 @@ const CircleCard = (props:Props) => {
     return (
         <div className='w-[39.25rem] h-[39.25rem] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] rounded-[47.302125rem_47.302125rem_0.46285375rem_47.302125rem] shadow-[-0.258011875rem_-0.258011875rem_0.51602375rem_0.129005625rem_#FFFFFF,0.258011875rem_0.258011875rem_0.51602375rem_#BABFBF] flex justify-center items-center relative overflow-hidden ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={innerNavigation}>
 
-            <div className='w-[37.1875rem] h-[37.4375rem] transition-all duration-[0.3s]  origin-center relative hovercontainer'  ref={scalableImage}>
+            <div className='w-[37.1875rem] h-[37.4375rem] transition-all duration-[0.3s]  origin-center relative hovercontainer '  ref={scalableImage}>
             <Swiper
                 // pagination={pagination}
                 modules={[Pagination]}
@@ -109,27 +109,19 @@ const CircleCard = (props:Props) => {
                     <SwiperSlide>
                         <NewCardImage src={props.img} rounded='100'/>
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <NewCardImage src={props.img} rounded='100'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <NewCardImage src={props.img} rounded='100'/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <NewCardImage src={props.img} rounded='100'/>
-                    </SwiperSlide>
+
 
 
                 </Swiper>
 
+                        <SliderPaginationcircle numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
                 {/* <NewCardImage src={props.img} rounded='100'/> */}
             </div>
 
             <div className='w-[20.375rem] h-[19.5rem] bg-[#E6EDED] absolute bottom-[0.875rem] right-[1rem] z-[9999] rounded-[0.9375rem_0rem] border-[#DCE3E3] border-[0.0625rem] shadow-[inset_-0.4375rem_-0.4375rem_0.625rem_#FFFFFF,inset_0.4375rem_0.4375rem_0.4375rem_#B6C3C5] group-hover:rounded-[0.9375rem_0rem_0rem_0rem] transition-all 'ref={movableBlock} >
                 <div className='relative w-full h-full flex flex-col pl-[0.875rem]'>
-                    <div className='absolute w-[6.9375rem] h-[0.84625rem] top-[calc(50%-0.423125rem)] left-[-7.9375rem] overflow-hidden z-[99999999999999]'>
-                        <SliderPagination numberOfItems={3} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
-                    </div>
+                    {/* <div className='absolute w-full h-full top-[calc(50%-0.423125rem)] left-[-7.9375rem] overflow-hidden z-[99999999999999]'> */}
+                    {/* </div> */}
                     <div className='flex flex-col mt-[1.25rem]'>
                         <div className='text-grade text-[1.110625rem] font-[600]'>
                             Creek Rise tower 2 west side

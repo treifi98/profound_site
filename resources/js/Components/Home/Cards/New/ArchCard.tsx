@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import archImg from '../../../../../assets/archImg.png'
 import mapIcon from '../../../../../assets/map_icon.svg'
@@ -18,11 +18,121 @@ import PaymentPlan from '../Common/Boxes/OffPlan/PaymentPlan'
 import Developer from '../Common/Boxes/OffPlan/Developer'
 import CompleationDate from '../Common/Boxes/OffPlan/CompleationDate'
 import Contact from '../Common/Boxes/OffPlan/Contact'
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "../../../../../css/pagination.css";
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper'
+import SliderPagination from '../Common/SliderPagination';
 const ArchCard = () => {
+    const [swiper, setSwiper] = useState<any>();
+    const [activeIndex, setActiveIndex] = useState(0)
+    const outerNavigation = (callBack) => {
+        useEffect(() => callBack(activeIndex),[activeIndex])
+    }
+    const innerNavigation = (slide) => {
+        // alert('f')
+        // swiper.slideTo(slide)
+        const x = slide - swiper.activeIndex
+        console.log (x)
+        if(x > 0){
+            const y = (((x)%5)+1)-1
+            for(let i = 0 ; i<x ;i++){
+                swiper.slideNext()
+            }
+        }
+        else{
+            const y = (((Math.abs(x))%5)+1)-1
+            for(let i = 0 ; i<y ;i++){
+                swiper.slidePrev()
+            }
+        }
+        // setSwiper(slide)
+        setActiveIndex(swiper.activeIndex)
+
+    }
+
+    const imageref = useRef(null)
+    const handleMouseEnter = () => {
+        imageref.current.style.transform = 'scale(1.1)'
+        // alert('d')
+    }
+    const handleMouseLeave = () => {
+        imageref.current.style.transform = 'scale(1)'
+    }
+
     return (
-        <div className='h-[38.028125rem] w-[45.045625rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.326608125rem_-0.326608125rem_0.4899125rem_#FFFFFF,0.257279375rem_0.257279375rem_0.51455875rem_#BABFBF] flex flex-col overflow-hidden'>
-            <div className='w-[43.055rem] h-[25rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] mt-[0.92rem] mx-auto mb-[0.92rem] hover:scale-[1.1] transition-all z-[1] overflow-hidden'>
-                <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+        <div className='h-[38.128125rem] w-[45.045625rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.326608125rem_-0.326608125rem_0.4899125rem_#FFFFFF,0.257279375rem_0.257279375rem_0.51455875rem_#BABFBF] flex flex-col overflow-hidden' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className='w-[43.055rem] h-[25rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] mt-[0.92rem] mx-auto mb-[0.92rem] transition-all z-[1] overflow-hidden relative' ref={imageref}>
+            <Swiper
+                // pagination={pagination}
+                modules={[Pagination]}
+                slidesPerView={1}
+                // slidesPerGroupSkip={3}
+                spaceBetween={20}
+                breakpoints={{
+                    810: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                    },
+                    1500: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    }
+                }}
+                onSwiper={(swiper) => setSwiper(swiper)}
+                // loop={true}
+                rewind={true}
+                onSlideChangeTransitionEnd={(swiper) => {
+                    // alert(swiper.activeIndex)
+
+                    setActiveIndex(swiper.activeIndex)
+                    // setSwiper(swiper)
+
+                }}
+                className="mySwiperxxy"
+
+                >
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <NewCardImage src={archImg} rounded='47.167875rem 47.167875rem 0rem 0rem' complecatedRadius={true}/>
+
+                    </SwiperSlide>
+
+
+                </Swiper>
+                <div className='absolute bottom-[1.21875rem] left-[calc(50%-2.46625rem)] z-[999999]'>
+                    <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
+
+                </div>
+
             </div>
             {/* <img src={archImg} alt="" className='w-[43.055rem] h-[21.65rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] mt-[0.91875rem] ml-[0.91875rem] mb-[0.91875rem] hover:scale-[1.1] transition-all z-[1]'/> */}
             <div className='w-[45.0175rem] h-[14.413125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[inset_-0.413600625rem_-0.413600625rem_0.590858125rem_#FFFFFF,inset_0.413600625rem_0.413600625rem_0.413600625rem_#B6C3C5] z-[2]'>
@@ -59,7 +169,7 @@ const ArchCard = () => {
                     </div>
 
                 </div>
-                    <div className='flex gap-[1.034375rem]  ml-[0.590625rem] mt-[0.915625rem]'>
+                    <div className='flex gap-[1.034375rem]  ml-[0.590625rem] mt-[0.615625rem]'>
                         <div className='w-[6.586875rem] h-[1.415rem]'>
 
                             <NewTag text='Appartment' textSize='0.7075'/>
@@ -81,13 +191,13 @@ const ArchCard = () => {
                             <NewTag text='Appartment' textSize='0.7075'/>
                         </div>
                     </div>
-                    <div className=' flex w-[42.86rem] mt-[0.40875rem] mb-[0.40875rem] ml-[0.340625rem] gap-[0.17rem]'>
+                    <div className=' flex w-[42.86rem] mt-[0.50875rem] mb-[0.40875rem] ml-[0.340625rem] gap-[0.17rem]'>
                         <Price scale='0.8709'/>
                         <Bed scale='0.8709'/>
-                        <Developer scale='0.8709'/>
                         <Size scale='0.8709'/>
-                        <CompleationDate scale='0.8709'/>
                         <PaymentPlan scale='0.8709'/>
+                        <CompleationDate scale='0.8709'/>
+                        <Developer scale='0.8709'/>
                         <Contact scale='0.8709'/>
                         <Agent scale='0.8709'/>
                     </div>

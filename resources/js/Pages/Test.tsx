@@ -42,7 +42,7 @@ import ReviewSwiper from '@/Components/Home/ReviewSwiper'
 import RangeComponent from '@/Components/Home/FiltersAndSearch/RangeComponent'
 import ButtonSelect from '@/Components/Home/FiltersAndSearch/ButtonSelect'
 import Select from '@/Components/Home/FiltersAndSearch/Select'
-import CheckComponent from '@/Components/Home/FiltersAndSearch/CoreFilters/CheckComponent'
+import CheckComponentGreen from '@/Components/Home/FiltersAndSearch/CoreFilters/CheckComponentGreen'
 import HoverCardProperty from '@/Components/Home/Cards/HoverCardProperty'
 import {Test as BT}   from '@/Components/Home/Test/Test'
 import card_image from '../../assets/cardhover.png'
@@ -57,6 +57,10 @@ import Agent from '@/Components/Home/Cards/Common/Boxes/OffPlan/Agent'
 import Contact from '@/Components/Home/Cards/Common/Boxes/OffPlan/Contact'
 import CircleCard from '@/Components/Home/Cards/New/CircleCard'
 import beatchFront from '../../assets/beachFront.png'
+import TvCard from '@/Components/Home/Cards/New/TvCard'
+import OriginalCard from '@/Components/Home/Cards/New/OriginalCard'
+import CircularLayout from '@/Components/Home/Cards/Common/CircularLayout'
+import OffplanCard from '@/Components/Home/Cards/New/OffplanCard'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -98,8 +102,33 @@ const Test = () =>{
     </div>
     <div className='m-[400px]'>
         {/* <CircleCard img={beatchFront}/> */}
-        <ArchCard/>
+        <CircleCard img={beatchFront}/>
     </div>
+    <div className='m-[400px]'>
+        {/* <CircleCard img={beatchFront}/> */}
+        <OriginalCard />
+    </div>
+    <div className='m-[400px]'>
+        {/* <CircleCard img={beatchFront}/> */}
+        <TvCard />
+    </div>
+    <div className='m-[400px]'>
+        {/* <CircleCard img={beatchFront}/> */}
+        <ArchCard />
+    </div>
+    <div className='m-[400px]'>
+        {/* <CircleCard img={beatchFront}/> */}
+        <OffplanCard />
+    </div>
+    <div className='m-[400px]'>
+        {/* <CircleCard img={beatchFront}/> */}
+        <CheckComponentGreen id='xx' on='on' off='off' />
+    </div>
+    <div className='m-[100px]'>
+
+
+    </div>
+
     </>
 
   )
