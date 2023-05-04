@@ -126,7 +126,39 @@ div.select_component::-moz-scrollbar-track {
 .vvinitial{
     transform: rotateY(0deg);
 }
+/* .swiper-slide{
+    margin-right: 2.8125rem;
+} */
+.offPlanmySwiper .swiper-slide{
+    /* margin-right: 2.25rem; */
+    /* padding-left: 1.5625rem; */
+    /* margin-right: -2.8125rem; */
 
+}
+.circlemySwiper .swiper-slide{
+    margin-right: 9.5rem;
+    padding-left: 1.5625rem;
+}
+.TvmySwiper .swiper-slide{
+    margin-right: 0.125rem;
+    /* padding-left: 0.0375rem; */
+}
+.archCardmySwiper .swiper-slide{
+    margin-right: 0.614375rem;
+    padding-left: 1.0375rem;
+}
+.originalCardmySwiper .swiper-slide{
+    margin-right: 5.0075rem;
+    padding-left: 2.9375rem;
+}
+.devmySwiper .swiper-slide{
+    margin-right: 3.75rem;
+    padding-left: 2.4375rem;
+}
+.agentmySwiper .swiper-slide{
+    margin-right: 3.75rem;
+    padding-left: 2.4375rem;
+}
 .mySwiperxx .swiper-slide{
     padding: 0.0725rem;
 }

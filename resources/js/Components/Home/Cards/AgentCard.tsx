@@ -15,7 +15,7 @@ interface Props{
 }
 const AgentCard = (props:Props) => {
   return (
-    <div className='mt-[3.75rem] mb-[1.875rem] mx-[1.875rem] w-[24.375rem] h-[30.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] rounded-[0.9375rem] flex justify-center items-center'>
+    <div className='mt-[3.75rem] mb-[1.875rem]  w-[24.375rem] h-[30.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] rounded-[0.9375rem] flex justify-center items-center'>
 
         <div className={` w-[${props.w}rem] h-[${props.h}rem] bg-[#E6EDED] border-[1px] border-[#CAD4D5] rounded-[70px_10px] shadow-[-6px_-6px_12px_3px_#FFFFFF,6px_6px_12px_#BABFBF] flex flex-col justify-start items-center`}>
             <div className='mt-[0.875rem] h-[10.6875rem] w-[10.6875rem] bg-[#00464D] border-[1px] border-[#CED7D8] rounded-[5.625rem_0.3125rem] shadow-[inset_-3.38286px_-3.38286px_5.62686px_-1.87562px_#007580,inset_3.38286px_3.38286px_4.42385px_#011618]'>

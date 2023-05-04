@@ -22,22 +22,20 @@ const SwiperNews = () => {
         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Profound Insider Market / News'} icon={newsSecIcon}/>
 
         <Swiper
-            slidesPerView={1}
+            // slidesPerView={3}
             // slidesPerGroupSkip={3}
-            spaceBetween={20}
+            // spaceBetween={20}
             breakpoints={{
                 810: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-                },
-                1500: {
-                slidesPerView: 3.6,
-                spaceBetween: 15,
+                slidesPerView: 4,
+                // spaceBetween: '0',
                 }
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}
-            loop={true}
+            // loop={true}
+            rewind = {true}
+
             className="mySwiper"
         >
             <SwiperSlide>

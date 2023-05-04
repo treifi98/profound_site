@@ -23,13 +23,13 @@ import BarCommon from './Cards/Common/BarCommon'
 import chandelier from '../../../assets/chandelier.svg'
 import "swiper/css/effect-coverflow";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
-import OffplanCard from './Cards/New/OffplanCard'
+import TvCard from './Cards/New/TvCard'
 // import '../../../assets/x.css'
 
 
 // import { Pagination } from 'swiper'
 
-const SwiperType2A = () => {
+const SwiperTv = () => {
     const swiperRef = useRef(null);
     const [swiper, setSwiper] = useState<any>();
     const [swiperx, setSwiperx] = useState<any>(0);
@@ -43,7 +43,7 @@ const SwiperType2A = () => {
         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Luxury Properties'} icon={chandelier}/>
 
         <Swiper
-            slidesPerView={1}
+            // slidesPerView={1}
             // autoplay={{
             //     delay: 2500,
             //     disableOnInteraction: true,
@@ -61,11 +61,11 @@ const SwiperType2A = () => {
               modules={[Autoplay, EffectCoverflow, Pagination]}
 
             // slidesPerGroupSkip={3}
-            spaceBetween={0}
+            // spaceBetween={0}
             breakpoints={{
                 810: {
-                slidesPerView: 1.65,
-                spaceBetween: 0,
+                slidesPerView: 1.9,
+                // spaceBetween: 0,
                 }
             }}
 
@@ -77,31 +77,31 @@ const SwiperType2A = () => {
             // onChange={(swiper) => alert('ddddd')}
             // onSlideChangeTransitionEnd={(swiper) => alert(swiper.activeIndex)}
             loop={true}
-            className="offPlanmySwiper"
+            className="TvmySwiper"
         >
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
             <SwiperSlide>
-               <OffplanCard/>
+               <TvCard/>
             </SwiperSlide>
 
         </Swiper>
@@ -110,4 +110,4 @@ const SwiperType2A = () => {
   )
 }
 
-export default SwiperType2A
+export default SwiperTv

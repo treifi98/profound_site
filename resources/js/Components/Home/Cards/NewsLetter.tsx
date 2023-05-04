@@ -6,7 +6,7 @@ import Buttontype1 from '../Inputs/Buttontype1'
 
 const NewsLetter = () => {
   return (
-    <div className='w-[56.375rem] h-[8.9375rem] bg-[#E6EDED] border-[1px] border-[#DDE4E4] rounded-[0.480625rem] shadow-[-3.44865px_-3.44865px_5.17298px_#FFFFFF,3.44865px_3.44865px_5.17298px_#AEBBBD] flex justify-center items-center'>
+    <div className='w-[56.375rem] h-[8.9375rem] bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[0.480625rem] shadow-[-0.215540625rem_-0.215540625rem_0.32331125rem_#FFFFFF,0.215540625rem_0.215540625rem_0.32331125rem_#AEBBBD] flex justify-center items-center'>
         <div className='flex flex-col gap-[1.364375rem] justify-center items-center'>
             <div className=' text-[1.125rem] mx-[1.729375rem] text-grade'>
 

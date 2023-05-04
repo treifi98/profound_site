@@ -24,61 +24,58 @@ const SwiperDeveloper = () => {
         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Developers'} icon={devSec}/>
 
         <Swiper
-            slidesPerView={1}
-            // slidesPerGroupSkip={3}
-            spaceBetween={20}
+            // slidesPerView={1}
+            // // slidesPerGroupSkip={3}
+            // spaceBetween={20}
             breakpoints={{
                 810: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-                },
-                1500: {
                 slidesPerView: 4,
-                spaceBetween: 240,
+                // spaceBetween: 40,
                 }
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}
-            loop={true}
-            className="mySwiper"
+            // loop={true}
+            rewind = {true}
+            className="devmySwiper"
         >
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem] '>
                     <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem]'>
                     <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem]'>
                     <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem]'>
                     <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem]'>
                     <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem]'>
                     <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem]'>
                     <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] mx-[1.875rem]'>
+                <div className='mt-[3.3125rem] mb-[1.875rem]'>
                     <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
                 </div>
             </SwiperSlide>

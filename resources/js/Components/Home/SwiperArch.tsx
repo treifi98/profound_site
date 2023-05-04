@@ -24,7 +24,8 @@ import property from '../../../assets/props.svg'
 // import React, { useRef, useState } from "react";
 // Import Swiper React components
 // import { Swiper, SwiperSlide } from "swiper/react";
-import OriginalCard from './Cards/New/OriginalCard'
+// import OriginalCard from './Cards/New/OriginalCard'
+import ArchCard from './Cards/New/ArchCard'
 
 // Import Swiper styles
 import "swiper/css";
@@ -34,7 +35,7 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 // import "../../../assets/style.css";
 
-const SwiperType1B = () => {
+const SwiperArch = () => {
     const swiperRef = useRef(null);
     const [swiper, setSwiper] = useState<any>();
     const [swiperx, setSwiperx] = useState<any>(0);
@@ -59,7 +60,7 @@ const SwiperType1B = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Buying Properties in Dubai'} icon={property}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Natural living Properties'} icon={property}/>
 
         <Swiper
             //  slidesPerView={1}
@@ -67,24 +68,24 @@ const SwiperType1B = () => {
             //  spaceBetween={20}
              breakpoints={{
                  810: {
-                 slidesPerView: 4,
+                 slidesPerView: 2,
                 //  spaceBetween: 40,
                  }
              }}
 
              onSwiper={(swiper) => setSwiper(swiper)}
              loop={true}
-             className="originalCardmySwiper"
+             className="archCardmySwiper"
         >
 
            {
                 arr.map((a) => {
 
                     return (
-                        <SwiperSlide className='transition-all ' key={a}>
+                     <SwiperSlide className='transition-all ' key={a}>
 
-                            <OriginalCard/>
-                        </SwiperSlide>
+                        <ArchCard/>
+                    </SwiperSlide>
                 )})
            }
         </Swiper>
@@ -93,4 +94,4 @@ const SwiperType1B = () => {
   )
 }
 
-export default SwiperType1B
+export default SwiperArch

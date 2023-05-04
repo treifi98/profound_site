@@ -62,7 +62,7 @@ const OffplanCard = () => {
     }
 
     return (
-        <div className='flex justify-evenly items-center rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] w-[62.25rem] h-[37.0625rem] overflow-hidden m-[1.25rem] ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='flex justify-evenly items-center rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] w-[62.25rem] h-[37.0625rem] overflow-hidden my-[1.25rem] ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='w-[43.5625rem] h-[35.375rem] flex flex-col gap-[0.39rem] '>
                 <div className='relative w-[43.5625rem] h-[27.7725rem] rounded-[0.9375rem]  origin-bottom transition-all' ref={imageref}>
 
@@ -116,7 +116,7 @@ const OffplanCard = () => {
                     <SwiperSlide>
                         <NewCardImage src={offplanImage} rounded='0.9375'/>
                     </SwiperSlide>
-                
+
 
 
                 </Swiper>

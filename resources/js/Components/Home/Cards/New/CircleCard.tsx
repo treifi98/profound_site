@@ -148,16 +148,41 @@ const CircleCard = (props:Props) => {
                         </div>
                     </div>
                     <div className='grid grid-cols-4 w-[19.691875rem] flex-wrap h-[5.13625rem] ml-[-0.7rem] gap-[-0.008125rem]'>
-                        <Price scale='0.74'/>
-                        <Price scale='0.74'/>
-                        <Price scale='0.74'/>
-                        <Price scale='0.74'/>
+                    <div className='scale-[0.74]'>
+
+                        <Price/>
+                    </div>
+                    <div className='scale-[0.74]'>
+
+                        <Price/>
+                    </div>
+                    <div className='scale-[0.74]'>
+
+                        <Price/>
+                    </div>
+                    <div className='scale-[0.74]'>
+
+                        <Price/>
+                    </div>
                     </div>
                     <div className='grid grid-cols-4 w-[19.691875rem] flex-wrap h-[10.13625rem] mt-[0.5rem] ml-[-0.7rem] gap-[-0.008125rem]'>
-                        <Price scale='0.74'/>
-                        <Price scale='0.74'/>
-                        <Price scale='0.74'/>
-                        <Price scale='0.74'/>
+                        <div className='scale-[0.74]'>
+
+                            <Price/>
+                        </div>
+                        <div className='scale-[0.74]'>
+
+                            <Price/>
+                        </div>
+                        <div className='scale-[0.74]'>
+
+                            <Price/>
+                        </div>
+                        <div className='scale-[0.74]'>
+
+                            <Price/>
+                        </div>
+
                     </div>
                 </div>
             </div>

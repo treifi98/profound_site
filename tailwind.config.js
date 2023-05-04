@@ -224,7 +224,7 @@ module.exports = {
     theme: {
         extend: {
             screens: {
-                // 'xxl': '2255px',
+                'change_font': '1531px',
                 // => @media (min-width: 1280px) { ... }
               },
               backgroundImage: {

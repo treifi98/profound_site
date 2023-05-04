@@ -26,26 +26,25 @@ const SwiperType3A = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
+    <div className='mb-[2.0625rem]'>
+
         <BarCommonType2 handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text1={'Dubai water front '} text2={'Beach front properties'} icon={beachfront}/>
+    </div>
 
         <Swiper
-            slidesPerView={1}
-            // slidesPerGroupSkip={3}
-            spaceBetween={20}
+            // slidesPerView={1}
+            // // slidesPerGroupSkip={3}
+            // spaceBetween={20}
             breakpoints={{
                 810: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-                },
-                1500: {
-                slidesPerView: 1.4,
-                spaceBetween: 71,
-                },
+                slidesPerView: 3,
+                // spaceBetween: 40,
+                }
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}
             loop={true}
-            className="mySwiper"
+            className="circlemySwiper"
         >
             <SwiperSlide>
                 <CircleCard img={beatchFront}/>

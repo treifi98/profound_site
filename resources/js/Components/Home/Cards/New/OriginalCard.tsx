@@ -55,7 +55,7 @@ const OriginalCard = () => {
         imageref.current.style.transform = 'scale(1)'
     }
     return (
-        <div className='h-[43.1875rem] w-[26.285625rem] rounded-[0.90224375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.360898125rem_-0.360898125rem_0.72179375rem_0.180449375rem_#FFFFFF,0.360898125rem_0.360898125rem_0.72179375rem_#BABFBF] overflow-hidden' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='h-[43.1875rem] w-[26.285625rem] rounded-[0.90224375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.360898125rem_-0.360898125rem_0.72179375rem_0.180449375rem_#FFFFFF,0.360898125rem_0.360898125rem_0.72179375rem_#BABFBF] overflow-hidden my-[3.5rem]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='w-[24.480625rem] h-full mx-auto'>
 
                 <div className='w-full h-[19.368125rem] mt-[0.9025rem] relative transition-all origin-bottom' ref={imageref}>
@@ -155,28 +155,28 @@ const OriginalCard = () => {
                     </div>
                 </div>
                 <div className='w-full flex flex-wrap mt-[0.7025rem]'>
-                    <div className='w-[85px] scale-[0.96] h-[102px] mr-[1.075125rem]'>
+                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem]'>
                         <Price/>
                     </div>
-                    <div className='w-[85px] scale-[0.96] h-[102px] mr-[1.075125rem]'>
+                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem]'>
                         <Price/>
                     </div>
-                    <div className='w-[85px] scale-[0.96] h-[102px] mr-[1.075125rem]'>
+                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem]'>
                         <Price/>
                     </div>
-                    <div className='w-[85px] scale-[0.96] h-[102px]'>
+                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem]'>
                         <Price/>
                     </div>
-                    <div className='w-[85px] scale-[0.96] h-[102px] mr-[1.075125rem] mt-[0.6025rem]'>
+                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem] mt-[0.6025rem]'>
                         <Price/>
                     </div>
-                    <div className='w-[85px] scale-[0.96] h-[102px] mr-[1.075125rem] mt-[0.6025rem]'>
+                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem] mt-[0.6025rem]'>
                         <Price/>
                     </div>
-                    <div className='w-[85px] scale-[0.96] h-[102px] mr-[1.075125rem] mt-[0.6025rem]'>
+                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem] mt-[0.6025rem]'>
                         <Price/>
                     </div>
-                    <div className='w-[85px] h-[102px] mt-[0.6025rem] scale-[0.96]'>
+                    <div className='w-[5.3125rem] h-[6.375rem] mt-[0.6025rem] scale-[0.96]'>
                         <Price />
                     </div>
 

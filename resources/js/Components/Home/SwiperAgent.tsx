@@ -24,23 +24,19 @@ const SwiperAgent = () => {
         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Meet our team'} icon={small_logo}/>
 
         <Swiper
-            slidesPerView={1}
+            // slidesPerView={1}
             // slidesPerGroupSkip={3}
-            spaceBetween={20}
+            // spaceBetween={20}
             breakpoints={{
                 810: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-                },
-                1500: {
                 slidesPerView: 4,
-                spaceBetween: 150,
+                // spaceBetween: 40,
                 }
             }}
 
             onSwiper={(swiper) => setSwiper(swiper)}
             loop={true}
-            className="mySwiper"
+            className="agentmySwiper"
         >
             <SwiperSlide>
                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']}/>
