@@ -24,6 +24,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import MoreFilter from '@/Components/Home/FiltersAndSearch/MoreFilter'
 import Expandable from '@/Components/Home/FiltersAndSearch/Expandable'
 import SelectByCheck from '@/Components/Home/FiltersAndSearch/CoreFilters/SelectByCheck'
+import BuyCard from '@/Components/Home/Cards/New/BuyCard'
 // import Swiper, { Pagination } from "swiper";
 
 
@@ -61,6 +62,7 @@ import TvCard from '@/Components/Home/Cards/New/TvCard'
 import OriginalCard from '@/Components/Home/Cards/New/OriginalCard'
 import CircularLayout from '@/Components/Home/Cards/Common/CircularLayout'
 import OffplanCard from '@/Components/Home/Cards/New/OffplanCard'
+import PillRadio from '@/Components/Home/Cards/Common/PillRadio'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -124,9 +126,64 @@ const Test = () =>{
         {/* <CircleCard img={beatchFront}/> */}
         <CheckComponentGreen id='xx' on='on' off='off' />
     </div>
-    <div className='m-[100px]'>
+    <div className='m-[500px]'>
+        <PillRadio/>
 
+    </div>
+    <div className='m-[10rem]'>
+        <BuyCard/>
+    </div>
 
+    <div className='m-[10rem]'>
+    <MoreFilter lable='More filters' id='dd' >
+                        <Expandable lable='First one' id='tete'>
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dwrgd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            {/* <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },]} id='dwrgd'/> */}
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'wefd' },{ label:'one',on:'one',off:'f',id:'fed' },{ label:'one',on:'one',off:'f',id:'dewf' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dgrwd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dwrgd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            {/* <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },]} id='dwrgd'/> */}
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'wefd' },{ label:'one',on:'one',off:'f',id:'fed' },{ label:'one',on:'one',off:'f',id:'dewf' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dgrwd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dwrgd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            {/* <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },]} id='dwrgd'/> */}
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'wefd' },{ label:'one',on:'one',off:'f',id:'fed' },{ label:'one',on:'one',off:'f',id:'dewf' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dgrwd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            {/* <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },]} id='dwrgd'/> */}
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'wefd' },{ label:'one',on:'one',off:'f',id:'fed' },{ label:'one',on:'one',off:'f',id:'dewf' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dgrwd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            {/* <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },]} id='dwrgd'/> */}
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'wefd' },{ label:'one',on:'one',off:'f',id:'fed' },{ label:'one',on:'one',off:'f',id:'dewf' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dgrwd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            {/* <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },]} id='dwrgd'/> */}
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'wefd' },{ label:'one',on:'one',off:'f',id:'fed' },{ label:'one',on:'one',off:'f',id:'dewf' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dgrwd'/>
+
+                        </Expandable>
+                        <Expandable lable='First one' id='tete'>
+                            {/* <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' },]} id='dwrgd'/> */}
+                            <SelectByCheck options={[{ label:'one',on:'one',off:'f',id:'wefd' },{ label:'one',on:'one',off:'f',id:'fed' },{ label:'one',on:'one',off:'f',id:'dewf' },{label:'one',on:'one',off:'f',id:'dcd' },{ label:'one',on:'one',off:'f',id:'dwf' },{ label:'one',on:'one',off:'f',id:'dfew' }]} id='dgrwd'/>
+
+                        </Expandable>
+                    </MoreFilter>
     </div>
 
     </>

@@ -129,6 +129,12 @@ div.select_component::-moz-scrollbar-track {
 /* .swiper-slide{
     margin-right: 2.8125rem;
 } */
+.newsmySwiper .swiper-slide{
+    margin-right: 2.86rem;
+    /* padding-left: 1.5625rem; */
+    /* margin-right: -2.8125rem; */
+
+}
 .offPlanmySwiper .swiper-slide{
     /* margin-right: 2.25rem; */
     /* padding-left: 1.5625rem; */

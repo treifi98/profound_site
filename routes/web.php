@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BuyController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -40,5 +41,6 @@ Route::get('/test',function(){
     return Inertia::render('Test');
 });
 Route::get('/',[HomeController::class,'index']);
+Route::get('buy',[BuyController::class,'index']);
 
 require __DIR__.'/auth.php';

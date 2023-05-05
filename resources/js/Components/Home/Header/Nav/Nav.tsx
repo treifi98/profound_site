@@ -4,7 +4,7 @@ import Lang from '../Lang/Lang'
 const Nav = () => {
   return (
     <div className='flex justify-center gap-[1.25rem] items-center w-auto mr-[1.875rem]'>
-        <NavElement key={1} id={1} link="/" text="Buy"/>
+        <NavElement key={1} id={1} link="/buy" text="Buy"/>
         <NavElement key={2} id={2} link="/" text="Rent"/>
         <NavElement key={3} id={3} link="/" text="Projects"/>
         <NavElement key={4} id={4} link="/" text="Areas"/>

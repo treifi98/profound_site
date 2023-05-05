@@ -53,7 +53,7 @@ const TvCard = () => {
         imageref.current.style.transform = 'scale(1)'
     }
     return (
-        <div className='w-[54.1875rem] h-[39.625rem] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] rounded-[0.9375rem] overflow-hidden' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='w-[54.1875rem] h-[39.625rem] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] rounded-[0.9375rem] overflow-hidden my-[1rem]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='w-[52.5625rem] h-[22.8125rem] mx-auto mt-[0.9375rem] overflow-hidden relative origin-bottom transition-all' ref={imageref}>
                 <Swiper
                     // pagination={pagination}

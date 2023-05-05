@@ -62,7 +62,7 @@ const CircleCard = (props:Props) => {
 
     }
     return (
-        <div className='w-[39.25rem] h-[39.25rem] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] rounded-[47.302125rem_47.302125rem_0.46285375rem_47.302125rem] shadow-[-0.258011875rem_-0.258011875rem_0.51602375rem_0.129005625rem_#FFFFFF,0.258011875rem_0.258011875rem_0.51602375rem_#BABFBF] flex justify-center items-center relative overflow-hidden ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={innerNavigation}>
+        <div className='w-[39.25rem] h-[39.25rem] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] rounded-[47.302125rem_47.302125rem_0.46285375rem_47.302125rem] shadow-[-0.258011875rem_-0.258011875rem_0.51602375rem_0.129005625rem_#FFFFFF,0.258011875rem_0.258011875rem_0.51602375rem_#BABFBF] flex justify-center items-center relative overflow-hidden my-[0.625rem] ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={innerNavigation}>
 
             <div className='w-[37.1875rem] h-[37.4375rem] transition-all duration-[0.3s]  origin-center relative hovercontainer '  ref={scalableImage}>
             <Swiper

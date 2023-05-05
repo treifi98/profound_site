@@ -62,7 +62,7 @@ const ArchCard = () => {
     }
 
     return (
-        <div className='mt-[1.875rem] h-[38.128125rem] w-[45.045625rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.326608125rem_-0.326608125rem_0.4899125rem_#FFFFFF,0.257279375rem_0.257279375rem_0.51455875rem_#BABFBF] flex flex-col overflow-hidden' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className='mt-[1.875rem] h-[38.128125rem] w-[45.045625rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.326608125rem_-0.326608125rem_0.4899125rem_#FFFFFF,0.257279375rem_0.257279375rem_0.51455875rem_#BABFBF] flex flex-col overflow-hidden my-[0.625rem]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='w-[43.055rem] h-[25rem] rounded-[47.1676875rem_47.1676875rem_0px_0px] mt-[0.92rem] mx-auto mb-[0.92rem] transition-all z-[1] overflow-hidden relative' ref={imageref}>
             <Swiper
                 // pagination={pagination}

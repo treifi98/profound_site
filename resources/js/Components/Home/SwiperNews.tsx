@@ -36,7 +36,7 @@ const SwiperNews = () => {
             // loop={true}
             rewind = {true}
 
-            className="mySwiper"
+            className="newsmySwiper"
         >
             <SwiperSlide>
                 <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
