@@ -82,7 +82,7 @@ const Test = () =>{
         <Price/>
     </div>
     <div className='m-[60px]'>
-        <Bed/>
+        <Bed rooms={['Studio','One Bedroom','Tow Bedrooms','Penthouses']}/>
     </div>
     <div className='m-[60px]'>
         <Size/>
@@ -94,10 +94,10 @@ const Test = () =>{
         <Developer/>
     </div>
     <div className='m-[200px]'>
-        <CompleationDate/>
+        <CompleationDate date='Q1 / 2024 '/>
     </div>
     <div className='m-[400px]'>
-        <Agent/>
+        <Agent name='Nassif' speciality='Downtown' langs={['Arabic', 'English']}/>
     </div>
     <div className='m-[400px]'>
         <Contact/>
