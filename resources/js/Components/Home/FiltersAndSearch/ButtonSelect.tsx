@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 import arrow from '../../../../assets/arrow_down.svg'
 import useComponentVisible from '@/Hooks/useComponentVisible'
 
+import InElementSeperator from '../Cards/Common/InElementSeperator'
+
 
 interface Props{
     options:{lable:string,value:string}[],
@@ -89,8 +91,12 @@ const ButtonSelect = (props:Props) => {
 
             </div>
         </div>
-        <div className=' w-[3.06rem] group-hover:shadow-[inset_-0.25rem_-0.25rem_0.3125rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] h-[2.25rem] bg-[#E6EDED] flex justify-center items-center shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] border-l-[0.0625rem] border-[#CAD4D5] rounded-[0rem_3.13rem_3.13rem_0rem]' ref={selectHandleRef}>
+        <div className=' relative w-[3.06rem] group-hover:shadow-[inset_-0.25rem_-0.25rem_0.3125rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] h-[2.25rem] bg-[#E6EDED] flex justify-center items-center shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] rounded-[0rem_3.13rem_3.13rem_0rem]' ref={selectHandleRef}>
             <img src={arrow} alt=""  className='w-[0.66rem] h-[0.65rem] transition-all' ref={arrowRef}/>
+            <div className='absolute left-0 top-0'>
+
+                <InElementSeperator/>
+            </div>
         </div>
         {
             (openState && isComponentVisible) && (

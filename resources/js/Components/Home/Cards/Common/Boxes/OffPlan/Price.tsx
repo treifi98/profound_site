@@ -2,20 +2,32 @@ import React from 'react'
 import pricetag from '../../../../../../../assets/price_tag_og.svg'
 
 interface Props{
-    scale?:string
+    scale?:string,
+    mainWidth?:string,
+    mainHeight?:string,
+    imgWidth?:string,
+    imgHeight?:string,
+    loweSectionHeight?:string,
+    textSize?:string,
+    lowerTextSize?:string,
+    imgMT?:string,
+    flippedContent?: {bes:string,price:string}[],
+    flippedTextSize?:string,
+    aedSize?:string,
+    flippedSize?:string
 }
 const Price = (props:Props) => {
   return (
     <div >
 
-        <div className='group w-[5.3125rem] h-[6.375rem] relative cursor-pointer box-content ' >
+        <div className='group w-[5.3125rem] h-[6.375rem] relative cursor-pointer  shadow-[inset_-4px_0px_5px_#1E6970,inset_4px_4px_5px_rgba(0,0,0,0.38)] ' >
             <div className='w-[5.3125rem] h-[6.375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.3125rem] shadow-[-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5] group-hover:shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5] duration-[0.1s]'>
                 <div className='flex flex-col justify-between items-center h-full w-full group-hover:opacity-0 duration-[0.1s]'>
 
                     <div className='w-[1.95125rem] h-[1.95125rem] mt-[0.375rem]'>
                         <img src={pricetag} alt="" className='w-[1.95125rem] h-[1.95125rem] object-cover object-center'/>
                     </div>
-                    <div className='text-[0.75rem] font-[600] text-grade leading-[0.87625rem] text-center'>
+                        <div className='text-[0.75rem] font-[600]   leading-[0.87625rem] text-center'>
                         Price starting
                         <br/>
                         From AED

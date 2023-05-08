@@ -7,6 +7,16 @@
 @tailwind utilities;
 
 
+@layer components {
+    .cardShadow {
+        @apply shadow-[-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5];
+    }
+    .cardShadowHoverd {
+        @apply shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5];
+    }
+  }
+
+
 @font-face {
     font-family: "nova";
     src: url("../assets/fonts/proxima_nova_light.otf");

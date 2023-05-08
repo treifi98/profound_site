@@ -1,11 +1,28 @@
 import React from 'react'
 
 import brochureIcon from '../../../../../assets/brochure.svg'
+import InElementSeperator from './InElementSeperator'
 
-const Brochure = () => {
+interface Props{
+    mainWidth?:string,
+    mainHeight?:string,
+    imgWidth?:string,
+    imgHeight?:string,
+    imgWrapperWidth?:string,
+    seperatorWidth?:string,
+    seperatorML?:string,
+    imgMT?:string,
+    restWidth?:string,
+    textSize?:string
+}
+const Brochure = (props:Props) => {
     return (
-        <div className='w-full h-full rounded-full bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] cursor-pointer hover:shadow-[inset_-0.25rem_-0.25rem_0.5rem_#FFFFFF,inset_0.25rem_0.25rem_0.375rem_#B6C3C5] flex justify-center items-center'>
-            <img src={brochureIcon} alt="" className='object-contain mt-[0.1rem] w-[1.5575rem] h-[1.318125rem]'/>
+        <div className='flex items-center' style={{ width: props.mainWidth? props.mainWidth: '7.4375rem',height: props.mainHeight? props.mainHeight: '1.75rem' }}>
+            <img src={brochureIcon} alt="" className='object-contain' style={{ width: props.imgWidth? props.imgWidth: '1.266875rem', height: props.imgHeight? props.imgHeight: '1.046875rem', marginTop:props.imgMT? props.imgMT: '0.375rem' }}/>
+            <div>
+
+                <InElementSeperator height='1.75rem' width="0.25rem"/>
+            </div>
         </div>
     )
 }

@@ -55,6 +55,7 @@ const OffplanCard = () => {
     const imageref = useRef(null)
     const handleMouseEnter = () => {
         imageref.current.style.transform = 'scale(1.05)'
+        // imageref.current.style.borderRadius = 'none'
         // alert('d')
     }
     const handleMouseLeave = () => {
@@ -166,15 +167,15 @@ const OffplanCard = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-[1.125rem] mt-[0.65rem]'>
-                        <div className='w-[2.275rem] h-[1.3rem]'>
+                        <div className='w-[1.75rem] h-[1.75rem]'>
                             <NewSocial img={shareIcon} />
 
                         </div>
-                        <div className='w-[2.275rem] h-[1.3rem]'>
+                        <div className='w-[1.75rem] h-[1.75rem]'>
                             <NewSocial img={viewIcon} />
 
                         </div>
-                        <div className='w-[2.275rem] h-[1.3rem]'>
+                        <div className='w-[1.75rem] h-[1.75rem]'>
                             <NewSocial img={favIcon} />
                         </div>
                     </div>
@@ -192,7 +193,7 @@ const OffplanCard = () => {
 
                     <Price/>
                 </div>
-                <div className='mb-[2.5125rem] scale-[1.186] mr-[1.9875rem]'>
+                <div className='mb-[2.5125rem] scale-[1.186] mr-[1.9875rem] hover:scale-[1.5] z-[99999999] shadow-[inset_-4px_0px_5px_#1E6970,inset_4px_4px_5px_rgba(0,0,0,0.38)]'>
 
                     <Price/>
                 </div>

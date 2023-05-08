@@ -25,6 +25,9 @@ import MoreFilter from '@/Components/Home/FiltersAndSearch/MoreFilter'
 import Expandable from '@/Components/Home/FiltersAndSearch/Expandable'
 import SelectByCheck from '@/Components/Home/FiltersAndSearch/CoreFilters/SelectByCheck'
 import BuyCard from '@/Components/Home/Cards/New/BuyCard'
+import BoxMaster from '@/Components/Home/Cards/Common/Boxes/New/BoxMaster'
+import priceIcon from '../../assets/price_tag_og.svg'
+import Brochure from '@/Components/Home/Cards/Common/Brochure'
 // import Swiper, { Pagination } from "swiper";
 
 
@@ -184,6 +187,68 @@ const Test = () =>{
 
                         </Expandable>
                     </MoreFilter>
+    </div>
+
+    <div className='m-[200px]'>
+        <BoxMaster BoxType='standerd' flipType='zibra' boxArgs={
+            {
+                img:priceIcon,
+                text:'Price starting From AED',
+                lowerText:'1,125,0000'
+            }
+        }
+        flipArgs={{
+            content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+            isPrice:true
+         }}
+        />
+    </div>
+    <div className='m-[400px]'>
+        <BoxMaster BoxType='standerd' flipType='paymentPlan' boxArgs={
+            {
+                img:priceIcon,
+                text:'Price starting From AED',
+                lowerText:'1,125,0000'
+            }
+        }
+        flipArgs={{
+            content:[{installment:'dowen payment',precentage:'20%'},{installment:"one",precentage:'20%'},{installment:"on handover",precentage:'20%'}],
+            isPrice:true
+         }}
+        />
+    </div>
+    <div className='m-[400px]'>
+        <BoxMaster BoxType='standerd' flipType='simpleFlip' boxArgs={
+            {
+                img:priceIcon,
+                text:'Price starting From AED',
+                lowerText:'1,125,0000'
+            }
+        }
+        flipArgs={{
+            text:"The handover of the properties",
+            lowerText: 'Q1 / 2024 '
+        }}
+        />
+    </div>
+    <div className='m-[400px]'>
+        <BoxMaster BoxType='standerd' flipType='split' boxArgs={
+            {
+                img:priceIcon,
+                text:'Price starting From AED',
+                lowerText:'1,125,0000'
+            }
+        }
+        flipArgs={{
+            text1:"Downtown Specialist ",
+            text2:"Speaking Arabic, English",
+            lowerText: 'Nassif'
+        }}
+        />
+    </div>
+
+    <div className='m-[200px]'>
+        <Brochure/>
     </div>
 
     </>
