@@ -10,12 +10,14 @@ import CardImage from '@/Components/Home/Cards/Common/CardImage'
 import card_back from '../../assets/cardBack.png'
 import map_icon from '../../assets/map_icon.svg'
 import bed_icon from '../../assets/bed.svg'
-import size_icon from '../../assets/size_icon.svg'
+import size_icon from '../../assets/size.svg'
 import emar from '../../assets/emar.svg'
 import Type1A from '@/Components/Home/Cards/Type1A'
 import Type1B from '@/Components/Home/Cards/Type1B'
 import newsImg from '../../assets/news.png'
 import ArchCard from '@/Components/Home/Cards/New/ArchCard'
+import paymentIcon from '../../assets/paymentIcon.svg'
+import compleationIcon from '../../assets/compleationIcon.svg'
 
 import { useRef, useEffect } from 'react';
 import 'swiper/css';
@@ -60,7 +62,7 @@ import CompleationDate from '@/Components/Home/Cards/Common/Boxes/OffPlan/Comple
 import Agent from '@/Components/Home/Cards/Common/Boxes/OffPlan/Agent'
 import Contact from '@/Components/Home/Cards/Common/Boxes/OffPlan/Contact'
 import CircleCard from '@/Components/Home/Cards/New/CircleCard'
-import beatchFront from '../../assets/beachFront.png'
+import beatchFront from '../../assets/Newcircle.png'
 import TvCard from '@/Components/Home/Cards/New/TvCard'
 import OriginalCard from '@/Components/Home/Cards/New/OriginalCard'
 import CircularLayout from '@/Components/Home/Cards/Common/CircularLayout'
@@ -99,31 +101,15 @@ const Test = () =>{
     <div className='m-[200px]'>
         <CompleationDate date='Q1 / 2024 '/>
     </div>
-    <div className='m-[400px]'>
+    {/* <div className='m-[400px]'>
         <Agent name='Nassif' speciality='Downtown' langs={['Arabic', 'English']}/>
-    </div>
+    </div> */}
     <div className='m-[400px]'>
         <Contact/>
     </div>
     <div className='m-[400px]'>
         {/* <CircleCard img={beatchFront}/> */}
-        <CircleCard img={beatchFront}/>
-    </div>
-    <div className='m-[400px]'>
         {/* <CircleCard img={beatchFront}/> */}
-        <OriginalCard />
-    </div>
-    <div className='m-[400px]'>
-        {/* <CircleCard img={beatchFront}/> */}
-        <TvCard />
-    </div>
-    <div className='m-[400px]'>
-        {/* <CircleCard img={beatchFront}/> */}
-        <ArchCard />
-    </div>
-    <div className='m-[400px]'>
-        {/* <CircleCard img={beatchFront}/> */}
-        <OffplanCard />
     </div>
     <div className='m-[400px]'>
         {/* <CircleCard img={beatchFront}/> */}
@@ -246,9 +232,170 @@ const Test = () =>{
         }}
         />
     </div>
+    <div className='m-[400px]'>
+        <BoxMaster BoxType='cornerd' flipType='split' boxArgs={
+            {
+                img:priceIcon,
+                text:'Price starting From ddAED',
+                lowerText:'1,125,0000'
+            }
+        }
+        flipArgs={{
+            text1:"Downtown Specialist ",
+            text2:"Speaking Arabic, English",
+            lowerText: 'Nassif'
+        }}
+        />
+    </div>
 
-    <div className='m-[200px]'>
+    <div className='m-[400px]'>
         <Brochure/>
+    </div>
+    <div className='m-[400px]'>
+        <CircleCard img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+            args:{
+                img:priceIcon,
+                text:'Price starting From AED',
+                lowerText:'1,125,0000',
+                textMT:'0.295625rem',
+                textMB:'0.2725rem',
+                lineHeight:'1.06375rem',
+                imgWidth:'2.284375rem',
+                imgHeight:'2.280625rem',
+                imgMT:'0.438125rem',
+                textSize:'0.876875rem',
+                lowerSectionHeight:'1.9725rem',
+                lowerTextSize:'1.02375rem',
+                textWidth:'5.38625rem',
+
+            },
+            flipArgs:{
+                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                isPrice:true,
+
+
+            }
+        }}
+        bedBox={{
+            args:{
+                img:bed_icon,
+                text:'Number of Bedrooms',
+                lowerText:'1,2,3,4,5,6',
+                imgWidth:'2.534375rem',
+                imgHeight:'1.90125rem',
+                imgMT:'0.584375rem',
+                textMT:'0.47125rem',
+                textMB:'0.330625rem',
+                lineHeight:'1.095625rem',
+                textSize:'0.876875rem',
+                lowerSectionHeight:'1.9725rem',
+                lowerTextSize:'1.02375rem',
+                textWidth:'5.38625rem',
+
+            },
+            flipArgs:{
+                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                isPrice:false,
+
+
+            }
+        }}
+        sizeBox={{
+            args:{
+                img:size_icon,
+                text:'Area in Sq.ft (Min-Max)',
+                lowerText:'881 - 4590',
+                imgWidth:'2.51625rem',
+                imgHeight:'2.29625rem',
+                imgMT:'0.438125rem',
+                lineHeight:'1.06375rem',
+                textSize:'0.876875rem',
+                lowerSectionHeight:'1.9725rem',
+                lowerTextSize:'1.02375rem',
+                textWidth:'5.38625rem',
+
+            },
+            flipArgs:{
+                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                isPrice:false,
+
+
+            }
+        }}
+        paymentBox={{
+            args:{
+                img:paymentIcon,
+                text:'Payment Plan',
+                lowerText:'60% / 40%',
+                imgWidth:'2.51625rem',
+                imgHeight:'2.29625rem',
+                imgMT:'0.438125rem',
+                lineHeight:'1.06375rem',
+                textSize:'0.876875rem',
+                lowerSectionHeight:'1.9725rem',
+                lowerTextSize:'1.02375rem',
+                textWidth:'5.38625rem',
+
+
+            },
+            flipArgs:{
+                text:'The handover of the properties',
+                lowerText:'Q1 / 2024 ',
+                lowerSectionHeight:'1.9725rem',
+                textHeight:'3.5rem',
+                textSize:'0.8776875rem'
+
+
+            }
+        }}
+        compleationBox={{
+            args:{
+                img:compleationIcon,
+                text:'Completion Date',
+                lowerText:'60% / 40%',
+                imgWidth:'2.19125rem',
+                imgHeight:'2.19125rem',
+                imgMT:'0.38rem',
+                textMB:'0.2525rem',
+                textMT:'0.496875rem',
+                lineHeight:'1.0675rem',
+                textSize:'0.876875rem',
+                lowerSectionHeight:'1.9725rem',
+                lowerTextSize:'1.02375rem',
+                textWidth:'5.38625rem',
+
+
+            },
+            flipArgs:{
+                text:'The handover of the properties',
+                lowerText:'Q1 / 2024 ',
+                lowerSectionHeight:'1.9725rem',
+                textHeight:'3.5rem',
+                textSize:'0.8776875rem'
+
+
+            }
+        }}
+        agentBox={{
+            Args:{
+                langs:['Arabic', 'English',],
+                name:'Nassif',
+                speciality:'Downtown',
+                imgWrapperWidth:'5.1825rem',
+                imgWrapperHeight:'4.45625rem',
+                img1Width:'4.894375rem',
+                img1Height:'4.16375rem',
+                img2Width:'4.748125rem',
+                img2Height:'4.16375rem',
+                agentSectionHeight:'1.9725rem',
+                lineHeight:'1.0675rem',
+
+            }
+         }}
+        />
+
+
+
     </div>
 
     </>

@@ -36,6 +36,13 @@ const BoxMaster = (props:Props) => {
                 }
             } flipArgs={props.flipArgs}/>
         }
+        else if(props.BoxType == 'cornerd') {
+            Box = <CornerdBox flipComp = { flip} Args={
+                {
+                    ...props.boxArgs
+                }
+            } flipArgs={props.flipArgs}/>
+        }
         return Box
     }
 
