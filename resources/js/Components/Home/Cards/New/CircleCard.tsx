@@ -9,6 +9,7 @@ import SliderPaginationcircle from '../Common/SliderPaginationcircle';
 import Brochure from '../Common/Brochure';
 import BoxMaster from '../Common/Boxes/New/BoxMaster';
 import Agent from '../Common/Boxes/OffPlan/Agent';
+import Contact from '../Common/Boxes/OffPlan/Contact';
 
 import NewCardImage from '../Common/NewCardImage'
 import NewSocial from '../Common/NewSocial';
@@ -446,26 +447,24 @@ const CircleCard = (props:Props) => {
                             }
                         }
                     />
-                    <BoxMaster
-                        BoxType='standerd'
-                        flipType='zibra'
-                        boxArgs={
-                            {
-                                mainHeight:props.boxHeight?props.boxHeight:'7.45125rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'6.209375rem',
-                                ...props.priceBox.args
 
-                            }
-                        }
-                        flipArgs={
-                            {
-
-                                mainHeight:props.boxHeight?props.boxHeight:'7.45125rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'6.209375rem',
-                                ...props.priceBox.flipArgs
-                            }
-                        }
-                    />
+                        <Contact
+                            mainHeight={props.boxHeight?props.boxHeight:'7.45125rem'}
+                            mainWidth={props.boxWidth?props.boxWidth:'6.209375rem'}
+                            lowerSectionHeight='1.9725rem'
+                            boxWidth='2.19125rem'
+                            boxHeight='1.82625rem'
+                            videoWidth='1.026875rem'
+                            videoHeight='0.57375rem'
+                            wasupHeight='1.11875rem'
+                            wasupWidth='1.11875rem'
+                            phoneHeight='0.98rem'
+                            phoneWidth='0.98rem'
+                            emailWidth='0.945rem'
+                            emailHeight='0.664375rem'
+                            boxMB='0.6575rem'
+                            boxMR='0.584375rem'
+                        />
                     <div>
                         <Agent
                             Args={
