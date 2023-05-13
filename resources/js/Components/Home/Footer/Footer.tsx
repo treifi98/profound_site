@@ -155,28 +155,28 @@ const Footer = () => {
                     </div>
                     <div className='w-[49.8125rem] h-[3.4375rem] mt-[3.125rem] flex gap-[3.1875rem]'>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={phoneIcon} imgHeight='1.5625' imgWidth='1.5625'/>
+                            <ActionCircle imgSrc={phoneIcon} imgHeight='1.354375' imgWidth='1.354375'/>
                         </div>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={WhatsAppIconFooter} imgHeight='1.875' imgWidth='1.875'/>
+                            <ActionCircle imgSrc={WhatsAppIconFooter} imgHeight='1.625' imgWidth='1.625'/>
                         </div>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={emailIconFooter} imgHeight='1.12875' imgWidth='1.60625'/>
+                            <ActionCircle imgSrc={emailIconFooter} imgHeight='0.978125' imgWidth='1.391875'/>
                         </div>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={videoIconFooter} imgHeight='1' imgWidth='1.75'/>
+                            <ActionCircle imgSrc={videoIconFooter} imgHeight='0.866875' imgWidth='1.516875'/>
                         </div>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={facebookIconFooter} imgHeight='1.875' imgWidth='1.875'/>
+                            <ActionCircle imgSrc={facebookIconFooter} imgHeight='1.625' imgWidth='1.625'/>
                         </div>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={twitterIconFooter} imgHeight='1.875' imgWidth='1.875'/>
+                            <ActionCircle imgSrc={twitterIconFooter} imgHeight='1.625' imgWidth='1.625'/>
                         </div>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={instagramIconFooter} imgHeight='1.875' imgWidth='1.875'/>
+                            <ActionCircle imgSrc={instagramIconFooter} imgHeight='1.625' imgWidth='1.625'/>
                         </div>
                         <div className='w-[3.4375rem] h-[3.4375rem]'>
-                            <ActionCircle imgSrc={linkedinIconfooter} imgHeight='1.875' imgWidth='1.875'/>
+                            <ActionCircle imgSrc={linkedinIconfooter} imgHeight='1.625' imgWidth='1.625'/>
                         </div>
                     </div>
                 </div>

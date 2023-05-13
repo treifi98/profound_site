@@ -7,10 +7,11 @@ import "swiper/css/pagination";
 import card_image from '../../../../../assets/cardhover.png'
 import arrow_right from '../../../../../assets/arrow_right.svg'
 import arrow_left from '../../../../../assets/arrow_left.svg'
+import HoverCardProject from '../../Cards/HoverCardPropject';
 
 
 
-const OneCardSwiper = () => {
+const OneCardSwiperProject = () => {
     const [swiper, setSwiper] = useState<any>();
     const handleNext = () => {
         swiper.slideNext()
@@ -46,16 +47,16 @@ const OneCardSwiper = () => {
             className="mySwiper w-[19.9375rem]"
         >
                 <SwiperSlide>
-                    <HoverCardProperty img={card_image}/>
+                    <HoverCardProject img={card_image}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <HoverCardProperty img={card_image}/>
+                    <HoverCardProject img={card_image}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <HoverCardProperty img={card_image}/>
+                    <HoverCardProject img={card_image}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <HoverCardProperty img={card_image}/>
+                    <HoverCardProject img={card_image}/>
                 </SwiperSlide>
 
 
@@ -71,4 +72,4 @@ const OneCardSwiper = () => {
     )
 }
 
-export default OneCardSwiper
+export default OneCardSwiperProject

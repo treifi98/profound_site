@@ -20,6 +20,7 @@ import hoauseIcon from '../../../../../assets/houseService.svg'
 import moneyHouse from '../../../../../assets/moneyHouse.svg'
 import websiteService from '../../../../../assets/websiteService.svg'
 import homeService from '../../../../../assets/homeService.svg'
+import OneCardSwiperProject from './OneCardSwiperProject'
 
 const NavHoverCoordinator = ({id}) => {
     let elmnt = <div></div>
@@ -82,7 +83,7 @@ const NavHoverCoordinator = ({id}) => {
                 {/* <FiltersContainer/> */}
                 <div className='w-[22.4375rem] flex justify-center '>
 
-                    <OneCardSwiper/>
+                    <OneCardSwiperProject/>
                 </div>
                 <InhoverLinks/>
             </div>
@@ -110,7 +111,7 @@ const NavHoverCoordinator = ({id}) => {
                     <MenueChild icon={hauseIcon} title1={'DUBAI REAL ESTATE'} title2='DEVELOPERS' text="There are several reputable real estate developers in Dubai, with various specializations, project portfolios, and expertise. To select a developer, factors such as design styles, development strategies, construction quality, customer service, and project timelines must be considered" button='Access now' mainHeight='19.3125rem' mainWidth='30rem' textWidth='28.5625rem' textML='1.4375rem' mainTitleWidth='17.4375rem' mainTitileML='5.4375rem' buttonMT='0.05rem'/>
                 </div>
                 {/* <FiltersContainer/> */}
-                <div className='w-[59.1875rem] flex justify-end h-[22.060625rem]'>
+                <div className='w-[54.1875rem] flex justify-end h-[22.060625rem]'>
                     {/* <div className=' scale-[0.655]'> */}
                         <SwiperDeveloperSmall/>
                     {/* </div> */}

@@ -55,7 +55,7 @@ body{
 }
 .mySwiper{
     background-color: #E6EDED;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     overflow: hidden;
     box-sizing: border-box;
     /* height: 200%; */
@@ -140,7 +140,7 @@ div.select_component::-moz-scrollbar-track {
     margin-right: 2.8125rem;
 } */
 .newsmySwiper .swiper-slide{
-    margin-right: 2.86rem;
+    margin-right: 3.125rem;
     /* padding-left: 1.5625rem; */
     /* margin-right: -2.8125rem; */
 
@@ -149,23 +149,78 @@ div.select_component::-moz-scrollbar-track {
     /* margin-right: 2.25rem; */
     /* padding-left: 1.5625rem; */
     /* margin-right: -2.8125rem; */
+    /* margin-right: -1rem; */
+    /* margin-left: -2rem; */
 
 }
-.circlemySwiper .swiper-slide{
-    margin-right: 9.5rem;
-    padding-left: 1.5625rem;
+.offPlanmySwiper .swiper-slide-active{
+    margin-right: 0.25rem;
+    margin-left: -1.25rem;
+    /* width: max-content !important; */
+    /* padding-left: 1.5625rem; */
+    /* margin-right: -2.8125rem; */
+    /* margin-right: -1rem;
+    margin-left: -5rem; */
+    /* margin-left: -2rem; */
+
 }
-.TvmySwiper .swiper-slide{
-    margin-right: 0.125rem;
+.offPlanmySwiper .mySwiperxxinnerofplanwsiper .swiper-slide-active{
+
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    /* width: auto; */
+
+}
+.circlemySwiper .swiper-slide-next{
+    /* margin-right: 9.5rem;
+    padding-left: 1.5625rem; */
+    transform-origin: bottom;
+}
+.circlemySwiper .swiper-slide-active{
+    /* margin-right: 9.5rem;
+    padding-left: 1.5625rem; */
+    /* transform-origin: bottom; */
+    /* transform: scale(1) !important; */
+    margin-left: 1.375rem;
+}
+.mySwipercircleCardImages .swiper-slide-active{
+    margin-left: 0rem;
+}
+.TvmySwiper .swiper-slide-active{
+    /* margin-right: 3.125rem; */
+    margin-left: -2.225rem;
     /* padding-left: 0.0375rem; */
 }
-.archCardmySwiper .swiper-slide{
-    margin-right: 0.614375rem;
-    padding-left: 1.0375rem;
+.tvImageSwiperInternal .swiper-slide-active{
+    margin-left: 0rem;
+}
+.devsmallswiper .swiper-slide{
+    /* margin-right: 0.35rem; */
+}
+.archCardmySwiper .swiper-slide-active{
+    /* margin-right: 0.614375rem;
+    padding-left: 1.0375rem; */
+    margin-left: 1.375rem;
+}
+.mySwiperArchCardImages .swiper-slide-active{
+    /* margin-right: 0.614375rem;
+    padding-left: 1.0375rem; */
+    margin-left: 0rem;
+}
+.archCardmySwiper .swiper-slide-next{
+    /* margin-right: 0.614375rem;
+    padding-left: 1.0375rem; */
+    transform-origin: bottom;
 }
 .originalCardmySwiper .swiper-slide{
-    margin-right: 5.0075rem;
-    padding-left: 2.9375rem;
+    /* margin-right: 5.0075rem;
+    padding-left: 2.9375rem; */
+    margin-right: 2.839375rem;
+    margin-left: 1.839375rem;
+}
+
+.originalimageswiper .swiper-slide{
+    margin: 0rem;
 }
 .devmySwiper .swiper-slide{
     margin-right: 3.75rem;
@@ -190,7 +245,28 @@ div.select_component::-moz-scrollbar-track {
     /* padding: 2rem; */
 }
 .hovercontainer:hover .swiper-pagination-horizontal{
-    transform: scale(1) !important;
+    /* transform: scale(1) !important; */
     height: min-content;
     transition: all 0.2s ease-in-out;
+}
+
+
+.swiper-slide-active
+{
+    /* transform: scale(1) !important; */
+}
+
+.imf{
+    /* width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%); */
+}
+
+.simpleSwiper .swiper-slide{
+    /* margin-right: 1.8125rem; */
 }

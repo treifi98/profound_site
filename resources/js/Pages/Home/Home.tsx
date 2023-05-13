@@ -47,27 +47,29 @@ const Home = () => {
 
         </div>
 
-        <div className='w-full mt-[0.4375rem]'>
+        <div className='w-full mt-[0rem]'>
 
             <SwiperType2A/>
         </div>
+        <div className='w-full mt-[0rem]'>
 
-        <div className='w-full mt-[2.5rem]'>
             <SwiperType3A/>
         </div>
-        <div className='mt-[2.125rem] w-full  overflow-visible'>
+        <div className='w-full mt-[0rem]'>
 
             <SwiperTv/>
         </div>
-        <div className='mt-[2.125rem] w-full  overflow-visible'>
+        <div className='w-full mt-[0rem]'>
 
             <SwiperArch/>
         </div>
-        <div className='mt-[2.125rem]'>
+        <div className='w-full mt-[0rem]'>
 
             <SwiperType1B/>
         </div>
-        <div className=''>
+
+
+        <div className='mt-[2rem]'>
             <BarArea/>
             <div className='w-[89.0625rem] h-[39.735625rem] mx-auto mt-[1.875rem]'>
                 <div className='flex w-full'>

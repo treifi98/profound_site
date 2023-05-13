@@ -13,6 +13,7 @@ import arrow_left from '../../../assets/arrow_left.svg'
 
 
 import { Pagination } from 'swiper'
+import NewsCard from './Cards/NewsCard';
 
 const SwiperNewsSmall = () => {
     const [swiper, setSwiper] = useState<any>();
@@ -56,42 +57,42 @@ const SwiperNewsSmall = () => {
                 >
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=''>
-                            <NewsCardSmall img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                            <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainWidth='17.361875rem' mainHeight='21.073125rem' imgWrapperWidth='15.940625rem' imgWrapperHeight='12.7075rem' imgWrapperMT='0.845rem' imgWidth='14.8125rem' imgHeight='11.39125rem' imgMT='0.45125rem' lwoerSectionMT='0.823125rem' lowerSectionHeight='5.844375rem' lowerSectionWidth='15.911875rem' imgML='0.565625rem' lowerSectionWrapperWidth='14.694375rem' timeDateWrapperWidth='9.00375rem' dateeWidth='3.936875rem' />
                         </div>
                     </SwiperSlide>
 

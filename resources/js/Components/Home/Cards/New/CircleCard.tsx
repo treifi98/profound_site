@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "../../../../../css/pagination.css";
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper'
+import { Pagination, Navigation, Autoplay } from 'swiper'
 import SliderPaginationcircle from '../Common/SliderPaginationcircle';
 import Brochure from '../Common/Brochure';
 import BoxMaster from '../Common/Boxes/New/BoxMaster';
@@ -18,6 +18,7 @@ import favIcon from '../../../../../assets/favfilled.svg'
 import viewIcon from '../../../../../assets/viewfilled.svg'
 import mapIcon from '../../../../../assets/map_icon.svg'
 import Price from '../Common/Boxes/OffPlan/Price'
+import SliderPagination from '../Common/SliderPagination';
 interface Props{
     img:string,
     mainWidth?:string,
@@ -39,6 +40,8 @@ interface Props{
     socialWrapperWidth?:string,
     brochureML?:string,
     boxesGapY?:string,
+    mainMB?:string,
+    mainMT?:string,
 
     rounded?:string,
     title:string,
@@ -268,9 +271,54 @@ interface Props{
 
 }
 const CircleCard = (props:Props) => {
+
+
+
+
+        // swiper
+
+        const [swiper, setSwiper] = useState<any>();
+        const [activeIndex, setActiveIndex] = useState(0)
+        const outerNavigation = (callBack) => {
+            useEffect(() => callBack(activeIndex),[activeIndex])
+        }
+        const innerNavigation = (slide) => {
+            // alert('f')
+            // swiper.slideTo(slide)
+            const x = slide - swiper.activeIndex
+            console.log (x)
+            if(x > 0){
+                const y = (((x)%5)+1)-1
+                for(let i = 0 ; i<y ;i++){
+                    swiper.slideNext()
+                }
+            }
+            else{
+                const y = (((Math.abs(x))%5)+1)-1
+                for(let i = 0 ; i<y ;i++){
+                    swiper.slidePrev()
+                }
+            }
+            // setSwiper(slide)
+            setActiveIndex(swiper.activeIndex)
+
+        }
+
+
+
+
+        // swiper
+
+
+
+
+
+
+
+
     const imageref = useRef(null)
     const handleMouseEnter = () => {
-        imageref.current.style.transform = 'scale(1.05)'
+        imageref.current.style.transform = 'scale(1.07)'
         // imageref.current.style.borderRadius = 'none'
         // alert('d')
     }
@@ -278,10 +326,65 @@ const CircleCard = (props:Props) => {
         imageref.current.style.transform = 'scale(1)'
     }
     return(
-        <div className='relative' style={{ width:props.mainWidth? props.mainWidth: '66.5rem', height: props.mainHeight?props.mainHeight: '34.5625rem' }} >
+        <div className='relative' style={{ width:props.mainWidth? props.mainWidth: '66.5rem', height: props.mainHeight?props.mainHeight: '34.5625rem', marginBottom:props.mainMB?props.mainMB:'2rem',marginTop:props.mainMT?props.mainMT:'3rem' }} >
             <div className=' relative z-[2] flex justify-center overflow-hidden border-[#CAD4D5] border-[0.0625rem] shadow-[-0.227198125rem_-0.227198125rem_0.45439625rem_0.113599375rem_#FFFFFF,0.227198125rem_0.227198125rem_0.45439625rem_#BABFBF] bg-[#E6EDED]' style={{ width:props.imgWrapperWidth? props.imgWrapperWidth: '34.5625rem', height:props.imgWrapperHeight? props.imgWrapperHeight:'34.5625rem', borderRadius:props.rounded? props.rounded: '41.653rem 41.653rem 0.407576875rem 41.653rem' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <div className='transition-all' style={{ width: props.imgWidth? props.imgWidth : '32.718125rem', height: props.imgHeight? props.imgHeight: '32.96625rem',borderRadius:props.rounded? props.rounded: '41.653rem 41.653rem 0.407576875rem 41.653rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }} ref={imageref}>
-                    <NewCardImage src={props.img} rounded='41.653rem 41.653rem 0.407576875rem 41.653rem' complecatedRadius={true}/>
+                <div className='transition-all overflow-hidden' style={{ width: props.imgWidth? props.imgWidth : '32.718125rem', height: props.imgHeight? props.imgHeight: '32.96625rem',borderRadius:props.rounded? props.rounded: '41.653rem 41.653rem 0.407576875rem 41.653rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }} ref={imageref}>
+                <Swiper
+                // pagination={pagination}
+                modules={[Autoplay, Pagination]}
+                slidesPerView={1}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: true,
+                  }}
+                // slidesPerGroupSkip={3}
+                spaceBetween={20}
+                breakpoints={{
+                    810: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                    },
+                    1500: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    }
+                }}
+                onSwiper={(swiper) => setSwiper(swiper)}
+                // loop={true}
+                rewind={true}
+                onSlideChangeTransitionEnd={(swiper) => {
+                    // alert(swiper.activeIndex)
+
+                    setActiveIndex(swiper.activeIndex)
+                    // setSwiper(swiper)
+
+                }}
+                className="mySwipercircleCardImages"
+
+                >
+                    <SwiperSlide style={{ width: props.imgWidth? props.imgWidth : '32.125rem', height: props.imgHeight? props.imgHeight: '32.625rem',borderRadius:props.rounded? props.rounded: '46.1395rem 46.1395rem 0rem  0rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }}>
+                            <NewCardImage src={props.img} rounded='41.653rem 41.653rem 0.407576875rem 41.653rem' complecatedRadius={true}/>
+                    </SwiperSlide>
+                    <SwiperSlide style={{ width: props.imgWidth? props.imgWidth : '32.125rem', height: props.imgHeight? props.imgHeight: '32.625rem',borderRadius:props.rounded? props.rounded: '46.1395rem 46.1395rem 0rem  0rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }}>
+                            <NewCardImage src={props.img} rounded='41.653rem 41.653rem 0.407576875rem 41.653rem' complecatedRadius={true}/>
+                    </SwiperSlide>
+                    <SwiperSlide style={{ width: props.imgWidth? props.imgWidth : '32.125rem', height: props.imgHeight? props.imgHeight: '32.625rem',borderRadius:props.rounded? props.rounded: '46.1395rem 46.1395rem 0rem  0rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }}>
+                            <NewCardImage src={props.img} rounded='41.653rem 41.653rem 0.407576875rem 41.653rem' complecatedRadius={true}/>
+                    </SwiperSlide>
+                    <SwiperSlide style={{ width: props.imgWidth? props.imgWidth : '32.125rem', height: props.imgHeight? props.imgHeight: '32.625rem',borderRadius:props.rounded? props.rounded: '46.1395rem 46.1395rem 0rem  0rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }}>
+                            <NewCardImage src={props.img} rounded='41.653rem 41.653rem 0.407576875rem 41.653rem' complecatedRadius={true}/>
+                    </SwiperSlide>
+                    <SwiperSlide style={{ width: props.imgWidth? props.imgWidth : '32.125rem', height: props.imgHeight? props.imgHeight: '32.625rem',borderRadius:props.rounded? props.rounded: '46.1395rem 46.1395rem 0rem  0rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }}>
+                            <NewCardImage src={props.img} rounded='41.653rem 41.653rem 0.407576875rem 41.653rem' complecatedRadius={true}/>
+                    </SwiperSlide>
+
+
+
+                </Swiper>
+                <div className='absolute bottom-[1.21875rem] right-[7.945rem] z-[999999]'>
+                    <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
+
+                </div>
                 </div>
             </div>
             <div className='rounded-[0.9375rem] shadow-[-0.4928725rem_-0.4928725rem_0.70410625rem_#FFFFFF,0.4928725rem_0.4928725rem_0.4928725rem_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] absolute bottom-0 z-[1]' style={{ left:props.sectionLeft?props.sectionLeft:'30.4375rem',width:props.sectionWidth?props.sectionWidth: '36.0625rem',height:props.sectionHeight?props.sectionHeight:'27.8125rem'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

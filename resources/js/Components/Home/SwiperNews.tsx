@@ -20,51 +20,53 @@ const SwiperNews = () => {
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Profound Insider Market / News'} icon={newsSecIcon}/>
+        <div className='ml-[2.4375rem]'>
 
-        <Swiper
-            // slidesPerView={3}
-            // slidesPerGroupSkip={3}
-            // spaceBetween={20}
-            breakpoints={{
-                810: {
-                slidesPerView: 4,
-                // spaceBetween: '0',
-                }
-            }}
+            <Swiper
+                // slidesPerView={3}
+                // slidesPerGroupSkip={3}
+                // spaceBetween={20}
+                breakpoints={{
+                    810: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    }
+                }}
 
-            onSwiper={(swiper) => setSwiper(swiper)}
-            // loop={true}
-            rewind = {true}
+                onSwiper={(swiper) => setSwiper(swiper)}
+                // loop={true}
+                rewind = {true}
 
-            className="newsmySwiper"
-        >
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
-            </SwiperSlide>
+                className="newsmySwiper"
+            >
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)"/>
+                </SwiperSlide>
 
 
-        </Swiper>
+            </Swiper>
+        </div>
     </>
     // </div>
   )
