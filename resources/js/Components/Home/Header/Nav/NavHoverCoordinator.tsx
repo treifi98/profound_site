@@ -21,6 +21,7 @@ import moneyHouse from '../../../../../assets/moneyHouse.svg'
 import websiteService from '../../../../../assets/websiteService.svg'
 import homeService from '../../../../../assets/homeService.svg'
 import OneCardSwiperProject from './OneCardSwiperProject'
+import OneCardSwiperArea from './OneCardSwiperArea'
 
 const NavHoverCoordinator = ({id}) => {
     let elmnt = <div></div>
@@ -97,7 +98,7 @@ const NavHoverCoordinator = ({id}) => {
                 {/* <FiltersContainer/> */}
                 <div className='w-[22.4375rem] flex justify-center '>
 
-                    <OneCardSwiper/>
+                    <OneCardSwiperArea/>
                 </div>
                 <InhoverLinks/>
             </div>
@@ -127,51 +128,51 @@ const NavHoverCoordinator = ({id}) => {
                     <MenueChildLarg icon={hauseIcon} title1={'What aspect of Dubai real estate '} title2='are you interested in' text="Let Profound Properties guide you towards a bright future in Dubai real estate with our data-driven analysis and insider information. We're always one step ahead, believing that reality is the key factor to making smart decisions. By taking into account real estate behavior, patterns, and changes, we enable our clients to get the best deal possible when buying or selling a property. Our research and preparation help our clients anticipate any future circumstances, ensuring a successful outcome." mainTitleWidth='31.375rem' mainTitileML='8.375rem' mainTitileMT='1.175rem'/>
 
                     <div className='w-[38.36375rem] h-[21.913125rem] flex flex-wrap '>
-                        <div className=' mr-[3.125rem] mb-[1.833125rem] w-[10.038125rem] h-[10.038125rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.1375rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
-                            <div className='w-[6.15125rem] h-[5.5725rem] flex justify-center items-center mt-[0.0875rem]'>
+                        <div className=' mr-[2.8125rem] mb-[2.8125rem] w-[8.734375rem] h-[8.734375rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[1.3125rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
+                            <div className='w-[2.781875rem] h-[3.125rem] flex justify-center  mt-[1.5rem]'>
                                 <img src={icon_buy} alt="" />
                             </div>
-                            <div className='w-[8.875rem] mx-auto text-grade text-[1.125rem]'>
+                            <div className='w-[7.5rem] mx-auto text-grade text-[0.9375rem] leading-[1.141875rem] mb-[1.66875rem]'>
                                 Buying a property
                             </div>
                         </div>
-                        <div className=' mr-[3.125rem] mb-[1.833125rem] w-[10.038125rem] h-[10.038125rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[1.275rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
-                            <div className='w-[4.736875rem] h-[4.375rem] flex justify-center items-center mt-[0.0875rem] '>
+                        <div className=' mr-[2.8125rem] mb-[2.8125rem] w-[8.734375rem] h-[8.734375rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[1.3125rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
+                            <div className='w-[3.383125rem] h-[3.125rem] flex justify-center items-center mt-[1.5rem] '>
                                 <img src={hoauseIcon} alt="" className = "w-full h-full" />
                             </div>
-                            <div className='w-[9.125rem] mx-auto text-grade text-[1.125rem]'>
+                            <div className='w-[7.8125rem] mx-auto text-grade text-[0.9375rem] leading-[1.141875rem] mb-[1.66875rem]'>
                                 Renting a property
                             </div>
                         </div>
-                        <div className='  mb-[1.833125rem] w-[10.038125rem] h-[10.038125rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.8625rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
-                            <div className='w-[5rem] h-[5rem] flex justify-center items-center mt-[0.1125rem]'>
+                        <div className='  mb-[2.8125rem] w-[8.734375rem] h-[8.734375rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[1.375rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
+                            <div className='w-[3.3125rem] h-[3.3125rem] flex justify-center items-center mt-[1.375rem]'>
                                 <img src={moneyHouse} alt="" className='w-full h-full'/>
                             </div>
-                            <div className='w-[8.6875rem] mx-auto text-grade text-[1.125rem]'>
+                            <div className='w-[7.4375rem] mx-auto text-grade text-[0.9375rem] leading-[1.141875rem] mb-[1.66875rem]'>
                                 Selling a property
                             </div>
                         </div>
-                        <div className=' mr-[3.125rem] mb-[1.833125rem] w-[10.038125rem] h-[10.038125rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.6375rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
-                            <div className='w-[4.375rem] h-[4.375rem] flex justify-center items-center mt-[0.175625rem]'>
+                        <div className=' mr-[2.8125rem] mb-[2.8125rem] w-[8.734375rem] h-[8.734375rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.68375rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
+                            <div className='w-[2.926875rem] h-[2.601875rem] flex justify-center items-center mt-[0.975rem]'>
                                 <img src={websiteService} alt="" />
                             </div>
-                            <div className='w-[8.875rem] mx-auto text-grade text-[1.125rem] text-center'>
+                            <div className='w-[7.5625rem] mx-auto text-grade text-[0.9375rem] leading-[1.141875rem] text-center mb-[1.109375erm]'>
                                 Listing a property for sale or rent
                             </div>
                         </div>
-                        <div className=' mr-[3.125rem] mb-[1.833125rem] w-[10.038125rem] h-[10.038125rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.5375rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
-                            <div className='w-[6.15125rem] h-[5.5725rem] flex justify-center items-center mt-[0.413125rem]'>
+                        <div className=' mr-[2.8125rem] mb-[2.8125rem] w-[8.734375rem] h-[8.734375rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.68375rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
+                            <div className='w-[3.660625rem] h-[3.31625rem] flex justify-center items-center mt-[1.375rem]'>
                                 <img src={guy_exploaring} alt="" />
                             </div>
-                            <div className='w-[6.5625rem] mx-auto text-grade text-[1.125rem] text-center'>
+                            <div className='w-[5.625rem] mx-auto text-grade text-[0.9375rem] leading-[1.141875rem] text-center mb-[1.109375rem]'>
                                 Exploring opportunities
                             </div>
                         </div>
-                        <div className=' mb-[1.833125rem] w-[10.038125rem] h-[10.038125rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.0075rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
-                            <div className='w-[6.15125rem] h-[5.5725rem] flex justify-center items-center mt-[0.005rem]'>
+                        <div className=' mb-[2.8125rem] w-[8.734375rem] h-[8.734375rem] flex flex-col justify-center items-center border-[#DCE3E3] border-[0.0625rem] gap-[0.75rem] rounded-[0.625rem] shadow-[-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF] cursor-pointer hover:shadow-[inset_-0.30113625rem_-0.30113625rem_0.6022725rem_#FFFFFF,inset_0.30113625rem_0.30113625rem_0.6022725rem_#B1BDBF]'>
+                            <div className='w-[3.125rem] h-[3.125rem] flex justify-center items-center mt-[1.505rem]'>
                                 <img src={homeService} alt="" />
                             </div>
-                            <div className='w-[8.9375rem] mx-auto text-grade text-[1.125rem] text-center'>
+                            <div className='w-[7.625rem] mx-auto text-grade text-[0.9375rem] leading-[1.141875rem] text-center mb-[1.104375rem]'>
                                 Learning Dubai real Estate Market
                             </div>
                         </div>

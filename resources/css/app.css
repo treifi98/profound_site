@@ -270,3 +270,7 @@ div.select_component::-moz-scrollbar-track {
 .simpleSwiper .swiper-slide{
     /* margin-right: 1.8125rem; */
 }
+
+.simpleSwiper{
+    border-radius: 0.9375rem;
+}

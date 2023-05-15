@@ -4,12 +4,23 @@ import checkedIcon from '../../../../../assets/checkedIcon.svg'
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState  } from '@/store'
 import{check, unCheck, reset, checkSingle, toggle} from './CheckComponentSlice'
+import{trigger} from '../RangeComponentSlice'
 
 interface Props{
     func?:Function
     id:string,
     on:string,
     off:string
+    rangecomponentId?:string
+    minValue?:number
+    maxValue?:number
+    step?:number
+    minStep?:number
+    maxStep?:number
+    stepDefault?:boolean
+    ogMinValue?:number,
+    ogMaxValue?:number,
+    ogStep?:number
 }
 const CheckComponent = (props:Props) => {
     // console.log(props.id)
@@ -39,6 +50,8 @@ const CheckComponent = (props:Props) => {
     const handleClick = () => {
         // setClicked((prev) => !prev)
         dispatch(toggle({id:props.id,vals:{on:'1',off:'0'}}))
+        // props.func()
+
     }
     useEffect(()=>{
         // console.log(checked)
@@ -48,11 +61,34 @@ const CheckComponent = (props:Props) => {
             mainComp.current.style.border = '0.0625rem solid #80999C'
             img.current.src = checkedIcon
             circle.current.style.transform = 'rotate(360deg)'
+            // alert(checked[id[0]][id[1]].status)
         }else{
             ref.current.style.width = '2rem'
             mainComp.current.style.border = '0.0625rem solid #CAD4D5'
             img.current.src = checkIcon
             circle.current.style.transform = 'rotate(0deg)'
+        }
+    },[checked])
+
+    // measure if checked or not fo action logic
+    useEffect(()=>{
+        // console.log(checked)
+        if(checked[id[0]] && checked[id[0]][id[1]]){
+
+
+            if(checked[id[0]][id[1]].status){
+                if(props.rangecomponentId){
+                    dispatch(trigger({rangecomponentId:props.rangecomponentId,minValue:props.minValue,maxValue:props.maxValue,step:props.step,minStep:props.minStep,maxStep:props.maxStep,stepDefault:props.stepDefault}))
+                    // alert(props.minValue)
+                }
+            }
+            else{
+                if(props.rangecomponentId){
+                    dispatch(trigger({rangecomponentId:props.rangecomponentId,minValue:props.ogMinValue,maxValue:props.ogMaxValue,step:props.ogStep,minStep:props.minStep,maxStep:props.maxStep,stepDefault:props.stepDefault}))
+                }
+
+            }
+
         }
     },[checked])
     return (

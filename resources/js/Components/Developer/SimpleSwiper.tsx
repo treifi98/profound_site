@@ -24,7 +24,7 @@ const SimpleSwiper = () => {
             <div className='absolute h-[1.625rem] w-[0.9375rem] right-[0.5rem] top-[calc(50%-0.46875rem)] cursor-pointer'onClick={() => swiper.slidePrev()}>
                 <img src={simpleGreenArrowRight} alt="" className='h-[1.625rem] w-[0.9375rem]' />
             </div>
-        <div className='mx-auto  mt-[1.9375rem] w-[87.125rem]'>
+        <div className='mx-auto  mt-[1.9375rem] w-[87.125rem] rounded-[0.9375rem]'>
             <Swiper
 
             modules={[Autoplay, EffectCoverflow, Pagination]}
