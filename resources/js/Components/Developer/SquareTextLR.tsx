@@ -16,7 +16,7 @@ const SquareTextLR = () => {
                     <img src={beatchFront} alt="" className='w-[40.0625rem] h-[31.1875rem] rounded-[0.9375rem]'/>
                 </div>
             </div>
-                <div className='h-full w-[50.375rem] border-[#DCE3E3] border-[0.0625rem]  rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
+                <div className='h-full w-[41.4375rem]  rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
 
 
                 <div className='w-[46.0625rem]'>

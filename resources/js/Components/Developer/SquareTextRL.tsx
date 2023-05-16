@@ -12,7 +12,7 @@ const SquareTextRL = () => {
     <div className='w-[91.25rem] h-[38.125rem] flex items-center justify-center bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.9822875rem]'>
         <div className='w-[86.1875rem] h-[33.6875rem] flex gap-[2.5rem]'>
 
-            <div className='h-full w-[50.375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[inset_-0.5rem_-0.625rem_0.9375rem_#FFFFFF,inset_0.5rem_0.5rem_0.9375rem_#B6C3C5] rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
+            <div className='h-full w-[41.4375rem] rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
 
 
                 <div className='w-[46.0625rem]'>
@@ -25,9 +25,9 @@ const SquareTextRL = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[33.256875rem] h-full flex justify-center items-center'>
+            <div className='w-[43.5625rem] h-full flex justify-center items-center'>
                 <div className='w-full h-full flex justify-center items-center rounded-[0.9375rem] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
-                    <img src={beatchFront} alt="" className='w-[30.838125rem] h-[31.383125rem] rounded-[0.9375rem]'/>
+                    <img src={beatchFront} alt="" className='w-[40.0625rem] h-[31.1875rem] rounded-[0.9375rem]'/>
                 </div>
             </div>
         </div>

@@ -274,3 +274,6 @@ div.select_component::-moz-scrollbar-track {
 .simpleSwiper{
     border-radius: 0.9375rem;
 }
+.newsSmallSwiper .swiper-slide{
+    /* margin-right: 0.5625rem; */
+}

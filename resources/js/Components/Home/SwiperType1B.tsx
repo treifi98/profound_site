@@ -176,16 +176,17 @@ const SwiperType1B = () => {
                 textSize:'0.721875rem',
                 lowerSectionHeight:'1.62375rem',
                 lowerTextSize:'0.841875rem',
-                textWidth:'1.576875rem',
+                textWidth:'2.826875rem',
 
 
             },
             flipArgs:{
-                text:'The handover of the properties',
-                lowerText:'Q1 / 2024 ',
-                lowerSectionHeight:'1.62375rem',
-                textHeight:'3.5rem',
-                textSize:'0.721875rem'
+                // text:'The handover of the properties',
+                // lowerText:'Q1 / 2024 ',
+                // lowerSectionHeight:'1.62375rem',
+                // textHeight:'3.5rem',
+                // textSize:'0.625rem',
+                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
 
 
             }

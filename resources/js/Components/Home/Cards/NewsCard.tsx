@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import InfoSocial from './Common/InfoSocial'
 import CardImage from './Common/CardImage'
 
@@ -8,6 +8,7 @@ import share_icon from '../../../../assets/sharefilled.svg'
 import fav_icon from '../../../../assets/favfilled.svg'
 import view_icon from '../../../../assets/viewfilled.svg'
 import NewSocial from './Common/NewSocial'
+import processBoxShahow from '@/Components/BoxShadowController'
 interface Props{
     img:string,
     publishedDate:string,
@@ -60,16 +61,30 @@ interface Props{
 
 }
 const NewsCard = (props:Props) => {
+    const [shadows,setShadows] = useState(['inset -0.339153125rem -0.339153125rem 0.67830625rem 0.178473125rem #F8FFFE,inset 0.339153125rem 0.339153125rem 0.67830625rem #B6C3C5','-0.339153125rem -0.339153125rem 0.67830625rem 0.178473125rem #F8FFFE,0.339153125rem 0.339153125rem 0.67830625rem #B6C3C5','-0.271176875rem -0.271176875rem 0.406765rem #FFFFFF,0.271176875rem 0.271176875rem 0.406765rem #AEBBBD','inset -0.1875rem -0.1875rem 0.1875rem #FFFFFF,inset 0.1875rem 0.1875rem 0.1875rem #B6C3C5'])
+    useEffect(() => {
+        let scale = 1
+        if(props.mainHeight){
+            scale = parseFloat(props.mainHeight)/30.0625
+            // alert(scale)
+        }
+        // alert(parseFloat(props.mainHeight)/30.625)
+        // alert(props.mainHeight)
+        setShadows(processBoxShahow(shadows,' ',scale))
+        // shadows =
+        // alert (shadows[0])
+
+    },[])
   return (
-    <div className=' bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] shadow-[inset_-0.339153125rem_-0.339153125rem_0.67830625rem_0.178473125rem_#F8FFFE,inset_0.339153125rem_0.339153125rem_0.67830625rem_#B6C3C5] rounded-[1.189375rem] flex flex-col items-center gap-[1.104375rem]' style={{ width:props.mainWidth?props.mainWidth:'23.283125rem',height:props.mainHeight?props.mainHeight:'30.0625rem',marginTop:props.mainMY?props.mainMY:'1.8125rem',marginBottom:props.mainMY?props.mainMY:'1.8125rem'}}>
-        <div className='bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[1.189375rem] shadow-[-0.339153125rem_-0.339153125rem_0.67830625rem_0.178473125rem_#F8FFFE,0.339153125rem_0.339153125rem_0.67830625rem_#B6C3C5]' style={{ width:props.imgWrapperWidth?props.imgWrapperWidth:'21.375rem',height:props.imgWrapperHeight?props.imgWrapperHeight:'17rem',marginTop:props.imgWrapperMT?props.imgWrapperMT:'1.13375rem' }}>
+    <div className=' bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[1.189375rem] flex flex-col items-center  my-[1rem]' style={{boxShadow:shadows[0],gap:props.lwoerSectionMT?props.lwoerSectionMT:'1.104375rem', width:props.mainWidth?props.mainWidth:'23.283125rem',height:props.mainHeight?props.mainHeight:'30.0625rem',marginTop:props.mainMY?props.mainMY:'1.8125rem',marginBottom:props.mainMY?props.mainMY:'1.8125rem'}}>
+        <div className='bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[1.189375rem]' style={{boxShadow:shadows[1], width:props.imgWrapperWidth?props.imgWrapperWidth:'21.375rem',height:props.imgWrapperHeight?props.imgWrapperHeight:'17rem',marginTop:props.imgWrapperMT?props.imgWrapperMT:'1.13375rem' }}>
             {/* <img src={props.img} alt="" className='w-[19.86375erm] h-[17rem] rounded-[1.189375rem] mt-[9.68px] ml-[12.13px]'/> */}
             <div className='' style={{ width:props.imgWidth?props.imgWidth:'21.3125erm',height:props.imgHeight?props.imgHeight:'17rem',marginTop:props.imgWrapperMT?props.imgMT:'0rem',marginLeft:props.imgML?props.imgML:'0rem' }}>
 
                 <CardImage w={props.imgWidth?props.imgWidth:'21.3125'} h={props.imgHeight?props.imgHeight:'17'} rounded='1.189375' src={props.img}/>
             </div>
         </div>
-        <div className='bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[0.604375rem] shadow-[-0.271176875rem_-0.271176875rem_0.406765rem_#FFFFFF,0.271176875rem_0.271176875rem_0.406765rem_#AEBBBD] flex flex-col justify-between items-start' style={{ width:props.lowerSectionWidth?props.lowerSectionWidth:'21.338125rem',height:props.lowerSectionHeight?props.lowerSectionHeight:'9.75rem' }}>
+        <div className='bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[0.604375rem] flex flex-col justify-between items-start' style={{boxShadow:shadows[2], width:props.lowerSectionWidth?props.lowerSectionWidth:'21.338125rem',height:props.lowerSectionHeight?props.lowerSectionHeight:'9.75rem' }}>
             <div className=' mx-auto flex justify-between items-start ' style={{ width:props.lowerSectionWrapperWidth?props.lowerSectionWrapperWidth:'20.125rem',marginTop:props.lwoerSectionMT?props.lwoerSectionMT:'1.125rem' }}>
                 <div className='flex w-full justify-between' style={{  }}>
                     <div className='flex items-start justify-between' style={{ width:props.timeDateWrapperWidth?props.timeDateWrapperWidth:'12.220625rem' }}>
@@ -102,17 +117,17 @@ const NewsCard = (props:Props) => {
                         </div>
                         <div className='flex justify-between items-center' style={{ marginTop:props.socialInfoMT?props.socialInfoMT:'0.625rem',width:props.socialWrapperWidth?props.socialWrapperWidth:'7.1875rem' }}>
 
-                            <div className='border-[0.0625rem] border-[#DCE3E3] shadow-[inset_-0.1875rem_-0.1875rem_0.1875rem_#FFFFFF,inset_0.1875rem_0.1875rem_0.1875rem_#B6C3C5] flex justify-center items-center rounded-[0.19053rem]' style={{ width:props.socialWidth?props.socialWidth:'2.0625rem',height:props.socialHeight?props.socialHeight:'1.5rem' }}>
+                            <div className='border-[0.0625rem] border-[#DCE3E3] flex justify-center items-center rounded-[0.19053rem]' style={{boxShadow:shadows[3], width:props.socialWidth?props.socialWidth:'2.0625rem',height:props.socialHeight?props.socialHeight:'1.5rem' }}>
                                 <div className=' font-[600] text-grade ' style={{ fontSize:props.socialInfoTextSize?props.socialInfoTextSize:'0.6875rem' }}>
                                     1999
                                 </div>
                             </div>
-                            <div className='border-[0.0625rem] border-[#DCE3E3] shadow-[inset_-0.1875rem_-0.1875rem_0.1875rem_#FFFFFF,inset_0.1875rem_0.1875rem_0.1875rem_#B6C3C5] flex justify-center items-center rounded-[0.19053rem]' style={{ width:props.socialWidth?props.socialWidth:'2.0625rem',height:props.socialHeight?props.socialHeight:'1.5rem' }}>
+                            <div className='border-[0.0625rem] border-[#DCE3E3] flex justify-center items-center rounded-[0.19053rem]' style={{boxShadow:shadows[3], width:props.socialWidth?props.socialWidth:'2.0625rem',height:props.socialHeight?props.socialHeight:'1.5rem' }}>
                                 <div className=' font-[600] text-grade 'style={{ fontSize:props.socialInfoTextSize?props.socialInfoTextSize:'0.6875rem' }}>
                                     1999
                                 </div>
                             </div>
-                            <div className='border-[0.0625rem] border-[#DCE3E3] shadow-[inset_-0.1875rem_-0.1875rem_0.1875rem_#FFFFFF,inset_0.1875rem_0.1875rem_0.1875rem_#B6C3C5] flex justify-center items-center rounded-[0.19053rem]' style={{ width:props.socialWidth?props.socialWidth:'2.0625rem',height:props.socialHeight?props.socialHeight:'1.5rem' }}>
+                            <div className='border-[0.0625rem] border-[#DCE3E3] flex justify-center items-center rounded-[0.19053rem]' style={{boxShadow:shadows[3], width:props.socialWidth?props.socialWidth:'2.0625rem',height:props.socialHeight?props.socialHeight:'1.5rem' }}>
                                 <div className=' font-[600] text-grade 'style={{ fontSize:props.socialInfoTextSize?props.socialInfoTextSize:'0.6875rem' }}>
                                     1999
                                 </div>
@@ -122,7 +137,7 @@ const NewsCard = (props:Props) => {
                     </div>
                 </div>
             </div>
-            <div className='float-left font-[400] text-grade mx-auto text-left imf' style={{ fontSize:props.textSize?props.textSize:'1.144375rem',width:props.textWidth?props.textWidth:'19.5rem',height:props.textWidth?props.textWidth:'19.5rem',marginTop:props.titleMT?props.titleMT:'0.5rem',lineHeight:props.titleHeight?props.titleHeight:'1.39375rem' }}>
+            <div className='float-left font-[400] text-grade mx-auto text-left imf' style={{ fontSize:props.titleSize?props.titleSize:'1.144375rem',width:props.titleWidth?props.titleWidth:'19.5rem',height:props.titleWidth?props.titleWidth:'19.5rem',marginTop:props.titleMT?props.titleMT:'0.5rem',lineHeight:props.titleLineHeight?props.titleLineHeight:'1.39375rem' }}>
                 {props.title}
             </div>
 

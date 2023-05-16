@@ -13,7 +13,7 @@ interface Props{
     isPrice?:boolean
 }
 const ZibraFlip = (props:Props) => {
-    const [shadows,setShadows] = useState(['inset -0.3011875rem -0.3011875rem 0.34340875rem #FFFFFF,inset 0.228939375rem 0.228939375rem 0.34340875rem #B6C3C5'])
+    const [shadows,setShadows] = useState(['inset -0.3011875rem -0.3011875rem 0.34340875rem #FFFFFF,inset 0.228939375rem 0.228939375rem 0.34340875rem #B6C3C5','inset -0.25rem -0.25rem 0.3125rem #1E6970,inset 0.25rem 0.25rem 0.3125rem rgba(0,0,0,0.38)'])
     useEffect(() => {
         let scale = 1
         if(props.mainHeight){
@@ -40,7 +40,7 @@ const ZibraFlip = (props:Props) => {
     }
     const zibras = extractZibras()
     return (
-        <div className=' rounded-[0.3125rem] flex flex-col items-center ' style={{boxShadow:shadows[0], width: props.mainWidth ? props.mainWidth: '5.3125rem', height: props.mainHeight ? props.mainHeight: '6.375rem' }}>
+        <div className=' rounded-[0.3125rem] flex flex-col items-center overflow-hidden' style={{boxShadow:shadows[0], width: props.mainWidth ? props.mainWidth: '5.3125rem', height: props.mainHeight ? props.mainHeight: '6.375rem' }}>
             {
                 props.isPrice ? (
 
@@ -54,7 +54,7 @@ const ZibraFlip = (props:Props) => {
                                     </div>
                                 </div>
                             ):(
-                                <div className='flex justify-center items-center bg-[#19464B] shadow-[inset_-4px_-4px_5px_#1E6970,inset_4px_4px_5px_rgba(0,0,0,0.38)] text-[#fff] font-[700]' style={{ width: props.zibraWidth? props.zibraWidth: '5.1875rem', height: props.zibraHeight? props.zibraHeight: '1.0625rem' }}>
+                                <div className='flex justify-center items-center bg-[#19464B]  text-[#fff] font-[700]' style={{ width: props.zibraWidth? props.zibraWidth: '5.1875rem', height: props.zibraHeight? props.zibraHeight: '1.0625rem', boxShadow:shadows[1] }}>
                                     <div className=' flex justify-between items-center w-[90%]'>
                                         <div className=''style={{ fontSize: props.textSize? props.textSize: '0.6875rem' }}>
 
@@ -82,7 +82,7 @@ const ZibraFlip = (props:Props) => {
                                 </div>
                             </div>
                         ):(
-                            <div className='flex justify-center items-center bg-[#19464B] text-[#fff] font-[700] shadow-[inset_-4px_-4px_5px_#1E6970,inset_4px_4px_5px_rgba(0,0,0,0.38)]' style={{ width: props.zibraWidth? props.zibraWidth: '5.1875rem', height: props.zibraHeight? props.zibraHeight: '1.25rem' }}>
+                            <div className='flex justify-center items-center bg-[#19464B] text-[#fff] font-[700] ' style={{ width: props.zibraWidth? props.zibraWidth: '5.1875rem', height: props.zibraHeight? props.zibraHeight: '1.25rem', boxShadow:shadows[1] }}>
 
                                 <div className=''style={{ fontSize: props.textSize? props.textSize: '0.6875rem' }}>
 

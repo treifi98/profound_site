@@ -30,6 +30,7 @@ import BuyCard from '@/Components/Home/Cards/New/BuyCard'
 import BoxMaster from '@/Components/Home/Cards/Common/Boxes/New/BoxMaster'
 import priceIcon from '../../assets/price_tag_og.svg'
 import Brochure from '@/Components/Home/Cards/Common/Brochure'
+import statusIcon from '../../assets/statusIcon.svg'
 // import Swiper, { Pagination } from "swiper";
 
 
@@ -79,6 +80,10 @@ import SquareTextRL from '@/Components/Developer/SquareTextRL'
 import DoublrBoxesDoubleText from '@/Components/Developer/DoublrBoxesDoubleText'
 import SimpleSwiper from '@/Components/Developer/SimpleSwiper'
 import AboutDeveloper from '@/Components/Developer/AboutDeveloper'
+import InfoShape from '@/Components/Developer/InfoShape'
+import AboutProperty from '@/Components/Developer/AboutProperty'
+import InquiryFormGreen from '@/Components/Developer/InquiryFormGreen'
+import InquiryFormWiht from '@/Components/Developer/InquiryFormWhit'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -851,7 +856,7 @@ const Test = () =>{
 
 
     </div>
-    <div className='m-[400px]'>
+    {/* <div className='m-[400px]'>
         <OriginalCard img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
             args:{
                 img:priceIcon,
@@ -1000,7 +1005,7 @@ const Test = () =>{
 
 
 
-    </div>
+    </div> */}
 
 
 
@@ -1040,6 +1045,18 @@ const Test = () =>{
     </div>
     <div className='my-[2rem] mx-auto w-max'>
         <AboutDeveloper/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <InfoShape img={statusIcon}/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <AboutProperty/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <InquiryFormGreen/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <InquiryFormWiht/>
     </div>
 
 

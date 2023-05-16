@@ -183,13 +183,13 @@ const NavHoverCoordinator = ({id}) => {
     }
     else if(id == 7){
         elmnt = (
-            <div className='my-[1.625rem] mx-[5%] flex gap-[4.25rem] items-center'>
+            <div className='my-[1.625rem] mr-[2rem] ml-[4.4375rem] flex gap-[4.25rem] items-center w-full'>
                 <div className=''>
 
                     <MenueChild icon={hauseIcon} title1={'Profound '} title2='Insider Market / News ' text="Insights into market trends and news can give you a competitive edge. A deep understanding of real estate market dynamics and emerging trends can help you make informed decisions and seize opportunities that others may overlook. By staying up-to-date on the latest news and analysis." button='Access now' mainWidth='27.5625rem' mainHeight='19.3125rem' textWidth='25.0625rem' textML='1.25rem' mainTitileMT='0.2875rem'/>
                 </div>
                 {/* <FiltersContainer/> */}
-                <div className='w-[62.74375rem] flex justify-end h-[22.060625rem]'>
+                <div className='w-[55.924375rem] flex justify-end h-[22.060625rem] ml-[1rem]'>
                     {/* <div className=' scale-[0.655]'> */}
                         <SwiperNewsSmall/>
                 </div>

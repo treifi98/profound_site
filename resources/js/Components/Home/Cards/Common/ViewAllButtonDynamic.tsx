@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import view_all_icon from '../../../../../assets/view_all_icon.svg'
+import processBoxShahow from '@/Components/BoxShadowController'
 interface Props{
     link?:string,
     h:string,
@@ -14,10 +15,31 @@ interface Props{
     // textS
 }
 const ViewAllButtonDynamic = (props:Props) => {
+    const elmnt = useRef(null)
+    const [shadows,setShadows] = useState(['-0.285380625rem -0.285380625rem 7.30575px #FFFFFF,0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5','inset -0.204044375rem -0.204044375rem 0.27205875rem #FFFFFF,inset 0.204044375rem 0.204044375rem 0.27205875rem #B6C3C5'])
+    useEffect(() => {
+        let scale = 1
+        if(props.w){
+            scale = parseFloat(props.w)/8.875
+            // alert(scale)
+        }
+        // alert(parseFloat(props.mainHeight)/30.625)
+        // alert(props.mainHeight)
+        setShadows(processBoxShahow(shadows,' ',scale))
+        // shadows =
+        // alert (shadows[0])
+
+    },[])
+    const handleMouseEnter = () => {
+        elmnt.current.style.boxShadow = shadows[1]
+    }
+    const handleMouseLeave = () => {
+        elmnt.current.style.boxShadow = shadows[0]
+    }
   return (
     <>
 
-        <a href="#" className={` hover:shadow-[inset_-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,inset_0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5] flex justify-center items-center gap-[0rem] border-[#DCE3E3] border-[0.0625rem] rounded-[2.51625rem] shadow-[-0.285380625rem_-0.285380625rem_7.30575px_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] cursor-pointer`} style={{ width:props.w?props.w:'8.875rem',height:props.h?props.h:'2.1875rem',marginLeft:props.ml?props.ml:'2.1875rem' }}>
+        <a href="#" className={` flex justify-center items-center gap-[0rem] border-[#DCE3E3] border-[0.0625rem] rounded-[2.51625rem] cursor-pointer`} style={{boxShadow:shadows[0] ,width:props.w?props.w:'8.875rem',height:props.h?props.h:'2.1875rem',marginLeft:props.ml?props.ml:'2.1875rem' }} ref={elmnt} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className=' flex justify-between items-center mx-auto' style={{ width:props.wrapperWidth?props.wrapperWidth:'7.131875rem' }}>
 
                 <div className='text-grade ' style={{ fontSize:props.textSize?props.textSize:'1.073125rem' }}>

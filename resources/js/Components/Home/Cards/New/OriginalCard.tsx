@@ -178,14 +178,13 @@ interface Props{
         flipArgs?:{
             mainWidth?:string,
             mainHeight?:string,
-            text?:string,
+            content?:{installment:string,precentage:string}[],
+            rowWidth?:string,
+            rowHeight?:string,
             textSize?:string,
+            // aedSize?:string,
             fontWeight?:string,
-            lowerSectionHeight?:string,
-            lowerText?:string,
-            lowerSectionTextSize?:string,
-            textHeight?:string,
-            textMT?:string
+            cornerWidth?:string
         }
     },
     compleationBox?:{
@@ -498,7 +497,7 @@ const OriginalCard = (props:Props) => {
                     />
                     <BoxMaster
                         BoxType='standerd'
-                        flipType='simpleFlip'
+                        flipType='paymentPlan'
                         boxArgs={
                             {
                                 mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
