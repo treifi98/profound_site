@@ -1074,6 +1074,30 @@ const Test = () =>{
     <div className='my-[2rem] mx-auto w-max'>
         <NoCrooked/>
     </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <div className='progress-bar w-[91.08px] h-[91.08px] rounded-full border-[#DCE3E3] border-[1px] relative z-[1] flex justify-center items-center'>
+            <div className='w-[68.42px] h-[68.42px] bg-[#E6EDED] rounded-full flex justify-center items-center'>
+                <div className='w-[46.33px] h-[46.33px] bg-[#E6EDED] rounded-full shadow-[inset_-2.78845px_-2.78845px_6.88446px_-0.38247px_#FFFFFF,inset_2.78845px_2.78845px_8.79681px_#B6C3C5]'>
+
+                </div>
+            </div>
+            <progress value="20" min="0" max="100" style={{ visibility:'hidden',height:'0rem',width:'0rem' }} className='xxx relative z-[2]'>75%</progress>
+        </div>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <div className="circle-wrap">
+            <div className="circle">
+                <div className="mask half">
+                    <div className="fill">
+
+                    </div>
+                        <div className="inside-circle"> 75% </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 
     </>
