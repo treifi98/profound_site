@@ -9,6 +9,7 @@ import arrow_right from '../../../../../assets/arrow_right.svg'
 import arrow_left from '../../../../../assets/arrow_left.svg'
 
 
+
 const OneCardSwiper = () => {
     const [swiper, setSwiper] = useState<any>();
     const handleNext = () => {

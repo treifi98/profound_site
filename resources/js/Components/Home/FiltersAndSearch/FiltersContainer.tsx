@@ -18,7 +18,7 @@ const FiltersContainer = () => {
                         Buy
                     </div>
                     <div>
-                        <CheckComponent id="BuyCheck" on="on" off="off"/>
+                        <CheckComponent id="BuyCheck" on="on" off="off" />
                     </div>
                 </div>
                 <div className='flex gap-[0.9375rem]'>
@@ -26,7 +26,7 @@ const FiltersContainer = () => {
                         Rent
                     </div>
                     <div>
-                        <CheckComponent id="RentCheck" on="on" off="off"/>
+                        <CheckComponent id="RentCheck" on="on" off="off" rangecomponentId='priceFilter_1' minValue={10000} ogMinValue={400000} maxValue={100000000} ogMaxValue={100000000} step={200} ogStep={200} stepDefault = {false}/>
                     </div>
                 </div>
                 <div className='flex gap-[0.9375rem]'>
@@ -86,7 +86,7 @@ const FiltersContainer = () => {
                         Price AED
                     </div>
                     <div className='w-[34.375rem]'>
-                        <RangeComponent RTL={false} max={100000000} min={400000} step={200} MinStep={100000} MaxStep={10000000} StepDefault={false}/>
+                        <RangeComponent RTL={false} max={100000000} min={400000} step={200} MinStep={100000} MaxStep={10000000} StepDefault={false} id='priceFilter_1'/>
                     </div>
                 </div>
                 <div>

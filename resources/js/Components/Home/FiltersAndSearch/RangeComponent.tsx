@@ -1,12 +1,17 @@
 import * as React from 'react';
 import { Range, getTrackBackground } from 'react-range';
 import { useThumbOverlap } from 'react-range';
+import { useSelector, useDispatch } from 'react-redux'
+import { RootState  } from '@/store'
+import {changeValues} from './RangeComponentSlice'
+// import {}
 
 interface Props{
     step:number,
     min:number,
     max:number,
     rtl:boolean,
+    id:string
 
 }
 // const STEP = 0.1;
@@ -14,6 +19,8 @@ interface Props{
 // const MAX = 100;
 const COLORS = ['#E6EDED','#00494F','#E6EDED'];
 const THUMB_SIZE = 42;
+
+
 
 function ThumbLabel({
   rangeRef,
@@ -61,18 +68,41 @@ function ThumbLabel({
     >
         <div>
 
-            {labelValue }
+            {parseInt(labelValue).toLocaleString() }
         </div>
     </div>
   );
 }
 
-const RangeComponent: React.FC<{ RTL: boolean, max:number, min:number, step:number,MinStep:number, MaxStep:number, StepDefault:boolean }> = ({ RTL, max, min, step,MinStep, MaxStep,StepDefault }) => {
-  const rtl = RTL
-  const MIN = min
-  const MAX = max
-  const STEP = step
+const RangeComponent: React.FC<{ RTL: boolean, max:number, min:number, step:number,MinStep:number, MaxStep:number, StepDefault:boolean,id:string }> = ({ RTL, max, min, step,MinStep, MaxStep,StepDefault,id }) => {
+  const dispatch = useDispatch()
+  const rangeInfo = useSelector((state:RootState) => state.range)
+
+  let rtl = RTL
+//   let MIN = min
+//   let MAX = max
+  const [MIN,setMIN] = React.useState(min)
+  const [MAX,setMAX] = React.useState(max)
+  let STEP = step
   const [values, setValues] = React.useState([min,max]);
+
+
+//   const toggleValue = (min,max,minStep,maxStep) => {
+//     MIN = min
+//     MAX = max
+//     STEP = minStep
+//   }
+React.useEffect(() => {
+    if(rangeInfo.rangecomponentId == id){
+        setMIN(rangeInfo.minValue)
+        setMAX(rangeInfo.maxValue)
+        setValues([rangeInfo.minValue,rangeInfo.maxValue])
+        // step = rangeInfo.step
+        // StepDefault = rangeInfo.stepDefault
+
+
+    }
+},[rangeInfo])
 
 
   const handleOnChange = (newValues) => {

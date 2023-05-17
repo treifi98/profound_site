@@ -17,7 +17,285 @@ import mapIcon from '../../../../../assets/map_icon.svg'
 import share from '../../../../../assets/share_icon.svg'
 import fav from '../../../../../assets/fav_icon.svg'
 import view from '../../../../../assets/view_icon.svg'
-const OriginalCard = () => {
+import shareIcon from '../../../../../assets/sharefilled.svg'
+import favIcon from '../../../../../assets/favfilled.svg'
+import viewIcon from '../../../../../assets/viewfilled.svg'
+import Agent from '../Common/Boxes/OffPlan/Agent'
+import Contact from '../Common/Boxes/OffPlan/Contact'
+import BoxMaster from '../Common/Boxes/New/BoxMaster'
+
+
+interface Props{
+    // imgWrapperWidth?:string,
+    // imgWrapperHeight?:string
+    img:string,
+    mainWidth?:string,
+    mainHeight?:string,
+    imgWidth?:string,
+    imgHeight?:string,
+    imgMT?:string,
+    // sectionLeft?:string,
+    titleSize?:string,
+    subTitleSize?:string,
+    areatextSize?:string,
+    areaIconWidth?:string,
+    areaIconHeight?:string,
+    areaWidth?:string,
+    // areaML?:string,
+    socialWrapperWidth?:string,
+    // brochureML?:string,
+    boxesGapY?:string,
+    rounded?:string,
+    title:string,
+    // boxesWrapperML?:string,
+    // tagsWrapperML?:string,
+    tagsWrapperMT?:string,
+    area:string,
+    subTitle:string,
+    sectionWidth?:string,
+    sectionHeight?:string,
+    tagWidth?:string,
+    tagsWrapperrWidth?:string,
+    tagHeight?:string,
+    boxWidth?:string,
+    boxHeight?:string,
+    boxWrapperWidth?:string,
+    boxWrapperHeight?:string,
+    bottomWrapperWidth?:string,
+    bottomWrapperHeight?:string,
+    bottomWrapperMT?:string,
+    bottomWrapperML?:string,
+    titleRowWidth?:string,
+    brochureAndSocialWrapperWidth?:string,
+    subTitileAndAreaWrapperWidth?:string,
+    separatorWidth?:string,
+    SeparatorHeight?:string,
+    imageSectionWidth?:string,
+    imageSectionHeight?:string,
+    socialWrapperML?:string,
+    titleMT?:string,
+    subTitleWrapperMT?:string,
+    boxWrapperMT?:string,
+    boxGapX?:string,
+    mainMT?:string,
+    mainMB?:string,
+    boxGapY?:string,
+    mainWrapperWidth?:string,
+
+    // titleML?:string,
+    // titleMT?:string,
+    // subTitleML?:string,
+    // subTitleMT?:string,
+    // boxesWrapperMT?:string,
+    priceBox?:{
+        args:{
+            mainWidth?:string,
+            mainHeight?:string,
+            img?:string,
+            imgWidth?:string,
+            imgHeight?:string,
+            imgMT?:string,
+            text?:string,
+            textSize?:string,
+            textWidth?:string,
+            lowerSectionHeight?:string,
+            lineHeight?:string,
+            lowerTextSize?:string,
+            lowerText?:string,
+            textMT?:string,
+            textMB?:string
+        }
+        flipArgs?:{
+            mainWidth?:string,
+            mainHeight?:string,
+            content?:{bed:string,price:string}[] | string[],
+            zibraWidth?:string,
+            zibraHeight?:string,
+            textSize?:string,
+            aedSize?:string,
+            fontWeight?:string,
+            isPrice?:boolean
+        }
+    },
+    bedBox?:{
+        args:{
+            mainWidth?:string,
+            mainHeight?:string,
+            img?:string,
+            imgWidth?:string,
+            imgHeight?:string,
+            imgMT?:string,
+            text?:string,
+            textSize?:string,
+            lineHeight?:string,
+            textWidth?:string,
+            lowerSectionHeight?:string,
+            lowerTextSize?:string,
+            lowerText?:string,
+            textMT?:string,
+            textMB?:string
+        }
+        flipArgs?:{}
+    },
+    sizeBox?:{
+        args:{
+            mainWidth?:string,
+            mainHeight?:string,
+            img?:string,
+            imgWidth?:string,
+            imgHeight?:string,
+            imgMT?:string,
+            text?:string,
+            textSize?:string,
+            lineHeight?:string,
+            textWidth?:string,
+            lowerSectionHeight?:string,
+            lowerTextSize?:string,
+            lowerText?:string,
+            textMT?:string,
+            textMB?:string
+        }
+        flipArgs?:{}
+    },
+    paymentBox?:{
+        args:{
+            mainWidth?:string,
+            mainHeight?:string,
+            img?:string,
+            imgWidth?:string,
+            imgHeight?:string,
+            imgMT?:string,
+            text?:string,
+            textSize?:string,
+            lineHeight?:string,
+            textWidth?:string,
+            lowerSectionHeight?:string,
+            lowerTextSize?:string,
+            lowerText?:string,
+            textMT?:string,
+            textMB?:string
+        }
+        flipArgs?:{
+            mainWidth?:string,
+            mainHeight?:string,
+            content?:{installment:string,precentage:string}[],
+            rowWidth?:string,
+            rowHeight?:string,
+            textSize?:string,
+            // aedSize?:string,
+            fontWeight?:string,
+            cornerWidth?:string
+        }
+    },
+    compleationBox?:{
+        args:{
+            mainWidth?:string,
+            mainHeight?:string,
+            img?:string,
+            imgWidth?:string,
+            imgHeight?:string,
+            imgMT?:string,
+            text?:string,
+            lineHeight?:string,
+            textSize?:string,
+            textWidth?:string,
+            lowerSectionHeight?:string,
+            lowerTextSize?:string,
+            lowerText?:string,
+            textMT?:string,
+            textMB?:string
+        }
+        flipArgs?:{}
+    },
+    developerBox?:{
+        args:{
+            mainWidth?:string,
+            mainHeight?:string,
+            img?:string,
+            imgWidth?:string,
+            imgHeight?:string,
+            imgMT?:string,
+            text?:string,
+            textSize?:string,
+            textWidth?:string,
+            lineHeight?:string,
+            lowerSectionHeight?:string,
+            lowerTextSize?:string,
+            lowerText?:string,
+            textMT?:string,
+            textMB?:string
+        }
+        flipArgs?:{}
+    },
+    contactBox?:{
+        args:{
+            mainWidth?:string,
+            mainHeight?:string,
+            img?:string,
+            imgWidth?:string,
+            imgHeight?:string,
+            imgMT?:string,
+            text?:string,
+            textSize?:string,
+            textWidth?:string,
+            lineHeight?:string,
+            lowerSectionHeight?:string,
+            lowerTextSize?:string,
+            lowerText?:string,
+            textMT?:string,
+            textMB?:string
+        }
+        flipArgs?:{}
+    },
+    agentBox?:{
+        Args:{
+
+
+            name:string,
+            speciality:string,
+            langs:string[]
+            nameTextSize?:string,
+            textSize?:string,
+            rounded?:string,
+            img1Width?:string,
+            img1Height?:string,
+            img2Width?:string,
+            img2Height?:string,
+            imgWrapperWidth?:string,
+            imgWrapperHeight?:string,
+            agentSectionHeight?:string,
+            nameFontWaight?:string,
+            lineHeight?:string
+        }
+        // flipArgs?:{}
+    },
+    socialWidth?:string,
+    socialHeight?:string,
+    favIconWidth?:string,
+    favIconHeight?:string,
+    shareIconWidth?:string,
+    shareIconHeight?:string,
+    viewIconWidth?:string,
+    viewIconHeight?:string,
+    brochure?:{
+        mainWidth?:string,
+        mainHeight?:string,
+        imgWidth?:string,
+        imgHeight?:string,
+        imgWrapperWidth?:string,
+        seperatorML?:string,
+        imgMT?:string,
+        restWidth?:string,
+        textSize?:string,
+        separatorWidth?:string,
+        mainMT?:string
+    },
+
+
+}
+
+
+const OriginalCard = (props:Props) => {
     const [swiper, setSwiper] = useState<any>();
     const [activeIndex, setActiveIndex] = useState(0)
     const outerNavigation = (callBack) => {
@@ -55,10 +333,10 @@ const OriginalCard = () => {
         imageref.current.style.transform = 'scale(1)'
     }
     return (
-        <div className='h-[43.1875rem] w-[26.285625rem] rounded-[0.90224375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.360898125rem_-0.360898125rem_0.72179375rem_0.180449375rem_#FFFFFF,0.360898125rem_0.360898125rem_0.72179375rem_#BABFBF] overflow-hidden my-[3.5rem]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <div className='w-[24.480625rem] h-full mx-auto'>
+        <div className=' rounded-[0.90224375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.360898125rem_-0.360898125rem_0.72179375rem_0.180449375rem_#FFFFFF,0.360898125rem_0.360898125rem_0.72179375rem_#BABFBF] overflow-hidden' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ width:props.mainWidth?props.mainWidth:'26.285625rem',height:props.mainHeight?props.mainHeight:'43.1875rem',marginTop:props.mainMT?props.mainMT:'4.1875rem',marginBottom:props.mainMB?props.mainMB:'4.1875rem' }}>
+            <div className=' h-full mx-auto' style={{ width:props.mainWrapperWidth?props.mainWrapperWidth:'24.480625rem' }}>
 
-                <div className='w-full h-[19.368125rem] mt-[0.9025rem] relative transition-all origin-bottom' ref={imageref}>
+                <div className='w-full relative transition-all origin-bottom' ref={imageref} style={{ height:props.imgHeight?props.imgHeight:'19.368125rem',marginTop:props.imgMT?props.imgMT:'0.9025rem' }}>
                 <Swiper
                     // pagination={pagination}
                     modules={[Pagination]}
@@ -85,7 +363,7 @@ const OriginalCard = () => {
                         // setSwiper(swiper)
 
                     }}
-                    className="mySwiperxxy"
+                    className="originalimageswiper"
 
                     >
                         <SwiperSlide>
@@ -112,74 +390,205 @@ const OriginalCard = () => {
 
                 </div>
                 </div>
-                <div className='w-full h-[2.68625rem] mx-auto  rounded-[0.90224375rem] mt-[0.32125rem] flex justify-between items-center'>
-                    <div className='text-grade text-[1.44375rem] font-[600]'>
+                <div className='w-full h-[2.68625rem] mx-auto  rounded-[0.90224375rem] mt-[0.32125rem] flex justify-between items-center' style={{ marginTop:props.titleMT?props.titleMT:'-0.1rem' }}>
+                    <div className='text-grade font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.375rem' }}>
                         Creek Rise tower 2 west side
                     </div>
-                    <div className='w-[2.706875rem] h-[2.706875rem]'>
+                    <div className='flex justify-between items-center' style={{ width:props.socialWrapperWidth?props.socialWrapperWidth:'5.49125rem' }}>
 
-                        <Brochure/>
+                        {/* <Brochure/> */}
+                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.330625rem',height:props.socialHeight?props.socialHeight:'1.330625rem' }}>
+                            <NewSocial img={shareIcon} img_w={props.shareIconWidth?props.shareIconWidth:'0.66875'} img_h={props.shareIconHeight?props.shareIconHeight:'0.66875'}/>
+                        </div>
+                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.330625rem',height:props.socialHeight?props.socialHeight:'1.330625rem' }}>
+                            <NewSocial img={favIcon} img_w={props.favIconWidth?props.favIconWidth:'0.6875'} img_h={props.favIconHeight?props.favIconHeight:'0.660625'}/>
+                        </div>
+                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.330625rem',height:props.socialHeight?props.socialHeight:'1.330625rem' }}>
+                            <NewSocial img={viewIcon} img_w={props.viewIconWidth?props.viewIconWidth:'0.835625'} img_h={props.viewIconHeight?props.viewIconHeight:'0.585'}/>
+                        </div>
                     </div>
                 </div>
-                <div className='text-grade mt-[0.0075rem] text-[1.023125rem]'>
+                <div className='text-grade' style={{ fontSize:props.subTitleSize?props.subTitleSize:'1.25rem',marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'-0.3rem' }}>
                     New project coming soon
                 </div>
+                <div className='w-full flex justify-end' style={{ marginTop:props.brochure.mainMT?props.brochure.mainMT:'-0.8rem' }}>
+                    <Brochure/>
+                </div>
                 <div className='flex w-full justify-between items-center h-[1.244375rem] mt-[0.125rem]'>
-                    <div className=' flex gap-[0.295rem] items-center'>
-                        <img src={mapIcon} alt="" className='w-[0.88625rem] h-[0.84125rem]'/>
-                        <div className='text-grade text-[0.9025rem]'>
+                    <div className=' flex justify-between items-center' style={{ marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'-2rem', width:props.areaWidth?props.areaWidth:'9.11875rem',}}>
+                        <img src={mapIcon} alt="" className='' style={{ width:props.areaWidth?props.areaWidth:'0.88625rem',height:props.areaIconHeight?props.areaIconHeight:'0.84125rem' }}/>
+                        <div className='text-grade ' style={{ fontSize:props.areatextSize?props.areatextSize:'0.9025rem' }}>
                             Dubai Creek Harbor
                         </div>
                     </div>
-                    <div className='flex items-center w-[6.24625rem] h-[0.960625rem] gap-[0.631875rem]'>
-                        <div className='w-[1.598125rem] h-[0.913125rem]'>
-                            <NewSocial img={share} img_w='0.60875' img_h='0.60875'/>
-                        </div>
-                        <div className='w-[1.598125rem] h-[0.913125rem]'>
-                            <NewSocial img={fav} img_w='0.640625' img_h='0.640625'/>
-                        </div>
-                        <div className='w-[1.598125rem] h-[0.913125rem]'>
-                            <NewSocial img={view} img_w='0.913125' img_h='0.913125'/>
-                        </div>
-                    </div>
                 </div>
-                <div className='w-full flex gap-[1.38375rem] mt-[0.76875rem]'>
-                    <div className='w-[7.278125rem] h-[1.56375rem]'>
+                <div className='w-full flex justify-between' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0rem' }}>
+                    <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.278125rem',height:props.tagHeight?props.tagHeight:'1.56375rem' }}>
                         <NewTag text='Appartment' textSize='0.781875'/>
                     </div>
-                    <div className='w-[7.278125rem] h-[1.56375rem]'>
+                    <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.278125rem',height:props.tagHeight?props.tagHeight:'1.56375rem' }}>
                         <NewTag text='Appartment' textSize='0.781875'/>
                     </div>
-                    <div className='w-[7.278125rem] h-[1.56375rem]'>
+                    <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.278125rem',height:props.tagHeight?props.tagHeight:'1.56375rem' }}>
                         <NewTag text='Appartment' textSize='0.781875'/>
                     </div>
                 </div>
-                <div className='w-full flex flex-wrap mt-[0.7025rem]'>
-                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem]'>
-                        <Price/>
-                    </div>
-                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem]'>
-                        <Price/>
-                    </div>
-                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem]'>
-                        <Price/>
-                    </div>
-                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem]'>
-                        <Price/>
-                    </div>
-                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem] mt-[0.6025rem]'>
-                        <Price/>
-                    </div>
-                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem] mt-[0.6025rem]'>
-                        <Price/>
-                    </div>
-                    <div className='w-[5.3125rem] scale-[0.96] h-[6.375rem] mr-[1.075125rem] mt-[0.6025rem]'>
-                        <Price/>
-                    </div>
-                    <div className='w-[5.3125rem] h-[6.375rem] mt-[0.6025rem] scale-[0.96]'>
-                        <Price />
-                    </div>
+                <div className='w-full flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.7025rem',columnGap:props.boxGapX?props.boxGapX:'1.323125rem',rowGap:props.boxGapY?props.boxGapY:'0.9025rem' }}>
+                <BoxMaster
+                        BoxType='standerd'
+                        flipType='zibra'
+                        boxArgs={
+                            {
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.priceBox.args
 
+                            }
+                        }
+                        flipArgs={
+                            {
+
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.priceBox.flipArgs
+                            }
+                        }
+                    />
+
+                    <BoxMaster
+                        BoxType='standerd'
+                        flipType='zibra'
+                        boxArgs={
+                            {
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.bedBox.args
+
+                            }
+                        }
+                        flipArgs={
+                            {
+
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.bedBox.flipArgs
+                            }
+                        }
+                    />
+                    <BoxMaster
+                        BoxType='standerd'
+                        flipType='zibra'
+                        boxArgs={
+                            {
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.sizeBox.args
+
+                            }
+                        }
+                        flipArgs={
+                            {
+
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.sizeBox.flipArgs
+                            }
+                        }
+                    />
+                    <BoxMaster
+                        BoxType='standerd'
+                        flipType='paymentPlan'
+                        boxArgs={
+                            {
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.paymentBox.args
+
+                            }
+                        }
+                        flipArgs={
+                            {
+
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.paymentBox.flipArgs
+                            }
+                        }
+                    />
+                    <BoxMaster
+                        BoxType='standerd'
+                        flipType='simpleFlip'
+                        boxArgs={
+                            {
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.compleationBox.args
+
+                            }
+                        }
+                        flipArgs={
+                            {
+
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.compleationBox.flipArgs
+                            }
+                        }
+                    />
+                    <BoxMaster
+                        BoxType='standerd'
+                        flipType='zibra'
+                        boxArgs={
+                            {
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.priceBox.args
+
+                            }
+                        }
+                        flipArgs={
+                            {
+
+                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                ...props.priceBox.flipArgs
+                            }
+                        }
+                    />
+
+                        <Contact
+                            mainHeight={props.boxHeight?props.boxHeight:'6.135rem'}
+                            mainWidth={props.boxWidth?props.boxWidth:'5.1125rem'}
+                            lowerSectionHeight='1.9725rem'
+                            boxWidth='1.804375rem'
+                            boxHeight='1.50375rem'
+                            videoWidth='0.845625rem'
+                            videoHeight='0.4725rem'
+                            wasupHeight='0.92125rem'
+                            wasupWidth='0.92125rem'
+                            phoneHeight='0.836875rem'
+                            phoneWidth='0.806875rem'
+                            emailWidth='0.778125rem'
+                            emailHeight='0.546875rem'
+                            boxMB='0.48125rem'
+                            boxMR='0.48125rem'
+                        />
+                    <div>
+                        <Agent
+                            Args={
+                                {
+
+                                    mainWidth: props.boxWidth?props.boxWidth:'5.1125rem',
+                                    mainHeight: props.boxHeight?props.boxHeight:'6.135rem',
+                                    ...props.agentBox.Args
+                                }
+                            }
+                        // name='Nasiif'
+                        // speciality='Downtown'
+                        // langs={['Arabic','English']}
+
+                        />
+                    </div>
                 </div>
             </div>
         </div>

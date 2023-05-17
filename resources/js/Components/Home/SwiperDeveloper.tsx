@@ -40,43 +40,43 @@ const SwiperDeveloper = () => {
             className="devmySwiper"
         >
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem] '>
-                    <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem] '>
+                    <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem]'>
-                    <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                    <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem]'>
-                    <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                    <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem]'>
-                    <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                    <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem]'>
-                    <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                    <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem]'>
-                    <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                    <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem]'>
-                    <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                    <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[3.3125rem] mb-[1.875rem]'>
-                    <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000'/>
+                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                    <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
 

@@ -9,6 +9,8 @@ import size_vector from '../../../../assets/size_vector.svg'
 
 interface Props{
     img:string
+    text:string,
+    val:string
 }
 const HoverCardProperty = (props:Props) => {
     return (
