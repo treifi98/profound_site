@@ -32,8 +32,7 @@ const LogoTextRL = () => {
                     <img src={imgRT} alt="" className='w-[14.931875rem] h-[15.19625rem] rounded-[5.4473125rem_0.367384375rem_5.4473125rem_0.367384375rem]'/>
 
                 </div>
-                <div className='w-[16.125rem] h-[16.28125rem] rounded-[5.4473125rem_0.551694375rem_5.4473125rem_0.367384375rem] mr-[1rem] mt-[1rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.
-                    284905rem_#BABFBF] flex justify-center items-center'>
+                <div className='w-[16.125rem] h-[16.28125rem] rounded-[5.4473125rem_0.551694375rem_5.4473125rem_0.367384375rem] mr-[1rem] mt-[1rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
                     <img src={imgLB} alt="" className='w-[14.931875rem] h-[15.19625rem] rounded-[5.4473125rem_0.551694375rem_5.4473125rem_0.367384375rem]'/>
                 </div>
                 <div className='w-[16.125rem] h-[16.28125rem] rounded-[0.551694375rem_5.4473125rem_0.367384375rem_5.4473125rem] mt-[1rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>

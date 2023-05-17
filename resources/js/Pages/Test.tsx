@@ -84,6 +84,10 @@ import InfoShape from '@/Components/Developer/InfoShape'
 import AboutProperty from '@/Components/Developer/AboutProperty'
 import InquiryFormGreen from '@/Components/Developer/InquiryFormGreen'
 import InquiryFormWiht from '@/Components/Developer/InquiryFormWhit'
+import Areas from '@/Components/Developer/Areas'
+import ImgGallery from '@/Components/Developer/ImgGallery'
+import Crooked from '@/Components/Developer/Crooked'
+import NoCrooked from '@/Components/Developer/NoCrooked'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -1057,6 +1061,18 @@ const Test = () =>{
     </div>
     <div className='my-[2rem] mx-auto w-max'>
         <InquiryFormWiht/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <Areas/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <ImgGallery/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <Crooked/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <NoCrooked/>
     </div>
 
 

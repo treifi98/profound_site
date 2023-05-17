@@ -12,6 +12,7 @@ const NewTag = (props:Props) => {
     useEffect(() => {
         let scale = 1
         let new_width = elmnt.current.parentElement.style.width.split('rem')[0]
+        
         // alert(new_width)
         scale = new_width / 8.125
         // alert(parseFloat(props.mainHeight)/30.625)

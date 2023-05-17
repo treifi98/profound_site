@@ -22,13 +22,13 @@ const BarArea = (props:Props) => {
             <img src={icon} alt="" className='w-[5.5625rem] h-[3.25rem] '/>
             {/* <div className='h-[3.125rem] w-[1px] bg-[#CED7D8] ml-[0.375rem] mr-[0.9375rem]'></div> */}
             <div className='text-grade text-[1.875rem] font-[600] ml-[0.9375rem]'>Dubai Areas</div>
-            <div className='ml-[9.2925rem] w-[12.77rem] h-[2.1875rem] '>
+            <div className='ml-[9.2925rem]  h-[2.1875rem] ' style={{ width:'12.77rem' }}>
                 <NewTag text='Appartments for sale'  textSize='1.125' textWeight='400'/>
             </div>
-            <div className='ml-[3.125rem] w-[12.77rem] h-[2.1875rem] '>
+            <div className='ml-[3.125rem]  h-[2.1875rem] ' style={{ width:'12.77rem' }}>
                 <NewTag text='Town houses for sale'  textSize='1.125' textWeight='400'/>
             </div>
-            <div className='ml-[3.125rem] w-[12.77rem] h-[2.1875rem] '>
+            <div className='ml-[3.125rem]  h-[2.1875rem] ' style={{ width:'12.77rem' }}>
                 <NewTag text='Villas for sale'  textSize='1.125' textWeight='400'/>
             </div>
             <div className='ml-[15.459375rem]'>

@@ -18,7 +18,7 @@ const InquiryFormGreen = () => {
                             <DynamicTextGreen icon={userIcon} placeHolder='Your full name' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.11375rem' imgHeight='1.11375rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
                             <DynamicTextGreen icon={emaiIcon} placeHolder='Your email address' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.26125rem' imgHeight='0.88625rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
                             <DynamicTextGreen icon={uaeFlag} placeHolder='0501234567' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.480625rem' imgHeight='0.986875rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
-                            <textarea name="message" id="" className='bg-[#002D31] rounded-[0.425rem] w-[19.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[inset_-0.137583125rem_-0.137583125rem_0.228848125rem_-1.22052px_#007580,inset_0.137583125rem_0.137583125rem_0.179920625rem_#011618]' placeholder='Your message .....'></textarea>
+                            <textarea name="message" id="" className='text-[#fff] bg-[#002D31] rounded-[0.425rem] w-[19.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[inset_-0.137583125rem_-0.137583125rem_0.228848125rem_-1.22052px_#007580,inset_0.137583125rem_0.137583125rem_0.179920625rem_#011618]' placeholder='Your message .....'></textarea>
                         </div>
 
                         <div className='w-[20.84rem] h-full rounded-[0.55rem] shadow-[inset_-0.274211875rem_-0.274211875rem_0.43873875rem_#04626B,inset_0.274211875rem_0.274211875rem_0.43873875rem_#011618]'>
