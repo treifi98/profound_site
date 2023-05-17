@@ -68,6 +68,7 @@ import OriginalCard from '@/Components/Home/Cards/New/OriginalCard'
 import CircularLayout from '@/Components/Home/Cards/Common/CircularLayout'
 import OffplanCard from '@/Components/Home/Cards/New/OffplanCard'
 import PillRadio from '@/Components/Home/Cards/Common/PillRadio'
+import InElementSeperator from '@/Components/Home/Cards/Common/InElementSeperator'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -395,6 +396,28 @@ const Test = () =>{
         />
 
 
+
+    </div>
+
+    <div className='m-[35px]'>
+        {/*  */}
+
+            <div className='w-[91.25rem] h-[39.25rem] flex justify-evenly bg-[#E6EDED] shadow-[-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,0.3125rem_0.3125rem_0.4375rem_#B6C3C5] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem]'>
+            <div className='w-[35.0625rem] h-[36.9375rem] mt-[1rem] '>
+                <div className='w-[35.0625rem] h-[9.8125rem] shadow-[-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,0.3125rem_0.3125rem_0.4375rem_#B6C3C5] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] flex items-center'>
+                    <div className='flex '>
+
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <InElementSeperator width='0.4375rem' height='39.25rem'/>
+            </div>
+            <div  className='w-[51.75rem] h-[37.5775rem] bg-[blue] mt-[1rem]'>
+
+            </div>
+        </div>
 
     </div>
 
