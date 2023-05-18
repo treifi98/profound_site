@@ -88,6 +88,8 @@ import Areas from '@/Components/Developer/Areas'
 import ImgGallery from '@/Components/Developer/ImgGallery'
 import Crooked from '@/Components/Developer/Crooked'
 import NoCrooked from '@/Components/Developer/NoCrooked'
+import PrecantageSmall from '@/Components/Developer/PrecantageSmall'
+import MainPaymentPlan from '@/Components/Developer/MainPaymentPlan'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -1075,13 +1077,16 @@ const Test = () =>{
         <NoCrooked/>
     </div>
     <div className='my-[2rem] mx-auto w-max'>
-        <div className='progress-bar w-[91.08px] h-[91.08px] rounded-full border-[#DCE3E3] border-[1px] relative z-[1] flex justify-center items-center'>
-            <div className='w-[68.42px] h-[68.42px] bg-[#E6EDED] rounded-full flex justify-center items-center'>
-                <div className='w-[46.33px] h-[46.33px] bg-[#E6EDED] rounded-full shadow-[inset_-2.78845px_-2.78845px_6.88446px_-0.38247px_#FFFFFF,inset_2.78845px_2.78845px_8.79681px_#B6C3C5]'>
+        <div className='shadow-[inset_-3.49249px_-3.49249px_5.58799px_#FFFFFF,inset_3.49249px_3.49249px_4.88949px_#B6C3C5] w-[91.08px] h-[91.08px] rounded-full border-[#DCE3E3] border-[1px] relative z-[1] flex justify-center items-center'>
 
+            <div className='progress-bar w-[91.08px] h-[91.08px] rounded-full  relative z-[1] flex justify-center items-center'>
+                <div className='w-[68.42px] h-[68.42px] bg-[#E6EDED] rounded-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-3.32786px_-3.32786px_5.32458px_#FFFFFF,3.32786px_3.32786px_4.659px_#B6C3C5]'>
+                    <div className='w-[46.33px] h-[46.33px] bg-[#E6EDED] rounded-full shadow-[inset_-2.78845px_-2.78845px_6.88446px_-0.38247px_#FFFFFF,inset_2.78845px_2.78845px_8.79681px_#B6C3C5]'>
+
+                    </div>
                 </div>
+                <progress value="20" min="0" max="100" style={{ visibility:'hidden',height:'0rem',width:'0rem' }} className='xxx relative z-[2]'>75%</progress>
             </div>
-            <progress value="20" min="0" max="100" style={{ visibility:'hidden',height:'0rem',width:'0rem' }} className='xxx relative z-[2]'>75%</progress>
         </div>
     </div>
     <div className='my-[2rem] mx-auto w-max'>
@@ -1097,6 +1102,12 @@ const Test = () =>{
             </div>
         </div>
 
+    </div>
+    <div className='my-[12rem] mx-auto w-max'>
+        <PrecantageSmall prcantage={30}/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <MainPaymentPlan/>
     </div>
 
 
