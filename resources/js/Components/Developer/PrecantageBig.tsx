@@ -7,7 +7,7 @@ interface Props{
 }
 
 
-const PrecantageSmall = (props:Props) => {
+const PrecantageBig = (props:Props) => {
 
     const svg = useRef(null)
     const circle = useRef(null)
@@ -62,7 +62,7 @@ const PrecantageSmall = (props:Props) => {
     //   animateValue(obj, 100, 0, 5000);
 
     return (
-        <div className='bg-[#E6EDED] w-[5.42375rem] h-[5.42375rem] rounded-full border-none flex justify-center items-center relative overflow-hidden shadow-[inset_-3.32786px_-3.32786px_5.32458px_#FFFFFF,inset_3.32786px_3.32786px_4.659px_#B6C3C5] '>
+        <div className='bg-[#E6EDED] w-[5.6925rem] h-[5.6925rem] rounded-full border-none flex justify-center items-center relative overflow-hidden shadow-[inset_-3.32786px_-3.32786px_5.32458px_#FFFFFF,inset_3.32786px_3.32786px_4.659px_#B6C3C5] '>
 
             <svg id="svg" viewBox="0 0 200 200" className='w-full h-0 absolute top-[0px]  z-[9999999] rotate-[-90deg] origin-center transition-all duration-[0.2s]' ref={svg}>
                 <defs>
@@ -80,14 +80,14 @@ const PrecantageSmall = (props:Props) => {
                 <circle id="circle-bg" cx="100" cy="100" r="90" stroke="#00494F" stroke-width="30" fill="none" filter="url(#f1)" />
                 <circle id="circle" cx="100" cy="100" r="90" stroke="#00494F" stroke-width="30" fill="none" filter="url(#f2)" ref={circle} className='w-full h-full'/>
             </svg>
-            <div className='w-[4.075rem] h-[4.075rem] rounded-full z-[99999] absolute top-[0.674375rem] left-[0.674375rem] shadow-[-3.32786px_-3.32786px_5.32458px_#FFFFFF,3.32786px_3.32786px_4.659px_#B6C3C5] flex justify-center items-center' style={{ backgroundColor:props.bg?props.bg:'#E6EDED' }}>
+            <div className='w-[4.27625rem] h-[4.27625rem] rounded-full z-[99999] absolute top-[0.674375rem] left-[0.674375rem] shadow-[-3.32786px_-3.32786px_5.32458px_#FFFFFF,3.32786px_3.32786px_4.659px_#B6C3C5] flex justify-center items-center' style={{ backgroundColor:props.bg?props.bg:'#E6EDED' }}>
             </div>
-            <div className='w-[2.75875rem] h-[2.75875rem] shadow-[inset_-2.65701px_-2.65701px_6.55994px_-0.364441px_#FFFFFF,inset_2.65701px_2.65701px_8.38214px_#B6C3C5] rounded-full absolute top-[1.3075rem] left-[1.3075rem] z-[9999999999999] flex justify-center items-center bg-[#E6EDED]' >
+            <div className='w-[2.895625rem] h-[2.895625rem] shadow-[inset_-2.65701px_-2.65701px_6.55994px_-0.364441px_#FFFFFF,inset_2.65701px_2.65701px_8.38214px_#B6C3C5] rounded-full absolute top-[1.4075rem] left-[1.4075rem] z-[9999999999999] flex justify-center items-center bg-[#E6EDED]' >
                 <div className='text-grade text-[0.91125rem] font-[600]' id='value' ref={value}>
                     {props.prcantage}%
                 </div>
             </div>
-            <div className='w-[4.075rem] h-[4.075rem] rounded-full bg-[#E6EDED] z-[99999999] absolute top-[0.674375rem] left-[0.674375rem] 'style={{ backgroundColor:props.bg?props.bg:'#E6EDED' }}>
+            <div className='w-[4.27625rem] h-[4.27625rem] rounded-full bg-[#E6EDED] z-[99999999] absolute top-[0.674375rem] left-[0.674375rem] 'style={{ backgroundColor:props.bg?props.bg:'#E6EDED' }}>
 
             </div>
 
@@ -95,4 +95,4 @@ const PrecantageSmall = (props:Props) => {
     )
 }
 
-export default PrecantageSmall
+export default PrecantageBig

@@ -56,7 +56,7 @@ const InfoShape = (props:Props) => {
         // alert(inttersection)
 
         wrapper.current.style.width = (parseFloat(bar.current.style.width.split('rem')) - (parseFloat(bluePill.current.style.width.split('rem')) + inttersection)).toString() + 'rem'
-        
+
         wrapper.current.style.marginLeft = inttersection.toString()+'rem'
 
         placeHolder.current.style.width = (parseFloat(main.current.style.width.split('rem')[0]) - parseFloat(bar.current.style.width.split('rem')[0])).toString() + 'rem'

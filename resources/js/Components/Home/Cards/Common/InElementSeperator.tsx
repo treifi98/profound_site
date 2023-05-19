@@ -7,7 +7,7 @@ interface Props{
 }
 const InElementSeperator = (props:Props) => {
     return (
-        <div className='' style={{ width: props.width ? props.width : '0.3125rem', height : props.height ? props.height : '100%', boxShadow : props.shadow ? props.shadow : 'inset -0.125rem -0.125rem 0.125rem #FFFFFF, inset 0.125rem 0.125rem 0.125rem #B6C3C5' }}>
+        <div className='bg-[#E6EDED]' style={{ width: props.width ? props.width : '0.3125rem', height : props.height ? props.height : '100%', boxShadow : props.shadow ? props.shadow : 'inset -0.125rem -0.125rem 0.125rem #FFFFFF, inset 0.125rem 0.125rem 0.125rem #B6C3C5' }}>
 
         </div>
     )
