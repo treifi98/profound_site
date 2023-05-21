@@ -31,6 +31,8 @@ const RangeSingle: React.FC<Props> = ({ rtl, max, min, step, id }) => {
     }
   },[rangeInfo])
 
+//   React.useEffect(()=>{alert(value)},[value])
+
   const rangeRef: any = React.useRef<Range>();
 
   const Thumb = ({ props, isDragged }: any) => (
@@ -136,13 +138,17 @@ const RangeSingle: React.FC<Props> = ({ rtl, max, min, step, id }) => {
         <div className='w-[10.625rem] h-[2.1875rem] absolute top-[1.875rem] left-0 rounded-[5.6875rem] flex justify-center items-center bg-[#E6EDED] shadow-[inset_-0.25967125rem_-0.25967125rem_0.41547375rem_#FFFFFF,inset_0.25967125rem_0.25967125rem_0.363539375rem_#B6C3C5]'>
             <div className='text-[#7D8989] font-[600] text-[1.25rem]'>
 
-                {value}
+                {value.toLocaleString()}
             </div>
             </div>
-        <div className='w-[10.625rem] h-[2.1875rem] absolute top-[-1.875rem] left-0 rounded-[5.6875rem] flex justify-center items-center bg-[#E6EDED] shadow-[inset_-0.25967125rem_-0.25967125rem_0.41547375rem_#FFFFFF,inset_0.25967125rem_0.25967125rem_0.363539375rem_#B6C3C5]'>
-            <div className='text-[#7D8989] font-[600] text-[1.25rem]'>
-
-                {value}
+        <div className='w-[10.625rem] h-[2.1875rem] absolute top-[-2.575rem] right-0 rounded-[5.6875rem] flex justify-center items-center ]'>
+            <div className='text-[#7D8989] font-[600] text-[1.125rem]'>
+                {max.toLocaleString()} AED
+            </div>
+        </div>
+        <div className='w-[10.625rem] h-[2.1875rem] absolute top-[-2.575rem] left-0 rounded-[5.6875rem] flex justify-center items-center ]'>
+            <div className='text-[#7D8989] font-[600] text-[1.125rem]'>
+                Loan Amount ( AED)
             </div>
         </div>
     </div>
