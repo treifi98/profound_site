@@ -99,6 +99,10 @@ import FloorPlan from '@/Components/Developer/FloorPlan'
 import Amenities from '@/Components/Developer/Amenities'
 import MortgageCalculator from '@/Components/Developer/MortgageCalculator'
 import RangeSingle from '@/Components/Developer/RangeSingle'
+import DistanceProgress from '@/Components/Developer/DistanceProgress'
+import { DistanceContainer } from '@/Components/Developer/DistanceContainer'
+import Attraction from '@/Components/Developer/Attraction'
+import SecondaryInfo from '@/Components/Developer/SecondaryInfo'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -1146,7 +1150,20 @@ const Test = () =>{
         <MortgageCalculator/>
     </div>
     <div className='my-[2rem] mx-auto w-[80%]'>
-    <RangeSingle RTL={false} max={15000} min={0} step={200} MinStep={200} MaxStep={200} StepDefault={true}/>
+    {/* <RangeSingle RTL={false} max={15000} min={0} step={200} MinStep={200} MaxStep={200} StepDefault={true}/> */}
+    </div>
+    <div className='my-[2rem] mx-auto w-[80%]'>
+        <DistanceProgress distance={3.57}/>
+    </div>
+    <div className='my-[2rem] mx-auto w-[80%]'>
+        <DistanceContainer distance={3.57}/>
+    </div>
+
+    <div className='my-[2rem] mx-auto w-[95%]'>
+        <Attraction/>
+    </div>
+    <div className='my-[2rem] mx-auto w-[95%]'>
+        <SecondaryInfo/>
     </div>
 
 

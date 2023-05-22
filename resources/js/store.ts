@@ -4,6 +4,7 @@ import SelectSlice from "./Components/Home/FiltersAndSearch/SelectSlice";
 import CheckComponentSlice from "./Components/Home/FiltersAndSearch/CoreFilters/CheckComponentSlice";
 import MenueHoverSlice from "./Components/Home/MenueHoverSlice";
 import RangeComponentSlice from "./Components/Home/FiltersAndSearch/RangeComponentSlice";
+import RangeSingleSlice from "./Components/Developer/RangeSingleSlice";
 
 export const store = configureStore({
     reducer:{
@@ -12,6 +13,7 @@ export const store = configureStore({
         check:CheckComponentSlice,
         menue:MenueHoverSlice,
         range:RangeComponentSlice,
+        rangeSingle:RangeSingleSlice,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck: false,}),
 })
