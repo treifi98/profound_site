@@ -24,6 +24,7 @@ interface Args{
         nameFontWaight?:string,
         textHeight?:string,
         lineHeight?:string,
+        imgWrapperMT?:string,
 
     }
 }
@@ -34,7 +35,7 @@ const Agent = ({Args}:Args) => {
             <div className='bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]  group-hover:shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5] duration-[0.1s]' style={{ width:Args.mainWidth ? Args.mainWidth : '5.3125rem', height:Args.mainHeight ? Args.mainHeight : '6.375rem', borderRadius: Args.rounded ? Args.rounded : '0.3125rem' }}>
                 <div className='flex flex-col justify-between items-center h-full w-full group-hover:opacity-0 duration-[0.1s]'>
 
-                    <div className=' mt-[0.375rem] relative bg-custom-gradient1 shadow-[0rem_0.25rem_0.25rem_rgba(0,0,0,0.25)] flex justify-center items-center ' style={{ width: Args.imgWrapperWidth ? Args.imgWrapperWidth : '4.4375rem', height: Args.imgWrapperHeight ? Args.imgWrapperHeight : '3.8125rem', borderRadius: Args.rounded ? Args.rounded : '0.3125rem' }}>
+                    <div className=' relative bg-custom-gradient1 shadow-[0rem_0.25rem_0.25rem_rgba(0,0,0,0.25)] flex justify-center items-center ' style={{ width: Args.imgWrapperWidth ? Args.imgWrapperWidth : '4.4375rem', height: Args.imgWrapperHeight ? Args.imgWrapperHeight : '3.8125rem', borderRadius: Args.rounded ? Args.rounded : '0.3125rem', marginTop:Args.imgWrapperMT?Args.imgWrapperMT:'0.375rem' }}>
                         <div className='relative' style={{ width: Args.img1Width ? Args.img1Width : '4.1875rem', height: Args.img1Height ? Args.img1Height : '3.5625rem' }}>
                             <img src={agent} alt="" className='object-contain object-center' style={{ width: Args.img1Width ? Args.img1Width : '4.1875rem', height: Args.img1Height ? Args.img1Height : '3.5625rem' }}/>
                             <img src={agent2} alt="" className='absolute top-0 left-[0.125rem] object-contain object-center' style={{ width: Args.img2Width ? Args.img2Width : '4.0625rem', height: Args.img2Height ? Args.img2Height : '3.5625rem', left: ((Args.img1Width ? parseInt(Args.img1Width) : 4.1875) - (Args.img2Width ? parseInt(Args.img2Width) : 4.0625)) + 'rem' }}/>
@@ -65,7 +66,7 @@ const Agent = ({Args}:Args) => {
 
                     </div>
                         <div className=' bg-custom-gradient shadow-[inset_-0.25rem_-0.25rem_0.3125rem_#1E6970,inset_0.25rem_0.25rem_0.3125rem_rgba(0,0,0,0.38)] flex justify-center items-center rounded-[0rem_0rem_0.3125rem_0.3125rem]' style={{ width: Args.mainWidth ? Args.mainWidth : '5.3125rem', height:Args.agentSectionHeight ? Args.agentSectionHeight : '1.625rem' }}>
-                            <div className='text-[#E6EDED] text-[0.75rem] font-[600]'>
+                            <div className='text-[#E6EDED] text-[0.75rem] font-[600]'style={{ fontSize: Args.nameTextSize ? Args.nameTextSize : '0.875rem', fontWeight: Args.nameFontWaight ? Args.nameFontWaight : '600' }}>
                                 {Args.name}
                             </div>
                         </div>

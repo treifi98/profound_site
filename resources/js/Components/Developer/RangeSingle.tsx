@@ -28,6 +28,7 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
   const [MIN,setMIN] = React.useState(min)
   const [MAX,setMAX] = React.useState(max)
   const [value, setValue] = React.useState(min);
+  const [fatcor, setFatcor] = React.useState(16);
 
     React.useEffect(() => {
         dispatch(handleChange({value,id:id}))
@@ -35,7 +36,15 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
     const xon = React.useRef(null)
     const [displacment, setDisplacment] = React.useState('0')
 
-  React.useEffect(()=>{setDisplacment(xon.current.parentElement.style.transform.split(',')[0].split('(')[1].split('px')[0])})
+  React.useEffect(()=>{
+        setDisplacment(xon.current.parentElement.style.transform.split(',')[0].split('(')[1].split('px')[0])
+
+        window.addEventListener('resize',()=>{
+            setFatcor(parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size').split('px')[0]))
+        })
+        // window.getComputedStyle(document.body).getPropertyValue('font-size');
+        setFatcor(parseFloat(window.getComputedStyle(document.body).getPropertyValue('font-size').split('px')[0]))
+    })
 
   const rangeRef: any = React.useRef<Range>();
 
@@ -59,7 +68,7 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
       }}
     >
 
-        <div className='absolute h-[0.945rem]  top-[8px] left-[10px] bg-[#E6EDED] z-[9999999] rounded-md shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,_inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' style={{ width:(38.9 - parseFloat(parseFloat(displacment)/16))+'rem' }}>
+        <div className='absolute h-[0.945rem]  top-[0.55rem] left-[0.525rem] bg-[#E6EDED] z-[9999999] rounded-md shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,_inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' style={{ width:(38.9 - (parseFloat(displacment)/fatcor))+'rem' }}>
 
         </div>
        {/* <ThumbLabel rangeRef={rangeRef.current} values={value}  /> */}
@@ -137,7 +146,7 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
                     position: 'absolute',
                     height: '0.875rem',
 
-                    width: `${((value) * 100 / (max)) % 664}%`,
+                    width: `${((value) * 100 / (max))}%`,
                     borderRadius: '6.25rem',
                     background: '#00494F',
                     left: `0`,
@@ -171,7 +180,7 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
         }
         {
             dp?
-            <div className='w-[10.625rem] h-[2.1875rem] absolute top-[1.875rem] right-0  flex justify-end items-center '>
+            <div className='w-[10.625rem] h-[2.1875rem] absolute top-[1.875rem] right-0 flex justify-end items-center '>
                 <div className='text-grade font-[600] text-[1.25rem]'>
 
                     {value.toLocaleString()}%

@@ -17,28 +17,25 @@ import Contact from '../Home/Cards/Common/Boxes/OffPlan/Contact'
 import Agent from '../Home/Cards/Common/Boxes/OffPlan/Agent'
 import agentImg from '../../../assets/agent.png'
 import InElementSeperator from '../Home/Cards/Common/InElementSeperator'
-const SecondaryInfo = () => {
+const SecondaryRent = () => {
   return (
     <div className=' w-[91.25rem] h-[38.125rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
         <div className='w-full h-[3.75rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex items-center'>
             <div className='ml-[1.5rem]' style={{ width:'8.75rem',height:'2rem' }}>
                 <NewTag text='Apartment' textSize='1.125rem' textWeight='400'/>
             </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
+            <div className='ml-[2.5rem]' style={{ width:'8.75rem',height:'2rem' }}>
                 <NewTag text='Highe ROI' textSize='1.125rem' textWeight='400'/>
             </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
+            <div className='ml-[2.5rem]' style={{ width:'8.75rem',height:'2rem' }}>
                 <NewTag text='Higher Floor' textSize='1.125rem' textWeight='400'/>
             </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
+            <div className='ml-[2.5rem]' style={{ width:'8.75rem',height:'2rem' }}>
                 <NewTag text='Close to Beach ' textSize='1.125rem' textWeight='400'/>
             </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
-                <NewTag text='Park View ' textSize='1.125rem' textWeight='400'/>
-            </div>
         </div>
-        <div className='w-[86.0625rem] flex justify-center mx-auto'>
-            <div className='w-[48.3125rem] h-[34.71875rem] mt-[0.725rem]'>
+        <div className='w-[86.125rem] flex justify-center mx-auto'>
+            <div className='w-[40.30625rem] h-[34.71875rem] mt-[0.725rem]'>
                 <div className='text-grade text-[1.875rem] font-[600]'>
                     Creek Rise tower 2 west side
                 </div>
@@ -61,7 +58,7 @@ const SecondaryInfo = () => {
                 </div>
 
 
-                    <div className='w-[48.325625rem]  h-[21.606875rem] flex flex-wrap gap-x-[1.875rem] gap-y-[2.018125rem] mt-[1.564375rem]'>
+                    <div className='w-[40.30625rem]  h-[21.606875rem] flex flex-wrap gap-x-[2.525rem] gap-y-[2.518125rem] mt-[1.564375rem]'>
                         <BoxMaster
                             BoxType='standerd'
                             // flipType='zibra'
@@ -239,64 +236,7 @@ const SecondaryInfo = () => {
                                 }
                             }
                         />
-                        <BoxMaster
-                            BoxType='standerd'
-                            // flipType='zibra'
-                            boxArgs={
-                                {
-                                    mainHeight:'9.794375rem',
-                                    mainWidth:'8.1625rem',
-                                    text:'Property type',
-                                    lowerText:'1',
-                                    img:statusIcon,
-                                    imgWidth:'3.625rem',
-                                    imgHeight:'3.5rem',
-                                    imgMT:'0.75rem',
-                                    textSize:'1.200625rem',
-                                    textWidth:'8.225rem',
-                                    textMT:'0.575rem',
-                                    lowerSectionHeight:'2.5925rem',
-                                    textMB:'0.799875rem',
-                                    lowerTextSize: '1.248125rem',
-                                    lineHeight:'1.520625rem'
-                                }
-                            }
-                            flipArgs={
-                                {
-                                    isPrice:true,
-                                    content:[{'1':'10000','2':'1000000'}]
-                                }
-                            }
-                        />
-                        <BoxMaster
-                            BoxType='standerd'
-                            // flipType='zibra'
-                            boxArgs={
-                                {
-                                    mainHeight:'9.794375rem',
-                                    mainWidth:'8.1625rem',
-                                    text:'Mortgage',
-                                    lowerText:'1',
-                                    img:mortgageIcon,
-                                    imgWidth:'3.11125rem',
-                                    imgHeight:'3.11125rem',
-                                    imgMT:'1.05625rem',
-                                    textSize:'1.248125rem',
-                                    textWidth:'8.225rem',
-                                    textMT:'0.7075rem',
-                                    lowerSectionHeight:'2.5925rem',
-                                    textMB:'0.739875rem',
-                                    lowerTextSize: '1.248125rem',
-                                    lineHeight:'1.520625rem'
-                                }
-                            }
-                            flipArgs={
-                                {
-                                    isPrice:true,
-                                    content:[{'1':'10000','2':'1000000'}]
-                                }
-                            }
-                        />
+
                         <Contact
                             mainHeight='9.794375rem'
                             mainWidth='8.1625rem'
@@ -343,10 +283,10 @@ const SecondaryInfo = () => {
 
                     </div>
             </div>
-            <div className='h-[38.125rem] z-[2] relative mt-[-3.75rem] ml-[2.9375rem]'>
+            <div className='h-[38.125rem] z-[2] relative mt-[-3.75rem] ml-[2.625rem]'>
                 <InElementSeperator width='0.375rem'/>
             </div>
-            <div className='w-[31.3125rem] ml-[2.9375rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] h-[29.5625rem] rounded-[0.9375rem] mt-[2.75rem] flex flex-col items-center justify-center '>
+            <div className='w-[40.25rem] ml-[2.625rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] h-[29.5625rem] rounded-[0.9375rem] mt-[2.75rem] flex flex-col items-center justify-center '>
                 <div className='text-[1.375rem] font-[600] text-grade mb-[1.4375rem] w-[28.75rem] font-[nova]'>
                     High Floor | Stunning Sea View | Investors Deal
                 </div>
@@ -364,4 +304,4 @@ const SecondaryInfo = () => {
   )
 }
 
-export default SecondaryInfo
+export default SecondaryRent
