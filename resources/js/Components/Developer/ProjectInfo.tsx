@@ -17,7 +17,10 @@ import Contact from '../Home/Cards/Common/Boxes/OffPlan/Contact'
 import Agent from '../Home/Cards/Common/Boxes/OffPlan/Agent'
 import agentImg from '../../../assets/agent.png'
 import InElementSeperator from '../Home/Cards/Common/InElementSeperator'
-const SecondaryInfo = () => {
+import TextType1 from '../Home/Inputs/TextType1'
+import DynamicTextWhit from '../Home/Inputs/DynamicTextWhit'
+import userIcon from '../../../assets/user_icon.svg'
+const ProjectInfo = () => {
   return (
     <div className=' w-[91.25rem] h-[38.125rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
         <div className='w-full h-[3.75rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex items-center'>
@@ -347,12 +350,33 @@ const SecondaryInfo = () => {
                 <InElementSeperator width='0.375rem'/>
             </div>
             <div className='w-[31.3125rem] ml-[2.9375rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] h-[29.5625rem] rounded-[0.9375rem] mt-[2.75rem] flex flex-col items-center justify-center '>
-                <div className='text-[1.375rem] font-[600] text-grade mb-[1.4375rem] w-[28.75rem] font-[nova]'>
-                    High Floor | Stunning Sea View | Investors Deal
-                </div>
-                <div className=' w-[28.3125rem] leading-[2rem] text-[1.25rem]'>
-                    Do you want to live in a luxury serviced apartment with one of the most amazing views?Are you ecstatic to buy a home on a very high floor?Keep on reading as this will be the perfect unit for you! Contact our specialist to arrange a viewing and discuss more in detail.Metropolitan Premium Properties is proud to exclusively bring you this fully-furnished, phenomenal 2-bedroom apartment that will definitely capture not only your eyes but your heart as well.
-                    Quite a lot of unique selling points add to the
+                <div className='w-[28.88625rem] h-[27.18125rem] shadow-[-0.250746875rem_-0.250746875rem_0.401195rem_#FFFFFF,0.250746875rem_0.250746875rem_0.351045625rem_#B6C3C5] rounded-[0.75rem] flex justify-center items-center'>
+                    <div className='w-[27.18125rem] h-[26.42rem] flex flex-col items-center'>
+                        <div className='text-grade text-[1.739375rem] font-[600]'>
+                            Register your interest
+                        </div>
+                        <div className='mt-[1.403125rem]'>
+
+                            <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                        </div>
+                        <div className='mt-[2.57625rem]'>
+
+                            <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                        </div>
+                        <div className='mt-[2.57625rem]'>
+
+                            <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                        </div>
+                        <div className='mt-[2.455rem] w-[13.590625rem] h-[2.718125rem] rounded-[5.4375rem] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center shadow-[-0.248221875rem_-0.248221875rem_0.397155rem_#FFFFFF,0.248221875rem_0.248221875rem_0.347510625rem_#B6C3C5] cursor-pointer hover:shadow-[inset_-0.248221875rem_-0.248221875rem_0.397155rem_#FFFFFF,inset_0.248221875rem_0.248221875rem_0.347510625rem_#B6C3C5]'>
+                            <div className='text-grade text-[1.413125rem] font-[600] '>
+                                Submit Details
+                            </div>
+                        </div>
+                        <div className='mt-[1.328125rem] text-[0.87rem]'>
+                            By clicking Submit, you agree to our Terms & Privacy Policy.
+                        </div>
+                        {/* <dynamic /> */}
+                    </div>
                 </div>
             </div>
 
@@ -364,4 +388,4 @@ const SecondaryInfo = () => {
   )
 }
 
-export default SecondaryInfo
+export default ProjectInfo

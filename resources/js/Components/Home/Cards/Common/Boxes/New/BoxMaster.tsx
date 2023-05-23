@@ -7,7 +7,7 @@ import SimpleFlip from './Flips/SimpleFlip'
 import SplitFlip from './Flips/SplitFlip'
 interface Props{
     BoxType: string,
-    flipType: string,
+    flipType?: string,
     boxArgs?:{},
     flipArgs?:{}
 }

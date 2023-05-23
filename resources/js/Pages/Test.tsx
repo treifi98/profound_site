@@ -103,6 +103,9 @@ import DistanceProgress from '@/Components/Developer/DistanceProgress'
 import { DistanceContainer } from '@/Components/Developer/DistanceContainer'
 import Attraction from '@/Components/Developer/Attraction'
 import SecondaryInfo from '@/Components/Developer/SecondaryInfo'
+import FancyCheckeComponent from '@/Components/Home/FiltersAndSearch/CoreFilters/FancyCheckeComponent'
+import SecondaryRent from '@/Components/Developer/SecondaryRent'
+import ProjectInfo from '@/Components/Developer/ProjectInfo'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -1164,6 +1167,15 @@ const Test = () =>{
     </div>
     <div className='my-[2rem] mx-auto w-[95%]'>
         <SecondaryInfo/>
+    </div>
+    <div className='my-[2rem] mx-auto w-[95%]'>
+        <FancyCheckeComponent id='e' on='d' off='hh' func={()=>{}}/>
+    </div>
+    <div className='my-[2rem] mx-auto w-[95%]'>
+        <SecondaryRent/>
+    </div>
+    <div className='my-[2rem] mx-auto w-[95%]'>
+        <ProjectInfo/>
     </div>
 
 

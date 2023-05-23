@@ -128,7 +128,7 @@ const Select = (props:Props) => {
         </div>
         <div className=' w-[3.06rem] group-hover:shadow-[inset_-0.25rem_-0.25rem_0.3125rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] h-[2.25rem] bg-[#E6EDED] flex justify-center items-center shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] relative rounded-[0rem_3.13rem_3.13rem_0rem]' ref={selectHandleRef}>
             <img src={Icon} alt=""  className='w-[0.66rem] h-[0.65rem] transition-all' ref={arrowRef}/>
-            <div className='absolute left-0 top-0'>
+            <div className='absolute left-0 top-0 h-full'>
 
                 <InElementSeperator/>
             </div>

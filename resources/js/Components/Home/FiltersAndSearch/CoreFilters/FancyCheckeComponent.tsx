@@ -67,7 +67,7 @@ const FancyCheckeComponent = (props:Props) => {
 
                     <div className='absolute w-[2.1775rem] h-[2.3225rem] rounded-full bg-[#E6EDED] shadow-[inset_-0.2294675rem_-0.2294675rem_0.573669375rem_#F2F9F8,inset_0.2294675rem_0.2294675rem_0.573669375rem_#B6C3C5] top-[-0.0625rem] right-[-0.1025rem] transition-all' ref={circle}>
                         <div className='ml-[0.145rem] mt-[0.0975rem] flex justify-center items-center w-[2.120625rem] h-[2.120625rem] bg-[#E6EDED] rounded-full shadow-[0.243494375rem_0.243494375rem_0.60873625rem_rgba(12,63,71,0.18),inset_0.243494375rem_0.243494375rem_0.60873625rem_rgba(255,255,255,0.25),inset_-0.243494375rem_-0.243494375rem_0.60873625rem_#B6C3C5,inset_0.243494375rem_0.243494375rem_0.60873625rem_#FFFFFF]'>
-                            <img src={checkIcon}alt="" className='w-[0.596875rem] h-[0.40125rem]' ref={img}/>
+                            <img src={checkIcon} alt="" className='w-[0.596875rem] h-[0.40125rem]' ref={img}/>
                         </div>
 
                     </div>
