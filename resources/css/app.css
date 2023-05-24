@@ -346,3 +346,6 @@ div.select_component::-moz-scrollbar-track {
     clip-path: polygon(0 0, 100% 50%, 0 100%);
     filter: drop-shadow(0px 10px 10px rgba(255,0,0,0.5));
 } */
+.waterShadow {
+    /* box-shadow: inset -2.22424px -2.22424px 3.69967px #007580, inset 2.22424px 2.22424px 2.90869px #002D31; */
+  }

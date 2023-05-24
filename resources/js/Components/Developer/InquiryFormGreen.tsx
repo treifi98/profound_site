@@ -9,7 +9,7 @@ import img from '../../../assets/dubai.png'
 import Radio from './Radio'
 const InquiryFormGreen = () => {
   return (
-    <div className='w-[91.25rem] h-[38.125rem] rounded-[0.9375rem] bg-[#002D31] flex justify-center items-center'>
+    <div className='w-[91.25rem] h-[38.125rem] rounded-[0.9375rem] bg-[#002D31] flex justify-center items-center !font-[nova]'>
         <div className='w-[83.783125rem] h-[30.9375rem] flex gap-[3.9375rem]'>
             <div className='flex justify-center items-center w-[44.970625rem] h-[30.4375rem] rounded-[0.971875rem] bg-[#002D31] border-[#19464B] border-[0.0625rem] shadow-[-0.274211875rem_-0.274211875rem_0.43873875rem_#04626B,0.274211875rem_0.274211875rem_0.43873875rem_#011618]'>
                 <div className='w-[42.338125rem] h-[27.366875rem]'>

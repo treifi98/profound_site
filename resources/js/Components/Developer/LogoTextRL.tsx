@@ -17,7 +17,7 @@ const LogoTextRL = () => {
                     <div className='font-[600] text-grade text-[2rem]'>
                         Latest Projects By Emaar
                     </div>
-                    <div className='text-[1.25rem] leading-[2rem] text-grade'>
+                    <div className='text-[1.25rem] leading-[2rem] text-grade mt-[1.25rem]'>
                         One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                         corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                     </div>

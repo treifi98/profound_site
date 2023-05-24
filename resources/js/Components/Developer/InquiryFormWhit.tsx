@@ -9,7 +9,7 @@ import img from '../../../assets/dubai.png'
 import RadioWhit from './RadioWhit'
 const InquiryFormWiht = () => {
   return (
-    <div className='w-[91.25rem] h-[38.125rem] rounded-[0.9375rem] bg-[#E6EDED] flex justify-center items-center shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] border-[#CAD4D5] border-[0.0625rem]'>
+    <div className='w-[91.25rem] h-[38.125rem] rounded-[0.9375rem] bg-[#E6EDED] flex justify-center items-center shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] border-[#CAD4D5] border-[0.0625rem] !font-[nova]'>
         <div className='w-[83.783125rem] h-[30.9375rem] flex gap-[3.9375rem]'>
             <div className='flex justify-center items-center w-[44.970625rem] h-[30.4375rem] rounded-[0.971875rem] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,0.33392625rem_0.33392625rem_0.66785rem_#BABFBF]'>
                 <div className='w-[42.338125rem] h-[27.366875rem]'>

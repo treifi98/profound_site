@@ -10,7 +10,7 @@ interface Props{
 const DistanceProgress = (props:Props) => {
     const maxDistance = 20
   return (
-    <div className='w-[24.8125rem] flex items-center'>
+    <div className='w-[24.226875rem] flex items-center '>
             <div className='w-[4.105625rem] h-[4.105625rem] rounded-full border-[#DCE3E3] border-[0.0625rem] shadow-[-0.238744375rem_-0.238744375rem_0.38199125rem_#FFFFFF,0.238744375rem_0.238744375rem_0.3342425rem_#B6C3C5] flex justify-center items-center'>
                 <img src={pinIcon} alt="" className='w-[1.55375rem] h-[2.6875rem] '/>
 
@@ -27,7 +27,7 @@ const DistanceProgress = (props:Props) => {
                 </div>
 
         </div>
-        <img src={Polygon1} className='w-[4.0875rem] h-[3.0625rem] bg-[#E6EDED] recttotri ml-[-0.2rem] relative z-[2]'/>
+        <img src={Polygon1} className='w-[3.0625rem] h-[4.6875rem] bg-[#E6EDED] recttotri ml-[-0rem] relative z-[2] object-fill object-left'/>
 
 
     </div>

@@ -107,6 +107,9 @@ import FancyCheckeComponent from '@/Components/Home/FiltersAndSearch/CoreFilters
 import SecondaryRent from '@/Components/Developer/SecondaryRent'
 import ProjectInfo from '@/Components/Developer/ProjectInfo'
 import Map from '@/Components/Developer/Map'
+import MapContainer from '@/Components/Developer/MapContainer'
+import QA from '@/Components/Developer/QA'
+import BedButton from '@/Components/Developer/BedButton'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -114,7 +117,7 @@ const Test = () =>{
     console.log(numberOfBeds)
  },[numberOfBeds])
   return (
-    <>
+    <div className='!font-[nova]'>
     {/* <div className='w-[28rem] flex justify-center'>
 
         <OneCardSwiper/>
@@ -1163,27 +1166,48 @@ const Test = () =>{
         <DistanceContainer distance={3.57}/>
     </div>
 
-    <div className='my-[2rem] mx-auto w-[95%]'>
+    <div className='my-[2rem] mx-auto w-max'>
         <Attraction/>
     </div>
-    <div className='my-[2rem] mx-auto w-[95%]'>
+    <div className='my-[2rem] mx-auto w-max'>
         <SecondaryInfo/>
     </div>
-    <div className='my-[2rem] mx-auto w-[95%]'>
+    <div className='my-[2rem] mx-auto w-max'>
         <FancyCheckeComponent id='e' on='d' off='hh' func={()=>{}}/>
     </div>
-    <div className='my-[2rem] mx-auto w-[95%]'>
+    <div className='my-[2rem] mx-auto w-max'>
         <SecondaryRent/>
     </div>
-    <div className='my-[2rem] mx-auto w-[95%]'>
+    <div className='my-[2rem] mx-auto w-max'>
         <ProjectInfo/>
     </div>
-    <div className='my-[2rem] mx-auto w-[95%]'>
-        <Map />
+    <div className='my-[2rem] mx-auto w-max'>
+        <QA
+            questions={[
+                {
+                    q:'Is an apartment in Seapoint a good investment?',
+                    a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.'
+                },
+                {
+                    q:'Is an apartment in Seapoint a good investment?',
+                    a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.'
+                },
+                {
+                    q:'Is an apartment in Seapoint a good investment?',
+                    a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.'
+                },
+            ]}
+        />
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <BedButton />
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <MapContainer />
     </div>
 
 
-    </>
+    </div>
 
   )
 }

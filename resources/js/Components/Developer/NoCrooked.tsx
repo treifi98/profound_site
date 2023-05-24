@@ -37,27 +37,27 @@ const NoCrooked = () => {
             </div>
             <div className='h-[24.375rem] w-[28.125rem] mx-auto mt-[2.25rem] flex flex-col gap-[2.1875rem]'>
                 <div className='w-[28.125rem] h-[3.125rem] rounded-[8.35625rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5] flex justify-center items-center cursor-pointer hover:shadow-[inset_-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,inset_0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5]'>
-                    <div className='text-grade text-[1.375erm]'>
+                    <div className='text-grade text-[1.375rem]'>
                         Projects in Dubai Marina
                     </div>
                 </div>
                 <div className='w-[28.125rem] h-[3.125rem] rounded-[8.35625rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5] flex justify-center items-center cursor-pointer hover:shadow-[inset_-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,inset_0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5]'>
-                    <div className='text-grade text-[1.375erm]'>
+                    <div className='text-grade text-[1.375rem]'>
                         Projects in Dubai Marina
                     </div>
                 </div>
                 <div className='w-[28.125rem] h-[3.125rem] rounded-[8.35625rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5] flex justify-center items-center cursor-pointer hover:shadow-[inset_-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,inset_0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5]'>
-                    <div className='text-grade text-[1.375erm]'>
+                    <div className='text-grade text-[1.375rem]'>
                         Projects in Dubai Marina
                     </div>
                 </div>
                 <div className='w-[28.125rem] h-[3.125rem] rounded-[8.35625rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5] flex justify-center items-center cursor-pointer hover:shadow-[inset_-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,inset_0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5]'>
-                    <div className='text-grade text-[1.375erm]'>
+                    <div className='text-grade text-[1.375rem]'>
                         Projects in Dubai Marina
                     </div>
                 </div>
                 <div className='w-[28.125rem] h-[3.125rem] rounded-[8.35625rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5] flex justify-center items-center cursor-pointer hover:shadow-[inset_-0.381459375rem_-0.381459375rem_0.610335rem_#FFFFFF,inset_0.381459375rem_0.381459375rem_0.534043125rem_#B6C3C5]'>
-                    <div className='text-grade text-[1.375erm]'>
+                    <div className='text-grade text-[1.375rem]'>
                         Projects in Dubai Marina
                     </div>
                 </div>
