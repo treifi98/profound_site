@@ -106,6 +106,7 @@ import SecondaryInfo from '@/Components/Developer/SecondaryInfo'
 import FancyCheckeComponent from '@/Components/Home/FiltersAndSearch/CoreFilters/FancyCheckeComponent'
 import SecondaryRent from '@/Components/Developer/SecondaryRent'
 import ProjectInfo from '@/Components/Developer/ProjectInfo'
+import Map from '@/Components/Developer/Map'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -1176,6 +1177,9 @@ const Test = () =>{
     </div>
     <div className='my-[2rem] mx-auto w-[95%]'>
         <ProjectInfo/>
+    </div>
+    <div className='my-[2rem] mx-auto w-[95%]'>
+        <Map />
     </div>
 
 
