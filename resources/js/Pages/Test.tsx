@@ -110,6 +110,9 @@ import Map from '@/Components/Developer/Map'
 import MapContainer from '@/Components/Developer/MapContainer'
 import QA from '@/Components/Developer/QA'
 import BedButton from '@/Components/Developer/BedButton'
+import ZoomRange from '@/Components/Developer/ZoomRange'
+import SliderButton from '@/Components/Developer/SliderButton'
+import AreaCard from '@/Components/Developer/Cards/AreaCard'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -1203,8 +1206,20 @@ const Test = () =>{
         <BedButton />
     </div>
     <div className='my-[2rem] mx-auto w-max'>
+        <SliderButton />
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
         <MapContainer />
     </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <AreaCard />
+    </div>
+
+    {/* <div className='my-[2rem] mx-auto w-max'>
+        <ZoomRange
+        rtl={false}
+         />
+    </div> */}
 
 
     </div>

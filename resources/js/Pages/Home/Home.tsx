@@ -176,7 +176,13 @@ const Home = () => {
                     </div>
                     <div className='mt-[4rem] w-[65.1875rem] h-[24.5rem] relative rounded-[1.22119375rem] border-[#19464B] border-[0.0625rem] shadow-[-0.25rem_-0.25rem_0.3125rem_#04626B,0.25rem_0.25rem_0.01953125rem_#011618] flex justify-center items-center overflow-hidden'>
                         <img src={boxesBottomLeft} alt="" className='absolute bottom-0 left-0 w-[14.4375rem] h-[14.5rem]'/>
-                        <img src={elementImg} alt="" className='w-[64.125rem] h-[19.843125rem] '/>
+                        <div className='w-[64.125rem] h-[19.843125rem] relative'>
+
+                            <img src={elementImg} alt="" className='w-[64.125rem] h-[19.843125rem] relative z-[1] '/>
+                            <div className='absolute top-0 left-0 w-full h-full z-[2]'>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className=' w-[24.9375rem] h-[34.875rem] rounded-[1.22119375rem] border-[#19464B] border-[0.0625rem] shadow-[-0.25rem_-0.25rem_0.3125rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] bg-[#002D31] z-[2] relative mt-[3.25rem] ml-[2.875rem]'>

@@ -349,3 +349,18 @@ div.select_component::-moz-scrollbar-track {
 .waterShadow {
     /* box-shadow: inset -2.22424px -2.22424px 3.69967px #007580, inset 2.22424px 2.22424px 2.90869px #002D31; */
   }
+
+  /* .vvxxccz::before{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    opacity: 0;
+    transition: left 0.3s ease;
+  }
+  .vvxxccz:hover::before {
+    left: 0;
+  } */

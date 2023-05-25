@@ -1,138 +1,121 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 mapboxgl.accessToken = 'pk.eyJ1IjoidHJldmk5OCIsImEiOiJjbDNwcWhyOWgwMnppM2twN3JicG5wMmY2In0.m_eFeF9ZP_4xkJA9e5N05Q';
 // import './'
-const Map = () => {
+interface Props{
+    points:{point:number[],bg:string}[],
+    changes:number
+    rchanges:number
+    zoom:number
+}
+const Map = (props:Props) => {
+    // const [changes,setChanges] = useState(props.changes)
+    const [mapRef,SetMapRef] = useState(null)
+    const [loaded,SetLoaded] = useState(false)
+
     const clearLogo = () => {
-        document.querySelector('.mapboxgl-ctrl-logo').style.display='none'
+        try{
+
+            document.querySelector('.mapboxgl-ctrl-logo').style.display='none'
+        }catch(err){
+
+        }
     }
     useEffect(() => {
-        // Initialize map
-        const map = new mapboxgl.Map({
+        SetMapRef (new mapboxgl.Map({
 
           container: 'map-container',
           style: 'mapbox://styles/trevi98/cli19khgh02g701qy1jsmb8wr',
           center: [55.2744, 25.2048], // Dubai coordinates
-          zoom: 10,
+          zoom: 14,
           maxZoom:18,
-          minZoom:9,
+          minZoom:10,
           logoPosition:'top-left',
           attributionControl: false,
+          scrollZoom:false,
 
-        })
-        map.on('load', () => {
-          // Add the custom CSS class to the water layer
-            map.setPaintProperty('water-shadow', 'fill-color', ['get', 'color']);
-            map.setPaintProperty('water-shadow', 'fill-opacity', 0);
-            map.setPaintProperty('water-shadow', 'fill-shadow-color', '#002D31');
-            map.setPaintProperty('water-shadow', 'fill-shadow-blur', 7.69967);
-            map.setPaintProperty('water-shadow', 'fill-shadow-offset', [6.22424, 6.22424]);
-            // map.addLayer({
-            //     id: 'water-shadow',
-            //     type: 'fill',
-            //     // source: 'your-source-id',
-            //     // 'source-layer': 'your-source-layer',
-            //     paint: {
-            //       'fill-color': 'rgba(255, 0, 0, 1)', // Semi-transparent black color
-            //     },
-            //     filter: ['==', 'layer-type', 'water'], // Apply the shadow effect to the water layer only
-            //   });
+        }))
+        // SetMapRef(map)
 
-              // Adjust the layer order to ensure the shadow layer is below the water layer
-              map.moveLayer('water-shadow', 'water');
-        });
-        map.on('render', () => {
-            clearLogo();
-
-        });
-        map.on('load', function() {
-            map.removeLayer('poi-label');
-            // map.removeSource('poi');
-            map.addLayer({
-                "id": "points",
-                "type": "circle",
-                "paint": {
-                  "circle-radius": 20,
-                  "circle-color": '#f00'
-                },
-                "source": {
-                  "type": "geojson",
-                  "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                      "type": "Feature",
-                      "properties": {
-                        "field": 1
-                      },
-                      "geometry": {
-                        "type": "Point",
-                        "coordinates": [55.2744, 25.2048]
-                      }
-                    }]
-                  }
-                }
-              });
-            map.addLayer({
-                "id": "points1",
-                "type": "circle",
-                "paint": {
-                  "circle-radius": 20,
-                  "circle-color": '#f09'
-                },
-                "source": {
-                  "type": "geojson",
-                  "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                      "type": "Feature",
-                      "properties": {
-                        "field": 1
-                      },
-                      "geometry": {
-                        "type": "Point",
-                        "coordinates": [55.2744, 25.2148]
-                      }
-                    }]
-                  }
-                }
-              });
-          });
-          map.on('mousemove', 'points', (event) => {
-            map.getCanvas().style.cursor = 'pointer';
-            console.log(event.features[0])
-            map.setPaintProperty('points', 'circle-color', '#000');
-            // console.log(event.features[0].style = "#fff" )
-            // console.log(event.features[0].layer.paint['circle-color'].g = 'f' )
-            // console.log(event.features[0].layer.paint['circle-color'].b = 'f' )
-
-            // // Set constants equal to the current feature's magnitude, location, and time
-            // const quakeMagnitude = event.features[0].properties.mag;
-            // const quakeLocation = event.features[0].properties.place;
-            // const quakeDate = new Date(event.features[0].properties.time);
-
-            // // Check whether features exist
-            // if (event.features.length === 0) return;
-            // // Display the magnitude, location, and time in the sidebar
-            // magDisplay.textContent = quakeMagnitude;
-            // locDisplay.textContent = quakeLocation;
-            // dateDisplay.textContent = quakeDate;
-
-            // // If quakeID for the hovered feature is not null,
-            // // use removeFeatureState to reset to the default behavior
-            // if (quakeID) {
-            //   map.removeFeatureState({
-            //     source: 'earthquakes',
-            //     id: quakeID
-            //   });
-            // alert("s")
-            })
+        // Initialize map
 
 
-        // Clean up on component unmount
-        return () => map.remove();
       }, []);
+      useEffect(()=>{
+        if(loaded){
+
+            mapRef.on('load', () => {
+                //   // Add the custom CSS class to the water layer
+                    let counter = 0
+                    props.points.forEach((point) => {
+                        // alert(point.point)
+                        // alert(counter)
+                        mapRef.addLayer({
+                        "id": `points${counter}`,
+                        "type": "circle",
+                        "paint": {
+                        "circle-radius": 6,
+                        "circle-color": point.bg
+                        },
+                        "source": {
+                        "type": "geojson",
+                        "data": {
+                            "type": "FeatureCollection",
+                            "features": [{
+                            "type": 'Feature',
+                            "properties": {
+                                "field": 1
+                            },
+                            "geometry": {
+                                "type": 'Point',
+                                "coordinates": point.point
+                            }
+                            }]
+                        }
+                        }
+                        });
+                        counter++
+                    })
+
+                });
+                mapRef.on('render', () => {
+                    clearLogo();
+
+                });
+
+
+                // Clean up on component unmount
+                return () => mapRef.remove();
+        }
+        else{
+            SetLoaded(true)
+        }
+      },[mapRef])
+      useEffect(() => {
+        if(loaded){
+            // alert(props.changes)
+            mapRef.setPaintProperty(`points${props.changes}`, 'circle-color', '#fff');
+        }
+
+    },[props.changes])
+    useEffect(() => {
+        if(loaded){
+            // alert(props.changes)
+            mapRef.setPaintProperty(`points${props.rchanges}`, 'circle-color', '#002d31');
+        }
+
+    },[props.rchanges])
+    useEffect(() => {
+        if(loaded){
+            mapRef.setZoom(props.zoom);
+            // alert(props.changes)
+            // mapRef.setPaintProperty(`points${props.rchanges}`, 'circle-color', '#002d31');
+        }
+
+      },[props.zoom])
+
 
       return <div id="map-container" style={{ width: '100%', height: '100%' }} />;
 }
