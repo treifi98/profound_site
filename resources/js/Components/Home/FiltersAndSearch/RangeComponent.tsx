@@ -122,14 +122,17 @@ React.useEffect(() => {
         else if (minValue >= 50000000){
             minStep = 10000000
         }
-        if (maxValue <= 10000000){
+        // if (maxValue >= 90000000){
+        //     maxStep = 1
+        // }
+        // else if (maxValue >= 10000000){
+        //     maxStep = 20000000
+        // }
+        // else if (maxValue >= 500000){
+        //     maxStep = 500000
+        // }
+         if (maxValue >= 100000){
             maxStep = 1000000
-        }
-        else if (maxValue <= 500000){
-            maxStep = 500000
-        }
-        else if (maxValue <= 100000){
-            maxStep = 100000
         }
     }
 
@@ -262,6 +265,10 @@ React.useEffect(() => {
       min={MIN}
       max={MAX}
       rtl={rtl}
+      allowOverlap={false}
+      
+
+
     />
   );
 };
