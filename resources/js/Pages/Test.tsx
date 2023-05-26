@@ -26,7 +26,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import MoreFilter from '@/Components/Home/FiltersAndSearch/MoreFilter'
 import Expandable from '@/Components/Home/FiltersAndSearch/Expandable'
 import SelectByCheck from '@/Components/Home/FiltersAndSearch/CoreFilters/SelectByCheck'
-import BuyCard from '@/Components/Home/Cards/New/BuyCard'
 import BoxMaster from '@/Components/Home/Cards/Common/Boxes/New/BoxMaster'
 import priceIcon from '../../assets/price_tag_og.svg'
 import Brochure from '@/Components/Home/Cards/Common/Brochure'
@@ -113,6 +112,9 @@ import BedButton from '@/Components/Developer/BedButton'
 import ZoomRange from '@/Components/Developer/ZoomRange'
 import SliderButton from '@/Components/Developer/SliderButton'
 import AreaCard from '@/Components/Developer/Cards/AreaCard'
+import TagGreen from '@/Components/Home/Cards/Common/tagGreen'
+import ProjectCard from '@/Components/Developer/Cards/ProjectCard'
+import BuyCard from '@/Components/Developer/Cards/BuyCard'
 const Test = () =>{
  const x = (nums:string[]) => setNumberOfBeds(nums)
  const [numberOfBeds,setNumberOfBeds] = useState([])
@@ -1213,6 +1215,20 @@ const Test = () =>{
     </div>
     <div className='my-[2rem] mx-auto w-max'>
         <AreaCard />
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <div className='' style={{ width:'12.1875rem', height:'2.5rem' }}>
+
+            <TagGreen
+                text='test'
+            />
+        </div>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <ProjectCard/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <BuyCard/>
     </div>
 
     {/* <div className='my-[2rem] mx-auto w-max'>
