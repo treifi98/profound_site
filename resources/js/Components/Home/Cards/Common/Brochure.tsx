@@ -13,7 +13,8 @@ interface Props{
     imgMT?:string,
     restWidth?:string,
     textSize?:string,
-    separatorWidth?:string
+    separatorWidth?:string,
+    text?:string
 }
 const Brochure = (props:Props) => {
     return (
@@ -28,7 +29,7 @@ const Brochure = (props:Props) => {
             </div>
             <div className='flex justify-center items-center shadow-[-0.1875rem_-0.1875rem_0.1875rem_#FFFFFF,0.1875rem_0.1875rem_0.1875rem_#B6C3C5] rounded-[0rem_0.1875rem_0.1875rem_0rem] group-hover:shadow-[inset_-0.1875rem_-0.1875rem_0.1875rem_#FFFFFF,inset_0.1875rem_0.1875rem_0.1875rem_#B6C3C5]' style={{ width: props.restWidth?props.restWidth: '5.3125rem', height:props.mainHeight? props.mainHeight: '1.75rem'}}>
                 <div className='text-grade font-[600]' style={{ fontSize:props.textSize? props.textSize: '0.875rem' }}>
-                    Brochure
+                    {props.text?props.text:'Brochure'}
                 </div>
             </div>
         </div>

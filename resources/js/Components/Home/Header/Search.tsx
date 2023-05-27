@@ -20,9 +20,24 @@ const Search = () => {
     const handleClick = () => {
         // setSearch(prevState => !prevState)
         const elmnt = (
-            <div className='my-[3.625rem] mx-[5%] flex gap-[3.75rem] items-center'>
+            <div className='my-[3.625rem] mx-auto flex gap-[3.75rem] w-[89.375rem] items-start'>
+                <div className='w-[25rem] h-[37.4375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,0.3125rem_0.3125rem_0.4375rem_#B6C3C5] rounded-[0.625rem]'>
+                    <div className='w-full h-[7.7625rem] flex items-center relative'>
+                        <div className='w-[7.7625rem] h-[7.7625rem] bg-[#00494F] flex justify-center items-center rounded-[0.625rem] shadow-[inset_-0.270161875rem_-0.270161875rem_0.449371875rem_-0.149790625rem_#007580,inset_0.270161875rem_0.270161875rem_0.353296875rem_#002D31] border-[#CED7D8] border-[0rem] relative z-[2] xxvvxx'>
+                            <div className='w-[6.06625rem] h-[6.06625rem] bg-[#E6EDED] rounded-[0.625rem] shadow-[-0.211135rem_-0.211135rem_0.35119rem_-0.117063125rem_#007580,0.211135rem_0.211135rem_0.276105625rem_#011618]'>
 
-                <MenueChild icon={hauseIcon} title1={'FIND YOUR DREAM'} title2='HOME WITH JUST A CLICK!' text="Discover thousands of listings, customize your search, and explore the perfect neighborhood"/>
+                            </div>
+                        </div>
+                            <div className='w-[17.2375rem] h-[3.75rem] flex justify-center items-center'>
+                                <div className=' h-[3.75rem] w-[15.5625rem] text-grade text-center text-[1.25rem] font-[600]'>
+                                    Find your dream home with just a click!
+                                </div>
+                            </div>
+                            <div className='w-full absolute bottom-0 left-0 bg-[#00494F] border-[#CED7D8] border-[0rem] h-[0.9375rem] shadow-[inset_-0.270161875rem_-0.270161875rem_0.449371875rem_-0.149790625rem_#007580,inset_0.270161875rem_0.270161875rem_5.65275px_#002D31] z-[1] rounded-[0.625rem_0rem_0rem_0.625rem]'>
+
+                            </div>
+                    </div>
+                </div>
                 <FiltersContainer/>
             </div>
         );

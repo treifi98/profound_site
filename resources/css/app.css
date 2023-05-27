@@ -367,3 +367,13 @@ div.select_component::-moz-scrollbar-track {
 .rectx{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
+
+svg
+{
+    stroke-width: 3 !important ;
+    font-size: 3px;
+}
+
+.xxvvxx{
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+}

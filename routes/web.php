@@ -40,6 +40,9 @@ Route::middleware('auth')->group(function () {
 Route::get('/test',function(){
     return Inertia::render('Test');
 });
+Route::get('/playground',function(){
+    return Inertia::render('Playground');
+});
 Route::get('/',[HomeController::class,'index']);
 Route::get('buy',[BuyController::class,'index']);
 
