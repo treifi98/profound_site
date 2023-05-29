@@ -195,7 +195,7 @@ div.select_component::-moz-scrollbar-track {
     margin-left: 0rem;
 }
 .devsmallswiper .swiper-slide{
-    /* margin-right: 0.35rem; */
+    margin-left: 0rem;
 }
 .archCardmySwiper .swiper-slide-active{
     /* margin-right: 0.614375rem;

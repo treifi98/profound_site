@@ -36,7 +36,7 @@ const MenueHover = () => {
     },[openState, hoverState])
 
     return (
-        <div className='h-[0rem] w-full bg-[#E6EDED] absolute top-[calc(6.25rem-1px)] transition-all duration-[0.4s] overflow-hidden' ref={ref} onMouseEnter={() => dispatch(setHoverState(true))} onMouseLeave={() => dispatch(setHoverState(false))}>
+        <div className='h-[0rem] w-full bg-[#E6EDED] absolute top-[calc(6.25rem-1px)] transition-all duration-[0.4s] overflow-hidden flex items-center' ref={ref} onMouseEnter={() => dispatch(setHoverState(true))} onMouseLeave={() => dispatch(setHoverState(false))}>
             {childComponent}
         </div>
     )

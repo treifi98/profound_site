@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ViewAllButton from './Common/ViewAllButton'
 import calender_icon from '../../../../assets/calender_icon.svg'
 // import ViewAllButton from './Common/ViewAllButton'
@@ -58,7 +58,8 @@ interface Props{
         imgWidth?:string,
         imgHeight?:string,
         wrapperWidth?:string
-    }
+    },
+    scaleFactor?:string
 
 }
 import established_icon from '../../../../assets/established_icon.svg'
@@ -72,12 +73,33 @@ const DeveloperCard = (props:Props) => {
     // let shadows = [
     //     '-0.375rem -0.375rem 0.75rem 0.1875rem #FFFFFF,0.375rem 0.375rem 0.75rem #BABFBF'
     // ];
+    let smallerToscale = useRef(null)
+    const handleMouseEnter = () => {
+        if(props.scaleFactor){
+            if(smallerToscale.current){
+                smallerToscale.current.style.transform = `scale(${props.scaleFactor})`
+                }
+            }
+
+    }
+    const handleMouseLeave = () => {
+        if(props.scaleFactor){
+            if(smallerToscale.current){
+                smallerToscale.current.style.transform = `scale(1)`
+                }
+            }
+    }
     const [shadows,setShadows] = useState(['-0.375rem -0.375rem 0.75rem 0.1875rem #FFFFFF,0.375rem 0.375rem 0.75rem #BABFBF','inset -0.14793375rem -0.14793375rem 0.246556875rem #FFFFFF,inset 0.246556875rem 0.246556875rem 0.345179375rem #B6C3C5','-0.228939375rem -0.228939375rem 0.34340875rem #F7FFFF,0.228939375rem 0.228939375rem 0.34340875rem #B6C3C5','inset -0.25rem -0.25rem 0.3125rem #1E6970,inset 0.25rem 0.25rem 0.3125rem rgba(0,0,0,0.38)','inset -0.1895325rem -0.1895325rem 0.303251875rem #FFFFFF,inset 0.1895325rem 0.1895325rem 0.265345rem #B6C3C5'])
     useEffect(() => {
         let scale = 1
         if(props.mainHeight){
             scale = parseFloat(props.mainHeight)/30.625
             // alert(scale)
+        }
+        if(props.scaleFactor){
+            smallerToscale.current.style.width = parseFloat(props.smallerWidth) * parseFloat(props.scaleFactor)
+            smallerToscale.current.style.height = parseFloat(props.smallerHeigth) * parseFloat(props.scaleFactor)
+            smallerToscale.current.style.transform = 1/parseFloat(props.scaleFactor)
         }
         // alert(parseFloat(props.mainHeight)/30.625)
         // alert(props.mainHeight)
@@ -88,8 +110,8 @@ const DeveloperCard = (props:Props) => {
     },[])
     // useEffect(() =>{console.log(shadows[0])} ,[shadows])
     return (
-        <div className=' font-[nova] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.9375rem] flex justify-center items-center my-[1rem] z-[9999999999999999999] mx-[1.175rem]' style={{ width:props.mainWidth?props.mainWidth:'24.375rem',height:props.mainHeight?props.mainHeight:'30.625rem',boxShadow:shadows[0] }}>
-            <div className=' rounded-[0.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]' style={{ width:props.smallerWidth?props.smallerWidth:'21.885rem',height:props.smallerHeigth?props.smallerHeigth:'28.125rem',boxShadow:shadows[0] }}>
+        <div className=' font-[nova] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.9375rem] flex justify-center items-center my-[1rem] z-[9999999999999999999] mx-[0rem]' style={{ width:props.mainWidth?props.mainWidth:'24.375rem',height:props.mainHeight?props.mainHeight:'30.625rem',boxShadow:shadows[0] }}>
+            <div className=' rounded-[0.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] transition-all ease-in' style={{ width:props.smallerWidth?props.smallerWidth:'21.885rem',height:props.smallerHeigth?props.smallerHeigth:'28.125rem',boxShadow:shadows[0] }} ref={smallerToscale} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div className=' w-full flex justify-center items-center' style={{ height:props.imgWrapperHeight?props.imgWrapperHeight:'8.8125rem' }}>
                     {/* <div className='flex justify-center items-center mt-[0.625rem]'> */}
                         <img src={props.img} alt="" className='object-contain' style={{ maxWidth:props.imgMaxWidth?props.imgMaxWidth:'13.4375rem',maxHeight:props.imgMaxHeight?props.imgMaxHeight:'6.5rem',marginTop:props.imgMT?props.imgMT:'0.625rem' }}/>

@@ -9,6 +9,7 @@ import fav_icon from '../../../../assets/favfilled.svg'
 import view_icon from '../../../../assets/viewfilled.svg'
 import NewSocial from './Common/NewSocial'
 import processBoxShahow from '@/Components/BoxShadowController'
+import NewCardImage from './Common/NewCardImage'
 interface Props{
     img:string,
     publishedDate:string,
@@ -79,9 +80,9 @@ const NewsCard = (props:Props) => {
     <div className=' bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[1.189375rem] flex flex-col items-center  my-[1rem]' style={{boxShadow:shadows[0],gap:props.lwoerSectionMT?props.lwoerSectionMT:'1.104375rem', width:props.mainWidth?props.mainWidth:'23.283125rem',height:props.mainHeight?props.mainHeight:'30.0625rem',marginTop:props.mainMY?props.mainMY:'1.8125rem',marginBottom:props.mainMY?props.mainMY:'1.8125rem'}}>
         <div className='bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[1.189375rem]' style={{boxShadow:shadows[1], width:props.imgWrapperWidth?props.imgWrapperWidth:'21.375rem',height:props.imgWrapperHeight?props.imgWrapperHeight:'17rem',marginTop:props.imgWrapperMT?props.imgWrapperMT:'1.13375rem' }}>
             {/* <img src={props.img} alt="" className='w-[19.86375erm] h-[17rem] rounded-[1.189375rem] mt-[9.68px] ml-[12.13px]'/> */}
-            <div className='' style={{ width:props.imgWidth?props.imgWidth:'21.3125erm',height:props.imgHeight?props.imgHeight:'17rem',marginTop:props.imgWrapperMT?props.imgMT:'0rem',marginLeft:props.imgML?props.imgML:'0rem' }}>
+            <div className='' style={{ width:props.imgWidth?props.imgWidth:'21.3125rem',height:props.imgHeight?props.imgHeight:'17rem',marginTop:props.imgMT?props.imgMT:'0rem',marginLeft:props.imgML?props.imgML:'0rem' }}>
 
-                <CardImage w={props.imgWidth?props.imgWidth:'21.3125'} h={props.imgHeight?props.imgHeight:'17'} rounded='1.189375' src={props.img}/>
+                <NewCardImage  rounded='1.189375' src={props.img} />
             </div>
         </div>
         <div className='bg-[#E6EDED] border-[0.0625rem] border-[#DDE4E4] rounded-[0.604375rem] flex flex-col justify-between items-start' style={{boxShadow:shadows[2], width:props.lowerSectionWidth?props.lowerSectionWidth:'21.338125rem',height:props.lowerSectionHeight?props.lowerSectionHeight:'9.75rem' }}>
