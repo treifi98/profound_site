@@ -68,7 +68,7 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
       }}
     >
 
-        <div className='absolute h-[0.945rem]  top-[0.55rem] left-[0.525rem] bg-[#E6EDED] z-[9999999] rounded-md shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,_inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' style={{ width:(38.9 - (parseFloat(displacment)/fatcor))+'rem' }}>
+        <div className='absolute h-[0.945rem]  top-[0.55rem] left-[0.525rem] bg-[#E6EDED] z-[9999999] rounded-md shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,_inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' style={{ width:(40.9 - (parseFloat(displacment)/fatcor))+'rem' }}>
 
         </div>
        {/* <ThumbLabel rangeRef={rangeRef.current} values={value}  /> */}

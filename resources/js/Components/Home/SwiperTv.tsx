@@ -71,7 +71,8 @@ const SwiperTv = () => {
                 // spaceBetween={0}
                 breakpoints={{
                     810: {
-                    slidesPerView: 1.95,
+                    slidesPerView: 2,
+                    // cssMode:true
                     // spaceBetween: 0,
                     }
                 }}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import MainLayout from '@/Layouts/MainLayout'
 import HeroVideo from '@/Components/HeroVideo'
 import SwiperType1A from '@/Components/Home/SwiperType1A'
@@ -35,19 +35,26 @@ import elementImg from '../../../assets/elemntMod.svg'
 import userIcon from '../../../assets/userIconWhite.svg'
 import emailIcom from '../../../assets/emailIconWhite.svg'
 import uaeFlag from '../../../assets/uaeFlag.svg'
+import SliderButton from '@/Components/Developer/SliderButton'
 
 
 const Home = () => {
+    const elmt1 = useRef(null)
+    const elmt2 = useRef(null)
   return (
     <MainLayout>
 
         <HeroVideo/>
 
-        <div className='mt-[42px] mb-[54px] w-[660px] h-[50px] border-[1px] border-[#DCE3E3] rounded-[100px] bg-[#E6EDED] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mx-auto'>
+        <div className='w-full h-[8.375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,0.3125rem_0.3125rem_0.4375rem_#B6C3C5] relative z-[9999999999] flex justify-end items-center gap-[2rem]'>
+            <SliderButton title='Size By' options={['SQ.FT','SQ.M']} />
+            <div className='mr-[1.5625rem]'>
 
+                <SliderButton title='Price By' options={['AED','USD','EUR']} />
+            </div>
         </div>
 
-        <div className='w-full mt-[0rem]'>
+        <div className='w-full mt-[5.5625rem]'>
 
             <SwiperType2A/>
         </div>
@@ -191,16 +198,16 @@ const Home = () => {
                     </div>
                     <div className='mt-[2.1875rem] w-[21.3125rem] mx-auto h-[2.25rem] flex gap-[1.875rem]'>
                         <div className='flex justify-center items-center gap-[1.875rem]'>
-                            <div className='text-[#7D8989] text-[1.25rem]'>
+                            <div className=' text-[1.25rem]' ref={elmt1} style={{ color:'#7D8989' }}>
                                 Sale
                             </div>
-                            <CheckComponentGreen id='d' on="on" off="off"/>
+                            <CheckComponentGreen id='d' on="on" off="off" func={() => {elmt1.current.style.color == 'rgb(125, 137, 137)' ? elmt1.current.style.color= "#fff" : elmt1.current.style.color= '#7D8989'} }/>
                         </div>
                         <div className='flex justify-center items-center gap-[1.875rem]'>
-                            <div className='text-[#7D8989] text-[1.25rem]'>
+                            <div className=' text-[1.25rem]' ref={elmt2} style={{ color:'#7D8989' }}>
                                 Sale
                             </div>
-                            <CheckComponentGreen id='d1' on="on" off="off"/>
+                            <CheckComponentGreen id='d1' on="on" off="off" func={() => {elmt2.current.style.color == 'rgb(125, 137, 137)' ? elmt2.current.style.color= "#fff" : elmt2.current.style.color= '#7D8989'} }/>
                         </div>
                     </div>
                     <div className='mt-[1.875rem] w-[21.25rem] mx-auto'>
@@ -215,7 +222,7 @@ const Home = () => {
                     <div className='mt-[1.875rem] w-[21.25rem] mx-auto h-[5.183125rem] overflow-hidden'>
                         <TextAreaTypeGreen placeholder='Property Address ....'/>
                     </div>
-                    <div className='mt-[2.7825rem] w-[11.52875rem] h-[2.228125rem] flex justify-center items-center rounded-[3.125rem] border-[#19464B] border-[0.0625rem] mx-auto shadow-[-0.1875rem_-0.1875rem_0.25rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] cursor-pointer'>
+                    <div className='mt-[2.7825rem] w-[11.52875rem] h-[2.228125rem] flex justify-center items-center rounded-[3.125rem] border-[#19464B] border-[0.0625rem] mx-auto shadow-[-0.1875rem_-0.1875rem_0.25rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618] cursor-pointer'>
                         <div className='text-[1.095rem] text-[#7D8989]'>
                             Submit Details
                         </div>

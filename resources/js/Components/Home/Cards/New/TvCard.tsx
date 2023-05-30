@@ -321,11 +321,11 @@ const TvCard = (props:Props) => {
     }
     const imageref = useRef(null)
     const handleMouseEnter = () => {
-        imageref.current.style.transform = 'scale(1.1)'
+        // imageref.current.style.transform = 'scale(1.1)'
         // alert('d')
     }
     const handleMouseLeave = () => {
-        imageref.current.style.transform = 'scale(1)'
+        // imageref.current.style.transform = 'scale(1)'
     }
     return (
         <div className=' bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] rounded-[0.9375rem] overflow-hidden my-[1rem]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ width:props.mainWidth?props.mainWidth:'54.1875rem',height:props.mainHeight?props.mainHeight:'39.625rem', }}>
@@ -383,7 +383,7 @@ const TvCard = (props:Props) => {
 
                 </div>
             </div>
-            <div className=' flex justify-between' style={{ marginTop:props.sectionMT?props.sectionMT:'0.4375rem', width:props.sectionWidth?props.sectionWidth:'52.4375rem', marginLeft: props.leftSecML?props.leftSecML:'0.9375rem'  }}>
+            <div className=' flex justify-between' style={{ marginTop:props.sectionMT?props.sectionMT:'0.875rem', width:props.sectionWidth?props.sectionWidth:'52.4375rem', marginLeft: props.leftSecML?props.leftSecML:'0.9375rem'  }}>
                 <div className='' style={{ width:props.leftSecWidth?props.leftSecWidth:'24.625rem',height:props.leftSecHeight?props.leftSecHeight:'14.4375rem'}}>
                     <div className='w-full flex justify-between items-center' style={{ height:props.brochureAndSocialWrapperHeight?props.brochureAndSocialWrapperHeight:'1.625rem' }}>
                         <div className='flex justify-between items-center' style={{ width:props.socialWrapperWidth?props.socialWrapperWidth:'7.5625rem' }}>
@@ -405,7 +405,7 @@ const TvCard = (props:Props) => {
                        </div>
 
                     </div>
-                    <div className='w-full  rounded-[0.3011875rem] bg-[#E6EDED] shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]' style={{ height: props.textSecHeight?props.textSecHeight:'6.9375rem',marginTop:props.textSecMT?props.textSecMT:'0.625rem',paddingLeft:props.txetSecPL?props.txetSecPL:'0.6875rem' }}>
+                    <div className='w-full  rounded-[0.3011875rem] bg-[#E6EDED] shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]' style={{ height: props.textSecHeight?props.textSecHeight:'7.625rem',marginTop:props.textSecMT?props.textSecMT:'1.875rem',paddingLeft:props.txetSecPL?props.txetSecPL:'0.6875rem' }}>
                         <div className='text-[#19464B] font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.5rem', paddingTop:props.titleMT?props.titleMT:'0.325rem' }}>
                             Creek Rise tower 2 west side
                         </div>
@@ -419,7 +419,7 @@ const TvCard = (props:Props) => {
                             </div>
                         </div>
                     </div>
-                    <div className='mx-auto flex flex-wrap  justify-between' style={{ width:props.tagsWrapperrWidth?props.titleRowWidth:'24.5625rem',marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'1rem',rowGap:props.tagGapY?props.tagGapY:'1rem' }}>
+                    <div className='mx-auto flex flex-wrap  justify-between' style={{ width:props.tagsWrapperrWidth?props.titleRowWidth:'24.5625rem',marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'1.125rem',rowGap:props.tagGapY?props.tagGapY:'1rem' }}>
                         <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.5625rem',height:props.tagHeight?props.tagHeight:'1.625rem' }}>
                             <NewTag text='Appartment'/>
 
@@ -430,20 +430,12 @@ const TvCard = (props:Props) => {
                         <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.5625rem',height:props.tagHeight?props.tagHeight:'1.625rem' }}>
                             <NewTag text='Appartment'/>
                         </div>
-                        <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.5625rem',height:props.tagHeight?props.tagHeight:'1.625rem' }}>
-                            <NewTag text='Appartment'/>
-                        </div>
-                        <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.5625rem',height:props.tagHeight?props.tagHeight:'1.625rem' }}>
-                            <NewTag text='Appartment'/>
-                        </div>
-                        <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.5625rem',height:props.tagHeight?props.tagHeight:'1.625rem' }}>
-                            <NewTag text='Appartment'/>
-                        </div>
+
                     </div>
                 </div>
-                <div className='  rounded-[6.25rem] bg-[#E6EDED] shadow-[inset_-0.14793375rem_-0.14793375rem_0.246556875rem_#FFFFFF,inset_0.246556875rem_0.246556875rem_0.345179375rem_#B6C3C5] ' style={{ height:props.SeparatorHeight?props.SeparatorHeight:'15.7525rem',width: props.separatorWidth?props.separatorWidth:'0.4375rem', marginTop:props.sectionMT?-props.sectionMT:'-0.4375rem' }}>
+                <div className='  rounded-[6.25rem] bg-[#E6EDED] shadow-[inset_-0.14793375rem_-0.14793375rem_0.246556875rem_#FFFFFF,inset_0.246556875rem_0.246556875rem_0.345179375rem_#B6C3C5] ' style={{ height:props.SeparatorHeight?props.SeparatorHeight:'15.7525rem',width: props.separatorWidth?props.separatorWidth:'0.4375rem', marginTop:props.sectionMT?-props.sectionMT:'-0.8675rem' }}>
                 </div>
-                <div className='flex justify-between flex-wrap ' style={{ width:props.boxWidth?props.boxWrapperWidth: '25.375rem',height:props.boxWrapperHeight?props.boxWrapperHeight:'13.875remrem',marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.5625rem',rowGap:props.boxGapY?props.boxGapY:'0.1375rem'}}>
+                <div className='flex justify-between flex-wrap ' style={{ width:props.boxWidth?props.boxWrapperWidth: '25.375rem',height:props.boxWrapperHeight?props.boxWrapperHeight:'13.6875rem',marginTop:props.boxWrapperMT?props.boxWrapperMT:'0rem',rowGap:props.boxGapY?props.boxGapY:'0.9375rem'}}>
 
                 <BoxMaster
                         BoxType='standerd'

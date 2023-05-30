@@ -46,10 +46,10 @@ const MortgageCalculator = () => {
                     Calculate and view the monthly mortgage
                 </div>
             </div>
-            <div className='flex w-full h-full  '>
-                <div className=' w-[41.5rem] '>
+            <div className='flex w-[84.258125rem] h-full justify-between  mx-auto'>
+                    <div className=' w-[41.5rem] '>
 
-                    <div className='w-[39.5rem] mt-[5.2rem] ml-[3.5rem] relative rounded-[6.25rem]'>
+                    <div className='w-[41.5rem] mt-[5.2rem] relative rounded-[6.25rem]'>
                         <div className='w-full rounded-[6.25rem]'>
                             <RangeSingle max={50000000} min={500000} rtl={false} id='pp' step={100000} lable='Property Price (AED)' key={'l'} precantage={false} loan={0} dp={false}/>
                         </div>
@@ -58,19 +58,19 @@ const MortgageCalculator = () => {
                         </div> */}
 
                     </div>
-                    <div className='w-[39.5rem] mt-[7rem] ml-[3.5rem]'>
+                    <div className='w-[41.5rem] mt-[7rem]'>
                         <div className='w-full'>
                                 <RangeSingle max={90} min={20} rtl={false} id='dp' step={1} lable='Down Payment (AED)' precantage={true} dp={true} loan={loan}/>
                         </div>
 
                     </div>
-                    <div className='w-[39.5rem] mt-[7rem] ml-[3.5rem]'>
+                    <div className='w-[41.5rem] mt-[7rem]'>
                         <div className='w-full'>
                             <RangeSingle max={25} min={5} rtl={false} id='lp' step={1} lable='Loan Period (Years)' precantage={false} loan={0} dp={false}/>
                         </div>
 
                     </div>
-                    <div className='w-[39.5rem] mt-[7rem] ml-[3.5rem]'>
+                    <div className='w-[41.5rem] mt-[7rem]'>
                         <div className='w-full'>
                             <RangeSingle max={10.00} min={0.250} rtl={false} id='ir' step={0.100000001} lable='Interst Rate (%)' precantage={true} loan={0} dp={false}/>
                         </div>
@@ -78,10 +78,10 @@ const MortgageCalculator = () => {
                     </div>
                 </div>
 
-                <div className='h-full ml-[3.125rem]'>
+                <div className='h-full ml-[0.5rem]'>
                     <InElementSeperator width='0.375rem'/>
                 </div>
-                <div>
+                <div className='w-[33.998125rem] flex flex-col items-end'>
 
                     <div className='w-[33.875rem] h-[6.775rem] mt-[2.5625rem] ml-[4.3125rem] flex'>
                         <div className='flex justify-center items-center h-full w-[16.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.33875rem_0rem_0rem_0.33875rem] shadow-[-0.3264875rem_-0.3264875rem_0.372255rem_#FFFFFF,0.24817rem_0.24817rem_0.372255rem_#B6C3C5]'>

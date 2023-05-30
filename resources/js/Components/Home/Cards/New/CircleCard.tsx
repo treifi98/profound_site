@@ -318,12 +318,12 @@ const CircleCard = (props:Props) => {
 
     const imageref = useRef(null)
     const handleMouseEnter = () => {
-        imageref.current.style.transform = 'scale(1.07)'
+        // imageref.current.style.transform = 'scale(1.07)'
         // imageref.current.style.borderRadius = 'none'
         // alert('d')
     }
     const handleMouseLeave = () => {
-        imageref.current.style.transform = 'scale(1)'
+        // imageref.current.style.transform = 'scale(1)'
     }
     return(
         <div className='relative' style={{ width:props.mainWidth? props.mainWidth: '66.5rem', height: props.mainHeight?props.mainHeight: '34.5625rem', marginBottom:props.mainMB?props.mainMB:'2rem',marginTop:props.mainMT?props.mainMT:'3rem' }} >
@@ -331,12 +331,9 @@ const CircleCard = (props:Props) => {
                 <div className='transition-all overflow-hidden' style={{ width: props.imgWidth? props.imgWidth : '32.718125rem', height: props.imgHeight? props.imgHeight: '32.96625rem',borderRadius:props.rounded? props.rounded: '41.653rem 41.653rem 0.407576875rem 41.653rem',marginTop:props.imgMT? props.imgMT: '0.72125rem' }} ref={imageref}>
                 <Swiper
                 // pagination={pagination}
-                modules={[Autoplay, Pagination]}
+                modules={[ Pagination]}
                 slidesPerView={1}
-                autoplay={{
-                    delay: 1500,
-                    disableOnInteraction: true,
-                  }}
+
                 // slidesPerGroupSkip={3}
                 spaceBetween={20}
                 breakpoints={{
@@ -388,7 +385,7 @@ const CircleCard = (props:Props) => {
                 </div>
             </div>
             <div className='rounded-[0.9375rem] shadow-[-0.4928725rem_-0.4928725rem_0.70410625rem_#FFFFFF,0.4928725rem_0.4928725rem_0.4928725rem_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] absolute bottom-0 z-[1]' style={{ left:props.sectionLeft?props.sectionLeft:'30.4375rem',width:props.sectionWidth?props.sectionWidth: '36.0625rem',height:props.sectionHeight?props.sectionHeight:'27.8125rem'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <div className=' flex justify-between items-center' style={{ marginLeft:props.titleML?props.titleML:'2.575rem',marginTop: props.titleMT? props.titleMT:'0.425rem',width:props.titleAndSocialWidth?props.titleAndSocialWidth:'32.565625rem' }}>
+                <div className=' flex justify-between items-center' style={{ marginLeft:props.titleML?props.titleML:'2.175rem',marginTop: props.titleMT? props.titleMT:'0.425rem',width:props.titleAndSocialWidth?props.titleAndSocialWidth:'32.565625rem' }}>
                     <div className='text-grade font-[600] ' style={{ fontSize:props.titleSize? props.titleSize:'1.5rem' }}>
                         {props.title}
                     </div>
@@ -404,19 +401,19 @@ const CircleCard = (props:Props) => {
                         </div>
                     </div>
                 </div>
-                <div className='text-grade font-[400] ' style={{ marginLeft:props.subTitleML?props.subTitleML:'3.95rem',marginTop: props.subTitleMT? props.subTitleMT:'0.2625rem', fontSize:props.subTitleSize?props.subTitleSize:'1.375rem' }}>
+                <div className='text-grade font-[400] ' style={{ marginLeft:props.subTitleML?props.subTitleML:'3.25rem',marginTop: props.subTitleMT? props.subTitleMT:'0.2625rem', fontSize:props.subTitleSize?props.subTitleSize:'1.375rem' }}>
                     {props.subTitle}
                 </div>
-                <div className='' style={{ width:props.brochure.mainWidth?props.brochure.mainWidth:'6.9375rem',height:props.brochure.mainHeight?props.brochure.mainHeight:'1.75rem',marginLeft:props.brochureML?props.brochureML:'28.1875rem' }}>
+                <div className='' style={{ width:props.brochure.mainWidth?props.brochure.mainWidth:'6.9375rem',height:props.brochure.mainHeight?props.brochure.mainHeight:'1.75rem',marginLeft:props.brochureML?props.brochureML:'27.9875rem' }}>
                     <Brochure mainWidth={props.brochure.mainWidth?props.brochure.mainWidth:'6.9375rem'} mainHeight={props.brochure.mainHeight?props.brochure.mainHeight:'1.75rem'} imgWidth={props.brochure.imgWidth? props.brochure.imgWidth:'1.266875rem'} imgHeight={props.brochure.imgHeight? props.brochure.imgHeight:'1.046875rem'} imgWrapperWidth={props.brochure.imgWrapperWidth? props.brochure.imgWrapperWidth:'1.9375rem'} seperatorML={props.brochure.seperatorML? props.brochure.seperatorML:'0rem'} imgMT={props.brochure.imgMT? props.brochure.imgMT:'0.375rem'} restWidth={props.brochure.restWidth? props.brochure.restWidth:'4.8125rem'} textSize={props.brochure.textSize? props.brochure.textSize:'0.8125rem'} separatorWidth={props.brochure.separatorWidth? props.brochure.separatorWidth:'0.25rem'}  />
                 </div>
-                <div className='flex justify-between items-center mt-[-1.5rem]' style={{ width:props.areaWidth?props.areaWidth:'10.3125rem',marginLeft:props.areaML?props.areaML:'4.5rem' }}>
+                <div className='flex justify-between items-center mt-[-1.5rem]' style={{ width:props.areaWidth?props.areaWidth:'10.3125rem',marginLeft:props.areaML?props.areaML:'3.9rem' }}>
                     <img src={mapIcon} alt="" style={{ width:props.areaIconWidth?props.areaIconWidth:'1.18625rem',height:props.areaIconHeight?props.areaIconHeight:'1.125625rem' }}/>
                     <div className='text-grade' style={{ fontSize:props.areatextSize?props.areatextSize:'1rem' }}>
                         Dubai Creek Harbor
                     </div>
                 </div>
-                <div className='flex justify-between' style={{ width:props.tagsWrapperrWidth?props.tagsWrapperrWidth:'30.125rem', marginLeft:props.tagsWrapperML?props.tagsWrapperML:'5rem', marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0.875rem'}}>
+                <div className='flex justify-between' style={{ width:props.tagsWrapperrWidth?props.tagsWrapperrWidth:'30.125rem', marginLeft:props.tagsWrapperML?props.tagsWrapperML:'4.8rem', marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0.875rem'}}>
                     <div className='' style={{ width:props.tagWidth?props.tagWidth:'8.125rem',height:props.tagHeight?props.tagHeight:'1.625rem' }}>
                         <NewTag text='Appartment'/>
                     </div>
@@ -427,7 +424,7 @@ const CircleCard = (props:Props) => {
                         <NewTag text='Appartment'/>
                     </div>
                 </div>
-                <div className='flex flex-wrap justify-between ' style={{ width:props.boxWrapperWidth?props.boxWrapperWidth:'30.086875rem', height:props.boxWrapperHeight?props.boxWrapperHeight:'16.465rem', marginLeft:props.boxesWrapperML?props.boxesWrapperML:'5.0625rem',marginTop:props.boxesWrapperMT?props.boxesWrapperMT:'1.0625rem', rowGap:props.boxesGapY?props.boxesGapY:'1.5625rem' }}>
+                <div className='flex flex-wrap justify-between ' style={{ width:props.boxWrapperWidth?props.boxWrapperWidth:'30.086875rem', height:props.boxWrapperHeight?props.boxWrapperHeight:'16.465rem', marginLeft:props.boxesWrapperML?props.boxesWrapperML:'4.8625rem',marginTop:props.boxesWrapperMT?props.boxesWrapperMT:'1.0625rem', rowGap:props.boxesGapY?props.boxesGapY:'1.5625rem' }}>
 
                     <BoxMaster
                         BoxType='standerd'

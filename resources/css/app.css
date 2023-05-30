@@ -151,11 +151,12 @@ div.select_component::-moz-scrollbar-track {
     /* margin-right: -2.8125rem; */
     /* margin-right: -1rem; */
     /* margin-left: -2rem; */
+    /* width: max-content; */
 
 }
 .offPlanmySwiper .swiper-slide-active{
-    margin-right: 0.25rem;
-    margin-left: -1.25rem;
+    margin-right: 2.3125rem;
+    margin-left: 0.5rem;
     /* width: max-content !important; */
     /* padding-left: 1.5625rem; */
     /* margin-right: -2.8125rem; */
@@ -177,18 +178,19 @@ div.select_component::-moz-scrollbar-track {
     transform-origin: bottom;
 }
 .circlemySwiper .swiper-slide-active{
-    /* margin-right: 9.5rem;
-    padding-left: 1.5625rem; */
+    margin-right: 0.375rem;
+    /* padding-left: 1.5625rem; */
     /* transform-origin: bottom; */
     /* transform: scale(1) !important; */
-    margin-left: 1.375rem;
+    /* margin-left: 1.375rem; */
 }
 .mySwipercircleCardImages .swiper-slide-active{
     margin-left: 0rem;
+    margin-right: 0rem;
 }
 .TvmySwiper .swiper-slide-active{
-    /* margin-right: 3.125rem; */
-    margin-left: -2.225rem;
+    margin-right: 1.5625rem;
+    margin-left: -0.4375rem;
     /* padding-left: 0.0375rem; */
 }
 .tvImageSwiperInternal .swiper-slide-active{
@@ -215,8 +217,9 @@ div.select_component::-moz-scrollbar-track {
 .originalCardmySwiper .swiper-slide{
     /* margin-right: 5.0075rem;
     padding-left: 2.9375rem; */
-    margin-right: 2.839375rem;
-    margin-left: 1.839375rem;
+    /* margin-right: 2.0625rem; */
+    margin-left: 2.8125rem;
+    margin-right: 2.8125rem;
 }
 
 .originalimageswiper .swiper-slide{

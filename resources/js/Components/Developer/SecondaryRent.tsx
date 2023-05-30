@@ -287,12 +287,11 @@ const SecondaryRent = () => {
                 <InElementSeperator width='0.375rem'/>
             </div>
             <div className='w-[40.25rem] ml-[2.625rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] h-[29.5625rem] rounded-[0.9375rem] mt-[2.75rem] flex flex-col items-center justify-center '>
-                <div className='text-[1.375rem] font-[600] text-grade mb-[1.4375rem] w-[28.75rem] font-[nova]'>
+                <div className='text-[1.375rem] font-[600] text-grade mb-[1.4375rem] w-[37.0625rem] font-[nova]'>
                     High Floor | Stunning Sea View | Investors Deal
                 </div>
-                <div className=' w-[28.3125rem] leading-[2rem] text-[1.25rem]'>
-                    Do you want to live in a luxury serviced apartment with one of the most amazing views?Are you ecstatic to buy a home on a very high floor?Keep on reading as this will be the perfect unit for you! Contact our specialist to arrange a viewing and discuss more in detail.Metropolitan Premium Properties is proud to exclusively bring you this fully-furnished, phenomenal 2-bedroom apartment that will definitely capture not only your eyes but your heart as well.
-                    Quite a lot of unique selling points add to the
+                <div className=' w-[37.0625rem] leading-[2rem] text-[1.25rem]'>
+                Do you want to live in a luxury serviced apartment with one of the most amazing views?Are you ecstatic to buy a home on a very high floor?Keep on reading as this will be the perfect unit for you! Contact our specialist to arrange a viewing and discuss more in detail.Metropolitan Premium Properties is proud to exclusively bring you this fully-furnished, phenomenal 2-bedroom apartment that will definitely capture not only your eyes but your heart as well. detail.Metropolitan Premium Properties is proud to exclusively bring you this fully-furnished, phenomenal 2-bedroom apartment that will definitely capture not only your eyes but your heart as well.
                 </div>
             </div>
 

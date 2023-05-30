@@ -36,7 +36,7 @@ const SwiperType3A = () => {
 
         <BarCommonType2 handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text1={'Dubai water front '} text2={'Beach front properties'} icon={beachfront}/>
     </div>
-    <div className='mt-[0rem] mb-[3.6875rem]'>
+    <div className='mt-[0.6875rem] mb-[3.6875rem]  relative z-[9999999999999999999]'>
 
         <Swiper
          effect={"coverflow"}
@@ -65,8 +65,8 @@ const SwiperType3A = () => {
             loop={true}
             className="circlemySwiper"
         >
-            <SwiperSlide>
-                        <CircleCard img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+            <SwiperSlide className='ml-[1.375rem]'>
+                <CircleCard img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
             args:{
                 img:priceIcon,
                 text:'Price starting From AED',
