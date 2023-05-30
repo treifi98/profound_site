@@ -59,7 +59,7 @@ const SwiperType2A = () => {
                 coverflowEffect={{
                     rotate: 0,
                     stretch: 0,
-                    depth: 0,
+                    depth: 10,
                     modifier: 1,
                     scale:0.7,
                     slideShadows: false,
@@ -231,7 +231,7 @@ const SwiperType2A = () => {
             />
                 </SwiperSlide>
                 <SwiperSlide>
-                                <OffplanCard img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                    <OffplanCard img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                 args:{
                     img:priceIcon,
                     text:'Price starting From AED',

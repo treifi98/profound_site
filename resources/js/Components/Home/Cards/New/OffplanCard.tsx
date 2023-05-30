@@ -323,12 +323,12 @@ const OffplanCard = (props:Props) => {
 
     const imageref = useRef(null)
     const handleMouseEnter = () => {
-        imageref.current.style.transform = 'scale(1.05)'
+        // imageref.current.style.transform = 'scale(1.05)'
         // imageref.current.style.borderRadius = 'none'
         // alert('d')
     }
     const handleMouseLeave = () => {
-        imageref.current.style.transform = 'scale(1)'
+        // imageref.current.style.transform = 'scale(1)'
     }
 
     return (
@@ -338,12 +338,9 @@ const OffplanCard = (props:Props) => {
                     <div className='relative rounded-[0.9375rem]  origin-bottom transition-all' ref={imageref} style={{ width:props.imgWidth?props.imgWidth: '43.5625rem',height:props.imgHeight?props.imgHeight:'27.7725rem' }}>
                     <Swiper
                     // pagination={pagination}
-                    modules={[Autoplay, Pagination]}
+                    modules={[ Pagination]}
                     slidesPerView={1}
-                    autoplay={{
-                        delay: 1500,
-                        disableOnInteraction: true,
-                    }}
+
                     // slidesPerGroupSkip={3}
                     spaceBetween={20}
                     breakpoints={{

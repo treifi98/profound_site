@@ -277,6 +277,14 @@ div.select_component::-moz-scrollbar-track {
 .newsSmallSwiper .swiper-slide{
     /* margin-right: 0.5625rem; */
 }
+.offPlanmySwiper {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+ .swiper-slide-active{
+    transform: scale(1) !important;
+ }
 
 .progress-bar {
     /* width: 100px;
