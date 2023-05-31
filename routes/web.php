@@ -40,6 +40,9 @@ Route::middleware('auth')->group(function () {
 Route::get('/test',function(){
     return Inertia::render('Test');
 });
+Route::get('/areas',function(){
+    return Inertia::render('Areas');
+});
 Route::get('/playground',function(){
     return Inertia::render('Playground');
 });
