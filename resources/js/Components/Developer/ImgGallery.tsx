@@ -16,9 +16,12 @@ import viewIcon from '../../../assets/viewfilled.svg'
 import mapIcon from '../../../assets/map_icon.svg'
 import arrowIcon from '../../../assets/arrowWhite.svg'
 import GallerySwiper from './GallerySwiper'
+import beatchFront from '../../../assets/Newcircle.png'
+// import dubai from '../../../assets/dubai.png'
+import dubaiP from '../../../assets/Dubai-Properties-Logo1.png'
 const ImgGallery = () => {
     const handleClick = () => {
-        gallery.current.style.zIndex = '999999'
+        gallery.current.style.zIndex = '9999999999999'
         gallery.current.style.opacity = '1'
     }
     const close = (e) => {
@@ -98,8 +101,8 @@ const ImgGallery = () => {
         </div>
         <div className='w-[100vw] h-[100vh] fixed top-0 z-[-1] opacity-0 left-0 bg-[#0000006c] flex justify-center items-center gap-[1.875rem] transition-all closer' ref={gallery} onClick={close}>
 
-            <div className='w-[62.5rem] h-[62.5rem]'>
-                <GallerySwiper/>
+            <div className=''>
+                <GallerySwiper imgs={[dubai,dubaiP,beatchFront]}/>
             </div>
 
         </div>

@@ -1207,8 +1207,12 @@ const Test = () =>{
     <div className='my-[2rem] mx-auto w-max'>
         <BedButton />
     </div>
-    <div className='my-[2rem] mx-auto w-max'>
-        <SliderButton />
+    <div className='my-[2rem]  w-full'>
+        <div className='w-[50rem] flex justify-end mx-auto gap-[1rem]'>
+
+            <SliderButton title='Price By' options={['AED','USD',"EUR"]}/>
+            <SliderButton title='Price By' options={['AED','USD',"EUR"]}/>
+        </div>
     </div>
     <div className='my-[2rem] mx-auto w-max'>
         <MapContainer />

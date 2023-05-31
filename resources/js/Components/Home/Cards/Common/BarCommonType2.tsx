@@ -9,7 +9,8 @@ interface Props{
     handlePrev:Function,
     text1:string,
     text2:string,
-    icon:string
+    icon:string,
+    buttonML?:string
 }
 
 const BarCommonType2 = (props:Props) => {
@@ -24,7 +25,10 @@ const BarCommonType2 = (props:Props) => {
             {/* <div className='h-[3.125rem] w-[0.0625rem] bg-[#CED7D8] ml-[0.375rem] '></div> */}
             <InElementSeperator height='3.0475rem' width='0.5rem'/>
             <div className='text-grade text-[1.875rem] font-[600]'>{props.text2}</div>
-            <ViewAllButton/>
+            <div className='ml-[2.1875rem]'>
+
+                <ViewAllButton ml={props.buttonML}/>
+            </div>
         </div>
         <div className='flex w-[50%] justify-end items-center gap-[1.875rem]'>
             <div className='relative w-[2.5rem] h-[2.5rem] rounded-full bg-[#E6EDED] shadow-[-3.22695px_-3.22695px_4.84043px_#F7FFFF,3.22695px_3.22695px_4.84043px_#AEBBBD] flex justify-center items-center hover:shadow-[inset_-2.41304px_-2.41304px_3.21739px_#FFFFFF,inset_2.41304px_2.41304px_3.21739px_#AEBBBD] cursor-pointer' onClick={() => props.handlePrev()}>

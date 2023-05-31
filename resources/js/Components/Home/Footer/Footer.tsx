@@ -147,7 +147,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                            <div className='w-[11.4375rem] h-[2.5rem] flex justify-center items-center rounded-[6.25rem] shadow-[-0.1875rem_-0.1875rem_0.3125rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] mx-auto mt-[1.3125rem] cursor-pointer'>
+                            <div className='w-[11.4375rem] h-[2.5rem] flex justify-center items-center rounded-[6.25rem] shadow-[-0.1875rem_-0.1875rem_0.3125rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] hover:shadow-[inset_-0.1875rem_-0.1875rem_0.3125rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618] mx-auto mt-[1.3125rem] cursor-pointer'>
                                 <div className='text-[1.25rem] text-[#fff] font-[600]'>
                                     Contact US
                                 </div>

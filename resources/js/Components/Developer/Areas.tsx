@@ -27,11 +27,11 @@ const Areas = () => {
                                 <div className='absolute bottom-0 left-0 bg-[#11252480] w-[14.46875rem] h-[3.074375rem] mix-blend-multiply rounded-[0rem_1.537325rem_1.537325rem_0.90430625rem] z-[1]'>
 
                                 </div>
-                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem]'>
+                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem] mt-[-0rem]'>
 
                                     Dubai Marina
                                 </div>
-                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.3rem]'>
+                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.4rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -48,11 +48,11 @@ const Areas = () => {
                                 <div className='absolute bottom-0 left-0 bg-[#11252480] w-[14.46875rem] h-[3.074375rem] mix-blend-multiply rounded-[0rem_1.537325rem_1.537325rem_0.90430625rem] z-[1]'>
 
                                 </div>
-                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem]'>
+                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem] mt-[-0rem]'>
 
                                     Dubai Marina
                                 </div>
-                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.3rem]'>
+                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.4rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -67,11 +67,11 @@ const Areas = () => {
                                 <div className='absolute bottom-0 left-0 bg-[#11252480] w-[14.46875rem] h-[3.074375rem] mix-blend-multiply rounded-[0rem_1.537325rem_1.537325rem_0.90430625rem] z-[1]'>
 
                                 </div>
-                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem]'>
+                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem] mt-[-0rem]'>
 
                                     Dubai Marina
                                 </div>
-                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.3rem]'>
+                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.4rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -90,11 +90,11 @@ const Areas = () => {
                                 <div className='absolute bottom-0 left-0 bg-[#11252480] w-[14.46875rem] h-[3.074375rem] mix-blend-multiply rounded-[0rem_1.537325rem_1.537325rem_0.90430625rem] z-[1]'>
 
                                 </div>
-                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem]'>
+                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem] mt-[-0rem]'>
 
                                     Dubai Marina
                                 </div>
-                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.3rem]'>
+                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.4rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -109,11 +109,11 @@ const Areas = () => {
                                 <div className='absolute bottom-0 left-0 bg-[#11252480] w-[14.46875rem] h-[3.074375rem] mix-blend-multiply rounded-[0rem_1.537325rem_1.537325rem_0.90430625rem] z-[1]'>
 
                                 </div>
-                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem]'>
+                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem] mt-[-0rem]'>
 
                                     Dubai Marina
                                 </div>
-                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.3rem]'>
+                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.4rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -128,11 +128,11 @@ const Areas = () => {
                                 <div className='absolute bottom-0 left-0 bg-[#11252480] w-[14.46875rem] h-[3.074375rem] mix-blend-multiply rounded-[0rem_1.537325rem_1.537325rem_0.90430625rem] z-[1]'>
 
                                 </div>
-                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem]'>
+                                <div className='text-[#fff] font-[700] text-[1.240384615384615rem] relative z-[2] ml-[0.663125rem] mt-[-0rem]'>
 
                                     Dubai Marina
                                 </div>
-                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.3rem]'>
+                                <div className=' font-[600] text-[1.085rem] ml-[0.663125rem] text-[#fff] z-[2] relative mt-[-0.4rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>

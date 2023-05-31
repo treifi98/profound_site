@@ -6,6 +6,7 @@ import NewTag from './NewTag'
 
 import icon from '../../../../../assets/map_image.svg'
 import view_all_icon from '../../../../../assets/view_all_icon.svg'
+import InElementSeperator from './InElementSeperator'
 
 interface Props{
     handleNext:Function,
@@ -17,10 +18,14 @@ interface Props{
 const BarArea = (props:Props) => {
 
   return (
-    <div className='relative z-30 w-[94.9375rem] mx-auto h-[3.25rem] rounded-[6.25rem] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[0.3125rem]'>
+    <div className='relative z-30 w-[calc(100%-0.625rem)] mx-[0.3125rem] h-[3.25rem] rounded-[6.25rem] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[0.3125rem]'>
         <div className='flex  items-center w-[100%] justify-start'>
             <img src={icon} alt="" className='w-[5.5625rem] h-[3.25rem] '/>
             {/* <div className='h-[3.125rem] w-[1px] bg-[#CED7D8] ml-[0.375rem] mr-[0.9375rem]'></div> */}
+            <div className='ml-[0.8rem]'>
+
+                <InElementSeperator height='3.0475rem' width='0.5rem'/>
+            </div>
             <div className='text-grade text-[1.875rem] font-[600] ml-[0.9375rem]'>Dubai Areas</div>
             <div className='ml-[9.2925rem]  h-[2.1875rem] ' style={{ width:'12.77rem' }}>
                 <NewTag text='Appartments for sale'  textSize='1.125' textWeight='400'/>

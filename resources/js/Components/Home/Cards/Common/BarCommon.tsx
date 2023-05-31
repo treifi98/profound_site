@@ -17,9 +17,15 @@ const BarCommon = (props:Props) => {
         <div className='flex  items-center w-[50%] justify-start'>
             <img src={props.icon} alt="" className='w-[5.375rem] h-[2.8125rem] '/>
             {/* <div className='h-[3.125rem] w-[1px] bg-[#CED7D8] ml-[0.375rem] mr-[0.9375rem]'></div> */}
-            <InElementSeperator height='3.0475rem' width='0.5rem'/>
+            <div className='ml-[0.5rem]'>
+
+                <InElementSeperator height='3.0475rem' width='0.5rem'/>
+            </div>
             <div className='text-grade text-[1.875rem] max- font-[600] ml-[1.0625rem]'>{props.text}</div>
-           <ViewAllButton/>
+            <div className='ml-[1.4375rem]'>
+
+                <ViewAllButton/>
+            </div>
         </div>
         <div className='flex w-[50%] justify-end items-center gap-[1.875rem]'>
                 <div className='relative w-[2.5rem] h-[2.5rem] rounded-full bg-[#E6EDED] shadow-[-0.201684375rem_-0.201684375rem_0.302526875rem_#F7FFFF,0.201684375rem_0.201684375rem_0.302526875rem_#AEBBBD] flex justify-center items-center hover:shadow-[inset_-0.150815rem_-0.150815rem_0.201086875rem_#FFFFFF,inset_0.150815rem_0.150815rem_0.201086875rem_#AEBBBD] cursor-pointer' onClick={() => props.handlePrev()}>

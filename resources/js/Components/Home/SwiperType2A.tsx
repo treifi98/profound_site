@@ -29,6 +29,7 @@ import Brochure from '@/Components/Home/Cards/Common/Brochure'
 import beatchFront from '../../../assets/Newcircle.png'
 import paymentIcon from '../../../assets/paymentIcon.svg'
 import compleationIcon from '../../../assets/compleationIcon.svg'
+import construction from '../../../assets/construction.svg'
 // import '../../../assets/x.css'
 
 
@@ -45,8 +46,8 @@ const SwiperType2A = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Luxury Properties'} icon={chandelier}/>
-        <div className='mt-[3.4375rem] mb-[3.4375rem]'>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Off-plan Latest Launches'} icon={construction}/>
+        <div className='mt-[2.1875rem] mb-[3.4375rem]'>
 
             <Swiper
                 slidesPerView={1}
@@ -61,7 +62,7 @@ const SwiperType2A = () => {
                     stretch: 0,
                     depth: 10,
                     modifier: 1,
-                    scale:0.7,
+                    scale:0.69,
                     slideShadows: false,
                 }}
                 modules={[Autoplay, EffectCoverflow, Pagination]}
@@ -70,7 +71,7 @@ const SwiperType2A = () => {
                 spaceBetween={0}
                 breakpoints={{
                     810: {
-                    slidesPerView: 1.65,
+                    slidesPerView: 1.75,
                     spaceBetween: 0,
                     }
                 }}

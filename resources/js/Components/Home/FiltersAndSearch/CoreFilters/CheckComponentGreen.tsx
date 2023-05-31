@@ -38,6 +38,12 @@ const CheckComponentGreen = (props:Props) => {
     // const [clicked,setClicked] = useState(false)
     const handleClick = () => {
         // setClicked((prev) => !prev)
+        // props.func()
+        try{
+            props.func()
+        }catch(e){
+
+        }
         dispatch(toggle({id:props.id,vals:{on:'1',off:'0'}}))
     }
     useEffect(()=>{

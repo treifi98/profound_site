@@ -17,9 +17,24 @@ import beatchFront from '../../../assets/Newcircle.png'
 import floorplan from '../../../assets/floorplan.png'
 import simpleGreenArrowLeft from '../../../assets/simpleGreenArrowLeft.svg'
 import simpleGreenArrowRight from '../../../assets/simpleGreenArrowRight.svg'
+import GallerySwiper from './GallerySwiper';
 
 const FloorPlanSwiper = () => {
     const [swiper, setSwiper] = useState<any>();
+        const handleClick = () => {
+        gallery.current.style.zIndex = '9999999999999'
+        gallery.current.style.opacity = '1'
+    }
+    const close = (e) => {
+        console.log(e.target.classList.value)
+        if(e.target.classList.value.includes('closer')){
+            // alert('d')
+            gallery.current.style.opacity = '0'
+            gallery.current.style.zIndex = '-1'
+        }
+    }
+    const gallery = useRef(null)
+
 
   return (
     <div className='w-[46.125rem] h-[31.8125rem] relative bg-[#E6EDED] border-[#DCE3E3] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] border-[0.0625rem] rounded-[0.875rem] flex items-center justify-center'>
@@ -57,25 +72,25 @@ const FloorPlanSwiper = () => {
                     className="FloorPlanSwiper"
                 >
                     <SwiperSlide>
-                        <div className='w-[43.5625rem] h-[29.25rem] '>
+                        <div className='w-[43.5625rem] h-[29.25rem] cursor-pointer'  onClick={handleClick}>
                             <img src={floorplan} alt="" className='w-[43.5625rem] h-[29.25rem] object-cover object-center rounded-[0.875rem]'/>
 
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-[43.5625rem] h-[29.25rem]'>
+                        <div className='w-[43.5625rem] h-[29.25rem] cursor-pointer' onClick={handleClick}>
                             <img src={floorplan} alt="" className='w-[43.5625rem] h-[29.25rem] object-cover object-center rounded-[0.875rem]'/>
 
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-[43.5625rem] h-[29.25rem]'>
+                        <div className='w-[43.5625rem] h-[29.25rem] cursor-pointer' onClick={handleClick}>
                             <img src={floorplan} alt="" className='w-[43.5625rem] h-[29.25rem] object-cover object-center rounded-[0.875rem]'/>
 
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-[43.5625rem] h-[29.25rem]'>
+                        <div className='w-[43.5625rem] h-[29.25rem] cursor-pointer' onClick={handleClick}>
                             <img src={floorplan} alt="" className='w-[43.5625rem] h-[29.25rem] object-cover object-center rounded-[0.875rem]'/>
 
                         </div>
@@ -83,6 +98,12 @@ const FloorPlanSwiper = () => {
 
 
                 </Swiper>
+            </div>
+            <div className='w-[100vw] h-[100vh] fixed top-0 z-[-1] opacity-0 left-0 bg-[#0000006c] flex justify-center items-center gap-[1.875rem] transition-all closer' ref={gallery} onClick={close}>
+
+                <div className=''>
+                    <GallerySwiper imgs={[floorplan,floorplan,floorplan]}/>
+                </div>
             </div>
     </div>
   )
