@@ -8,7 +8,11 @@ import InElementSeperator from '../../Cards/Common/InElementSeperator'
 import FancyCheckeComponent from './FancyCheckeComponent'
 import SearchAction from '../SearchActionComponent'
 
-const FiltersLineareas = () => {
+interface Props{
+    funcMap?:Function,
+    mapStatus?:boolean
+}
+const FiltersLineareas = (props:Props) => {
     return (
         <div className='w-full h-[5.625rem] flex items-center  shadow-[-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,0.3125rem_0.3125rem_0.3125rem_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] relative z-[99999] '>
             <div className='flex items-center gap-[1.375rem] ml-[0.6875rem]'>
@@ -30,7 +34,7 @@ const FiltersLineareas = () => {
                         </div>
                     </div> */}
                     <div>
-                        <FancyCheckeComponent id='showMap' off='off' on='on' key={'showmap'}/>
+                        <FancyCheckeComponent id='showMap' off='off' on='on' key={'showmap'} funcMap={props.funcMap} mapStatus={props.mapStatus}/>
                     </div>
                     {/* <ShowMap id='w-s-s' on='d' off='dd'/> */}
 

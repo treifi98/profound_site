@@ -237,6 +237,7 @@ const MapContainer = () => {
                     changes={changes}
                     rchanges={rchanges}
                     zoom={zoom}
+                    isZoom={false}
                 />
 
             </div>

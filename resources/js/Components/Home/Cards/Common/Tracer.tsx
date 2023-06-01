@@ -7,15 +7,15 @@ interface Props{
 }
 const Tracer = (props:Props) => {
     return (
-        <div className='flex gap-[0.625rem]'>
+        <div className='flex gap-[0.625rem] w-full'>
             {
                 props.crumbs.map((crumb,index) => (
-                    <div className='flex gap-[0.625rem]'>
+                    <div className='flex gap-[0.625rem] items-center'>
                         <Link href={crumb.link} className='text-grade'>
                             {crumb.title}
                         </Link>
                         {
-                            (index < props.crumbs.length) ? <img src={arrowRight} alt="" />:''
+                            (index < props.crumbs.length-1) ? <img src={arrowRight} alt="" className='h-[0.548125rem] w-[0.27375rem]' />:''
                         }
                     </div>
                 ))

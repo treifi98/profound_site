@@ -43,6 +43,9 @@ Route::get('/test',function(){
 Route::get('/areas',function(){
     return Inertia::render('Areas');
 });
+Route::get('/area/{slug}',function(string $slug){
+    return Inertia::render('Area');
+});
 Route::get('/playground',function(){
     return Inertia::render('Playground');
 });

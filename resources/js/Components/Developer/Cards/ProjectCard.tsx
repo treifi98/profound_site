@@ -16,7 +16,7 @@ import Brochure from '@/Components/Home/Cards/Common/Brochure'
 import NewTag from '@/Components/Home/Cards/Common/NewTag'
 const ProjectCard = () => {
   return (
-    <div className=' w-[45.5625rem] h-[36.598125rem] rounded-[0.665rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.265990625rem_-0.265990625rem_0.53198125rem_0.132995rem_#FFFFFF,0.265990625rem_0.265990625rem_0.53198125rem_#BABFBF] relative z-[1]'>
+    <div className=' w-[45.5625rem] h-[36.598125rem] rounded-[0.665rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.265990625rem_-0.265990625rem_0.53198125rem_0.132995rem_#FFFFFF,0.265990625rem_0.265990625rem_0.53198125rem_#BABFBF] relative z-[1] mr-[1.875rem] ml-[1rem] mt-[1.875rem]'>
         <div className='absolute left-0 top-0 w-full h-full' >
             <img src={Lshape} alt=""  className=' w-full h-full object-contain'/>
         </div>

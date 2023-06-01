@@ -7,7 +7,7 @@ interface Props{
 }
 const MainLayout1 = (props:Props) => {
   return (
-    <div className='font-[nova]'>
+    <div className='font-[nova] overflow-hidden'>
 
         <Header1/>
             {props.children}

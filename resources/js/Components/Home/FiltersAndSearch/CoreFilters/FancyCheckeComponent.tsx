@@ -6,12 +6,16 @@ import { RootState  } from '@/store'
 import{check, unCheck, reset, checkSingle, toggle} from './CheckComponentSlice'
 
 interface Props{
-    func?:Function
+    funcMap?:Function
     id:string,
     on:string,
-    off:string
+    off:string,
+    mapStatus?:boolean
 }
 const FancyCheckeComponent = (props:Props) => {
+    useEffect(()=>{
+        
+    },[])
     // console.log(props.id)
     const dispatch = useDispatch()
         function replaceLastInstance(str, search, replacement) {
@@ -39,6 +43,7 @@ const FancyCheckeComponent = (props:Props) => {
     const handleClick = () => {
         // setClicked((prev) => !prev)
         dispatch(toggle({id:props.id,vals:{on:'1',off:'0'}}))
+        props.funcMap(!props.mapStatus)
     }
     useEffect(()=>{
         // console.log(checked)

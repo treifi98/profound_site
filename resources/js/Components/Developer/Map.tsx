@@ -6,9 +6,10 @@ mapboxgl.accessToken = 'pk.eyJ1IjoidHJldmk5OCIsImEiOiJjbDNwcWhyOWgwMnppM2twN3Jic
 // import './'
 interface Props{
     points:{point:number[],bg:string}[],
-    changes:number
-    rchanges:number
-    zoom:number
+    changes?:number
+    rchanges?:number
+    zoom?:number
+    isZoom?:boolean
 }
 const Map = (props:Props) => {
     // const [changes,setChanges] = useState(props.changes)
@@ -34,7 +35,7 @@ const Map = (props:Props) => {
           minZoom:10,
           logoPosition:'top-left',
           attributionControl: false,
-          scrollZoom:false,
+          scrollZoom:props.isZoom,
 
         }))
         // SetMapRef(map)

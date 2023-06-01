@@ -388,3 +388,6 @@ svg
 .xxvvxx{
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
 }
+.offplanSwiperDev .swiper-slide{
+    /* margin-right: 1.875rem; */
+}
