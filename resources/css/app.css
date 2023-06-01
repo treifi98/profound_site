@@ -391,3 +391,13 @@ svg
 .offplanSwiperDev .swiper-slide{
     /* margin-right: 1.875rem; */
 }
+/* .is-sticky {
+    position: fixed;
+    top: 6.1975rem;
+    right: 0rem;
+    z-index: 999;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  } */
+.bbvvb{
+    transform: translateZ(0);
+}

@@ -30,15 +30,19 @@ import beatchFront from '../../../assets/Newcircle.png'
 import paymentIcon from '../../../assets/paymentIcon.svg'
 import compleationIcon from '../../../assets/compleationIcon.svg'
 import construction from '../../../assets/construction.svg'
+import BuyCard from './Cards/BuyCard'
 // import '../../../assets/x.css'
 
 
 // import { Pagination } from 'swiper'
 interface Props{
-    barTitle?:string
+    barTitle?:string,
+    cardMT?:string,
+    cardMB?:string,
+
 }
 
-const OffPlanSwiper = (props:Props) => {
+const BuySwiper = (props:Props) => {
     const swiperRef = useRef(null);
     const [swiper, setSwiper] = useState<any>();
     const [swiperx, setSwiperx] = useState<any>(0);
@@ -87,26 +91,26 @@ const OffPlanSwiper = (props:Props) => {
                 // onChange={(swiper) => alert('ddddd')}
                 // onSlideChangeTransitionEnd={(swiper) => alert(swiper.activeIndex)}
                 loop={true}
-                className="offplanSwiperDev"
+                className="BuySwiperDev"
             >
                 <SwiperSlide>
-                    <ProjectCard/>
+                    <BuyCard cardMT={props.cardMT} cardMB={props.cardMB}/>
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectCard/>
+                    <BuyCard cardMT={props.cardMT} cardMB={props.cardMB}/>
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectCard/>
+                    <BuyCard cardMT={props.cardMT} cardMB={props.cardMB}/>
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectCard/>
+                    <BuyCard cardMT={props.cardMT} cardMB={props.cardMB}/>
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ProjectCard/>
+                    <BuyCard cardMT={props.cardMT} cardMB={props.cardMB}/>
 
                 </SwiperSlide>
 
@@ -118,4 +122,4 @@ const OffPlanSwiper = (props:Props) => {
   )
 }
 
-export default OffPlanSwiper
+export default BuySwiper

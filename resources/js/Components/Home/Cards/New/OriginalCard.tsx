@@ -291,6 +291,8 @@ interface Props{
         mainMT?:string
     },
 
+    // cardMT?:string
+
 
 }
 

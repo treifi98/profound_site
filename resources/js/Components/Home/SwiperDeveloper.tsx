@@ -14,7 +14,12 @@ import selectGroup from '../../../assets/selectGroup.png'
 
 import { Pagination } from 'swiper'
 
-const SwiperDeveloper = () => {
+interface Props{
+    cardMT?:string,
+    cardMB?:string
+}
+
+const SwiperDeveloper = (props:Props) => {
     const [swiper, setSwiper] = useState<any>();
 
 
@@ -40,42 +45,42 @@ const SwiperDeveloper = () => {
             className="devmySwiper"
         >
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem] '>
+                <div className=' ' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                <div className='' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                <div className='' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                <div className='' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                <div className='' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                <div className='' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={DubaiProperties} name="Dubai Properties" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                <div className='' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={emar_logo_dev} name="Emaar" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className='mt-[6.25rem] mb-[6.25rem]'>
+                <div className='' style={{ marginTop:props.cardMT?props.cardMB:'6.25rem',marginBottom:props.cardMB?props.cardMB:'6.25rem' }}>
                     <DeveloperCard img={selectGroup} name="Select group" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }}/>
                 </div>
             </SwiperSlide>

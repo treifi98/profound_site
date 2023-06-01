@@ -29,6 +29,7 @@
         "react-id-swiper": "^4.0.0",
         "react-range": "^1.8.14",
         "react-redux": "^8.0.5",
+        "sticksy": "^0.2.0",
         "swiper": "^9.2.0",
         "typescript": "^5.0.3"
     }

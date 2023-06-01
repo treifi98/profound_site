@@ -14,9 +14,13 @@ import priceTag from '../../../../assets/price_tag_icon.svg'
 
 import BoxMaster from '@/Components/Home/Cards/Common/Boxes/New/BoxMaster'
 
-const BuyCard = () => {
+interface Props{
+    cardMT?:string,
+    cardMB?:string
+}
+const BuyCard = (props:Props) => {
   return (
-    <div className='w-[44.625rem] h-[41.5625rem] border-[#CAD4D5] border-[0.0625rem] rounded-[0.89375rem] shadow-[-0.356805625rem_-0.356805625rem_0.7136125rem_0.178403125rem_#FFFFFF,0.356805625rem_0.356805625rem_0.7136125rem_#BABFBF] flex justify-center items-center'>
+    <div className='w-[44.625rem] h-[41.5625rem] border-[#CAD4D5] border-[0.0625rem] rounded-[0.89375rem] shadow-[-0.356805625rem_-0.356805625rem_0.7136125rem_0.178403125rem_#FFFFFF,0.356805625rem_0.356805625rem_0.7136125rem_#BABFBF] flex justify-center items-center ml-[1.25rem]' style={{ marginTop:props.cardMT?props.cardMT:'0rem',marginBottom:props.cardMB?props.cardMB:'0rem' }}>
         <div className='w-[42.5625rem] h-[39.6875rem]'>
             <div className='w-full h-[22.125rem] '>
                 <NewCardImage src={dubai} rounded='0.639375'/>

@@ -22,7 +22,7 @@ const FiltersLineareas = (props:Props) => {
                     <Select options={[{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'}]} lable='Price' id='wrg1' func={() => console.log('d')} width='11.25' txetSize='1.125'/>
                     <Select options={[{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'}]} lable='Type' id='wg1' func={() => console.log('d')} width='11.25' txetSize='1.125'/>
                     <Select options={[{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'}]} lable='Bedrooms' id='1gr' func={() => console.log('d')} width='11.25' txetSize='1.125'/>
-                    <div>
+                    <div className=''>
                         <SearchAction/>
                     </div>
                     <div className='h-[5.625rem]'>

@@ -16,7 +16,13 @@ const Pagination = (props:Props) => {
     const [elemnt,setElmnt] = useState(<div></div>)
     useEffect(()=>{
         const urlParams = new URLSearchParams(window.location.search);
-        setPage(parseInt(urlParams.get('page')))
+        if(urlParams.get('page')){
+
+            setPage(parseInt(urlParams.get('page')))
+        }else{
+
+            setPage(1)
+        }
         // alert(paramValue)
 
 
@@ -31,7 +37,7 @@ const Pagination = (props:Props) => {
   return (
     <div className='w-max h-[2.25rem] mx-auto flex gap-[0.625rem]'>
         {
-            (page == 1) ?(
+            (page == 1 ) ?(
 
                 <div className='w-[7.9375rem] h-full flex items-center rounded-[6.25rem_0.1875rem_0.1875rem_6.25rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5] justify-center gap-[0.5rem] cursor-not-allowed  opacity-[0.7]'>
                     <img src={arow} alt="" className='rotate-[180deg] h-[0.673125rem] w-[0.33625rem] object-cover '/>

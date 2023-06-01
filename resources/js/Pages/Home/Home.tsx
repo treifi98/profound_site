@@ -72,7 +72,7 @@ const Home = () => {
         </div>
         <div className='w-full mt-[0rem]'>
 
-            <SwiperType1B/>
+            <SwiperType1B barTitle='Buying Properties in Dubai'/>
         </div>
 
 

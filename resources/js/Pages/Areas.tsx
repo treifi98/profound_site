@@ -25,30 +25,70 @@ const Areas = () => {
     const handleMap = () => {
 
     }
+
+
+
+
+
+
+
+
     useEffect(()=>{
-        setMapOn(false)
+        // setMapOn(false)
     },[])
 
     useEffect(()=>{
         if(mapOn){
-            container.current.style.width = '43.4375rem'
+            container.current.style.width = '49.0625rem'
             container.current.style.margin = '0rem'
-            map.current.style.width = '43.4375rem'
+            // container.current.style.marginRight = '2rem'
+            // document.querySelector('.area-card')
+            // container.current.style.marginLeft = '2.8125rem'
+            map.current.style.width = '46.4375rem'
+            // map.current.style.marginLeft = '0.125rem'
+            container.current.style.height = '100vh'
+            container.current.style.overflowY = 'scroll'
+            document.querySelectorAll('.area-card').forEach((elmnt)=>{
+                elmnt.style.marginLeft='2.8125rem'
+                elmnt.style.marginRight='2.8125rem'
+                elmnt.style.marginTop='1rem'
+                elmnt.style.marginBottim='1rem'
+            })
+            document.querySelector('#ayo').scrollIntoView()
+
+
             // holder.current.style.width = '40.5rem'
-            container.current.style.height = 'max-content'
             // map.current.style.marginLeft = '3.125rem'
             // document.querySelector('#map-container').style.width = '100%'
             // setTimeout(() => {
-            //     document.querySelector('#map-container').style.transform = 'translateZ(0)'
-            //     map.current.style.transform = 'translateZ(0)'
-            // }, 1);
+                //     document.querySelector('#map-container').style.transform = 'translateZ(0)'
+                //     map.current.style.transform = 'translateZ(0)'
+                // }, 1);
 
-        }
-        else{
-            container.current.style.width = '90rem'
-            container.current.style.heifht = '222.5rem'
+            }
+            else{
+                // container.current.style.width = '49.0625rem'
+            container.current.style.overflowY = 'hidden'
+            container.current.style.width = '100%'
+            container.current.style.height = '223.1rem'
             map.current.style.width = '0rem'
-            holder.current.style.width = '0rem'
+            map.current.style.marginLeft = '0rem'
+            document.querySelectorAll('.area-card').forEach((elmnt,key)=>{
+                if(key%2==0){
+                    // alert(key)
+                    elmnt.style.marginRight='3.025rem'
+                    elmnt.style.marginLeft='2.2125rem'
+                }
+                else{
+
+                    elmnt.style.marginLeft='0rem'
+                    elmnt.style.marginright='0rem'
+                }
+                elmnt.style.marginTop='2rem'
+                elmnt.style.marginBottim='1rem'
+            })
+
+
             // map.current.style.marginLeft = '0rem'
 
         }
@@ -68,37 +108,35 @@ const Areas = () => {
             <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas in Dubai',link:'/areas'}]}/>
         </div>
 
-        <div className='w-[90rem] relative mx-auto h-full  flex justify-between items-start mt-[1.0625rem] '>
+        <div className='w-full flex mt-[1.125rem] relative' >
+            <div className='w-full h-[222.5rem]  flex flex-wrap   gap-y-[5.5625rem]  transition-all  ' ref={container}>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                    <AreaCard/>
+                {/* <AreaCard/> */}
+                </div>
+                <div className='w-0 h-0 absolute top-[1rem] right-0' ref={map} id='ayo'>
 
-            <div className='w-[90rem]  flex flex-wrap gap-x-[3.125rem]  gap-y-[5rem]  transition-all' ref={container}>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-                <AreaCard/>
-            </div>
-            <div className='relative w-[0rem] h-[1rem] z-[1] transition-all' ref={holder}>
-
-            </div>
-            <div className='transition-all top-[6.1975rem] sticky right-[-20rem] h-[calc(100vh-6.1975rem)] overflow-hidden rounded-lg  z-[2]' ref={map}>
-
-                <div className='w-[43.4375rem] transition-all h-[calc(100vh-6.1975rem)] ' >
-                    <Map
-                        points={points}
-                        // changes={changes}
-                        // rchanges={rchanges}
-                        // zoom={zoom}
-                        isZoom={true}
-                    />
+                    <div className='w-[46.4375rem] transition-all h-[100vh] rounded-[0.9375rem] overflow-hidden' >
+                        <Map
+                            points={points}
+                            // changes={changes}
+                            // rchanges={rchanges}
+                            // zoom={zoom}
+                            isZoom={true}
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
+
+
         <div className='my-[6.25rem]'>
             <Pagination itemsPerPage={20} prefix='/areas' totalCount={100}/>
         </div>

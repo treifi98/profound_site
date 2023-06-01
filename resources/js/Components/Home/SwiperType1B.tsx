@@ -41,7 +41,12 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 // import "../../../assets/style.css";
 
-const SwiperType1B = () => {
+interface Props{
+    cardMT?:string,
+    cardMB?:string,
+    barTitle?:string
+}
+const SwiperType1B = (props:Props) => {
     const swiperRef = useRef(null);
     const [swiper, setSwiper] = useState<any>();
     const [swiperx, setSwiperx] = useState<any>(0);
@@ -66,7 +71,7 @@ const SwiperType1B = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Buying Properties in Dubai'} icon={property}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={props.barTitle} icon={property}/>
 
         <Swiper
             //  slidesPerView={1}
@@ -90,7 +95,7 @@ const SwiperType1B = () => {
                     return (
                         <SwiperSlide className='transition-all ' key={a}>
 
-<OriginalCard img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+<OriginalCard mainMT={props.cardMT} mainMB={props.cardMB}  img={beatchFront} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
             args:{
                 img:priceIcon,
                 text:'Price starting From AED',
