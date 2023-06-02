@@ -46,16 +46,35 @@ Route::get('/areas',function(){
 Route::get('/developers',function(){
     return Inertia::render('Developers');
 });
+Route::get('/buy',function(){
+    return Inertia::render('Buy');
+});
+Route::get('/rent',function(){
+    return Inertia::render('Rent');
+});
+Route::get('/projects',function(){
+    return Inertia::render('Project');
+});
+
 Route::get('/area/{slug}',function(string $slug){
     return Inertia::render('Area');
 });
 Route::get('/developer/{slug}',function(string $slug){
     return Inertia::render('Developer');
 });
+Route::get('/buy/{slug}',function(string $slug){
+    return Inertia::render('BuyProperty');
+});
+Route::get('/rent/{slug}',function(string $slug){
+    return Inertia::render('RentProperty');
+});
+Route::get('/project/{slug}',function(string $slug){
+    return Inertia::render('ProjectProperty');
+});
 Route::get('/playground',function(){
     return Inertia::render('Playground');
 });
 Route::get('/',[HomeController::class,'index']);
-Route::get('buy',[BuyController::class,'index']);
+// Route::get('buy',[BuyController::class,'index']);
 
 require __DIR__.'/auth.php';

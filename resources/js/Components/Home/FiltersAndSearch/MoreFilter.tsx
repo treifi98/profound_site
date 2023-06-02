@@ -105,7 +105,7 @@ const MoreFilter = (props:Props) => {
     // }
 
   return (
-    <div className='select-none w-[15.75rem] h-[2.25rem] rounded-[3.13rem] relative' >
+    <div className='select-none w-[13.75rem] h-[2.25rem] rounded-[3.13rem] relative' >
         <div className=' flex border-[0.06rem] border-[#DCE3E3] w-[13.75rem] rounded-[3.13rem] group cursor-pointer' onClick={handleClick} style={{ width:props.width? props.width+'rem':'13.75rem' }}>
 
             <div className='w-[10.75rem] h-[2.25rem] rounded-[3.13rem_0rem_0rem_3.13rem] bg-[#E6EDED]  flex justify-center items-center shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' >

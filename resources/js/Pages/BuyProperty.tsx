@@ -1,15 +1,19 @@
 import AboutDeveloper from '@/Components/Developer/AboutDeveloper'
+import AboutProperty from '@/Components/Developer/AboutProperty'
+import Amenities from '@/Components/Developer/Amenities'
 import Areas from '@/Components/Developer/Areas'
 import Attraction from '@/Components/Developer/Attraction'
 import BuySwiper from '@/Components/Developer/BuySwiper'
 import AreaCard from '@/Components/Developer/Cards/AreaCard'
 import Crooked from '@/Components/Developer/Crooked'
 import DoublrBoxesDoubleText from '@/Components/Developer/DoublrBoxesDoubleText'
+import ImgGallery from '@/Components/Developer/ImgGallery'
 import InquiryFormGreen from '@/Components/Developer/InquiryFormGreen'
 import InquiryFormWiht from '@/Components/Developer/InquiryFormWhit'
 import LogoTextRL from '@/Components/Developer/LogoTextRL'
 import Map from '@/Components/Developer/Map'
 import MapContainer from '@/Components/Developer/MapContainer'
+import MortgageCalculator from '@/Components/Developer/MortgageCalculator'
 import NoCrooked from '@/Components/Developer/NoCrooked'
 import OffPlanSwiper from '@/Components/Developer/OffPlanSwiper'
 import Pagination from '@/Components/Developer/Pagination'
@@ -17,6 +21,8 @@ import PartLogoTextLR from '@/Components/Developer/PartLogoTextLR'
 import PartLogoTextOGLR from '@/Components/Developer/PartLogoTextOGLR'
 import PartLogoTextOGRL from '@/Components/Developer/PartLogoTextOGRL'
 import PartLogoTextRL from '@/Components/Developer/PartLogoTextRL'
+import ProjectInfo from '@/Components/Developer/ProjectInfo'
+import SecondaryInfo from '@/Components/Developer/SecondaryInfo'
 import SquareTextLR from '@/Components/Developer/SquareTextLR'
 import SquareTextRL from '@/Components/Developer/SquareTextRL'
 import HeroSection1 from '@/Components/HeroSection1'
@@ -27,7 +33,7 @@ import SwiperType1B from '@/Components/Home/SwiperType1B'
 import MainLayout1 from '@/Layouts/MainLayout1'
 import React, { useEffect, useRef, useState } from 'react'
 
-const Developer = () => {
+const BuyProperty = () => {
 
     const [points,setPoints] = useState([
         {
@@ -48,40 +54,20 @@ const Developer = () => {
         {/* <HeroSection1/> */}
         {/* <div></div> */}
       <div className=' mt-[7.4375rem] w-[91.25rem] flex justify-start mx-auto'>
-        <Tracer crumbs={[{title:'Home',link:'/'},{title:'Developers',link:'/developers'},{title:'Emaar',link:'/developer/emar'}]}/>
+        <Tracer crumbs={[{title:'Home',link:'/'},{title:'Buy',link:'/buy'},{title:'Creek Rise Tower',link:'/buy/test'}]}/>
       </div>
       <div className='mx-auto mt-[0.625rem] w-[91.25rem]'>
-        <Crooked/>
+        <ImgGallery/>
       </div>
-      <div className='w-full mt-[5rem]'>
-        <OffPlanSwiper barTitle=' Projects in Dubai Marina'/>
+      <div className='w-max  mx-auto mt-[5rem]'>
+        <SecondaryInfo/>
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <Areas/>
-
-      </div>
-      <div className='w-full mt-[5rem]'>
-        <AboutDeveloper/>
+      <div className='w-max mx-auto mt-[5rem] mb-[5rem]'>
+        <DoublrBoxesDoubleText/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <LogoTextRL/>
-
-      </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextOGRL/>
-
-      </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextLR/>
-
-      </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextRL/>
-
-      </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextOGLR/>
+        <Amenities/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
@@ -89,17 +75,29 @@ const Developer = () => {
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <SquareTextLR/>
+        <MortgageCalculator/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <SquareTextRL/>
+        <Attraction/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem] mb-[5rem]'>
-        <DoublrBoxesDoubleText/>
+      <div className='w-max mx-auto mt-[5rem]'>
+        <MapContainer/>
 
       </div>
+      <div className='w-max mx-auto mt-[5rem]'>
+        <AboutProperty/>
+
+      </div>
+      <div className='w-max mx-auto mt-[5rem]'>
+        <InquiryFormWiht/>
+
+      </div>
+      <div className='w-full mt-[5rem] mb-[4rem]'>
+        <BuySwiper barTitle=' Projects in Dubai Marina' cardMB='1rem' cardMT='1.875rem'/>
+      </div>
+
 
 
 
@@ -111,4 +109,4 @@ const Developer = () => {
   )
 }
 
-export default Developer
+export default BuyProperty
