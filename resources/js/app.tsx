@@ -8,6 +8,8 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import React from 'react';
 import { store } from './store'
 import { Provider } from 'react-redux'
+import { InertiaApp } from '@inertiajs/inertia-react'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 

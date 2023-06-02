@@ -43,8 +43,14 @@ Route::get('/test',function(){
 Route::get('/areas',function(){
     return Inertia::render('Areas');
 });
+Route::get('/developers',function(){
+    return Inertia::render('Developers');
+});
 Route::get('/area/{slug}',function(string $slug){
     return Inertia::render('Area');
+});
+Route::get('/developer/{slug}',function(string $slug){
+    return Inertia::render('Developer');
 });
 Route::get('/playground',function(){
     return Inertia::render('Playground');

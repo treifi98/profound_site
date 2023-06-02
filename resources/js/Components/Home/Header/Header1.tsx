@@ -10,7 +10,7 @@ import MenueHover from '../MenueHover'
 
 const Header1 = () => {
     return (
-        <div className={`w-full h-[6.25rem] fixed z-[9999999999999] font-[nova] bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom `}>
+        <div className={`w-full h-[6.25rem] fixed z-[999999999999999999] font-[nova] bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom `}>
         {/* <div className={` w-full h-full `}> */}
             <div className='w-[calc(100%-5rem)] flex justify-between items-center h-[calc(100%-0.625rem)] mr-[5rem]'>
                 <Link href='/' className='max-h-[100%] self-center'>
