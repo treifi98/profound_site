@@ -284,6 +284,9 @@ interface Props{
         textSize?:string,
         separatorWidth?:string
     },
+    cardMT?:string,
+    cardMB?:string,
+    cardML?:string
 
 
 }
@@ -332,7 +335,7 @@ const OffplanCard = (props:Props) => {
     }
 
     return (
-        <div className='flex justify-evenly items-center rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] overflow-hidden my-[1.25rem] ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ width:props.mainWidth?props.mainWidth:'62.25rem',height:props.mainHeight?props.mainHeight:'37.0625rem' }}>
+        <div className='flex justify-evenly items-center rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] overflow-hidden ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ width:props.mainWidth?props.mainWidth:'62.25rem',height:props.mainHeight?props.mainHeight:'37.0625rem',marginTop:props.cardMT?props.cardMT:'1.25rem',marginBottom:props.cardMB?props.cardMB:'0rem',marginLeft:props.cardML?props.cardML:'0rem' }}>
 
                 <div className='flex flex-col' style={{ width:props.imageSectionWidth?props.imageSectionWidth:'43.5625rem',height:props.imageSectionHeight?props.imageSectionHeight:'35.125rem' }}>
                     <div className='relative rounded-[0.9375rem]  origin-bottom transition-all' ref={imageref} style={{ width:props.imgWidth?props.imgWidth: '43.5625rem',height:props.imgHeight?props.imgHeight:'27.7725rem' }}>

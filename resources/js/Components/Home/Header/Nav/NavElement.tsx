@@ -46,7 +46,7 @@ const NavElement = (props:props) => {
     return (
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className='relative transition-all select-none w-[6.37rem] h-[2.187rem] bg-[#002D31] border-[0.0625rem] border-[#1F5B62] rounded-[0.312rem] shadow-[-0.19508rem_-0.19508rem_0.324484375rem_-0.10816125rem_#007580,0.19508rem_0.19508rem_0.25511rem_#011618] text-[#fff] flex justify-center items-center cursor-pointer' ref={ref}>
 
-            <Link href={props.link} className='relative'>
+            <Link href={props.link} className='relative h-full w-full flex justify-center items-center'>
                 {props.text}
             </Link>
             {

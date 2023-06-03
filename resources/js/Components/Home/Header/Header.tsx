@@ -17,10 +17,10 @@ const Header = () => {
 
                     <img src={logo_img} alt="" className='w-[13.31rem] object-cover object-center'/>
                 </Link>
-                    <div className='mx-[1.25rem] flex justify-around items-center w-[calc(100%-15.81rem)]'>
-                    <Search/>
-                    <Nav/>
-                </div>
+                    <div className='mx-[1.25rem] flex justify-center gap-[1.340625rem] items-center w-[calc(100%-15.81rem)]'>
+                        <Search/>
+                        <Nav/>
+                    </div>
             </div>
         <MenueHover/>
         {/* </div> */}
