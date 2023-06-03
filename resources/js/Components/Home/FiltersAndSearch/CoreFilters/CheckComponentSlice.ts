@@ -25,12 +25,21 @@ const CheckComponentSlice = createSlice({
     initialState,
     reducers: {
         check:(state:any,action:PayloadAction<{id:string,selected:string}>) => {
-            if(!state[action.payload.id]){
-                state[action.payload.id] = [];
-
+            let id = isolateParentWrapperStyletate(action.payload.id)
+            if(!state[id[0]]){
+                state[id[0]] = {};
             }
-            state[action.payload.id].push(action.payload.selected)
-            console.log(action.payload.id,state[action.payload.id])
+            if(!state[id[0]][id[1]]){
+                state[id[0]][id[1]] = {status:false,value:''};
+            }
+            if(state[id[0]][id[1]].status){
+                state[id[0]][id[1]].value = 'off'
+            }else{
+                state[id[0]][id[1]].value = 'off'
+            }
+            state[id[0]][id[1]].status = false
+            console.log(id[0],id[1],state[id[0]][id[1]].status)
+
         },
         unCheck:(state:any,action:PayloadAction<{id:string,selected:string}>) => {
             state[action.payload.id] = state[action.payload.id].filter((sts) => sts != action.payload.selected)

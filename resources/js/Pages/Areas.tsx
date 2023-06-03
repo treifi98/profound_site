@@ -79,7 +79,7 @@ const Areas = () => {
         setMapOn(false)
         try{
 
-            dispatch(unCheck({id:"showMap",selected:''}))
+            dispatch(check({id:"showMap",selected:''}))
         }catch(e){
 
         }

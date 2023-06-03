@@ -17,7 +17,11 @@ import FiltersLineBuy from '@/Components/Home/FiltersAndSearch/CoreFilters/Filte
 import SliderButton from '@/Components/Developer/SliderButton'
 import FancyCheckeComponent from '@/Components/Home/FiltersAndSearch/CoreFilters/FancyCheckeComponent'
 import BuyCard from '@/Components/Developer/Cards/BuyCard'
+import { useSelector, useDispatch } from 'react-redux'
+import { RootState  } from '@/store'
+import{check, unCheck, reset, checkSingle, toggle} from '../Components/Home/FiltersAndSearch/CoreFilters/CheckComponentSlice'
 const Rent = () => {
+    const dispatch = useDispatch()
 
     const [points,setPoints] = useState([
         {
@@ -83,6 +87,12 @@ const Rent = () => {
 
     useEffect(()=>{
         setMapOn(false)
+        try{
+
+            dispatch(check({id:"showMapR",selected:''}))
+        }catch(e){
+
+        }
     },[])
 
   return (
@@ -99,7 +109,7 @@ const Rent = () => {
                 <SliderButton options={['AED','EUR','USD']} title='Price by'/>
                 <SliderButton options={['AED','EUR','USD']} title='Price by'/>
                 <SliderButton options={['AED','EUR','USD']} title='Price by'/>
-                <FancyCheckeComponent id='d' off='d' on='o' funcMap={setMapOn} mapStatus={mapOn}/>
+                <FancyCheckeComponent id='showMapR' off='showMapR' on='o' funcMap={setMapOn} mapStatus={mapOn}/>
             </div>
         </div>
 

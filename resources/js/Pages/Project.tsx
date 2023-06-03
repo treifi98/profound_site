@@ -19,9 +19,13 @@ import FancyCheckeComponent from '@/Components/Home/FiltersAndSearch/CoreFilters
 import BuyCard from '@/Components/Developer/Cards/BuyCard'
 import OffplanCard from '@/Components/Home/Cards/New/OffplanCard'
 import ProjectCard from '@/Components/Developer/Cards/ProjectCard'
+import { useSelector, useDispatch } from 'react-redux'
+import { RootState  } from '@/store'
+import{check, unCheck, reset, checkSingle, toggle} from '../Components/Home/FiltersAndSearch/CoreFilters/CheckComponentSlice'
 
 
 const Project = () => {
+    const dispatch = useDispatch()
 
     const [points,setPoints] = useState([
         {
@@ -87,6 +91,12 @@ const Project = () => {
 
     useEffect(()=>{
         setMapOn(false)
+        // try{
+
+            dispatch(check({id:"showMApP",selected:''}))
+        // }catch(e){
+
+        // }
     },[])
 
 
@@ -99,12 +109,12 @@ const Project = () => {
             <FiltersLineBuy />
         </div>
         <div className='mt-[1.125rem] w-[93rem] mx-auto flex justify-between items-center'>
-            <Tracer crumbs={[{title:'Home',link:'/'},{title:'Rent',link:'/rent'}]}/>
+            <Tracer crumbs={[{title:'Home',link:'/'},{title:'Projects',link:'/projects'}]}/>
             <div className='w-max flex gap-[1.5625rem] items-center'>
                 <SliderButton options={['AED','EUR','USD']} title='Price by'/>
                 <SliderButton options={['AED','EUR','USD']} title='Price by'/>
                 <SliderButton options={['AED','EUR','USD']} title='Price by'/>
-                <FancyCheckeComponent id='d' off='d' on='o' funcMap={setMapOn} mapStatus={mapOn}/>
+                <FancyCheckeComponent id='showMApP' off='d' on='o' funcMap={setMapOn} mapStatus={mapOn}/>
             </div>
         </div>
 
