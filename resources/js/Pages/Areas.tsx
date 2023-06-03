@@ -121,7 +121,7 @@ const Areas = () => {
                     <AreaCard/>
                     <AreaCard/>
                 {/* <AreaCard/> */}
-                </div>
+            </div>
                 <div className='w-0 h-0 absolute top-[1rem] right-0' ref={map} id='ayo'>
 
                     <div className='w-[46.4375rem] transition-all h-[100vh] rounded-[0.9375rem] overflow-hidden' >
