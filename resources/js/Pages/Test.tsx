@@ -37,6 +37,7 @@ import statusIcon from '../../assets/statusIcon.svg'
 import "swiper/css";
 import "swiper/css/pagination";
 import '../../assets/x.css'
+import socity from '../../assets/socity.svg'
 import { Pagination } from 'swiper'
 import BarCommon from '@/Components/Home/Cards/Common/BarCommon'
 import NewsCard from '@/Components/Home/Cards/NewsCard'
@@ -1233,6 +1234,22 @@ const Test = () =>{
     </div>
     <div className='my-[2rem] mx-auto w-max'>
         <BuyCard/>
+    </div>
+    <div className='my-[2rem] mx-auto w-max'>
+        <BoxMaster
+        BoxType='developer'
+        boxArgs={{
+            img:socity,
+            lowerText:'Society House'
+        }}
+        flipType='same-developer'
+        flipArgs={
+            {
+                img:socity,
+                lowerText:'Society House'
+            }
+        }
+        />
     </div>
 
     {/* <div className='my-[2rem] mx-auto w-max'>

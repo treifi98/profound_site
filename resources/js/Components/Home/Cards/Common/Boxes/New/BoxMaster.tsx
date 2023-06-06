@@ -5,6 +5,8 @@ import ZibraFlip from './Flips/ZibraFlip'
 import PaymentPlanFlip from './Flips/PaymentPlanFlip'
 import SimpleFlip from './Flips/SimpleFlip'
 import SplitFlip from './Flips/SplitFlip'
+import DeveloperBox from './DeveloperBox'
+import SameDeveloperFlip from './Flips/SameDeveloperFlip'
 interface Props{
     BoxType: string,
     flipType?: string,
@@ -28,6 +30,9 @@ const BoxMaster = (props:Props) => {
         else if(props.flipType == 'split'){
             flip = <SplitFlip/>
         }
+        else if(props.flipType == 'same-developer'){
+            flip = <SameDeveloperFlip/>
+        }
 
         if(props.BoxType == 'standerd') {
             Box = <StanderdBox flipComp = { flip} Args={
@@ -38,6 +43,13 @@ const BoxMaster = (props:Props) => {
         }
         else if(props.BoxType == 'cornerd') {
             Box = <CornerdBox flipComp = { flip} Args={
+                {
+                    ...props.boxArgs
+                }
+            } flipArgs={props.flipArgs}/>
+        }
+        else if(props.BoxType == 'developer') {
+            Box = <DeveloperBox flipComp = { flip} Args={
                 {
                     ...props.boxArgs
                 }
