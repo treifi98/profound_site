@@ -76,7 +76,23 @@ const OffPlanSwiper = (props:Props) => {
                     810: {
                     slidesPerView: 2,
                     spaceBetween: 0,
-                    }
+                    },
+                    1600: {
+                        slidesPerView: 2.1,
+                        spaceBetween: 0,
+                        },
+                        1700: {
+                        slidesPerView: 2.15,
+                        spaceBetween: 0,
+                        },
+                        2000: {
+                        slidesPerView: 2.45,
+                        spaceBetween: 0,
+                        },
+                        3000: {
+                        slidesPerView: 3.55,
+                        spaceBetween: 0,
+                        },
                 }}
 
 

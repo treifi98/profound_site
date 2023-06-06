@@ -82,7 +82,7 @@ const PrecantageSmall = (props:Props) => {
             </svg>
             <div className='w-[4.075rem] h-[4.075rem] rounded-full z-[99999] absolute top-[0.674375rem] left-[0.674375rem] shadow-[-3.32786px_-3.32786px_5.32458px_#FFFFFF,3.32786px_3.32786px_4.659px_#B6C3C5] flex justify-center items-center' style={{ backgroundColor:props.bg?props.bg:'#E6EDED' }}>
             </div>
-            <div className='w-[2.75875rem] h-[2.75875rem] shadow-[inset_-2.65701px_-2.65701px_6.55994px_-0.364441px_#FFFFFF,inset_2.65701px_2.65701px_8.38214px_#B6C3C5] rounded-full absolute top-[1.3075rem] left-[1.3075rem] z-[999999999999] flex justify-center items-center bg-[#E6EDED]' >
+            <div className='w-[2.75875rem] h-[2.75875rem] shadow-[inset_-2.65701px_-2.65701px_6.55994px_-0.364441px_#FFFFFF,inset_2.65701px_2.65701px_8.38214px_#B6C3C5] rounded-full absolute top-[1.3075rem] left-[1.3075rem] z-[999999999] flex justify-center items-center bg-[#E6EDED]' >
                 <div className='text-grade text-[0.91125rem] font-[600]' id='value' ref={value}>
                     {props.prcantage}%
                 </div>

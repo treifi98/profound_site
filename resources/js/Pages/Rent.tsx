@@ -47,7 +47,7 @@ const Rent = () => {
         if(mapOn){
             container.current.style.width = "50vw"
             container.current.style.margin = "0rem"
-            container.current.style.marginTop = "3.3025rem"
+            container.current.style.marginTop = "0rem"
             // container.current.style.marginBottom = ""
             container.current.style.overflow = "scroll"
             container.current.style.height = "100vh"
@@ -69,7 +69,7 @@ const Rent = () => {
         else{
             container.current.style.width = "91.75rem"
             container.current.style.margin = "0 auto"
-            container.current.style.marginTop = "3.3025rem"
+            container.current.style.marginTop = "0rem"
             container.current.style.overflow = "visible"
             container.current.style.height = "max-content"
             container.current.querySelectorAll('.buy-card').forEach((card)=>{
@@ -103,7 +103,7 @@ const Rent = () => {
         <div className='my-[1.9rem] '>
             <FiltersLineBuy />
         </div>
-        <div className='mt-[1.125rem] w-[91.75rem] mx-auto flex justify-between items-center'>
+        <div className='mt-[1.0625rem] w-[91.75rem] mx-auto flex justify-between items-center'>
             <Tracer crumbs={[{title:'Home',link:'/'},{title:'Rent',link:'/rent'}]}/>
             <div className='w-max flex gap-[1.5625rem] items-center'>
                 <SliderButton options={['AED','EUR','USD']} title='Price by'/>
@@ -113,8 +113,8 @@ const Rent = () => {
             </div>
         </div>
 
-        <div className='w-full flex '>
-            <div className='w-[91.75rem] flex flex-wrap gap-x-[2.5rem] gap-y-[5rem] mx-auto mt-[3.3025rem] transition-all' ref={container}>
+        <div className='w-full flex mt-[1.0625rem]'>
+            <div className='w-[91.75rem] flex flex-wrap gap-x-[2.5rem] gap-y-[5rem] mx-auto mt-[0rem] transition-all' ref={container}>
                 {/* <div> */}
                     <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
                     <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
@@ -129,7 +129,7 @@ const Rent = () => {
                 {/* </div> */}
             </div>
 
-            <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[3.3025rem] mb-[0.3rem]' ref={map} id='ayo'>
+            <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[0rem] mb-[0.3rem]' ref={map} id='ayo'>
 
                 <div className='w-[50vw] h-[100vh] rounded-[0.9375rem] overflow-hidden transition-all' >
                     <Map

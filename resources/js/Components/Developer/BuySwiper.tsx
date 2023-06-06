@@ -80,8 +80,25 @@ const BuySwiper = (props:Props) => {
                     810: {
                     slidesPerView: 2,
                     spaceBetween: 0,
-                    }
+                    },
+                    1600: {
+                        slidesPerView: 2.08,
+                        spaceBetween: 0,
+                        },
+                        1700: {
+                        slidesPerView: 2.1,
+                        spaceBetween: 0,
+                        },
+                        2000: {
+                        slidesPerView: 2.4,
+                        spaceBetween: 0,
+                        },
+                        3000: {
+                        slidesPerView: 2.8,
+                        spaceBetween: 0,
+                        },
                 }}
+                
 
 
                 onSwiper={(swiper) => {

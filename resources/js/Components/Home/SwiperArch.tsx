@@ -88,7 +88,27 @@ const SwiperArch = () => {
                  810: {
                  slidesPerView: 1.5 ,
                 //  spaceBetween: 40,
-                 }
+                 },
+                 1600: {
+                    slidesPerView: 1.55,
+                    spaceBetween: 0,
+                    },
+                    1700: {
+                    slidesPerView: 1.6,
+                    spaceBetween: 0,
+                    },
+                    1800: {
+                    slidesPerView: 1.7,
+                    spaceBetween: 0,
+                    },
+                    2000: {
+                    slidesPerView: 1.9,
+                    spaceBetween: 0,
+                    },
+                    3000: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 0,
+                    },
              }}
 
              onSwiper={(swiper) => setSwiper(swiper)}

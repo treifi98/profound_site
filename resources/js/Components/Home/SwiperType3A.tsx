@@ -57,7 +57,23 @@ const SwiperType3A = () => {
                 810: {
                 slidesPerView: 1.50,
                 spaceBetween: 0,
-                }
+                },
+                1600: {
+                    slidesPerView: 1.55,
+                    spaceBetween: 0,
+                    },
+                    1700: {
+                    slidesPerView: 1.65,
+                    spaceBetween: 0,
+                    },
+                    2000: {
+                    slidesPerView: 1.9,
+                    spaceBetween: 0,
+                    },
+                    3000: {
+                    slidesPerView: 2.6,
+                    spaceBetween: 0,
+                    },
 
             }}
 

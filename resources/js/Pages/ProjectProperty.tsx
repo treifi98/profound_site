@@ -125,7 +125,7 @@ const ProjectProperty = () => {
       <div className='w-full mt-[5rem] mb-[4rem]'>
         <BuySwiper barTitle=' Projects in Dubai Marina' cardMB='1rem' cardMT='1.875rem'/>
       </div>
-      <div className='w-full mt-[5rem] mb-[4rem]'>
+      <div className='w-max mx-auto mt-[5rem] mb-[4rem]'>
         <Areas/>
       </div>
 

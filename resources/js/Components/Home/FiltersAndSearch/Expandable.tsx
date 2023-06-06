@@ -40,7 +40,7 @@ const Expandable = (props:Props) => {
             <img src={plusIcon} alt="" className='w-[0.66rem] h-[0.66rem] transition-all' ref={icon}/>
         </div>
         <div ref={ref} className='transition-height duration-500 bg-[#E6EDED]  w-full mt-[0rem] mb-[0.875rem] flex justify-center overflow-y-scroll border-[0rem]  pt-[0rem] overflow-x-hidden'>
-            <div className='w-[13.5625rem] bg-[#E6EDED] h-[0px] mb-[10px]'>
+            <div className='w-[13.5625rem] bg-[#E6EDED] h-[0px] mb-[0.625rem]'>
                 {
                     cloneElement(props.children,{id:`${props.id}-${props.children.props.id}`})
                 }

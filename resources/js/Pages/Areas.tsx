@@ -37,7 +37,7 @@ const Areas = () => {
         if(mapOn){
             container.current.style.width = "50vw"
             container.current.style.margin = "0rem"
-            container.current.style.marginTop = "3.3025rem"
+            container.current.style.marginTop = "0rem"
             // container.current.style.marginBottom = ""
             container.current.style.overflow = "scroll"
             container.current.style.height = "100vh"
@@ -59,13 +59,13 @@ const Areas = () => {
         else{
             container.current.style.width = "90rem"
             container.current.style.margin = "0 auto"
-            container.current.style.marginTop = "3.3025rem"
+            container.current.style.marginTop = "0rem"
             container.current.style.overflow = "visible"
             container.current.style.height = "max-content"
             container.current.querySelectorAll('.area-card').forEach((card)=>{
-                card.style.marginLeft = '0rem'
-                card.style.marginTop = '0rem'
-                card.style.marginBottom = '0rem'
+            card.style.marginLeft = '0rem'
+            card.style.marginTop = '0rem'
+            card.style.marginBottom = '0rem'
             })
 
         }
@@ -95,12 +95,12 @@ const Areas = () => {
         <div className='my-[1.9rem] w-full mx-auto'>
             <FiltersLineAreas funcMap={setMapOn} mapStatus={mapOn}/>
         </div>
-        <div className='mt-[1.125rem] ml-[2.5rem]'>
+        <div className='mt-[1.0625rem] w-[90rem] flex justify-start mx-auto'>
             <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas in Dubai',link:'/areas'}]}/>
         </div>
 
-        <div className='w-full flex '>
-            <div className='w-[90rem] flex flex-wrap gap-x-[3.125rem] gap-y-[5rem] mx-auto mt-[3.3025rem] transition-all' ref={container}>
+        <div className='w-full flex mt-[1.0625rem]'>
+            <div className='w-[90rem] flex flex-wrap gap-x-[3.125rem] gap-y-[5rem] mx-auto transition-all' ref={container}>
                 {/* <div> */}
                     <AreaCard />
                     <AreaCard />
@@ -115,7 +115,7 @@ const Areas = () => {
                 {/* </div> */}
             </div>
 
-            <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[3.3025rem] mb-[0.3rem]' ref={map} id='ayo'>
+            <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[0rem] mb-[0.3rem]' ref={map} id='ayo'>
 
                 <div className='w-[50vw] h-[100vh] rounded-[0.9075rem] overflow-hidden transition-all' >
                     <Map

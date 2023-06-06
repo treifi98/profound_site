@@ -37,6 +37,12 @@ const FiltersLineBuy = (props:Props) => {
                         <Expandable id='ex1' lable='First'>
                         <SelectByCheck options={[{on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'}]} id='ll'/>
                         </Expandable>
+                        <Expandable id='ex1' lable='First'>
+                        <SelectByCheck options={[{on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'}]} id='ll'/>
+                        </Expandable>
+                        <Expandable id='ex1' lable='First'>
+                        <SelectByCheck options={[{on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'}]} id='ll'/>
+                        </Expandable>
                         {/* <Expandable id='ex1' lable='First'>
                         <SelectByCheck options={[{on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'},{ on:'d',off:'d', label:'one',id:'1' },{on:'d',off:'d', label:'one',id:'1'}]} id='ll'/>
                         </Expandable> */}

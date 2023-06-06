@@ -15,8 +15,8 @@ interface Props{
 const FiltersLineDevelopers = (props:Props) => {
     return (
         <div className='w-full h-[5.625rem] flex items-center  shadow-[-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,0.3125rem_0.3125rem_0.3125rem_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] relative z-[99999] '>
-            <div className='w-[72.074375rem] mx-auto flex items-center gap-[1.375rem] '>
-                <input type='text' className='text-[#002D31] focus:border-transparent focus:ring-0 w-[21.1875rem] h-[2.25rem] bg-[#E6EDED] rounded-[5.70761875rem] border-[#DCE3E3] border-[0.0625rem]  shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] text-center' placeholder='Location, Developer or Project'/>
+            <div className='w-[72.074375rem] mx-auto flex items-center gap-[2.5rem] '>
+                <input type='text' className='text-[#002D31] focus:border-transparent focus:ring-0 w-[24rem] h-[2.25rem] bg-[#E6EDED] rounded-[5.70761875rem] border-[#DCE3E3] border-[0.0625rem]  shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] text-center' placeholder='Location, Developer or Project'/>
                 {/* <div className='w-[11.25rem]'> */}
 
                     <Select options={[{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'},{ lable:'one',value:'one' },{lable:'one',value:'one'}]} lable='Price' id='wrg1' func={() => console.log('d')} width='11.25' txetSize='1.125'/>

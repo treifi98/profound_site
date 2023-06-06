@@ -74,7 +74,23 @@ const SwiperTv = () => {
                     slidesPerView: 2,
                     // cssMode:true
                     // spaceBetween: 0,
-                    }
+                    },
+                    1600: {
+                        slidesPerView: 1.85,
+                        spaceBetween: 0,
+                        },
+                        1700: {
+                        slidesPerView: 1.95,
+                        spaceBetween: 0,
+                        },
+                        2000: {
+                        slidesPerView: 2.65,
+                        spaceBetween: 0,
+                        },
+                        3000: {
+                        slidesPerView: 2.95,
+                        spaceBetween: 0,
+                        },
                 }}
 
 

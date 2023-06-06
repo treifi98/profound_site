@@ -51,7 +51,7 @@ const Project = () => {
         if(mapOn){
             container.current.style.width = "50vw"
             container.current.style.margin = "0rem"
-            container.current.style.marginTop = "3.3025rem"
+            container.current.style.marginTop = "0rem"
             // container.current.style.marginBottom = ""
             container.current.style.overflow = "scroll"
             container.current.style.height = "100vh"
@@ -73,7 +73,7 @@ const Project = () => {
         else{
             container.current.style.width = "93rem"
             container.current.style.margin = "0 auto"
-            container.current.style.marginTop = "3.3025rem"
+            container.current.style.marginTop = "0rem"
             container.current.style.overflow = "visible"
             container.current.style.height = "max-content"
             container.current.querySelectorAll('.buy-card').forEach((card)=>{
@@ -118,8 +118,8 @@ const Project = () => {
             </div>
         </div>
 
-        <div className='w-full flex '>
-            <div className='w-[93rem] flex flex-wrap gap-x-[1.875rem] gap-y-[5rem] mx-auto mt-[3.3025rem] transition-all' ref={container}>
+        <div className='w-full flex mt-[1.0625rem]'>
+            <div className='w-[93rem] flex flex-wrap gap-x-[1.875rem] gap-y-[5rem] mx-auto mt-[0rem] transition-all' ref={container}>
                 {/* <div> */}
                     <ProjectCard cardMB='0rem' cardMT='0rem' cardML='0rem' cardMR='0rem'/>
                     <ProjectCard cardMB='0rem' cardMT='0rem' cardML='0rem' cardMR='0rem'/>
@@ -134,7 +134,7 @@ const Project = () => {
                 {/* </div> */}
             </div>
 
-            <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[3.3025rem] mb-[0.3rem]' ref={map} id='ayo'>
+            <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[0rem] mb-[0.3rem]' ref={map} id='ayo'>
 
                 <div className='w-[50vw] h-[100vh] rounded-[0.9375rem] overflow-hidden transition-all' >
                     <Map

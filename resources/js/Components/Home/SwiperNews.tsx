@@ -30,7 +30,23 @@ const SwiperNews = () => {
                     810: {
                     slidesPerView: 4,
                     spaceBetween: 0,
-                    }
+                    },
+                    1600: {
+                        slidesPerView: 4.3,
+                        spaceBetween: 0,
+                        },
+                        1700: {
+                        slidesPerView: 4.8,
+                        spaceBetween: 0,
+                        },
+                        2000: {
+                        slidesPerView: 5.8,
+                        spaceBetween: 0,
+                        },
+                        3000: {
+                        slidesPerView: 7,
+                        spaceBetween: 0,
+                        },
                 }}
 
                 onSwiper={(swiper) => setSwiper(swiper)}
