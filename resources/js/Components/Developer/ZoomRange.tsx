@@ -18,7 +18,7 @@ const ZoomRange: React.FC<{ rtl: boolean, func:Function }> = ({ rtl,func }) => {
         alignItems: 'center',
         height: '100%',
         flexDirection: 'column'
-      }}
+        }}
     >
       <Range
         direction={Direction.Up}
