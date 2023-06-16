@@ -398,7 +398,7 @@ const OffplanCard = (props:Props) => {
                     </div>
                     <div className='' style={{ width:props.imageSectionWidth?props.imageSectionWidth:'43.5625rem',height:props.bottomWrapperHeight?props.bottomWrapperHeight:'6.625rem' }}>
                         <div className='flex justify-between items-center' style={{ width:props.imageSectionWidth?props.imageSectionWidth:'43.5625rem',marginTop:props.titleMT?props.titleMT:'0.6025rem' }}>
-                            <div className='text-[#002d31] font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.5rem' }}>
+                            <div className='text-[#002d31] font-[400]' style={{ fontSize:props.titleSize?props.titleSize:'1.5rem' }}>
                                 Creek Rise tower 2 west side
                             </div>
                             <div className='flex items-center ' style={{ width:props.brochureAndSocialWrapperWidth?props.brochureAndSocialWrapperWidth:'15.515625rem' }}>
