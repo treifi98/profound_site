@@ -48,13 +48,13 @@ const ZibraFlip = (props:Props) => {
 
                             (index == 0 || index%2 == 0) ? (
                                 <div className='flex justify-center items-center' style={{ width: props.zibraWidth? props.zibraWidth: '100%', height: props.zibraHeight? props.zibraHeight: '1.0625rem' }}>
-                                    <div className=' text-[#19464B] font-[600]'style={{ fontSize: props.textSize? props.textSize: '0.78125rem' }}>
+                                    <div className=' text-[#002d31] font-[600]'style={{ fontSize: props.textSize? props.textSize: '0.78125rem' }}>
 
                                         {zibra}
                                     </div>
                                 </div>
                             ):(
-                                <div className='flex justify-center items-center bg-[#19464B]  text-[#fff] font-[600]' style={{ width: props.zibraWidth? props.zibraWidth: '100%', height: props.zibraHeight? props.zibraHeight: '1.0625rem', boxShadow:shadows[1] }}>
+                                <div className='flex justify-center items-center bg-[#002d31]  text-[#fff] font-[600]' style={{ width: props.zibraWidth? props.zibraWidth: '100%', height: props.zibraHeight? props.zibraHeight: '1.0625rem', boxShadow:shadows[1] }}>
                                     <div className=' flex justify-between items-center w-[90%]'>
                                         <div className=''style={{ fontSize: props.textSize? props.textSize: '0.78125rem' }}>
 
@@ -76,13 +76,13 @@ const ZibraFlip = (props:Props) => {
 
                         (index == 0 || index%2 == 0) ? (
                             <div className='flex justify-center items-center' style={{ width: props.zibraWidth? props.zibraWidth: '100%', height: props.zibraHeight? props.zibraHeight: '1.25rem' }}>
-                                <div className=' text-[#19464B] font-[600]'style={{ fontSize: props.textSize? props.textSize: '0.78125rem' }}>
+                                <div className=' text-[#002d31] font-[600]'style={{ fontSize: props.textSize? props.textSize: '0.78125rem' }}>
 
                                     {zibra}
                                 </div>
                             </div>
                         ):(
-                            <div className='flex justify-center items-center bg-[#19464B] text-[#fff] font-[600] ' style={{ width: props.zibraWidth? props.zibraWidth: '100%', height: props.zibraHeight? props.zibraHeight: '1.25rem', boxShadow:shadows[1] }}>
+                            <div className='flex justify-center items-center bg-[#002d31] text-[#fff] font-[600] ' style={{ width: props.zibraWidth? props.zibraWidth: '100%', height: props.zibraHeight? props.zibraHeight: '1.25rem', boxShadow:shadows[1] }}>
 
                                 <div className=''style={{ fontSize: props.textSize? props.textSize: '0.78125rem' }}>
 

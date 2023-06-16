@@ -398,7 +398,7 @@ const OffplanCard = (props:Props) => {
                     </div>
                     <div className='' style={{ width:props.imageSectionWidth?props.imageSectionWidth:'43.5625rem',height:props.bottomWrapperHeight?props.bottomWrapperHeight:'6.625rem' }}>
                         <div className='flex justify-between items-center' style={{ width:props.imageSectionWidth?props.imageSectionWidth:'43.5625rem',marginTop:props.titleMT?props.titleMT:'0.6025rem' }}>
-                            <div className='text-grade font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.5rem' }}>
+                            <div className='text-[#002d31] font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.5rem' }}>
                                 Creek Rise tower 2 west side
                             </div>
                             <div className='flex items-center ' style={{ width:props.brochureAndSocialWrapperWidth?props.brochureAndSocialWrapperWidth:'15.515625rem' }}>
@@ -424,7 +424,7 @@ const OffplanCard = (props:Props) => {
 
                         </div>
                         <div className='flex justify-between items-center' style={{ width:props.subTitileAndAreaWrapperWidth?props.subTitileAndAreaWrapperWidth:'32.9875rem',marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'0.05rem' }}>
-                            <div className='text-grade' style={{ fontSize:props.subTitleSize?props.subTitleSize:'1.375rem' }}>
+                            <div className='text-[#002d31]' style={{ fontSize:props.subTitleSize?props.subTitleSize:'1.375rem' }}>
                                 New project coming soon High ROI
                             </div>
                             <div>
@@ -432,7 +432,7 @@ const OffplanCard = (props:Props) => {
                             </div>
                             <div className='flex justify-between items-center' style={{ width:props.areaWidth?props.areaWidth:'10.3125rem' }}>
                                 <img src={mapIcon} alt="" style={{ width:props.areaIconWidth?props.areaIconWidth:'1.18625rem', height:props.areaIconHeight?props.areaIconHeight:'1.13rem' }}/>
-                                <div className='text-grade' style={{ fontSize:props.areatextSize?props.areatextSize:'1rem' }}>
+                                <div className='text-[#002d31]' style={{ fontSize:props.areatextSize?props.areatextSize:'1rem' }}>
                                     Dubai Creek Harbor
                                 </div>
                             </div>
