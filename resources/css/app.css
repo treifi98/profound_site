@@ -54,6 +54,7 @@ body{
     background-color: #E6EDED;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 .mySwiper{
     background-color: #E6EDED;
