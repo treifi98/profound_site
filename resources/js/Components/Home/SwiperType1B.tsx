@@ -71,7 +71,7 @@ const SwiperType1B = (props:Props) => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={props.barTitle} icon={property}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={props.barTitle} icon={property} imgML='0.5rem' seperatorML='-0.2rem'/>
 
         <Swiper
             //  slidesPerView={1}

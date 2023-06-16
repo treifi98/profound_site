@@ -12,6 +12,7 @@ const Nav = () => {
         <NavElement key={7} id={7} link="/" text="Insider"/>
         <NavElement key={6} id={6} link="/" text="Services"/>
         <NavElement key={8} id={8} link="/" text="About us"/>
+        {/* <NavElement key={8} id={9} link="/" text="About us"/> */}
         <Lang/>
     </div>
   )

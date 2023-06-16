@@ -17,60 +17,14 @@ const HoverCardArea = (props:Props) => {
         <div className='cursor-pointer  h-[22rem] w-[16.9375rem] border-[#DCE3E3] border-[0.0625rem] rounded-[0.625rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] flex justify-center items-center m-[1rem] z-[99999999] relative'>
             <div className='relative w-[15.0625rem] h-[20.1875rem] rounded-[0.625rem]'>
                 <CardImage src={props.img} w='15.0625' h='20.1875' rounded='0.625'/>
-                <div className='absolute w-full h-[3.6875rem] bg-[#00000080] bottom-[0rem] rounded-[0.625rem] group-hover:h-full transition-all duration-[0.3s] flex flex-col overflow-hidden pl-[0.3125rem] gap-[0px] hover:shadow-[0px_0.25rem_0.25rem_rgba(0,0,0,0.25)]'>
-                    <div className='text-[#fff] text-[1.375rem] font-[700] h-[1.4375rem] group-hover:ml-[2.4rem] transition-all duration-[0.3s] mt-[0.1375rem]'>
+                <div className='absolute w-full h-[4.6875rem] bg-[#00000080] bottom-[0rem] rounded-[0.625rem] group-hover:h-full transition-all duration-[0.3s] flex flex-col overflow-hidden pl-[0.3125rem] gap-[0px] hover:shadow-[0px_0.25rem_0.25rem_rgba(0,0,0,0.25)]'>
+                    <div className='text-[#fff] text-[1.375rem] font-[600] h-[1.4375rem] group-hover:ml-[2.4rem] transition-all duration-[0.3s] mt-[0.1375rem]'>
                         Dubai Marina
                     </div>
-                    <div className='text-[#fff]  flex gap-[0.319375rem] items-center mt-[0.2rem] group-hover:ml-[3.2rem] transition-all duration-[0.3s] text-[1.125rem] font-[600]'>
+                    <div className='text-[#fff]  flex gap-[0.319375rem] items-center  group-hover:ml-[3.2rem] transition-all duration-[0.3s] text-[1.125rem] font-[500] mt-[0.5rem]'>
                         Price start at 890,000 AED
                     </div>
-                    <div className='w-full flex gap-[0.944375rem] justify-center items-center mt-[0.375rem]'>
-                        <div className='w-[5.180625rem] h-[6.325rem] border-[#DDE4E4] border-[0.0625rem] rounded-[0.3rem] flex flex-col justify-center items-center gap-[0.4375rem]'>
-                            <img src={price_tag_test} alt="" className='w=[1.954375rem] h-[1.954375rem] mt-[0.625rem]'/>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                Price AED
-                            </div>
-                            <div className='bg-[#fff] h-[0.0625rem] w-[3.71125rem] rounded-lg'></div>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                1,125,0000
-                            </div>
-                        </div>
-                        <div className='w-[5.180625rem] h-[6.325rem] border-[#DDE4E4] border-[0.0625rem] rounded-[0.3rem] flex flex-col justify-center items-center gap-[0.4375rem]'>
-                            <img src={bed_vector} alt="" className='w=[1.954375rem] h-[1.954375rem] mt-[0.625rem]'/>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                Bedrooms
-                            </div>
-                            <div className='bg-[#fff] h-[0.0625rem] w-[3.71125rem] rounded-lg'></div>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                2
-                            </div>
-                        </div>
-                    </div>
-                    <div className='w-full flex gap-[0.944375rem] justify-center items-center mt-[0.925rem]'>
-                    <div className='w-[5.180625rem] h-[6.325rem] border-[#DDE4E4] border-[0.0625rem] rounded-[0.3rem] flex flex-col justify-center items-center gap-[0.4375rem]'>
-                            <img src={bath_vector} alt="" className='w=[1.954375rem] h-[1.954375rem] mt-[0.625rem]'/>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                Bathrooms
-                            </div>
-                            <div className='bg-[#fff] h-[0.0625rem] w-[3.71125rem] rounded-lg'></div>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                2
-                            </div>
-                        </div>
-                        <div className='w-[5.180625rem] h-[6.325rem] border-[#DDE4E4] border-[0.0625rem] rounded-[0.3rem] flex flex-col justify-center items-center gap-[0.4375rem]'>
-                            <img src={size_vector} alt="" className='w=[1.954375rem] h-[1.954375rem] mt-[0.625rem]'/>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                Area in Sq.ft
-                            </div>
-                            <div className='bg-[#fff] h-[0.0625rem] w-[3.71125rem] rounded-lg'></div>
-                            <div className='text-[0.8125rem] text-[#fff] font-[600] h-[1rem] flex justify-center items-center'>
-                                888
-                            </div>
-                        </div>
-                    </div>
-                    <div className='text-[1.175rem] text-[#fff] font-[600] text-center mt-[1.175rem]'>
-                        See More
-                    </div>
+
                 </div>
 
             </div>

@@ -19,7 +19,7 @@ import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import BarCommon from './Cards/Common/BarCommon'
-import property from '../../../assets/props.svg'
+import property from '../../../assets/nl.svg'
 // import React, { useRef, useState } from "react";
 // Import Swiper React components
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -67,7 +67,7 @@ const SwiperArch = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Natural living Properties'} icon={property}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Natural living Properties'} icon={property} imgML='0.5rem'/>
 
         <Swiper
             //  slidesPerView={1}

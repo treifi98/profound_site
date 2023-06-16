@@ -5,7 +5,7 @@ import ActionCircle from './ActionCircle'
 
 import footerBoxesUpLeft from '../../../../assets/footerBoxesUpLeft.svg'
 import footerBoxesDownRight from '../../../../assets/footerBoxesDownRight.svg'
-import footerMainLogo from '../../../../assets/footerMainLogo.svg'
+import footerMainLogo from '../../../../assets/Plogo.svg'
 import ukFlag from '../../../../assets/ukflag.svg'
 import phoneIcon from '../../../../assets/phoneIconFooter.svg'
 import WhatsAppIconFooter from '../../../../assets/WhatsAppIconFooter.svg'
@@ -16,6 +16,7 @@ import twitterIconFooter from '../../../../assets/twitterIconFooter.svg'
 import instagramIconFooter from '../../../../assets/instagramIconFooter.svg'
 import linkedinIconfooter from '../../../../assets/linkedinIconfooter.svg'
 import footerImage from '../../../../assets/footerImage.svg'
+import { Link } from '@inertiajs/react'
 const Footer = () => {
     return (
         <div className='w-full h-[47.0625rem] bg-[#002D31] relative overflow-hidden'>
@@ -24,43 +25,43 @@ const Footer = () => {
             <div className='w-[89.625rem] mx-auto flex justify-between'>
                 <div className='w-[23.6875rem]'>
 
-                    <a href="" className='mlc-[1.7025rem] mt-[4.6875rem] relative z-[2] w-[19.375rem] h-[6.375rem] block'>
-                        <img src={footerMainLogo} alt="" className='object-cover w-full h-full  '/>
-                    </a>
+                    <Link href="/" className='mlc-[1.7025rem] mt-[4.6875rem] relative z-[2] w-[16.075rem] h-[5.575rem]  shadow-[-3px_-3px_4px_#04626B,4px_4px_6px_#011618] hover:shadow-[inset_-3px_-3px_4px_#04626B,inset_4px_4px_6px_#011618] bg-[#002D31] flex justify-center items-center rounded-[0.9375rem]'>
+                        <img src={footerMainLogo} alt="" className='object-cove  w-[14.5625rem] h-[3.5625rem]'/>
+                    </Link>
                     <div className='w-[23.75rem] h-[10.25rem] mlc-[2.0625rem] mt-[4.3125rem]'>
-                        <div className='font-[600] text-[#E6EDED] text-[1.625rem]'>
+                        <div className='font-[600] text-[#E6EDED] text-[1.625rem] border-b-[1px] border-b-[#fff] w-fit whitespace-nowrap pb-[0.2rem]'>
                             Our Office
                         </div>
-                        <div className='mt-[1.9375rem] text-[#E6EDED] text-[1.25rem] leading-[2.4225rem] w-[23.6875rem]'>
+                        <div className='mt-[1.4375rem] text-[#E6EDED] text-[1.25rem] leading-[2.4225rem] w-[23.6875rem]'>
                             Office 1618, The binary tower, Business bay, Dubai, UAE| P.O. Box No. 418125 Phone Number: +97145545232
                         </div>
                     </div>
                     <div className='mt-[6.375rem] flex w-[22.3125rem] h-[1.9375rem] gap-[1.125rem] mlc-[2.0625rem]'>
-                        <div className='flex bg-[#002D31] border-[#007680] border-[0.0625rem] shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
+                        <div className='flex bg-[#002D31]   shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
                             <div className='text-[0.859375rem] text-[#fff]'>
                                 EN
                             </div>
                             <img src={ukFlag} alt="" className='w-[1.031875rem] h-[0.75rem]'/>
                         </div>
-                        <div className='flex bg-[#002D31] border-[#007680] border-[0.0625rem] shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
+                        <div className='flex bg-[#002D31]   shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
                             <div className='text-[0.859375rem] text-[#fff]'>
                                 EN
                             </div>
                             <img src={ukFlag} alt="" className='w-[1.031875rem] h-[0.75rem]'/>
                         </div>
-                        <div className='flex bg-[#002D31] border-[#007680] border-[0.0625rem] shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
+                        <div className='flex bg-[#002D31]   shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
                             <div className='text-[0.859375rem] text-[#fff]'>
                                 EN
                             </div>
                             <img src={ukFlag} alt="" className='w-[1.031875rem] h-[0.75rem]'/>
                         </div>
-                        <div className='flex bg-[#002D31] border-[#007680] border-[0.0625rem] shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
+                        <div className='flex bg-[#002D31]   shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
                             <div className='text-[0.859375rem] text-[#fff]'>
                                 EN
                             </div>
                             <img src={ukFlag} alt="" className='w-[1.031875rem] h-[0.75rem]'/>
                         </div>
-                        <div className='flex bg-[#002D31] border-[#007680] border-[0.0625rem] shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
+                        <div className='flex bg-[#002D31]   shadow-[-0.1633975rem_-0.1633975rem_0.27178625rem_-0.090595625rem_#007580,0.1633975rem_0.1633975rem_0.21367875rem_#011618] w-[3.5625rem] h-[1.9375rem] gap-[0.250625rem] justify-center items-center rounded-[0.3125rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
                             <div className='text-[0.859375rem] text-[#fff]'>
                                 EN
                             </div>
@@ -72,7 +73,7 @@ const Footer = () => {
                     <div className='w-full h-[23.875rem] relative z-[2] bg-[#002D31] border-[#19464B] border-[0.0625rem] rounded-[1.25rem] shadow-[-0.1875rem_-0.1875rem_0.25rem_#04626B,0.25rem_0.25rem_0.375rem_#011618]'>
                         <div className='flex w-[47.1875rem] mx-auto'>
                             <div className='w-[16rem]'>
-                                <div className='text-[1.5rem] text-[#fff] font-[600] text-center mt-[2rem] w-[15.375rem] mb-[1rem]'>
+                                <div className='text-[1.5rem] border-b-[1px] border-b-[#fff] text-[#fff] font-[600] text-center px-[1rem] w-min mt-[2rem] mx-auto mb-[1rem]'>
                                     Explore
                                 </div>
                                 <div className='w-[15.375rem] h-[2.375rem] rounded-[6.25rem] flex justify-center items-center mb-[1rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.3125rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
@@ -96,8 +97,8 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-[16rem]'>
-                                <div className='text-[1.5rem] text-[#fff] font-[600] text-center mt-[2rem] w-[15.375rem] mb-[1rem]'>
+                            <div className='w-[16rem] text-center'>
+                                <div className='text-[1.5rem] border-b-[1px] border-b-[#fff] text-[#fff] font-[600] text-center px-[1rem] w-min mt-[2rem] mx-auto mb-[1rem]'>
                                     Services
                                 </div>
                                 <div className='w-[15.375rem] h-[2.375rem] rounded-[6.25rem] flex justify-center items-center mb-[1rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.3125rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>
@@ -122,7 +123,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className='w-[16rem]'>
-                                <div className='text-[1.5rem] text-[#fff] font-[600] text-center mt-[2rem] w-[15.375rem] mb-[1rem]'>
+                                <div className='text-[1.5rem] border-b-[1px] border-b-[#fff] text-[#fff] font-[600] text-center px-[1rem] w-min mt-[2rem] mx-auto mb-[1rem] whitespace-nowrap'>
                                     About us
                                 </div>
                                 <div className='w-[15.375rem] h-[2.375rem] rounded-[6.25rem] flex justify-center items-center mb-[1rem] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.3125rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618]'>

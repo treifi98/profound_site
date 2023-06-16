@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import NewCardImage from '../Common/NewCardImage'
 import Brochure from '../Common/Brochure'
 import NewSocial from '../Common/NewSocial'
-import NewTag from '../Common/NewTag'
+import CardTag from '../Common/CardTag'
 import Price from '../Common/Boxes/OffPlan/Price'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -23,6 +23,7 @@ import viewIcon from '../../../../../assets/viewfilled.svg'
 import Agent from '../Common/Boxes/OffPlan/Agent'
 import Contact from '../Common/Boxes/OffPlan/Contact'
 import BoxMaster from '../Common/Boxes/New/BoxMaster'
+import TagSwiper from './TagSwiper'
 
 
 interface Props{
@@ -424,18 +425,10 @@ const OriginalCard = (props:Props) => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full flex justify-between' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0rem' }}>
-                    <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.278125rem',height:props.tagHeight?props.tagHeight:'1.56375rem' }}>
-                        <NewTag text='Appartment' textSize='0.781875'/>
-                    </div>
-                    <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.278125rem',height:props.tagHeight?props.tagHeight:'1.56375rem' }}>
-                        <NewTag text='Appartment' textSize='0.781875'/>
-                    </div>
-                    <div className='' style={{ width:props.tagWidth?props.tagWidth:'7.278125rem',height:props.tagHeight?props.tagHeight:'1.56375rem' }}>
-                        <NewTag text='Appartment' textSize='0.781875'/>
-                    </div>
+                <div className='w-full flex justify-between mt-[-1erm] ' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'-0.8rem' }}>
+                    <TagSwiper/>
                 </div>
-                <div className='w-full flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.7025rem',columnGap:props.boxGapX?props.boxGapX:'1.323125rem',rowGap:props.boxGapY?props.boxGapY:'0.9025rem' }}>
+                <div className='w-full flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.3025rem',columnGap:props.boxGapX?props.boxGapX:'1.323125rem',rowGap:props.boxGapY?props.boxGapY:'0.9025rem' }}>
                 <BoxMaster
                         BoxType='standerd'
                         flipType='zibra'

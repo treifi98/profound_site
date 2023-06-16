@@ -19,7 +19,7 @@ const DynamicTextWhit = (props:Props) => {
         <div className=' rounded-[1.3125rem_0rem_0rem_1.3125rem] bg-[#E6EDED] border-[0.0625rem] border-[#DCE3E3] shadow-[-0.254123125rem_-0.254123125rem_0.406596875rem_#FFFFFF,0.254123125rem_0.254123125rem_0.3557725rem_#B6C3C5] flex justify-center items-center' style={{ width:props.imgWrapperWidth?props.imgWrapperWidth:'4.1175rem',height:props.imgWrapperHeight?props.imgWrapperHeight:'2.6875rem' }}>
             <img src={props.icon} alt="" className='' style={{ width:props.imgWidth?props.imgWidth:'1.840625rem',height:props.imgHeight?props.imgHeight:'1.840625rem' }}/>
         </div>
-            <input type="text" placeholder={props.placeHolder} className='text-[#000] focus:border-transparent focus:ring-0 bg-[#E6EDED] border-[0.0625rem] border-[#DCE3E3] rounded-[0rem_1.3125rem_1.3125rem_0rem] shadow-[inset_-0.2226175rem_-0.2226175rem_0.278271875rem_#FFFFFF,inset_0.254123125rem_0.254123125rem_0.3557725rem_#B6C3C5]' style={{ width:props.textWidth?props.textWidth:'17.245rem',height:props.textHeight?props.textHeight:'2.6875rem',fontSize:props.textSize?props.textSize:'1.125rem' }}/>
+            <input type="text" placeholder={props.placeHolder} className='text-[#000] !text-[1rem] focus:border-transparent focus:ring-0 bg-[#E6EDED] border-[0.0625rem] border-[#DCE3E3] rounded-[0rem_1.3125rem_1.3125rem_0rem] shadow-[inset_-0.2226175rem_-0.2226175rem_0.278271875rem_#FFFFFF,inset_0.254123125rem_0.254123125rem_0.3557725rem_#B6C3C5]' style={{ width:props.textWidth?props.textWidth:'17.245rem',height:props.textHeight?props.textHeight:'2.6875rem',fontSize:props.textSize?props.textSize:'1.125rem' }}/>
     </div>
   )
 }

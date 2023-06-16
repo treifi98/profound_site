@@ -31,18 +31,18 @@ const FiltersContainer = () => {
                 </div>
                 <div className='flex gap-[0.9375rem]'>
                     <div className='text-grade text-[1.25rem]'>
-                        Ready
-                    </div>
-                    <div>
-                        <CheckComponent id="ReadyCheck" on="on" off="off"/>
-                    </div>
-                </div>
-                <div className='flex gap-[0.9375rem]'>
-                    <div className='text-grade text-[1.25rem]'>
                         Off-Plan
                     </div>
                     <div>
                         <CheckComponent id="PlanCheck" on="on" off="off"/>
+                    </div>
+                </div>
+                <div className='flex gap-[0.9375rem]'>
+                    <div className='text-grade text-[1.25rem]'>
+                        Ready
+                    </div>
+                    <div>
+                        <CheckComponent id="ReadyCheck" on="on" off="off"/>
                     </div>
                 </div>
                 <div className='flex gap-[0.9375rem]'>

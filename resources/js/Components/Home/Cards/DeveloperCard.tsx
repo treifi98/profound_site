@@ -175,7 +175,7 @@ const DeveloperCard = (props:Props) => {
                     </div>
                                 <div className=' w-full flex justify-center items-center' style={{ marginTop:props.button.mainMT?props.button.mainMT:'1.475625rem' }}>
 
-                                    <ViewAllButtonDynamic text='View Propfile' w={props.button.width?props.button.width:'8.875rem'} h={props.button.height?props.button.height:'2.1875rem'} ml={props.button.mainML?props.button.mainML:'0rem'} textSize={props.button.textSize?props.button.textSize:'1.073125'} img_width={props.button.imgWidth?props.button.imgWidth:'0.569375rem'} imgHeight={props.button.imgHeight?props.button.imgHeight:'0.806875rem'} wrapperWidth={props.button.wrapperWidth?props.button.wrapperWidth:'7.131875rem'}/>
+                                    <ViewAllButtonDynamic text='View Propfile' w={props.button.width?props.button.width:'8.875rem'} h={props.button.height?props.button.height:'2.1875rem'} ml={props.button.mainML?props.button.mainML:'0rem'} textSize={props.button.textSize?props.button.textSize:'1.0625rem'} img_width={props.button.imgWidth?props.button.imgWidth:'0.569375rem'} imgHeight={props.button.imgHeight?props.button.imgHeight:'0.806875rem'} wrapperWidth={props.button.wrapperWidth?props.button.wrapperWidth:'7.131875rem'}/>
                                 </div>
                     {/* <div></div> */}
                 </div>

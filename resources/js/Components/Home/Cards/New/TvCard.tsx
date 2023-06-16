@@ -405,7 +405,7 @@ const TvCard = (props:Props) => {
                        </div>
 
                     </div>
-                    <div className='w-full  rounded-[0.3011875rem] bg-[#E6EDED] shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]' style={{ height: props.textSecHeight?props.textSecHeight:'7.625rem',marginTop:props.textSecMT?props.textSecMT:'1.875rem',paddingLeft:props.txetSecPL?props.txetSecPL:'0.6875rem' }}>
+                    <div className='w-full  rounded-[0.3011875rem] bg-[#E6EDED] shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]' style={{ height: props.textSecHeight?props.textSecHeight:'7.625rem',marginTop:props.textSecMT?props.textSecMT:'1.575rem',paddingLeft:props.txetSecPL?props.txetSecPL:'0.6875rem' }}>
                         <div className='text-[#19464B] font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.5rem', paddingTop:props.titleMT?props.titleMT:'0.325rem' }}>
                             Creek Rise tower 2 west side
                         </div>

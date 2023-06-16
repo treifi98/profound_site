@@ -46,8 +46,8 @@ const SwiperType2A = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Off-plan Latest Launches'} icon={construction}/>
-        <div className='mt-[2.1875rem] mb-[3.4375rem]'>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Off-plan Latest Launches'} icon={construction} />
+        <div className='mt-[2.1875rem] mb-[2.4375rem]'>
 
             <Swiper
                 slidesPerView={1}
@@ -123,6 +123,8 @@ const SwiperType2A = () => {
                 flipArgs:{
                     content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
                     isPrice:true,
+                    zibraWidth:'100%',
+                    zibraHeight:'1.264583333333333rem'
 
 
                 }
@@ -147,6 +149,7 @@ const SwiperType2A = () => {
                 flipArgs:{
                     content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
                     isPrice:false,
+                    zibraHeight:'1.5175rem'
 
 
                 }

@@ -10,7 +10,7 @@ const MainLayout = (props:Props) => {
     <div className='font-[nova]'>
 
         <Header/>
-        {props.children}
+            {props.children}
         <Footer/>
     </div>
 

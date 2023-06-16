@@ -23,7 +23,7 @@ const ReviewSwiper = (props:Props) => {
       <div className='w-full h-[40.163125rem] overflow-hidden relative mt-[3.91rem]'>
         <div className='mt-[1rem]'>
 
-         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Buying Properties in Dubai'} icon={giftHandIcon}/>
+         <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Buying Properties in Dubai'} icon={giftHandIcon} imgML='-0.3rem' seperatorML='-0.5rem'/>
         </div>
 
         <div className='mt-[3.5375rem] flex ml-[1.6875rem]'>
@@ -31,7 +31,7 @@ const ReviewSwiper = (props:Props) => {
                 <div className='text-grade text-[2rem] font-[600] w-full'>
                     The depth of our commitment to our clients
                 </div>
-                <div className='text-grade font-[300] text-[1.25rem] mt-[1.0375rem] leading-[1.8375rem] '>
+                <div className='text-grade font-[300] text-[1.125rem] mt-[1.0375rem] leading-[1.8125rem] '>
                     Is evident in every step we take. We don't settle for the ordinary, but instead strive to exceed expectations and go beyond what is expected. But don't just take our word for it. Hear directly from our clients about their profound experience and see for yourself the impact we've made on their lives.
                 </div>
             </div>

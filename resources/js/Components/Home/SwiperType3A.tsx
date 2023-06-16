@@ -34,7 +34,7 @@ const SwiperType3A = () => {
     <>
     <div className='mb-[1.0625rem]'>
 
-        <BarCommonType2 handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text1={'Dubai water front '} text2={'Beach front properties'} icon={beachfront}/>
+        <BarCommonType2 handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text1={'Dubai water front '} text2={'Beach front properties'} icon={beachfront} />
     </div>
     <div className='mt-[0.6875rem] mb-[3.6875rem]  relative z-[9999999999999999999]'>
 

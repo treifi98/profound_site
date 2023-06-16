@@ -21,7 +21,7 @@ const SwiperAgent = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Meet our team'} icon={small_logo}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Meet our team'} icon={small_logo} imgML='0.2rem' seperatorML='-0.2rem'/>
 
         <Swiper
             // slidesPerView={1}

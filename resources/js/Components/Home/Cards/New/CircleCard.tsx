@@ -378,7 +378,7 @@ const CircleCard = (props:Props) => {
 
 
                 </Swiper>
-                <div className='absolute bottom-[1.21875rem] right-[7.945rem] z-[999999]'>
+                <div className='absolute bottom-[2.51875rem] right-[7.945rem] z-[999999]'>
                     <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
 
                 </div>
@@ -401,13 +401,13 @@ const CircleCard = (props:Props) => {
                         </div>
                     </div>
                 </div>
-                <div className='text-grade font-[400] ' style={{ marginLeft:props.subTitleML?props.subTitleML:'3.25rem',marginTop: props.subTitleMT? props.subTitleMT:'0.2625rem', fontSize:props.subTitleSize?props.subTitleSize:'1.375rem' }}>
+                <div className='text-grade font-[400] ' style={{ marginLeft:props.subTitleML?props.subTitleML:'3.25rem',marginTop: props.subTitleMT? props.subTitleMT:'0.0625rem', fontSize:props.subTitleSize?props.subTitleSize:'1.375rem' }}>
                     {props.subTitle}
                 </div>
-                <div className='' style={{ width:props.brochure.mainWidth?props.brochure.mainWidth:'6.9375rem',height:props.brochure.mainHeight?props.brochure.mainHeight:'1.75rem',marginLeft:props.brochureML?props.brochureML:'27.9875rem' }}>
+                <div className='mt-[-0.8rem]' style={{ width:props.brochure.mainWidth?props.brochure.mainWidth:'6.9375rem',height:props.brochure.mainHeight?props.brochure.mainHeight:'1.75rem',marginLeft:props.brochureML?props.brochureML:'27.9875rem' }}>
                     <Brochure mainWidth={props.brochure.mainWidth?props.brochure.mainWidth:'6.9375rem'} mainHeight={props.brochure.mainHeight?props.brochure.mainHeight:'1.75rem'} imgWidth={props.brochure.imgWidth? props.brochure.imgWidth:'1.266875rem'} imgHeight={props.brochure.imgHeight? props.brochure.imgHeight:'1.046875rem'} imgWrapperWidth={props.brochure.imgWrapperWidth? props.brochure.imgWrapperWidth:'1.9375rem'} seperatorML={props.brochure.seperatorML? props.brochure.seperatorML:'0rem'} imgMT={props.brochure.imgMT? props.brochure.imgMT:'0.375rem'} restWidth={props.brochure.restWidth? props.brochure.restWidth:'4.8125rem'} textSize={props.brochure.textSize? props.brochure.textSize:'0.8125rem'} separatorWidth={props.brochure.separatorWidth? props.brochure.separatorWidth:'0.25rem'}  />
                 </div>
-                <div className='flex justify-between items-center mt-[-1.5rem]' style={{ width:props.areaWidth?props.areaWidth:'10.3125rem',marginLeft:props.areaML?props.areaML:'3.9rem' }}>
+                <div className='flex justify-between items-center mt-[-0.8rem]' style={{ width:props.areaWidth?props.areaWidth:'10.3125rem',marginLeft:props.areaML?props.areaML:'3.9rem' }}>
                     <img src={mapIcon} alt="" style={{ width:props.areaIconWidth?props.areaIconWidth:'1.18625rem',height:props.areaIconHeight?props.areaIconHeight:'1.125625rem' }}/>
                     <div className='text-grade' style={{ fontSize:props.areatextSize?props.areatextSize:'1rem' }}>
                         Dubai Creek Harbor

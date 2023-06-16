@@ -46,7 +46,7 @@ const SwiperTv = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Luxury Properties'} icon={chandelier}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Dubai Luxury Properties'} icon={chandelier} imgML='0rem' seperatorML='-0.2rem'/>
         <div className='mt-[1.625rem] mb-[1.9375rem]'>
 
             <Swiper

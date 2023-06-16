@@ -5,7 +5,7 @@ interface Props{
     stars:number,
     title:string
 }
-import starIcon from '../../../../assets/star.svg'
+import starIcon from '../../../../assets/start.png'
 const ReviewCard = (props:Props) => {
     const stars = new Array(props.stars).fill(0)
   return (
@@ -16,7 +16,7 @@ const ReviewCard = (props:Props) => {
                 {props.title}
             </div>
             <div className='w-[24.8125rem] h-[16.75rem] flex items-center'>
-                <div className='w-full text-[1.25rem] font-[300] text-grade leading-[1.6675rem]'>
+                <div className='w-full text-[1.125rem] font-[300] text-grade leading-[1.8125rem]'>
                     {props.text}
                 </div>
             </div>

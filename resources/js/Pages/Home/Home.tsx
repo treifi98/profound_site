@@ -36,6 +36,7 @@ import userIcon from '../../../assets/userIconWhite.svg'
 import emailIcom from '../../../assets/emailIconWhite.svg'
 import uaeFlag from '../../../assets/uaeFlag.svg'
 import SliderButton from '@/Components/Developer/SliderButton'
+import InElementSeperator from '@/Components/Home/Cards/Common/InElementSeperator'
 
 
 const Home = () => {
@@ -83,11 +84,11 @@ const Home = () => {
                     <div className='h-[18.79125rem] w-[26.03375rem] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] flex justify-center items-center group cursor-pointer'>
                         <div className='w-[23.5625rem] h-[16.4375rem] relative group-hover:h-full group-hover:w-full transition-all'>
                             <NewCardImage src={marinaImage} rounded='0.9375'/>
-                            <div className='w-[15rem] h-[3.21625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0.2025rem]'>
+                            <div className='min-w-[15.4375rem] h-[4.0625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0rem]'>
                                     Dubai Marina
                                 </div>
-                                <div className='text-[1.125rem] font-[600] text-[#fff] mt-[-0.1rem]'>
+                                <div className='text-[1.125rem] font-[500] text-[#fff] mt-[0.2rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -96,11 +97,13 @@ const Home = () => {
                     <div className='ml-[2.544375rem] h-[18.72625rem] w-[32.231875rem] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] flex justify-center items-center group cursor-pointer'>
                         <div className='w-[29.883125rem] h-[16.4425rem] relative group-hover:h-full group-hover:w-full transition-all'>
                             <NewCardImage src={marinaImage1} rounded='0.9375'/>
-                            <div className='w-[15rem] h-[3.21625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0.2025rem]'>
+                            <div className='min-w-[15.4375rem] h-[4.0625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0rem]'>
                                     Dubai Marina
+                                    Al Barsha
+                                    Sports city
                                 </div>
-                                <div className='text-[1.125rem] font-[600] text-[#fff] mt-[-0.1rem]'>
+                                <div className='text-[1.125rem] font-[500] text-[#fff] mt-[0.2rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -109,11 +112,11 @@ const Home = () => {
                     <div className='ml-[2.218125rem] h-[18.79125rem] w-[26.03375rem] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] flex justify-center items-center group cursor-pointer' >
                         <div className='w-[23.6875rem] h-[16.375rem] relative group-hover:h-full group-hover:w-full transition-all'>
                             <NewCardImage src={marinaImage2} rounded='0.9375'/>
-                            <div className='w-[15rem] h-[3.21625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0.2025rem]'>
+                            <div className='min-w-[15.4375rem] h-[4.0625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0rem]'>
                                     Dubai Marina
                                 </div>
-                                <div className='text-[1.125rem] font-[600] text-[#fff] mt-[-0.1rem]'>
+                                <div className='text-[1.125rem] font-[500] text-[#fff] mt-[0.2rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -125,11 +128,11 @@ const Home = () => {
                     <div className='w-[32.231875rem] h-[18.72625rem] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] flex justify-center items-center group cursor-pointer'>
                         <div className='w-[29.883125rem] h-[16.4425rem] relative group-hover:h-full group-hover:w-full transition-all'>
                             <NewCardImage src={marinaImage} rounded='0.9375'/>
-                            <div className='w-[15rem] h-[3.21625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0.2025rem]'>
+                            <div className='min-w-[15.4375rem] h-[4.0625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0rem]'>
                                     Dubai Marina
                                 </div>
-                                <div className='text-[1.125rem] font-[600] text-[#fff] mt-[-0.1rem]'>
+                                <div className='text-[1.125rem] font-[500] text-[#fff] mt-[0.2rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -138,11 +141,11 @@ const Home = () => {
                     <div className='ml-[1.63125rem] h-[18.79125rem] w-[20.944375rem] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] flex justify-center items-center group cursor-pointer'>
                         <div className='w-[18.595625rem] h-[16.4425rem] relative group-hover:h-full group-hover:w-full transition-all'>
                             <NewCardImage src={marinaImage3} rounded='0.9375'/>
-                            <div className='w-[15rem] h-[3.21625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0.2025rem]'>
+                            <div className='min-w-[15.4375rem] h-[4.0625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0rem]'>
                                     Dubai Marina
                                 </div>
-                                <div className='text-[1.125rem] font-[600] text-[#fff] mt-[-0.1rem]'>
+                                <div className='text-[1.125rem] font-[500] text-[#fff] mt-[0.2rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -151,11 +154,11 @@ const Home = () => {
                     <div className='ml-[1.891875rem] h-[18.72625rem] w-[32.231875rem] rounded-[0.9375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.375rem_-0.375rem_0.75rem_0.1875rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#BABFBF] flex justify-center items-center group cursor-pointer'>
                         <div className='w-[29.883125rem] h-[16.4425rem] relative group-hover:h-full group-hover:w-full transition-all'>
                             <NewCardImage src={marinaImage4} rounded='0.9375'/>
-                            <div className='w-[15rem] h-[3.21625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0.2025rem]'>
+                            <div className='min-w-[15.4375rem] h-[4.0625rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                                <div className='text-[1.5rem] font-[700] text-[#fff] h-[1.8125rem] mt-[-0rem]'>
                                     Dubai Marina
                                 </div>
-                                <div className='text-[1.125rem] font-[600] text-[#fff] mt-[-0.1rem]'>
+                                <div className='text-[1.125rem] font-[500] text-[#fff] mt-[0.2rem]'>
                                     Price start at 890,000 AED
                                 </div>
                             </div>
@@ -169,8 +172,12 @@ const Home = () => {
             <img src={boxesUpRight} alt="" className='right-0 top-0 absolute w-[16.775625rem] h-[18.725625rem] z-[1]'/>
             <div className='relative'></div>
             <div className='w-[calc(100%-0.625rem)] h-[3.125rem] rounded-[6.25rem] mx-auto mt-[4.375rem] bg-[#002D31] border-[#19464B] border-[0.0625rem] shadow-[-0.1875rem_-0.1875rem_0.25rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] relative z-[2] flex '>
-                <img src={handImage} alt="" className='w-[2.84625rem] h-[2.38rem] mt-[0.4375rem] ml-[0.9375rem]'/>
-                <div className='h-full w-[0.0625rem] bg-[#19464B] ml-[1.09125rem]'></div>
+                <img src={handImage} alt="" className='w-[2.84625rem] h-[2.38rem] mt-[0.4375rem] ml-[1.4375rem]'/>
+                {/* <div className='h-full w-[0.0625rem] bg-[#19464B] ml-[1.09125rem]'></div> */}
+                <div className='h-full ml-[0.8rem]'>
+
+                    <InElementSeperator/>
+                </div>
                 <div className='ml-[0.90875rem] self-center text-[#E6EDED] text-[1.875rem] font-[600]'>
                     Book a property valuation
                 </div>
@@ -199,7 +206,7 @@ const Home = () => {
                     <div className='mt-[2.1875rem] w-[21.3125rem] mx-auto h-[2.25rem] flex gap-[1.875rem]'>
                         <div className='flex justify-center items-center gap-[1.875rem]'>
                             <div className=' text-[1.25rem]' ref={elmt1} style={{ color:'#7D8989' }}>
-                                Sale
+                                Rent
                             </div>
                             <CheckComponentGreen id='d' on="on" off="off" func={() => {elmt1.current.style.color == 'rgb(125, 137, 137)' ? elmt1.current.style.color= "#fff" : elmt1.current.style.color= '#7D8989'} }/>
                         </div>
@@ -223,7 +230,7 @@ const Home = () => {
                         <TextAreaTypeGreen placeholder='Property Address ....'/>
                     </div>
                     <div className='mt-[2.7825rem] w-[11.52875rem] h-[2.228125rem] flex justify-center items-center rounded-[3.125rem] border-[#19464B] border-[0.0625rem] mx-auto shadow-[-0.1875rem_-0.1875rem_0.25rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618] cursor-pointer'>
-                        <div className='text-[1.095rem] text-[#7D8989]'>
+                        <div className='text-[1.095rem] text-[#7D8989] font-[600]'>
                             Submit Details
                         </div>
                     </div>

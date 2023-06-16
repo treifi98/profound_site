@@ -154,43 +154,43 @@ const NavHoverCoordinator = ({id}) => {
 
 
 
-                    <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer'>
-                        <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem]'>
+                    <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer overflow-hidden'>
+                        <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem] hover:scale-y-[1.1] hover:scale-x-[1.141262997717474] transition-all'>
                             <div className='mt-[0.941875rem] w-[6.25rem] h-[6.25rem] rounded-full flex justify-center items-center shadow-[inset_-0.455664375rem_-0.455664375rem_1.1391625rem_#FFFFFF,inset_0.455664375rem_0.455664375rem_1.1391625rem_#B6C3C5]'>
                                 <img src={binociolars} alt="" className='object-cover object-center '/>
                             </div>
                             <div className='text-[1.75rem] text-grade'>
                                 VISION
                             </div>
-                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[1.0625rem] font-[300]'>
+                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[1rem] font-[300] px-[0.5rem]'>
                                 To lead Dubai's real estate market with reliable analysis, insider information, and cutting-edge technology while valuing our clients' trust.
                             </div>
                         </div>
                     </div>
 
-                    <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer'>
-                        <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem]'>
+                    <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer overflow-hidden'>
+                        <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem] hover:scale-y-[1.1] hover:scale-x-[1.141262997717474] transition-all'>
                             <div className='mt-[0.941875rem] w-[6.25rem] h-[6.25rem] rounded-full flex justify-center items-center shadow-[inset_-0.455664375rem_-0.455664375rem_1.1391625rem_#FFFFFF,inset_0.455664375rem_0.455664375rem_1.1391625rem_#B6C3C5]'>
                                 <img src={mountan} alt="" className='object-cover object-center mb-[1.625rem]'/>
                             </div>
                             <div className='text-[1.75rem] text-grade'>
-                                VISION
+                                MISSION
                             </div>
-                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[1.0625rem] font-[300]'>
-                                To lead Dubai's real estate market with reliable analysis, insider information, and cutting-edge technology while valuing our clients' trust.
+                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[1rem] font-[300] px-[0.2rem]'>
+                                To provide clients with comprehensive understanding, updates, risk elimination, and informed decisions with integrity, empathy, and transparency.
                             </div>
                         </div>
                     </div>
 
-                    <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer'>
-                        <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem]'>
+                    <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer overflow-hidden'>
+                        <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem] hover:scale-y-[1.1] hover:scale-x-[1.141262997717474] transition-all'>
                             <div className='mt-[0.941875rem] w-[6.25rem] h-[6.25rem] rounded-full flex justify-center items-center shadow-[inset_-0.455664375rem_-0.455664375rem_1.1391625rem_#FFFFFF,inset_0.455664375rem_0.455664375rem_1.1391625rem_#B6C3C5]'>
                                 <img src={flag} alt="" className='object-cover object-center mr-[0.0625rem]'/>
                             </div>
                             <div className='text-[1.75rem] text-grade'>
                                 GOAL
                             </div>
-                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[1.0625rem] font-[300]'>
+                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[1rem] font-[300] px-[0.5rem]'>
                                 To become the top real estate company in Dubai t hrough exceptional service, innovation, and client satisfaction
                             </div>
                         </div>

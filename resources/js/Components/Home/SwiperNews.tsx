@@ -19,7 +19,7 @@ const SwiperNews = () => {
   return (
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
     <>
-        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Profound Insider Market / News'} icon={newsSecIcon}/>
+        <BarCommon handleNext={() => swiper.slideNext()} handlePrev={() => swiper.slidePrev()} text={'Profound Insider Market / News'} icon={newsSecIcon} imgw='3.625rem' imgh='2.25rem' seperatorML='1rem' imgML='1rem'/>
         <div className='ml-[2.4375rem]'>
 
             <Swiper
