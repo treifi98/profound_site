@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import MainLayout from '@/Layouts/MainLayout'
 import HeroVideo from '@/Components/HeroVideo'
 import SwiperType1A from '@/Components/Home/SwiperType1A'
@@ -9,7 +9,6 @@ import SwiperAgent from '@/Components/Home/SwiperAgent'
 import SwiperDeveloper from '@/Components/Home/SwiperDeveloper'
 import SwiperNews from '@/Components/Home/SwiperNews'
 import NewsLetter from '@/Components/Home/Cards/NewsLetter'
-import emar from '../../../assets/emar.svg'
 import Type1A from '@/Components/Home/Cards/Type1A'
 import BarArea from '@/Components/Home/Cards/Common/BarArea'
 import NewCardImage from '@/Components/Home/Cards/Common/NewCardImage'
@@ -29,31 +28,108 @@ import marinaImage3 from '../../../assets/marina3.png'
 import marinaImage4 from '../../../assets/marina4.png'
 import boxesUpRight from '../../../assets/boxesUpRight.svg'
 import boxesBottomLeft from '../../../assets/boxesBottemLeft.svg'
-import boxesBottomLeftGreen from '../../../assets/boxesBottomLeftGreen.svg'
+import dubai from '../../../assets/dli.png'
 import handImage from '../../../assets/hand.svg'
 import elementImg from '../../../assets/elemntMod.svg'
 import userIcon from '../../../assets/userIconWhite.svg'
 import emailIcom from '../../../assets/emailIconWhite.svg'
 import uaeFlag from '../../../assets/uaeFlag.svg'
-import SliderButton from '@/Components/Developer/SliderButton'
+// import SliderButton from '@/Components/Developer/SliderButton'
 import InElementSeperator from '@/Components/Home/Cards/Common/InElementSeperator'
+import SearchAction from '@/Components/Home/FiltersAndSearch/SearchActionComponent'
+import CheckComponent from '@/Components/Home/FiltersAndSearch/CoreFilters/CheckComponent'
+import FliterBar from '@/Components/Home/FiltersAndSearch/FliterBar'
+import vidoe_call from '../../../assets/video_cam.svg'
+import whatsapp_icon from '../../../assets/whatsapp_icon.svg'
+import phone_icon from '../../../assets/phone_icon.svg'
+import email_icon from '../../../assets/email_icon.svg'
+import FliterBarMobile from '@/Components/Home/FiltersAndSearch/FilterBarMobile'
 
 
 const Home = () => {
+    const [screenLG,setScreenLG] = useState(true)
+    useEffect(() => {
+        const updateScreenWidth = () => {
+            if (window.innerWidth >= 1530){
+
+                setScreenLG(true);
+            }
+            else{
+                setScreenLG(false);
+
+            }
+        }
+        updateScreenWidth()
+        window.addEventListener('resize', updateScreenWidth);
+        return () => window.removeEventListener('resize', updateScreenWidth);
+      }, []);
     const elmt1 = useRef(null)
     const elmt2 = useRef(null)
   return (
     <MainLayout>
+        {
+            screenLG ?
+            <HeroVideo/>
+            :
+            <div className='w-full h-[calc(100vh-3.75rem)] relative overflow-hidden'>
+                <div className='w-full h-full top-0 left-0 absolute overflow-hidden z-[-1] '>
+                    <NewCardImage src={dubai} rounded='0'/>
+                </div>
+                <div className='mt-[4.75rem] mx-auto w-[20.5625rem] h-max text-[#002D31] text-[1.25rem] font-[600] text-center leading-[1.875rem]'>
 
-        <HeroVideo/>
+                    WE MAKE THE DREAM OF OWNING PERFECT HOME A REALITY.
+                </div>
+                <div className='w-[14.1875rem] mx-auto justify-center items-center flex flex-col gap-[1.25rem] mt-[6.8125rem]'>
+                    <div className='w-full h-[2.1875rem] border-[1px] border-[#fff] flex justify-center items-center rounded-[2.95rem]'>
+                        <div className='text-[#fff] text-[1.0625rem] font-[600]'>
+                            Off-Plan & investment
+                        </div>
+                    </div>
+                    <div className='w-full h-[2.1875rem] border-[1px] border-[#fff] flex justify-center items-center rounded-[2.95rem]'>
+                        <div className='text-[#fff] text-[1.0625rem] font-[600]'>
+                            List your property
+                        </div>
+                    </div>
+                    <div className='w-full h-[2.1875rem] border-[1px] border-[#fff] flex justify-center items-center rounded-[2.95rem]'>
+                        <div className='text-[#fff] text-[1.0625rem] font-[600]'>
+                            Profound ultimate luxury
+                        </div>
+                    </div>
+                </div>
+                <div className='w-[14.5375rem] ml-auto mr-[1rem] flex justify-between items-center mt-[9.273125rem]'>
+                    <div className='hover:animate-wiggle select-none cursor-pointer bg-[#00494F] h-[2.8125rem] w-[2.8125rem] rounded-full border-[1px] border-[#19464B] shadow-[inset_-2.08494px_-2.08494px_3.46797px_-1.15599px_#007580,inset_2.08494px_2.08494px_2.72652px_#002D31] flex justify-center items-center'>
+                        <div className='bg-[#E6EDED]  border-[#3007680] border-[1px] w-[2.2025rem] h-[2.2025rem] rounded-full shadow-[-1.62941px_-1.62941px_2.71026px_-0.90342px_#007580,1.62941px_1.62941px_2.13081px_#011618] flex justify-center items-center'>
+                            <img src={vidoe_call} className={`w-[1.129375rem] h-[0.6525rem] object-cover object-center `}/>
+                        </div>
 
-        <div className='w-full h-[8.375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,0.3125rem_0.3125rem_0.4375rem_#B6C3C5] relative z-[9999999999] flex justify-end items-center gap-[2rem]'>
-            <SliderButton title='Size By' options={['SQ.FT','SQ.M']} />
-            <div className='mr-[1.5625rem]'>
+                    </div>
+                    <div className='hover:animate-wiggle select-none cursor-pointer bg-[#00494F] h-[2.8125rem] w-[2.8125rem] rounded-full border-[1px] border-[#19464B] shadow-[inset_-2.08494px_-2.08494px_3.46797px_-1.15599px_#007580,inset_2.08494px_2.08494px_2.72652px_#002D31] flex justify-center items-center'>
+                        <div className='bg-[#E6EDED]  border-[#3007680] border-[1px] w-[2.2025rem] h-[2.2025rem] rounded-full shadow-[-1.62941px_-1.62941px_2.71026px_-0.90342px_#007580,1.62941px_1.62941px_2.13081px_#011618] flex justify-center items-center'>
+                            <img src={whatsapp_icon} className={`w-[1.0875rem] h-[1.0875rem] object-cover object-center `}/>
+                        </div>
 
-                <SliderButton title='Price By' options={['AED','USD','EUR']} />
+                    </div>
+                    <div className='hover:animate-wiggle select-none cursor-pointer bg-[#00494F] h-[2.8125rem] w-[2.8125rem] rounded-full border-[1px] border-[#19464B] shadow-[inset_-2.08494px_-2.08494px_3.46797px_-1.15599px_#007580,inset_2.08494px_2.08494px_2.72652px_#002D31] flex justify-center items-center'>
+                        <div className='bg-[#E6EDED]  border-[#3007680] border-[1px] w-[2.2025rem] h-[2.2025rem] rounded-full shadow-[-1.62941px_-1.62941px_2.71026px_-0.90342px_#007580,1.62941px_1.62941px_2.13081px_#011618] flex justify-center items-center'>
+                            <img src={phone_icon} className={`w-[0.896875rem] h-[0.864375rem] object-cover object-center `}/>
+                        </div>
+
+                    </div>
+                    <div className='hover:animate-wiggle select-none cursor-pointer bg-[#00494F] h-[2.8125rem] w-[2.8125rem] rounded-full border-[1px] border-[#19464B] shadow-[inset_-2.08494px_-2.08494px_3.46797px_-1.15599px_#007580,inset_2.08494px_2.08494px_2.72652px_#002D31] flex justify-center items-center'>
+                        <div className='bg-[#E6EDED]  border-[#3007680] border-[1px] w-[2.2025rem] h-[2.2025rem] rounded-full shadow-[-1.62941px_-1.62941px_2.71026px_-0.90342px_#007580,1.62941px_1.62941px_2.13081px_#011618] flex justify-center items-center'>
+                            <img src={email_icon} className={`w-[0.928125rem] h-[0.6525rem] object-cover object-center `}/>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
+        }
+        {
+            screenLG?
+            <FliterBar/>
+            :
+            <FliterBarMobile/>
+        }
 
         <div className='w-full mt-[5.5625rem]'>
 
