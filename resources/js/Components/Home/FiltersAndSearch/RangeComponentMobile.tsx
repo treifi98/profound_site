@@ -43,7 +43,7 @@ function ThumbLabel({
     <div
       data-label={index}
       style={{
-        display: 'flex',
+        display: 'none',
         position: 'absolute',
         top: '2.25875rem',
         color: '#E6EDED',
@@ -74,7 +74,7 @@ function ThumbLabel({
   );
 }
 
-const RangeComponent: React.FC<{ RTL: boolean, max:number, min:number, step:number,MinStep:number, MaxStep:number, StepDefault:boolean,id:string }> = ({ RTL, max, min, step,MinStep, MaxStep,StepDefault,id }) => {
+const RangeComponentMobile: React.FC<{ RTL: boolean, max:number, min:number, step:number,MinStep:number, MaxStep:number, StepDefault:boolean,id:string }> = ({ RTL, max, min, step,MinStep, MaxStep,StepDefault,id }) => {
   const dispatch = useDispatch()
   const rangeInfo = useSelector((state:RootState) => state.range)
 
@@ -164,8 +164,8 @@ React.useEffect(() => {
       {...props}
       style={{
         ...props.style,
-        height: '1.97375rem',
-        width: '2.0175rem',
+        height: '1.37375rem',
+        width: '1.37375rem',
         borderRadius: '100%',
         backgroundColor: '#DDE4E4',
         display: 'flex',
@@ -179,8 +179,8 @@ React.useEffect(() => {
         <div className='group'
             {...props}
             style={{
-            height: '1.8425rem',
-            width: '1.8425rem',
+            height: '1.17375rem',
+            width: '1.17375rem',
             borderRadius: '100%',
             backgroundColor: '#DDE4E4',
             display: 'flex',
@@ -192,8 +192,8 @@ React.useEffect(() => {
         >
             <div className=''
             style={{
-                height: '0.770625rem',
-                width: '0.770625rem',
+                height: '0.49125rem',
+                width: '0.49125rem',
                 backgroundColor: '#00494F',
                 border:'0.0625rem solid #19464B',
                 borderRadius:'100%',
@@ -211,7 +211,7 @@ React.useEffect(() => {
       onTouchStart={props.onTouchStart}
       style={{
         ...props.style,
-        height: '0.875rem',
+        height: '0.5575rem',
         display: 'flex',
         width: '100%',
         border:'0.0694444444444444rem solid #CAD4D5',
@@ -222,7 +222,7 @@ React.useEffect(() => {
       <div
         ref={props.ref}
         style={{
-          height: '0px',
+          height: '0rem',
           width: '100%',
           borderRadius: '0px',
           background: getTrackBackground({
@@ -238,7 +238,7 @@ React.useEffect(() => {
             <div
                 style={{
                 position: 'absolute',
-                height: '0.875rem',
+                height: '0.5575rem',
                 width: `${(values[1] - values[0]) * 100 / (MAX - MIN)}%`,
                 borderRadius: '0.25rem',
                 background: '#00494F',
@@ -273,4 +273,4 @@ React.useEffect(() => {
   );
 };
 
-export default RangeComponent;
+export default RangeComponentMobile;

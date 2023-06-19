@@ -71,7 +71,7 @@ const Home = () => {
             screenLG ?
             <HeroVideo/>
             :
-            <div className='w-full h-[calc(100vh-3.75rem)] relative overflow-hidden'>
+            <div className='w-full h-[calc(100vh-3.75rem)] relative overflow-hidden z-[2]'>
                 <div className='w-full h-full top-0 left-0 absolute overflow-hidden z-[-1] '>
                     <NewCardImage src={dubai} rounded='0'/>
                 </div>
@@ -96,7 +96,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-[14.5375rem] ml-auto mr-[1rem] flex justify-between items-center mt-[9.273125rem]'>
+                <div className='w-[14.5375rem] ml-auto mr-[1rem] flex justify-between items-center absolute bottom-[1.65875rem] right-0'>
                     <div className='hover:animate-wiggle select-none cursor-pointer bg-[#00494F] h-[2.8125rem] w-[2.8125rem] rounded-full border-[1px] border-[#19464B] shadow-[inset_-2.08494px_-2.08494px_3.46797px_-1.15599px_#007580,inset_2.08494px_2.08494px_2.72652px_#002D31] flex justify-center items-center'>
                         <div className='bg-[#E6EDED]  border-[#3007680] border-[1px] w-[2.2025rem] h-[2.2025rem] rounded-full shadow-[-1.62941px_-1.62941px_2.71026px_-0.90342px_#007580,1.62941px_1.62941px_2.13081px_#011618] flex justify-center items-center'>
                             <img src={vidoe_call} className={`w-[1.129375rem] h-[0.6525rem] object-cover object-center `}/>

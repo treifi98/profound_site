@@ -29,8 +29,8 @@ const Header = (props:Props) => {
                     <MenueHover/>
                 </div>
             </div>:
-            <div className='w-full bg-[#002D31] h-[3.75rem] '>
-                <div className='w-[22.1875rem] mx-auto h-full flex justify-between items-center'>
+            <div className='w-full bg-[#002D31] h-[3.75rem] relative z-[3]'>
+                <div className='w-[95%] mx-auto h-full flex justify-between items-center'>
                     {/* <img src={logo_img} alt="" className='lg:w-[13.31rem] w-[9.6875rem] h-[2.8325rem] lg:h-auto object-cover object-center'/> */}
                     <div className='w-[9.6875rem] h-[2.8325rem] flex items-center justify-center shadow-[-1.44402px_-1.44402px_1.92536px_#04626B,1.92536px_1.92536px_2.88804px_#011618] rounded-[0.28125rem]'>
                         <img src={logo_img} alt="" className='object-cover object-center w-[8.89rem] h-[2.2025rem]'/>
