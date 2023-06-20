@@ -298,7 +298,7 @@ interface Props{
 }
 
 
-const OriginalCard = (props:Props) => {
+const CardMobile = (props:Props) => {
     const [swiper, setSwiper] = useState<any>();
     const [activeIndex, setActiveIndex] = useState(0)
     const outerNavigation = (callBack) => {
@@ -336,10 +336,10 @@ const OriginalCard = (props:Props) => {
         imageref.current.style.transform = 'scale(1)'
     }
     return (
-        <div className=' rounded-[0.90224375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.360898125rem_-0.360898125rem_0.72179375rem_0.180449375rem_#FFFFFF,0.360898125rem_0.360898125rem_0.72179375rem_#BABFBF] overflow-hidden' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ width:props.mainWidth?props.mainWidth:'26.285625rem',height:props.mainHeight?props.mainHeight:'43.1875rem',marginTop:props.mainMT?props.mainMT:'4.1875rem',marginBottom:props.mainMB?props.mainMB:'4.1875rem' }}>
-            <div className=' h-full mx-auto' style={{ width:props.mainWrapperWidth?props.mainWrapperWidth:'24.480625rem' }}>
+        <div className=' rounded-[0.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  overflow-hidden'  style={{ width:props.mainWidth?props.mainWidth:'21.473125rem',height:props.mainHeight?props.mainHeight:'35.280625rem',marginTop:props.mainMT?props.mainMT:'0rem',marginBottom:props.mainMB?props.mainMB:'0rem' }}>
+            <div className=' h-full mx-auto' style={{ width:props.mainWrapperWidth?props.mainWrapperWidth:'19.99875rem' }}>
 
-                <div className='w-full relative transition-all origin-bottom' ref={imageref} style={{ height:props.imgHeight?props.imgHeight:'19.368125rem',marginTop:props.imgMT?props.imgMT:'0.9025rem' }}>
+                <div className='w-full relative transition-all origin-bottom' ref={imageref} style={{ height:props.imgHeight?props.imgHeight:'15.821875rem',marginTop:props.imgMT?props.imgMT:'0.736875rem' }}>
                 <Swiper
                     // pagination={pagination}
                     modules={[Pagination]}
@@ -370,72 +370,72 @@ const OriginalCard = (props:Props) => {
 
                     >
                         <SwiperSlide>
-                            <NewCardImage src={og} rounded='0.90224375'/>
+                            <NewCardImage src={og} rounded='0.625'/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <NewCardImage src={og} rounded='0.90224375'/>
+                            <NewCardImage src={og} rounded='0.625'/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <NewCardImage src={og} rounded='0.90224375'/>
+                            <NewCardImage src={og} rounded='0.625'/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <NewCardImage src={og} rounded='0.90224375'/>
+                            <NewCardImage src={og} rounded='0.625'/>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <NewCardImage src={og} rounded='0.90224375'/>
+                            <NewCardImage src={og} rounded='0.625'/>
                         </SwiperSlide>
 
 
 
                 </Swiper>
-                <div className='absolute bottom-[1.21875rem] left-[calc(50%-2.46625rem)] z-[999999]'>
-                    <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
+                    <div className='absolute bottom-[1.13rem] left-[calc(50%-2.46625rem)] z-[999999]'>
+                        <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
 
+                    </div>
                 </div>
-                </div>
-                <div className='w-full h-[2.68625rem] mx-auto  rounded-[0.90224375rem] mt-[0.32125rem] flex justify-between items-center' style={{ marginTop:props.titleMT?props.titleMT:'-0.1rem' }}>
-                    <div className='text-grade font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.375rem' }}>
+                <div className='w-full h-[1.3125rem] mx-auto  rounded-[0.625rem] mt-[0.32125rem] flex justify-between items-center' style={{ marginTop:props.titleMT?props.titleMT:'0.293125rem' }}>
+                    <div className='text-grade font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.0625rem' }}>
                         Creek Rise tower 2 west side
                     </div>
-                    <div className='flex justify-between items-center' style={{ width:props.socialWrapperWidth?props.socialWrapperWidth:'5.49125rem' }}>
+                    <div className='flex justify-between items-center' style={{ width:props.socialWrapperWidth?props.socialWrapperWidth:'4.485625rem' }}>
 
                         {/* <Brochure/> */}
-                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.330625rem',height:props.socialHeight?props.socialHeight:'1.330625rem' }}>
-                            <NewSocial img={shareIcon} img_w={props.shareIconWidth?props.shareIconWidth:'0.66875'} img_h={props.shareIconHeight?props.shareIconHeight:'0.66875'}/>
+                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.086875rem',height:props.socialHeight?props.socialHeight:'1.086875rem' }}>
+                            <NewSocial img={shareIcon} img_w={props.shareIconWidth?props.shareIconWidth:'0.54625'} img_h={props.shareIconHeight?props.shareIconHeight:'0.54625'}/>
                         </div>
-                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.330625rem',height:props.socialHeight?props.socialHeight:'1.330625rem' }}>
-                            <NewSocial img={favIcon} img_w={props.favIconWidth?props.favIconWidth:'0.6875'} img_h={props.favIconHeight?props.favIconHeight:'0.660625'}/>
+                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.086875rem',height:props.socialHeight?props.socialHeight:'1.086875rem' }}>
+                            <NewSocial img={favIcon} img_w={props.favIconWidth?props.favIconWidth:'0.565625'} img_h={props.favIconHeight?props.favIconHeight:'0.536875'}/>
                         </div>
-                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.330625rem',height:props.socialHeight?props.socialHeight:'1.330625rem' }}>
-                            <NewSocial img={viewIcon} img_w={props.viewIconWidth?props.viewIconWidth:'0.835625'} img_h={props.viewIconHeight?props.viewIconHeight:'0.585'}/>
+                        <div className='' style={{ width:props.socialWidth?props.socialWidth:'1.086875rem',height:props.socialHeight?props.socialHeight:'1.086875rem' }}>
+                            <NewSocial img={viewIcon} img_w={props.viewIconWidth?props.viewIconWidth:'0.6825'} img_h={props.viewIconHeight?props.viewIconHeight:'0.478125'}/>
                         </div>
                     </div>
                 </div>
-                <div className='text-grade' style={{ fontSize:props.subTitleSize?props.subTitleSize:'1.25rem',marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'-0.3rem' }}>
+                <div className='text-grade' style={{ fontSize:props.subTitleSize?props.subTitleSize:'1rem',marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'0.10875rem' }}>
                     New project coming soon
                 </div>
                 <div className='w-full flex justify-end' style={{ marginTop:props.brochure.mainMT?props.brochure.mainMT:'-0.8rem' }}>
-                    <Brochure/>
+                    <Brochure mainWidth='4.493125rem' mainHeight='1.056875rem' imgWrapperWidth='1.170625rem' imgWidth='0.765625rem' imgHeight='0.6325rem' separatorWidth='0.15125rem' textSize='0.625rem' restWidth='3.209375rem' imgMT='0.22625rem' seperatorML='0rem'/>
                 </div>
-                <div className='flex w-full justify-between items-center h-[1.244375rem] mt-[0.125rem]'>
-                    <div className=' flex justify-between items-center' style={{ marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'-2rem', width:props.areaWidth?props.areaWidth:'9.11875rem',}}>
-                        <img src={mapIcon} alt="" className='' style={{ width:props.areaWidth?props.areaWidth:'0.88625rem',height:props.areaIconHeight?props.areaIconHeight:'0.84125rem' }}/>
-                        <div className='text-grade ' style={{ fontSize:props.areatextSize?props.areatextSize:'0.9025rem' }}>
+                <div className='flex w-full justify-between items-center h-[1.244375rem] mt-[-0.425rem]'>
+                    <div className=' flex justify-between items-center' style={{ marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'0.2775rem', width:props.areaWidth?props.areaWidth:'7.596875rem',}}>
+                        <img src={mapIcon} alt="" className='' style={{ width:props.areaWidth?props.areaWidth:'0.72375rem',height:props.areaIconHeight?props.areaIconHeight:'0.6875rem' }}/>
+                        <div className='text-grade ' style={{ fontSize:props.areatextSize?props.areatextSize:'0.75rem' }}>
                             Dubai Creek Harbor
                         </div>
                     </div>
                 </div>
-                <div className='w-full flex justify-between mt-[-1erm] ' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'-0.8rem' }}>
-                    <TagSwiper/>
+                <div className='w-full flex justify-between mt-[-1erm] ' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0.11rem' }}>
+                    <TagSwiper textSize='0.6875'/>
                 </div>
-                <div className='w-full flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.3025rem',columnGap:props.boxGapX?props.boxGapX:'1.323125rem',rowGap:props.boxGapY?props.boxGapY:'0.9025rem' }}>
+                <div className='w-full flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.383125rem',columnGap:props.boxGapX?props.boxGapX:'1.08125rem',rowGap:props.boxGapY?props.boxGapY:'0.736875rem' }}>
                 <BoxMaster
                         BoxType='standerd'
                         flipType='zibra'
                         boxArgs={
                             {
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.priceBox.args
 
                             }
@@ -443,8 +443,8 @@ const OriginalCard = (props:Props) => {
                         flipArgs={
                             {
 
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.priceBox.flipArgs
                             }
                         }
@@ -455,8 +455,8 @@ const OriginalCard = (props:Props) => {
                         flipType='zibra'
                         boxArgs={
                             {
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.bedBox.args
 
                             }
@@ -464,8 +464,8 @@ const OriginalCard = (props:Props) => {
                         flipArgs={
                             {
 
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.bedBox.flipArgs
                             }
                         }
@@ -475,8 +475,8 @@ const OriginalCard = (props:Props) => {
                         flipType='zibra'
                         boxArgs={
                             {
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.sizeBox.args
 
                             }
@@ -484,8 +484,8 @@ const OriginalCard = (props:Props) => {
                         flipArgs={
                             {
 
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.sizeBox.flipArgs
                             }
                         }
@@ -495,8 +495,8 @@ const OriginalCard = (props:Props) => {
                         flipType='paymentPlan'
                         boxArgs={
                             {
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.paymentBox.args
 
                             }
@@ -504,8 +504,8 @@ const OriginalCard = (props:Props) => {
                         flipArgs={
                             {
 
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.paymentBox.flipArgs
                             }
                         }
@@ -515,8 +515,8 @@ const OriginalCard = (props:Props) => {
                         flipType='simpleFlip'
                         boxArgs={
                             {
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.compleationBox.args
 
                             }
@@ -524,8 +524,8 @@ const OriginalCard = (props:Props) => {
                         flipArgs={
                             {
 
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.compleationBox.flipArgs
                             }
                         }
@@ -535,8 +535,8 @@ const OriginalCard = (props:Props) => {
                         flipType='zibra'
                         boxArgs={
                             {
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.priceBox.args
 
                             }
@@ -544,19 +544,19 @@ const OriginalCard = (props:Props) => {
                         flipArgs={
                             {
 
-                                mainHeight:props.boxHeight?props.boxHeight:'6.135rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'5.1125rem',
+                                mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
                                 ...props.priceBox.flipArgs
                             }
                         }
                     />
 
                         <Contact
-                            mainHeight={props.boxHeight?props.boxHeight:'6.135rem'}
-                            mainWidth={props.boxWidth?props.boxWidth:'5.1125rem'}
-                            lowerSectionHeight='1.9725rem'
-                            boxWidth='1.804375rem'
-                            boxHeight='1.50375rem'
+                            mainHeight={props.boxHeight?props.boxHeight:'5.011875rem'}
+                            mainWidth={props.boxWidth?props.boxWidth:'4.176875rem'}
+                            lowerSectionHeight='1.326875rem'
+                            boxWidth='1.474375rem'
+                            boxHeight='1.228125rem'
                             videoWidth='0.845625rem'
                             videoHeight='0.4725rem'
                             wasupHeight='0.92125rem'
@@ -567,16 +567,15 @@ const OriginalCard = (props:Props) => {
                             emailHeight='0.546875rem'
                             boxMB='0.48125rem'
                             boxMR='0.48125rem'
-                            lowerSectionMT='0.56rem'
-
+                            lowerSectionTextSize='0.688125rem'
                         />
                     <div>
                         <Agent
                             Args={
                                 {
 
-                                    mainWidth: props.boxWidth?props.boxWidth:'5.1125rem',
-                                    mainHeight: props.boxHeight?props.boxHeight:'6.135rem',
+                                    mainWidth: props.boxWidth?props.boxWidth:'4.176875rem',
+                                    mainHeight: props.boxHeight?props.boxHeight:'5.011875rem',
                                     ...props.agentBox.Args
                                 }
                             }
@@ -592,4 +591,4 @@ const OriginalCard = (props:Props) => {
     )
 }
 
-export default OriginalCard
+export default CardMobile

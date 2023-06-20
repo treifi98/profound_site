@@ -11,7 +11,8 @@ interface Props{
     min:number,
     max:number,
     rtl:boolean,
-    id:string
+    id:string,
+    func:Function
 
 }
 // const STEP = 0.1;
@@ -65,7 +66,7 @@ function ThumbLabel({
         // borderRadius:''
         ...(labelStyle as React.CSSProperties)
       }}
-    >
+      >
         <div>
 
             {parseInt(labelValue).toLocaleString() }
@@ -74,7 +75,7 @@ function ThumbLabel({
   );
 }
 
-const RangeComponentMobile: React.FC<{ RTL: boolean, max:number, min:number, step:number,MinStep:number, MaxStep:number, StepDefault:boolean,id:string }> = ({ RTL, max, min, step,MinStep, MaxStep,StepDefault,id }) => {
+const RangeComponentMobile: React.FC<{ RTL: boolean, max:number, min:number, step:number,MinStep:number, MaxStep:number, StepDefault:boolean,id:string,func:Function,vals:number[] }> = ({ RTL, max, min, step,MinStep, MaxStep,StepDefault,id,func,vals }) => {
   const dispatch = useDispatch()
   const rangeInfo = useSelector((state:RootState) => state.range)
 
@@ -85,6 +86,13 @@ const RangeComponentMobile: React.FC<{ RTL: boolean, max:number, min:number, ste
   const [MAX,setMAX] = React.useState(max)
   let STEP = step
   const [values, setValues] = React.useState([min,max]);
+
+  React.useEffect(()=>{
+    func(values)
+  },[values])
+  React.useEffect(()=>{
+    setValues(vals)
+  },vals)
 
 
 //   const toggleValue = (min,max,minStep,maxStep) => {
@@ -175,6 +183,7 @@ React.useEffect(() => {
         outline:'none',
       }}
     >
+
       <ThumbLabel rangeRef={rangeRef.current} values={values} index={index} />
         <div className='group'
             {...props}
@@ -202,6 +211,7 @@ React.useEffect(() => {
             />
 
 
+
         </div>
     </div>
   );
@@ -216,9 +226,11 @@ React.useEffect(() => {
         width: '100%',
         border:'0.0694444444444444rem solid #CAD4D5',
         boxShadow:'inset -0.285380625rem -0.285380625rem 0.456609375rem #FFFFFF, inset 0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5',
-        borderRadius:'1.06rem'
+        borderRadius:'1.06rem',
+        position:'relative'
       }}
     >
+
       <div
         ref={props.ref}
         style={{
@@ -235,6 +247,7 @@ React.useEffect(() => {
           alignSelf: 'center'
         }}
       >
+
             <div
                 style={{
                 position: 'absolute',
@@ -252,6 +265,8 @@ React.useEffect(() => {
             />
         {children}
       </div>
+
+
     </div>
   );
   return (

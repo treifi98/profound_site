@@ -59,7 +59,8 @@ interface Props{
         imgHeight?:string,
         wrapperWidth?:string
     },
-    scaleFactor?:string
+    scaleFactor?:string,
+    MY?:string
 
 }
 import established_icon from '../../../../assets/established_icon.svg'
@@ -113,7 +114,7 @@ const DeveloperCard = (props:Props) => {
     return (
         <Link href='/developer/test'>
 
-            <div className=' font-[nova] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.9375rem] flex justify-center items-center my-[1rem] z-[999] mx-[0rem]' style={{ width:props.mainWidth?props.mainWidth:'24.375rem',height:props.mainHeight?props.mainHeight:'30.625rem',boxShadow:shadows[0] }}>
+            <div className=' font-[nova] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.9375rem] flex justify-center items-center my-[1rem] z-[999] mx-[0rem]' style={{marginTop:props.MY?props.MY:'1rem',marginBottom:props.MY?props.MY:'1rem', width:props.mainWidth?props.mainWidth:'24.375rem',height:props.mainHeight?props.mainHeight:'30.625rem',boxShadow:shadows[0] }}>
                 <div className=' rounded-[0.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] transition-all ease-in' style={{ width:props.smallerWidth?props.smallerWidth:'21.885rem',height:props.smallerHeigth?props.smallerHeigth:'28.125rem',boxShadow:shadows[0] }} ref={smallerToscale} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <div className=' w-full flex justify-center items-center' style={{ height:props.imgWrapperHeight?props.imgWrapperHeight:'8.8125rem' }}>
                         {/* <div className='flex justify-center items-center mt-[0.625rem]'> */}
