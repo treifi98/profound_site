@@ -10,14 +10,14 @@ const HeroVideo = () => {
 
   return (
     <>
-        <div className='h-[calc(100vh-17.125rem)] w-full relative z-[-1] font-[nova]'></div>
-        <div className='h-[calc(100vh-10.875rem)] w-full  absolute top-[1.875rem] z-0 font-[nova]'>
+        <div className='h-[calc(100vh-17.125rem)] lgx:h-[calc(100vh-7.885rem)] w-full relative z-[2] font-[nova] '></div>
+        <div className='h-[calc(100vh-10.875rem)] lgx:h-[calc(100vh+0.25rem)] w-full  absolute top-[1.875rem] lgx:top-0 z-[2] font-[nova]'>
             <div className='relative'>
                 <div className='absolute right-0 top-[4.375rem] z-10 opacity-[0.2] change_font:text-[0.97vw]'>
                     <img src={logo_completion} alt="" className='w-[8.437em]'/>
                 </div>
-                <div className='absolute bg-[#01141666] z-[1] h-[calc(100vh-10.875rem)] w-full mix-blend-overlay '></div>
-                <video  autoPlay loop muted className='h-[calc(100vh-10.875rem)] w-full object-cover '>
+                <div className='absolute bg-[#01141666] z-[1] h-[calc(100vh-10.875rem)] lgx:h-[calc(100vh+0.25rem)] w-full mix-blend-overlay '></div>
+                <video  autoPlay loop muted className='h-[calc(100vh-10.875rem)] lgx:h-[calc(100vh+0.25rem)] w-full object-cover '>
                     <source src="../../assets/dubai.mp4" type="video/mp4"/>
                     {/* <source src="mov_bbb.ogg" type="video/ogg"/> */}
                     Your browser does not support HTML video.

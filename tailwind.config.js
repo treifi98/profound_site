@@ -226,6 +226,8 @@ module.exports = {
             screens: {
                 'change_font': '1531px',
                 // => @media (min-width: 1280px) { ... }
+                'lgx':'2071px',
+                'smd':'414px',
               },
               backgroundImage: {
                 'custom-gradient': 'linear-gradient(178.83deg, #002D31 1.2%, #194549 50.36%, #002326 99.19%)',

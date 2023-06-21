@@ -50,7 +50,8 @@ interface Props{
     shadow?:string,
     height?:string,
     MT?:string,
-    bottom?:string
+    bottom?:string,
+    mainWidth?:string
 
 }
 const SwiperMobile = (props:Props) => {
@@ -107,16 +108,20 @@ const SwiperMobile = (props:Props) => {
 
 
     // <div className='w-[calc(100%-44px)] ml-[44px] h-fll '>
-    <div className='relative'>
+    <div className='relative w-full'>
 
         <Swiper
-            //  slidesPerView={1}
+             slidesPerView={1}
             //  // slidesPerGroupSkip={3}
-             spaceBetween={20}
+             spaceBetween={10}
+             centeredSlides={true}
+            //  centerInsufficientSlides={true}
+
              breakpoints={{
                  810: {
                  slidesPerView: 1,
-                 spaceBetween: 70,
+                 spaceBetween: 40,
+                 centeredSlides:true
                  }
              }}
 
@@ -130,22 +135,25 @@ const SwiperMobile = (props:Props) => {
                 // setSwiper(swiper)
 
             }}
-             className="originalCardmySwiperMobile  rounded-[0.625rem] bg-[rgba(0,0,0,0)]"
-             style={{ boxShadow:'-4px -4px 8px #FFFFFF, 4px 4px 8px #BABFBF',height:props.height?props.height:'max-content',marginTop:props.MT?props.MT:'0rem' }}
+             className="originalCardmySwiperMobilexx  "
+             style={{height:props.height?props.height:'max-content',marginTop:props.MT?props.MT:'0rem' }}
         >
 
            {
                 props.children.map((a,index) => {
 
                     return (
-                        <SwiperSlide className='transition-all h-max ' key={'ss'+index}>
-                            {a}
+                        <div className='' style={{ width:props.mainWidth?props.mainWidth:'21.473125rem' }}>
 
-                        </SwiperSlide>
+                            <SwiperSlide className='transition-all h-max flex justify-center items-center !w-full relative' key={'ss'+index}>
+                                {a}
+
+                            </SwiperSlide>
+                        </div>
                 )})
            }
         </Swiper>
-           <div className='absolute left-0 w-full flex justify-center z-[999999] scale-[0.9029]' style={{ bottom:props.bottom?props.bottom:'-0.884375rem' }}>
+           <div className='absolute left-0 w-full flex justify-center z-[999999] scale-[0.9029]' style={{ bottom:props.bottom?props.bottom:'-0.184375rem' }}>
                 <SliderPagination numberOfItems={props.children.length} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
 
             </div>

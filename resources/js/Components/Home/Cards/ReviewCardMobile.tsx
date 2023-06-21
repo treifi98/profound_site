@@ -10,7 +10,7 @@ import NewCardImage from './Common/NewCardImage'
 const ReviewCardMobile = (props:Props) => {
     const stars = new Array(props.stars).fill(0)
   return (
-    <div className='w-[21.125rem] h-[20.125rem] bg-[#E6EDED] border-[#CAD4D5] border-[1px] rounded-[0.625rem] shadow-[inset_-6px_-6px_12px_3px_#FFFFFF,inset_6px_6px_12px_#BABFBF] flex flex-col justify-center items-center'>
+    <div className='w-[21.125rem] h-[20.125rem] bg-[#E6EDED] border-[#CAD4D5] border-[1px] rounded-[0.625rem] shadow-[inset_-4.87835px_-4.87835px_6.96907px_#FFFFFF,_inset_4.87835px_4.87835px_4.87835px_#B6C3C5] flex flex-col justify-center items-center'>
         <div className='mt-[1rem] mx-[0.875rem] w-[calc(100%-1.75rem)] h-[calc(100%-2rem)] '>
 
             <div className=' text-grade text-[1.39375rem] h-max w-[16.625rem ] font-[400] leading-[1.859375rem]'>

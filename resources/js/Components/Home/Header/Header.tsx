@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import header_background from '../../assets/header.svg'
 import logo_img from '../../../../assets/Plogo.svg'
 import search_logo from '../../../../assets/magnifying_glass.svg'
@@ -8,12 +8,59 @@ import Search from './Search'
 import { Link } from '@inertiajs/react'
 import MenueHover from '../MenueHover'
 
+import Drawer from '@mui/material/Drawer';
+import { ThemeProvider, createTheme } from '@mui/material'
+// or
+// import { Drawer } from '@mui/material';
+
 interface Props{
     screen:Boolean
 }
+
 const Header = (props:Props) => {
+    const theme = createTheme({
+        components: {
+          // Name of the component
+          MuiButton: {
+            styleOverrides: {
+              // Name of the slot
+              root: {
+                // Some CSS
+                        fontSize: '10rem',
+              },
+            },
+          },
+          MuiDrawer:{
+            styleOverrides:{
+                paper:{
+                    backgroundColor:'#E6EDED',
+                    width:'80%',
+                }
+            }
+          }
+        },
+      });
+
+    const [openstatus,setoOpenstatus] = useState(false)
     return (
         <>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <ThemeProvider theme={theme}>
+
+            <Drawer
+                anchor={'left'}
+                open={openstatus}
+                onClose={()=>setoOpenstatus(false)}
+
+
+
+        //   onClose={toggleDrawer('left', false)}
+        >
+        {/* {list('left')} */}
+        <div>dd</div>
+            </Drawer>
+        </ThemeProvider>
+
         {
             props.screen ?
             <div className={`w-full h-[6.25rem] relative z-10 font-[nova] bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom`}>
@@ -40,7 +87,7 @@ const Header = (props:Props) => {
                         <div className='w-[1.875rem] h-[1.875rem] rounded-full shadow-[-1.44402px_-1.44402px_1.92536px_#04626B,1.92536px_1.92536px_2.88804px_#011618] hover:shadow-[inset_-1.44402px_-1.44402px_1.92536px_#04626B,inset_1.92536px_1.92536px_2.88804px_#011618] flex justify-center items-center'>
                             <img src={search_logo} alt="" className='w-[1.5rem] h-[1.5rem]'/>
                         </div>
-                        <div className='w-[1.875rem] h-[1.875rem] shadow-[-2.01493px_-2.01493px_3.35151px_-1.11717px_#007580,2.01493px_2.01493px_2.63496px_1.11717px_#002023] rounded-[0.24375rem] flex justify-center items-center'>
+                        <div className='w-[1.875rem] h-[1.875rem] shadow-[-2.01493px_-2.01493px_3.35151px_-1.11717px_#007580,2.01493px_2.01493px_2.63496px_1.11717px_#002023] rounded-[0.24375rem] flex justify-center items-center' onClick={()=>setoOpenstatus((prev)=>!prev)}>
                             <div className='flex flex-col justify-between items-center h-[0.634375rem]'>
 
                                 <span className='w-[1.07375rem] h-[1px] bg-[#fff]'></span>

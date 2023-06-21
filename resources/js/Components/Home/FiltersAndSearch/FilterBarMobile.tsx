@@ -20,6 +20,10 @@ const FliterBarMobile = () => {
     const [prices,setPrices] = useState([400000,100000000])
 
 
+    const inp1 = useRef(null);
+    const inp2 = useRef(null);
+    const inp3 = useRef(null);
+    const inp4 = useRef(null);
     const changeSizes = (sizes:number[]) => {
         setSizes(sizes)
         // alert(sizes[0])
@@ -62,7 +66,7 @@ const FliterBarMobile = () => {
 
         }else{
 
-            btn.current.style.boxShadow = ' -3.46558px -3.46558px 4.33198px #FFFFFF, 3.95604px 3.95604px 5.53846px #B6C3C5'
+            btn.current.style.boxShadow = ' -2.06558px -2.06558px 4.33198px #FFFFFF, 3.95604px 3.95604px 5.53846px #B6C3C5'
             btn.current.querySelector('img').src = filter
             btn.current.querySelector('img').style.width = '1.5625rem'
             btn.current.querySelector('img').style.height = '1.458125rem'
@@ -82,16 +86,16 @@ const FliterBarMobile = () => {
                     <SearchAction
                         mainWidth='2.5rem'
                         mainHeight='2.445625rem'
-                        effectCircleHeight='2.445625rem'
-                        effectCircleWidth='2.5rem'
+                        effectCircleHeight='1.645625rem'
+                        effectCircleWidth='1.6rem'
                         effectInnerCircleHeight='2.2825rem'
                         effectInnerCircleWidth='2.2825rem'
                     />
                 </div>
-                <input type="text" name="" id="" placeholder="budling, community, Areas or Developer" className='focus:border-transparent focus:ring-0 bg-[#E6EDED] w-[17.0625rem] h-[1.75rem] text-[0.875rem] border-[1px] border-[#DDE4E4] rounded-[1.3125rem] shadow-[inset_-2.58808px_-2.58808px_5.17615px_#F7FFFF,inset_2.58808px_2.58808px_5.17615px_#B6C3C5]'/>
+                <input type="text" name="" id="" placeholder="budling, community, Areas or Developer" className='focus:border-transparent focus:ring-0 bg-[#E6EDED] w-[17.0625rem] h-[1.75rem] text-[0.875rem] border-[1px] border-[#DDE4E4] rounded-[1.3125rem] shadow-[inset_-2.58808px_-2.58808px_5.17615px_#F7FFFF,inset_2.58808px_2.58808px_5.17615px_#B6C3C5] ml-[-0.1rem]'/>
 
-                <div className='w-[1.875rem] h-[1.875rem] shadow-[-3.46558px_-3.46558px_4.33198px_#FFFFFF,3.95604px_3.95604px_5.53846px_#B6C3C5] rounded-[0.3125rem] flex justify-center items-center hover:!shadow-[inset_-3.46558px_-3.46558px_4.33198px_#FFFFFF,inset_3.95604px_3.95604px_5.53846px_#B6C3C5] cursor-pointer' onClick={() => setClicked((prev) => !prev)} ref={btn} >
-                    <img src={filter} alt="" className='!w-[1.171875rem] h-[1.09375em]' />
+                <div className='w-[1.775rem] h-[1.775rem] shadow-[-2.06558px_-2.06558px_4.33198px_#FFFFFF,3.95604px_3.95604px_5.53846px_#B6C3C5] rounded-[0.2125rem] flex justify-center items-center hover:!shadow-[inset_-3.46558px_-3.46558px_4.33198px_#FFFFFF,inset_3.95604px_3.95604px_5.53846px_#B6C3C5] cursor-pointer' onClick={() => setClicked((prev) => !prev)} ref={btn} >
+                    <img src={filter} alt="" className='!w-[1.071875rem] h-[0.99375em]' />
                 </div>
 
             </div>
@@ -207,8 +211,8 @@ const FliterBarMobile = () => {
                             <RangeComponentMobile RTL={false} max={15000} min={0} step={200} MinStep={200} MaxStep={200} StepDefault={true} id='sizeMobile' func={changeSizes} vals={sizes}/>
                         </div>
                         <div className=' flex justify-between'>
-                            <input type="number" value={sizes[0]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>changeMin(parseFloat(e.target.value))} min={0} max={15000} />
-                            <input type="number" value={sizes[1]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>changeMax(parseFloat(e.target.value))} min={0} max={15000} />
+                            <input type="number" value={sizes[0]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>{e.target.style.color='#05363B';changeMin(parseFloat(e.target.value))}} min={0} max={15000} ref={inp1}/>
+                            <input type="number" value={sizes[1]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>{e.target.style.color='#05363B';changeMax(parseFloat(e.target.value))}} min={0} max={15000} ref={inp2}/>
                         </div>
                     </div>
                 </div>
@@ -235,8 +239,8 @@ const FliterBarMobile = () => {
 
                         </div>
                         <div className=' flex justify-between'>
-                            <input type="number" value={prices[0]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>changeMinPrice(parseFloat(e.target.value))} min={400000} max={100000000} />
-                            <input type="number" value={prices[1]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>changeMaxPrice(parseFloat(e.target.value))} min={400000} max={100000000} />
+                            <input type="number" value={prices[0]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>{e.target.style.color='#05363B';changeMinPrice(parseFloat(e.target.value))}} min={400000} max={100000000} ref={inp3}/>
+                            <input type="number" value={prices[1]} className='w-[6.25rem] h-[1.5rem] border-[#DCE3E3] rounded-[6.25rem] border-[0.0625rem] shadow-[inset_-3.39089px_-3.39089px_5.42543px_#FFFFFF,_inset_3.39089px_3.39089px_4.74725px_#B6C3C5] bg-[#E6EDED] focus:border-transparent focus:ring-0 text-[#7D8989] text-[0.8125rem] font-[600] text-center mt-[0.8125rem]' onChange={(e)=>{e.target.style.color='#05363B';changeMaxPrice(parseFloat(e.target.value))}} min={400000} max={100000000} ref={inp4}/>
                         </div>
                     </div>
                 </div>

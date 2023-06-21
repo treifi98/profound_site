@@ -429,3 +429,9 @@ svg
     opacity: 0;
     transition: opacity 500ms;
   }
+
+  .paper
+{
+    background-color: #f00 !important;
+    width: 1000px;
+}
