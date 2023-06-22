@@ -11,12 +11,13 @@ interface Props{
     img_width?:string,
     imgHeight?:string,
     wrapperWidth?:string,
-    imgML?:string
+    imgML?:string,
+    shadow?:string
     // textS
 }
 const ViewAllButtonDynamic = (props:Props) => {
     const elmnt = useRef(null)
-    const [shadows,setShadows] = useState(['-0.285380625rem -0.285380625rem 7.30575px #FFFFFF,0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5','inset -0.285380625rem -0.285380625rem 7.30575px #FFFFFF,inset 0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5'])
+    const [shadows,setShadows] = useState(['-3.39089px -3.39089px 5.42543px #FFFFFF, 3.39089px 3.39089px 4.74725px #B6C3C5','inset -3.39089px -3.39089px 5.42543px #FFFFFF,inset 3.39089px 3.39089px 4.74725px #B6C3C5'])
     useEffect(() => {
         let scale = 1
         if(props.w){
@@ -45,7 +46,7 @@ const ViewAllButtonDynamic = (props:Props) => {
                 <div className='text-grade font-[600]' style={{ fontSize:props.textSize?props.textSize:'1.0625rem' }}>
                     {props.text ?? 'View All'}
                 </div>
-                <img src={view_all_icon} alt="" className='' style={{ width:props.img_width?props.img_width:'0.5693755rem',height:props.imgHeight?props.imgHeight:'0.78rem',marginLeft:props.imgML?props.imgML:'0' }} />
+                <img src={view_all_icon} alt="" className='' style={{ width:props.img_width?props.img_width:'0.5693755rem',height:props.imgHeight?props.imgHeight:'0.78rem',marginLeft:props.imgML?props.imgML:'0rem' }} />
             </div>
         </a>
     </>

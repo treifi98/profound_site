@@ -28,7 +28,7 @@ const BarMobile = (props:Props) => {
                 </div>
             </div>
             <div className=''>
-                <ViewAllButtonDynamic text={props.btnText?props.btnText:'View All'} w={props.btnWidth?props.btnWidth:'4.6875rem'} h='1.5rem' textSize='0.75rem' imgML='0.4375erm' ml='auto' wrapperWidth={props.ww?props.ww:'77%'} img_width='0.3825rem' imgHeight='0.523125rem'/>
+                <ViewAllButtonDynamic text={props.btnText?props.btnText:'View All'} w={props.btnWidth?props.btnWidth:'4.6875rem'} h='1.5rem' textSize='0.75rem' imgML='0.4375erm' ml='auto' wrapperWidth={props.ww?props.ww:'77%'} img_width='0.3825rem' imgHeight='0.523125rem' shadow='-3.39089px -3.39089px 5.42543px #FFFFFF, 3.39089px 3.39089px 4.74725px #B6C3C5'/>
             </div>
         </div>
     </div>

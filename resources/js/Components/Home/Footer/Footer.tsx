@@ -15,6 +15,7 @@ import facebookIconFooter from '../../../../assets/facebookIconFooter.svg'
 import twitterIconFooter from '../../../../assets/twitterIconFooter.svg'
 import instagramIconFooter from '../../../../assets/instagramIconFooter.svg'
 import linkedinIconfooter from '../../../../assets/linkedinIconfooter.svg'
+import ftimg from '../../../../assets/ftimgg.svg'
 import footerImage from '../../../../assets/footerImage.svg'
 import { Link } from '@inertiajs/react'
 import InElementSeperator from '../Cards/Common/InElementSeperator'
@@ -219,7 +220,7 @@ const Footer = (props:Props) => {
 
                 ):
                 (
-                    <div className='w-full bg-[#002D31] h-max flex flex-col justify-center items-center relative pb-[0.5rem]'>
+                    <div className='w-full bg-[#002D31] h-max flex flex-col justify-center items-center relative pb-[0.1rem]'>
                         <div className='w-[95%] mx-auto mt-[2.375rem] rounded-[0.625rem] shadow-[-3.45865px_-3.45865px_4.32331px_#04626B,_3.45865px_3.45865px_5.18797px_#011618]'>
                             <div className='w-[95%] mx-auto flex justify-between items-start'>
                                 <div className='w-[50%] flex flex-col justify-start items-start mt-[1.3125rem]'>
@@ -331,52 +332,52 @@ const Footer = (props:Props) => {
                         <div className='mt-[1.424375rem] w-[95%] flex justify-between items-center'>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={videoIconFooter} imgWidth='0.861875' imgHeight='0.4925'/>
+                                <ActionCircle border={true} imgSrc={videoIconFooter} imgWidth='0.861875' imgHeight='0.4925'/>
                             </div>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={WhatsAppIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
+                                <ActionCircle border={true} imgSrc={WhatsAppIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
                             </div>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={phoneIcon} imgWidth='0.92375' imgHeight='0.92375'/>
+                                <ActionCircle border={true} imgSrc={phoneIcon} imgWidth='0.92375' imgHeight='0.92375'/>
                             </div>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={emailIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
+                                <ActionCircle border={true} imgSrc={emailIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
                             </div>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={twitterIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
+                                <ActionCircle border={true} imgSrc={twitterIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
                             </div>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={facebookIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
+                                <ActionCircle border={true} imgSrc={facebookIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
                             </div>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={linkedinIconfooter} imgWidth='0.92375' imgHeight='0.92375'/>
+                                <ActionCircle border={true} imgSrc={linkedinIconfooter} imgWidth='0.92375' imgHeight='0.92375'/>
                             </div>
                             <div className='w-[1.95375rem] h-[1.95375rem]'>
 
-                                <ActionCircle imgSrc={instagramIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
+                                <ActionCircle border={true} imgSrc={instagramIconFooter} imgWidth='0.92375' imgHeight='0.92375'/>
                             </div>
                         </div>
-                        <div className='w-max ml-[2.5%] flex items-center'>
+                        <div className='w-max ml-[2.5%] flex items-center mt-[0.5rem]'>
                                 <div className='scale-[0.55768] origin-[-80%_100%]'>
-                                <Lang />
+                                <Lang border={true} />
                             </div>
                                 <div className='scale-[0.55768] origin-[-80%_100%] ml-[-0.5rem]'>
-                                <Lang />
+                                <Lang border={true} />
                             </div>
                                 <div className='scale-[0.55768] origin-[-80%_100%] ml-[-0.5rem]'>
-                                <Lang />
+                                <Lang border={true} />
                             </div>
                                 <div className='scale-[0.55768] origin-[-80%_100%] ml-[-0.5rem]'>
-                                <Lang />
+                                <Lang border={true} />
                             </div>
                                 <div className='scale-[0.55768] origin-[-80%_100%] ml-[-0.5rem]'>
-                                <Lang />
+                                <Lang border={true} />
                             </div>
 
                         </div>
@@ -397,10 +398,10 @@ const Footer = (props:Props) => {
                                 Sitemap
                             </div>
                         </div>
-                        <div className='w-full'>
-                            <img src={footerImage} alt="" />
+                        <div className='w-full inline mt-[-1.7rem]'>
+                            <img src={ftimg} alt="" className='opacity-[1]'/>
                         </div>
-                        <div className='text-[0.8125rem] absolute bottom-[0.025rem] text-center text-[#fff]'>
+                        <div className='text-[0.8125rem] absolute bottom-[0.325rem] ml-[2.9rem] text-center text-[#fff]'>
                             © Profound Properties LLC. All Rights Reserved
                         </div>
                     </div>

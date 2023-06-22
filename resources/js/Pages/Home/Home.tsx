@@ -292,7 +292,7 @@ const Home = () => {
                     <div className='w-full h-[49.5rem] bg-[#002D31] mt-[1.625rem] relative overflow-hidden'>
                     <img src={boxesUpRight} alt="" className='right-0 top-0 absolute w-[16.775625rem] h-[18.725625rem] z-[1]'/>
                     <div className='relative'></div>
-                    <div className='w-[calc(100%-0.625rem)] h-[3.125rem] rounded-[6.25rem] mx-auto mt-[4.375rem] bg-[#002D31] border-[#19464B] border-[0.0625rem] shadow-[-0.1875rem_-0.1875rem_0.25rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] relative z-[2] flex '>
+                    <div className='w-[calc(100%-0.625rem)] h-[3.125rem] rounded-[6.25rem] mx-auto mt-[4.375rem] bg-[#002D31] border-[#19464B] border-[0.0625rem] shadow-[-0.1875rem_-0.1875rem_0.25rem_#04626B,0.25rem_0.25rem_0.375rem_#011618]  relative z-[2] flex '>
                         <img src={handImage} alt="" className='w-[2.84625rem] h-[2.38rem] mt-[0.4375rem] ml-[1.4375rem]'/>
                         {/* <div className='h-full w-[0.0625rem] bg-[#19464B] ml-[1.09125rem]'></div> */}
                         <div className='h-full ml-[0.8rem]'>
@@ -994,12 +994,12 @@ const Home = () => {
 
 
             <div className='w-full h-max bg-[#002D31] mt-[8rem]  rounded-[0.625rem] relative'>
-                <div className='w-full h-[3.8125rem] rounded-[0.625rem_0.625rem_0rem_0rem] shadow-[0px_0px_0px_#04626B,_0px_4px_3px_#011618] bg-[#002D31] flex items-center relative z-[2]'>
+                <div className='w-full h-[3.8125rem] rounded-[0.625rem_0.625rem_0rem_0rem] shadow-[0px_0px_0px_#04626B,_0px_4px_3px_#011618] bg-[#002D31]  flex items-center relative z-[2]'>
                     <img src={handImage} alt="" className='w-[2.84625rem] h-[2.38rem] ml-[0.625rem]' />
                     <div className='h-full ml-[0.77875rem]'>
                         <InElementSeperator width='0.375rem'/>
                     </div>
-                    <div className='w-[14.5rem] h-[2.25rem] shadow-[-3px_-3px_4px_#04626B,_4px_4px_6px_#011618] rounded-[6.25rem] mx-auto flex justify-center items-center text-[1.0625rem] text-[#fff]'>
+                    <div className='w-[14.5rem] h-[2.25rem] shadow-[-3px_-3px_4px_#04626B,_4px_4px_6px_#011618] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618] rounded-[6.25rem] mx-auto flex justify-center items-center text-[1.0625rem] text-[#fff]'>
                         Book a property valuation
                     </div>
                 </div>
@@ -1174,8 +1174,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='w-[21.125rem] h-[8.125rem] mx-auto  mt-[4.758125rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] py-[0.9375rem]'>
-                    <div className='text-grade text-[0.9375rem] leading-[1.40625rem] w-[20.375rem] mx-auto'>
+                <div className='w-[21.125rem] h-[8.125rem] mx-auto   mt-[4.758125rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] py-[0.9375rem] !rounded-[0.5rem]'>
+                    <div className='text-grade text-[0.9375rem] leading-[1.40625rem] w-[20.375rem] mx-auto '>
                         Stay ahead of the curve in Dubai's real estate market. Subscribe now to get exclusive access to the latest updates and off-plan property projects.
                     </div>
                     <div className='text-[1.125] font-[600] text-grade text-center mt-[0.75rem]'>
@@ -1211,7 +1211,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='ml-auto mr-[0.5rem]'>
-                <ViewAllButtonDynamic text='Show all Areas' w='6.625rem' h='1.5rem' textSize='0.75rem' imgML='0.4375erm' ml='auto' wrapperWidth='88%' img_width='0.3825rem' imgHeight='0.523125rem'/>
+                <ViewAllButtonDynamic text='Show all Areas' w='6.725rem' h='1.5rem' textSize='0.75rem' imgML='-0.2rem' ml='auto' wrapperWidth='88%' img_width='0.6825rem' imgHeight='0.523125rem'/>
             </div>
         </div>
 
@@ -1241,6 +1241,34 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+            <div className='w-[20rem] h-[11.030625rem] relative'>
+                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                <NewCardImage src={marinaImage3} rounded='0.625'/>
+                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                        Dubai Marina
+                    </div>
+                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                        Price start at 890,000 AED
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+            <div className='w-[20rem] h-[11.030625rem] relative'>
+                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                <NewCardImage src={marinaImage3} rounded='0.625'/>
+                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                        Dubai Marina
+                    </div>
+                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                        Price start at 890,000 AED
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
             <div className='w-[20rem] h-[11.030625rem] relative'>
                 {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}

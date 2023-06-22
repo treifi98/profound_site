@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import header_background from '../../assets/header.svg'
 import logo_img from '../../../../assets/Plogo.svg'
 import search_logo from '../../../../assets/magnifying_glass.svg'
@@ -10,6 +10,7 @@ import MenueHover from '../MenueHover'
 
 import Drawer from '@mui/material/Drawer';
 import { ThemeProvider, createTheme } from '@mui/material'
+import MenuItems from './MenuItems'
 // or
 // import { Drawer } from '@mui/material';
 
@@ -18,6 +19,27 @@ interface Props{
 }
 
 const Header = (props:Props) => {
+    const up = useRef(null)
+    const mid = useRef(null)
+    const down = useRef(null)
+    const toggleOppen = () => {
+        if(!openstatus){
+            // alert('f')
+            up.current.style.transform = 'rotate(-45deg)'
+            down.current.style.transform = 'rotate(45deg)'
+            down.current.parentElement.style.height = 'min-content'
+            mid.current.style.display = 'none'
+        }
+        else{
+            // alert('f')
+            up.current.style.transform = 'rotate(0deg)'
+            down.current.style.transform = 'rotate(0deg)'
+            down.current.parentElement.style.height = '0.634375rem'
+
+            mid.current.style.display = 'block'
+        }
+        setoOpenstatus((prev)=>!prev)
+    }
     const theme = createTheme({
         components: {
           // Name of the component
@@ -35,6 +57,10 @@ const Header = (props:Props) => {
                 paper:{
                     backgroundColor:'#E6EDED',
                     width:'80%',
+                    height:'calc(100vh - 3.75rem)',
+                    // height:'max-content',
+                    top:'3.75rem',
+                    overflow:'auto'
                 }
             }
           }
@@ -50,14 +76,14 @@ const Header = (props:Props) => {
             <Drawer
                 anchor={'left'}
                 open={openstatus}
-                onClose={()=>setoOpenstatus(false)}
+                onClose={()=>toggleOppen( )}
 
 
 
         //   onClose={toggleDrawer('left', false)}
         >
         {/* {list('left')} */}
-        <div>dd</div>
+                <MenuItems/>
             </Drawer>
         </ThemeProvider>
 
@@ -87,12 +113,12 @@ const Header = (props:Props) => {
                         <div className='w-[1.875rem] h-[1.875rem] rounded-full shadow-[-1.44402px_-1.44402px_1.92536px_#04626B,1.92536px_1.92536px_2.88804px_#011618] hover:shadow-[inset_-1.44402px_-1.44402px_1.92536px_#04626B,inset_1.92536px_1.92536px_2.88804px_#011618] flex justify-center items-center'>
                             <img src={search_logo} alt="" className='w-[1.5rem] h-[1.5rem]'/>
                         </div>
-                        <div className='w-[1.875rem] h-[1.875rem] shadow-[-2.01493px_-2.01493px_3.35151px_-1.11717px_#007580,2.01493px_2.01493px_2.63496px_1.11717px_#002023] rounded-[0.24375rem] flex justify-center items-center' onClick={()=>setoOpenstatus((prev)=>!prev)}>
-                            <div className='flex flex-col justify-between items-center h-[0.634375rem]'>
+                        <div className='w-[1.875rem] h-[1.875rem] shadow-[-2.01493px_-2.01493px_3.35151px_-1.11717px_#007580,2.01493px_2.01493px_2.63496px_1.11717px_#002023] rounded-[0.24375rem] flex justify-center items-center' onClick={()=>toggleOppen()}>
+                            <div className='flex flex-col justify-between items-center h-[0.634375rem] '>
 
-                                <span className='w-[1.07375rem] h-[1px] bg-[#fff]'></span>
-                                <span className='w-[1.07375rem] h-[1px] bg-[#fff]'></span>
-                                <span className='w-[1.07375rem] h-[1px] bg-[#fff]'></span>
+                                <span className='w-[1.07375rem] h-[1px] bg-[#fff] transition-all origin-bottom' ref={up}></span>
+                                <span className='w-[1.07375rem] h-[1px] bg-[#fff]' ref={mid}></span>
+                                <span className='w-[1.07375rem] h-[1px] bg-[#fff] transition-all origin-top' ref={down}></span>
                             </div>
                         </div>
                     </div>
