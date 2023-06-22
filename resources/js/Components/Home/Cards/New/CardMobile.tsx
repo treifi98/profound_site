@@ -337,7 +337,7 @@ const CardMobile = (props:Props) => {
     }
     return (
         <div className=' rounded-[0.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  overflow-hidden'  style={{ width:props.mainWidth?props.mainWidth:'21.473125rem',height:props.mainHeight?props.mainHeight:'35.280625rem',marginTop:props.mainMT?props.mainMT:'0rem',marginBottom:props.mainMB?props.mainMB:'0rem' }}>
-            <div className=' h-full mx-auto' style={{ width:props.mainWrapperWidth?props.mainWrapperWidth:'19.99875rem' }}>
+            <div className=' h-full mx-auto' style={{ width:props.mainWrapperWidth?props.mainWrapperWidth:'20.19875rem' }}>
 
                 <div className='w-full relative transition-all origin-bottom' ref={imageref} style={{ height:props.imgHeight?props.imgHeight:'15.821875rem',marginTop:props.imgMT?props.imgMT:'0.736875rem' }}>
                 <Swiper
@@ -435,7 +435,7 @@ const CardMobile = (props:Props) => {
                         boxArgs={
                             {
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.priceBox.args
 
                             }
@@ -444,7 +444,7 @@ const CardMobile = (props:Props) => {
                             {
 
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.priceBox.flipArgs
                             }
                         }
@@ -456,7 +456,7 @@ const CardMobile = (props:Props) => {
                         boxArgs={
                             {
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.bedBox.args
 
                             }
@@ -465,7 +465,7 @@ const CardMobile = (props:Props) => {
                             {
 
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.bedBox.flipArgs
                             }
                         }
@@ -476,7 +476,7 @@ const CardMobile = (props:Props) => {
                         boxArgs={
                             {
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.sizeBox.args
 
                             }
@@ -485,7 +485,7 @@ const CardMobile = (props:Props) => {
                             {
 
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.sizeBox.flipArgs
                             }
                         }
@@ -496,7 +496,7 @@ const CardMobile = (props:Props) => {
                         boxArgs={
                             {
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.paymentBox.args
 
                             }
@@ -505,7 +505,7 @@ const CardMobile = (props:Props) => {
                             {
 
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.paymentBox.flipArgs
                             }
                         }
@@ -516,7 +516,7 @@ const CardMobile = (props:Props) => {
                         boxArgs={
                             {
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.compleationBox.args
 
                             }
@@ -525,7 +525,7 @@ const CardMobile = (props:Props) => {
                             {
 
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.compleationBox.flipArgs
                             }
                         }
@@ -536,7 +536,7 @@ const CardMobile = (props:Props) => {
                         boxArgs={
                             {
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.priceBox.args
 
                             }
@@ -545,7 +545,7 @@ const CardMobile = (props:Props) => {
                             {
 
                                 mainHeight:props.boxHeight?props.boxHeight:'5.011875rem',
-                                mainWidth:props.boxWidth?props.boxWidth:'4.176875rem',
+                                mainWidth:props.boxWidth?props.boxWidth:'4.196875rem',
                                 ...props.priceBox.flipArgs
                             }
                         }
@@ -553,7 +553,7 @@ const CardMobile = (props:Props) => {
 
                         <Contact
                             mainHeight={props.boxHeight?props.boxHeight:'5.011875rem'}
-                            mainWidth={props.boxWidth?props.boxWidth:'4.176875rem'}
+                            mainWidth={props.boxWidth?props.boxWidth:'4.196875rem'}
                             lowerSectionHeight='1.326875rem'
                             boxWidth='1.474375rem'
                             boxHeight='1.228125rem'
@@ -574,8 +574,8 @@ const CardMobile = (props:Props) => {
                             Args={
                                 {
 
-                                    mainWidth: props.boxWidth?props.boxWidth:'4.176875rem',
                                     mainHeight: props.boxHeight?props.boxHeight:'5.011875rem',
+                                    mainWidth: props.boxWidth?props.boxWidth:'4.196875rem',
                                     ...props.agentBox.Args
                                 }
                             }

@@ -380,7 +380,7 @@ const Home = () => {
                     <div className='w-[100%]  mx-auto'>
 
                     <SwiperMobile>
-                        <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+                        <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                             <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                         args:{
@@ -1197,7 +1197,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='!w-[100vw] h-[67.425rem] rounded-[0.625rem] overflow-y-scroll shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
+            <div className='!w-[100vw] h-[67.425rem] rounded-[0.625rem]  shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
             <div className='w-full h-[2.625rem] flex justify-center items-center rounded-[10px_10px_0px_0px] shadow-[-2.89237px_-2.89237px_4.6278px_#FFFFFF,_2.89237px_2.89237px_4.04932px_#B6C3C5] '>
         <div className='w-[100%] h-full flex justify-between items-center'>
             <div className='flex justify-evenly h-full items-center '>
@@ -1220,107 +1220,110 @@ const Home = () => {
         <div className='h-[0.25rem] '>
             <InElementSeperator width='100%' />
         </div>
-        <div className='w-full h-[7rem] rounded-[0rem_0rem_0.625rem_0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] flex justify-center items-center'>
-            <div className='w-[20.54375rem] mx-auto flex justify-between items-center flex-wrap gap-y-[1.375rem]'>
 
-                    <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
-                        <NewTag text='Apartments for sale' textSize='0.844375' textWeight='400'/>
+            <div className='w-full h-[7rem] rounded-[0rem_0rem_0.625rem_0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] flex justify-center items-center'>
+                <div className='w-[20.54375rem] mx-auto flex justify-between items-center flex-wrap gap-y-[1.375rem]'>
 
-                    </div>
-                    <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
-                        <NewTag text='Villas for sale ' textSize='0.844375' textWeight='400'/>
+                        <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
+                            <NewTag text='Apartments for sale' textSize='0.844375' textWeight='400'/>
 
-                    </div>
-                    <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
-                        <NewTag text='Town houses for sale' textSize='0.844375' textWeight='400'/>
+                        </div>
+                        <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
+                            <NewTag text='Villas for sale ' textSize='0.844375' textWeight='400'/>
 
-                    </div>
-                    <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
-                        <NewTag text='Villas for sale ' textSize='0.844375' textWeight='400'/>
+                        </div>
+                        <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
+                            <NewTag text='Town houses for sale' textSize='0.844375' textWeight='400'/>
 
+                        </div>
+                        <div style={{ width:'9.584375rem',height:'1.641875rem' }}>
+                            <NewTag text='Villas for sale ' textSize='0.844375' textWeight='400'/>
+
+                        </div>
+                    </div>
+            </div>
+        <div className='h-[57rem] overflow-y-scroll'>
+            <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+                <div className='w-[20rem] h-[11.030625rem] relative'>
+                    {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                    <NewCardImage src={marinaImage3} rounded='0.625'/>
+                    <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                        <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                            Dubai Marina
+                        </div>
+                        <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                            Price start at 890,000 AED
+                        </div>
                     </div>
                 </div>
             </div>
-        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
-            <div className='w-[20rem] h-[11.030625rem] relative'>
-                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
-                <NewCardImage src={marinaImage3} rounded='0.625'/>
-                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
-                        Dubai Marina
-                    </div>
-                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
-                        Price start at 890,000 AED
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
-            <div className='w-[20rem] h-[11.030625rem] relative'>
-                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
-                <NewCardImage src={marinaImage3} rounded='0.625'/>
-                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
-                        Dubai Marina
-                    </div>
-                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
-                        Price start at 890,000 AED
+            <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+                <div className='w-[20rem] h-[11.030625rem] relative'>
+                    {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                    <NewCardImage src={marinaImage3} rounded='0.625'/>
+                    <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                        <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                            Dubai Marina
+                        </div>
+                        <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                            Price start at 890,000 AED
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
-            <div className='w-[20rem] h-[11.030625rem] relative'>
-                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
-                <NewCardImage src={marinaImage3} rounded='0.625'/>
-                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
-                        Dubai Marina
-                    </div>
-                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
-                        Price start at 890,000 AED
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
-            <div className='w-[20rem] h-[11.030625rem] relative'>
-                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
-                <NewCardImage src={marinaImage3} rounded='0.625'/>
-                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
-                        Dubai Marina
-                    </div>
-                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
-                        Price start at 890,000 AED
+            <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+                <div className='w-[20rem] h-[11.030625rem] relative'>
+                    {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                    <NewCardImage src={marinaImage3} rounded='0.625'/>
+                    <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                        <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                            Dubai Marina
+                        </div>
+                        <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                            Price start at 890,000 AED
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
-            <div className='w-[20rem] h-[11.030625rem] relative'>
-                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
-                <NewCardImage src={marinaImage3} rounded='0.625'/>
-                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
-                        Dubai Marina
-                    </div>
-                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
-                        Price start at 890,000 AED
+            <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+                <div className='w-[20rem] h-[11.030625rem] relative'>
+                    {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                    <NewCardImage src={marinaImage3} rounded='0.625'/>
+                    <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                        <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                            Dubai Marina
+                        </div>
+                        <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                            Price start at 890,000 AED
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
-            <div className='w-[20rem] h-[11.030625rem] relative'>
-                {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
-                <NewCardImage src={marinaImage3} rounded='0.625'/>
-                <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
-                    <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
-                        Dubai Marina
+            <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+                <div className='w-[20rem] h-[11.030625rem] relative'>
+                    {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                    <NewCardImage src={marinaImage3} rounded='0.625'/>
+                    <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                        <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                            Dubai Marina
+                        </div>
+                        <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                            Price start at 890,000 AED
+                        </div>
                     </div>
-                    <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
-                        Price start at 890,000 AED
+                </div>
+            </div>
+            <div className='w-[21.623125rem] h-[12.5625rem] mx-auto border-[#DCE3E3] border-[0.0625rem] shadow-[-4.02516px_-4.02516px_8.05032px_2.01258px_#FFFFFF,_4.02516px_4.02516px_8.05032px_#BABFBF] rounded-[-4.02516px -4.02516px 8.05032px 2.01258px #FFFFFF, 4.02516px 4.02516px 8.05032px #BABFBFrem] mt-[1.375rem] flex justify-center items-center rounded-[0.625rem]'>
+                <div className='w-[20rem] h-[11.030625rem] relative'>
+                    {/* <img src={marinaImage3} alt="" className='w-full h-full object-cover object-center rounded-[0.625rem]'/> */}
+                    <NewCardImage src={marinaImage3} rounded='0.625'/>
+                    <div className='min-w-[15.4375rem] h-[2.8125rem] rounded-[0rem_1.59375rem_1.59375rem_0.9375rem] absolute bottom-0 left-0 bg-[#11252480] pl-[0.4875rem]' >
+                        <div className='text-[1rem] font-[700] text-[#fff] h-[1.8125rem] mt-[0.3rem]'>
+                            Dubai Marina
+                        </div>
+                        <div className='text-[0.755rem] font-[500] text-[#fff] mt-[-0.5rem]'>
+                            Price start at 890,000 AED
+                        </div>
                     </div>
                 </div>
             </div>

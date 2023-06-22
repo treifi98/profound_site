@@ -321,7 +321,7 @@ const Footer = (props:Props) => {
                             <div className='text-[#fff] text-[0.6875rem] mt-[0.8125rem] ml-[2.5%]'>
                                 Office 1618, The binary tower, Business bay, Dubai, UAE
                             </div>
-                            <div className='text-[#fff] text-[0.6875rem] mt-[0.8125rem] ml-[2.5%]'>
+                            <div className='text-[#fff] text-[0.6875rem] mt-[0.1125rem] ml-[2.5%]'>
                                 Dubai, UAE| P.O. Box No. 418125
                             </div>
                             <div className='text-[#fff] text-[0.6875rem] mt-[0.1875rem] mb-[0.75rem] ml-[2.5%]'>
@@ -399,7 +399,7 @@ const Footer = (props:Props) => {
                             </div>
                         </div>
                         <div className='w-full inline mt-[-1.7rem]'>
-                            <img src={ftimg} alt="" className='opacity-[1]'/>
+                            <img src={ftimg} alt="" className='opacity-[1] w-full object-cover object-left-bottom'/>
                         </div>
                         <div className='text-[0.8125rem] absolute bottom-[0.325rem] ml-[2.9rem] text-center text-[#fff]'>
                             © Profound Properties LLC. All Rights Reserved

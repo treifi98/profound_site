@@ -25,6 +25,7 @@ const Header = (props:Props) => {
     const toggleOppen = () => {
         if(!openstatus){
             // alert('f')
+            window.scrollTo({top: -100, behavior: 'auto'});
             up.current.style.transform = 'rotate(-45deg)'
             down.current.style.transform = 'rotate(45deg)'
             down.current.parentElement.style.height = 'min-content'
@@ -57,7 +58,7 @@ const Header = (props:Props) => {
                 paper:{
                     backgroundColor:'#E6EDED',
                     width:'80%',
-                    height:'calc(100vh - 3.75rem)',
+                    height:'calc(100vhd - 3.75rem)',
                     // height:'max-content',
                     top:'3.75rem',
                     overflow:'auto'
