@@ -10,7 +10,7 @@ const HeroVideo = () => {
 
   return (
     <>
-        <div className='h-[calc(100dvh-0rem)] lgx:h-[calc(100dvh-7.885rem)] w-full relative z-[2] font-[nova] '></div>
+        <div className='h-[calc(100dvh-6.25rem)] lgx:h-[calc(100dvh-7.885rem)] w-full relative z-[2] font-[nova] '></div>
         <div className='h-[calc(100dvh-0rem)] lgx:h-[calc(100dvh+0.25rem)] w-full  absolute top-[1.875rem] lgx:top-0 z-[2] font-[nova]'>
             <div className='relative'>
                 <div className='absolute right-0 top-[4.375rem] z-10 opacity-[0.2] change_font:text-[0.97vw]'>

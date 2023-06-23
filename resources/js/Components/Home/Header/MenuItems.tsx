@@ -23,6 +23,7 @@ import imposible_DsLarge from '../../../../assets/imposible_DsLarge.svg'
 import binociolars from '../../../../assets/binociolars.svg'
 import eng_flag from '../../../../assets/engflag.svg'
 import f from '../../../../assets/f.svg'
+import AboutSwiperMobile from './Nav/AboutSwiperMobile';
 
 
 
@@ -44,30 +45,31 @@ const MenuItems = () => {
     const [oppened,setOppened] = useState('-1')
     const [isOppened,setIsOppened] = useState(false)
     const toggleOpen = (e,id) => {
-        document.querySelectorAll('.menueItemNav').forEach((elmnt)=>{
-            elmnt.parentElement.querySelector('img:not(.xd)').style.transform = 'rotate(0deg)'
-        })
-        document.querySelectorAll('.menuItemList').forEach((elmnt)=>{
-            elmnt.style.maxHeight = '0px'
-        })
+        // document.querySelectorAll('.menueItemNav').forEach((elmnt)=>{
+        //     elmnt.parentElement.querySelector('img:not(.xd)').style.transform = 'rotate(0deg)'
+        // })
+        // document.querySelectorAll('.menuItemList').forEach((elmnt)=>{
+        //     elmnt.style.maxHeight = '0px'
+        // })
         setOppened(e.target.id)
         if(oppened != e.target.id ){
 
             e.target.parentElement.querySelector('img:not(.xd)').style.transform = 'rotate(45deg)'
             document.querySelector(`#${id}`).style.maxHeight = '2000px'
-            document.querySelector('#anchor').scrollIntoView(true)
+            // document.querySelector('#anchor').scrollIntoView(true)
 
             setIsOppened(true)
         }else{
             if(isOppened){
 
                 setIsOppened(false)
-            // document.querySelector(`#${id}`).style.maxHeight = '0px'
+            document.querySelector(`#${id}`).style.maxHeight = '0px'
+            e.target.parentElement.querySelector(`img:not(.xd)`).style.transform = 'rotate(0deg)'
             }
             else{
                 e.target.parentElement.querySelector('img:not(.xd)').style.transform = 'rotate(45deg)'
             document.querySelector(`#${id}`).style.maxHeight = '2000px'
-            document.querySelector('#anchor').scrollIntoView(true)
+            // document.querySelector('#anchor').scrollIntoView(true)
 
                 setIsOppened(true)
             }
@@ -564,28 +566,13 @@ const MenuItems = () => {
                                 View all Nesws
                             </div>
                         </div>
-                    </div> */}
+                    </div> */
 
-                    <div className='scale-[0.92] origin-[96%_100%] mb-[2rem]'>
-                    <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer overflow-hidden'>
-                        <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem] hover:scale-y-[1.1] hover:scale-x-[1.141262997717474] transition-all'>
-                            <div className='mt-[0.941875rem] w-[6.25rem] h-[6.25rem] rounded-full flex justify-center items-center shadow-[inset_-0.455664375rem_-0.455664375rem_1.1391625rem_#FFFFFF,inset_0.455664375rem_0.455664375rem_1.1391625rem_#B6C3C5] aspect-square'>
-                                <img src={binociolars} alt="" className='object-cover object-center '/>
-                            </div>
-                            <div className='text-[1.75rem] text-grade'>
-                                VISION
-                            </div>
-                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[0.9rem] font-[300] px-[0.5rem]'>
-                                To lead Dubai's real estate market with reliable analysis, insider information, and cutting-edge technology while valuing our clients' trust.
-                            </div>
-                        </div>
-                    </div>
+                    <div className='mx-auto w-full mt-[0.25rem]'>
+                        <AboutSwiperMobile/>
+                    </div>}
 
-
-
-                        {/* <MenueChild icon={hauseIcon} mainWidth='100%' mainHeight='max-content' titleWidth='9.0375rem' titleSize='0.8875rem' titleAreaWidth='9.4375rem' textWidth='13.375rem' textMT='0.6rem' texteSize='0.8125rem' title={'HOW TO BUY PROPERTY IN DUBAI'} text="Owning property in Dubai has never been easier. Our guide caters to all experience levels, making the buying process seamless for both first-time buyers and seasoned investors" buttonWidth='7.03625rem' buttonHeight='1.50625rem' buttonTextSize='0.875' /> */}
-                    </div>
-
+                    
                 </div>
             </div>
           </ListItem>
