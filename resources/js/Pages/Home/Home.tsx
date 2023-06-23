@@ -374,7 +374,7 @@ const Home = () => {
             </>
         ):
             <>
-            <div className='w-full h-[41.0625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
                 <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
                     <div className='w-[100%]  mx-auto'>

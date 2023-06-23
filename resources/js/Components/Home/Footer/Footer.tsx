@@ -220,8 +220,8 @@ const Footer = (props:Props) => {
 
                 ):
                 (
-                    <div className='w-full bg-[#002D31] h-max flex flex-col justify-center items-center relative pb-[0.1rem]'>
-                        <div className='w-[95%] mx-auto mt-[2.375rem] rounded-[0.625rem] shadow-[-3.45865px_-3.45865px_4.32331px_#04626B,_3.45865px_3.45865px_5.18797px_#011618]'>
+                    <div className='w-full bg-[#002D31] h-max flex flex-col justify-center items-center relative pb-[0.1rem] pb-[1rem]'>
+                        <div className='w-[95%] mx-auto mt-[1.375rem] rounded-[0.625rem] shadow-[-3.45865px_-3.45865px_4.32331px_#04626B,_3.45865px_3.45865px_5.18797px_#011618]'>
                             <div className='w-[95%] mx-auto flex justify-between items-start'>
                                 <div className='w-[50%] flex flex-col justify-start items-start mt-[1.3125rem]'>
                                     <div className='border-b-[1px] border-b-[#fff] text-[1.0625rem] font-[600] text-[#fff] pb-[0.325rem] pr-[2.5rem]'>
@@ -401,7 +401,7 @@ const Footer = (props:Props) => {
                         <div className='w-full inline mt-[-1.7rem]'>
                             <img src={ftimg} alt="" className='opacity-[1] w-full object-cover object-left-bottom'/>
                         </div>
-                        <div className='text-[0.8125rem] absolute bottom-[0.325rem] ml-[2.9rem] text-center text-[#fff]'>
+                        <div className='text-[0.8125rem] absolute bottom-[0.325rem]  text-center text-[#fff] mb-[0.7rem]'>
                             © Profound Properties LLC. All Rights Reserved
                         </div>
                     </div>

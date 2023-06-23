@@ -55,6 +55,8 @@ const MenuItems = () => {
 
             e.target.parentElement.querySelector('img:not(.xd)').style.transform = 'rotate(45deg)'
             document.querySelector(`#${id}`).style.maxHeight = '2000px'
+            document.querySelector('#anchor').scrollIntoView(true)
+
             setIsOppened(true)
         }else{
             if(isOppened){
@@ -65,6 +67,8 @@ const MenuItems = () => {
             else{
                 e.target.parentElement.querySelector('img:not(.xd)').style.transform = 'rotate(45deg)'
             document.querySelector(`#${id}`).style.maxHeight = '2000px'
+            document.querySelector('#anchor').scrollIntoView(true)
+
                 setIsOppened(true)
             }
         }
@@ -88,7 +92,7 @@ const MenuItems = () => {
                     <div className='absolute w-[200%] h-[200%] top-0 left-0 z-[99]' onClick={(e)=>toggleOpen(e,'ff')} id = '2' >
 
                     </div>
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] ' >
                         Buy
                     </div>
                     <img src={plus} alt=""   className='transition-all '/>
@@ -158,7 +162,7 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] 'id='anchor'>
                         Rent
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -227,7 +231,7 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] '>
                         Projects
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -296,7 +300,7 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] '>
                         Areas
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -367,7 +371,7 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] '>
                         Developers
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -388,7 +392,7 @@ const MenuItems = () => {
                     </div>
 
                     <div className='scale-[0.67] origin-[15%_20%] mb-[-5rem]'>
-                    <MenueChild icon={hauseIcon} title={'DUBAI REAL ESTATE DEVELOPERS'} titleWidth='20rem' text="There are several reputable real estate developers in Dubai, with various specializations, project portfolios, and expertise. To select a developer, factors such as design styles, development strategies, construction quality, customer service, and project timelines must be considered" buttonTextSize='1.1rem' textMT='1rem' mainHeight='27rem'/>
+                    <MenueChild icon={hauseIcon} title={'DUBAI REAL ESTATE DEVELOPERS'} titleWidth='20rem' text="There are several reputable real estate developers in Dubai, with various specializations, project portfolios, and expertise. To select a developer, factors such as design styles, development strategies, construction quality, customer service, and project timelines must be considered" buttonTextSize='1.1rem' textMT='1rem' mainHeight='27rem' />
 
 
                         {/* <MenueChild icon={hauseIcon} mainWidth='100%' mainHeight='max-content' titleWidth='9.0375rem' titleSize='0.8875rem' titleAreaWidth='9.4375rem' textWidth='13.375rem' textMT='0.6rem' texteSize='0.8125rem' title={'HOW TO BUY PROPERTY IN DUBAI'} text="Owning property in Dubai has never been easier. Our guide caters to all experience levels, making the buying process seamless for both first-time buyers and seasoned investors" buttonWidth='7.03625rem' buttonHeight='1.50625rem' buttonTextSize='0.875' /> */}
@@ -408,7 +412,7 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] '>
                         Insider
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -449,7 +453,7 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] '>
                         Services
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -458,37 +462,37 @@ const MenuItems = () => {
                     <div className='h-max  w-full'>
                         <InElementSeperator height='0.25rem' width='100%'/>
                         <div className='mx-auto w-full mt-[0.25rem]'>
-                            <div className='w-[85%]  mx-auto h-max border-[#DCE3E3] border-[0.0625rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] flex justify-center items-center py-[1rem] mt-[1rem] '>
+                            <div className='w-[90%]  mx-auto h-max border-[#DCE3E3] border-[0.0625rem] rounded-[0.5375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] flex justify-center items-center py-[1rem] mt-[1rem] '>
                                 <div className='w-min h-max flex flex-wrap gap-x-[1.455625rem] gap-y-[1.5625rem]'>
-                                    <div className='scale-[0.8691] origin-top mt-[0.2rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[0.2rem]'>
 
-                                        <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  />
+                                        <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  textWidth='200rem'  />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
-                                        <ElegantRect img={construction} text='OFF PLAN INVESTMENT' imgWidth='3.529375rem' imgHeight=' 1.929375rem' />
+                                        <ElegantRect img={construction} text='OFF PLAN INVESTMENT' imgWidth='3.529375rem' imgHeight=' 1.929375rem' textWidth='200rem'   />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  textWidth='6rem'/>
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='BUY PROPERTY' imgWidth='2.281875rem' imgHeight='2.825rem'  />
                                     </div>
@@ -521,7 +525,7 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[1.125rem] font-[600] '>
+                    <div className='text-grade text-[0.925rem] font-[400] '>
                         About us
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -530,21 +534,21 @@ const MenuItems = () => {
                     <div className='h-max  w-full'>
                         <InElementSeperator height='0.25rem' width='100%'/>
                         <div className='mx-auto w-full mt-[0.25rem]'>
-                            <div className='w-[85%]  mx-auto h-max border-[#DCE3E3] border-[0.0625rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] flex justify-center items-center py-[1rem] mt-[1rem] '>
+                            <div className='w-[90%]  mx-auto h-max border-[#DCE3E3] border-[0.0625rem] rounded-[0.5375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] flex justify-center items-center py-[1rem] mt-[1rem] '>
                                 <div className='w-min h-max flex flex-wrap gap-x-[1.455625rem] gap-y-[1.5625rem]'>
-                                    <div className='scale-[0.8691] origin-top mt-[0.4rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[0.4rem]'>
 
                                         <ElegantRect img={cach} text='OUER STORY' imgWidth='2.281875rem' imgHeight='2.825rem'  textWidth='6rem'/>
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='OUER STORY' imgWidth='2.281875rem' imgHeight='2.825rem' />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='OUER STORY' imgWidth='2.281875rem' imgHeight='2.825rem' />
                                     </div>
-                                    <div className='scale-[0.8691] origin-top mt-[-0.7rem]'>
+                                    <div className='scale-x-[0.9691] scale-y-[0.8691] origin-top mt-[-0.7rem]'>
 
                                         <ElegantRect img={cach} text='OUER STORY' imgWidth='2.281875rem' imgHeight='2.825rem' />
                                     </div>
@@ -565,13 +569,13 @@ const MenuItems = () => {
                     <div className='scale-[0.92] origin-[96%_100%] mb-[2rem]'>
                     <div className='w-[16.875rem] h-[22.5rem] bg-[#E6EDED] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center cursor-pointer overflow-hidden'>
                         <div className='w-[14.78625rem] h-[20.439375rem] rounded-[0.9375rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] border-[#DCE3E3] border-[0.0625rem] flex flex-col justify-center items-center gap-[0.875rem] hover:scale-y-[1.1] hover:scale-x-[1.141262997717474] transition-all'>
-                            <div className='mt-[0.941875rem] w-[6.25rem] h-[6.25rem] rounded-full flex justify-center items-center shadow-[inset_-0.455664375rem_-0.455664375rem_1.1391625rem_#FFFFFF,inset_0.455664375rem_0.455664375rem_1.1391625rem_#B6C3C5]'>
+                            <div className='mt-[0.941875rem] w-[6.25rem] h-[6.25rem] rounded-full flex justify-center items-center shadow-[inset_-0.455664375rem_-0.455664375rem_1.1391625rem_#FFFFFF,inset_0.455664375rem_0.455664375rem_1.1391625rem_#B6C3C5] aspect-square'>
                                 <img src={binociolars} alt="" className='object-cover object-center '/>
                             </div>
                             <div className='text-[1.75rem] text-grade'>
                                 VISION
                             </div>
-                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[1rem] font-[300] px-[0.5rem]'>
+                            <div className='leading-[1.59375rem] h-[9.75rem] text-center text-[0.9rem] font-[300] px-[0.5rem]'>
                                 To lead Dubai's real estate market with reliable analysis, insider information, and cutting-edge technology while valuing our clients' trust.
                             </div>
                         </div>
@@ -597,7 +601,7 @@ const MenuItems = () => {
                     {/*  */}
                     <div className='w-min flex gap-[0.3rem]'>
 
-                        <div className='text-grade text-[1.125rem] font-[600] '>
+                        <div className='text-grade text-[0.925rem] font-[400] '>
                             EN
                         </div>
                         <img src={eng_flag} alt="" className='xd' />
@@ -608,36 +612,36 @@ const MenuItems = () => {
                     <div className='h-max  w-full'>
                         <InElementSeperator height='0.25rem' width='100%'/>
                         <div className='mx-auto w-full mt-[0.25rem] mb-[1rem]'>
-                            <div className='w-[85%]  mx-auto h-max  flex justify-start gap-[1rem] items-center py-[1rem] mt-[1rem] flex-wrap gap-y-[1.9rem] '>
-                                <div className='w-[4.375rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                            <div className='w-[85%]  mx-auto h-max  flex justify-start gap-[2rem] items-center py-[1rem] mt-[1rem] flex-wrap gap-y-[1.9rem] '>
+                                <div className='w-[3.675rem] text-[0.9rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
                                     <div>
                                         EN
                                     </div>
-                                    <img src={eng_flag} alt="" />
+                                    <img src={eng_flag} alt="" className='w-[1.5rem] h-[1.5rem]'/>
                                 </div>
-                                <div className='w-[4.375rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.675rem] text-[0.9rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
                                     <div>
                                         EN
                                     </div>
-                                    <img src={eng_flag} alt="" />
+                                    <img src={eng_flag} alt="" className='w-[1.5rem] h-[1.5rem]'/>
                                 </div>
-                                <div className='w-[4.375rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.675rem] text-[0.9rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
                                     <div>
                                         EN
                                     </div>
-                                    <img src={eng_flag} alt="" />
+                                    <img src={eng_flag} alt="" className='w-[1.5rem] h-[1.5rem]'/>
                                 </div>
-                                <div className='w-[4.375rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.675rem] text-[0.9rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
                                     <div>
                                         EN
                                     </div>
-                                    <img src={eng_flag} alt="" />
+                                    <img src={eng_flag} alt="" className='w-[1.5rem] h-[1.5rem]'/>
                                 </div>
-                                <div className='w-[4.375rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.675rem] text-[0.9rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
                                     <div>
                                         EN
                                     </div>
-                                    <img src={eng_flag} alt="" />
+                                    <img src={eng_flag} alt="" className='w-[1.5rem] h-[1.5rem]'/>
                                 </div>
                             </div>
                         </div>
@@ -660,7 +664,7 @@ const MenuItems = () => {
                     {/*  */}
                     <div className='w-min flex gap-[0.3rem]'>
 
-                        <div className='text-grade text-[1.125rem] font-[600] '>
+                        <div className='text-grade text-[0.925rem] font-[400] '>
                             AED
                         </div>
                     </div>
@@ -671,16 +675,16 @@ const MenuItems = () => {
                         <InElementSeperator height='0.25rem' width='100%'/>
                         <div className='mx-auto w-full mt-[0.25rem] mb-[1rem]'>
                             <div className='w-[85%]  mx-auto h-max  flex justify-start gap-[1rem] items-center py-[1rem] mt-[1rem] flex-wrap gap-y-[1.9rem] '>
-                                <div className='w-[3.75rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.05rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[5px] text-[0.8rem] font-[500] flex items-center gap-[0.3rem] justify-center'>
                                     AED
                                 </div>
-                                <div className='w-[3.75rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.05rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[5px] text-[0.8rem] font-[500] flex items-center gap-[0.3rem] justify-center'>
                                     USD
                                 </div>
-                                <div className='w-[3.75rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.05rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[5px] text-[0.8rem] font-[500] flex items-center gap-[0.3rem] justify-center'>
                                     EUR
                                 </div>
-                                <div className='w-[3.75rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.05rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[5px] text-[0.8rem] font-[500] flex items-center gap-[0.3rem] justify-center'>
                                     RUB
                                 </div>
 
@@ -705,7 +709,7 @@ const MenuItems = () => {
                     {/*  */}
                     <div className='w-min flex gap-[0.3rem]'>
 
-                        <div className='text-grade text-[1.125rem] font-[600] '>
+                        <div className='text-grade text-[0.925rem] font-[400] '>
                             SQ.FT
                         </div>
                     </div>
@@ -716,10 +720,10 @@ const MenuItems = () => {
                         <InElementSeperator height='0.25rem' width='100%'/>
                         <div className='mx-auto w-full mt-[0.25rem] '>
                             <div className='w-[85%]  mx-auto h-max  flex justify-start gap-[1rem] items-center py-[1rem] mt-[1rem] flex-wrap gap-y-[1.9rem] '>
-                                <div className='w-[3.75rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.45rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[5px] text-[0.8rem] font-[500] flex items-center gap-[0.3rem] justify-center'>
                                     SQ.FT
                                 </div>
-                                <div className='w-[3.75rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[3px] flex items-center gap-[0.3rem] justify-center'>
+                                <div className='w-[3.45rem] h-[1.75rem] shadow-[4.230769157409668px_4.230769157409668px_5.923077583312988px_#B6C3C5,-3.54px_-3.54px_4.23px_#fff] rounded-[5px] text-[0.8rem] font-[500] flex items-center gap-[0.3rem] justify-center'>
                                     SQ.MT
                                 </div>
 

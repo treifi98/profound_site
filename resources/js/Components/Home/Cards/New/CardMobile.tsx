@@ -336,10 +336,10 @@ const CardMobile = (props:Props) => {
         imageref.current.style.transform = 'scale(1)'
     }
     return (
-        <div className=' rounded-[0.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  overflow-hidden'  style={{ width:props.mainWidth?props.mainWidth:'21.473125rem',height:props.mainHeight?props.mainHeight:'35.280625rem',marginTop:props.mainMT?props.mainMT:'0rem',marginBottom:props.mainMB?props.mainMB:'0rem' }}>
+        <div className=' rounded-[0.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  overflow-hidden'  style={{ width:props.mainWidth?props.mainWidth:'21.473125rem',height:props.mainHeight?props.mainHeight:'36.780625rem',marginTop:props.mainMT?props.mainMT:'0rem',marginBottom:props.mainMB?props.mainMB:'0rem' }}>
             <div className=' h-full mx-auto' style={{ width:props.mainWrapperWidth?props.mainWrapperWidth:'20.19875rem' }}>
 
-                <div className='w-full relative transition-all origin-bottom' ref={imageref} style={{ height:props.imgHeight?props.imgHeight:'15.821875rem',marginTop:props.imgMT?props.imgMT:'0.736875rem' }}>
+                <div className='w-full relative transition-all origin-bottom scale-[1.1]' ref={imageref} style={{ height:props.imgHeight?props.imgHeight:'15.821875rem',marginTop:props.imgMT?props.imgMT:'0.736875rem' }}>
                 <Swiper
                     // pagination={pagination}
                     modules={[Pagination]}
@@ -388,12 +388,12 @@ const CardMobile = (props:Props) => {
 
 
                 </Swiper>
-                    <div className='absolute bottom-[1.13rem] left-[calc(50%-2.46625rem)] z-[999999]'>
-                        <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
+                    <div className='absolute bottom-[0.4rem] left-[calc(50%-2.46625rem)] z-[999999] scale-[0.8]'>
+                        <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation} />
 
                     </div>
                 </div>
-                <div className='w-full h-[1.3125rem] mx-auto  rounded-[0.625rem] mt-[0.32125rem] flex justify-between items-center' style={{ marginTop:props.titleMT?props.titleMT:'0.293125rem' }}>
+                <div className='w-full h-[1.3125rem] mx-auto  rounded-[0.625rem] mt-[0.32125rem] flex justify-between items-center' style={{ marginTop:props.titleMT?props.titleMT:'0.893125rem' }}>
                     <div className='text-grade font-[600]' style={{ fontSize:props.titleSize?props.titleSize:'1.0625rem' }}>
                         Creek Rise tower 2 west side
                     </div>
@@ -415,7 +415,12 @@ const CardMobile = (props:Props) => {
                     New project coming soon
                 </div>
                 <div className='w-full flex justify-end' style={{ marginTop:props.brochure.mainMT?props.brochure.mainMT:'-0.8rem' }}>
-                    <Brochure mainWidth='4.493125rem' mainHeight='1.056875rem' imgWrapperWidth='1.170625rem' imgWidth='0.765625rem' imgHeight='0.6325rem' separatorWidth='0.15125rem' textSize='0.625rem' restWidth='3.209375rem' imgMT='0.22625rem' seperatorML='0rem'/>
+                    {/* <Brochure mainWidth='4.493125rem' mainHeight='1.056875rem' imgWrapperWidth='1.170625rem' imgWidth='0.765625rem' imgHeight='0.6325rem' separatorWidth='0.15125rem' textSize='0.625rem' restWidth='3.209375rem' imgMT='0.22625rem' seperatorML='0rem' /> */}
+                    <div className='scale-[0.6046] origin-[100%_10%] mb-[-0.5rem]'>
+
+                        <Brochure mainWidth={props.brochure.mainWidth?props.brochure.mainWidth:'7.4375rem'}/>
+                    </div>
+
                 </div>
                 <div className='flex w-full justify-between items-center h-[1.244375rem] mt-[-0.425rem]'>
                     <div className=' flex justify-between items-center' style={{ marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'0.2775rem', width:props.areaWidth?props.areaWidth:'7.596875rem',}}>
@@ -425,10 +430,12 @@ const CardMobile = (props:Props) => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full flex justify-between mt-[-1erm] ' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0.11rem' }}>
+                <div className='w-full flex justify-between mt-[-4.2rem] ' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0.11rem' }}>
                     <TagSwiper textSize='0.6875'/>
                 </div>
-                <div className='w-full flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.383125rem',columnGap:props.boxGapX?props.boxGapX:'1.08125rem',rowGap:props.boxGapY?props.boxGapY:'0.736875rem' }}>
+                <div className='w-[100%] flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.483125rem',columnGap:props.boxGapX?props.boxGapX:'1.08125rem',rowGap:props.boxGapY?props.boxGapY:'1.136875rem' }}>
+                    <div className=' scale-[1.0524]'>
+
                 <BoxMaster
                         BoxType='standerd'
                         flipType='zibra'
@@ -449,6 +456,9 @@ const CardMobile = (props:Props) => {
                             }
                         }
                     />
+                    </div>
+
+<div className=' scale-[1.0524]'>
 
                     <BoxMaster
                         BoxType='standerd'
@@ -470,6 +480,9 @@ const CardMobile = (props:Props) => {
                             }
                         }
                     />
+</div>
+                    <div className=' scale-[1.0524]'>
+
                     <BoxMaster
                         BoxType='standerd'
                         flipType='zibra'
@@ -490,6 +503,9 @@ const CardMobile = (props:Props) => {
                             }
                         }
                     />
+                    </div>
+                    <div className=' scale-[1.0524]'>
+
                     <BoxMaster
                         BoxType='standerd'
                         flipType='paymentPlan'
@@ -510,6 +526,9 @@ const CardMobile = (props:Props) => {
                             }
                         }
                     />
+                    </div>
+                    <div className=' scale-[1.0524]'>
+
                     <BoxMaster
                         BoxType='standerd'
                         flipType='simpleFlip'
@@ -530,6 +549,9 @@ const CardMobile = (props:Props) => {
                             }
                         }
                     />
+                    </div>
+                    <div className=' scale-[1.0524]'>
+
                     <BoxMaster
                         BoxType='standerd'
                         flipType='zibra'
@@ -550,6 +572,9 @@ const CardMobile = (props:Props) => {
                             }
                         }
                     />
+                    </div>
+
+                <div className=' scale-[1.0524]'>
 
                         <Contact
                             mainHeight={props.boxHeight?props.boxHeight:'5.011875rem'}
@@ -569,7 +594,11 @@ const CardMobile = (props:Props) => {
                             boxMR='0.48125rem'
                             lowerSectionTextSize='0.688125rem'
                         />
-                    <div>
+
+
+            </div>
+                    <div className='scale-[1.0524]'>
+
                         <Agent
                             Args={
                                 {

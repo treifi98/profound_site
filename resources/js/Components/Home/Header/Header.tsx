@@ -58,7 +58,7 @@ const Header = (props:Props) => {
                 paper:{
                     backgroundColor:'#E6EDED',
                     width:'80%',
-                    height:'calc(100vhd - 3.75rem)',
+                        height:'calc(100dvh - 3.75rem)',
                     // height:'max-content',
                     top:'3.75rem',
                     overflow:'auto'

@@ -43,7 +43,7 @@ const ViewAllButtonDynamic = (props:Props) => {
         <a href="#" className={` flex justify-center items-center gap-[0rem] border-[#DCE3E3] border-[0.0625rem] rounded-[2.51625rem] cursor-pointer`} style={{boxShadow:shadows[0] ,width:props.w?props.w:'8.875rem',height:props.h?props.h:'2.1875rem',marginLeft:props.ml?props.ml:'2.1875rem' }} ref={elmnt} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className=' flex justify-between items-center mx-auto' style={{ width:props.wrapperWidth?props.wrapperWidth:'7.131875rem' }}>
 
-                <div className='text-grade font-[600]' style={{ fontSize:props.textSize?props.textSize:'1.0625rem' }}>
+                <div className='text-grade font-[500]' style={{ fontSize:props.textSize?props.textSize:'1.0625rem' }}>
                     {props.text ?? 'View All'}
                 </div>
                 <img src={view_all_icon} alt="" className='' style={{ width:props.img_width?props.img_width:'0.5693755rem',height:props.imgHeight?props.imgHeight:'0.78rem',marginLeft:props.imgML?props.imgML:'0rem' }} />

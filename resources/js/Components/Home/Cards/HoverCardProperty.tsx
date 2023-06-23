@@ -17,11 +17,11 @@ const HoverCardProperty = (props:Props) => {
         <div className='!mx-auto cursor-pointer group h-[22rem] w-[16.9375rem] border-[#DCE3E3] border-[0.0625rem] rounded-[0.625rem] shadow-[-0.375rem_-0.375rem_0.75rem_#FFFFFF,0.375rem_0.375rem_0.75rem_#B1BDBF] flex justify-center items-center m-[1rem] z-[99999999] relative'>
             <div className='relative w-[15.0625rem] h-[20.1875rem] rounded-[0.625rem]'>
                 <CardImage src={props.img} w='15.0625' h='20.1875' rounded='0.625'/>
-                <div className='absolute w-full h-[4.375rem] bg-[#00000080] bottom-[0rem] rounded-[0.625rem] group-hover:h-full transition-all duration-[0.3s] flex flex-col overflow-hidden pl-[0.3125rem] gap-[0px] hover:shadow-[0px_0.25rem_0.25rem_rgba(0,0,0,0.25)]'>
-                    <div className='text-[#fff] text-[1.25rem] font-[600] h-[1.4375rem] group-hover:ml-[2.4rem] transition-all duration-[0.3s]'>
+                <div className='absolute w-full h-full bg-[#00000060] bottom-[0rem] rounded-[0.625rem] h-full transition-all duration-[0.3s] flex flex-col overflow-hidden pl-[0.3125rem] gap-[0px] hover:shadow-[0px_0.25rem_0.25rem_rgba(0,0,0,0.25)]'>
+                    <div className='text-[#fff] text-[1.25rem] font-[600] h-[1.4375rem] ml-[2.4rem] transition-all duration-[0.3s]'>
                         Creek Rise tower
                     </div>
-                    <div className='text-[#fff]  flex gap-[0.319375rem] items-center mt-[0.2rem] group-hover:ml-[3.2rem] transition-all duration-[0.3s]'>
+                    <div className='text-[#fff]  flex gap-[0.319375rem] items-center mt-[0.2rem] ml-[3.2rem] transition-all duration-[0.3s]'>
                         <div className='w-[0.806875rem] h-[0.806875rem]'>
                             <img src={map_icon} alt="" className=' w-[0.806875rem] h-[0.806875rem]'/>
                         </div>
@@ -30,11 +30,11 @@ const HoverCardProperty = (props:Props) => {
                             Dubai Creek Harbor
                         </div>
                     </div>
-                    <div className='text-[#fff] flex gap-[0.319375rem] items-center ml-[-0.225rem] mt-[0.20625rem] group-hover:hidden '>
+                    <div className='text-[#fff]  gap-[0.319375rem] items-center ml-[-0.225rem] mt-[0.20625rem] hidden '>
                         <div className='w-[1.135rem] h-[1.135rem]'>
                             <img src={price_tag_test} alt="" className=' w-[1.135rem] h-[1.135rem] rotate-[-45deg] '/>
                         </div>
-                        <div className='text-[0.75rem] font-[500]'>
+                        <div className='text-[0.75rem] font-[500] hidde'>
 
                             1,125,0000 AED
                         </div>
