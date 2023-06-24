@@ -2,10 +2,18 @@ import React from 'react'
 import InElementSeperator from '../Home/Cards/Common/InElementSeperator'
 import devabout from '../../../assets/devabout.svg'
 import SimpleSwiper from './SimpleSwiper'
+import AboutSwiper from './AboutSwiper'
 
-const AboutDeveloper = () => {
+
+interface Props{
+    screen?:Boolean
+}
+const AboutDeveloper = (props:Props) => {
   return (
-    <div>
+    <>
+    {
+        props.screen?(
+            <div>
         <div className='relative z-30 w-[calc(100vw-0.625rem)] mx-auto h-[3.125rem] rounded-[6.25rem] bg-[#E6EDED] border-[#DCE3E3] border-[1px] flex justify-between items-center px-[1.1875rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] mb-[0.3125rem] !font-[nova]'>
             <div className='flex  items-center w-[50%] justify-start'>
                 <img src={devabout} alt="" className='w-[5.375rem] h-[2.8125rem] '/>
@@ -34,6 +42,26 @@ const AboutDeveloper = () => {
             </div>
         </div>
     </div>
+        ):
+        (
+            <div className='w-[21.875rem] h-[64.375rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.625rem] overflow-hidden'>
+                <div className='w-[20.375rem] h-[25.875rem] mt-[0.94rem] rounded-[0.625rem] mx-auto overflow-hidden'>
+                    <AboutSwiper width='20.375rem' height='25.875rem' rounded='0.625rem'/>
+                </div>
+                <div className='mt-[1.13rem] w-[20.3125rem] h-[35.4375rem] rounded-[0.625rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF_inset,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF_inset] overflow-hidden mx-auto'>
+                    <div className='mt-[1.31rem] ml-[0.88rem] text-[1.25rem] font-[600] text-grade'>
+                        Latest Projects By Emaar
+                    </div>
+                    <div className='mt-[0.6875rem] ml-[0.88rem] overflow-y-scroll w-[91%] h-[31.9375rem] mb-[0.1rem] hide-scrollbar'>
+                        One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
+                        corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    </>
   )
 }
 

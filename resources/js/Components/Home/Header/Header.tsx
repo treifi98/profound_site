@@ -92,9 +92,9 @@ const Header = (props:Props) => {
             props.screen ?
             <div className={`w-full h-[6.25rem] relative z-10 font-[nova] bg-[url('../../../../assets/header.svg')] bg-no-repeat bg-cover bg-right-bottom`}>
             <div className='w-[calc(100%-5rem)] flex justify-between items-center h-[calc(100%-0.625rem)] mr-[5rem]'>
-                <Link href='/' className='max-h-[100%] self-center'>
+                <Link href='/' className=' ml-[1rem] rounded-[0.4665625rem] max-h-[100%] flex justify-center items-center self-center w-[13.3125rem] h-[4.375rem] shadow-[3.8469839096069336px_3.8469839096069336px_5.030787467956543px_2.132950782775879px_#002023,_-3.8469839096069336px_-3.8469839096069336px_6.398853302001953px_-2.132950782775879px_#007580] '>
 
-                    <img src={logo_img} alt="" className='lg:w-[13.31rem] w-[7.4375rem] h-[2.444375rem] lg:h-auto object-cover object-center'/>
+                    <img src={logo_img} alt="" className='lg:w-[11.3125rem] lg:h-[2.7825rem] w-[7.4375rem] h-[2.444375rem]  object-cover object-center'/>
                 </Link>
                     <div className='mx-[1.25rem] flex justify-center gap-[1.340625rem] items-center w-[calc(100%-15.81rem)]'>
                         <Search/>

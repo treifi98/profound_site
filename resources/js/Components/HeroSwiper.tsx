@@ -60,12 +60,12 @@ const HeroSwiper = (props:Props) => {
 
                 onSwiper={(swiper) => setSwiper(swiper)}
                 loop={true}
-                className="HeroSwiper"
+                className=" !h-full"
             >
                 {
                     props.projects.map((proj)=>(
 
-                        <SwiperSlide>
+                        <SwiperSlide className='h-full'>
                             <div className='w-[100vw] h-full relative'>
                                 <div className='absolute top-[11.25rem] z-20 w-[80%] mx-[10%] h-[6.25rem] text-center flex justify-center items-center flex-col'>
                                 <div className='text-[2.25rem] text-[#fff] font-[600]'>

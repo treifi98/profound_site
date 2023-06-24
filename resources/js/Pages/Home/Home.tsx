@@ -113,7 +113,7 @@ const Home = () => {
                 <div className='w-full h-full top-0 left-0 absolute overflow-hidden z-[-1] '>
                     <NewCardImage src={dubai} rounded='0'/>
                 </div>
-                <div className='mt-[4.75rem] mx-auto w-[20.5625rem] h-max text-[#002D31] text-[1.25rem] font-[600] text-center leading-[1.875rem]'>
+                <div className='mt-[4.75rem] mx-auto w-[20.5625rem] h-max text-[#fff] text-[1.25rem] font-[600] text-center leading-[1.875rem]'>
 
                     WE MAKE THE DREAM OF OWNING PERFECT HOME A REALITY.
                 </div>

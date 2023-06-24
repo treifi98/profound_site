@@ -62,6 +62,8 @@ const FliterBarMobile = () => {
             main.current.style.boxShadow = 'none'
             cont.current.style.height = '199px'
             cont.current.style.overflow = 'visible'
+            window.scrollTo({top: window.innerHeight, behavior: 'auto'});
+
             cont.current.style.paddingBottom = '1rem'
 
         }else{

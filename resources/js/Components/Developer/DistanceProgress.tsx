@@ -5,7 +5,8 @@ import pinIcon from '../../../assets/pin.svg'
 import Polygon1 from '../../../assets/Polygon1.svg'
 
 interface Props{
-    distance:number
+    distance:number,
+    textSize?:string
 }
 const DistanceProgress = (props:Props) => {
     const maxDistance = 20
@@ -20,7 +21,7 @@ const DistanceProgress = (props:Props) => {
 
                 </div>
                 <div className='absolute top-[-3.0625rem] w-[7.5rem] left-[calc(50%-3.75rem)] h-[2.375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[6.25rem] shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
-                    <div className='text-grade text-[1.125rem]'>
+                    <div className='text-grade ' style={{ fontSize:props.textSize?props.textSize:'1.125rem' }}>
 
                         {props.distance} Km
                     </div>
