@@ -69,8 +69,8 @@ const InquiryFormWiht = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[23.4375rem] h-max rounded-[0.625rem] bg-[#E6EDED] flex justify-center items-center !font-[nova] py-[1rem]'>
-                <div className='w-[21.875rem] h-full flex flex-col-reverse gap-[1rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.671375rem]'>
+                <div className='!w-[100vw] h-max rounded-[0.625rem] bg-[#E6EDED] flex justify-center items-center !font-[nova] py-[1rem]'>
+                <div className='w-[21.875rem] h-full flex flex-col-reverse gap-[1rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.671375rem] mx-auto'>
                     <div className='flex justify-center items-center w-[21.875rem] h-max rounded-[0.971875rem] bg-[#E6EDED]  '>
                         <div className='w-[21.875rem] h-full mx-auto'>
                             <div className='flex flex-col-reverse gap-[1.19rem] w-full h-max items-center'>

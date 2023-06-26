@@ -68,9 +68,9 @@ const InquiryFormGreen = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[23.4375rem] h-max rounded-[0.625rem] bg-[#002D31] flex justify-center items-center !font-[nova] py-[1rem]'>
-                    <div className='w-[21.875rem] h-full flex flex-col-reverse gap-[1rem]  shadow-[4.387387752532959px_4.387387752532959px_7.019820690155029px_0px_#011618,-4.387387752532959px_-4.387387752532959px_7.019820690155029px_0px_#04626B] rounded-[0.671375rem]'>
-                        <div className='flex justify-center items-center w-[21.875rem] h-max rounded-[0.971875rem] bg-[#002D31]  '>
+                <div className='w-[100vw] h-max rounded-[0.625rem] bg-[#002D31] flex justify-center items-center !font-[nova] py-[1rem]'>
+                    <div className='w-[21.875rem] h-full flex flex-col-reverse gap-[1rem] mx-auto shadow-[4.387387752532959px_4.387387752532959px_7.019820690155029px_0px_#011618,-4.387387752532959px_-4.387387752532959px_7.019820690155029px_0px_#04626B] rounded-[0.671375rem]'>
+                        <div className='flex justify-center items-center w-[21.875rem] h-max rounded-[0.971875rem] bg-[#002D31] mx-auto '>
                             <div className='w-[21.875rem] h-full mx-auto'>
                                 <div className='flex flex-col-reverse gap-[1.19rem] w-full h-max items-center'>
                                     <div className='flex h-full w-[19.195rem] flex-col gap-[2.25rem]'>

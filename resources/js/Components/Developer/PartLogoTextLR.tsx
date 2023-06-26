@@ -42,10 +42,10 @@ const PartLogoTextLR = (props:Props) => {
             )
             :
             (
-                <div className='w-[21.875rem] h-max flex items-center justify-center bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.625rem]'>
+                <div className='w-[100vw] h-max flex items-center justify-center bg-[#E6EDED] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] '>
                     <div className='w-[20.3125rem] h-max flex flex-col-reverse gap-[1rem] mx-auto py-[1rem]'>
 
-                        <div className='h-full w-full border-[#DCE3E3] border-[0.0625rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF_inset,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF_inset] rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
+                        <div className='h-full w-full border-[#DCE3E3] border-[0.0625rem] shadow-[4px_4px_7px_0px_rgba(186,191,191,0.80)_inset,-5px_-5px_10px_0px_#FFF_inset] rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
 
 
                             <div className='w-[18.625rem] mx-auto'>
@@ -59,8 +59,8 @@ const PartLogoTextLR = (props:Props) => {
                             </div>
                         </div>
                         <div className='w-full h-[20.60056rem] flex justify-center items-center'>
-                            <div className='w-full h-[20.60056rem] flex justify-center items-center rounded-[11.114px_109.74px_7.401px_109.74px] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
-                                <img src={imgLT} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[11.114px_109.74px_7.401px_109.74px]'/>
+                            <div className='w-full h-[20.60056rem] flex justify-center items-center rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
+                                <img src={imgLT} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem]'/>
                             </div>
                         </div>
                     </div>
