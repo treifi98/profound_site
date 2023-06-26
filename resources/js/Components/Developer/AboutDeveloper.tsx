@@ -44,7 +44,7 @@ const AboutDeveloper = (props:Props) => {
     </div>
         ):
         (
-            <div className='w-[21.875rem] h-max shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.625rem] overflow-hidden pb-[1rem]'>
+            <div className='w-[100vw] h-max shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF]  overflow-hidden pb-[1rem]'>
                 <div className='w-[20.375rem] h-[25.875rem] mt-[0.94rem] rounded-[0.625rem] mx-auto overflow-hidden'>
                     <AboutSwiper width='20.375rem' height='25.875rem' rounded='0.625rem'/>
                 </div>

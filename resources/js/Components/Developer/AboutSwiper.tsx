@@ -51,14 +51,14 @@ const AboutSwiper = (props:Props) => {
     }
 
   return (
-    <div className=' relative bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem]  rounded-[] flex items-center' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+    <div className=' relative bg-[#E6EDED]   rounded-[] flex items-center' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
             {/* <div className='absolute w-[2.625rem] h-[1.9375rem] cursor-pointer left-[-4.6rem] top-[calc(50%-0.96875rem)] z-[999999]'  onClick={() => swiper.slidePrev()}>
                 <img src={arrowIcon} alt="" className='h-full w-full'/>
             </div>
             <div className='absolute w-[2.625rem] h-[1.9375rem] cursor-pointer right-[-4.6rem] top-[calc(50%-0.96875rem)] rotate-180 z-[999999]'  onClick={() => swiper.slideNext()}>
                 <img src={arrowIcon} alt="" className='h-full w-full'/>
             </div> */}
-            <div className=' flex justify-center items-center  mx-auto bg-[#E6EDED] overflow-hidden rounded-[] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,inset_0.33392625rem_0.33392625rem_0.66785rem_#BABFBF]' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+            <div className=' flex justify-center items-center  mx-auto bg-[#E6EDED] overflow-hidden rounded-[]  shadow-[inset_-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,inset_0.33392625rem_0.33392625rem_0.66785rem_#BABFBF]' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
 
                 <div className='mx-auto  overflow-hidden' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}>
                     <Swiper

@@ -96,7 +96,7 @@ const Developer = () => {
                     <div className=' mt-[7.4375rem] w-[91.25rem] flex justify-start mx-auto'>
                         <Tracer crumbs={[{title:'Home',link:'/'},{title:'Developers',link:'/developers'},{title:'Emaar',link:'/developer/emar'}]}/>
                     </div>
-                    <div className='mx-auto mt-[0.625rem] w-[91.25rem]'>
+                    <div className='mx-auto mt-[0.625rem] w-min'>
                         <Crooked screen={screenLG}/>
                     </div>
                     <div className='w-full mt-[5rem]'>
@@ -107,7 +107,7 @@ const Developer = () => {
             ):
             (
                 <>
-                <div className='mx-auto mt-[0.625rem] w-[91.25rem]'>
+                <div className='mx-auto mt-[0.625rem] w-min'>
                         <Crooked screen={screenLG}/>
                     </div>
                  <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>

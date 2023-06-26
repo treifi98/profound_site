@@ -73,7 +73,7 @@ const Crooked = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[23.4375rem] h-max shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.625rem] overflow-hidden'>
+                <div className='w-[100vw] h-max shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.625rem] overflow-hidden'>
                     <div className='w-full h-[5.62181rem] shadow-[2.892374277114868px_2.892374277114868px_4.049324035644531px_0px_#B6C3C5,-2.892374277114868px_-2.892374277114868px_4.627798557281494px_0px_#FFF] flex items-center '>
                         <div className='w-[21.220625rem] h-full flex justify-between items-center mx-auto'>
                             <div className='w-full flex flex-col justify-center'>
@@ -99,12 +99,12 @@ const Crooked = (props:Props) => {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[1.27rem] w-[21.9375rem] h-[16.66469rem] shadow-[-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center rounded-[0.520625rem] mx-auto'>
+                    <div className='mt-[1.27rem] w-[21.9375rem] h-[16.66469rem] shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center rounded-[0.520625rem] mx-auto'>
                         <div className='w-[20.39263rem] h-[15.18338rem] rounded-[0.520625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5]'>
                             <AboutSwiper height='15.18338rem' width='20.39263rem' rounded='0.520625rem'/>
                         </div>
                     </div>
-                    <div className='mt-[1.71rem] w-[21.9375rem] h-[17.75rem] shadow-[6.161636829376221px_6.161636829376221px_12.323273658752441px_0px_#BABFBF_inset,-6.161636829376221px_-6.161636829376221px_10px_0px_#FFF_inset] rounded-[0.49rem] mx-auto !mb-[1rem] overflow-hidden flex flex-col gap-[1rem]'>
+                        <div className='mt-[1.71rem] w-[21.9375rem] h-[17.75rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] border-[0.5px] border-[#DCE3E3]  rounded-[0.49rem] mx-auto !mb-[1rem] overflow-hidden flex flex-col gap-[1rem]'>
                         <div className='mx-auto w-min mt-[1.25rem]'>
 
                             <InfoShape img={claender} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.188125rem' imgWidth='2.02rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
