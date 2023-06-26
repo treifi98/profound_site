@@ -27,7 +27,7 @@ const MainLayout = (props:Props) => {
 
         <Header screen={screenLG}/>
             {props.children}
-        <Footer/>
+        <Footer screen={screenLG}/>
     </div>
 
   )

@@ -25,7 +25,8 @@ import CardTag from '../Common/CardTag';
 interface Props{
     cardMT?:string,
     cardMB?:string,
-    barTitle?:string
+    barTitle?:string,
+    textSize?:string
 }
 const TagSwiper = (props:Props) => {
     const swiperRef = useRef(null);
@@ -79,19 +80,43 @@ const TagSwiper = (props:Props) => {
 
                             <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
 
-                                    <CardTag text='Appartment Appartment Appartment ' textSize='0.875'/>
+                                    <CardTag text='Appartment Appartment Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
                             </SwiperSlide>
                             <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
 
-                                    <CardTag text='Appartment Appartment ' textSize='0.875'/>
+                                    <CardTag text='Appartment Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
                             </SwiperSlide>
                             <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
 
-                                    <CardTag text='Appartment  ' textSize='0.875'/>
+                                    <CardTag text='Appartment  ' textSize={props.textSize?props.textSize:'0.875' }/>
                             </SwiperSlide>
                             <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
 
-                                    <CardTag text=' Appartment ' textSize='0.875'/>
+                                    <CardTag text=' Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
+                            </SwiperSlide>
+                            <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
+
+                                    <CardTag text=' Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
+                            </SwiperSlide>
+                            <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
+
+                                    <CardTag text='Appartment Appartment Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
+                            </SwiperSlide>
+                            <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
+
+                                    <CardTag text='Appartment Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
+                            </SwiperSlide>
+                            <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
+
+                                    <CardTag text='Appartment  ' textSize={props.textSize?props.textSize:'0.875' }/>
+                            </SwiperSlide>
+                            <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
+
+                                    <CardTag text=' Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
+                            </SwiperSlide>
+                            <SwiperSlide className='transition-all !mr-[20px] !ml-[0.2rem] !w-max' >
+
+                                    <CardTag text=' Appartment ' textSize={props.textSize?props.textSize:'0.875' }/>
                             </SwiperSlide>
                         </div>
                 // )})

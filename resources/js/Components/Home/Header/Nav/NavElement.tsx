@@ -5,7 +5,7 @@ import { RootState } from '@/store'
 import MenueChild from '../MenueChild'
 import FiltersContainer from '../../FiltersAndSearch/FiltersContainer'
 import hauseIcon from '../../../../../assets/house.svg'
-import { displayForNav, hideForNav } from '../../MenueHoverSlice'
+import { displayForNav, hideForNav,removeGracePeriod } from '../../MenueHoverSlice'
 import OneCardSwiper from './OneCardSwiper'
 import InhoverLinks from './InhoverLinks'
 import NavHoverCoordinator from './NavHoverCoordinator'
@@ -30,6 +30,7 @@ const NavElement = (props:props) => {
         // e.target.style.boxShadow = 'inset -3px -3px 4px #04626B, inset 4px 4px 6px #011618'
     }
     const handleMouseLeave=(e:any)=>{
+        dispatch(removeGracePeriod())
         dispatch(hideForNav())
 
         // e.target.style.boxShadow = '-0.19508rem -0.19508rem 0.324484375rem -0.10816125rem #007580, 0.19508rem 3.12128px 0.25511rem #011618'

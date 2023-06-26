@@ -25,7 +25,7 @@ interface Args{
 
 }
 const StanderdBox = ({Args,flipComp,flipArgs}:Args) => {
-    const [shadows,setShadows] = useState(['-0.3011875rem -0.3011875rem 0.34340875rem #FFFFFF,0.228939375rem 0.228939375rem 0.34340875rem #B6C3C5'])
+    const [shadows,setShadows] = useState(['0.1799906045198441rem 0.1799906045198441rem 0.2699858844280243rem 0px #B6C3C5, -0.2367920726537704rem -0.2367920726537704rem 0.2699858844280243rem 0px #FFF'])
     useEffect(() => {
         let scale = 1
         if(Args.mainHeight){
@@ -59,11 +59,11 @@ const StanderdBox = ({Args,flipComp,flipArgs}:Args) => {
     const ogBox = useRef(null)
     const flipBox = useRef(null)
     return (
-        <div className=' cursor-pointer relative rounded-[0.3125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] font-[nova]' style={{ width: Args.mainWidth ? Args.mainWidth: '5.3125rem', height: Args.mainHeight ? Args.mainHeight: '6.375rem' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className=' cursor-pointer relative rounded-[0.3125rem] bg-[#E6EDED]  font-[nova]' style={{ width: Args.mainWidth ? Args.mainWidth: '5.3125rem', height: Args.mainHeight ? Args.mainHeight: '6.375rem' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {/* Box */}
             <div className='rounded-[0.3125rem] absolute group-hover:opacity-0 transition-all opacity-100 flex flex-col items-center ' style={{boxShadow:shadows[0], width: Args.mainWidth ? Args.mainWidth: '5.3125rem', height: Args.mainHeight ? Args.mainHeight: '6.375rem' }} ref={ogBox}>
                 <img src={Args.img} alt="" className='object-contain object-center' style={{ width: Args.imgWidth ? Args.imgWidth: '1.954375rem',height: Args.imgHeight? Args.imgHeight: '1.95125rem', marginTop: Args.imgMT ? Args.imgMT: '0.375rem' }}/>
-                <div className='text-[#002d31] font-[400] text-center' style={{lineHeight:Args.lineHeight?Args.lineHeight:'0.91375rem', width: Args.textWidth? Args.textWidth : '4.6375rem', fontSize: Args.textSize? Args.textSize: '0.75rem',marginTop: Args.textMT? Args.textMT: '0.253125rem', marginBottom: Args.textMB? Args.textMB: '0.233125rem' }}>
+                <div className='text-[#002d31] font-[500] text-center' style={{lineHeight:Args.lineHeight?Args.lineHeight:'0.91375rem', width: Args.textWidth? Args.textWidth : '4.6375rem', fontSize: Args.textSize? Args.textSize: '0.75rem',marginTop: Args.textMT? Args.textMT: '0.253125rem', marginBottom: Args.textMB? Args.textMB: '0.233125rem' }}>
                     {Args.text}
                 </div>
                 <div className='bg-custom-gradient rounded-[0rem_0rem_0.3125rem_0.3125rem] flex justify-center items-center font-[400] ' style={{ width: Args.mainWidth? Args.mainWidth: '5.3125rem', height: Args.lowerSectionHeight? Args.lowerSectionHeight: '1.6875rem', fontSize: Args.lowerTextSize? Args.lowerTextSize: '0.875rem'}}>

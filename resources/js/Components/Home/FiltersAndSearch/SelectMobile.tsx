@@ -135,7 +135,7 @@ const SelectMobile = (props:Props) => {
         </div>
         {
             (openState && isComponentVisible) && (
-            <div className='absolute w-full top-[1.75rem] left-[0rem] rounded-[0.63rem] h-[20.875rem] z-[999999999] ' style={{ width:props.width? (props.width+1)+'rem': '14.75rem' }}>
+            <div className='absolute w-full top-[1.75rem] left-[0rem] rounded-[0.63rem] h-[20.875rem] z[9]] ' style={{ width:props.width? (props.width+1)+'rem': '14.75rem' }}>
                 <div className='select_component w-full bg-[#E6EDED] top-[0rem] mt-[0.875rem] left-[0rem] h-[20rem] overflow-y-hidden border-[0.06rem] rounded-[0.63rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center ' onClick={(e) => e.stopPropagation()} style={{ width:props.width? props.width+'rem': '10.575rem' }}>
                     {
                         <div className='w-[100%] flex flex-col items-center h-[20rem] overflow-y-scroll gap-[0.8125rem] relative z-[9999] t-[0.4rem] py-[0.8125rem]'style={openState ? mountedStyle : unmountedStyle}>

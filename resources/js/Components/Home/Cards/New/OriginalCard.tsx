@@ -567,6 +567,8 @@ const OriginalCard = (props:Props) => {
                             emailHeight='0.546875rem'
                             boxMB='0.48125rem'
                             boxMR='0.48125rem'
+                            lowerSectionMT='0.56rem'
+
                         />
                     <div>
                         <Agent

@@ -7,7 +7,8 @@ import InElementSeperator from '../Home/Cards/Common/InElementSeperator';
 interface Props{
     itemsPerPage:number,
     totalCount:number,
-    prefix:string
+    prefix:string,
+    screen?:Boolean,
     // page:number,
 
 }
@@ -66,7 +67,9 @@ const Pagination = (props:Props) => {
 
         }
         {
-            (page <= 6)?
+            (props.screen)?
+            ((page <= 6)?
+
                [1,2,3,4,5,6,7].map((e,index)=>(
                     (index == 6)?(
                         <>
@@ -106,10 +109,47 @@ const Pagination = (props:Props) => {
                 )
                )
             :(<></>)
+        ):(
+            (page <= 3)?
 
+                [1,2,3,4].map((e,index)=>(
+                    (index == 3)?(
+                        <>
+
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                ...
+                                </div>
+                            </div>
+                        <Link  href={`${props.prefix}?page=${props.totalCount}`}>
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                    {props.totalCount}
+                                </div>
+                            </div>
+                        </Link>
+                        </>
+
+                    ):(
+
+                        <Link  href={`${props.prefix}?page=${index+1}`}>
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                    {index+1}
+                                </div>
+                            </div>
+                        </Link>
+                    )
+
+
+                )
+                )
+            :(<></>)
+        )
         }
         {
-            (page >= props.totalCount-4)?(
+            (props.screen)?
+            ((page >= props.totalCount-4)?(
             //    [1,2,3,4,5,6,7].map((e,index)=>(
 
                     <>
@@ -178,12 +218,58 @@ const Pagination = (props:Props) => {
 
                 // )
                )
-            :(<></>)
+            :(<></>)):(
+                (page >= props.totalCount-1)?(
+                    //    [1,2,3,4,5,6,7].map((e,index)=>(
+
+                            <>
+                                <Link  href={`${props.prefix}?page=${1}`}>
+                                    <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                        <div className='text-grade text-[1.25rem]'>
+                                            {1}
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link  href={`${props.prefix}?page=${2}`}>
+                                    <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                        <div className='text-grade text-[1.25rem]'>
+                                            {2}
+                                        </div>
+                                    </div>
+                                </Link>
+                                <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                    <div className='text-grade text-[1.25rem]'>
+                                        ...
+                                    </div>
+                                </div>
+
+
+                                <Link  href={`${props.prefix}?page=${props.totalCount-1}`}>
+                                    <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                        <div className='text-grade text-[1.25rem]'>
+                                            {props.totalCount-1}
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link  href={`${props.prefix}?page=${props.totalCount}`}>
+                                    <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                        <div className='text-grade text-[1.25rem]'>
+                                            {props.totalCount}
+                                        </div>
+                                    </div>
+                                </Link>
+                            </>
+
+                        // )
+                       )
+                    :(<></>)
+            )
 
         }
 
 {
-            (page < props.totalCount-4 && page > 6)?
+            (props.screen) ?
+            ((page < props.totalCount-4 && page > 6)?
                 (
                     <>
 
@@ -250,7 +336,54 @@ const Pagination = (props:Props) => {
                 )
 
 
+            :(<></>)):(
+                (page < props.totalCount-1 && page > 3)?
+                (
+                    <>
+
+
+                        <Link  href={`${props.prefix}?page=${page-2}`}>
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                    {page-2}
+                                </div>
+                            </div>
+                        </Link>
+                        <Link  href={`${props.prefix}?page=${page-1}`}>
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                    {page-1}
+                                </div>
+                            </div>
+                        </Link>
+                        <Link  href={`${props.prefix}?page=${page}`}>
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                    {page}
+                                </div>
+                            </div>
+                        </Link>
+                        <Link  href={`${props.prefix}?page=${page+1}`}>
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                    {page+1}
+                                </div>
+                            </div>
+                        </Link>
+                        <Link  href={`${props.prefix}?page=${page+2}`}>
+                            <div className='rounded-[0.135625rem] w-[3.125rem] h-full flex justify-center items-center border-[#DCE3E3] border-[0.0625rem] shadow-[-0.204044375rem_-0.204044375rem_0.27205875rem_#FFFFFF,0.204044375rem_0.204044375rem_0.27205875rem_#B6C3C5]'>
+                                <div className='text-grade text-[1.25rem]'>
+                                    {page+2}
+                                </div>
+                            </div>
+                        </Link>
+
+                    </>
+                )
+
+
             :(<></>)
+            )
 
         }
 

@@ -106,7 +106,7 @@ const ButtonSelectMobile = (props:Props) => {
                         <div className='w-[90%] h-[7.25rem] grid grid-cols-3 mx-auto gap-[0.625rem] 'style={openState ? mountedStyle : unmountedStyle}>
                             {
                                 props.options.map((option, index) => (
-                                    <div className='w-[2.63rem] h-[1.56rem] flex justify-center items-center rounded-[0.50rem] bg-[#E6EDED] ' onClick={() => handleButtonClick(index,option.value)} key={option.value} ref={refs[index]} style={{ boxShadow:'-0.15865375rem -0.15865375rem 0.264423125rem #FFFFFF, 0.264423125rem 0.264423125rem 0.3701925rem #B6C3C5' }}>
+                                    <div className='w-[2.63rem] h-max flex justify-center items-center rounded-[0.50rem] bg-[#E6EDED] ' onClick={() => handleButtonClick(index,option.value)} key={option.value} ref={refs[index]} style={{ boxShadow:'-0.15865375rem -0.15865375rem 0.264423125rem #FFFFFF, 0.264423125rem 0.264423125rem 0.3701925rem #B6C3C5' }}>
                                         <div style={index == 0?{ fontSize:'0.6875rem',fontWeight:'600' }:{fontSize:'0.951875rem',fontWeight:'400'} } className='text-grade font-[600]' key={option.value}>
 
                                             {option.lable}

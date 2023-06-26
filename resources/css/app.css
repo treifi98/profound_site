@@ -50,11 +50,30 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 body{
     background-color: #E6EDED;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .mySwiper{
     background-color: #E6EDED;
@@ -421,3 +440,9 @@ svg
     opacity: 0;
     transition: opacity 500ms;
   }
+
+  .paper
+{
+    background-color: #f00 !important;
+    width: 1000px;
+}

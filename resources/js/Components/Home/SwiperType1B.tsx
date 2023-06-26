@@ -220,13 +220,13 @@ const SwiperType1B = (props:Props) => {
                 imgWidth:'1.875rem',
                 imgHeight:'1.875rem',
                 imgMT:'0.325rem',
-                textMB:'0.25rem',
-                textMT:'0.425rem',
+                textMB:'0.24rem',
+                textMT:'0.325rem',
                 lineHeight:'0.879375rem',
                 textSize:'0.721875rem',
                 lowerSectionHeight:'1.62375rem',
                 lowerTextSize:'0.841875rem',
-                textWidth:'5.38625rem',
+                textWidth:'3.75rem',
 
 
             },

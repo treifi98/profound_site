@@ -22,6 +22,7 @@ import ProjectCard from '@/Components/Developer/Cards/ProjectCard'
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState  } from '@/store'
 import{check, unCheck, reset, checkSingle, toggle} from '../Components/Home/FiltersAndSearch/CoreFilters/CheckComponentSlice'
+import { addGracePeriod, hideForNav } from '@/Components/Home/MenueHoverSlice'
 
 
 const Project = () => {
@@ -90,6 +91,8 @@ const Project = () => {
 
 
     useEffect(()=>{
+        dispatch(addGracePeriod())
+        dispatch(hideForNav())
         setMapOn(false)
         // try{
 

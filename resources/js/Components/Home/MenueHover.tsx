@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '@/store'
-import { setHoverState } from './MenueHoverSlice'
+import { setHoverState,removeGracePeriod } from './MenueHoverSlice'
 
 
 // interface Props{
@@ -12,6 +12,7 @@ const MenueHover = () => {
     // const [openState,setOpenState] = useState(false)
     const openState = useSelector((state:RootState) => state.menue.open)
     const hoverState = useSelector((state:RootState) => state.menue.hoverd)
+    const graceperiod = useSelector((state:RootState) => state.menue.gracePeriod)
     // const hoverId = useSelector((state:RootState) => state.menue.hoverId)
     const childComponent = useSelector((state:RootState) => state.menue.child)
     const ref = useRef(null)
@@ -24,8 +25,9 @@ const MenueHover = () => {
             ref.current.style.height="100vh"
             // ref.current.style.marginBottom="100vh"
         }
-        else if(hoverState){
+        else if(hoverState && !graceperiod){
             ref.current.style.height="25.25rem"
+            // alert(graceperiod)
 
         }
         else{
@@ -36,7 +38,7 @@ const MenueHover = () => {
     },[openState, hoverState])
 
     return (
-        <div className='h-[0rem] w-full bg-[#E6EDED] absolute top-[calc(6.25rem-1px)] transition-all duration-[0.4s] overflow-hidden flex items-center' ref={ref} onMouseEnter={() => dispatch(setHoverState(true))} onMouseLeave={() => dispatch(setHoverState(false))}>
+        <div className='h-[0rem] w-full bg-[#E6EDED] absolute top-[calc(6.25rem-1px)] transition-all duration-[0.4s] overflow-hidden flex items-center' ref={ref} onMouseEnter={() => dispatch(setHoverState(true))} onMouseLeave={() => {dispatch(setHoverState(false))}}>
             {childComponent}
         </div>
     )

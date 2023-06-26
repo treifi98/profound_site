@@ -29,7 +29,7 @@ const CardTag = (props:Props) => {
         elmnt.current.style.boxShadow = shadows[0]
     }
     return (
-        <div className={`h-[1.5rem] my-[0.5rem] w-fit  px-[20px] rounded-[3.125rem] border-[0.0625rem] border-[#DCE3E3] bg-[#E6EDED] items-center font-[nova] cursor-pointer `} ref={elmnt} style={{ boxShadow:shadows[0]}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`h-[1.5rem] my-[0.5rem] flex items-center w-fit  px-[20px] rounded-[3.125rem] border-[0.0625rem] border-[#DCE3E3] bg-[#E6EDED]  font-[nova] cursor-pointer `} ref={elmnt} style={{ boxShadow:shadows[0]}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='text-grade' style={{ fontSize:props.textSize ? props.textSize + 'rem' : '0.875rem' ,fontWeight:props.textWeight ? props.textWeight : '600'}} >
                 {props.text}
             </div>

@@ -22,7 +22,8 @@ interface Props{
     emailHeight?:string,
     phoneWidth?:string,
     phoneHeight?:string,
-    mT?:string
+    mT?:string,
+    lowerSectionMT?:string,
 
 }
 const Contact = (props:Props) => {
@@ -70,7 +71,7 @@ const Contact = (props:Props) => {
                     </div>
                 </div>
 
-                <div className=' bg-custom-gradient shadow-[0rem_0.25rem_0.25rem_rgba(0,0,0,0.25)] flex justify-center items-center rounded-[0rem_0rem_0.3125rem_0.3125rem]' style={{ width: props.mainWidth? props.mainWidth: '5.3125rem',height:props.lowerSectionHeight? props.lowerSectionHeight : '1.6875rem' }}>
+                <div className=' bg-custom-gradient shadow-[0rem_0.25rem_0.25rem_rgba(0,0,0,0.25)] flex justify-center items-center rounded-[0rem_0rem_0.3125rem_0.3125rem]' style={{marginTop:props.lowerSectionMT?props.lowerSectionMT:'0rem', width: props.mainWidth? props.mainWidth: '5.3125rem',height:props.lowerSectionHeight? props.lowerSectionHeight : '1.6875rem' }}>
                     <div className='text-[#E6EDED] font-[600]' ref={text} style={{ fontSize: props.lowerSectionTextSize? props.lowerSectionTextSize: '0.875rem' }}>
                         Contact Us
                     </div>
