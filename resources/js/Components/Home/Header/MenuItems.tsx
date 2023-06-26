@@ -24,6 +24,7 @@ import binociolars from '../../../../assets/binociolars.svg'
 import eng_flag from '../../../../assets/engflag.svg'
 import f from '../../../../assets/f.svg'
 import AboutSwiperMobile from './Nav/AboutSwiperMobile';
+import { Link } from '@inertiajs/react';
 
 
 
@@ -94,9 +95,9 @@ const MenuItems = () => {
                     <div className='absolute w-[200%] h-[200%] top-0 left-0 z-[99]' onClick={(e)=>toggleOpen(e,'ff')} id = '2' >
 
                     </div>
-                    <div className='text-grade text-[0.925rem] font-[400] ' >
+                    <Link href="/buy" className='text-grade text-[0.925rem] font-[400] relative z-[999] ' >
                         Buy
-                    </div>
+                    </Link>
                     <img src={plus} alt=""   className='transition-all '/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='ff'>
@@ -164,9 +165,9 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[0.925rem] font-[400] 'id='anchor'>
+                    <Link href="/rent" className='text-grade text-[0.925rem] font-[400] relative z-[999] 'id='anchor'>
                         Rent
-                    </div>
+                    </Link>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='rent'>
@@ -233,9 +234,9 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[0.925rem] font-[400] '>
+                    <Link href="/" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                         Projects
-                    </div>
+                    </Link>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='projects'>
@@ -302,9 +303,9 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[0.925rem] font-[400] '>
+                    <Link href="/areas" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                         Areas
-                    </div>
+                    </Link>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='area'>
@@ -373,9 +374,9 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[0.925rem] font-[400] '>
+                    <Link href="/developers" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                         Developers
-                    </div>
+                    </Link>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='developer'>
@@ -414,9 +415,9 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[0.925rem] font-[400] '>
+                    <Link href="/" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                         Insider
-                    </div>
+                    </Link>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='insider'>
@@ -455,9 +456,9 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[0.925rem] font-[400] '>
+                    <Link href="/" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                         Services
-                    </div>
+                    </Link>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='services'>
@@ -527,9 +528,9 @@ const MenuItems = () => {
 
                     {/*  */}
 
-                    <div className='text-grade text-[0.925rem] font-[400] '>
+                    <Link href="/" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                         About us
-                    </div>
+                    </Link>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
                 <div className='max-h-0 w-full  transition-all duration-[0.5s] overflow-hidden menuItemList' id='about'>
@@ -572,7 +573,7 @@ const MenuItems = () => {
                         <AboutSwiperMobile/>
                     </div>}
 
-                    
+
                 </div>
             </div>
           </ListItem>
@@ -588,9 +589,9 @@ const MenuItems = () => {
                     {/*  */}
                     <div className='w-min flex gap-[0.3rem]'>
 
-                        <div className='text-grade text-[0.925rem] font-[400] '>
+                        <Link href="/" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                             EN
-                        </div>
+                        </Link>
                         <img src={eng_flag} alt="" className='xd' />
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
@@ -651,9 +652,9 @@ const MenuItems = () => {
                     {/*  */}
                     <div className='w-min flex gap-[0.3rem]'>
 
-                        <div className='text-grade text-[0.925rem] font-[400] '>
+                        <Link href="/" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                             AED
-                        </div>
+                        </Link>
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>
@@ -696,9 +697,9 @@ const MenuItems = () => {
                     {/*  */}
                     <div className='w-min flex gap-[0.3rem]'>
 
-                        <div className='text-grade text-[0.925rem] font-[400] '>
+                        <Link href="/" className='text-grade text-[0.925rem] font-[400] relative z-[999] '>
                             SQ.FT
-                        </div>
+                        </Link>
                     </div>
                     <img src={plus} alt=""  className='transition-all'/>
                 </div>

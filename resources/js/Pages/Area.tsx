@@ -38,6 +38,7 @@ import krane from '../../assets/construction.svg'
 import DeveloperCard from '@/Components/Home/Cards/DeveloperCard'
 import emar_logo from '../../assets/emar_logo.png'
 import devSec from '../../assets/devSec.svg'
+import AreasMobile from '@/Components/Developer/AreasMobile'
 
 
 const Area = () => {
@@ -75,12 +76,12 @@ const Area = () => {
     <MainLayout1>
         {/* <HeroSection1/> */}
         {/* <div></div> */}
-      <div className=' mt-[7.4375rem] w-[91.25rem] flex justify-start mx-auto'>
-        <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas',link:'/areas'},{title:'Dubai Marina',link:'/area/marina'}]}/>
-      </div>
       {
         screenLG?
         <>
+            <div className=' mt-[7.4375rem] w-[91.25rem] flex justify-start mx-auto'>
+                <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas',link:'/areas'},{title:'Dubai Marina',link:'/area/marina'}]}/>
+            </div>
             <div className='mx-auto mt-[0.625rem] w-[91.25rem]'>
                 <NoCrooked screen={screenLG}/>
             </div>
@@ -99,10 +100,13 @@ const Area = () => {
         </>
         :
         <>
-            <div className='w-min mx-auto mt-[2rem]'>
+            <div className=' mt-[1.4375rem] w-max flex justify-start ml-[1rem] scale-[0.8] origin-[0%_0%]'>
+                <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas',link:'/areas'},{title:'Dubai Marina',link:'/area/marina'}]}/>
+            </div>
+            <div className='w-min mx-auto mt-[1rem]'>
                 <NoCrooked screen={screenLG}/>
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
                 <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
                     <div className='w-[100%]  mx-auto'>
@@ -720,7 +724,7 @@ const Area = () => {
                 </div>
             </div>
 
-            <div className='!w-[100vw] h-[31.1875rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
+            <div className='!w-[100vw] h-[31.1875rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem] mb-[1rem]'>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
                 <div className='w-full h-[24.02875rem] flex justify-center items-center'>
                     <div className='w-[100%] h-[24.02875rem]  mx-auto'>
@@ -762,7 +766,7 @@ const Area = () => {
                 </div>
 
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
                 <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
                     <div className='w-[100%]  mx-auto'>
@@ -1379,7 +1383,7 @@ const Area = () => {
 
                 </div>
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
                 <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
                     <div className='w-[100%]  mx-auto'>
@@ -2010,51 +2014,56 @@ const Area = () => {
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <MapContainer/>
+        <MapContainer screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <LogoTextRL/>
+        <LogoTextRL screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextOGRL/>
+        <PartLogoTextOGRL screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextLR/>
+        <PartLogoTextLR screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextRL/>
+        <PartLogoTextRL screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextOGLR/>
+        <PartLogoTextOGLR screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <InquiryFormGreen/>
+        <InquiryFormGreen screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <SquareTextLR/>
+        <SquareTextLR screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <SquareTextRL/>
+        <SquareTextRL screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <DoublrBoxesDoubleText/>
+        <DoublrBoxesDoubleText screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <InquiryFormWiht/>
+        <InquiryFormWiht screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem] mb-[5rem]'>
-        <Areas/>
+        {
+            screenLG?
+            <Areas/>
+            :
+            <AreasMobile/>
+        }
 
       </div>
 

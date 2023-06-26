@@ -8,6 +8,7 @@ export interface MenueHoverSlice{
     child:any,
     hoverd:boolean,
     hoverId:number,
+    gracePeriod:Boolean
 }
 
 const initialState: MenueHoverSlice = {
@@ -15,6 +16,7 @@ const initialState: MenueHoverSlice = {
     child:React.createElement('div'),
     hoverd:false,
     hoverId:0,
+    gracePeriod:false
 }
 
 const MenueHoverSlice = createSlice({
@@ -57,9 +59,16 @@ const MenueHoverSlice = createSlice({
         setHoverState:(state:any,action:PayloadAction<any>) => {
             state.hoverd = action.payload
         },
+        addGracePeriod:(state:any) => {
+            state.gracePeriod = true
+        },
+        removeGracePeriod:(state:any) => {
+            // alert('d')
+            state.gracePeriod = false
+        },
     }
 
 })
 
-export const {toggle,displayForNav, setHoverState, hideForNav} = MenueHoverSlice.actions
+export const {toggle,displayForNav, setHoverState, hideForNav, addGracePeriod, removeGracePeriod} = MenueHoverSlice.actions
 export default MenueHoverSlice.reducer

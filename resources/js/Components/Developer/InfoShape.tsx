@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import processBoxShahow from '../BoxShadowController'
+// import { intersection } from 'd3'
 
 
 interface Props{
@@ -18,7 +19,8 @@ interface Props{
     textSize?:string,
     bluePillTextSize?:string,
     text:string,
-    bluePillText:string
+    bluePillText:string,
+    intersection?:number
 
 
 }
@@ -50,7 +52,13 @@ const InfoShape = (props:Props) => {
 
     useEffect(() => {
         const factor = 0.0535
-        const inttersection = factor * parseFloat(bar.current.style.width.split('rem')[0])
+        let inttersection = 0
+        if(props.intersection){
+            inttersection = props.intersection
+        }
+        else{
+            inttersection = factor * parseFloat(bar.current.style.width.split('rem')[0])
+        }
         // const moveDistance =   inttersection
         circle.current.style.right = ( parseFloat(bar.current.style.width.split('rem')) - inttersection ).toString() +'rem'
         // alert(inttersection)

@@ -20,6 +20,7 @@ import BuyCard from '@/Components/Developer/Cards/BuyCard'
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState  } from '@/store'
 import{check, unCheck, reset, checkSingle, toggle} from '../Components/Home/FiltersAndSearch/CoreFilters/CheckComponentSlice'
+import { addGracePeriod, hideForNav } from '@/Components/Home/MenueHoverSlice'
 const Rent = () => {
     const dispatch = useDispatch()
 
@@ -86,6 +87,8 @@ const Rent = () => {
 
 
     useEffect(()=>{
+        dispatch(addGracePeriod())
+        dispatch(hideForNav())
         setMapOn(false)
         try{
 

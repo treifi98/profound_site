@@ -21,10 +21,15 @@ import logo_completion from '../../assets/complete_header_logo.svg'
 import Contact from '@/Components/ContactCircles/Contact'
 import FliterAreaMobile from '@/Components/Home/FiltersAndSearch/FilterAreaMobile'
 import FancyCheckeComponent from '@/Components/Home/FiltersAndSearch/CoreFilters/FancyCheckeComponent'
-
+// import { useSelector, useDispatch } from 'react-redux'
+// import { RootState } from '@/store'
+import { setHoverState,hideForNav,addGracePeriod  } from '../Components/Home/MenueHoverSlice'
 
 
 const Areas = () => {
+
+    const dispatch = useDispatch()
+
     const [screenLG,setScreenLG] = useState(true)
     useEffect(() => {
         const updateScreenWidth = () => {
@@ -36,7 +41,12 @@ const Areas = () => {
                 setScreenLG(false);
 
             }
+
+
         }
+        dispatch(addGracePeriod())
+        dispatch(setHoverState(false))
+        // alert('d')
         updateScreenWidth()
         window.addEventListener('resize', updateScreenWidth);
         return () => window.removeEventListener('resize', updateScreenWidth);
@@ -61,7 +71,7 @@ const Areas = () => {
 
 
 
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     useEffect(()=>{
         if(mapOn){
             container.current.style.width = "50vw"
