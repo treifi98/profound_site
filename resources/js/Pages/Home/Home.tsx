@@ -131,10 +131,10 @@ const Home = () => {
             <FliterBarMobile/>
         }
 
-        <div className='w-full mt-[5.5625rem]'>
+            <div className='w-full mt-[5.5625rem]'>
 
-            <SwiperType2A/>
-        </div>
+                <SwiperType2A/>
+            </div>
         <div className='w-full mt-[0rem]'>
 
             <SwiperType3A/>
