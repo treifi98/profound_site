@@ -43,24 +43,28 @@ const SquareTextLR = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[21.875rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] rounded-[0.625rem] h-max pb-[1rem]'>
-                    <div className='w-full h-[17.382rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[0.625rem] flex justify-center items-center'>
-                        <div className='w-[20.70975rem] h-[16.12194rem] rounded-[0.484625rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF]'>
-                            <NewCardImage src={beatchFront} rounded='0.484625'/>
-                        </div>
-                    </div>
-                    <div className='w-[20.3125rem] mx-auto mt-[1rem] h-max min-h-[35.4375rem] py-[1rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF_inset,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF_inset] rounded-[0.625rem]'>
-                        <div className='w-[18.625rem] h-max mx-auto'>
-                            <div className='text-grade text-[1.25rem] font-[600]'>
-                                Latest Projects By Emaar
-                            </div>
-                            <div className='mt-[0.69rem] 0.875rem text-grade'>
-                                One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
-                            </div>
-                        </div>
-                    </div>
+                <div className='!w-[100vw] h-max bg-[#E6EDED] flex justify-center items-center border-[#CAD4D5] border-[1px] py-[1.5625rem] shadow-[6.217571258544922px_6.217571258544922px_12.435142517089844px_0px_#BABFBF,-6.217571258544922px_-6.217571258544922px_12.435142517089844px_3.108785629272461px_#FFF]'>
 
+                    <div className=' w-[21.875rem]  rounded-[0.625rem] h-max '>
+                        <div className='w-full h-[17.382rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[0.625rem] flex justify-center items-center'>
+                            <div className='w-[20.70975rem] h-[16.12194rem] rounded-[0.484625rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF]'>
+                                <NewCardImage src={beatchFront} rounded='0.484625'/>
+                            </div>
+                        </div>
+                            <div className='w-[21.875rem] mx-auto mt-[1rem] h-max min-h-[35.4375rem] py-[1rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF_inset,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF_inset] rounded-[0.625rem]'>
+                            <div className='w-[18.625rem] h-max mx-auto'>
+                                <div className='text-grade text-[1.25rem] font-[600]'>
+                                    Latest Projects By Emaar
+                                </div>
+                                <div className='mt-[0.69rem] text-[0.875rem] text-grade'>
+                                    One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             )
         }
     </>

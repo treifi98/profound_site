@@ -93,7 +93,7 @@ const Attraction = (props:Props) => {
                     </div>
                 </div>
             ):(
-                <div className='h-max  w-[21.875rem] shadow-[4px_4px_8px_0px_#BABFBF,-4px_-4px_8px_0px_#FFF] rounded-[0.625rem]'>
+                <div className='h-max  w-[100vw] shadow-[2.7px_2.7px_3.78px_0px_#BABFBF,-2.7px_-2.7px_4.32px_0px_#FFF] border-[#DCE3E3] border-[1px]'>
                     <div className='w-full h-[2.6875rem] flex items-center shadow-[2.699549436569214px_2.699549436569214px_3.7793691158294678px_0px_#B6C3C5,-2.699549436569214px_-2.699549436569214px_4.319278717041016px_0px_#FFF]'>
                         <img src={pinIcon} alt="" className='w-[1.0625rem] h-[1.83788rem] ml-[0.69rem]'/>
                         <div className='h-full ml-[0.94rem]'>

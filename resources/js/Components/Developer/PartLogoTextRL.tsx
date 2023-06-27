@@ -61,7 +61,10 @@ const PartLogoTextRL = (props:Props) => {
                         </div>
                         <div className='w-full h-[20.60056rem] flex justify-center items-center'>
                             <div className='w-full h-[20.60056rem] flex justify-center items-center rounded-[6.892375rem_0.6766875rem_6.892375rem_0.450625rem] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
-                                <img src={imgRT} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[6.892375rem_0.6766875rem_6.892375rem_0.450625rem]'/>
+                                <div className='w-[18.89313rem] h-[19.22719rem] rounded-[6.892375rem_0.6766875rem_6.892375rem_0.450625rem] shadow-[2.8838510513305664px_2.8838510513305664px_5.767702102661133px_0px_#BABFBF,-2.8838510513305664px_-2.8838510513305664px_5.767702102661133px_1.4419255256652832px_#FFF]'>
+
+                                    <img src={imgRT} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[6.892375rem_0.6766875rem_6.892375rem_0.450625rem]'/>
+                                </div>
                             </div>
                         </div>
                     </div>

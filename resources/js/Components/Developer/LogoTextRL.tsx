@@ -69,19 +69,31 @@ const LogoTextRL = (props:Props) => {
                             </div>
                         </div>
                         <div className='w-full h-full flex flex-wrap'>
-                            <div className='w-[9.9rem] h-[9.993125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
-                                <img src={imgLT} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem]'/>
+                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+
+                                    <img src={imgLT} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem]'/>
+                                </div>
 
                             </div>
-                            <div className='w-[9.9rem] h-[9.993125rem] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem] ml-[1rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
-                                <img src={imgRT} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem]]'/>
+                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem] ml-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+
+                                    <img src={imgRT} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem]'/>
+                                </div>
 
                             </div>
-                            <div className='w-[9.9rem] h-[9.993125rem] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem] mr-[1rem] mt-[1rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
-                                <img src={imgLB} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem]'/>
+                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem] mr-[1rem] mt-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+
+                                    <img src={imgLB} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[3.3433125rem_0.32825rem_3.3433125rem_0.2185625rem]'/>
+                                </div>
                             </div>
-                            <div className='w-[9.9rem] h-[9.993125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem] mt-[1rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
-                                <img src={imgRB} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem]'/>
+                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem] mt-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+
+                                    <img src={imgRB} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[0.263375rem_3.3433125rem_0.37625rem_3.3433125rem]'/>
+                                </div>
 
                             </div>
                         </div>

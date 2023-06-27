@@ -19,6 +19,7 @@ const PartLogoTextLR = (props:Props) => {
                     <div className='w-[86.1875rem] h-[33.6875rem] flex gap-[2.5rem]'>
                         <div className='w-[33.256875rem] h-full flex justify-center items-center'>
                             <div className='w-full h-full flex justify-center items-center rounded-[1.10446875rem_11.25rem_0.7354875rem_11.25rem] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
+
                                 <img src={imgLT} alt="" className='w-[30.838125rem] h-[31.383125rem] rounded-[1.10446875rem_11.25rem_0.7354875rem_11.25rem]'/>
                             </div>
                         </div>
@@ -60,7 +61,10 @@ const PartLogoTextLR = (props:Props) => {
                         </div>
                         <div className='w-full h-[20.60056rem] flex justify-center items-center'>
                             <div className='w-full h-[20.60056rem] flex justify-center items-center rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
-                                <img src={imgLT} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem]'/>
+                                <div className='w-[18.89313rem] h-[19.22719rem] rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem] shadow-[2.8838510513305664px_2.8838510513305664px_5.767702102661133px_0px_#BABFBF,-2.8838510513305664px_-2.8838510513305664px_5.767702102661133px_1.4419255256652832px_#FFF]'>
+
+                                    <img src={imgLT} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem]'/>
+                                </div>
                             </div>
                         </div>
                     </div>
