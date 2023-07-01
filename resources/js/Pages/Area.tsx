@@ -42,7 +42,62 @@ import AreasMobile from '@/Components/Developer/AreasMobile'
 
 
 const Area = () => {
+    const [scaleFactor,setScaleFactor] = useState(1.0)
     const [screenLG,setScreenLG] = useState(true)
+    const [mainScreen,setMainScreen] = useState(375)
+    const [changer,setChanger] = useState(1)
+    // const [currentScreen,setCurrentScreen] = useState(375)
+    const initChange = () => {
+        setChanger(window.innerWidth)
+    }
+    const ScaleforMobile = () => {
+        let x = window.innerWidth / mainScreen
+        setScaleFactor(x)
+
+    }
+    useEffect(()=>{
+        console.log(mainScreen)
+        ScaleforMobile()
+        setMainScreen(window.innerWidth)
+        console.log(scaleFactor)
+    },[changer])
+
+    useEffect(()=>{
+        document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+            multiplyDimensions(elmnt,scaleFactor)
+        })
+    },[scaleFactor])
+
+
+    const multiplyDimensions = (element, factor) => {
+        // first, get the computed style of the element
+
+        let style = window.getComputedStyle(element);
+
+        // get the width and height of the element
+        let width = parseFloat(style.width.replace("px", ""));
+        let height = parseFloat(style.height.replace("px", ""));
+
+        // multiply the width and height by the factor
+        width *= factor;
+        height *= factor;
+
+        // set the new width and height
+        element.style.width = `${width}px`;
+        element.style.height = `${height}px`;
+
+        // repeat for each child element
+        for (let i = 0; i < element.children.length; i++) {
+            // console.log(element.children[i].classList)
+            if(element.children[i].classList.contains('except')){
+                continue
+            }
+            multiplyDimensions(element.children[i], factor);
+        }
+
+    }
+
+
     useEffect(() => {
         const updateScreenWidth = () => {
             if (window.innerWidth >= 1530){
@@ -51,6 +106,7 @@ const Area = () => {
             }
             else{
                 setScreenLG(false);
+                initChange()
 
             }
         }
@@ -104,7 +160,9 @@ const Area = () => {
                 <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas',link:'/areas'},{title:'Dubai Marina',link:'/area/marina'}]}/>
             </div>
             <div className='w-min mx-auto mt-[1rem]'>
-                <NoCrooked screen={screenLG}/>
+                <div className='w-min mobil-comp'>
+                    <NoCrooked screen={screenLG}/>
+                </div>
             </div>
             <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>

@@ -31,9 +31,9 @@ const NewSocial = (props:Props) => {
         elmnt.current.style.boxShadow = shadows[0]
     }
     return (
-        <div className='flex flex-col justify-center items-center gap-[0.7375rem] font-[nova] w-full h-full' >
-            <div className={`w-full h-full bg-[#E6EDED] rounded-[0.2rem] flex justify-center items-center cursor-pointer`} ref={elmnt} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ boxShadow:shadows[0] }}>
-                <img src={props.img} className={`object-contain object-center`} style={{ width:props.img_w?props.img_w+'rem':'0.866875rem',height:props.img_h?props.img_h+'rem':'0.866875rem' }}/>
+        <div className='flex flex-col justify-center items-center gap-[0.7375rem] font-[nova] w-full h-full except' >
+            <div className={`w-full h-full bg-[#E6EDED] rounded-[0.2rem] flex justify-center items-center cursor-pointer except`} ref={elmnt} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ boxShadow:shadows[0] }}>
+                <img src={props.img} className={`object-contain object-center except`} style={{ width:props.img_w?props.img_w+'rem':'0.866875rem',height:props.img_h?props.img_h+'rem':'0.866875rem' }}/>
             </div>
         </div>
     )
