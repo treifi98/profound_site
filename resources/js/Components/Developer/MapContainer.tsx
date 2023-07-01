@@ -83,8 +83,8 @@ const MapContainer = (props:Props) => {
                                 <div className='w-[3rem] h-full rounded-[5.7075rem_0rem_0rem_5.7075rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] '>
                                     <img src={diningLogo} alt="" className='w-[1.828125rem] h-[1.7675rem] object-contain ml-[0.670625rem] mt-[0.21rem]' />
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.3125rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.3125rem'/>
                                 </div>
                                 <div className='w-[8.1875rem] h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_5.7075rem_5.7075rem_0rem] shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[1.25rem]'>
@@ -97,8 +97,8 @@ const MapContainer = (props:Props) => {
                                     <img src={shoppingIcon} alt="" className='w-[1.49375rem] h-[1.521875rem] object-contain ml-[0.971875rem] mt-[0.346875rem]' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.3125rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.3125rem'/>
                                 </div>
                                 <div className='w-[8.1875rem] h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_5.7075rem_5.7075rem_0rem] shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[1.25rem]'>
@@ -111,8 +111,8 @@ const MapContainer = (props:Props) => {
                                     <img src={transportationIcon} alt="" className='w-[1.88625rem] h-[1.890625rem] object-contain ml-[0.85125rem] mt-[0.22625rem]' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.3125rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.3125rem'/>
                                 </div>
                                 <div className='w-[8.1875rem] h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_5.7075rem_5.7075rem_0rem] shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[1.125rem]'>
@@ -125,8 +125,8 @@ const MapContainer = (props:Props) => {
                                     <img src={schoolIcon} alt="" className='w-[2rem] h-[2rem] object-contain ml-[0.8125rem] mt-[0.125rem] ' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.3125rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.3125rem'/>
                                 </div>
                                 <div className='w-[8.1875rem] h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_5.7075rem_5.7075rem_0rem] shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[1.25rem]'>
@@ -139,8 +139,8 @@ const MapContainer = (props:Props) => {
                                     <img src={HospitalIcon} alt="" className='w-[1.9375rem] h-[1.9375rem] object-contain ml-[0.875rem] mt-[0.1875rem] ' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.3125rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.3125rem'/>
                                 </div>
                                 <div className='w-[8.1875rem] h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_5.7075rem_5.7075rem_0rem] shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[1.25rem]'>
@@ -153,8 +153,8 @@ const MapContainer = (props:Props) => {
 
                                     <img src={Eicon} alt="" className='w-[1.78125rem] h-[1.78125rem] object-contain ml-[0.6875rem] mt-[0.25rem] ' />
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.3125rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.3125rem'/>
                                 </div>
                                 <div className='w-[8.1875rem] h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_5.7075rem_5.7075rem_0rem] shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[1.125rem]'>
@@ -167,8 +167,8 @@ const MapContainer = (props:Props) => {
                                     <img src={activitiesIcon} alt="" className='w-[2.1875rem] h-[1.625rem] object-contain ml-[0.6875rem] mt-[0.25rem] ' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.3125rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.3125rem'/>
                                 </div>
                                 <div className='w-[8.1875rem] h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_5.7075rem_5.7075rem_0rem] shadow-[0rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[1.25rem]'>
@@ -254,32 +254,32 @@ const MapContainer = (props:Props) => {
             )
             :
             (
-                <div className='w-[100vw] h-max  border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] overflow-hidden '>
-                    <div className='w-full h-max  border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] py-[1rem]'>
-                        <div className='w-[98%] h-full flex items-center gap-y-[1rem] gap-x-[0.55rem] mx-auto flex-wrap'>
+                <div className='w-[375px] h-max shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] overflow-hidden mobil-comp'>
+                    <div className='w-[375px] h-[125px]   shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex items-center'>
+                        <div className='w-[349.62px] h-[101px] flex items-center gap-y-[0px] gap-x-[0.55rem] mx-auto flex-wrap justify-between my-0 py-0'>
 
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
-                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-2.59px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] '>
+                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden '>
                                     <img src={diningLogo} alt="" className='w-[1.03875rem] h-[1.004375rem] object-contain ml-[0.440625rem] mt-[0.1rem]' />
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.17756rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
-                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[0px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
+                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[0.71019rem]'>
                                         Dining
                                     </div>
                                 </div>
                             </div>
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
-                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-2.59px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5]'>
+                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden'>
                                     <img src={shoppingIcon} alt="" className='w-[0.8875rem] h-[0.90375rem] object-contain ml-[0.471875rem] mt-[0.146875rem]' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.17756rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
-                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[0px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
+                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[0.71019rem]'>
                                         Shopping
                                     </div>
@@ -287,28 +287,28 @@ const MapContainer = (props:Props) => {
                             </div>
 
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
-                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-2.59px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5]'>
+                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden'>
                                     <img src={schoolIcon} alt="" className='w-[1.13625rem] h-[1.13625rem] object-contain ml-[0.3125rem] mt-[0.025rem] ' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.17756rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
-                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[0px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
+                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[0.71019rem]'>
                                         Schools
                                     </div>
                                 </div>
                             </div>
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
-                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-2.59px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5]'>
+                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden'>
                                     <img src={HospitalIcon} alt="" className='w-[1.100625rem] h-[1.100625rem] object-contain ml-[0.425rem] mt-[0.0575rem] ' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.17756rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
-                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[0px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
+                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[0.71019rem]'>
                                         Hospitals
                                     </div>
@@ -316,42 +316,42 @@ const MapContainer = (props:Props) => {
                             </div>
 
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
-                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-2.59px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5]'>
+                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden'>
                                     <img src={activitiesIcon} alt="" className='w-[1.24281rem] h-[0.92325rem] object-contain ml-[0.2875rem] mt-[0.1rem] ' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.17756rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
-                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[0px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
+                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[0.71019rem]'>
                                         Activities
                                     </div>
                                 </div>
                             </div>
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
-                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-2.59px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5]'>
+                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden'>
                                     <img src={transportationIcon} alt="" className='w-[1.071875rem] h-[1.071875rem] object-contain ml-[0.45125rem] mt-[0.12625rem]' />
 
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.17756rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
-                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[0px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
+                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[0.63919rem]'>
                                         Transportation
                                     </div>
                                 </div>
                             </div>
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
-                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-2.59px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5]'>
+                                <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden'>
 
                                     <img src={Eicon} alt="" className='w-[1.0125rem] h-[1.0125rem] object-contain ml-[0.3875rem] mt-[0.15rem] ' />
                                 </div>
-                                <div className='h-full'>
-                                    <InElementSeperator width='0.17756rem'/>
+                                <div className='h-[1.278125rem]'>
+                                    <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
-                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[0px_-2.59px_4.15px_#FFFFFF,2.59px_2.59px_3.63px_#B6C3C5] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
+                                <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
                                     <div className='text-grade font-[600] text-[0.63919rem]'>
                                         Entertainment
                                     </div>
@@ -360,8 +360,8 @@ const MapContainer = (props:Props) => {
                         </div>
                     </div>
 
-                    <div className='w-[20.50706rem] flex flex-col mx-auto h-max items-center'>
-                        <div className='w-[20.50706rem] max-h-[30rem] h-min  flex flex-wrap justify-between gap-y-[1.13rem] items-start py-[2rem]'>
+                    <div className='w-[335.11px] flex flex-col mx-auto h-max items-center '>
+                        <div className='w-[335.11px] max-h-[30rem] h-min  flex flex-wrap justify-between gap-y-[1.13rem] items-start py-[1.5rem]'>
                             <div className='w-[9.69106rem] h-[2.28869rem] flex justify-center items-center rounded-[0.3125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.45660625rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] hover:shadow-[inset_-0.285380625rem_-0.285380625rem_0.45660625rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] cursor-pointer' onMouseEnter={()=>handleMouseEnter(0)} onMouseLeave={()=>handleMouseLeave(0)}>
                                 <div className='text-grade text-[0.6875rem]'>
                                     Binary Tower
@@ -414,7 +414,7 @@ const MapContainer = (props:Props) => {
                             </div>
 
                         </div>
-                        <div className='w-[20.55906rem] h-[28.7395rem] mx-auto rounded-[0.98125rem] overflow-hidden mb-[1rem]'>
+                        <div className='w-[335.11px] h-[28.7395rem] mx-auto rounded-[0.78125rem] overflow-hidden mb-[1.5rem]'>
                             <Map
                                 points={points}
                                 changes={changes}

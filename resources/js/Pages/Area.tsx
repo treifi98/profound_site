@@ -75,8 +75,8 @@ const Area = () => {
         let style = window.getComputedStyle(element);
 
         // get the width and height of the element
-        let width = parseFloat(style.width.replace("px", ""));
-        let height = parseFloat(style.height.replace("px", ""));
+        let width = parseFloat(style.width.replace("rem", ""));
+        let height = parseFloat(style.height.replace("rem", ""));
 
         // multiply the width and height by the factor
         width *= factor;
@@ -92,6 +92,8 @@ const Area = () => {
             if(element.children[i].classList.contains('except')){
                 continue
             }
+            console.log('-------')
+            console.log(scaleFactor)
             multiplyDimensions(element.children[i], factor);
         }
 
@@ -2063,11 +2065,14 @@ const Area = () => {
 
 
 
-      <div className='w-min mx-auto mt-[5rem]'>
-        <AboutDeveloper screen={screenLG}/>
+      <div className='w-min mx-auto mt-[5rem] '>
+        <div className=' w-min'>
+
+            <AboutDeveloper screen={screenLG}/>
+        </div>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[5rem] '>
         <Attraction screen={screenLG}/>
 
       </div>

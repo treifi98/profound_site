@@ -85,7 +85,7 @@ const AboutSwiperMobile = (props:Props) => {
                             // setSwiper(swiper)
 
                         }}
-                        className="except AboutSwiperMobile"
+                        className="except AboutSwiperMobile h-full"
                     >
                         <SwiperSlide className='except w-full h-full'>
                             <div className='except  w-full h-full' >

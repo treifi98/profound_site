@@ -93,47 +93,47 @@ const Attraction = (props:Props) => {
                     </div>
                 </div>
             ):(
-                <div className='h-max  w-[100vw] shadow-[2.7px_2.7px_3.78px_0px_#BABFBF,-2.7px_-2.7px_4.32px_0px_#FFF] border-[#DCE3E3] border-[1px]'>
-                    <div className='w-full h-[2.6875rem] flex items-center shadow-[2.699549436569214px_2.699549436569214px_3.7793691158294678px_0px_#B6C3C5,-2.699549436569214px_-2.699549436569214px_4.319278717041016px_0px_#FFF]'>
+                <div className='h-max  w-[375px] shadow-[2.7px_2.7px_3.78px_0px_#BABFBF,-2.7px_-2.7px_4.32px_0px_#FFF] border-[#DCE3E3] border-[1px] mobil-comp'>
+                    <div className='w-[375px] h-[2.6875rem] flex items-center shadow-[2.699549436569214px_2.699549436569214px_3.7793691158294678px_0px_#B6C3C5,-2.699549436569214px_-2.699549436569214px_4.319278717041016px_0px_#FFF]'>
                         <img src={pinIcon} alt="" className='w-[1.0625rem] h-[1.83788rem] ml-[0.69rem]'/>
-                        <div className='h-full ml-[0.94rem]'>
-                            <InElementSeperator/>
+                        <div className='h-[2.6875rem] ml-[0.94rem]'>
+                            <InElementSeperator height='2.6875rem'/>
                         </div>
                         <div className='text-grade text-[1rem] font-[600] ml-[0.44rem]'>
                             Creek Rise tower 2 west side Location
                         </div>
                     </div>
-                    <div className='pb-[1rem]'>
+                    <div className='pb-[1rem] w-[21.57825rem] mx-auto'>
 
-                        <div className='scale-[1] !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
-
-                            <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
-                        </div>
-                        <div className='scale-[1] !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
+                        <div className='scale-[1] w-[21.57825rem] mx-auto mt-[1.63375rem]'>
 
                             <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
                         </div>
-                        <div className='scale-[1]  !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
+                        <div className='scale-[1] w-[21.57825rem] mx-auto mt-[1.63375rem]'>
 
                             <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
                         </div>
-                        <div className='scale-[1]  !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
+                        <div className='scale-[1]  w-[21.57825rem] mx-auto mt-[1.63375rem]'>
 
                             <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
                         </div>
-                        <div className='scale-[1]  !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
+                        <div className='scale-[1]  w-[21.57825rem] mx-auto mt-[1.63375rem]'>
 
                             <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
                         </div>
-                        <div className='scale-[1]  !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
+                        <div className='scale-[1]  w-[21.57825rem] mx-auto mt-[1.63375rem]'>
 
                             <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
                         </div>
-                        <div className='scale-[1]  !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
+                        <div className='scale-[1]  w-[21.57825rem] mx-auto mt-[1.63375rem]'>
 
                             <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
                         </div>
-                        <div className='scale-[1]  !w-[21.3375rem] !mx-auto mt-[1.63375rem]'>
+                        <div className='scale-[1]  w-[21.57825rem] mx-auto mt-[1.63375rem]'>
+
+                            <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
+                        </div>
+                        <div className='scale-[1]  w-[21.57825rem] mx-auto mt-[1.63375rem]'>
 
                             <DistanceContainerMobile distance={30} textSize='0.6875rem' numberSize='0.6875rem'/>
                         </div>

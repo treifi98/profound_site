@@ -3,6 +3,7 @@ import InElementSeperator from '../Home/Cards/Common/InElementSeperator'
 import devabout from '../../../assets/devabout.svg'
 import SimpleSwiper from './SimpleSwiper'
 import AboutSwiper from './AboutSwiper'
+import AboutSwiperMobile from './AboutSwiperMobile'
 
 
 interface Props{
@@ -44,15 +45,15 @@ const AboutDeveloper = (props:Props) => {
     </div>
         ):
         (
-            <div className='w-[100vw] h-max shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF]  overflow-hidden pb-[1.5625rem] rounded-[0.5rem] border-[#CAD4D5] border-[1px]'>
+            <div className='w-[23.4375rem] h-max shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF]  overflow-hidden pb-[1.5625rem] rounded-[0.5rem] mobil-comp'>
                 <div className='w-[20.375rem] h-[25.875rem] mt-[1.5625rem] rounded-[0.625rem] mx-auto overflow-hidden'>
-                    <AboutSwiper width='20.375rem' height='25.875rem' rounded='0.625rem'/>
+                    <AboutSwiperMobile width='20.375rem' height='25.875rem' rounded='0.625rem'/>
                 </div>
-                <div className='mt-[1.5625rem] w-[20.3125rem] h-max rounded-[0.625rem] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF_inset,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF_inset] overflow-hidden mx-auto'>
-                    <div className='mt-[1.31rem] ml-[0.88rem] text-[1.25rem] font-[600] text-grade'>
+                <div className='mt-[1.5625rem] w-[20.3125rem] h-min rounded-[0.625rem] shadow-[4px_4px_7px_0px_rgba(186,191,191,0.80)_inset,-5px_-5px_10px_0px_#FFF_inset] overflow-hidden mx-auto border-[1px] border-[#DCE3E3] '>
+                    <div className='mt-[1.31rem] mx-auto w-[284px] text-[1.25rem] font-[600] text-grade '>
                         Latest Projects By Emaar
                     </div>
-                    <div className='mt-[0.6875rem] ml-[0.88rem] text-[0.8125rem] text-grade  w-[91%] h-max mb-[0.1rem] hide-scrollbar'>
+                    <div className='mt-[0.6875rem]  text-[0.8125rem] smd:text-[1rem] smd:leading-[183%] text-grade  w-[284px] pb-[1rem] mb-[0.1rem] hide-scrollbar leading-[175%]  mx-auto '>
                         One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                         corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                     </div>
