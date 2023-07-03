@@ -266,7 +266,7 @@ const MapContainer = (props:Props) => {
                                     <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
                                 <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
-                                    <div className='text-grade font-[600] text-[0.71019rem]'>
+                                    <div className='text-grade font-[600] text-[0.71019rem] except'>
                                         Dining
                                     </div>
                                 </div>
@@ -280,7 +280,7 @@ const MapContainer = (props:Props) => {
                                     <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
                                 <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
-                                    <div className='text-grade font-[600] text-[0.71019rem]'>
+                                    <div className='text-grade font-[600] text-[0.71019rem] except'>
                                         Shopping
                                     </div>
                                 </div>
@@ -295,7 +295,7 @@ const MapContainer = (props:Props) => {
                                     <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
                                 <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
-                                    <div className='text-grade font-[600] text-[0.71019rem]'>
+                                    <div className='text-grade font-[600] text-[0.71019rem] except'>
                                         Schools
                                     </div>
                                 </div>
@@ -309,7 +309,7 @@ const MapContainer = (props:Props) => {
                                     <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
                                 <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
-                                    <div className='text-grade font-[600] text-[0.71019rem]'>
+                                    <div className='text-grade font-[600] text-[0.71019rem] except'>
                                         Hospitals
                                     </div>
                                 </div>
@@ -324,7 +324,7 @@ const MapContainer = (props:Props) => {
                                     <InElementSeperator shadow='inset -1.14px -1.14px 1.14px #fff ,inset 1.14px 1.14px 1.14px #B6C3C5' width='0.17756rem'/>
                                 </div>
                                 <div className='w-[4.6875rem]  h-full border-[#DCE3E3] border-[0.0625rem] rounded-[0rem_3.2428125rem_3.2428125rem_0rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,0px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] group-hover:shadow-[inset_0rem_-0.285380625rem_0.456609375rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex justify-center items-center'>
-                                    <div className='text-grade font-[600] text-[0.71019rem]'>
+                                    <div className='text-grade font-[600] text-[0.71019rem] except'>
                                         Activities
                                     </div>
                                 </div>

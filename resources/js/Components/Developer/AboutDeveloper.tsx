@@ -50,10 +50,10 @@ const AboutDeveloper = (props:Props) => {
                     <AboutSwiperMobile width='20.375rem' height='25.875rem' rounded='0.625rem'/>
                 </div>
                 <div className='mt-[1.5625rem] w-[20.3125rem] h-min rounded-[0.625rem] shadow-[4px_4px_7px_0px_rgba(186,191,191,0.80)_inset,-5px_-5px_10px_0px_#FFF_inset] overflow-hidden mx-auto border-[1px] border-[#DCE3E3] '>
-                    <div className='mt-[1.31rem] mx-auto w-[284px] text-[1.25rem] font-[600] text-grade '>
+                    <div className='mt-[1rem] mx-auto w-[284px] text-[1.25rem] font-[600] text-grade '>
                         Latest Projects By Emaar
                     </div>
-                    <div className='mt-[0.6875rem]  text-[0.8125rem] smd:text-[1rem] smd:leading-[183%] text-grade  w-[284px] pb-[1rem] mb-[0.1rem] hide-scrollbar leading-[175%]  mx-auto '>
+                    <div className='mt-[0.5rem]  text-[0.8125rem] text-grade  w-[284px] pb-[1rem] mb-[0.1rem] hide-scrollbar leading-[175%]  mx-auto '>
                         One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                         corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                     </div>

@@ -53,7 +53,16 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
+.instborder {
+    position: relative;
+    border: 1px solid #DCE3E3;
+    outline: 1px solid #DCE3E3;
+    outline-offset: -2px;
+}
 
+.textElementShadow{
+    box-shadow: 4px 4px 7px 0px rgba(186, 191, 191, 0.80) inset, -5px -5px 10px 0px #FFF inset;
+}
 .hide-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */

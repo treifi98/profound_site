@@ -51,7 +51,7 @@ const AboutSwiper = (props:Props) => {
     }
 
   return (
-    <div className=' relative bg-[#E6EDED]   rounded-[] flex items-center' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+    <div className=' relative bg-[#E6EDED]   rounded-[] flex items-center ' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
             {/* <div className='absolute w-[2.625rem] h-[1.9375rem] cursor-pointer left-[-4.6rem] top-[calc(50%-0.96875rem)] z-[999999]'  onClick={() => swiper.slidePrev()}>
                 <img src={arrowIcon} alt="" className='h-full w-full'/>
             </div>

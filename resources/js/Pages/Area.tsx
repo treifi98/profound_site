@@ -42,8 +42,8 @@ import AreasMobile from '@/Components/Developer/AreasMobile'
 
 
 const Area = () => {
-    const [scaleFactor,setScaleFactor] = useState(1.0)
     const [screenLG,setScreenLG] = useState(true)
+    const [scaleFactor,setScaleFactor] = useState(1.0)
     const [mainScreen,setMainScreen] = useState(375)
     const [changer,setChanger] = useState(1)
     // const [currentScreen,setCurrentScreen] = useState(375)
@@ -77,14 +77,17 @@ const Area = () => {
         // get the width and height of the element
         let width = parseFloat(style.width.replace("rem", ""));
         let height = parseFloat(style.height.replace("rem", ""));
+        let textSize = parseFloat(style.fontSize.replace("rem", ""));
 
         // multiply the width and height by the factor
         width *= factor;
         height *= factor;
+        textSize *= factor;
 
         // set the new width and height
         element.style.width = `${width}px`;
         element.style.height = `${height}px`;
+        element.style.fontSize = `${textSize}px`;
 
         // repeat for each child element
         for (let i = 0; i < element.children.length; i++) {
@@ -162,7 +165,7 @@ const Area = () => {
                 <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas',link:'/areas'},{title:'Dubai Marina',link:'/area/marina'}]}/>
             </div>
             <div className='w-min mx-auto mt-[1rem]'>
-                <div className='w-min mobil-comp'>
+                <div className='w-min '>
                     <NoCrooked screen={screenLG}/>
                 </div>
             </div>

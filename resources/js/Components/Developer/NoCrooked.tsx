@@ -85,12 +85,12 @@ const NoCrooked = (props:Props) => {
                 <div className='h-full ml-[0rem]'>
                     <InElementSeperator width='0.4375rem'/>
                 </div>
-                <div className='w-[51.75rem] h-[35.875rem] mx-auto mt-[1.125rem]'>
+                <div className='w-[51.75rem] h-[35.875rem] mx-auto mt-[1.125rem] '>
                     <AboutSwiperMobile/>
                 </div>
             </div>
        ):(
-        <div className='w-[23.4375rem] h-max shadow-[2.892374277114868px_2.892374277114868px_4.049324035644531px_0px_#B6C3C5,-2.892374277114868px_-2.892374277114868px_4.627798557281494px_0px_#FFF]  overflow-hidden'>
+        <div className='w-[23.4375rem] h-max shadow-[2.892374277114868px_2.892374277114868px_4.049324035644531px_0px_#B6C3C5,-2.892374277114868px_-2.892374277114868px_4.627798557281494px_0px_#FFF]  overflow-hidden mobil-comp'>
             <div className='w-[23.4375rem] h-[3.125rem] shadow-[2.892374277114868px_2.892374277114868px_4.049324035644531px_0px_#B6C3C5,_-2.892374277114868px_-2.892374277114868px_4.627798557281494px_0px_#FFF] '>
                 <div className='w-[21.714375rem] h-full flex justify-between items-center mx-auto' >
                     <div className='text-grade text-[1.42525rem] font-[600]'>
@@ -109,7 +109,7 @@ const NoCrooked = (props:Props) => {
                 </div>
             </div>
             <div className='mt-[1.25rem] w-[21.9375rem] mx-auto h-[16.665rem] flex justify-center items-center shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] rounded-[0.625rem] border-[1px] border-[#DCE3E3]'>
-                <div className='w-[20.3925rem] h-[15.183125rem] rounded-[0.625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] '>
+                <div className='w-[20.3925rem] h-[15.183125rem] rounded-[0.625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center '>
                     <AboutSwiper width='20.3925rem' height='15.183125rem' rounded='0.625rem' scale='0.82'/>
                 </div>
             </div>

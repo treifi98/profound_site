@@ -5,6 +5,7 @@ import imgLT from '../../../assets/imgLT.png'
 import imgRT from '../../../assets/imgRT.png'
 import imgLB from '../../../assets/imgLB.png'
 import imgRB from '../../../assets/imgRB.png'
+import dubai from '../../../assets/dubai.png'
 interface Props{
     screen?:Boolean
 }
@@ -23,14 +24,14 @@ const PartLogoTextLR = (props:Props) => {
                                 <img src={imgLT} alt="" className='w-[30.838125rem] h-[31.383125rem] rounded-[1.10446875rem_11.25rem_0.7354875rem_11.25rem]'/>
                             </div>
                         </div>
-                        <div className='h-full w-[50.375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[inset_-0.5rem_-0.625rem_0.9375rem_#FFFFFF,inset_0.5rem_0.5rem_0.9375rem_#B6C3C5] rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
+                        <div className='h-full w-[50.375rem] border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.9822875rem] box-border py-[1rem] flex justify-center items-center'>
 
 
                             <div className='w-[46.0625rem]'>
                                 <div className='font-[600] text-grade text-[2rem]'>
                                     Latest Projects By Emaar
                                 </div>
-                                <div className='text-[1.25rem] leading-[2rem] text-grade mt-[1.25rem]'>
+                                <div className='text-[1.25rem] leading-[2rem] text-grade mt-[0.5rem]'>
                                     One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecoical system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                                     corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                                 </div>
@@ -43,27 +44,27 @@ const PartLogoTextLR = (props:Props) => {
             )
             :
             (
-                <div className='w-[100vw] h-max flex items-center justify-center bg-[#E6EDED] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] '>
-                    <div className='w-[20.3125rem] h-max flex flex-col-reverse gap-[1rem] mx-auto py-[1rem]'>
+                <div className='w-[375px] h-max flex items-center justify-center bg-[#E6EDED] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] mobil-comp '>
+                    <div className='w-[20.3125rem] h-max flex flex-col-reverse gap-[25px] mx-auto py-[25px]'>
 
-                        <div className='h-full w-full border-[#DCE3E3] border-[0.0625rem] shadow-[4px_4px_7px_0px_rgba(186,191,191,0.80)_inset,-5px_-5px_10px_0px_#FFF_inset] rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
+                        <div className='h-full w-[20.3125rem] border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.9822875rem] box-border py-[1rem] flex justify-center items-center'>
 
 
                             <div className='w-[18.625rem] mx-auto'>
                                 <div className='font-[600] text-grade text-[1.25rem]'>
                                     Latest Projects By Emaar
                                 </div>
-                                <div className='text-[0.875rem] leading-[1.5rem] text-grade mt-[0.69rem]'>
+                                <div className='text-[0.875rem] leading-[175%] w-[284px] text-grade mt-[0.5rem]'>
                                     One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                                     corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full h-[20.60056rem] flex justify-center items-center'>
-                            <div className='w-full h-[20.60056rem] flex justify-center items-center rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
-                                <div className='w-[18.89313rem] h-[19.22719rem] rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem] shadow-[2.8838510513305664px_2.8838510513305664px_5.767702102661133px_0px_#BABFBF,-2.8838510513305664px_-2.8838510513305664px_5.767702102661133px_1.4419255256652832px_#FFF]'>
+                        <div className='w-[20.3125rem] h-[20.60056rem] flex justify-center items-center'>
+                            <div className='w-[20.3125rem] h-[20.60056rem] flex justify-center items-center rounded-[3.42%_33.76%_2.28%_33.76%] border-[0.0625rem] border-[#DCE3E3] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
+                                <div className='w-[18.89313rem] h-[19.22719rem] rounded-[3.42%_33.76%_2.28%_33.76%] shadow-[2.8838510513305664px_2.8838510513305664px_5.767702102661133px_0px_#BABFBF,-2.8838510513305664px_-2.8838510513305664px_5.767702102661133px_1.4419255256652832px_#FFF]'>
 
-                                    <img src={imgLT} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[0.694625rem_6.85875rem_0.4625625rem_6.85875rem]'/>
+                                    <img src={dubai} alt="" className='w-[18.89313rem] h-[19.22719rem] rounded-[3.42%_33.76%_2.28%_33.76%]'/>
                                 </div>
                             </div>
                         </div>

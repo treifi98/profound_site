@@ -49,6 +49,64 @@ const Developer = () => {
     const dispatch = useDispatch()
     const [screenLG,setScreenLG] = useState(true)
 
+    const [scaleFactor,setScaleFactor] = useState(1.0)
+    const [mainScreen,setMainScreen] = useState(375)
+    const [changer,setChanger] = useState(1)
+    // const [currentScreen,setCurrentScreen] = useState(375)
+    const initChange = () => {
+        setChanger(window.innerWidth)
+    }
+    const ScaleforMobile = () => {
+        let x = window.innerWidth / mainScreen
+        setScaleFactor(x)
+
+    }
+    useEffect(()=>{
+        console.log(mainScreen)
+        ScaleforMobile()
+        setMainScreen(window.innerWidth)
+        console.log(scaleFactor)
+    },[changer])
+
+    useEffect(()=>{
+        document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+            multiplyDimensions(elmnt,scaleFactor)
+        })
+    },[scaleFactor])
+
+
+    const multiplyDimensions = (element, factor) => {
+        // first, get the computed style of the element
+
+        let style = window.getComputedStyle(element);
+
+        // get the width and height of the element
+        let width = parseFloat(style.width.replace("rem", ""));
+        let height = parseFloat(style.height.replace("rem", ""));
+        let textSize = parseFloat(style.fontSize.replace("rem", ""));
+
+        // multiply the width and height by the factor
+        width *= factor;
+        height *= factor;
+        textSize *= factor;
+
+        // set the new width and height
+        element.style.width = `${width}px`;
+        element.style.height = `${height}px`;
+        element.style.fontSize = `${textSize}px`;
+
+        // repeat for each child element
+        for (let i = 0; i < element.children.length; i++) {
+            // console.log(element.children[i].classList)
+            if(element.children[i].classList.contains('except')){
+                continue
+            }
+            console.log('-------')
+            console.log(scaleFactor)
+            multiplyDimensions(element.children[i], factor);
+        }
+
+    }
 
     useEffect(() => {
         const updateScreenWidth = () => {
@@ -58,6 +116,8 @@ const Developer = () => {
             }
             else{
                 setScreenLG(false);
+                initChange()
+
 
             }
 
