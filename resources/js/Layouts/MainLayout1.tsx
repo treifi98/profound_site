@@ -23,11 +23,14 @@ const MainLayout1 = (props:Props) => {
         return () => window.removeEventListener('resize', updateScreenWidth);
       }, []);
   return (
-    <div className='font-[nova] overflow-hidden'>
+    <div className='font-[nova]  !h-max '>
 
         <Header1 screen={screenLG}/>
+        <div className='scalable origin-top-left w-[375px] flex flex-col items-center h-max'>
+
             {props.children}
         <Footer screen={screenLG}/>
+        </div>
     </div>
 
   )

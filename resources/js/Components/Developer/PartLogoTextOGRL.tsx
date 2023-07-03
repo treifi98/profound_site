@@ -49,11 +49,11 @@ const PartLogoTextOGRL = (props:Props) => {
                         <div className='h-full w-[325px] border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.9822875rem] box-border py-[1rem] flex justify-center items-center'>
 
 
-                            <div className='w-[18.625rem] mx-auto '>
-                                <div className='font-[600] text-grade text-[1.25rem] w-[284px] mx-auto'>
+                            <div className='w-[325px] mx-auto '>
+                                <div className='font-[600] text-grade text-[1.25rem] w-[94%] mx-auto'>
                                     Latest Projects By Emaar
                                 </div>
-                                <div className='text-[0.875rem] leading-[175%] w-[284px] text-grade mt-[0.5rem] mx-auto text-start'>
+                                <div className='text-[14px] leading-[175%] w-[94%] text-grade mt-[0.5rem] mx-auto text-start'>
                                     One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                                     corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                                 </div>

@@ -108,12 +108,20 @@ const NoCrooked = (props:Props) => {
 
                 </div>
             </div>
-            <div className='mt-[1.25rem] w-[21.9375rem] mx-auto h-[16.665rem] flex justify-center items-center shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] rounded-[0.625rem] border-[1px] border-[#DCE3E3]'>
-                <div className='w-[20.3925rem] h-[15.183125rem] rounded-[0.625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center '>
-                    <AboutSwiper width='20.3925rem' height='15.183125rem' rounded='0.625rem' scale='0.82'/>
+            {/* <div className='h-[20px]'>
+
+            </div> */}
+            <div className=' w-[335px] mx-auto h-[250.64px] flex justify-center items-center shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] rounded-[0.625rem] border-[1px] border-[#DCE3E3] my-[20px]'>
+
+                <div className='w-[310.28px] h-[226.93px] rounded-[0.625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center '>
+                    <AboutSwiper width='310.28px' height='226.93px' rounded='0.625rem' scale='0.82'/>
                 </div>
             </div>
-            <div className='mt-[1.25rem] flex flex-col gap-[1.125rem] w-min mx-auto justify-center items-center '>
+            {/* <div className='h-[20px]'>
+
+            </div> */}
+            <div className=' flex flex-col gap-[1.125rem] w-min mx-auto justify-center items-center '>
+
                 <div className='w-full px-[1rem] text-center shadow-[-3.32px_-3.32px_5.3px_#fff,3.32px_3.32px_4.64px_#B6C3C5] rounded-[4.5375rem] h-[1.69738rem]  flex justify-center items-center'>
                     <div className='whitespace-nowrap text-[0.875rem] text-grade font-[500]'>
 
@@ -145,12 +153,13 @@ const NoCrooked = (props:Props) => {
                     </div>
                 </div>
             </div>
-            <div className='w-min mx-auto mt-[1.138125rem] px-[1rem] text-center shadow-[0px_2.6873440742492676px_2.6873440742492676px_0px_rgba(0,0,0,0.25)] rounded-[4.5375rem] h-[1.69738rem]  flex justify-center items-center bg-custom-gradient mb-[1.25rem]'>
+            <div className='w-min mx-auto mt-[1.138125rem] px-[1rem] text-center shadow-[0px_2.6873440742492676px_2.6873440742492676px_0px_rgba(0,0,0,0.25)] rounded-[4.5375rem] h-[1.69738rem]  flex justify-center items-center bg-custom-gradient mb-[20px] '>
                     <div className='whitespace-nowrap text-[0.875rem] text-[#fff] font-[500] except'>
 
                         Projects in Dubai Marina
                     </div>
                 </div>
+
         </div>
        )
     }

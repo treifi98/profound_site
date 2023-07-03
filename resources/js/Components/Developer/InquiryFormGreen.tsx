@@ -81,9 +81,12 @@ const InquiryFormGreen = (props:Props) => {
                                     </div>
 
                                     <div className='h-[17.1875rem] w-[20.461rem]  rounded-[0.55rem] shadow-[4.387387752532959px_4.387387752532959px_7.019820690155029px_0px_#011618_inset,-4.387387752532959px_-4.387387752532959px_7.019820690155029px_0px_#04626B_inset] flex justify-center items-center'>
-                                        <div className='text-[1rem] leading-[150%] text-[#fff] w-[257px] '>
+                                        <div className='w-[325px] mx-auto'>
 
-                                            Profound Properties is an excellent real estate company. They provided top-notch services, making the home buying process smooth and stress-free. Their professionalism, attention to detail, and willingness to meet my needs were impressive. I highly recommend Profound Properties to anyone looking to buy or sell a property.
+                                            <div className='text-[14px] mx-auto leading-[175%] w-[92%] text-[#fff] '>
+
+                                                Profound Properties is an excellent real estate company. They provided top-notch services, making the home buying process smooth and stress-free. Their professionalism, attention to detail, and willingness to meet my needs were impressive. I highly recommend Profound Properties to anyone looking to buy or sell a property.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -51,7 +51,7 @@ const Area = () => {
         setChanger(window.innerWidth)
     }
     const ScaleforMobile = () => {
-        let x = window.innerWidth / mainScreen
+        let x = window.innerWidth / 375
         setScaleFactor(x)
 
     }
@@ -63,9 +63,12 @@ const Area = () => {
     },[changer])
 
     useEffect(()=>{
-        document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
-            multiplyDimensions(elmnt,scaleFactor)
-        })
+        // document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+        //     elmnt.parentElement.style.scale = scaleFactor.toString()
+        //     // elmnt.parentElement.style.marginTop = (5 * scaleFactor).toString()+'rem'
+        //     // alert((elmnt.parentElement.style.marginTop))
+        // })
+        document.querySelector('.scalable').style.scale = scaleFactor
     },[scaleFactor])
 
 
@@ -161,17 +164,15 @@ const Area = () => {
         </>
         :
         <>
-            <div className=' mt-[1.4375rem] w-max flex justify-start ml-[1rem] scale-[0.8] origin-[0%_0%]'>
+            <div className=' mt-[0.5375rem] w-max flex justify-start ml-[0rem] scale-[0.8] origin-[-140%_0%]'>
                 <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas',link:'/areas'},{title:'Dubai Marina',link:'/area/marina'}]}/>
             </div>
-            <div className='w-min mx-auto mt-[1rem]'>
-                <div className='w-min '>
+            <div className='w-min mx-auto mt-[0.5rem]'>
                     <NoCrooked screen={screenLG}/>
-                </div>
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[5rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
-                <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
+                {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
                     <div className='w-[100%]  mx-auto'>
 
                         <SwiperMobile>
@@ -784,10 +785,10 @@ const Area = () => {
                         </SwiperMobile>
                     </div>
 
-                </div>
+                {/* </div> */}
             </div>
 
-            <div className='!w-[100vw] h-[31.1875rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem] mb-[1rem]'>
+            <div className='!w-[100%] h-[31.1875rem] rounded-[0.625rem]  mt-[5rem] mb-[1rem]'>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
                 <div className='w-full h-[24.02875rem] flex justify-center items-center'>
                     <div className='w-[100%] h-[24.02875rem]  mx-auto'>
@@ -829,9 +830,9 @@ const Area = () => {
                 </div>
 
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[5rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
-                <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
+                {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
                     <div className='w-[100%]  mx-auto'>
 
                         <SwiperMobile>
@@ -1444,11 +1445,11 @@ const Area = () => {
                         </SwiperMobile>
                     </div>
 
-                </div>
+                {/* </div> */}
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[5rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[5rem]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
-                <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
+                {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
                     <div className='w-[100%]  mx-auto'>
 
                         <SwiperMobile>
@@ -2061,7 +2062,7 @@ const Area = () => {
                         </SwiperMobile>
                     </div>
 
-                </div>
+                {/* </div> */}
             </div>
         </>
       }

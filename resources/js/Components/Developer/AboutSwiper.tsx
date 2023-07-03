@@ -58,9 +58,9 @@ const AboutSwiper = (props:Props) => {
             <div className='absolute w-[2.625rem] h-[1.9375rem] cursor-pointer right-[-4.6rem] top-[calc(50%-0.96875rem)] rotate-180 z-[999999]'  onClick={() => swiper.slideNext()}>
                 <img src={arrowIcon} alt="" className='h-full w-full'/>
             </div> */}
-            <div className=' flex justify-center items-center  mx-auto bg-[#E6EDED] overflow-hidden rounded-[]  ' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+            {/* <div className=' flex justify-center items-center  mx-auto bg-[#E6EDED] overflow-hidden rounded-[]  ' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}> */}
 
-                <div className='mx-auto  overflow-hidden' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}>
+                {/* <div className='mx-auto  overflow-hidden' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}> */}
                     <Swiper
 
                     modules={[Autoplay, EffectCoverflow, Pagination]}
@@ -87,35 +87,35 @@ const AboutSwiper = (props:Props) => {
                         }}
                         className="AboutSwiper"
                     >
-                        <SwiperSlide>
-                            <div className=' ' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}>
+                        <SwiperSlide style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+                            {/* <div className=' ' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}> */}
                                 <img src={beatchFront} alt="" className=' object-cover object-center  rounded-[]' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}/>
 
-                            </div>
+                            {/* </div> */}
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}>
+                        <SwiperSlide style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+                            {/* <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}> */}
                                 <img src={beatchFront} alt="" className=' object-cover object-center  rounded-[]' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}/>
 
-                            </div>
+                            {/* </div> */}
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}>
+                        <SwiperSlide style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+                            {/* <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}> */}
                                 <img src={beatchFront} alt="" className=' object-cover object-center  rounded-[]' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}/>
 
-                            </div>
+                            {/* </div> */}
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}>
+                        <SwiperSlide style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+                            {/* <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}> */}
                                 <img src={beatchFront} alt="" className=' object-cover object-center  rounded-[]' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}/>
 
-                            </div>
+                            {/* </div> */}
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}>
+                        <SwiperSlide style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}>
+                            {/* <div className='' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem' }}> */}
                                 <img src={beatchFront} alt="" className=' object-cover object-center  rounded-[]' style={{ width:props.width?props.width:'51.75rem', height:props.height?props.height:'35.875rem', borderRadius:props.rounded?props.rounded:'0.875rem' }}/>
 
-                            </div>
+                            {/* </div> */}
                         </SwiperSlide>
 
 
@@ -123,9 +123,9 @@ const AboutSwiper = (props:Props) => {
                     <div className='absolute bottom-[1.21875rem] left-[calc(50%-2.46625rem)] z-[999999] origin-bottom-left' style={{ scale:props.scale?props.scale:'1' }}>
                         <SliderPagination numberOfItems={5} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
 
-                    </div>
+                    {/* </div> */}
                 </div>
-            </div>
+            {/* </div> */}
     </div>
   )
 }

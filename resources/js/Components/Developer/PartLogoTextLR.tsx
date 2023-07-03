@@ -24,14 +24,14 @@ const PartLogoTextLR = (props:Props) => {
                                 <img src={imgLT} alt="" className='w-[30.838125rem] h-[31.383125rem] rounded-[1.10446875rem_11.25rem_0.7354875rem_11.25rem]'/>
                             </div>
                         </div>
-                        <div className='h-full w-[50.375rem] border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.9822875rem] box-border py-[1rem] flex justify-center items-center'>
+                        <div className='h-full w-[50.375rem] border-[#DCE3E3] border-[0.0625rem] shadow-[inset_-0.5rem_-0.625rem_0.9375rem_#FFFFFF,inset_0.5rem_0.5rem_0.9375rem_#B6C3C5] rounded-[0.9822875rem] box-border py-[2rem] flex justify-center items-center'>
 
 
                             <div className='w-[46.0625rem]'>
                                 <div className='font-[600] text-grade text-[2rem]'>
                                     Latest Projects By Emaar
                                 </div>
-                                <div className='text-[1.25rem] leading-[2rem] text-grade mt-[0.5rem]'>
+                                <div className='text-[1.25rem] leading-[2rem] text-grade mt-[1.25rem]'>
                                     One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecoical system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                                     corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                                 </div>
@@ -50,11 +50,11 @@ const PartLogoTextLR = (props:Props) => {
                         <div className='h-full w-[20.3125rem] border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.9822875rem] box-border py-[1rem] flex justify-center items-center'>
 
 
-                            <div className='w-[18.625rem] mx-auto'>
-                                <div className='font-[600] text-grade text-[1.25rem]'>
+                            <div className='w-[325px] mx-auto'>
+                                <div className='font-[600] text-grade text-[20px] mx-auto w-[94%]'>
                                     Latest Projects By Emaar
                                 </div>
-                                <div className='text-[0.875rem] leading-[175%] w-[284px] text-grade mt-[0.5rem]'>
+                                <div className='text-[14px] leading-[175%] w-[94%] text-grade mt-[0.5rem] mx-auto'>
                                     One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                                     corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                                 </div>
