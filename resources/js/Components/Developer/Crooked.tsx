@@ -118,7 +118,7 @@ const Crooked = (props:Props) => {
                             <InfoShape img={pricetag} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.1875rem' imgWidth='2.1875rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
                         </div>
                         <div className='w-[8.8875rem] h-[1.89906rem] flex justify-center items-center bg-custom-gradient rounded-[3.79375rem] mx-auto mt-[-0.5rem]'>
-                            <div className='text-[#fff] text-[0.91156rem] font-[600]'>
+                            <div className='text-[#fff] text-[0.91156rem] font-[600] except'>
                                 Find Property
                             </div>
                         </div>
