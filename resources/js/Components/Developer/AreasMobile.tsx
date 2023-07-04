@@ -9,13 +9,13 @@ import icon from '../../../assets/mapbarmobile.svg'
 
 const AreasMobile = () => {
   return (
-    <div className='w-[375px] h-[67.425rem]  shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem] mobil-comp'>
+    <div className='w-[375px] h-[67.425rem]  shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[0rem] mb-[1rem] mobil-comp'>
         <div className='w-[375px] h-[2.625rem] flex justify-center items-center  shadow-[-2.89237px_-2.89237px_4.6278px_#FFFFFF,_2.89237px_2.89237px_4.04932px_#B6C3C5] '>
             <div className='w-[375px] h-[2.625rem] flex justify-between items-center'>
                 <div className='flex justify-evenly h-[2.625rem] items-center '>
 
                     <img src={icon} alt="" className='w-[3.5rem] h-[2.625rem] object-cover '/>
-                    <div className='h-[2.625rem] ml-[0.1rem] ' >
+                    <div className='h-[2.625rem] ml-[0.1rem] w-[0.25rem]' >
                         <InElementSeperator width='0.25rem' height='2.625rem'/>
                     </div>
                     <div className='text-[1.125rem] font-[600] text-grade ml-[0.4rem]'>
@@ -30,7 +30,7 @@ const AreasMobile = () => {
             </div>
 
             <div className='h-[0.25rem]  except'>
-                <InElementSeperator width='327px' />
+                <InElementSeperator width='100%' />
             </div>
 
                 <div className='w-[375px] h-[7rem] rounded-[0rem_0rem_0.625rem_0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] flex justify-center items-center'>

@@ -152,7 +152,7 @@ const Area = () => {
             <div className='mx-auto mt-[0.625rem] w-[91.25rem]'>
                 <NoCrooked screen={screenLG}/>
             </div>
-            <div className='w-full mt-[5rem]'>
+            <div className='w-full mt-[50px]'>
                 <OffPlanSwiper barTitle=' Projects in Dubai Marina'/>
             </div>
             <div className='w-full mt-[3.125rem]'>
@@ -173,7 +173,7 @@ const Area = () => {
             <div className='w-min mx-auto mt-[0.5rem]'>
                     <NoCrooked screen={screenLG}/>
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[5rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[50px]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
                 {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
                     <div className='w-[100%]  mx-auto'>
@@ -791,7 +791,7 @@ const Area = () => {
                 {/* </div> */}
             </div>
 
-            <div className='!w-[100%] h-[31.1875rem] rounded-[0.625rem]  mt-[5rem] mb-[1rem]'>
+            <div className='!w-[100%] h-[31.1875rem] rounded-[0.625rem]  mt-[50px] mb-[1rem]'>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
                 <div className='w-full h-[24.02875rem] flex justify-center items-center'>
                     <div className='w-[100%] h-[24.02875rem]  mx-auto'>
@@ -833,7 +833,7 @@ const Area = () => {
                 </div>
 
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[5rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[50px]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
                 {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
                     <div className='w-[100%]  mx-auto'>
@@ -1450,7 +1450,7 @@ const Area = () => {
 
                 {/* </div> */}
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[5rem]'>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[50px]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches'/>
                 {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
                     <div className='w-[100%]  mx-auto'>
@@ -2072,62 +2072,62 @@ const Area = () => {
 
 
 
-      <div className='w-min mx-auto mt-[5rem] '>
+      <div className='w-min mx-auto mt-[50px] '>
         <div className=' w-min'>
 
             <AboutDeveloper screen={screenLG}/>
         </div>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem] '>
+      <div className='w-max mx-auto mt-[50px] '>
         <Attraction screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <MapContainer screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <LogoTextRL screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <PartLogoTextOGRL screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <PartLogoTextLR screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <PartLogoTextRL screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <PartLogoTextOGLR screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <InquiryFormGreen screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <SquareTextLR screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <SquareTextRL screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <DoublrBoxesDoubleText screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-max mx-auto mt-[50px]'>
         <InquiryFormWiht screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem] mb-[5rem]'>
+      <div className='w-max mx-auto mt-[50px] mb-[5rem]'>
         {
             screenLG?
             <Areas/>

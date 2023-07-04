@@ -43,20 +43,20 @@ const SquareTextLR = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[375px] h-max bg-[#E6EDED] flex justify-center items-center  py-[25px] shadow-[6.217571258544922px_6.217571258544922px_12.435142517089844px_0px_#BABFBF,-6.217571258544922px_-6.217571258544922px_12.435142517089844px_3.108785629272461px_#FFF] mobil-comp'>
+                <div className='w-[375px] h-max bg-[#E6EDED] flex  items-center   shadow-[6.217571258544922px_6.217571258544922px_12.435142517089844px_0px_#BABFBF,-6.217571258544922px_-6.217571258544922px_12.435142517089844px_3.108785629272461px_#FFF] mobil-comp'>
 
-                    <div className=' w-[326px]  rounded-[0.625rem] h-max '>
-                        <div className='w-[326px] h-[17.382rem] border-[1px] border-[#DCE3E3] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[0.625rem] flex justify-center items-center'>
+                    <div className=' w-[325px]  rounded-[0.625rem] h-max mx-auto my-[25px]'>
+                        <div className='w-[325px] h-[17.382rem] border-[1px] border-[#DCE3E3] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[0.625rem] flex justify-center items-center'>
                             <div className='w-[307.76px] h-[16.12194rem] rounded-[0.484625rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF]'>
                                 <NewCardImage src={beatchFront} rounded='0.484625' width='307.76px' height='16.12194rem'/>
                             </div>
                         </div>
-                        <div className='w-[326px] mx-auto mt-[24px] h-max min-h-[35.4375rem] py-[1rem] textElementShadow rounded-[0.625rem] border-[1px] border-[#DCE3E3]'>
-                            <div className='w-[284px] h-max mx-auto'>
-                                <div className='text-grade text-[1.25rem] font-[600]'>
+                        <div className='w-[325px] mx-auto mt-[25px] h-max min-h-[35.4375rem] py-[1rem] textElementShadow rounded-[0.625rem] border-[1px] border-[#DCE3E3]'>
+                            <div className='w-[325px] h-max mx-auto'>
+                                <div className='text-grade text-[1.25rem] w-[94%] mx-auto font-[600]'>
                                     Latest Projects By Emaar
                                 </div>
-                                <div className='mt-[0.5rem] text-[0.875rem] leading-[170%] text-grade w-[284px]'>
+                                <div className='text-[14px] leading-[175%] mx-auto w-[94%] text-grade mt-[0.5rem]'>
                                     One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                                 </div>
                             </div>

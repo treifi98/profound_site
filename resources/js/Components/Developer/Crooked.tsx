@@ -99,23 +99,23 @@ const Crooked = (props:Props) => {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[12px] w-[21.9375rem] h-[16.66469rem] shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center rounded-[0.520625rem] mx-auto border-[1px] border-[#DCE3E3]'>
-                        <div className='w-[20.39263rem] h-[15.18338rem] rounded-[0.520625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5]'>
-                            <AboutSwiper height='15.18338rem' width='20.39263rem' rounded='0.520625rem'/>
+                    <div className='mt-[25px] w-[325px] h-[251.43px] shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center rounded-[0.520625rem] mx-auto border-[1px] border-[#DCE3E3]'>
+                        <div className='w-[300px] h-[229.15px] rounded-[0.520625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5]'>
+                            <AboutSwiper height='229.15px' width='300px' rounded='0.520625rem'/>
                         </div>
                     </div>
-                        <div className='mt-[12px] w-[21.9375rem] h-[17.75rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] border-[0.5px] border-[#DCE3E3]  rounded-[0.49rem] mx-auto overflow-hidden flex flex-col gap-[12px] justify-center mb-[12px]'>
-                        <div className='mx-auto w-[19.75rem] mt-[0px]  except'>
+                        <div className='mt-[25px] w-[325px] h-[17.75rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] border-[0.5px] border-[#DCE3E3]  rounded-[0.49rem] mx-auto overflow-hidden flex flex-col gap-[12px] justify-center mb-[25px] '>
+                        <div className='mx-auto w-min mt-[0px]  except'>
 
-                            <InfoShape img={claender} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.188125rem' imgWidth='2.02rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
+                            <InfoShape img={claender} text='Year Of establishment' bluePillText='2007' mainWidth='18.26rem' mainHeight='3.751rem' barWidth='15.62125rem' barHeight='1.86106rem' circleWidth='3.475rem' imgHeight='2.026875rem' imgWidth='1.87125rem' imgMt='0.72375rem' imgMl='0.810625rem' bluePillWidth='5.171875rem' textSize='14px' intersection={0.874375} bluePillTextSize='16px'/>
                         </div>
-                        <div className='mx-auto w-[19.75rem] except'>
+                        <div className='mx-auto w-min except'>
 
-                            <InfoShape img={craneIcon} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.188125rem' imgWidth='1.730625rem' imgMt='0.78125rem' imgMl='1rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
+                            <InfoShape img={craneIcon} text='Year Of establishment' bluePillText='2007' mainWidth='18.26rem' mainHeight='3.751rem' barWidth='15.62125rem' barHeight='1.86106rem' circleWidth='3.475rem' imgHeight='2.026875rem' imgWidth='1.603125rem' imgMt='0.72375rem' imgMl='1rem' bluePillWidth='5.171875rem' textSize='14px' intersection={0.874375} bluePillTextSize='16px'/>
                         </div>
-                        <div className='mx-auto w-[19.75rem] except'>
+                        <div className='mx-auto w-min except'>
 
-                            <InfoShape img={pricetag} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.1875rem' imgWidth='2.1875rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
+                            <InfoShape img={pricetag} text='Year Of establishment' bluePillText='2007' mainWidth='18.26rem' mainHeight='3.751rem' barWidth='15.62125rem' barHeight='1.86106rem' circleWidth='3.475rem' imgHeight='2.026875rem' imgWidth='2.026875rem' imgMt='0.879375rem' imgMl='0.5275rem' bluePillWidth='5.171875rem' textSize='14px' intersection={0.874375} bluePillTextSize='16px'/>
                         </div>
                         <div className='w-[8.8875rem] h-[1.89906rem] flex justify-center items-center bg-custom-gradient rounded-[3.79375rem] mx-auto mt-[-0.5rem]'>
                             <div className='text-[#fff] text-[0.91156rem] font-[600] except'>
