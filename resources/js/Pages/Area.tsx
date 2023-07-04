@@ -72,6 +72,10 @@ const Area = () => {
 
             document.querySelector('.scalable').style.scale = scaleFactor
         }
+        else{
+
+            document.querySelector('.scalable').style.scale = 1
+        }
     },[scaleFactor])
 
 
@@ -117,9 +121,9 @@ const Area = () => {
             }
             else{
                 setScreenLG(false);
-                initChange()
 
             }
+            initChange()
         }
         updateScreenWidth()
         window.addEventListener('resize', updateScreenWidth);

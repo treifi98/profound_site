@@ -414,7 +414,7 @@ const MapContainer = (props:Props) => {
                             </div>
 
                         </div>
-                        <div className='w-[335.11px] h-[28.7395rem] mx-auto rounded-[0.78125rem] overflow-hidden mb-[20px]'>
+                        <div className='w-[335.11px] h-[28.7395rem] mx-auto rounded-[8px] overflow-hidden mb-[20px]'>
                             <Map
                                 points={points}
                                 changes={changes}

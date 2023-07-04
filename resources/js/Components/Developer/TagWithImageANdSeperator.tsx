@@ -15,7 +15,8 @@ interface Props{
     imgML?:string,
     textWidth?:string
     img:string,
-    imgWrapperWidth?:string
+    imgWrapperWidth?:string,
+    noShadow?:Boolean
 }
 const TagWithImageANdSeperator = (props:Props) => {
     const [shadows,setShadows] = useState(['-0.285380625rem -0.285380625rem 0.456609375rem #FFFFFF,0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5','inset 0rem -0.285380625rem 0.456609375rem #FFFFFF,inset 0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5','-0.285380625rem -0.285380625rem 0.456609375rem #FFFFFF,0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5'])
@@ -48,7 +49,7 @@ const TagWithImageANdSeperator = (props:Props) => {
         elmnt.current.style.boxShadow = shadows[0]
     }
     return (
-        <div className={`w-full h-full rounded-[3.125rem] border-[0.0625rem] border-[#DCE3E3] bg-[#E6EDED] flex items-center font-[nova] cursor-pointer`} ref={elmnt} style={{ boxShadow:shadows[0]}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`w-full h-full rounded-[3.125rem] border-[0.0625rem] border-[#DCE3E3] bg-[#E6EDED] flex items-center font-[nova] cursor-pointer`} ref={elmnt} style={{ boxShadow:!props.noShadow?shadows[0]:'none'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className='h-full items-center flex rounded-[5.70761875rem_0rem_0rem_5.70761875rem]' style={{ width:props.imgWrapperWidth?props.imgWrapperWidth:'3.1875rem' }} ref={firstPart}>
 
                 <img src={props.img} alt="" style={{ width:props.imgWidth?props.imgWidth:'2rem',height:props.imgHeight?props.imgHeight:'1.816875rem',marginLeft:props.imgML?props.imgML:'0.625rem' }}/>

@@ -111,10 +111,10 @@ const NoCrooked = (props:Props) => {
             {/* <div className='h-[20px]'>
 
             </div> */}
-            <div className=' w-[339px] mx-auto h-[264.64px] flex justify-center items-center shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] rounded-[0.625rem] border-[1px] border-[#DCE3E3] my-[18px]'>
+            <div className=' w-[339px] mx-auto h-[264.64px] flex justify-center items-center shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] rounded-[8px] border-[1px] border-[#DCE3E3] my-[18px]'>
 
-                <div className='w-[314.28px] h-[240.93px] rounded-[0.625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center '>
-                    <AboutSwiper width='314.28px' height='240.93px' rounded='0.625rem' scale='0.82'/>
+                <div className='w-[314.28px] h-[240.93px] rounded-[8px] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center '>
+                    <AboutSwiper width='314.28px' height='240.93px' rounded='8px' scale='0.82'/>
                 </div>
             </div>
             {/* <div className='h-[20px]'>

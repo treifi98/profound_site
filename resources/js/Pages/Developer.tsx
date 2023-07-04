@@ -69,9 +69,14 @@ const Developer = () => {
     },[changer])
 
     useEffect(()=>{
-        document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
-            multiplyDimensions(elmnt,scaleFactor)
-        })
+        if(window.innerWidth < 1530){
+
+            document.querySelector('.scalable').style.scale = scaleFactor
+        }
+        else{
+            document.querySelector('.scalable').style.scale = 1
+
+        }
     },[scaleFactor])
 
 
@@ -113,6 +118,7 @@ const Developer = () => {
             if (window.innerWidth >= 1530){
 
                 setScreenLG(true);
+                initChange()
             }
             else{
                 setScreenLG(false);

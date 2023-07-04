@@ -35,6 +35,93 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const BuyProperty = () => {
 
+    const [screenLG,setScreenLG] = useState(true)
+    const [scaleFactor,setScaleFactor] = useState(1.0)
+    const [mainScreen,setMainScreen] = useState(375)
+    const [changer,setChanger] = useState(1)
+    // const [currentScreen,setCurrentScreen] = useState(375)
+    const initChange = () => {
+        setChanger(window.innerWidth)
+    }
+    const ScaleforMobile = () => {
+        let x = window.innerWidth / 375
+        setScaleFactor(x)
+
+    }
+    useEffect(()=>{
+        console.log(mainScreen)
+        ScaleforMobile()
+        setMainScreen(window.innerWidth)
+        console.log(scaleFactor)
+    },[changer])
+
+    useEffect(()=>{
+        // document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+        //     elmnt.parentElement.style.scale = scaleFactor.toString()
+        //     // elmnt.parentElement.style.marginTop = (5 * scaleFactor).toString()+'rem'
+        //     // alert((elmnt.parentElement.style.marginTop))
+        // })
+        if(window.innerWidth < 1530){
+
+            document.querySelector('.scalable').style.scale = scaleFactor
+        }
+        else{
+            document.querySelector('.scalable').style.scale = 1
+
+        }
+    },[scaleFactor])
+
+
+    const multiplyDimensions = (element, factor) => {
+        // first, get the computed style of the element
+
+        let style = window.getComputedStyle(element);
+
+        // get the width and height of the element
+        let width = parseFloat(style.width.replace("rem", ""));
+        let height = parseFloat(style.height.replace("rem", ""));
+        let textSize = parseFloat(style.fontSize.replace("rem", ""));
+
+        // multiply the width and height by the factor
+        width *= factor;
+        height *= factor;
+        textSize *= factor;
+
+        // set the new width and height
+        element.style.width = `${width}px`;
+        element.style.height = `${height}px`;
+        element.style.fontSize = `${textSize}px`;
+
+        // repeat for each child element
+        for (let i = 0; i < element.children.length; i++) {
+            // console.log(element.children[i].classList)
+            if(element.children[i].classList.contains('except')){
+                continue
+            }
+            console.log('-------')
+            console.log(scaleFactor)
+            multiplyDimensions(element.children[i], factor);
+        }
+
+    }
+    useEffect(() => {
+        const updateScreenWidth = () => {
+            if (window.innerWidth >= 1530){
+
+                setScreenLG(true);
+                initChange()
+            }
+            else{
+                setScreenLG(false);
+                initChange()
+
+            }
+        }
+        updateScreenWidth()
+        window.addEventListener('resize', updateScreenWidth);
+        return () => window.removeEventListener('resize', updateScreenWidth);
+      }, []);
+
     const [points,setPoints] = useState([
         {
             point: [55.2667940551224,25.18752435627845],
@@ -57,21 +144,21 @@ const BuyProperty = () => {
         <Tracer crumbs={[{title:'Home',link:'/'},{title:'Buy',link:'/buy'},{title:'Creek Rise Tower',link:'/buy/test'}]}/>
       </div>
       <div className='mx-auto mt-[0.625rem] w-[91.25rem]'>
-        <ImgGallery/>
+        <ImgGallery screen={screenLG}/>
       </div>
       <div className='w-max  mx-auto mt-[5rem]'>
         <SecondaryInfo/>
       </div>
       <div className='w-max mx-auto mt-[5rem] mb-[5rem]'>
-        <DoublrBoxesDoubleText/>
+        <DoublrBoxesDoubleText screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <Amenities/>
+        <Amenities screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <InquiryFormGreen/>
+        <InquiryFormGreen screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
@@ -79,11 +166,11 @@ const BuyProperty = () => {
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <Attraction/>
+        <Attraction screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <MapContainer/>
+        <MapContainer screen={screenLG}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
@@ -91,7 +178,7 @@ const BuyProperty = () => {
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <InquiryFormWiht/>
+        <InquiryFormWiht screen={screenLG}/>
 
       </div>
       <div className='w-full mt-[5rem] mb-[4rem]'>

@@ -56,7 +56,7 @@ const LogoTextRL = (props:Props) => {
                 <div className='w-[375px] h-max flex items-center  bg-[#E6EDED] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] mobil-comp'>
                     <div className='w-[339px] h-max flex gap-[0px] flex-col-reverse  mx-auto my-[18px]'>
 
-                        <div className='h-full w-[339px] mx-auto  border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.625rem] box-border py-[1rem] flex justify-center items-center '>
+                        <div className='h-full w-[339px] mx-auto  border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[8px] box-border py-[1rem] flex justify-center items-center '>
 
 
                             <div className='w-[325px] mx-auto'>
