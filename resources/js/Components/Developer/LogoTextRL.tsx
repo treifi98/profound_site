@@ -54,22 +54,22 @@ const LogoTextRL = (props:Props) => {
             ):
             (
                 <div className='w-[375px] h-max flex items-center  bg-[#E6EDED] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] mobil-comp'>
-                    <div className='w-[325px] h-max flex gap-[0px] flex-col-reverse  mx-auto my-[25px]'>
+                    <div className='w-[339px] h-max flex gap-[0px] flex-col-reverse  mx-auto my-[18px]'>
 
-                        <div className='h-full w-[325px] mx-auto  border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.625rem] box-border py-[1rem] flex justify-center items-center '>
+                        <div className='h-full w-[339px] mx-auto  border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[0.625rem] box-border py-[1rem] flex justify-center items-center '>
 
 
-                            <div className='w-[94%] mx-auto'>
-                                <div className='font-[600] text-grade text-[1.25rem]'>
+                            <div className='w-[325px] mx-auto'>
+                                <div className='font-[600] text-grade text-[1.25rem] w-[94%] mx-auto'>
                                     Latest Projects By Emaar
                                 </div>
-                                <div className='text-[14px] leading-[175%] text-grade mt-[0.5rem] w-[100%] '>
+                                <div className='text-[14px] leading-[175%] text-grade mt-[0.5rem] w-[94%] mx-auto'>
                                     One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
                                     corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[20.8125rem] h-full flex flex-wrap mb-[25px]'>
+                        <div className='w-[20.8125rem] h-full flex flex-wrap mb-[18px]'>
                             <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[2.66%_33.76%_3.80%_33.76%] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
                                 <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[2.66%_33.76%_3.80%_33.76%] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
 

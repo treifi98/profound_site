@@ -69,10 +69,10 @@ const InquiryFormGreen = (props:Props) => {
             ):
             (
                 <div className='w-[375px] h-max  bg-[#002D31] flex justify-center items-center !font-[nova]  mobil-comp overflow-hidden'>
-                    <div className='w-[325px] h-min flex flex-col-reverse gap-[0px] mx-auto  rounded-[0.671375rem] my-[25px]'>
-                        <div className='flex justify-center items-center w-[325px] h-min rounded-[0.971875rem] bg-[#002D31] mx-auto '>
-                            <div className='w-[325px] h-min mx-auto'>
-                                <div className='flex flex-col-reverse gap-[0px] w-[325px] h-max items-center'>
+                    <div className='w-[339px] h-min flex flex-col-reverse gap-[0px] mx-auto  rounded-[0.671375rem] my-[25px]'>
+                        <div className='flex justify-center items-center w-[339px] h-min rounded-[0.971875rem] bg-[#002D31] mx-auto '>
+                            <div className='w-[339px] h-min mx-auto'>
+                                <div className='flex flex-col-reverse gap-[0px] w-[339px] h-max items-center'>
                                     <div className='flex h-max w-[19.195rem] flex-col gap-[25px]'>
                                         <DynamicTextGreen textSize='1rem' icon={userIcon} placeHolder='Your full name' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.11375rem' imgHeight='1.11375rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
                                         <DynamicTextGreen textSize='1rem' icon={emaiIcon} placeHolder='Your email address' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.26125rem' imgHeight='0.88625rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
@@ -80,7 +80,7 @@ const InquiryFormGreen = (props:Props) => {
                                         <textarea name="message" id="" className='text-[#fff] bg-[#002D31] rounded-[0.425rem] w-[19.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[inset_-0.137583125rem_-0.137583125rem_0.228848125rem_-1.22052px_#007580,inset_0.137583125rem_0.137583125rem_0.179920625rem_#011618] text-[1rem]' placeholder='Your message .....' ></textarea>
                                     </div>
 
-                                    <div className='h-[17.1875rem] w-[325px] mb-[25px] rounded-[0.55rem] shadow-[4.387387752532959px_4.387387752532959px_7.019820690155029px_0px_#011618_inset,-4.387387752532959px_-4.387387752532959px_7.019820690155029px_0px_#04626B_inset] flex justify-center items-center'>
+                                    <div className='h-[17.1875rem] w-[339px] mb-[25px] rounded-[0.55rem] shadow-[4.387387752532959px_4.387387752532959px_7.019820690155029px_0px_#011618_inset,-4.387387752532959px_-4.387387752532959px_7.019820690155029px_0px_#04626B_inset] flex justify-center items-center'>
                                         <div className='w-[325px] mx-auto'>
 
                                             <div className='text-[14px] mx-auto leading-[175%] w-[94%] text-[#fff] '>
@@ -117,9 +117,9 @@ const InquiryFormGreen = (props:Props) => {
                             </div>
                         </div>
 
-                            <div className='w-[325px] h-[19.3015rem] rounded-[0.671375rem] shadow-[-0.269021875rem_-0.269021875rem_0.430435rem_#04626B,0.269021875rem_0.269021875rem_0.430435rem_#011618]  flex justify-center items-center mb-[25px]'>
-                                <div className='w-[19.13619rem] h-[17.97569rem]  shadow-[inset_-0.269021875rem_-0.269021875rem_0.430435rem_#04626B,inset_0.269021875rem_0.269021875rem_0.430435rem_#011618] flex justify-center items-center rounded-[0.671375rem]'>
-                                    <img src={img} alt="" className='w-[17.88988rem] h-[16.57194rem] rounded-[0.671375rem]'/>
+                            <div className='w-[339px] h-[19.3015rem] rounded-[0.671375rem] shadow-[-0.269021875rem_-0.269021875rem_0.430435rem_#04626B,0.269021875rem_0.269021875rem_0.430435rem_#011618]  flex justify-center items-center mb-[25px]'>
+                                <div className='w-[19.73619rem] h-[17.97569rem]  shadow-[inset_-0.269021875rem_-0.269021875rem_0.430435rem_#04626B,inset_0.269021875rem_0.269021875rem_0.430435rem_#011618] flex justify-center items-center rounded-[0.671375rem]'>
+                                    <img src={img} alt="" className='w-[18.28988rem] h-[16.57194rem] rounded-[0.671375rem]'/>
                                 </div>
                             </div>
                     </div>

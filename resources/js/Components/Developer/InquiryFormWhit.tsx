@@ -71,9 +71,9 @@ const InquiryFormWiht = (props:Props) => {
             (
                 <div className='w-[375px] h-max rounded-[0.625rem] bg-[#E6EDED] flex items-center !font-[nova]  shadow-[4px_4px_8px_0px_#BABFBF,-4px_-4px_8px_0px_#FFF] mobil-comp'>
                 <div className='w-[375px] h-min flex flex-col-reverse gap-[0px] justify-center items-center  rounded-[0.671375rem] my-[25px] mx-auto'>
-                    <div className='flex justify-center items-center w-[325px] h-min rounded-[0.971875rem] bg-[#E6EDED]  '>
-                        <div className='w-[325px] h-max mx-auto'>
-                            <div className='flex flex-col-reverse gap-[0px] w-[325px] h-max items-center'>
+                    <div className='flex justify-center items-center w-[339px] h-min rounded-[0.971875rem] bg-[#E6EDED]  '>
+                        <div className='w-[339px] h-max mx-auto'>
+                            <div className='flex flex-col-reverse gap-[0px] w-[339px] h-max items-center'>
                                 <div className='flex h-max w-[19.195rem] flex-col gap-[25px] mt-[25px]'>
                                     <DynamicTextWhit textSize='1rem' icon={userIcon} placeHolder='Your full name' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.11375rem' imgHeight='1.11375rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
                                     <DynamicTextWhit textSize='1rem' icon={emaiIcon} placeHolder='Your email address' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.26125rem' imgHeight='0.88625rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
@@ -81,9 +81,12 @@ const InquiryFormWiht = (props:Props) => {
                                     <textarea name="message" id="" className='text-[#7D8989] bg-[#E6EDED] rounded-[0.425rem] w-[19.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[5.342816352844238px_5.342816352844238px_10.685632705688477px_0px_#BABFBF_inset,-5.342816352844238px_-5.342816352844238px_10.685632705688477px_2.671408176422119px_#FFF_inset] text-[1rem]' placeholder='Your message .....' ></textarea>
                                 </div>
 
-                                <div className='h-[17.9375rem] w-[325px] rounded-[0.55rem] shadow-[4.910526275634766px_4.910526275634766px_9.821052551269531px_0px_#BABFBF_inset,-4.910526275634766px_-4.910526275634766px_9.821052551269531px_2.455263137817383px_#FFF_inset] flex justify-center items-center txet-[1rem] mt-[25px]'>
-                                    <div className='text-grade w-[94%] mx-auto text-[14px] leading-[175%]'>
-                                        Profound Properties is an excellent real estate company. They provided top-notch services, making the home buying process smooth and stress-free. Their professionalism, attention to detail, and willingness to meet my needs were impressive. I highly recommend Profound Properties to anyone looking to buy or sell a property.
+                                <div className='h-[17.9375rem] w-[339px] rounded-[0.55rem] shadow-[4.910526275634766px_4.910526275634766px_9.821052551269531px_0px_#BABFBF_inset,-4.910526275634766px_-4.910526275634766px_9.821052551269531px_2.455263137817383px_#FFF_inset] flex justify-center items-center txet-[1rem] mt-[25px]'>
+                                    <div className='w-[325px] mx-auto'>
+
+                                        <div className='text-grade w-[94%] mx-auto text-[14px] leading-[175%]'>
+                                            Profound Properties is an excellent real estate company. They provided top-notch services, making the home buying process smooth and stress-free. Their professionalism, attention to detail, and willingness to meet my needs were impressive. I highly recommend Profound Properties to anyone looking to buy or sell a property.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -114,11 +117,11 @@ const InquiryFormWiht = (props:Props) => {
                         </div>
                     </div>
 
-                        <div className='h-[17.9375rem] w-[325px] rounded-[0.671375rem] shadow-[3.298856496810913px_3.298856496810913px_6.597712993621826px_0px_#BABFBF,-3.298856496810913px_-3.298856496810913px_6.597712993621826px_1.6494282484054565px_#FFF]  flex justify-center items-center !mx-auto'>
-                            <div className='w-[305px] h-[267px] shadow-[3.298856496810913px_3.298856496810913px_6.597712993621826px_0px_#BABFBF_inset,-3.298856496810913px_-3.298856496810913px_6.597712993621826px_1.6494282484054565px_#FFF_inset] flex justify-center items-center rounded-[0.671375rem] border-[1px] border-[#DCE3E3]'>
-                                <div className='w-[285px] h-[242px] flex justify-center items-center rounded-[0.671375rem] '>
+                        <div className='h-[17.9375rem] w-[339px] rounded-[0.671375rem] shadow-[3.298856496810913px_3.298856496810913px_6.597712993621826px_0px_#BABFBF,-3.298856496810913px_-3.298856496810913px_6.597712993621826px_1.6494282484054565px_#FFF]  flex justify-center items-center !mx-auto'>
+                            <div className='w-[319px] h-[267px] shadow-[3.298856496810913px_3.298856496810913px_6.597712993621826px_0px_#BABFBF_inset,-3.298856496810913px_-3.298856496810913px_6.597712993621826px_1.6494282484054565px_#FFF_inset] flex justify-center items-center rounded-[0.671375rem] border-[1px] border-[#DCE3E3]'>
+                                <div className='w-[299px] h-[245px] flex justify-center items-center rounded-[0.671375rem] '>
 
-                                    <img src={img} alt="" className='w-[285px] h-[242px] rounded-[0.671375rem]'/>
+                                    <img src={img} alt="" className='w-[299px] h-[245px] rounded-[0.671375rem]'/>
                                 </div>
                             </div>
                         </div>

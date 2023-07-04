@@ -45,13 +45,13 @@ const SquareTextLR = (props:Props) => {
             (
                 <div className='w-[375px] h-max bg-[#E6EDED] flex  items-center   shadow-[6.217571258544922px_6.217571258544922px_12.435142517089844px_0px_#BABFBF,-6.217571258544922px_-6.217571258544922px_12.435142517089844px_3.108785629272461px_#FFF] mobil-comp'>
 
-                    <div className=' w-[325px]  rounded-[0.625rem] h-max mx-auto my-[25px]'>
-                        <div className='w-[325px] h-[17.382rem] border-[1px] border-[#DCE3E3] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[0.625rem] flex justify-center items-center'>
-                            <div className='w-[307.76px] h-[16.12194rem] rounded-[0.484625rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF]'>
-                                <NewCardImage src={beatchFront} rounded='0.484625' width='307.76px' height='16.12194rem'/>
+                    <div className=' w-[339px]  rounded-[0.625rem] h-max mx-auto my-[18px]'>
+                        <div className='w-[339px] h-[291.112px] border-[1px] border-[#DCE3E3] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[0.625rem] flex justify-center items-center'>
+                            <div className='w-[321.76px] h-[272.95104px] rounded-[0.484625rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF]'>
+                                <NewCardImage src={beatchFront} rounded='0.484625' width='321.76px' height='272.95104px'/>
                             </div>
                         </div>
-                        <div className='w-[325px] mx-auto mt-[25px] h-max min-h-[35.4375rem] py-[1rem] textElementShadow rounded-[0.625rem] border-[1px] border-[#DCE3E3]'>
+                        <div className='w-[339px] mx-auto mt-[18px] h-max min-h-[35.4375rem] py-[1rem] textElementShadow rounded-[0.625rem] border-[1px] border-[#DCE3E3]'>
                             <div className='w-[325px] h-max mx-auto'>
                                 <div className='text-grade text-[1.25rem] w-[94%] mx-auto font-[600]'>
                                     Latest Projects By Emaar

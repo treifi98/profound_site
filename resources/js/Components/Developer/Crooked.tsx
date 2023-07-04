@@ -73,8 +73,8 @@ const Crooked = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[372px] h-min shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] overflow-hidden mobil-comp'>
-                    <div className='w-[372px] h-[5.62181rem] shadow-[2.892374277114868px_2.892374277114868px_4.049324035644531px_0px_#B6C3C5,-2.892374277114868px_-2.892374277114868px_4.627798557281494px_0px_#FFF] flex items-center overflow-hidden'>
+                <div className='w-[375px] h-min shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] overflow-hidden mobil-comp'>
+                    <div className='w-[375px] h-[5.62181rem] shadow-[2.892374277114868px_2.892374277114868px_4.049324035644531px_0px_#B6C3C5,-2.892374277114868px_-2.892374277114868px_4.627798557281494px_0px_#FFF] flex items-center overflow-hidden'>
                         <div className='w-[21.220625rem] h-full flex justify-between items-center mx-auto'>
                             <div className='w-[21.220625rem] flex flex-col justify-center'>
                                 <div className='flex gap-[0.791875rem] items-center'>
@@ -99,23 +99,23 @@ const Crooked = (props:Props) => {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[25px] w-[325px] h-[251.43px] shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center rounded-[0.520625rem] mx-auto border-[1px] border-[#DCE3E3]'>
-                        <div className='w-[300px] h-[229.15px] rounded-[0.520625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5]'>
-                            <AboutSwiper height='229.15px' width='300px' rounded='0.520625rem'/>
+                    <div className='mt-[18px] w-[339px] h-[265.43px] shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center rounded-[0.520625rem] mx-auto border-[1px] border-[#DCE3E3]'>
+                        <div className='w-[314px] h-[243.15px] rounded-[0.520625rem] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5]'>
+                            <AboutSwiper height='243.15px' width='314px' rounded='0.520625rem'/>
                         </div>
                     </div>
-                        <div className='mt-[25px] w-[325px] h-[17.75rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] border-[0.5px] border-[#DCE3E3]  rounded-[0.49rem] mx-auto overflow-hidden flex flex-col gap-[12px] justify-center mb-[25px] '>
+                        <div className='mt-[18px] w-[339px] h-[17.75rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] border-[0.5px] border-[#DCE3E3]  rounded-[0.49rem] mx-auto overflow-hidden flex flex-col gap-[12px] justify-center mb-[18px] '>
                         <div className='mx-auto w-min mt-[0px]  except'>
 
-                            <InfoShape img={claender} text='Year Of establishment' bluePillText='2007' mainWidth='18.26rem' mainHeight='3.751rem' barWidth='15.62125rem' barHeight='1.86106rem' circleWidth='3.475rem' imgHeight='2.026875rem' imgWidth='1.87125rem' imgMt='0.72375rem' imgMl='0.810625rem' bluePillWidth='5.171875rem' textSize='14px' intersection={0.874375} bluePillTextSize='16px'/>
+                        <InfoShape img={claender} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.188125rem' imgWidth='2.02rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
                         </div>
-                        <div className='mx-auto w-min except'>
+                        <div className='mx-auto w-[19.75rem] except'>
 
-                            <InfoShape img={craneIcon} text='Year Of establishment' bluePillText='2007' mainWidth='18.26rem' mainHeight='3.751rem' barWidth='15.62125rem' barHeight='1.86106rem' circleWidth='3.475rem' imgHeight='2.026875rem' imgWidth='1.603125rem' imgMt='0.72375rem' imgMl='1rem' bluePillWidth='5.171875rem' textSize='14px' intersection={0.874375} bluePillTextSize='16px'/>
+                            <InfoShape img={craneIcon} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.188125rem' imgWidth='1.730625rem' imgMt='0.78125rem' imgMl='1rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
                         </div>
-                        <div className='mx-auto w-min except'>
+                        <div className='mx-auto w-[19.75rem] except'>
 
-                            <InfoShape img={pricetag} text='Year Of establishment' bluePillText='2007' mainWidth='18.26rem' mainHeight='3.751rem' barWidth='15.62125rem' barHeight='1.86106rem' circleWidth='3.475rem' imgHeight='2.026875rem' imgWidth='2.026875rem' imgMt='0.879375rem' imgMl='0.5275rem' bluePillWidth='5.171875rem' textSize='14px' intersection={0.874375} bluePillTextSize='16px'/>
+                            <InfoShape img={pricetag} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.1875rem' imgWidth='2.1875rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
                         </div>
                         <div className='w-[8.8875rem] h-[1.89906rem] flex justify-center items-center bg-custom-gradient rounded-[3.79375rem] mx-auto mt-[-0.5rem]'>
                             <div className='text-[#fff] text-[0.91156rem] font-[600] except'>
