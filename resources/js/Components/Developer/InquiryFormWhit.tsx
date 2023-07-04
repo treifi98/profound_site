@@ -69,12 +69,12 @@ const InquiryFormWiht = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[375px] h-min rounded-[0.625rem] bg-[#E6EDED] flex justify-center items-center !font-[nova] py-[24px] shadow-[4px_4px_8px_0px_#BABFBF,-4px_-4px_8px_0px_#FFF] mobil-comp'>
+                <div className='w-[375px] h-max rounded-[0.625rem] bg-[#E6EDED] flex justify-center items-center !font-[nova] py-[24px] shadow-[4px_4px_8px_0px_#BABFBF,-4px_-4px_8px_0px_#FFF] mobil-comp'>
                 <div className='w-[375px] h-min flex flex-col-reverse gap-[24px] justify-center items-center  rounded-[0.671375rem] mx-auto'>
                     <div className='flex justify-center items-center w-[20.4375rem] h-min rounded-[0.971875rem] bg-[#E6EDED]  '>
-                        <div className='w-[20.4375rem] h-min mx-auto'>
-                            <div className='flex flex-col-reverse gap-[24px] w-[20.4375rem] h-min items-center'>
-                                <div className='flex h-min w-[19.195rem] flex-col gap-[24px] mt-[0.41rem]'>
+                        <div className='w-[20.4375rem] h-max mx-auto'>
+                            <div className='flex flex-col-reverse gap-[24px] w-[20.4375rem] h-max items-center'>
+                                <div className='flex h-max w-[19.195rem] flex-col gap-[24px] mt-[0.41rem]'>
                                     <DynamicTextWhit textSize='1rem' icon={userIcon} placeHolder='Your full name' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.11375rem' imgHeight='1.11375rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
                                     <DynamicTextWhit textSize='1rem' icon={emaiIcon} placeHolder='Your email address' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.26125rem' imgHeight='0.88625rem' textWidth='15.904375rem' textHeight='2.08375rem'/>
                                     <DynamicTextWhit textSize='1rem' icon={uaeFlag} placeHolder='0501234567' imgWrapperWidth='3.290625rem' imgWrapperHeight='2.08375rem' imgWidth='1.480625rem' imgHeight='0.986875rem' textWidth='15.904375rem' textHeight='2.08375rem'/>

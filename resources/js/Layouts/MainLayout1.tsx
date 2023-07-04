@@ -26,11 +26,23 @@ const MainLayout1 = (props:Props) => {
     <div className='font-[nova]  !h-max '>
 
         <Header1 screen={screenLG}/>
-        <div className='scalable origin-top-left w-[375px] flex flex-col items-center h-max'>
+        {
+            screenLG? (
 
-            {props.children}
-        <Footer screen={screenLG}/>
-        </div>
+                <div className='scalable origin-top-left  flex flex-col items-center h-max'>
+
+                    {props.children}
+                <Footer screen={screenLG}/>
+                </div>
+            ):(
+                <div className='scalable origin-top-left w-[375px] flex flex-col items-center h-max'>
+
+                    {props.children}
+                <Footer screen={screenLG}/>
+                </div>
+
+            )
+        }
     </div>
 
   )

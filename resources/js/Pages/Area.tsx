@@ -68,7 +68,10 @@ const Area = () => {
         //     // elmnt.parentElement.style.marginTop = (5 * scaleFactor).toString()+'rem'
         //     // alert((elmnt.parentElement.style.marginTop))
         // })
-        document.querySelector('.scalable').style.scale = scaleFactor
+        if(window.innerWidth < 1530){
+
+            document.querySelector('.scalable').style.scale = scaleFactor
+        }
     },[scaleFactor])
 
 
