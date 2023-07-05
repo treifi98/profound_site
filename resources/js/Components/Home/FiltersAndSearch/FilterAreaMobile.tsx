@@ -81,7 +81,7 @@ const FliterAreaMobile = () => {
     return (
         <>
 
-        <div className='w-full h-[3.4375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-center items-center gap-[2rem] mt-[0rem]' ref={main}>
+        <div className='w-[375px] h-[3.4375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-center items-center gap-[2rem] mt-[0rem]' ref={main}>
             <div className=' w-[100%] h-full flex items-center justify-evenly'>
                 <div className=''>
 

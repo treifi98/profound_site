@@ -27,7 +27,7 @@ import { setHoverState,hideForNav,addGracePeriod  } from '../Components/Home/Men
 
 
 const Areas = () => {
-
+    const pfe = useRef(null)
     // const [screenLG,setScreenLG] = useState(true)
     const [scaleFactor,setScaleFactor] = useState(1.0)
     const [mainScreen,setMainScreen] = useState(375)
@@ -155,6 +155,18 @@ const Areas = () => {
     const handleMap = () => {
 
     }
+    const rectifier = useRef(null)
+    useEffect(()=>{
+        if(!screenLG){
+
+            let correctionFactor = (-((pfe.current.offsetHeight * scaleFactor) - (pfe.current.offsetHeight)))
+            console.log(correctionFactor)
+            rectifier.current.style.top = correctionFactor+'px'
+        }
+
+
+
+    },[screenLG])
 
 
 
@@ -228,12 +240,44 @@ const Areas = () => {
                 <div className='mt-[1.0625rem] w-[90rem] flex justify-start mx-auto'>
                     <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas in Dubai',link:'/areas'}]}/>
                 </div>
+                <div className='w-full flex mt-[1.0625rem]'>
+                    <div className='w-[90rem] flex flex-wrap gap-x-[3.125rem] gap-y-[5rem] mx-auto transition-all' ref={container}>
+                        {/* <div> */}
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                            <AreaCard />
+                        {/* </div> */}
+                    </div>
+
+                    <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[0rem] mb-[0.3rem]' ref={map} id='ayo'>
+
+                        <div className='w-[50vw] h-[100vh] rounded-[0.9075rem] overflow-hidden transition-all' >
+                            <Map
+                                points={points}
+                                // changes={changes}
+                                // rchanges={rchanges}
+                                // zoom={zoom}
+                                isZoom={true}
+                            />
+                        </div>
+                    </div>
+                    </div>
+                    <div className='my-[6.25rem]'>
+                        <Pagination itemsPerPage={20} prefix='/areas' totalCount={100}/>
+                    </div>
             </>
 
                 :
                 <>
 
-                    <div className='h-[calc(100vh-114px)] w-[100vw] relative z-[-1] font-[nova] origin-[50%_0%] overflow-hidden' style={{ scale:`${1/(window.innerWidth/375)}` }}></div>
+                    <div className='h-[calc(100vh-114px)] w-[100vw] relative z-[-1] font-[nova] origin-[50%_0%] overflow-hidden pf' style={{ scale:`${1/(window.innerWidth/375)}` }} ref={pfe}></div>
                     <div className='h-[calc(100vh-114px)] w-[100vw]  absolute top-[0px] z-[2] font-[nova] origin-[50%_0%] overflow-hidden' style={{ scale:`${1/(window.innerWidth/375)}` }}>
                         <div className='relative h-full'>
                             {/* <div className='absolute right-0 top-[4.375rem] z-10 opacity-[0.2] change_font:text-[0.97vw]'>
@@ -281,71 +325,35 @@ const Areas = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[0rem relativez-[1] w-[100vw] relative ' style={{ top:`calc(-100vh + (100vh - 100px)) ` }}>
+                    <div className='w-[375px] relative' ref={rectifier}>
 
-                        <FliterAreaMobile/>
-                    </div>
-                    <div className='scale-[0.75] mx-auto flex justify-end  origin-top-right w-[21.5rem] mt-[1.11rem]'>
-                        <FancyCheckeComponent id='shmp' off='off' on='on'/>
-                    </div>
-                    <div className='mt-[-2.0625rem] w-[21.5rem] flex justify-start mx-auto scale-[0.8] origin-top-left'>
-                        <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas in Dubai',link:'/areas'}]}/>
-                    </div>
+                        <div className='mt-[0rem relativez-[1] w-[375px] relative ' >
 
-                </>
-        }
-
-
-
-        {
-            screenLG?
-                <>
-                <div className='w-full flex mt-[1.0625rem]'>
-                    <div className='w-[90rem] flex flex-wrap gap-x-[3.125rem] gap-y-[5rem] mx-auto transition-all' ref={container}>
-                        {/* <div> */}
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                            <AreaCard />
-                        {/* </div> */}
-                    </div>
-
-                    <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[0rem] mb-[0.3rem]' ref={map} id='ayo'>
-
-                        <div className='w-[50vw] h-[100vh] rounded-[0.9075rem] overflow-hidden transition-all' >
-                            <Map
-                                points={points}
-                                // changes={changes}
-                                // rchanges={rchanges}
-                                // zoom={zoom}
-                                isZoom={true}
-                            />
+                            <FliterAreaMobile/>
+                        </div>
+                        <div className='scale-[0.75] mx-auto flex justify-end  origin-top-right w-[21.5rem] mt-[1.11rem]'>
+                            <FancyCheckeComponent id='shmp' off='off' on='on'/>
+                        </div>
+                        <div className='mt-[-2.0625rem] w-[21.5rem] flex justify-start mx-auto scale-[0.8] origin-top-left'>
+                            <Tracer crumbs={[{title:'Home',link:'/'},{title:'Areas in Dubai',link:'/areas'}]}/>
+                        </div>
+                        <div className='w-min mx-auto flex flex-col justify-center items-center gap-[2.5rem] mt-[1.5rem]'>
+                            <AreaCardMobile/>
+                            <AreaCardMobile/>
+                            <AreaCardMobile/>
+                        </div>
+                        <div className='my-[1.55rem] scale-[0.604] origin-[8%_0%] w-min mx-auto'>
+                            <Pagination itemsPerPage={20} prefix='/areas' totalCount={100} screen={screenLG}/>
                         </div>
                     </div>
-                    </div>
-                    <div className='my-[6.25rem]'>
-                        <Pagination itemsPerPage={20} prefix='/areas' totalCount={100}/>
-                    </div>
-                </>
-                :
-                <>
-                    <div className='w-min mx-auto flex flex-col justify-center items-center gap-[2.5rem] mt-[1.5rem]'>
-                        <AreaCardMobile/>
-                        <AreaCardMobile/>
-                        <AreaCardMobile/>
-                    </div>
-                    <div className='my-[1.55rem] scale-[0.604] origin-[8%_0%] w-min mx-auto'>
-                        <Pagination itemsPerPage={20} prefix='/areas' totalCount={100} screen={screenLG}/>
-                    </div>
+
                 </>
 
         }
+
+
+
+
 
 
 
