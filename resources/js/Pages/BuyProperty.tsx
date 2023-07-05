@@ -162,7 +162,7 @@ const BuyProperty = () => {
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>
-        <MortgageCalculator/>
+        <MortgageCalculator screen={screenLG} scaleFactor={scaleFactor}/>
 
       </div>
       <div className='w-max mx-auto mt-[5rem]'>

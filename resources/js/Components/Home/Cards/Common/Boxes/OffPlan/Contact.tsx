@@ -24,6 +24,7 @@ interface Props{
     phoneHeight?:string,
     mT?:string,
     lowerSectionMT?:string,
+    rounded?:string
 
 }
 const Contact = (props:Props) => {
@@ -49,7 +50,7 @@ const Contact = (props:Props) => {
 
     return (
         <div className=' relative cursor-pointer' style={{ width:props.mainWidth? props.mainWidth : '5.3125rem', height: props.mainHeight? props.mainHeight : '6.375rem'}}>
-        <div className='bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[0.3125rem] shadow-[-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]  perspective-[1000px] group-hover:shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5] duration-[0.1s]' style={{ width:props.mainWidth? props.mainWidth : '5.3125rem', height: props.mainHeight? props.mainHeight : '6.375rem'}}>
+        <div className='bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[] shadow-[-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5]  perspective-[1000px] group-hover:shadow-[inset_-0.3011875rem_-0.3011875rem_0.34340875rem_#FFFFFF,inset_0.228939375rem_0.228939375rem_0.34340875rem_#B6C3C5] duration-[0.1s]' style={{ width:props.mainWidth? props.mainWidth : '5.3125rem', height: props.mainHeight? props.mainHeight : '6.375rem',borderRadius:props.rounded?props.rounded:'0.3125rem'}}>
             <div className='flex flex-col justify-between items-center h-full w-full group-hover:opacity-0 duration-[0.1s]'>
 
                 <div className=' mx-auto  flex justify-center items-center flex-wrap' style={{ width:props.mainWidth? props.mainWidth : '5.3125rem', marginTop:props.mT? props.mT: '0.375rem'}}>

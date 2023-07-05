@@ -119,16 +119,16 @@ const ImgGallery = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[375px] h-max pb-[12px] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF]'>
+                <div className='w-[375px] h-max pb-[18px] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF]'>
                     <div className='w-full h-[378.17px] rounded-[8px] shadow-[inset_-4.49px_-4.49px_7.18px_#fff,inset_4.49px_4.49px_6.28px_#B6C3C5] flex justify-center items-center border-[1px] border-[#DCE3E3]'>
                         <div className='w-[345px] h-[347.92px] rounded-[8px] shadow-[-4.49px_-4.49px_7.18px_#fff,4.49px_4.49px_6.28px_#B6C3C5] '>
                             <NewCardImage rounded='0.5' src={dubai} />
                         </div>
                     </div>
-                    <div className='mt-[12px] ml-[12px] w-[calc(100%-12px)] h-[84.59px]'>
+                    <div className='mt-[18px] ml-[17px] w-[calc(100%-17px)] h-[84.59px]'>
                         <SmallSwiperMobile/>
                     </div>
-                    <div className='mt-[12px] mx-auto flex justify-between items-start gap-y-[12px] flex-wrap w-[calc(100%-24px)]'>
+                    <div className='mt-[17px] mx-auto flex justify-between items-start gap-y-[18px] flex-wrap w-[calc(100%-34px)]'>
                         <div className='h-[22px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
@@ -148,7 +148,7 @@ const ImgGallery = (props:Props) => {
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
                     </div>
-                    <div className='mt-[12px] ml-[12px] flex items-start gap-[12px]'>
+                    <div className='mt-[18px] ml-[17px] flex items-start gap-[12px]'>
                         <div className='  shadow-[1.7305165529251099px_1.7305165529251099px_1.7305165529251099px_0px_#B6C3C5,-1.7305165529251099px_-1.7305165529251099px_1.7305165529251099px_0px_#FFF] rounded-[2.6px]' style={{ width:'1.3125rem',height:'1.3125rem' }}>
 
                             <NewSocial img={shareIcon} img_h='0.659885' img_w='0.659885' noShadow={true}/>

@@ -21,9 +21,9 @@ interface Props{
 const COLORS = ['#00494F','#E6EDED'];
 const THUMB_SIZE = 42;
 
-const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, id:string, lable:string,precantage:boolean,dp:boolean,loan:number,width?:number }> = ({ rtl, max, min, step, id, lable,precantage,dp,loan,width }) => {
+const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:number, id:string, lable:string,precantage:boolean,dp:boolean,loan:number,width?:number,scaleFactor?:number }> = ({ rtl, max, min, step, id, lable,precantage,dp,loan,width,scaleFactor }) => {
   const dispatch = useDispatch()
-//   const rangeVals = useSelector((state:RootState) => state.rangeSingle)
+//   const rangeVals = useSelector((state:RootState) => state.RangeSingleMobile)
 
   const [MIN,setMIN] = React.useState(min)
   const [MAX,setMAX] = React.useState(max)
@@ -68,7 +68,7 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
       }}
     >
 
-        <div className='absolute h-[0.945rem]  top-[0.55rem] left-[0.525rem] bg-[#E6EDED] z-[9999999] rounded-md shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,_inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' style={{ width:(width?width:40.9 - (parseFloat(displacment)/fatcor))+'rem' }}>
+        <div className='absolute h-[0.945rem]  top-[0.55rem] left-[0.525rem] bg-[#E6EDED] z-[9999999] rounded-md shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,_inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' style={{ width:(336 - ((parseFloat(displacment))))+'px' }}>
 
         </div>
        {/* <ThumbLabel rangeRef={rangeRef.current} values={value}  /> */}
@@ -114,7 +114,7 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
             ...props.style,
             height: '0.875rem',
             display: 'flex',
-            width: '100%',
+            width: '336px',
             border:'0.0694444444444444rem solid #CAD4D5',
             // boxShadow:'inset -0.285380625rem -0.285380625rem 0.456609375rem #FFFFFF, inset 0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5',
             borderRadius:'6.25rem',
@@ -126,16 +126,16 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
             ref={props.ref}
             style={{
             height: '0px',
-            width: '100%',
+            width: '336px',
             borderRadius: '0px',
             //   backgroundColor:'red',
             background: getTrackBackground({
                 // height: '0px',
-                // width: '100%',
+                // width: '336px',
                 values: [value],
                 colors: ['#f00',"#000"],
-                min: 0,
-                max: 5000,
+                min: min,
+                max: max,
                 rtl:false
             }),
             alignSelf: 'center'
@@ -215,4 +215,4 @@ const RangeSingle: React.FC<{ rtl:boolean, max:number, min:number, step:number, 
   );
 };
 
-export default RangeSingle
+export default RangeSingleMobile

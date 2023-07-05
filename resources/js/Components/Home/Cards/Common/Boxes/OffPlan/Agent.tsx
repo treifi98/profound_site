@@ -25,6 +25,7 @@ interface Args{
         textHeight?:string,
         lineHeight?:string,
         imgWrapperMT?:string,
+        // rounded?:string
 
     }
 }
