@@ -53,14 +53,14 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
       {...props}
       style={{
         ...props.style,
-        height: '1.97375rem',
-        width: '2.0175rem',
+        height: '20.5px',
+        width: '20.5px',
         borderRadius: '100%',
         backgroundColor: '#DDE4E4',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        boxShadow: 'inset -0.212621875rem -0.212621875rem 0.531555rem #F2F9F8, inset 0.212621875rem 0.212621875rem 0.531555rem #B6C3C5',
+        boxShadow: 'inset -2.07px -2.07px 5.17px #F2F9F8, inset 2.07px 2.07px 5.17px #B6C3C5',
         outline:'none',
         position:'relative',
         zIndex:'999999999'
@@ -68,15 +68,15 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
       }}
     >
 
-        <div className='absolute h-[0.945rem]  top-[0.55rem] left-[0.525rem] bg-[#E6EDED] z-[9999999] rounded-md shadow-[inset_-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,_inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5]' style={{ width:(336 - ((parseFloat(displacment))))+'px' }}>
+        <div className='absolute h-[8.51px]  top-[0.43rem] left-[0.005rem] bg-[#E6EDED] z-[9999999] rounded-md shadow-[2.7766876220703125px_2.7766876220703125px_3.887362480163574px_0px_#B6C3C5_inset,-2.7766876220703125px_-2.7766876220703125px_4.442699909210205px_0px_#FFF_inset]' style={{ width:`calc(89.333vw - ${((parseFloat(displacment)))}px)` }}>
 
         </div>
        {/* <ThumbLabel rangeRef={rangeRef.current} values={value}  /> */}
         <div className='group xon'
             {...props}
             style={{
-            height: '1.8425rem',
-            width: '1.8425rem',
+            height: '18.52px',
+            width: '18.52px',
             borderRadius: '100%',
             backgroundColor: '#DDE4E4',
             display: 'flex',
@@ -90,8 +90,8 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
         >
             <div className=''
             style={{
-                height: '0.770625rem',
-                width: '0.770625rem',
+                height: '7.5px',
+                width: '7.5px',
                 backgroundColor: '#00494F',
                 border:'0.0625rem solid #19464B',
                 borderRadius:'100%',
@@ -112,9 +112,9 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
         onTouchStart={props.onTouchStart}
         style={{
             ...props.style,
-            height: '0.875rem',
+            height: '8.51px',
             display: 'flex',
-            width: '336px',
+            width: '89.18vw',
             border:'0.0694444444444444rem solid #CAD4D5',
             // boxShadow:'inset -0.285380625rem -0.285380625rem 0.456609375rem #FFFFFF, inset 0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5',
             borderRadius:'6.25rem',
@@ -126,7 +126,7 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
             ref={props.ref}
             style={{
             height: '0px',
-            width: '336px',
+            width: '89.18vw',
             borderRadius: '0px',
             //   backgroundColor:'red',
             background: getTrackBackground({
@@ -144,7 +144,7 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
                 <div
                     style={{
                     position: 'absolute',
-                    height: '0.875rem',
+                    height: '8.51px',
 
                     width: `${((value) * 100 / (max))}%`,
                     borderRadius: '6.25rem',
@@ -163,15 +163,15 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
         </div>
         {
             dp?
-            <div className='w-[10.625rem] h-[2.1875rem] absolute top-[1.875rem] left-0 rounded-[5.6875rem] flex justify-center items-center bg-[#E6EDED] shadow-[inset_-0.25967125rem_-0.25967125rem_0.41547375rem_#FFFFFF,inset_0.25967125rem_0.25967125rem_0.363539375rem_#B6C3C5] '>
-                <div className='text-[#7D8989] font-[600] text-[1.25rem]'>
+            <div className='w-[83.72px] h-[20px] absolute top-[22.51px] left-0 rounded-[5.6875rem] flex justify-center items-center bg-[#E6EDED] shadow-[2.046081781387329px_2.046081781387329px_2.8645145893096924px_0px_#B6C3C5_inset,-2.046081781387329px_-2.046081781387329px_3.273730754852295px_0px_#FFF_inset] '>
+                <div className='text-[#7D8989] font-[600] text-[12px]'>
 
                     {(value*loan).toLocaleString()}
                 </div>
             </div>
             :
-            <div className='w-[10.625rem] h-[2.1875rem] absolute top-[1.875rem] left-0 rounded-[5.6875rem] flex justify-center items-center bg-[#E6EDED] shadow-[inset_-0.25967125rem_-0.25967125rem_0.41547375rem_#FFFFFF,inset_0.25967125rem_0.25967125rem_0.363539375rem_#B6C3C5] '>
-                <div className='text-[#7D8989] font-[600] text-[1.25rem]'>
+            <div className='w-[83.72px] h-[20px] absolute top-[22.51px] left-0 rounded-[5.6875rem] flex justify-center items-center bg-[#E6EDED] shadow-[2.046081781387329px_2.046081781387329px_2.8645145893096924px_0px_#B6C3C5_inset,-2.046081781387329px_-2.046081781387329px_3.273730754852295px_0px_#FFF_inset] '>
+                <div className='text-[#7D8989] font-[600] text-[12px]'>
 
                     {value.toLocaleString()}
                 </div>
@@ -180,20 +180,20 @@ const RangeSingleMobile: React.FC<{ rtl:boolean, max:number, min:number, step:nu
         }
         {
             dp?
-            <div className='w-[10.625rem] h-[2.1875rem] absolute top-[1.875rem] right-0 flex justify-end items-center '>
-                <div className='text-grade font-[600] text-[1.25rem]'>
+            <div className='w-[83.72px] h-[20px] absolute top-[22.51px] right-0 flex justify-end items-center '>
+                <div className='text-grade font-[600] text-[12px]'>
 
                     {value.toLocaleString()}%
                 </div>
             </div>:''
         }
-        <div className='w-[10.625rem] h-[2.1875rem] absolute top-[-2.575rem] right-0 rounded-[5.6875rem] flex justify-end items-center ]'>
-            <div className='text-[#7D8989] font-[600] text-right text-[1.125rem]'>
+        <div className='w-[83.72px] h-[20px] absolute top-[-31.51px] right-0 rounded-[5.6875rem] flex justify-end items-center ]'>
+            <div className='text-[#7D8989] font-[600] text-right text-[12px]'>
                 {max.toLocaleString()}{precantage? '%': 'AED'}
             </div>
         </div>
-        <div className='w-[11.625rem] h-[2.1875rem] absolute top-[-2.575rem] left-0 rounded-[5.6875rem] flex justify-start items-center ]'>
-            <div className='text-[#7D8989] font-[600] text-[1.125rem]'>
+        <div className='w-[11.625rem] h-[20px] absolute top-[-31.51px] left-0 rounded-[5.6875rem] flex justify-start items-center ]'>
+            <div className='text-[#7D8989] font-[600] text-[12px]'>
                 {lable}
             </div>
         </div>
