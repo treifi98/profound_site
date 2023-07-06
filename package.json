@@ -40,6 +40,7 @@
         "sticksy": "^0.2.0",
         "styled-components": "^5.3.11",
         "swiper": "^9.2.0",
-        "typescript": "^5.0.3"
+        "typescript": "^5.0.3",
+        "uuid": "^9.0.0"
     }
 }

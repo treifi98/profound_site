@@ -2,6 +2,7 @@ import AboutDeveloper from '@/Components/Developer/AboutDeveloper'
 import AboutProperty from '@/Components/Developer/AboutProperty'
 import Amenities from '@/Components/Developer/Amenities'
 import Areas from '@/Components/Developer/Areas'
+import AreasMobile from '@/Components/Developer/AreasMobile'
 import Attraction from '@/Components/Developer/Attraction'
 import BuySwiper from '@/Components/Developer/BuySwiper'
 import AreaCard from '@/Components/Developer/Cards/AreaCard'
@@ -39,6 +40,93 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const ProjectProperty = () => {
 
+    const [screenLG,setScreenLG] = useState(true)
+    const [scaleFactor,setScaleFactor] = useState(1.0)
+    const [mainScreen,setMainScreen] = useState(375)
+    const [changer,setChanger] = useState(1)
+    // const [currentScreen,setCurrentScreen] = useState(375)
+    const initChange = () => {
+        setChanger(window.innerWidth)
+    }
+    const ScaleforMobile = () => {
+        let x = window.innerWidth / 375
+        setScaleFactor(x)
+
+    }
+    useEffect(()=>{
+        console.log(mainScreen)
+        ScaleforMobile()
+        setMainScreen(window.innerWidth)
+        console.log(scaleFactor)
+    },[changer])
+
+    useEffect(()=>{
+        // document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+        //     elmnt.parentElement.style.scale = scaleFactor.toString()
+        //     // elmnt.parentElement.style.marginTop = (5 * scaleFactor).toString()+'rem'
+        //     // alert((elmnt.parentElement.style.marginTop))
+        // })
+        if(window.innerWidth < 1530){
+
+            document.querySelector('.scalable').style.scale = scaleFactor
+        }
+        else{
+            document.querySelector('.scalable').style.scale = 1
+
+        }
+    },[scaleFactor])
+
+
+    const multiplyDimensions = (element, factor) => {
+        // first, get the computed style of the element
+
+        let style = window.getComputedStyle(element);
+
+        // get the width and height of the element
+        let width = parseFloat(style.width.replace("rem", ""));
+        let height = parseFloat(style.height.replace("rem", ""));
+        let textSize = parseFloat(style.fontSize.replace("rem", ""));
+
+        // multiply the width and height by the factor
+        width *= factor;
+        height *= factor;
+        textSize *= factor;
+
+        // set the new width and height
+        element.style.width = `${width}px`;
+        element.style.height = `${height}px`;
+        element.style.fontSize = `${textSize}px`;
+
+        // repeat for each child element
+        for (let i = 0; i < element.children.length; i++) {
+            // console.log(element.children[i].classList)
+            if(element.children[i].classList.contains('except')){
+                continue
+            }
+            console.log('-------')
+            console.log(scaleFactor)
+            multiplyDimensions(element.children[i], factor);
+        }
+
+    }
+    useEffect(() => {
+        const updateScreenWidth = () => {
+            if (window.innerWidth >= 1530){
+
+                setScreenLG(true);
+                initChange()
+            }
+            else{
+                setScreenLG(false);
+                initChange()
+
+            }
+        }
+        updateScreenWidth()
+        window.addEventListener('resize', updateScreenWidth);
+        return () => window.removeEventListener('resize', updateScreenWidth);
+      }, []);
+
     const [points,setPoints] = useState([
         {
             point: [55.2667940551224,25.18752435627845],
@@ -60,73 +148,79 @@ const ProjectProperty = () => {
       <div className=' mt-[7.4375rem] w-[91.25rem] flex justify-start mx-auto'>
         <Tracer crumbs={[{title:'Home',link:'/'},{title:'Projects',link:'/project'},{title:'Creek Rise Tower',link:'/project/test'}]}/>
       </div>
-      <div className='mx-auto mt-[0.625rem] w-[91.25rem]'>
-        <ImgGallery/>
+      <div className='mx-auto mt-[0.625rem] w-min'>
+        <ImgGallery screen={screenLG}/>
       </div>
-      <div className='w-max  mx-auto mt-[5rem]'>
-        <ProjectInfo/>
+      <div className='w-min  mx-auto mt-[5rem]'>
+        <ProjectInfo screen={screenLG}/>
       </div>
-      <div className='w-max mx-auto mt-[5rem] mb-[5rem]'>
-        <DoublrBoxesDoubleText/>
+      <div className='w-min mx-auto mt-[5rem] mb-[5rem]'>
+        <DoublrBoxesDoubleText screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextOGRL/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <PartLogoTextOGRL screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextLR/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <PartLogoTextLR screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextRL/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <PartLogoTextRL screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <PartLogoTextOGLR/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <PartLogoTextOGLR screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <Amenities/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <Amenities screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <InquiryFormGreen/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <InquiryFormGreen screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <Attraction/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <Attraction screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <MapContainer/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <MapContainer screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <FloorPlan/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <FloorPlan screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-min mx-auto mt-[5rem]'>
         <PaymentPlanNF4/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <AboutProperty/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <AboutProperty screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
-        <InquiryFormWiht/>
+      <div className='w-min mx-auto mt-[5rem]'>
+        <InquiryFormWiht screen={screenLG}/>
 
       </div>
-      <div className='w-max mx-auto mt-[5rem]'>
+      <div className='w-min mx-auto mt-[5rem]'>
         <QA questions={[{a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.',q:'Is an apartment in Seapoint a good investment?'},{a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.',q:'Is an apartment in Seapoint a good investment?'},{a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.',q:'Is an apartment in Seapoint a good investment?'},{a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.',q:'Is an apartment in Seapoint a good investment?'},{a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.',q:'Is an apartment in Seapoint a good investment?'},{a:'Apartments in Seapoint are an excellent investment, as they will allow you to generate a lucrative rental income, since the average ROI for 1-bedroom apartments in Emaar Beachfront has reached 6.9%, as of Q2 2023.',q:'Is an apartment in Seapoint a good investment?'}]}/>
 
       </div>
       <div className='w-full mt-[5rem] mb-[4rem]'>
         <BuySwiper barTitle=' Projects in Dubai Marina' cardMB='1rem' cardMT='1.875rem'/>
       </div>
-      <div className='w-max mx-auto mt-[5rem] mb-[4rem]'>
-        <Areas/>
+      <div className='w-max mx-auto mt-[50px] mb-[5rem]'>
+        {
+            screenLG?
+            <Areas/>
+            :
+            <AreasMobile/>
+        }
+
       </div>
 
 
