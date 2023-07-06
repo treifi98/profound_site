@@ -256,7 +256,7 @@ const MapContainer = (props:Props) => {
             (
                 <div className='w-[375px] h-max shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] overflow-hidden mobil-comp'>
                     <div className='w-[375px] h-[125px]   shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex items-center'>
-                        <div className='w-[349.62px] h-[101px] flex items-center gap-y-[0px] gap-x-[0.55rem] mx-auto flex-wrap justify-between my-0 py-0'>
+                        <div className='w-[calc(100%-36px)] h-[101px] flex items-center gap-y-[0px] gap-x-[0.55rem] mx-[18px] flex-wrap justify-between my-0 py-0'>
 
                             <div className='w-[6.53375rem] h-[1.278125rem] flex group cursor-pointer'>
                                 <div className='w-[1.6875rem] h-full rounded-[3.2428125rem_0rem_0rem_3.2428125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[2.5942280292510986px_2.5942280292510986px_3.6319191455841064px_0px_#B6C3C5,-2.5942280292510986px_-2.5942280292510986px_4.150764465332031px_0px_#FFF] overflow-hidden '>
@@ -360,8 +360,8 @@ const MapContainer = (props:Props) => {
                         </div>
                     </div>
 
-                    <div className='w-[335.11px] flex flex-col mx-auto h-max  '>
-                        <div className='w-[335.11px] max-h-[30rem] h-min  flex flex-wrap justify-between gap-y-[1.13rem] items-start py-[20px]'>
+                    <div className='w-[339.11px] flex flex-col mx-auto h-max  '>
+                        <div className='w-[339.11px] max-h-[30rem] h-min  flex flex-wrap justify-between gap-y-[1.13rem] items-start py-[18px]'>
                             <div className='w-[9.69106rem] h-[2.28869rem] flex justify-center items-center rounded-[0.3125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.45660625rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] hover:shadow-[inset_-0.285380625rem_-0.285380625rem_0.45660625rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] cursor-pointer' onMouseEnter={()=>handleMouseEnter(0)} onMouseLeave={()=>handleMouseLeave(0)}>
                                 <div className='text-grade text-[12px]'>
                                     Binary Tower
@@ -414,7 +414,7 @@ const MapContainer = (props:Props) => {
                             </div>
 
                         </div>
-                        <div className='w-[335.11px] h-[28.7395rem] mx-auto rounded-[8px] overflow-hidden mb-[20px]'>
+                        <div className='w-[339.11px] h-[28.7395rem] mx-auto rounded-[8px] overflow-hidden mb-[18px]'>
                             <Map
                                 points={points}
                                 changes={changes}

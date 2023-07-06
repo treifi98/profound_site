@@ -209,9 +209,9 @@ const MortgageCalculator = (props:Props) => {
                             </div>
                         </div>
 
-                        <div className='w-[258px] mx-auto flex flex-col items-end mt-[57px]'>
+                        <div className='w-[268px] mx-auto flex flex-col items-end mt-[57px]'>
 
-                            <div className='w-[258px] h-[51.4px] mt-[0px]  flex'>
+                            <div className='w-[268px] h-[51.4px] mt-[0px]  flex'>
                                 <div className='flex justify-center items-center h-full w-[16.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[2.57px_0rem_0rem_2.57px] shadow-[3px_3px_5px_0px_#B6C3C5,-3px_-3px_5px_0px_#FFF]'>
                                     <div className='text-[14px] text-grade font-[600]'>
 
@@ -226,7 +226,7 @@ const MortgageCalculator = (props:Props) => {
                                 </div>
                             </div>
 
-                            <div className='w-[258px] h-[21.57px] mt-[20px]  flex'>
+                            <div className='w-[268px] h-[21.57px] mt-[20px]  flex'>
                                 <div className='flex justify-center items-center h-full w-[16.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[39.4px_0rem_0rem_39.4px] shadow-[3px_3px_5px_0px_#B6C3C5,-3px_-3px_5px_0px_#FFF]'>
                                     <div className='text-[14px] text-grade'>
                                         Total Loan Amount
@@ -238,7 +238,7 @@ const MortgageCalculator = (props:Props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-[258px] h-[21.57px] mt-[20px]  flex'>
+                            <div className='w-[268px] h-[21.57px] mt-[20px]  flex'>
                                 <div className='flex justify-center items-center h-full w-[16.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[39.4px_0rem_0rem_39.4px] shadow-[3px_3px_5px_0px_#B6C3C5,-3px_-3px_5px_0px_#FFF]'>
                                     <div className='text-[14px] text-grade'>
                                         Interest
@@ -250,7 +250,7 @@ const MortgageCalculator = (props:Props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-[258px] h-[21.57px] mt-[20px]  flex'>
+                            <div className='w-[268px] h-[21.57px] mt-[20px]  flex'>
                                 <div className='flex justify-center items-center h-full w-[16.9375rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] rounded-[39.4px_0rem_0rem_39.4px] shadow-[3px_3px_5px_0px_#B6C3C5,-3px_-3px_5px_0px_#FFF]'>
                                     <div className='text-[14px] text-grade'>
                                         Loan Period

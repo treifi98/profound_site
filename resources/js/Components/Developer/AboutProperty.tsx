@@ -57,8 +57,8 @@ const AboutProperty = (props:Props) => {
                 </div>
             ):
             (
-                <div className='w-[375px] h-max shadow-[-4.57px_-4.57px_7.31px_#fff,4.57px_4.57px_6.39px_#B6C3C5]'>
-                    <div className='w-full h-max'>
+                <div className='w-[375px] h-max shadow-[-4.57px_-4.57px_7.31px_#fff,4.57px_4.57px_6.39px_#B6C3C5] overflow-hidden'>
+                    <div className='w-full h-max shadow-[-4.57px_-4.57px_7.31px_#fff,4.57px_4.57px_6.39px_#B6C3C5]'>
                         <div className='w-full h-max flex items-center'>
                             <img src={buildingIcon} alt="" className='w-[38.56px] h-[33.08px] ml-[8.23px]'/>
                             <div className='h-[48px] ml-[6px]'>
@@ -75,13 +75,27 @@ const AboutProperty = (props:Props) => {
                         </div>
                         <div className='w-full h-max flex items-center'>
                             <img src={pinIcon} alt="" className='w-[19.65px] h-[34px] ml-[17px]'/>
-                            <div className='h-[48px] ml-[16 .34px]'>
+                            <div className='h-[48px] ml-[16.34px]'>
 
                                 <InElementSeperator width='4px' />
                             </div>
                             <div className='text-grade text-[18px] font-[400] ml-[6px]'>
                                 Dubai Creek Harbor
                             </div>
+                        </div>
+                    </div>
+                    <div className='w-[375px] h-max'>
+                        <div className='w-[339px] h-[260.56px] rounded-[8px] shadow-[4.568024158477783px_4.568024158477783px_6.395233631134033px_0px_#B6C3C5_inset,-4.568024158477783px_-4.568024158477783px_7.308838367462158px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mt-[18px]'>
+                            <div className='w-[315.13px] h-[237.4px] rounded-[8px] shadow-[-4.57px_-4.57px_7.31px_#fff,4.57px_4.57px_6.4px_#B6C3C5] '>
+                                <img src={dubaiImage} alt="" className='w-full h-full' />
+                            </div>
+                        </div>
+                        <div className='w-[339px] h-max flex flex-col gap-[10px] mt-[18px] mx-auto mb-[18px] '>
+                            <InfoShape img={statusIcon} text='Status' bluePillText='Off Plan' mainWidth='21.1875rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.090625rem' barHeight='2.02rem' intersection={1.006875} bluePillWidth='5.989375rem' textSize='17.6px' bluePillTextSize='14.5px' imgWidth='2.205rem' imgHeight='2.1825rem' imgMt='0.8rem' imgMl='0.9rem'/>
+                            <InfoShape img={claender} text='Year Built' bluePillText='2019' imgWidth='2.166875rem' imgHeight='2.375rem' imgMt='0.848125rem' imgMl='0.93875rem' mainWidth='21.1875rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.090625rem' barHeight='2.02rem' intersection={1.006875} bluePillWidth='5.989375rem' textSize='17.6px' bluePillTextSize='14.5px'/>
+                            <InfoShape img={elevatorIcon} text='Stories' bluePillText='131' imgWidth='2.52625rem' imgHeight='2.39125rem' imgMt='0.834375rem' imgMl='0.733125rem' mainWidth='21.1875rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.090625rem' barHeight='2.02rem' intersection={1.006875} bluePillWidth='5.989375rem' textSize='17.6px' bluePillTextSize='14.5px'/>
+                            <InfoShape img={unitIcon} text='Total Units' bluePillText='179' imgWidth='2.445rem' imgHeight='2.445rem' imgMt='0.783125rem' imgMl='0.774375rem' mainWidth='21.1875rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.090625rem' barHeight='2.02rem' intersection={1.006875} bluePillWidth='5.989375rem' textSize='17.6px' bluePillTextSize='14.5px'/>
+                            <InfoShape img={craneIcon} text='developed by' bluePillText='Emaar' imgWidth='1.856875rem' imgHeight='2.375rem' imgMt='0.84625rem' imgMl='1.079375rem' mainWidth='21.1875rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.090625rem' barHeight='2.02rem' intersection={1.006875} bluePillWidth='5.989375rem' textSize='17.6px' bluePillTextSize='14.5px'/>
                         </div>
                     </div>
                 </div>
