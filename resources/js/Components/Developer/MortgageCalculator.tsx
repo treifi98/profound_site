@@ -178,7 +178,7 @@ const MortgageCalculator = (props:Props) => {
                         </div>
                     </div>
                     <div className=' w-[375px] h-full justify-between  mx-auto mt-[0px]'>
-                            <div className=' w-[89.333vw] mx-auto origin-[46%_0%]' style={{ scale:`${1/props.scaleFactor}` }}>
+                            <div className=' w-[89.333vw] h-[280.1px] mx-auto origin-[46%_0%] mb-[-10px]' style={{ scale:`${1/props.scaleFactor}`, marginBottom:`${280.1-(280.1*props.scaleFactor)}px`}}>
 
                             <div className='w-full mt-[49px] relative rounded-[6.25rem] mx-auto' >
                                 <div className='w-full rounded-[6.25rem]' >
