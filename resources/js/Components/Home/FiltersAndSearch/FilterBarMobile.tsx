@@ -103,8 +103,8 @@ const FliterBarMobile = () => {
             </div>
 
         </div>
-        <div className=' w-full h-[0.375rem] z-[2] relative'>
-            <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' />
+        <div className=' w-full h-[4px] z-[2] relative'>
+            <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
         </div>
         <div className='w-full h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-center items-center gap-[2rem] '>
             <div className='w-[95%]  mx-auto h-full flex items-center justify-between gap-[1rem]'>
@@ -136,8 +136,8 @@ const FliterBarMobile = () => {
             </div>
 
         </div>
-        <div className=' w-full h-[0.375rem] z-[2] relative'>
-            <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' />
+        <div className=' w-full h-[4px] z-[2] relative'>
+            <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
         </div>
         <div className='w-full h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-start items-center gap-[2rem] '>
             <div className='w-[95%] mx-auto   h-full flex items-center justify-start gap-[1rem]'>
@@ -164,8 +164,8 @@ const FliterBarMobile = () => {
 
         <div className=' h-0 pb-[0rem] transition-all duration-[0.3s]' ref={cont}>
 
-            <div className=' w-full h-[0.375rem] z-[1] relative'>
-                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' />
+            <div className=' w-full h-[4px] z-[1] relative'>
+                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
             </div>
             <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[3] flex justify-center items-center gap-[2rem] '>
                 <div className=' w-[95%] h-full flex items-center justify-between flex-wrap gap-y-[1.2475rem] py-[1rem]'>
@@ -187,8 +187,8 @@ const FliterBarMobile = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full h-[0.375rem] z-[1] relative'>
-                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' />
+            <div className=' w-full h-[4px] z-[1] relative'>
+                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
             </div>
             <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[2] flex flex-col justify-center items-center gap-x-[2rem] '>
                 <div className=' w-[95%] h-full flex items-center justify-between flex-wrap  py-[0.1rem]'>
