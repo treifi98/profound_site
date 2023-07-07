@@ -110,7 +110,7 @@ const Home = () => {
             screenLG ?
             <HeroVideo/>
             :
-            <div className='w-full h-[calc(100vh-3.75rem)] relative overflow-hidden z-[2]'>
+            <div className='w-full h-[calc(100vh-110px)] relative overflow-hidden z-[2]'>
                 <div className='w-full h-full top-0 left-0 absolute overflow-hidden z-[-1] '>
                     <NewCardImage src={dubai} rounded='0'/>
                 </div>
