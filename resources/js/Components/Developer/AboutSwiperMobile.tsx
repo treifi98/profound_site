@@ -51,16 +51,16 @@ const AboutSwiperMobile = (props:Props) => {
     }
 
   return (
-    <div className=' relative bg-[#E6EDED]   rounded-[] flex items-center w-full h-full except' >
+    <div className=' relative bg-[#E6EDED]   rounded-[] flex items-center w-full h-full except' style={{ borderRadius:props.rounded?props.rounded:'0rem' }}>
             {/* <div className='absolute w-[2.625rem] h-[1.9375rem] cursor-pointer left-[-4.6rem] top-[calc(50%-0.96875rem)] z-[999999]'  onClick={() => swiper.slidePrev()}>
                 <img src={arrowIcon} alt="" className='h-full w-full'/>
             </div>
             <div className='absolute w-[2.625rem] h-[1.9375rem] cursor-pointer right-[-4.6rem] top-[calc(50%-0.96875rem)] rotate-180 z-[999999]'  onClick={() => swiper.slideNext()}>
                 <img src={arrowIcon} alt="" className='h-full w-full'/>
             </div> */}
-            <div className='except  flex justify-center items-center  mx-auto bg-[#E6EDED] overflow-hidden rounded-[]  w-full h-full' >
+            <div className='except  flex justify-center items-center  mx-auto bg-[#E6EDED] overflow-hidden rounded-[]  w-full h-full' style={{ borderRadius:props.rounded?props.rounded:'0rem' }}>
 
-                <div className='except mx-auto  overflow-hidden w-full h-full' >
+                <div className='except mx-auto  overflow-hidden w-full h-full' style={{ borderRadius:props.rounded?props.rounded:'0rem' }}>
                     <Swiper
 
                     modules={[Autoplay, EffectCoverflow, Pagination]}

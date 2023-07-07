@@ -5,10 +5,12 @@ import cashIcon from '../../../assets/cahIcon.svg'
 import floorplanIcon from '../../../assets/floor.svg'
 import bedIcon from '../../../assets/bed_icon.svg'
 import priceIcon from '../../../assets/price_tag_og.svg'
+import sizeIcon from '../../../assets/size.svg'
 import PrecantageSmall from './PrecantageSmall'
 import FloorPlanSwiper from './FloorPlanSwiper'
 import InfoShape from './InfoShape'
 import BedButton from './BedButton'
+import AboutSwiperMobile from './AboutSwiperMobile'
 interface Props{
     screen?:Boolean
 }
@@ -85,19 +87,27 @@ const FloorPlan = (props:Props) => {
                         </div>
 
                         <div className='w-[335px] h-[243.7px] rounded-[8px] mx-auto shadow-[3.0234644412994385px_3.0234644412994385px_4.232849597930908px_0px_#B6C3C5_inset,-3.0234644412994385px_-3.0234644412994385px_4.83754301071167px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] my-[20px] flex items-center'>
-                            <div className='w-min mx-auto'>
+                            <div className='w-[18.6125rem] h-max mx-auto flex flex-col gap-[16.42px] justify-center items-center'>
                                 <div className='mx-auto w-min mt-[0px]  except'>
 
-                                    <InfoShape img={bedIcon} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.188125rem' imgWidth='2.02rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
+                                    <InfoShape img={bedIcon} text='Number of Bedrooms ' bluePillText='3 beds' mainWidth='18.6125rem' mainHeight='3.694375rem' barWidth='16.13375rem' barHeight='1.86106rem' circleWidth='3.694375rem' imgHeight='2.188125rem' imgWidth='2.02rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.5575rem' textSize='14px' intersection={1.23125} bluePillTextSize='13.7px'/>
                                 </div>
-                                <div className='mx-auto w-min except'>
 
-                                    <InfoShape img={bedIcon} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.188125rem' imgWidth='1.730625rem' imgMt='0.78125rem' imgMl='1rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
-                                </div>
-                                <div className='mx-auto w-min except'>
+                                <div className=''>
 
-                                    <InfoShape img={bedIcon} text='Year Of establishment' bluePillText='2007' mainWidth='19.75rem' mainHeight='3.751rem' barWidth='16.86344rem' barHeight='1.86106rem' circleWidth='3.751rem' imgHeight='2.1875rem' imgWidth='2.1875rem' imgMt='0.78125rem' imgMl='0.875rem' bluePillWidth='5.58319rem' textSize='0.9375rem' intersection={0.874375}/>
+                                    <InfoShape img={sizeIcon} text='Area in Sq.ft' bluePillText='2007' mainWidth='18.6125rem' mainHeight='3.694375rem' barWidth='16.13375rem' barHeight='1.86106rem' circleWidth='3.694375rem' imgHeight='1.873125rem' imgWidth='2.05rem' imgMt='0.903125rem' imgMl='0.82125rem' bluePillWidth='5.5575rem' textSize='14px' intersection={1.23125} bluePillTextSize='13.7px' key={1198}/>
                                 </div>
+                                <div className='mx-auto w-min mt-[0px]  except'>
+
+                                    <InfoShape img={priceIcon} text='Price starting' bluePillText='1,125,0000' mainWidth='18.6125rem' mainHeight='3.694375rem' barWidth='16.13375rem' barHeight='1.86106rem' circleWidth='3.694375rem' imgHeight='2.05625rem' imgWidth='2.05625rem' imgMt='00.82125rem' imgMl='0.73125rem' bluePillWidth='5.5575rem' textSize='14px' intersection={1.23125} bluePillTextSize='13.7px'/>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className='w-[335px] h-[231.05px] rounded-[8px] shadow-[2.2696468830108643px_2.2696468830108643px_3.1775054931640625px_0px_#B6C3C5_inset,-2.2696468830108643px_-2.2696468830108643px_3.631434679031372px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mb-[20px]'>
+                            <div className='w-[316.39px] h-[212.89px] rounded-[8px] shadow-[-2.09px_-2.09px_3.35px_#fff,2.09px_2.09px_2.93px_#B6C3C5]'>
+                                <AboutSwiperMobile rounded='8px'/>
                             </div>
                         </div>
 
