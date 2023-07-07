@@ -103,7 +103,7 @@ const Header = (props:Props) => {
                     <MenueHover/>
                 </div>
             </div>:
-            <div className='w-full bg-[#002D31] h-[60px] relative z-[3]'>
+            <div className='w-full bg-[#002D31] h-[60px] relative z-[3]' id='headerHeight'>
                 <div className='w-[95%] mx-auto h-full flex justify-between items-center'>
                     {/* <img src={logo_img} alt="" className='lg:w-[13.31rem] w-[9.6875rem] h-[2.8325rem] lg:h-auto object-cover object-center'/> */}
                     <div className='w-[9.6875rem] h-[2.8325rem] flex items-center justify-center shadow-[-1.44402px_-1.44402px_1.92536px_#04626B,1.92536px_1.92536px_2.88804px_#011618] rounded-[0.28125rem]'>

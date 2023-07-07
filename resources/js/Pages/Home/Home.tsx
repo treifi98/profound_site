@@ -182,7 +182,7 @@ const Home = () => {
             screenLG ?
             <HeroVideo/>
             :
-            <div className='w-[100vw] h-[calc(100svh-60px)] relative overflow-hidden z-[2] origin-[50%_0%]' style={{ scale:`${1/(window.innerWidth/375)}`,marginBottom:`calc(758.4px - (758.4px * ${window.innerWidth/375}))`}}>
+            <div className='w-[100vw] h-[calc(100svh-60px)] relative overflow-hidden z-[2] origin-[50%_0%] inline-block' style={{ scale:`${1/(window.innerWidth/375)}`,marginBottom:`calc( ( ${(1/(window.innerWidth/375))*1} - 1) * (100svh - 60px) )`}}>
                 <div className='w-[100vw] h-full top-0 left-0 absolute overflow-hidden z-[-1] '>
                     <NewCardImage src={dubai} rounded='0'/>
                 </div>
