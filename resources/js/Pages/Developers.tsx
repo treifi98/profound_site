@@ -22,6 +22,94 @@ import { useDispatch } from 'react-redux'
 import HeroSwiper from '@/Components/HeroSwiper'
 import FliterDeveloperMobile from '@/Components/Home/FiltersAndSearch/FilterDeveloperMobile'
 const Developers = () => {
+    const [scaleFactor,setScaleFactor] = useState(1.0)
+    const [mainScreen,setMainScreen] = useState(375)
+    const [changer,setChanger] = useState(1)
+    // const [currentScreen,setCurrentScreen] = useState(375)
+    const initChange = () => {
+        setChanger(window.innerWidth)
+    }
+    const ScaleforMobile = () => {
+        let x = window.innerWidth / 375
+        setScaleFactor(x)
+
+    }
+    useEffect(()=>{
+        console.log(mainScreen)
+        ScaleforMobile()
+        setMainScreen(window.innerWidth)
+        console.log(scaleFactor)
+    },[changer])
+
+    useEffect(()=>{
+        // document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+        //     elmnt.parentElement.style.scale = scaleFactor.toString()
+        //     // elmnt.parentElement.style.marginTop = (5 * scaleFactor).toString()+'rem'
+        //     // alert((elmnt.parentElement.style.marginTop))
+        // })
+        if(window.innerWidth < 1530){
+
+            document.querySelector('.scalable').style.scale = scaleFactor
+        }
+        else{
+
+            document.querySelector('.scalable').style.scale = 1
+        }
+    },[scaleFactor])
+
+
+    const multiplyDimensions = (element, factor) => {
+        // first, get the computed style of the element
+
+        let style = window.getComputedStyle(element);
+
+        // get the width and height of the element
+        let width = parseFloat(style.width.replace("rem", ""));
+        let height = parseFloat(style.height.replace("rem", ""));
+        let textSize = parseFloat(style.fontSize.replace("rem", ""));
+
+        // multiply the width and height by the factor
+        width *= factor;
+        height *= factor;
+        textSize *= factor;
+
+        // set the new width and height
+        element.style.width = `${width}px`;
+        element.style.height = `${height}px`;
+        element.style.fontSize = `${textSize}px`;
+
+        // repeat for each child element
+        for (let i = 0; i < element.children.length; i++) {
+            // console.log(element.children[i].classList)
+            if(element.children[i].classList.contains('except')){
+                continue
+            }
+            console.log('-------')
+            console.log(scaleFactor)
+            multiplyDimensions(element.children[i], factor);
+        }
+
+    }
+
+
+    useEffect(() => {
+        const updateScreenWidth = () => {
+            if (window.innerWidth >= 1530){
+
+                setScreenLG(true);
+            }
+            else{
+                setScreenLG(false);
+
+            }
+            initChange()
+        }
+        updateScreenWidth()
+        window.addEventListener('resize', updateScreenWidth);
+        return () => window.removeEventListener('resize', updateScreenWidth);
+      }, []);
+
+    const dispatch = useDispatch()
 
     const [screenLG,setScreenLG] = useState(true)
     useEffect(() => {
@@ -44,14 +132,37 @@ const Developers = () => {
         window.addEventListener('resize', updateScreenWidth);
         return () => window.removeEventListener('resize', updateScreenWidth);
       }, []);
-    const dispatch = useDispatch()
+    const [points,setPoints] = useState([
+        {
+            point: [55.2667940551224,25.18752435627845],
+            bg:'#002d31'
+
+        },
+        {
+            point: [55.20497582813278,25.039942764298452],
+            bg:'#002d31'
+
+        }
+    ])
+    const [mapOn,setMapOn] = useState(false)
+    const handleMap = () => {
+
+    }
+    const rectifier = useRef(null)
     useEffect(()=>{
-        dispatch(addGracePeriod())
-        dispatch(hideForNav())
-    },[])
+        if(!screenLG){
+
+            // let correctionFactor = (-((pfe.current.offsetHeight * scaleFactor) - (pfe.current.offsetHeight)))
+            // console.log(correctionFactor)
+            // rectifier.current.style.top = correctionFactor+'px'
+        }
+
+
+
+    },[screenLG])
 
   return (
-    <div>
+    <>
     <MainLayout1>
         {
             screenLG?
@@ -95,14 +206,14 @@ const Developers = () => {
 
             </>:
             <>
-                <div className='h-[calc(100dvh-12.5125rem)] w-full relative z-[-1] font-[nova]'></div>
-                    <div className='h-[70ddvh] w-full  absolute top-[1.875rem] z-[2] font-[nova]'>
-                        <div className='relative h-full'>
+                <div className='h-[calc(100svh-114px)] w-[100vw] relative z-[-1] font-[nova] origin-[50%_0%]' style={{ scale:`${1/(window.innerWidth/375)}`, marginBottom:`calc( ( ${(1/(window.innerWidth/375))*1} - 1) * (100svh - 114px) )` }}></div>
+                    <div className='h-[calc(100svh-114px)] w-[100vw] absolute top-[0px] z-[2] font-[nova] !origin-[50%_0%]' style={{ scale:`${1/(window.innerWidth/375)}`,  }}>
+                        <div className='relative h-[100vw]'>
                             {/* <div className='absolute right-0 top-[4.375rem] z-10 opacity-[0.2] change_font:text-[0.97vw]'>
                                 <img src={logo_completion} alt="" className='w-[8.437em]'/>
                             </div> */}
-                            <div className='absolute bg-[#01141666] z-[1] h-[calc(100dvh-12.5125rem)] w-full mix-blend-overlay '></div>
-                            <div className='h-[calc(100dvh-12.5125rem)] w-full'>
+                            <div className='absolute bg-[#01141666] z-[1] h-[calc(100svh-114px)] w-[100vw] mix-blend-overlay'></div>
+                            <div className='h-[calc(100svh-114px)] w-[100vw]'>
                                 <HeroSwiper projects={[{title:'Project 1',image:dubai,subTitle:'3 & 4 Bedroom Villas',price:'338764',slug:'slug'},{title:'Project 2',image:dubai,subTitle:'1, 2, 3, 4 & 5 bedroom apartments',price:'85807998756',slug:'slug'},{title:'Project 3',image:dubai,subTitle:'3 & 4 Bedroom Villas',price:'338764',slug:'slug'}]}/>
                             </div>
                             {/* <div className='absolute top-[11.25rem] z-20 w-[80%] mx-[10%] h-[6.25rem] text-center flex justify-center items-center flex-col'>
@@ -143,7 +254,7 @@ const Developers = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[-1.8rem] relativez-[1]'>
+                    <div className='mt-[0px] relativez-[1] w-[375px]'>
 
                         <FliterDeveloperMobile/>
                     </div>
@@ -229,7 +340,7 @@ const Developers = () => {
 
 
     </MainLayout1>
-</div>
+</>
   )
 }
 

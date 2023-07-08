@@ -11,19 +11,20 @@ interface Props{
     seperatorML?:string,
     btnText?:string,
     btnWidth?:string,
-    ww?:string
+    ww?:string,
+    imgML?:string
 }
 const BarMobile = (props:Props) => {
   return (
-    <div className='w-full h-[2.625rem] flex justify-center items-center rounded-[10px_10px_0px_0px] shadow-[-2.89237px_-2.89237px_4.6278px_#FFFFFF,_2.89237px_2.89237px_4.04932px_#B6C3C5] '>
+    <div className='w-[375px] h-[2.625rem] flex justify-center items-center shadow-[-2.89237px_-2.89237px_4.6278px_#FFFFFF,_2.89237px_2.89237px_4.04932px_#B6C3C5] '>
         <div className='w-[97%] h-full flex justify-between items-center'>
             <div className='flex justify-evenly h-full items-center '>
 
-                <img src={props.img} alt="" style={{ width:props.imgWidth?props.imgWidth:'2.99125rem',height:props.imgHeight?props.imgHeight:'1.635rem' }}/>
+                <img src={props.img} alt="" style={{ width:props.imgWidth?props.imgWidth:'2.99125rem',height:props.imgHeight?props.imgHeight:'1.635rem', marginLeft:props.imgML?props.imgML:'0px' }}/>
                 <div className='h-full ml-[0.1rem]' style={{ marginLeft:props.seperatorML?props.seperatorML:'0rem' }}>
                     <InElementSeperator width='0.25rem'/>
                 </div>
-                <div className='text-[1.125rem] font-[600] text-grade ml-[0.4rem]'>
+                <div className='text-[1.125rem] font-[600] text-grade ml-[5px]'>
                     {props.title}
                 </div>
             </div>

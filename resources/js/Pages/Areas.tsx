@@ -159,9 +159,9 @@ const Areas = () => {
     useEffect(()=>{
         if(!screenLG){
 
-            let correctionFactor = (-((pfe.current.offsetHeight * scaleFactor) - (pfe.current.offsetHeight)))
-            console.log(correctionFactor)
-            rectifier.current.style.top = correctionFactor+'px'
+            // let correctionFactor = (-((pfe.current.offsetHeight * scaleFactor) - (pfe.current.offsetHeight)))
+            // console.log(correctionFactor)
+            // rectifier.current.style.top = correctionFactor+'px'
         }
 
 
@@ -277,14 +277,14 @@ const Areas = () => {
                 :
                 <>
 
-                    <div className='h-[calc(100vh-114px)] w-[100vw] relative z-[-1] font-[nova] origin-[50%_0%] overflow-hidden pf' style={{ scale:`${1/(window.innerWidth/375)}`, height:`calc(100dvh - (60px + ${53.7*scaleFactor}px))` }} ref={pfe}></div>
-                    <div className='h-[calc(100vh-114px)] w-[100vw]  absolute top-[0px] z-[2] font-[nova] origin-[50%_0%] overflow-hidden' style={{ scale:`${1/(window.innerWidth/375)}`, height:`calc(100dvh - (60px + ${53.7*scaleFactor}px))` }}>
+                    <div className='h-[calc(100svh-114px)] w-[100vw] relative z-[-1] font-[nova] origin-[50%_0%] overflow-hidden pf' style={{ scale:`${1/(window.innerWidth/375)}`, marginBottom:`calc( ( ${(1/(window.innerWidth/375))*1} - 1) * (100svh - 114px) )` }} ></div>
+                    <div className='h-[calc(100svh-114px)] w-[100vw]  absolute top-[0px] z-[2] font-[nova] origin-[50%_0%] overflow-hidden' style={{ scale:`${1/(window.innerWidth/375)}`,  }}>
                         <div className='relative h-full'>
                             {/* <div className='absolute right-0 top-[4.375rem] z-10 opacity-[0.2] change_font:text-[0.97vw]'>
                                 <img src={logo_completion} alt="" className='w-[8.437em]'/>
                             </div> */}
-                            <div className='absolute bg-[#01141666] z-[1] h-[calc(100vh-114px)] w-[100vw] mix-blend-overlay  ' style={{ height:`calc(100dvh - (60px + ${53.7*scaleFactor}px))` }} ></div>
-                            <div className='h-[calc(100vh-114px)] w-[100vw]' style={{ height:`calc(100dvh - (60px + ${53.7*scaleFactor}px))` }}>
+                            <div className='absolute bg-[#01141666] z-[1] h-[calc(100svh-114px)] w-[100vw] mix-blend-overlay  ' style={{  }} ></div>
+                            <div className='h-[calc(100svh-114px)] w-[100vw]' style={{  }}>
                                 <HeroSwiper projects={[{title:'Project 1',image:dubai,subTitle:'3 & 4 Bedroom Villas',price:'338764',slug:'slug'},{title:'Project 2',image:dubai,subTitle:'1, 2, 3, 4 & 5 bedroom apartments',price:'85807998756',slug:'slug'},{title:'Project 3',image:dubai,subTitle:'3 & 4 Bedroom Villas',price:'338764',slug:'slug'}]}/>
                             </div>
                             {/* <div className='absolute top-[11.25rem] z-20 w-[80%] mx-[10%] h-[6.25rem] text-center flex justify-center items-center flex-col'>

@@ -431,13 +431,13 @@ const Home = () => {
                         </div>
                     </div>
                     </div>
-                    <div className='mt-[2.5rem]'>
+                    <div className=' w-[100vw] mt-[2.5rem]'>
                     <SwiperAgent/>
                     </div>
-                    <div className='mt-[2.5rem] '>
+                    <div className='w-[100vw] mt-[2.5rem] '>
                     <SwiperDeveloper/>
                     </div>
-                    <div className='mt-[2.5rem]'>
+                    <div className='mt-[2.5rem] w-[100vw]'>
                     <SwiperNews/>
                     </div>
                     <div className='w-full flex justify-center items-center mt-[1.875rem] '>
@@ -447,12 +447,12 @@ const Home = () => {
             </>
         ):
             <>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem]'>
-                <BarMobile img={krane} title='Off-plan Latest Launches'/>
+            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[60px]'>
+                <BarMobile img={krane} title='Off-plan Latest Launches' seperatorML='5px'/>
                 <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
-                    <div className='w-[100%]  mx-auto'>
+                    <div className='w-[100%]  mx-auto scale-[1.009]'>
 
-                    <SwiperMobile>
+                    <SwiperMobile bottom='-20px'>
                         <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                             <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
@@ -466,10 +466,161 @@ const Home = () => {
                             imgWidth:'1.535rem',
                             imgHeight:'1.535rem',
                             imgMT:'0.295rem',
-                            textSize:'0.589375rem',
+                            textSize:'10.5px',
                             lowerSectionHeight:'1.326875rem',
                             lowerTextSize:'0.688125rem',
-                            textWidth:'3.48875rem',
+                            textWidth:'3.88875rem',
+
+                        },
+                        flipArgs:{
+                            content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                            isPrice:true,
+
+
+                        }
+                    }}
+                    bedBox={{
+                        args:{
+                            img:bed_icon,
+                            text:'Number of Bedrooms',
+                            lowerText:'1,2,3,4,5,6',
+                            imgWidth:'1.705rem',
+                            imgHeight:'1.27875rem',
+                            imgMT:'0.393125rem',
+                            textMT:'0.316875rem',
+                            textMB:'0.271875rem',
+                            lineHeight:'0.718125rem',
+                            textSize:'10.5px',
+                            lowerSectionHeight:'1.326875rem',
+                            lowerTextSize:'0.688125rem',
+                            textWidth:'3.8125rem',
+
+                        },
+                        flipArgs:{
+                            content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                            isPrice:false,
+
+
+                        }
+                    }}
+                    sizeBox={{
+                        args:{
+                            img:size_icon,
+                            text:'Area in Sq.ft (Min-Max)',
+                            lowerText:'881 - 4590',
+                            imgWidth:'1.6925rem',
+                            imgHeight:'1.544375rem',
+                            imgMT:'0.360725rem',
+                            lineHeight:'0.718125rem',
+                            textMT:'0.16rem',
+                            textMB:'0.16rem',
+                            textSize:'10.5px',
+                            lowerSectionHeight:'1.326875rem',
+                            lowerTextSize:'0.688125rem',
+                            textWidth:'3.97rem',
+
+                        },
+                        flipArgs:{
+                            content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                            isPrice:false,
+
+
+                        }
+                    }}
+                    paymentBox={{
+                        args:{
+                            img:paymentIcon,
+                            text:'Payment Plan',
+                            lowerText:'60% / 40%',
+                            imgWidth:'1.621875rem',
+                            imgHeight:'1.621875rem',
+                            textMT:'0.1375rem',
+                            textMB:'0.206875rem',
+                            imgMT:'0.295rem',
+                            lineHeight:'0.718125rem',
+                            textSize:'10.5px',
+                            lowerSectionHeight:'1.326875rem',
+                            lowerTextSize:'0.688125rem',
+                            textWidth:'2.3125rem',
+
+
+                        },
+                        flipArgs:{
+                            // text:'The handover of the properties',
+                            // lowerText:'Q1 / 2024 ',
+                            // lowerSectionHeight:'1.326875rem',
+                            // textHeight:'3.5rem',
+                            // textSize:'0.625rem',
+                            content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
+
+
+                        }
+                    }}
+                    compleationBox={{
+                        args:{
+                            img:compleationIcon,
+                            text:'Completion Date',
+                            lowerText:'60% / 40%',
+                            imgWidth:'1.420625rem',
+                            imgHeight:'1.451875rem',
+                            imgMT:'0.26625rem',
+                            textMB:'0.21625rem',
+                            textMT:'0.295625rem',
+                            lineHeight:'0.718125rem',
+                            textSize:'10.5px',
+                            lowerSectionHeight:'1.326875rem',
+                            lowerTextSize:'0.688125rem',
+                            textWidth:'3.04625rem',
+
+
+                        },
+                        flipArgs:{
+                            text:'The handover of the properties',
+                            lowerText:'Q1 / 2024 ',
+                            lowerSectionHeight:'1.326875rem',
+                            textHeight:'3.5rem',
+                            textSize:'10.5px'
+
+
+                        }
+                    }}
+                    agentBox={{
+                        Args:{
+                            langs:['Arabic', 'English',],
+                            name:'Nassif',
+                            speciality:'Downtown',
+                            imgWrapperWidth:'3.48875rem',
+                            imgWrapperHeight:'2.9975rem',
+                            img1Width:'3.2925rem',
+                            img1Height:'2.800625rem',
+                            img2Width:'0rem',
+                            img2Height:'3.42875rem',
+                            agentSectionHeight:'1.326875rem',
+                            lineHeight:'1.0675rem',
+                            nameTextSize:'0.688125rem',
+                            nameFontWaight:'0.688125rem'
+
+                        }
+                            }}
+                            />
+                        </div>
+                        <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+
+                            <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                        args:{
+                            img:priceIcon,
+                            text:'Price starting From AED',
+                            lowerText:'1,125,0000',
+                            textMT:'0.19875rem',
+                            textMB:'0.213125rem',
+                            lineHeight:'0.718125rem',
+                            imgWidth:'1.535rem',
+                            imgHeight:'1.535rem',
+                            imgMT:'0.295rem',
+                            textSize:'10.5px',
+                            lowerSectionHeight:'1.326875rem',
+                            lowerTextSize:'0.688125rem',
+                            textWidth:'3.88875rem',
 
                         },
                         flipArgs:{
@@ -620,7 +771,7 @@ const Home = () => {
                             textSize:'0.589375rem',
                             lowerSectionHeight:'1.326875rem',
                             lowerTextSize:'0.688125rem',
-                            textWidth:'3.48875rem',
+                            textWidth:'3.88875rem',
 
                         },
                         flipArgs:{
@@ -771,158 +922,7 @@ const Home = () => {
                             textSize:'0.589375rem',
                             lowerSectionHeight:'1.326875rem',
                             lowerTextSize:'0.688125rem',
-                            textWidth:'3.48875rem',
-
-                        },
-                        flipArgs:{
-                            content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
-                            isPrice:true,
-
-
-                        }
-                    }}
-                    bedBox={{
-                        args:{
-                            img:bed_icon,
-                            text:'Number of Bedrooms',
-                            lowerText:'1,2,3,4,5,6',
-                            imgWidth:'1.705rem',
-                            imgHeight:'1.27875rem',
-                            imgMT:'0.393125rem',
-                            textMT:'0.316875rem',
-                            textMB:'0.271875rem',
-                            lineHeight:'0.718125rem',
-                            textSize:'0.589375rem',
-                            lowerSectionHeight:'1.326875rem',
-                            lowerTextSize:'0.688125rem',
-                            textWidth:'2.8125rem',
-
-                        },
-                        flipArgs:{
-                            content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
-                            isPrice:false,
-
-
-                        }
-                    }}
-                    sizeBox={{
-                        args:{
-                            img:size_icon,
-                            text:'Area in Sq.ft (Min-Max)',
-                            lowerText:'881 - 4590',
-                            imgWidth:'1.6925rem',
-                            imgHeight:'1.544375rem',
-                            imgMT:'0.360725rem',
-                            lineHeight:'0.718125rem',
-                            textMT:'0.16rem',
-                            textMB:'0.16rem',
-                            textSize:'0.589375rem',
-                            lowerSectionHeight:'1.326875rem',
-                            lowerTextSize:'0.688125rem',
-                            textWidth:'3.97rem',
-
-                        },
-                        flipArgs:{
-                            content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
-                            isPrice:false,
-
-
-                        }
-                    }}
-                    paymentBox={{
-                        args:{
-                            img:paymentIcon,
-                            text:'Payment Plan',
-                            lowerText:'60% / 40%',
-                            imgWidth:'1.621875rem',
-                            imgHeight:'1.621875rem',
-                            textMT:'0.1375rem',
-                            textMB:'0.206875rem',
-                            imgMT:'0.295rem',
-                            lineHeight:'0.718125rem',
-                            textSize:'0.589375rem',
-                            lowerSectionHeight:'1.326875rem',
-                            lowerTextSize:'0.688125rem',
-                            textWidth:'2.3125rem',
-
-
-                        },
-                        flipArgs:{
-                            // text:'The handover of the properties',
-                            // lowerText:'Q1 / 2024 ',
-                            // lowerSectionHeight:'1.326875rem',
-                            // textHeight:'3.5rem',
-                            // textSize:'0.625rem',
-                            content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
-
-
-                        }
-                    }}
-                    compleationBox={{
-                        args:{
-                            img:compleationIcon,
-                            text:'Completion Date',
-                            lowerText:'60% / 40%',
-                            imgWidth:'1.420625rem',
-                            imgHeight:'1.451875rem',
-                            imgMT:'0.26625rem',
-                            textMB:'0.21625rem',
-                            textMT:'0.295625rem',
-                            lineHeight:'0.718125rem',
-                            textSize:'0.589375rem',
-                            lowerSectionHeight:'1.326875rem',
-                            lowerTextSize:'0.688125rem',
-                            textWidth:'3.04625rem',
-
-
-                        },
-                        flipArgs:{
-                            text:'The handover of the properties',
-                            lowerText:'Q1 / 2024 ',
-                            lowerSectionHeight:'1.326875rem',
-                            textHeight:'3.5rem',
-                            textSize:'0.589375rem'
-
-
-                        }
-                    }}
-                    agentBox={{
-                        Args:{
-                            langs:['Arabic', 'English',],
-                            name:'Nassif',
-                            speciality:'Downtown',
-                            imgWrapperWidth:'3.48875rem',
-                            imgWrapperHeight:'2.9975rem',
-                            img1Width:'3.2925rem',
-                            img1Height:'2.800625rem',
-                            img2Width:'0rem',
-                            img2Height:'3.42875rem',
-                            agentSectionHeight:'1.326875rem',
-                            lineHeight:'1.0675rem',
-                            nameTextSize:'0.688125rem',
-                            nameFontWaight:'0.688125rem'
-
-                        }
-                            }}
-                            />
-                        </div>
-                        <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
-
-                            <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
-                        args:{
-                            img:priceIcon,
-                            text:'Price starting From AED',
-                            lowerText:'1,125,0000',
-                            textMT:'0.19875rem',
-                            textMB:'0.213125rem',
-                            lineHeight:'0.718125rem',
-                            imgWidth:'1.535rem',
-                            imgHeight:'1.535rem',
-                            imgMT:'0.295rem',
-                            textSize:'0.589375rem',
-                            lowerSectionHeight:'1.326875rem',
-                            lowerTextSize:'0.688125rem',
-                            textWidth:'3.48875rem',
+                            textWidth:'3.88875rem',
 
                         },
                         flipArgs:{
@@ -1066,29 +1066,29 @@ const Home = () => {
             </div>
 
 
-            <div className='w-full h-max bg-[#002D31] mt-[8rem]  rounded-[0.625rem] relative'>
-                <div className='w-full h-[3.8125rem] rounded-[0.625rem_0.625rem_0rem_0rem] shadow-[0px_0px_0px_#04626B,_0px_4px_3px_#011618] bg-[#002D31]  flex items-center relative z-[2]'>
+            <div className='w-full h-max bg-[#002D31] mt-[40px]   relative'>
+                <div className='w-full h-[57px]  shadow-[0px_0px_0px_#04626B,_0px_4px_3px_#011618] bg-[#002D31]  flex items-center relative z-[2]'>
                     <img src={handImage} alt="" className='w-[2.84625rem] h-[2.38rem] ml-[0.625rem]' />
                     <div className='h-full ml-[0.77875rem]'>
-                        <InElementSeperator width='0.375rem'/>
+                        <InElementSeperator width='4px'/>
                     </div>
-                    <div className='w-[14.5rem] h-[2.25rem] shadow-[-3px_-3px_4px_#04626B,_4px_4px_6px_#011618] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618] rounded-[6.25rem] mx-auto flex justify-center items-center text-[1.0625rem] text-[#fff]'>
+                        <div className='w-[227px] font-[600] h-[36px] shadow-[-3px_-3px_4px_#04626B,_4px_4px_6px_#011618] cursor-pointer hover:shadow-[inset_-0.1875rem_-0.1875rem_0.25rem_#04626B,inset_0.25rem_0.25rem_0.375rem_#011618] rounded-[6.25rem] mx-auto flex justify-center items-center text-[14px] text-[#fff]'>
                         Book a property valuation
                     </div>
                 </div>
-                <div className='w-full h-full pb-[1rem]'>
+                <div className='w-full h-full pb-[20px]'>
                     <div className='absolute top-0 left-0 w-max h-max z-[1]'>
                         <img src={shape} alt="" className='object-cover'/>
                     </div>
-                    <div className='w-[90%] mx-auto mt-[0.75rem] text-[#fff] text-[1rem] leading-[1.6rem]'>
+                    <div className='w-[90%] mx-auto !mt-[20px] text-[#fff] text-[1rem] leading-[1.6rem]'>
                         Look no further! We have a team of expert valuers who utilize the latest technology and market data to ensure your property is evaluated to its fullest potential. Plus, with our established reputation and extensive network, we can connect you with potential buyers or renters in no time. Join the many satisfied clients who trust us for their property valuation needs.
                     </div>
-                    <div className='w-[95%] mx-auto shadow-[-3.45865px_-3.45865px_4.32331px_#04626B,_3.45865px_3.45865px_5.18797px_#011618] rounded-[1.055625rem] h-max flex justify-center items-center mt-[2.25rem]'>
+                    <div className='w-[95%] mx-auto  rounded-[1.055625rem] h-max flex justify-center items-center mt-[0px]'>
                         <img src={infiImg} alt="" className='py-[0.6875rem] h-[63.625rem]'/>
                     </div>
 
                     <div className='scale-[0.86466] origin-[-50%_0%] mb-[-4rem]'>
-                    <div className=' w-[24.9375rem] h-[34.875rem] rounded-[1.22119375rem] border-[#19464B] border-[0.0625rem] shadow-[-0.25rem_-0.25rem_0.3125rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] bg-[#002D31] z-[2] relative mt-[2.25rem] ml-[2.875rem]'>
+                    <div className=' w-[24.9375rem] h-[34.875rem] rounded-[1.22119375rem] border-[#19464B00] border-[0.0625rem] shadow-[-0.25rem_-0.25rem_0.3125rem_#04626B,0.25rem_0.25rem_0.375rem_#011618] bg-[#002D31] z-[2] relative mt-[2.25rem] ml-[2.875rem]'>
                             <div  className='mt-[1.375rem] text-[#E6EDED] text-[1.5625rem] text-center'>
                                 List your Property For
                             </div>
@@ -1130,32 +1130,32 @@ const Home = () => {
             </div>
 
 
-            <div className='!w-[100vw] h-[30.9375rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
-                <BarMobile img={small_logo} title='Meet our team' seperatorML='-0.3rem'/>
-                <div className='w-full h-[24.02875rem] flex justify-center items-center'>
+            <div className='!w-[375px] h-[517px] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px] '>
+                <BarMobile img={small_logo} title='Meet our team' seperatorML='-0.3rem' imgML='-5px'/>
+                <div className='w-full h-[24.02875rem] flex justify-center items-center mt-0'>
                     <div className='w-full h-[24.02875rem]  mx-auto'>
-                        <SwiperMobile height='26.52875rem' MT='0.125rem' bottom='-0.83375rem' shadow='none' mainWidth='19.125rem'>
-                            <div className='scale-[0.7846]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[34%_-5%] mt-[2rem]'>
+                        <SwiperMobile height='26.52875rem' MT='0rem' bottom='-20px' shadow='none' mainWidth='19.125rem'>
+                            <div className='scale-[0.784589]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[42%_-5%] mt-[36px]'>
 
                                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']} MT='0rem' MB='0rem'/>
                             </div>
-                            <div className='scale-[0.7846]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[34%_-5%] mt-[2rem]'>
+                            <div className='scale-[0.784589]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[42%_-5%] mt-[36px]'>
 
                                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']} MT='0rem' MB='0rem'/>
                             </div>
-                            <div className='scale-[0.7846]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[34%_-5%] mt-[2rem]'>
+                            <div className='scale-[0.784589]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[42%_-5%] mt-[36px]'>
 
                                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']} MT='0rem' MB='0rem'/>
                             </div>
-                            <div className='scale-[0.7846]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[34%_-5%] mt-[2rem]'>
+                            <div className='scale-[0.784589]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[42%_-5%] mt-[36px]'>
 
                                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']} MT='0rem' MB='0rem'/>
                             </div>
-                            <div className='scale-[0.7846]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[34%_-5%] mt-[2rem]'>
+                            <div className='scale-[0.784589]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[42%_-5%] mt-[36px]'>
 
                                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']} MT='0rem' MB='0rem'/>
                             </div>
-                            <div className='scale-[0.7846] origin-top-left mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
+                            <div className='scale-[0.784589] origin-top-left mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
 
                                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']} MT='0rem' MB='0rem'/>
                             </div>
@@ -1168,35 +1168,35 @@ const Home = () => {
 
             </div>
 
-            <div className='!w-[100vw] h-[31.1875rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
+            <div className='!w-[100vw] h-[516px] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
-                <div className='w-full h-[24.02875rem] flex justify-center items-center'>
+                <div className='w-full h-[24.02875rem] flex justify-center items-center '>
                     <div className='w-[100%] h-[24.02875rem]  mx-auto'>
-                        <SwiperMobile height='26.52875rem' MT='0.125rem' bottom='-0.93375rem' shadow='none' mainWidth='19.125rem'>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
+                        <SwiperMobile height='26.52875rem' MT='0px' bottom='-20px' shadow='none' mainWidth='19.125rem'>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
 
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
-
-                                    <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
-                                </div>
-                            </div>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
-
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
 
                                     <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
                                 </div>
                             </div>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
 
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
 
                                     <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
                                 </div>
                             </div>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
 
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
+
+                                    <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
+                                </div>
+                            </div>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
+
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
 
                                     <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
                                 </div>
@@ -1211,7 +1211,7 @@ const Home = () => {
 
             </div>
 
-            <div className='!w-[100vw] h-[54.9625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem]'>
+            <div className='!w-[100vw] h-[54.9625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px]'>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
                 <div className='w-full h-[27.241875rem] flex justify-center items-center'>
                     <div className='w-[21.125rem] h-[27.241875rem]  mx-auto'>
@@ -1269,8 +1269,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className='mt-[50px]'>
 
-           <AreasMobile/>
+                <AreasMobile/>
+            </div>
 
             <div className='w-full h-[57.78375rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
                 <BarMobile img={giftHandIcon} title='Clients review ' seperatorML='-0.3rem' btnText='Show all Review' btnWidth='7.5rem' ww='84%' />
@@ -1319,7 +1321,7 @@ const Home = () => {
                     <NewCardImage src={dubai} rounded='0.625'/>
                 </div>
             </div>
-        </>
+            </>
         }
 
 

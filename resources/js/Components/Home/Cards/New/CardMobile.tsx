@@ -336,7 +336,7 @@ const CardMobile = (props:Props) => {
         imageref.current.style.transform = 'scale(1)'
     }
     return (
-        <div className=' rounded-[0.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  overflow-hidden'  style={{ width:props.mainWidth?props.mainWidth:'21.473125rem',height:props.mainHeight?props.mainHeight:'36.780625rem',marginTop:props.mainMT?props.mainMT:'0rem',marginBottom:props.mainMB?props.mainMB:'0rem' }}>
+        <div className=' rounded-[0.625rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  overflow-hidden'  style={{ width:props.mainWidth?props.mainWidth:'21.473125rem',height:props.mainHeight?props.mainHeight:'594.49px',marginTop:props.mainMT?props.mainMT:'0rem',marginBottom:props.mainMB?props.mainMB:'0rem' }}>
             <div className=' h-full mx-auto' style={{ width:props.mainWrapperWidth?props.mainWrapperWidth:'20.19875rem' }}>
 
                 <div className='w-full relative transition-all origin-bottom scale-[1.1]' ref={imageref} style={{ height:props.imgHeight?props.imgHeight:'15.821875rem',marginTop:props.imgMT?props.imgMT:'0.736875rem' }}>
@@ -418,13 +418,13 @@ const CardMobile = (props:Props) => {
                     {/* <Brochure mainWidth='4.493125rem' mainHeight='1.056875rem' imgWrapperWidth='1.170625rem' imgWidth='0.765625rem' imgHeight='0.6325rem' separatorWidth='0.15125rem' textSize='0.625rem' restWidth='3.209375rem' imgMT='0.22625rem' seperatorML='0rem' /> */}
                     <div className='scale-[0.6046] origin-[100%_10%] mb-[-0.5rem]'>
 
-                        <Brochure mainWidth={props.brochure.mainWidth?props.brochure.mainWidth:'7.4375rem'}/>
+                        <Brochure mainWidth={props.brochure.mainWidth?props.brochure.mainWidth:'7.4375rem'} shadow='-0.285380625rem -0.285380625rem 7.30575px #FFFFFF,0.285380625rem 0.285380625rem 0.399533125rem #B6C3C5' />
                     </div>
 
                 </div>
                 <div className='flex w-full justify-between items-center h-[1.244375rem] mt-[-0.425rem]'>
                     <div className=' flex justify-between items-center' style={{ marginTop:props.subTitleWrapperMT?props.subTitleWrapperMT:'0.2775rem', width:props.areaWidth?props.areaWidth:'7.596875rem',}}>
-                        <img src={mapIcon} alt="" className='' style={{ width:props.areaWidth?props.areaWidth:'0.72375rem',height:props.areaIconHeight?props.areaIconHeight:'0.6875rem' }}/>
+                        <img src={mapIcon} alt="" className='' style={{ width:props.areaWidth?props.areaWidth:'9.73px',height:props.areaIconHeight?props.areaIconHeight:'0.6875rem' }}/>
                         <div className='text-grade ' style={{ fontSize:props.areatextSize?props.areatextSize:'0.75rem' }}>
                             Dubai Creek Harbor
                         </div>
@@ -433,7 +433,7 @@ const CardMobile = (props:Props) => {
                 <div className='w-full flex justify-between mt-[-4.2rem] ' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0.11rem' }}>
                     <TagSwiper textSize='0.6875'/>
                 </div>
-                <div className='w-[100%] flex flex-wrap' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.483125rem',columnGap:props.boxGapX?props.boxGapX:'1.08125rem',rowGap:props.boxGapY?props.boxGapY:'1.136875rem' }}>
+                <div className='w-[100%] flex flex-wrap justify-center ' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.483125rem',columnGap:props.boxGapX?props.boxGapX:'1.01125rem',rowGap:props.boxGapY?props.boxGapY:'1.136875rem' }}>
                     <div className=' scale-[1.0524]'>
 
                 <BoxMaster
@@ -577,7 +577,7 @@ const CardMobile = (props:Props) => {
                 <div className=' scale-[1.0524]'>
 
                         <Contact
-                            mainHeight={props.boxHeight?props.boxHeight:'5.011875rem'}
+                            mainHeight={props.boxHeight?props.boxHeight:'5.121875rem'}
                             mainWidth={props.boxWidth?props.boxWidth:'4.196875rem'}
                             lowerSectionHeight='1.326875rem'
                             boxWidth='1.474375rem'
@@ -603,7 +603,7 @@ const CardMobile = (props:Props) => {
                             Args={
                                 {
 
-                                    mainHeight: props.boxHeight?props.boxHeight:'5.011875rem',
+                                    mainHeight: props.boxHeight?props.boxHeight:'5.121875rem',
                                     mainWidth: props.boxWidth?props.boxWidth:'4.196875rem',
                                     ...props.agentBox.Args
                                 }

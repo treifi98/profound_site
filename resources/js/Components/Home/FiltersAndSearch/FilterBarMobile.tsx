@@ -81,7 +81,7 @@ const FliterBarMobile = () => {
     return (
         <>
 
-        <div className='w-full h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-center items-center gap-[2rem] mt-[0rem]' ref={main}>
+        <div className='w-[375px] h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-center items-center gap-[2rem] mt-[0rem]' ref={main}>
             <div className=' w-[100%] h-full flex items-center justify-evenly'>
                 <div className=''>
 
@@ -103,10 +103,10 @@ const FliterBarMobile = () => {
             </div>
 
         </div>
-        <div className=' w-full h-[4px] z-[2] relative'>
-            <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
+        <div className=' w-[375px] h-[4px] z-[2] relative'>
+            <InElementSeperator width='100%' shadow=' inset -1.56609px -1.56609px 2px #FFFFFF, inset 1px 1px 1.5px #B6C3C5' height='4px'/>
         </div>
-        <div className='w-full h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-center items-center gap-[2rem] '>
+        <div className='w-[375px] h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-center items-center gap-[2rem] '>
             <div className='w-[95%]  mx-auto h-full flex items-center justify-between gap-[1rem]'>
                 <div className='flex justify-between items-center '>
                     <div className='text-grade text-[0.9375rem]'>
@@ -136,14 +136,14 @@ const FliterBarMobile = () => {
             </div>
 
         </div>
-        <div className=' w-full h-[4px] z-[2] relative'>
-            <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
+        <div className=' w-[375px] h-[4px] z-[2] relative'>
+            <InElementSeperator width='100%' shadow=' inset -1.56609px -1.56609px 2px #FFFFFF, inset 1px 1px 1.5px #B6C3C5' height='4px'/>
         </div>
-        <div className='w-full h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-start items-center gap-[2rem] '>
+        <div className='w-[375px] h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1] flex justify-start items-center gap-[2rem] '>
             <div className='w-[95%] mx-auto   h-full flex items-center justify-start gap-[1rem]'>
             <div className='flex gap-[0.9375rem] items-center'>
                     <div className='text-grade text-[0.9375rem]'>
-                        Ready
+                        Residential
                     </div>
                     <div className='scale-[0.693]'>
                         <CheckComponent id="ReadyCheck" on="on" off="off"/>
@@ -162,13 +162,13 @@ const FliterBarMobile = () => {
 
         </div>
 
-        <div className=' h-0 pb-[0rem] transition-all duration-[0.3s]' ref={cont}>
+        <div className='w-[375px] h-0 pb-[0rem] transition-all duration-[0.3s]' ref={cont}>
 
-            <div className=' w-full h-[4px] z-[1] relative'>
-                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
+            <div className=' w-[375px] h-[4px] z-[1] relative'>
+                <InElementSeperator width='100%' shadow=' inset -1.56609px -1.56609px 2px #FFFFFF, inset 1px 1px 1.5px #B6C3C5' height='4px'/>
             </div>
-            <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[3] flex justify-center items-center gap-[2rem] '>
-                <div className=' w-[95%] h-full flex items-center justify-between flex-wrap gap-y-[1.2475rem] py-[1rem]'>
+            <div className='w-[375px] h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[3] flex justify-center items-center gap-[2rem] '>
+                <div className=' w-[355.43px] h-full flex items-center justify-between flex-wrap gap-y-[1.2475rem] py-[1rem]'>
 
                     <div className='relative z-[4]'>
                         <SelectMobile options={[{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'}]} lable='Area Features' id='af' func={() => console.log('d')}/>
@@ -187,29 +187,29 @@ const FliterBarMobile = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full h-[4px] z-[1] relative'>
-                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' height='4px'/>
+            <div className=' w-[375px] h-[4px] z-[1] relative'>
+                <InElementSeperator width='100%' shadow=' inset -1.56609px -1.56609px 2px #FFFFFF, inset 1px 1px 1.5px #B6C3C5' height='4px'/>
             </div>
-            <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[2] flex flex-col justify-center items-center gap-x-[2rem] '>
-                <div className=' w-[95%] h-full flex items-center justify-between flex-wrap  py-[0.1rem]'>
+            <div className='w-[375px] h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[2] flex flex-col justify-center items-center gap-x-[2rem] '>
+                <div className=' w-[345.43px] h-full flex items-center justify-between flex-wrap  py-[0.1rem]'>
                     <div className='flex items-center gap-[0.6875rem]'>
-                        <div className='whitespace-nowrap text-[0.875rm] text-grade font-[600]'>
+                        <div className='whitespace-nowrap text-[14px] text-grade font-[600]'>
                             Size Range
                         </div>
-                        <div className='scale-[0.6691] origin-left'>
+                        <div className=' origin-left'>
 
-                            <SliderButton title='Size By' options={['SQ.FT','SQ.M']}/>
+                            <SliderButton screen={false} title='Size By' options={['SQ.FT','SQ.M']}/>
                         </div>
 
                     </div>
                 </div>
-                <div className='w-[100vw] h-[5.5rem] shadow-[inset_-2.95156px_-2.95156px_4.7225px_#FFFFFF,_inset_2.95156px_2.95156px_4.13219px_#B6C3C5]'>
-                    <div className='w-[95%] mx-auto'>
+                <div className='w-[375px] h-[5.5rem] shadow-[inset_-2.95156px_-2.95156px_4.7225px_#FFFFFF,_inset_2.95156px_2.95156px_4.13219px_#B6C3C5]'>
+                    <div className='w-[345.43px] mx-auto'>
                         <div className='w-full flex justify-between items-center mt-[0.3125rem]'>
                             <div className='text-grade text-[0.75rem]'> Min Size (sq.ft)</div>
                             <div className='text-grade text-[0.75rem]'>Max Size (sq.ft)</div>
                         </div>
-                        <div className='w-[95%] mx-auto mt-[0.5125rem]'>
+                        <div className='w-[88vw] origin-[10%_50%] mx-auto mt-[0.5125rem]' style={{ scale:`${1/(window.innerWidth/375)}` }}>
                             <RangeComponentMobile RTL={false} max={15000} min={0} step={200} MinStep={200} MaxStep={200} StepDefault={true} id='sizeMobile' func={changeSizes} vals={sizes}/>
                         </div>
                         <div className=' flex justify-between'>
@@ -218,25 +218,25 @@ const FliterBarMobile = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' w-[95%] h-full flex items-center justify-between flex-wrap  py-[0.1rem]'>
+                <div className=' w-[345.43px] h-full flex items-center justify-between flex-wrap  py-[0.1rem]'>
                     <div className='flex items-center gap-[0.6875rem]'>
-                        <div className='whitespace-nowrap text-[0.875rm] text-grade font-[600]'>
+                        <div className='whitespace-nowrap text-[14px] text-grade font-[600]'>
                             Price Range
                         </div>
-                        <div className='scale-[0.6691] origin-left'>
+                        <div className=' origin-left'>
 
-                            <SliderButton title='Price By' options={['AED','USD','EUR','RUB']}/>
+                            <SliderButton screen={false} title='Price By' options={['AED','USD','EUR','RUB']} />
                         </div>
 
                     </div>
                 </div>
-                <div className='w-[100vw] h-[5.5rem] shadow-[inset_-2.95156px_-2.95156px_4.7225px_#FFFFFF,_inset_2.95156px_2.95156px_4.13219px_#B6C3C5] '>
-                    <div className='w-[95%] mx-auto'>
+                <div className='w-[375px] h-[5.5rem] shadow-[inset_-2.95156px_-2.95156px_4.7225px_#FFFFFF,_inset_2.95156px_2.95156px_4.13219px_#B6C3C5] '>
+                    <div className='w-[345.43px] mx-auto'>
                         <div className='w-full flex justify-between items-center mt-[0.3125rem]'>
                             <div className='text-grade text-[0.75rem]'> Min Price (AED)</div>
                             <div className='text-grade text-[0.75rem]'>Max Price (AED)</div>
                         </div>
-                        <div className='w-[95%] mx-auto mt-[0.5125rem]'>
+                        <div className='w-[88vw] origin-[10%_50%] mx-auto mt-[0.5125rem]' style={{ scale:`${1/(window.innerWidth/375)}` }}>
                             <RangeComponentMobile RTL={false} max={100000000} min={400000} step={200} MinStep={100000} MaxStep={10000000} StepDefault={false} id='priceFilter_1' func={changePrices} vals={prices}/>
 
                         </div>
@@ -247,7 +247,7 @@ const FliterBarMobile = () => {
                     </div>
                 </div>
             <div className='w-full h-[2.8125rem] shadow-[-4.23363px_-4.23363px_8.46727px_#F8FFFE,_4.23363px_4.23363px_8.46727px_#B6C3C5] border-[#DDE4E4] border-[0.0625rem] mb-[3rem] flex justify-center items-center'>
-                <div className='w-[95%] mx-auto flex items-center  justify-between'>
+                <div className='w-[345.43px] mx-auto flex items-center  justify-between'>
 
                     <div className='w-[6.448125rem] h-[1.596875rem] shadow-[inset_-1.29291px_-1.29291px_1.93937px_#04626B,_inset_1.29291px_1.29291px_1.93937px_#011618] bg-[#05363B] rounded-[4.4375rem] flex justify-center items-center'>
                         <div className='w-[6.249375rem] h-[1.35125rem] bg-[#05363B] rounded-[4.4375rem] shadow-[1.29291px_-1.29291px_1.93937px_#04626B,_1.29291px_1.29291px_1.93937px_#011618] flex justify-center items-center'>

@@ -15,6 +15,147 @@ import SelectMobile from './SelectMobile'
 
 
 const FliterAreaMobile = () => {
+
+    const [scaleFactor,setScaleFactor] = useState(1.0)
+    const [mainScreen,setMainScreen] = useState(375)
+    const [changer,setChanger] = useState(1)
+    // const [currentScreen,setCurrentScreen] = useState(375)
+    const initChange = () => {
+        setChanger(window.innerWidth)
+    }
+    const ScaleforMobile = () => {
+        let x = window.innerWidth / 375
+        setScaleFactor(x)
+
+    }
+    useEffect(()=>{
+        console.log(mainScreen)
+        ScaleforMobile()
+        setMainScreen(window.innerWidth)
+        console.log(scaleFactor)
+    },[changer])
+
+    useEffect(()=>{
+        // document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+        //     elmnt.parentElement.style.scale = scaleFactor.toString()
+        //     // elmnt.parentElement.style.marginTop = (5 * scaleFactor).toString()+'rem'
+        //     // alert((elmnt.parentElement.style.marginTop))
+        // })
+        if(window.innerWidth < 1530){
+
+            document.querySelector('.scalable').style.scale = scaleFactor
+        }
+        else{
+
+            document.querySelector('.scalable').style.scale = 1
+        }
+    },[scaleFactor])
+
+
+    const multiplyDimensions = (element, factor) => {
+        // first, get the computed style of the element
+
+        let style = window.getComputedStyle(element);
+
+        // get the width and height of the element
+        let width = parseFloat(style.width.replace("rem", ""));
+        let height = parseFloat(style.height.replace("rem", ""));
+        let textSize = parseFloat(style.fontSize.replace("rem", ""));
+
+        // multiply the width and height by the factor
+        width *= factor;
+        height *= factor;
+        textSize *= factor;
+
+        // set the new width and height
+        element.style.width = `${width}px`;
+        element.style.height = `${height}px`;
+        element.style.fontSize = `${textSize}px`;
+
+        // repeat for each child element
+        for (let i = 0; i < element.children.length; i++) {
+            // console.log(element.children[i].classList)
+            if(element.children[i].classList.contains('except')){
+                continue
+            }
+            console.log('-------')
+            console.log(scaleFactor)
+            multiplyDimensions(element.children[i], factor);
+        }
+
+    }
+
+
+    useEffect(() => {
+        const updateScreenWidth = () => {
+            if (window.innerWidth >= 1530){
+
+                setScreenLG(true);
+            }
+            else{
+                setScreenLG(false);
+
+            }
+            initChange()
+        }
+        updateScreenWidth()
+        window.addEventListener('resize', updateScreenWidth);
+        return () => window.removeEventListener('resize', updateScreenWidth);
+      }, []);
+
+    const dispatch = useDispatch()
+
+    const [screenLG,setScreenLG] = useState(true)
+    useEffect(() => {
+        const updateScreenWidth = () => {
+            if (window.innerWidth >= 1530){
+
+                setScreenLG(true);
+            }
+            else{
+                setScreenLG(false);
+
+            }
+
+
+        }
+        dispatch(addGracePeriod())
+        dispatch(setHoverState(false))
+        // alert('d')
+        updateScreenWidth()
+        window.addEventListener('resize', updateScreenWidth);
+        return () => window.removeEventListener('resize', updateScreenWidth);
+      }, []);
+    const [points,setPoints] = useState([
+        {
+            point: [55.2667940551224,25.18752435627845],
+            bg:'#002d31'
+
+        },
+        {
+            point: [55.20497582813278,25.039942764298452],
+            bg:'#002d31'
+
+        }
+    ])
+    const [mapOn,setMapOn] = useState(false)
+    const handleMap = () => {
+
+    }
+    const rectifier = useRef(null)
+    useEffect(()=>{
+        if(!screenLG){
+
+            // let correctionFactor = (-((pfe.current.offsetHeight * scaleFactor) - (pfe.current.offsetHeight)))
+            // console.log(correctionFactor)
+            // rectifier.current.style.top = correctionFactor+'px'
+        }
+
+
+
+    },[screenLG])
+
+
     const [numberOfBeds,setNumberOfBeds] = useState([])
     const [sizes,setSizes] = useState([0,15000])
     const [prices,setPrices] = useState([400000,100000000])
@@ -104,13 +245,13 @@ const FliterAreaMobile = () => {
 
         </div>
 
-        <div className=' h-0 pb-[0rem] transition-all duration-[0.1s] ' ref={cont}>
+        <div className=' h-0 w-[375px] pb-[0rem] transition-all duration-[0.1s] ' ref={cont}>
 
-            <div className=' w-full h-[0.375rem] z-[1] relative'>
-                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' />
+            <div className=' w-[375px] h-[4px] z-[1] relative'>
+                <InElementSeperator width='100%' shadow=' inset -1.56609px -1.56609px 2px #FFFFFF, inset 1px 1px 1.5px #B6C3C5' height='4px'/>
             </div>
-            <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[3] flex justify-center items-center gap-[2rem] '>
-                <div className=' w-[95%] h-full flex items-center justify-between flex-wrap gap-y-[1.2475rem] py-[1rem]'>
+            <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[4] flex justify-center items-center gap-[2rem] '>
+                <div className=' w-[345.43px] h-full flex items-center justify-between flex-wrap gap-y-[1.2475rem] py-[1rem]'>
 
                     <div className='relative z-[4]'>
                         <SelectMobile options={[{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'}]} lable='Area' id='af' func={() => console.log('d')}/>
@@ -120,11 +261,11 @@ const FliterAreaMobile = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full h-[0.375rem] z-[1] relative'>
-                <InElementSeperator width='100%' shadow=' inset -4.56609px -4.56609px 7.30575px #FFFFFF, inset 4.56609px 4.56609px 6.39253px #B6C3C5' />
+            <div className=' w-[375px] h-[4px] z-[3] relative'>
+                <InElementSeperator width='100%' shadow=' inset -1.56609px -1.56609px 2px #FFFFFF, inset 1px 1px 1.5px #B6C3C5' height='4px'/>
             </div>
-            <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative z-[2] flex justify-center items-center gap-[2rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]'>
-                <div className=' w-[95%] h-full flex items-center justify-between flex-wrap gap-y-[1.2475rem] py-[1rem]'>
+            <div className='w-full h-max  bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]  relative  flex justify-center items-center gap-[2rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5] z-[2]'>
+                <div className=' w-[345.43px] h-full flex items-center justify-between flex-wrap gap-y-[1.2475rem] py-[1rem]'>
 
                     <div className=''>
                         <SelectMobile options={[{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'}]} lable='Property type' id='pt' func={() => console.log('d')}/>
