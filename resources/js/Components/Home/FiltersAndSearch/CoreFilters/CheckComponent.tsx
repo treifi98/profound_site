@@ -4,10 +4,13 @@ import checkedIcon from '../../../../../assets/checkedIcon.svg'
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState  } from '@/store'
 import{check, unCheck, reset, checkSingle, toggle} from './CheckComponentSlice'
+// import { checkSingle,test } from './CheckComponentSlice'
+
 import{trigger} from '../RangeComponentSlice'
 
 interface Props{
-    func?:Function
+    onFunc?:Function
+    offFunc?:Function
     id:string,
     on:string,
     off:string
@@ -20,7 +23,9 @@ interface Props{
     stepDefault?:boolean
     ogMinValue?:number,
     ogMaxValue?:number,
-    ogStep?:number
+    ogStep?:number,
+    group?:string,
+    // func?:Function
 }
 const CheckComponent = (props:Props) => {
     // console.log(props.id)
@@ -49,7 +54,8 @@ const CheckComponent = (props:Props) => {
     // const [clicked,setClicked] = useState(false)
     const handleClick = () => {
         // setClicked((prev) => !prev)
-        dispatch(toggle({id:props.id,vals:{on:'1',off:'0'}}))
+        dispatch(toggle({id:props.id,vals:{on:props.on,off:props.off},group:props.group}))
+        // if
         // props.func()
 
     }
@@ -62,11 +68,19 @@ const CheckComponent = (props:Props) => {
             img.current.src = checkedIcon
             circle.current.style.transform = 'rotate(360deg)'
             // alert(checked[id[0]][id[1]].status)
+            if(props.onFunc){
+
+                props.onFunc()
+            }
         }else{
             ref.current.style.width = '2rem'
             mainComp.current.style.border = '0.0625rem solid #CAD4D5'
             img.current.src = checkIcon
             circle.current.style.transform = 'rotate(0deg)'
+            if(props.offFunc){
+
+                props.offFunc()
+            }
         }
     },[checked])
 

@@ -1130,11 +1130,11 @@ const Home = () => {
             </div>
 
 
-            <div className='!w-[375px] h-[517px] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px] '>
+            <div className='!w-[375px] h-[527px] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px] '>
                 <BarMobile img={small_logo} title='Meet our team' seperatorML='-0.3rem' imgML='-5px'/>
                 <div className='w-full h-[24.02875rem] flex justify-center items-center mt-0'>
                     <div className='w-full h-[24.02875rem]  mx-auto'>
-                        <SwiperMobile height='26.52875rem' MT='0rem' bottom='-20px' shadow='none' mainWidth='19.125rem'>
+                        <SwiperMobile height='26.52875rem' MT='0rem' bottom='-30px' shadow='none' mainWidth='19.125rem'>
                             <div className='scale-[0.784589]  mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] origin-[42%_-5%] mt-[36px]'>
 
                                 <AgentCard h={'28.125'} w={'21.25'} img={agent} name="Nassif Nassif" title="Founder & CEO" langs={['Speak','Arabic','English']} MT='0rem' MB='0rem'/>
@@ -1168,11 +1168,11 @@ const Home = () => {
 
             </div>
 
-            <div className='!w-[100vw] h-[516px] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
+            <div className='!w-[375px] h-[526px] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px] '>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
                 <div className='w-full h-[24.02875rem] flex justify-center items-center '>
                     <div className='w-[100%] h-[24.02875rem]  mx-auto'>
-                        <SwiperMobile height='26.52875rem' MT='0px' bottom='-20px' shadow='none' mainWidth='19.125rem'>
+                        <SwiperMobile height='26.52875rem' MT='0px' bottom='-30px' shadow='none' mainWidth='19.125rem'>
                             <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
 
                                 <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
@@ -1211,32 +1211,32 @@ const Home = () => {
 
             </div>
 
-            <div className='!w-[100vw] h-[54.9625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px]'>
+            <div className='!w-[375px] h-[54.9625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px]'>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
-                <div className='w-full h-[27.241875rem] flex justify-center items-center'>
-                    <div className='w-[21.125rem] h-[27.241875rem]  mx-auto'>
-                        <SwiperMobile height='27.241875rem' MT='2.125rem' bottom='-1.83375rem' shadow='-4.70769px -4.70769px 9.41538px 2.35385px #FFFFFF, 4.70769px 4.70769px 9.41538px #BABFBF'>
-                            <div className='scale-[0.9073] origin-top-left'>
+                <div className='w-full h-[447.47px] flex justify-center items-center'>
+                    <div className='w-[345px] h-[447.47px]  mx-auto'>
+                        <SwiperMobile height='447.47px' MT='20px' bottom='-20px' shadow='-4.70769px -4.70769px 9.41538px 2.35385px #FFFFFF, 4.70769px 4.70769px 9.41538px #BABFBF'>
+                            <div className='scale-[0.92609] origin-[1%_0%]'>
 
                                 <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainMY='0rem' imgRounded='0.625rem' />
                             </div>
-                            <div className='scale-[0.9073] origin-top-left'>
+                            <div className='scale-[0.92609] origin-[1%_0%]'>
 
                                 <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainMY='0rem' imgRounded='0.625rem' />
                             </div>
-                            <div className='scale-[0.9073] origin-top-left'>
+                            <div className='scale-[0.92609] origin-[1%_0%]'>
 
                                 <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainMY='0rem' imgRounded='0.625rem' />
                             </div>
-                            <div className='scale-[0.9073] origin-top-left'>
+                            <div className='scale-[0.92609] origin-[1%_0%]'>
 
                                 <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainMY='0rem' imgRounded='0.625rem' />
                             </div>
-                            <div className='scale-[0.9073] origin-top-left'>
+                            <div className='scale-[0.92609] origin-[1%_0%]'>
 
                                 <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainMY='0rem' imgRounded='0.625rem' />
                             </div>
-                            <div className='scale-[0.9073] origin-top-left'>
+                            <div className='scale-[0.92609] origin-[1%_0%]'>
 
                                 <NewsCard img={newsImg} title="What Happens If My Tenant Doesn't Pay Rent? (Dubai 2023)" mainMY='0rem' imgRounded='0.625rem' />
                             </div>
@@ -1247,23 +1247,23 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='w-[21.125rem] h-[8.125rem] mx-auto   mt-[4.758125rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] py-[0.9375rem] !rounded-[0.5rem]'>
+                <div className='w-[345px] h-[8.125rem] mx-auto   mt-[65px] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] border-[#DCE3E3] border-[0.0625rem] py-[0.9375rem] !rounded-[0.5rem]'>
                     <div className='text-grade text-[0.9375rem] leading-[1.40625rem] w-[20.375rem] mx-auto '>
                         Stay ahead of the curve in Dubai's real estate market. Subscribe now to get exclusive access to the latest updates and off-plan property projects.
                     </div>
                     <div className='text-[1.125] font-[600] text-grade text-center mt-[0.75rem]'>
                         Make informed investment decisions
                     </div>
-                    <div className='w-max mx-auto mt-[2.1875rem]'>
+                    <div className='w-max mx-auto mt-[35px]'>
 
                         <DynamicTextWhit icon={userIconG} placeHolder='Your full name ' mainHeight='2.091875rem' imgWrapperHeight='2.091875rem' textHeight='2.091875rem'/>
                     </div>
-                    <div className='w-max mx-auto mt-[1.7875rem]'>
+                    <div className='w-max mx-auto mt-[24px]'>
 
                         <DynamicTextWhit icon={emailIcon} placeHolder='Your Email Address ' mainHeight='2.091875rem' imgWrapperHeight='2.091875rem' textHeight='2.091875rem'/>
                     </div>
                 </div>
-                <div className='w-[8.275rem] h-[2.091875rem] rounded-[6.25rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8.608125rem] mx-auto flex justify-center items-center'>
+                <div className='w-[8.275rem] h-[2.091875rem] rounded-[6.25rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[140px] mx-auto flex justify-center items-center'>
                     <div className='text-[1.0625rem] font-[600] text-grade'>
                         Subscribe
                     </div>
@@ -1274,9 +1274,9 @@ const Home = () => {
                 <AreasMobile/>
             </div>
 
-            <div className='w-full h-[57.78375rem] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[8rem] mb-[1rem]'>
+            <div className='w-full h-max rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px] mb-[50px]'>
                 <BarMobile img={giftHandIcon} title='Clients review ' seperatorML='-0.3rem' btnText='Show all Review' btnWidth='7.5rem' ww='84%' />
-                <div className='w-[21.125rem] h-[14.75rem] mx-auto px-[0.875rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] rounded-[0.5rem] mt-[2rem] overflow-hidden'>
+                <div className='w-[345px] h-[14.75rem] mx-auto px-[0.875rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] rounded-[0.5rem] mt-[20px] overflow-hidden'>
                     <div className='text-[1.25rem] font-[600] text-grade w-[16.625rem] leading-[1.51875rem] mt-[0.7rem]'>
                         The depth of our commitment to our clients
                     </div>
@@ -1285,8 +1285,8 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='w-full h-[20.125rem] flex justify-center items-center'>
-                    <div className='w-[21.125rem] h-[20.125rem]  mx-auto'>
-                        <SwiperMobile height='20.125rem' MT='2.125rem' bottom='-1.83375rem' shadow='-4.70769px -4.70769px 9.41538px 2.35385px #FFFFFF, 4.70769px 4.70769px 9.41538px #BABFBF'>
+                    <div className='w-[345px] h-[20.125rem]  mx-auto'>
+                        <SwiperMobile height='20.125rem' MT='20px' bottom='-30px' shadow='-4.70769px -4.70769px 9.41538px 2.35385px #FFFFFF, 4.70769px 4.70769px 9.41538px #BABFBF'>
                             <div className='scale-[1] origin-top-left'>
 
                                 <ReviewCardMobile title='Lilian provided exceptional service' text="Profound Properties' website is user-friendly with detailed property listings and regular updates. Lilian provided exceptional service and impressive negotiation skills, ensuring a smooth transaction and finding the perfect home for me. Highly recommended for anyone looking to buy or sell a property." stars={5}/>
@@ -1317,7 +1317,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                <div className='w-[21.125rem] h-[11.9375rem] flex justify-center items-center rounded-[0.625rem] mt-[5.2875rem] mx-auto'>
+                <div className='w-[345px] h-[11.9375rem] flex justify-center items-center rounded-[0.625rem] mt-[70px] mx-auto mb-[20px]'>
                     <NewCardImage src={dubai} rounded='0.625'/>
                 </div>
             </div>

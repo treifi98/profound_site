@@ -15,6 +15,7 @@ import SelectMobile from './SelectMobile'
 
 
 const FliterAreaMobile = () => {
+    // const dispatch = useDispatch()
 
     const [scaleFactor,setScaleFactor] = useState(1.0)
     const [mainScreen,setMainScreen] = useState(375)
@@ -103,7 +104,7 @@ const FliterAreaMobile = () => {
         return () => window.removeEventListener('resize', updateScreenWidth);
       }, []);
 
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
 
     const [screenLG,setScreenLG] = useState(true)
     useEffect(() => {
@@ -119,8 +120,8 @@ const FliterAreaMobile = () => {
 
 
         }
-        dispatch(addGracePeriod())
-        dispatch(setHoverState(false))
+        // dispatch(addGracePeriod())
+        // dispatch(setHoverState(false))
         // alert('d')
         updateScreenWidth()
         window.addEventListener('resize', updateScreenWidth);

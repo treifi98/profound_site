@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import header_background from '../../assets/header.svg'
 import logo_img from '../../../../assets/Plogo.svg'
 import search_logo from '../../../../assets/magnifying_glass.svg'
@@ -19,6 +19,14 @@ interface Props{
 }
 
 const Header = (props:Props) => {
+
+
+
+
+
+
+
+
     const up = useRef(null)
     const mid = useRef(null)
     const down = useRef(null)
@@ -54,16 +62,19 @@ const Header = (props:Props) => {
             },
           },
           MuiDrawer:{
+
             styleOverrides:{
                 paper:{
                     backgroundColor:'#E6EDED',
                     width:'80%',
-                        height:'calc(100dvh - 3.75rem)',
+                        height:'calc(100svh - 3.75rem)',
                     // height:'max-content',
                     top:'3.75rem',
-                    overflow:'auto'
+                    overflow:'auto',
+
                 }
-            }
+            },
+
           }
         },
       });
@@ -78,6 +89,7 @@ const Header = (props:Props) => {
                 anchor={'left'}
                 open={openstatus}
                 onClose={()=>toggleOppen( )}
+                className='scalable'
 
 
 

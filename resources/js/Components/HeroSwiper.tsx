@@ -36,7 +36,7 @@ const HeroSwiper = (props:Props) => {
             <div className='absolute h-[1.625rem] w-[0.9375rem] right-[1.1rem] top-[calc(50%-0.46875rem)] cursor-pointer z-[9999999999]' onClick={() => swiper.slideNext()}>
                 <img src={simpleGreenArrowLeft} alt="" className='h-[1.625rem] w-[0.9375rem] rotate-[180deg]' />
             </div> */}
-        <div className=''>
+        <div className='h-full'>
             <Swiper
 
             modules={[Autoplay, EffectCoverflow, Pagination]}
@@ -52,7 +52,7 @@ const HeroSwiper = (props:Props) => {
                 }}
                 autoplay={
                     {
-                        disableOnInteraction:false,
+                        disableOnInteraction:true,
                         delay:3000,
                         pauseOnMouseEnter:true
                     }

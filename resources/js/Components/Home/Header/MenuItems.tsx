@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import InElementSeperator from '../Cards/Common/InElementSeperator'
 import plus from '../../../../assets/plus.svg'
 import Accordion from '@mui/material/Accordion';
@@ -30,6 +30,130 @@ import { Link } from '@inertiajs/react';
 
 
 const MenuItems = () => {
+
+//     const [scaleFactor,setScaleFactor] = useState(1.0)
+// const [mainScreen,setMainScreen] = useState(375)
+// const [changer,setChanger] = useState(1)
+// // const [currentScreen,setCurrentScreen] = useState(375)
+// const initChange = () => {
+//     setChanger(window.innerWidth)
+// }
+// const ScaleforMobile = () => {
+//     let x = window.innerWidth / 375
+//     setScaleFactor(x)
+//     alert("menue")
+
+
+// }
+// useEffect(()=>{
+//     console.log(mainScreen)
+//     ScaleforMobile()
+//     setMainScreen(window.innerWidth)
+//     console.log(scaleFactor)
+// },[changer])
+
+// useEffect(()=>{
+//     // document.querySelectorAll('.mobil-comp').forEach((elmnt)=>{
+//     //     elmnt.parentElement.style.scale = scaleFactor.toString()
+//     //     // elmnt.parentElement.style.marginTop = (5 * scaleFactor).toString()+'rem'
+//     //     // alert((elmnt.parentElement.style.marginTop))
+//     // })
+//     if(window.innerWidth < 1530){
+
+//         document.querySelector('.scalable').style.scale = scaleFactor
+//     }
+//     else{
+
+//         document.querySelector('.scalable').style.scale = 1
+//     }
+// },[scaleFactor])
+
+// useEffect(()=>{
+//     if(window.innerWidth < 1530){
+
+//         document.querySelector('.scalable').style.scale = scaleFactor
+//     }
+//     else{
+
+//         document.querySelector('.scalable').style.scale = 1
+//     }
+// },[])
+
+
+// const multiplyDimensions = (element, factor) => {
+//     // first, get the computed style of the element
+
+//     let style = window.getComputedStyle(element);
+
+//     // get the width and height of the element
+//     let width = parseFloat(style.width.replace("rem", ""));
+//     let height = parseFloat(style.height.replace("rem", ""));
+//     let textSize = parseFloat(style.fontSize.replace("rem", ""));
+
+//     // multiply the width and height by the factor
+//     width *= factor;
+//     height *= factor;
+//     textSize *= factor;
+
+//     // set the new width and height
+//     element.style.width = `${width}px`;
+//     element.style.height = `${height}px`;
+//     element.style.fontSize = `${textSize}px`;
+
+//     // repeat for each child element
+//     for (let i = 0; i < element.children.length; i++) {
+//         // console.log(element.children[i].classList)
+//         if(element.children[i].classList.contains('except')){
+//             continue
+//         }
+//         console.log('-------')
+//         console.log(scaleFactor)
+//         multiplyDimensions(element.children[i], factor);
+//     }
+
+// }
+
+
+// useEffect(() => {
+//     const updateScreenWidth = () => {
+//         if (window.innerWidth >= 1530){
+
+//             setScreenLG(true);
+//         }
+//         else{
+//             setScreenLG(false);
+
+//         }
+//         initChange()
+//     }
+//     updateScreenWidth()
+//     window.addEventListener('resize', updateScreenWidth);
+//     return () => window.removeEventListener('resize', updateScreenWidth);
+//   }, []);
+
+// // const dispatch = useDispatch()
+
+// const [screenLG,setScreenLG] = useState(true)
+// useEffect(() => {
+//     const updateScreenWidth = () => {
+//         if (window.innerWidth >= 1530){
+
+//             setScreenLG(true);
+//         }
+//         else{
+//             setScreenLG(false);
+
+//         }
+
+
+//     }
+//     // dispatch(addGracePeriod())
+//     // dispatch(setHoverState(false))
+//     // alert('d')
+//     updateScreenWidth()
+//     window.addEventListener('resize', updateScreenWidth);
+//     return () => window.removeEventListener('resize', updateScreenWidth);
+//   }, []);
 
     const item1 = useRef(null)
     const item2 = useRef(null)
