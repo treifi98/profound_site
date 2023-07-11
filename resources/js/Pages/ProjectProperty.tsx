@@ -176,7 +176,7 @@ const ProjectProperty = () => {
       <div className='w-min  mx-auto mt-[5rem]'>
         <ProjectInfo screen={screenLG}/>
       </div>
-      <div className='w-min mx-auto mt-[5rem] mb-[5rem]'>
+      <div className='w-min mx-auto mt-[5rem] '>
         <DoublrBoxesDoubleText screen={screenLG}/>
 
       </div>

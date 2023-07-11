@@ -105,8 +105,8 @@ const FloorPlan = (props:Props) => {
                             </div>
                         </div>
 
-                        <div className='w-[335px] h-[231.05px] rounded-[8px] shadow-[2.2696468830108643px_2.2696468830108643px_3.1775054931640625px_0px_#B6C3C5_inset,-2.2696468830108643px_-2.2696468830108643px_3.631434679031372px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mb-[20px]'>
-                            <div className='w-[316.39px] h-[212.89px] rounded-[8px] shadow-[-2.09px_-2.09px_3.35px_#fff,2.09px_2.09px_2.93px_#B6C3C5]'>
+                        <div className='w-[345px] h-[266.91px] rounded-[8px] shadow-[2.2696468830108643px_2.2696468830108643px_3.1775054931640625px_0px_#B6C3C5_inset,-2.2696468830108643px_-2.2696468830108643px_3.631434679031372px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mb-[20px]'>
+                            <div className='w-[345px] h-[266.91px] rounded-[8px] shadow-[-2.09px_-2.09px_3.35px_#fff,2.09px_2.09px_2.93px_#B6C3C5]'>
                                 <AboutSwiperMobile rounded='8px'/>
                             </div>
                         </div>

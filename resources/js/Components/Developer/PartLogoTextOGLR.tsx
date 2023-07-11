@@ -43,9 +43,9 @@ const PartLogoTextOGLR = (props:Props) => {
             )
             :(
                 <div className='w-[375px] h-max flex items-center justify-center bg-[#E6EDED]  shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] mobil-comp'>
-                    <div className='w-[339px] h-max flex flex-col-reverse gap-[0px] mx-auto my-[25px]'>
+                    <div className='w-[345px] h-max flex flex-col-reverse gap-[0px] mx-auto my-[20px]'>
 
-                        <div className='h-full w-[339px] border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[8px] box-border py-[1rem] flex justify-center items-center'>
+                        <div className='h-full w-[345px] border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[8px] box-border py-[1rem] flex justify-center items-center'>
 
 
                             <div className='w-[325px] mx-auto'>
@@ -58,11 +58,11 @@ const PartLogoTextOGLR = (props:Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[339px] h-[343.60896px] flex justify-center items-center mb-[25px]'>
-                            <div className='w-[339px] h-[343.60896px] flex justify-center items-center rounded-[3.42%_33.76%_2.28%_33.76%] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
-                                <div className='w-[316.29008px] h-[321.63504px] rounded-[3.42%_33.76%_2.28%_33.76%] shadow-[2.8838510513305664px_2.8838510513305664px_5.767702102661133px_0px_#BABFBF,-2.8838510513305664px_-2.8838510513305664px_5.767702102661133px_1.4419255256652832px_#FFF]'>
+                        <div className='w-[345px] h-[337.11px] flex justify-center items-center mb-[20px]'>
+                            <div className='w-[345px] h-[337.11px] flex justify-center items-center rounded-[3.42%_33.76%_2.28%_33.76%] border-[0.0625rem] border-[#CAD4D5] shadow-[inset_-0.294195625rem_-0.294195625rem_0.58839125rem_0.1470975rem_#FFFFFF,inset_0.294195625rem_0.294195625rem_0.58839125rem_#BABFBF]'>
+                                <div className='w-[323.94px] h-[318.61px] rounded-[3.42%_33.76%_2.28%_33.76%] shadow-[2.8838510513305664px_2.8838510513305664px_5.767702102661133px_0px_#BABFBF,-2.8838510513305664px_-2.8838510513305664px_5.767702102661133px_1.4419255256652832px_#FFF]'>
 
-                                <img src={dubai} alt="" className='w-[316.29008px] h-[321.63504px] rounded-[3.42%_33.76%_2.28%_33.76%]'/>
+                                <img src={dubai} alt="" className='w-[323.94px] h-[318.61px] rounded-[3.42%_33.76%_2.28%_33.76%]'/>
                                 </div>
                             </div>
                         </div>

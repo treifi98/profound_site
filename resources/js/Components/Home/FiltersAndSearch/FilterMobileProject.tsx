@@ -17,7 +17,7 @@ import FancyCheckeComponent from './CoreFilters/FancyCheckeComponent'
 import SelectMobileModified from './SelectMobileModified'
 
 
-const FilterBuyMobile = () => {
+const FilterMobileProject = () => {
     const [numberOfBeds,setNumberOfBeds] = useState([])
     const [sizes,setSizes] = useState([0,15000])
     const [prices,setPrices] = useState([400000,100000000])
@@ -112,8 +112,8 @@ const FilterBuyMobile = () => {
         <div className=' w-[375px] !h-[4px] z-[5] relative'>
             <InElementSeperator width='100%' shadow=' inset -1.56609px -1.56609px 2px #FFFFFF, inset 1px 1px 1.5px #B6C3C5' height='4px'/>
         </div>
-        <div className='w-[375px] h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem] shadow-[-5px_-5px_8px_#FFFFFF,5px_5px_7px_#B6C3C5]  relative z-[1]   '>
-            <div className='flex justify-center items-center gap-[2rem] mx-auto h-full w-[95%]'>
+        <div className='w-[375px] h-[3.125rem] bg-[#E6EDED] border-[#DCE3E3] border-[0.0625rem]   relative z-[4]   '>
+            <div className='flex justify-center items-center gap-[2rem] mx-auto h-full w-[95%] relative z-[4]'>
                 <div className='relative z-[4] '>
                     <SelectMobileModified  options={[{lable:'Newest ',value:'1'}, {lable:'Lowest Price',value:'1'},{lable:'Highest Price',value:'1'},{lable:'Oldest',value:'1'}]} lable='Sort by' id='af' func={() => console.log('d')} />
                 </div>
@@ -167,7 +167,9 @@ const FilterBuyMobile = () => {
                         <SelectMobile options={[{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'}]} lable='Property Type' id='pt' func={() => console.log('d')}/>
                     </div>
 
-
+                    <div className='relative z-[2]'>
+                        <SelectMobile options={[{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'},{lable:'one',value:'1'}]} lable='Completion Date' id='cd' func={() => console.log('d')}/>
+                    </div>
                     {
                         shwowResidentail ? (
                             <>
@@ -271,4 +273,4 @@ const FilterBuyMobile = () => {
     )
 }
 
-export default FilterBuyMobile
+export default FilterMobileProject

@@ -111,10 +111,10 @@ const NoCrooked = (props:Props) => {
             {/* <div className='h-[20px]'>
 
             </div> */}
-            <div className=' w-[339px] mx-auto h-[264.64px] flex justify-center items-center shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] rounded-[8px] border-[1px] border-[#DCE3E3] my-[18px]'>
+            <div className=' w-[345px] mx-auto h-[266.64px] flex justify-center items-center shadow-[inset_-4.67px_-4.67px_7.48px_#fff,inset_4.67px_4.67px_6.54px_#B6C3C5] rounded-[8px] border-[1px] border-[#DCE3E3] my-[20px]'>
 
-                <div className='w-[314.28px] h-[240.93px] rounded-[8px] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center '>
-                    <AboutSwiper width='314.28px' height='240.93px' rounded='8px' scale='0.82'/>
+                <div className='w-[320.7px] h-[242.93px] rounded-[8px] shadow-[-4.67px_-4.67px_7.48px_#fff,4.67px_4.67px_6.54px_#B6C3C5] flex justify-center items-center '>
+                    <AboutSwiper width='320.7px' height='242.93px' rounded='8px' scale='0.82'/>
                 </div>
             </div>
             {/* <div className='h-[20px]'>
@@ -153,7 +153,7 @@ const NoCrooked = (props:Props) => {
                     </div>
                 </div>
             </div>
-            <div className='w-min mx-auto mt-[1.138125rem] px-[1rem] text-center shadow-[0px_2.6873440742492676px_2.6873440742492676px_0px_rgba(0,0,0,0.25)] rounded-[4.5375rem] h-[1.69738rem]  flex justify-center items-center bg-custom-gradient mb-[18px] '>
+            <div className='w-min mx-auto mt-[1.138125rem] px-[1rem] text-center shadow-[0px_2.6873440742492676px_2.6873440742492676px_0px_rgba(0,0,0,0.25)] rounded-[4.5375rem] h-[1.69738rem]  flex justify-center items-center bg-custom-gradient mb-[20px] '>
                     <div className='whitespace-nowrap text-[0.875rem] text-[#fff] font-[500] except'>
 
                         Projects in Dubai Marina

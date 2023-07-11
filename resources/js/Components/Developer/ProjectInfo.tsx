@@ -423,7 +423,7 @@ const ProjectInfo = (props:Props) => {
                         </div>
                     </div>
                     <div className='w-full mt-[20px] h-max '>
-                        <div className='flex gap-x-[14px] gap-y-[15px] w-[343.221px] mx-auto flex-wrap h-[303.5px]'>
+                        <div className='flex gap-x-[14.6px] gap-y-[15px] w-[345px] mx-auto flex-wrap h-[303.5px]'>
                                     <BoxMaster
                                         BoxType='standerd'
                                         // flipType='zibra'
@@ -755,8 +755,8 @@ const ProjectInfo = (props:Props) => {
                         </div>
                     </div>
 
-                    <div className='w-[342px] h-[329.34px] rounded-[8px] shadow-[3.0381929874420166px_3.0381929874420166px_4.253470420837402px_0px_#B6C3C5_inset,-3.0381929874420166px_-3.0381929874420166px_4.861108779907227px_0px_#FFF_inset] my-[20px] mx-auto flex justify-center items-center'>
-                        <div className='w-[315.5px] h-[303.82px] rounded-[8px] shadow-[-2.8px_-2.8px_4.48px_#fff,2.8px_2.8px_3.92px_#B6C3C5] flex flex-col items-center  py-[10px] justify-between'>
+                    <div className='w-[345px] h-[329.34px] rounded-[8px] shadow-[3.0381929874420166px_3.0381929874420166px_4.253470420837402px_0px_#B6C3C5_inset,-3.0381929874420166px_-3.0381929874420166px_4.861108779907227px_0px_#FFF_inset] my-[20px] mx-auto flex justify-center items-center'>
+                        <div className='w-[317.5px] h-[303.82px] rounded-[8px] shadow-[-2.8px_-2.8px_4.48px_#fff,2.8px_2.8px_3.92px_#B6C3C5] flex flex-col items-center  py-[10px] justify-between'>
                             <div className='text-grade text-[20px] font-[600]'>
                                 Register your interest
                             </div>

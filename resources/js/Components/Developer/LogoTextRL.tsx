@@ -54,9 +54,9 @@ const LogoTextRL = (props:Props) => {
             ):
             (
                 <div className='w-[375px] h-max flex items-center  bg-[#E6EDED] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] mobil-comp'>
-                    <div className='w-[339px] h-max flex gap-[0px] flex-col-reverse  mx-auto my-[18px]'>
+                    <div className='w-[345px] h-max flex gap-[0px] flex-col-reverse  mx-auto my-[20px]'>
 
-                        <div className='h-full w-[339px] mx-auto  border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[8px] box-border py-[1rem] flex justify-center items-center '>
+                        <div className='h-full w-[345px] mx-auto  border-[#DCE3E3] border-[0.0625rem] textElementShadow rounded-[8px] box-border py-[1rem] flex justify-center items-center '>
 
 
                             <div className='w-[325px] mx-auto'>
@@ -69,31 +69,31 @@ const LogoTextRL = (props:Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[20.8125rem] h-full flex flex-wrap mb-[18px]'>
-                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[2.66%_33.76%_3.80%_33.76%] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
-                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[2.66%_33.76%_3.80%_33.76%] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+                        <div className='w-full justify-between h-full flex flex-wrap mb-[20px]'>
+                            <div className='w-[163px] border-[1px] border-[#DCE3E3] h-[165px] rounded-[2.66%_33.76%_3.80%_33.76%] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[151px] h-[153px] border-[1px] border-[#DCE3E3] rounded-[2.66%_33.76%_3.80%_33.76%] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
 
-                                    <img src={dubai} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[2.66%_33.76%_3.80%_33.76%]'/>
+                                    <img src={dubai} alt="" className='w-[151px] h-[153px] rounded-[2.66%_33.76%_3.80%_33.76%]'/>
                                 </div>
 
                             </div>
-                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[33.75%_3.42%_33.75%_2.28%]  ml-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
-                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[33.75%_3.42%_33.75%_2.28%]  flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+                            <div className='w-[163px] border-[1px] border-[#DCE3E3] h-[165px] rounded-[33.75%_3.42%_33.75%_2.28%]  ml-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[151px] h-[153px] border-[1px] border-[#DCE3E3] rounded-[33.75%_3.42%_33.75%_2.28%]  flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
 
-                                    <img src={dubai} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[33.75%_3.42%_33.75%_2.28%] '/>
+                                    <img src={dubai} alt="" className='w-[151px] h-[153px] rounded-[33.75%_3.42%_33.75%_2.28%] '/>
                                 </div>
 
                             </div>
-                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[33.75%_3.42%_33.75%_2.28%]  mr-[1rem] mt-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
-                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[33.75%_3.42%_33.75%_2.28%]  flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+                            <div className='w-[163px] border-[1px] border-[#DCE3E3] h-[165px] rounded-[33.75%_3.42%_33.75%_2.28%]  mr-[1rem] mt-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[151px] h-[153px] border-[1px] border-[#DCE3E3] rounded-[33.75%_3.42%_33.75%_2.28%]  flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
 
-                                    <img src={dubai} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[33.75%_3.42%_33.75%_2.28%] '/>
+                                    <img src={dubai} alt="" className='w-[151px] h-[153px] rounded-[33.75%_3.42%_33.75%_2.28%] '/>
                                 </div>
                             </div>
-                            <div className='w-[9.9rem] border-[1px] border-[#DCE3E3] h-[9.993125rem] rounded-[2.66%_33.76%_3.80%_33.76%] mt-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
-                                <div className='w-[9.2125rem] h-[9.268125rem] border-[1px] border-[#DCE3E3] rounded-[2.66%_33.76%_3.80%_33.76%] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
+                            <div className='w-[163px] border-[1px] border-[#DCE3E3] h-[165px] rounded-[2.66%_33.76%_3.80%_33.76%] mt-[1rem] shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF_inset,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[151px] h-[153px] border-[1px] border-[#DCE3E3] rounded-[2.66%_33.76%_3.80%_33.76%] flex justify-center items-center shadow-[1.3988847732543945px_1.3988847732543945px_2.797769546508789px_0px_#BABFBF,-1.3988847732543945px_-1.3988847732543945px_2.797769546508789px_0.6994423866271973px_#FFF] '>
 
-                                    <img src={dubai} alt="" className='w-[9.2125rem] h-[9.268125rem] rounded-[2.66%_33.76%_3.80%_33.76%]'/>
+                                    <img src={dubai} alt="" className='w-[151px] h-[153px] rounded-[2.66%_33.76%_3.80%_33.76%]'/>
                                 </div>
 
                             </div>
