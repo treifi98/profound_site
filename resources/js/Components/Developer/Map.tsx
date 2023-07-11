@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import dubai from '../../../assets/dubai.png'
+
 mapboxgl.accessToken = 'pk.eyJ1IjoidHJldmk5OCIsImEiOiJjbDNwcWhyOWgwMnppM2twN3JicG5wMmY2In0.m_eFeF9ZP_4xkJA9e5N05Q';
 // import './'
 interface Props{
@@ -12,6 +14,78 @@ interface Props{
     isZoom?:boolean
 }
 const Map = (props:Props) => {
+
+
+    const createDivMarker = (color, imageUrl, title, description) => {
+        const rootEl = document.createElement('div');
+        rootEl.style.position = 'relative'; // added to allow new div to be positioned
+        rootEl.style.height = 'max-content';
+        rootEl.style.width = 'max-content';
+        const el = document.createElement('div');
+        el.style.backgroundColor = color;
+        el.style.width = '115.767px';
+        el.style.height = '40px';
+        el.style.padding = '10px';
+        el.style.borderRadius = '8px';
+        el.style.position = 'relative'; // added to allow new div to be positioned
+        el.style.zIndex = '99999';
+        el.innerText = 'AED 1,500,000'  // added to allow new div to be positioned
+        el.style.display = 'flex'  // added to allow new div to be positioned
+        el.style.justifyContent = 'center'  // added to allow new div to be positioned
+        el.style.fontSize = '14px'  // added to allow new div to be positioned
+        // const el1 = document.createElement('div');
+        // el1.style.backgroundColor = color;
+        // el1.style.width = '113.767px';
+        // el1.style.height = '40px';
+        // el1.style.padding = '10px';
+        // el1.style.borderRadius = '8px';
+        // el1.style.position = 'relative'; // added to allow new div to be positioned
+        rootEl.appendChild(el);
+        const tri = document.createElement('div');
+        tri.style.width = '15px';
+        tri.style.height = '15px';
+        tri.style.position = 'absolute';
+        tri.style.bottom = '-9px';
+        tri.style.left = '52.2835px';
+        tri.style.rotate = '45deg';
+        tri.style.zIndex = '9999';
+        tri.style.backgroundColor = 'white';
+        rootEl.appendChild(tri);
+
+        // Create and append image
+        // const img = document.createElement('img');
+        // img.src = imageUrl;
+        // img.style.width = '100%';
+        // img.style.height = 'auto';
+        // img.onclick = () => { // image click event
+        //     const newDiv = document.createElement('div');
+        //     newDiv.textContent = 'New Div'; // Text for the new div
+        //     newDiv.style.backgroundColor = 'lightblue'; // Background color for the new div
+        //     newDiv.style.position = 'absolute'; // position new div over parent div
+        //     newDiv.style.top = '0'; // new div starting point from top
+        //     newDiv.style.left = '0'; // new div starting point from left
+        //     el.insertBefore(newDiv, el.firstChild); // insert the new div before the first child of parent div
+        // };
+        // el.appendChild(img);
+
+        // // Create and append title
+        // const titleElement = document.createElement('div');
+        // titleElement.textContent = title;
+        // titleElement.style.fontSize = '18px';
+        // titleElement.style.fontWeight = 'bold';
+        // el.appendChild(titleElement);
+
+        // // Create and append description
+        // const descElement = document.createElement('div');
+        // descElement.textContent = description;
+        // descElement.style.fontSize = '14px';
+        // el.appendChild(descElement);
+
+        return rootEl;
+    };
+
+
+
     // const [changes,setChanges] = useState(props.changes)
     const [mapRef,SetMapRef] = useState(null)
     const [loaded,SetLoaded] = useState(false)
@@ -77,6 +151,11 @@ const Map = (props:Props) => {
                         }
                         }
                         });
+                        const el = createDivMarker('white', dubai, 'Title', 'Description');
+
+                        new mapboxgl.Marker(el)
+                            .setLngLat([point.point[0],point.point[1]])
+                            .addTo(mapRef);
                         counter++
                     })
 
