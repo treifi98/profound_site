@@ -45,7 +45,7 @@ const DoublrBoxesDoubleText = (props:Props) => {
                 ):
                 (
                     <div className='w-[375px] flex flex-col   h-max bg-[#E6EDED] shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF] mobil-comp'>
-                        <div className='w-[345px]  rounded-[0rem_8px] h-max  relativez-[1] my-[20px] mx-auto'>
+                        <div className='w-[345px]  rounded-[0rem_8px] h-max  relativez-[1] mb-[20px] mt-[15px] mx-auto'>
                             <div className='w-[345px] h-[272.57px] border-[1px] border-[#DCE3E3] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[8px] flex justify-center items-center'>
                                 <div className='w-[321.76px] h-[251.1px] rounded-[0.484625rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF]'>
                                     <NewCardImage src={beatchFront} rounded='0.484625' width='321.76px' height='251.1px'/>
@@ -62,7 +62,7 @@ const DoublrBoxesDoubleText = (props:Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[345px]  rounded-[8px] h-max relative z-[2] mb-[20px] mx-auto'>
+                        <div className='w-[345px]  rounded-[8px] h-max relative z-[2] mb-[15px] mx-auto'>
                             <div className='w-[345px] h-[272.57px] border-[1px] border-[#DCE3E3] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF_inset,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF_inset] rounded-[8px] flex justify-center items-center'>
                                 <div className='w-[321.76px] h-[251.1px] rounded-[0.484625rem] shadow-[2.4332876205444336px_2.4332876205444336px_4.866575241088867px_0px_#BABFBF,-2.4332876205444336px_-2.4332876205444336px_4.866575241088867px_1.2166438102722168px_#FFF]'>
                                     <NewCardImage src={beatchFront} rounded='0.484625' width='321.76px' height='251.1px'/>

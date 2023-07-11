@@ -178,36 +178,39 @@ const MortgageCalculator = (props:Props) => {
                         </div>
                     </div>
                     <div className=' w-[375px] h-full justify-between  mx-auto mt-[0px]'>
-                            <div className=' w-[calc(100vw-30px)] h-[280.1px] mx-auto origin-[0%_0%] mb-[-10px]' style={{ scale:`${1/props.scaleFactor}`, marginBottom:`${280.1-(280.1*props.scaleFactor)}px`}}>
+                            <div className='w-[calc(100vw-30px)] mx-[15px]'>
 
-                            <div className='w-full mt-[49px] relative rounded-[6.25rem] mx-auto' >
-                                <div className='w-full rounded-[6.25rem]' >
-                                    <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={50000000} min={500000} rtl={false} id='pp' step={100000} lable='Property Price (AED)' key={'l'} precantage={false} loan={0} dp={false}/>
+                                <div className='w-full  h-[280.1px] mx-auto origin-[0%_0%] mb-[-10px]' style={{ scale:`${1/props.scaleFactor}`, marginBottom:`${280.1-(280.1*props.scaleFactor)}px`}}>
+
+                                <div className='w-full mt-[49px] relative rounded-[6.25rem] mx-auto' >
+                                    <div className='w-full rounded-[6.25rem]' >
+                                        <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={50000000} min={500000} rtl={false} id='pp' step={100000} lable='Property Price (AED)' key={'l'} precantage={false} loan={0} dp={false}/>
+                                    </div>
+                                    {/* <div className='absolute w-full top-0 left-0 z-[99999999]'>
+
+                                    </div> */}
+
                                 </div>
-                                {/* <div className='absolute w-full top-0 left-0 z-[99999999]'>
+                                <div className='w-full mt-[82px] ' >
+                                    <div className='w-full' >
+                                            <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={90} min={20} rtl={false} id='dp' step={1} lable='Down Payment (AED)' precantage={true} dp={true} loan={loan}/>
+                                    </div>
 
-                                </div> */}
-
-                            </div>
-                            <div className='w-full mt-[82px] ' >
-                                <div className='w-full' >
-                                        <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={90} min={20} rtl={false} id='dp' step={1} lable='Down Payment (AED)' precantage={true} dp={true} loan={loan}/>
                                 </div>
+                                <div className='w-full mt-[82px] ' >
+                                    <div className='w-full' >
+                                        <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={25} min={5} rtl={false} id='lp' step={1} lable='Loan Period (Years)' precantage={false} loan={0} dp={false}/>
+                                    </div>
 
-                            </div>
-                            <div className='w-full mt-[82px] ' >
-                                <div className='w-full' >
-                                    <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={25} min={5} rtl={false} id='lp' step={1} lable='Loan Period (Years)' precantage={false} loan={0} dp={false}/>
                                 </div>
+                                <div className='w-full mt-[82px] ' >
+                                    <div className='w-full' >
+                                        <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={10.00} min={0.250} rtl={false} id='ir' step={0.100000001} lable='Interst Rate (%)' precantage={true} loan={0} dp={false}/>
+                                    </div>
 
-                            </div>
-                            <div className='w-full mt-[82px] ' >
-                                <div className='w-full' >
-                                    <RangeSingleMobile scaleFactor={props.scaleFactor} width={21} max={10.00} min={0.250} rtl={false} id='ir' step={0.100000001} lable='Interst Rate (%)' precantage={true} loan={0} dp={false}/>
                                 </div>
-
+                                </div>
                             </div>
-                        </div>
 
                         <div className='w-[268px] mx-auto flex flex-col items-end mt-[57px]'>
 

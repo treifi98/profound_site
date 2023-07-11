@@ -85,12 +85,12 @@ const AboutProperty = (props:Props) => {
                         </div>
                     </div>
                     <div className='w-[375px] h-max'>
-                        <div className='w-[345px] h-[266.91px] rounded-[8px] shadow-[4.568024158477783px_4.568024158477783px_6.395233631134033px_0px_#B6C3C5_inset,-4.568024158477783px_-4.568024158477783px_7.308838367462158px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mt-[20px]'>
+                        <div className='w-[345px] h-[266.91px] rounded-[8px] shadow-[4.568024158477783px_4.568024158477783px_6.395233631134033px_0px_#B6C3C5_inset,-4.568024158477783px_-4.568024158477783px_7.308838367462158px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mt-[15px]'>
                             <div className='w-[320.7px] h-[243.18px] rounded-[8px] shadow-[-4.57px_-4.57px_7.31px_#fff,4.57px_4.57px_6.4px_#B6C3C5] '>
                                 <img src={dubaiImage} alt="" className='w-full h-full' />
                             </div>
                         </div>
-                        <div className='w-[345px] h-max flex flex-col gap-[10px] mt-[20px] mx-auto mb-[20px] '>
+                        <div className='w-[345px] h-max flex flex-col gap-[10px] mt-[20px] mx-auto mb-[15px] '>
                             <InfoShape img={statusIcon} text='Status' bluePillText='Off Plan' mainWidth='21.5625rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.465625rem' barHeight='2.02rem' intersection={1.003875} bluePillWidth='6.364375rem' textSize='17.6px' bluePillTextSize='14.5px' imgWidth='2.205rem' imgHeight='2.1825rem' imgMt='0.8rem' imgMl='0.9rem'/>
                             <InfoShape img={claender} text='Year Built' bluePillText='2019' imgWidth='2.166875rem' imgHeight='2.375rem' imgMt='0.848125rem' imgMl='0.93875rem' mainWidth='21.5625rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.465625rem' barHeight='2.02rem' intersection={1.003875} bluePillWidth='6.364375rem' textSize='17.6px' bluePillTextSize='14.5px'/>
                             <InfoShape img={elevatorIcon} text='Stories' bluePillText='131' imgWidth='2.52625rem' imgHeight='2.39125rem' imgMt='0.834375rem' imgMl='0.733125rem' mainWidth='21.5625rem' mainHeight='4.07125rem' circleWidth='4.02415625rem' barWidth='18.465625rem' barHeight='2.02rem' intersection={1.003875} bluePillWidth='6.364375rem' textSize='17.6px' bluePillTextSize='14.5px'/>

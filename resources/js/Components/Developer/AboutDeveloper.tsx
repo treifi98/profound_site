@@ -46,10 +46,10 @@ const AboutDeveloper = (props:Props) => {
         ):
         (
             <div className='w-[23.4375rem] h-max shadow-[6.286655426025391px_6.286655426025391px_12.573310852050781px_0px_#BABFBF,-6.286655426025391px_-6.286655426025391px_12.573310852050781px_3.1433277130126953px_#FFF]  overflow-hidden pb-[0rem]  mobil-comp'>
-                <div className='w-[345px] h-[25.875rem] mt-[20px] rounded-[8px] mx-auto overflow-hidden'>
+                <div className='w-[345px] h-[25.875rem] mt-[15px] rounded-[8px] mx-auto overflow-hidden'>
                     <AboutSwiperMobile width='345px' height='25.875rem' rounded='8px'/>
                 </div>
-                <div className='my-[20px] w-[345px] h-min rounded-[8px] shadow-[4px_4px_7px_0px_rgba(186,191,191,0.80)_inset,-5px_-5px_10px_0px_#FFF_inset] overflow-hidden mx-auto border-[1px] border-[#DCE3E3] '>
+                <div className='mb-[15px] mt-[20px] w-[345px] h-min rounded-[8px] shadow-[4px_4px_7px_0px_rgba(186,191,191,0.80)_inset,-5px_-5px_10px_0px_#FFF_inset] overflow-hidden mx-auto border-[1px] border-[#DCE3E3] '>
                     <div className='w-[325px] mx-auto'>
 
                         <div className='mt-[1rem] mx-auto w-[94%] text-[20px] font-[600] text-grade '>

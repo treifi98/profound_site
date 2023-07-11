@@ -62,17 +62,17 @@ const StanderdBox = ({Args,flipComp,flipArgs}:Args) => {
     const ogBox = useRef(null)
     const flipBox = useRef(null)
     return (
-        <div className=' cursor-pointer relative rounded-[4px] bg-[#E6EDED]  font-[nova]' style={{ borderRadius:Args.rounded?Args.rounded:'0.3125rem' ,width: Args.mainWidth ? Args.mainWidth: '5.3125rem', height: Args.mainHeight ? Args.mainHeight: '6.375rem' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className=' cursor-pointer relative rounded-[4px] bg-[#E6EDED]  font-[nova]' style={{ borderRadius:Args.rounded?Args.rounded:'4px' ,width: Args.mainWidth ? Args.mainWidth: '5.3125rem', height: Args.mainHeight ? Args.mainHeight: '6.375rem' }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {/* Box */}
-            <div className='rounded-[0.3125rem] absolute group-hover:opacity-0 transition-all opacity-100  ' style={{borderRadius:Args.rounded?Args.rounded:'0.3125rem' ,boxShadow:Args.shadow?Args.shadow:shadows[0], width: Args.mainWidth ? Args.mainWidth: '5.3125rem', height: Args.mainHeight ? Args.mainHeight: '6.375rem' }} ref={ogBox}>
-                <div className='flex flex-col items-center border-[1px] rounded-[] border-[#DCE3E3]' style={{ borderRadius:Args.rounded?`${Args.rounded} ${Args.rounded} 0px 0px`:'0.3125rem 0.3125rem 0px 0px' }}>
+            <div className='rounded-[4px] absolute group-hover:opacity-0 transition-all opacity-100  ' style={{borderRadius:Args.rounded?Args.rounded:'4px' ,boxShadow:Args.shadow?Args.shadow:shadows[0], width: Args.mainWidth ? Args.mainWidth: '5.3125rem', height: Args.mainHeight ? Args.mainHeight: '6.375rem' }} ref={ogBox}>
+                <div className='flex flex-col items-center border-[1px] rounded-[] border-[#DCE3E3]' style={{ borderRadius:Args.rounded?`${Args.rounded} ${Args.rounded} 0px 0px`:'4px 4px 0px 0px' }}>
 
                     <img src={Args.img} alt="" className='object-contain object-center' style={{ width: Args.imgWidth ? Args.imgWidth: '1.954375rem',height: Args.imgHeight? Args.imgHeight: '1.95125rem', marginTop: Args.imgMT ? Args.imgMT: '0.375rem' }}/>
-                    <div className='text-[#002d31] font-[500] text-center' style={{lineHeight:Args.lineHeight?Args.lineHeight:'0.91375rem', width: Args.textWidth? Args.textWidth : '4.6375rem', fontSize: Args.textSize? Args.textSize: '0.75rem',marginTop: Args.textMT? Args.textMT: '0.253125rem', marginBottom: Args.textMB? Args.textMB: '0.233125rem',fontWeight:Args.txetWeight?Args.txetWeight:'500' }}>
+                    <div className='text-[#002d31] font-[500] text-center' style={{lineHeight:Args.lineHeight?Args.lineHeight:'0.91375rem', width:'100%', fontSize: '10.5px',marginTop: Args.textMT? Args.textMT: '0.253125rem', marginBottom: Args.textMB? Args.textMB: '0.233125rem',fontWeight:Args.txetWeight?Args.txetWeight:'500' }}>
                         {Args.text}
                     </div>
                 </div>
-                <div className='bg-custom-gradient rounded-[] flex justify-center items-center font-[600] ' style={{borderRadius:Args.rounded?`0rem 0rem ${Args.rounded} ${Args.rounded}`:'0rem 0rem 0.3125rem 0.3125rem' ,width: Args.mainWidth? Args.mainWidth: '5.3125rem', height: Args.lowerSectionHeight? Args.lowerSectionHeight: '1.6875rem', fontSize: Args.lowerTextSize? Args.lowerTextSize: '0.875rem'}}>
+                <div className='bg-custom-gradient rounded-[] flex justify-center items-center font-[600] ' style={{borderRadius:Args.rounded?`0rem 0rem ${Args.rounded} ${Args.rounded}`:'0rem 0rem 4px 4px' ,width: Args.mainWidth? Args.mainWidth: '5.3125rem', height: Args.lowerSectionHeight? Args.lowerSectionHeight: '1.6875rem', fontSize: Args.lowerTextSize? Args.lowerTextSize: '0.875rem'}}>
                     <div className='text-[#fff]' >
                         {Args.lowerText}
                     </div>

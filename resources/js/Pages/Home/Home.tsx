@@ -449,7 +449,7 @@ const Home = () => {
             <>
             <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[60px]'>
                 <BarMobile img={krane} title='Off-plan Latest Launches' seperatorML='5px'/>
-                <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'>
+                <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center overflow-hidden'>
                     <div className='w-[100%]  mx-auto scale-[1.009]'>
 
                     <SwiperMobile bottom='-20px'>

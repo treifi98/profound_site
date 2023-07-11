@@ -399,7 +399,7 @@ const SecondaryInfo = (props:Props) => {
                                 {/* <CardTag text='High ROI' textSize='0.6875' height='20.5px' MY='0px'/> */}
                         </div>
                     </div>
-                    <div className='w-full mt-[20px] h-max '>
+                    <div className='w-full mt-[15px] h-max '>
                         <div className='flex gap-x-[14.6px] gap-y-[15px] w-[345px] mx-auto flex-wrap h-[303.5px]'>
                                     <BoxMaster
                                         BoxType='standerd'
@@ -732,7 +732,7 @@ const SecondaryInfo = (props:Props) => {
                         </div>
                     </div>
 
-                    <div className='w-[345px] mx-auto  h-max min-h-[35.4375rem] py-[1rem] textElementShadow rounded-[8px] border-[1px] border-[#DCE3E3] my-[20px] overflow-hidden'>
+                    <div className='w-[345px] mx-auto  h-max min-h-[35.4375rem] py-[1rem] textElementShadow rounded-[8px] border-[1px] border-[#DCE3E3] mt-[20px] mb-[15px] overflow-hidden'>
                         <div className='w-[325px] h-max mx-auto'>
                             <div className='text-grade text-[1.25rem] w-[94%] mx-auto font-[600]'>
                                 Latest Projects By Emaar

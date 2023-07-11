@@ -86,7 +86,7 @@ const FloorPlan = (props:Props) => {
                             </div>
                         </div>
 
-                        <div className='w-[335px] h-[243.7px] rounded-[8px] mx-auto shadow-[3.0234644412994385px_3.0234644412994385px_4.232849597930908px_0px_#B6C3C5_inset,-3.0234644412994385px_-3.0234644412994385px_4.83754301071167px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] my-[20px] flex items-center'>
+                        <div className='w-[335px] h-[243.7px] rounded-[8px] mx-auto shadow-[3.0234644412994385px_3.0234644412994385px_4.232849597930908px_0px_#B6C3C5_inset,-3.0234644412994385px_-3.0234644412994385px_4.83754301071167px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] mt-[15px] mb-[20px] flex items-center'>
                             <div className='w-[18.6125rem] h-max mx-auto flex flex-col gap-[16.42px] justify-center items-center'>
                                 <div className='mx-auto w-min mt-[0px]  except'>
 
@@ -105,7 +105,7 @@ const FloorPlan = (props:Props) => {
                             </div>
                         </div>
 
-                        <div className='w-[345px] h-[266.91px] rounded-[8px] shadow-[2.2696468830108643px_2.2696468830108643px_3.1775054931640625px_0px_#B6C3C5_inset,-2.2696468830108643px_-2.2696468830108643px_3.631434679031372px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mb-[20px]'>
+                        <div className='w-[345px] h-[266.91px] rounded-[8px] shadow-[2.2696468830108643px_2.2696468830108643px_3.1775054931640625px_0px_#B6C3C5_inset,-2.2696468830108643px_-2.2696468830108643px_3.631434679031372px_0px_#FFF_inset] border-[1px] border-[#DCE3E3] flex justify-center items-center mx-auto mb-[15px]'>
                             <div className='w-[345px] h-[266.91px] rounded-[8px] shadow-[-2.09px_-2.09px_3.35px_#fff,2.09px_2.09px_2.93px_#B6C3C5]'>
                                 <AboutSwiperMobile rounded='8px'/>
                             </div>
