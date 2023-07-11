@@ -125,16 +125,16 @@ const SelectMobileModified = (props:Props) => {
     },[isComponentVisible])
 
   return (
-    <div className='select-none cursor-pointer group w-[6.625rem] h-[1.65625rem] flex border-[1px] shadow-[3.3611531257629395px_3.3611531257629395px_4.7056145668029785px_0px_#B6C3C5,-3.3611531257629395px_-3.3611531257629395px_5.37784481048584px_0px_#FFF] border-[#DCE3E3] rounded-[3.13rem] relative z-[2]' onClick={handleClick} ref={componentRef} style={{ width:props.mainWidth? props.mainWidth+'rem':'6.625rem',height:props.mainHeight? props.mainHeight+'rem':'1.65625rem' }}>
-        <div className='w-[4.35rem] h-full rounded-[67px_0rem_0rem_67px] bg-[#E6EDED]  flex justify-center items-center ' style={{ width:props.firstWidth?props.firstWidth:'4.35rem' }}>
+    <div className=' select-none cursor-pointer group w-[6.625rem] h-[1.65625rem] flex  shadow-[3.3611531257629395px_3.3611531257629395px_4.7056145668029785px_0px_#B6C3C5,-3.3611531257629395px_-3.3611531257629395px_5.37784481048584px_0px_#FFF]  rounded-[3.13rem] relative z-[2]' onClick={handleClick} ref={componentRef} style={{ width:props.mainWidth? props.mainWidth+'rem':'6.625rem',height:props.mainHeight? props.mainHeight+'rem':'1.65625rem' }}>
+        <div className='border-[1px] border-[#DCE3E3] w-[4.35rem] h-full rounded-[67px_0rem_0rem_67px] bg-[#E6EDED]  flex justify-center items-center ' style={{ width:props.firstWidth?props.firstWidth:'4.35rem' }}>
             <div className='text-grade text-[14px]'>
                 {props.lable}
 
             </div>
         </div>
-        <div className=' w-[2.225rem] group-hover:shadow-[inset_-0.25rem_-0.25rem_0.3125rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] h-[1.65625rem] border-[1px] border-[#DCE3E3] bg-[#E6EDED] flex justify-center items-center relative rounded-[0rem_3.13rem_3.13rem_0rem]' ref={selectHandleRef} style={{ width:props.restWidth?props.restWidth:'2.225rem' }}>
+            <div className='border-[1px] border-[#DCE3E3] w-[2.225rem] group-hover:shadow-[inset_-0.25rem_-0.25rem_0.3125rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] h-full bg-[#E6EDED] flex justify-center items-center relative rounded-[0rem_3.13rem_3.13rem_0rem]' ref={selectHandleRef} style={{ width:props.restWidth?props.restWidth:'2.255rem' }}>
             <img src={Icon} alt=""  className='w-[0.62125rem] h-[0.210625rem] transition-all' ref={arrowRef}/>
-            <div className='absolute left-0 top-0 h-[98%]'>
+            <div className='absolute left-0 top-0 h-full'>
 
                 <InElementSeperator width='4px'/>
             </div>
