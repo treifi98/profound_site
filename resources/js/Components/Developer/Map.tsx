@@ -46,10 +46,21 @@ const Map = (props:Props) => {
       }, []);
       useEffect(()=>{
         if(loaded){
-            mapRef.on('touchstart', (e) => {
-                if (e.points.length !== 2) {
-                  e.preventDefault();
+            mapRef.on('touchstart', function (e) {
+                if (e.points.length > 1) {
+                  // More than one finger detected.
+                  // Set a flag and prepare to enable mapRef touch events
+                  mapRef.boxZoom.enable();
+                  mapRef.dragPan.enable();
+                  mapRef.scrollZoom.enable();
                 }
+              });
+
+              mapRef.on('touchend', function () {
+                // Disable mapRef touch events when fingers are off the screen
+                mapRef.boxZoom.disable();
+                mapRef.dragPan.disable();
+                mapRef.scrollZoom.disable();
               });
 
             mapRef.on('load', () => {
