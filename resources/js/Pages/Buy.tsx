@@ -35,8 +35,35 @@ import compleationIcon from '../../assets/compleationIcon.svg'
 import bed_icon from '../../assets/bed.svg'
 import size_icon from '../../assets/size.svg'
 import FilterBuyMobile from '@/Components/Home/FiltersAndSearch/FilterBuyMobile'
+import MapListing from '@/Components/Developer/MapListing'
 const Buy = () => {
+    // const [refs,setRefs] = useState(new Array(10).fill(useRef(null)))
+
+    // useEffect(()=>{
+    //     console.log('fffffff')
+    //     console.log(refs)
+    // },[])
+
+
+
     const dispatch = useDispatch()
+
+    const [changes,setChanges] = useState(-1)
+    const [rchanges,setRChanges] = useState(-1)
+    const [prev,setPrev] = useState(-1)
+
+    const handleMouseEnter = (i) => {
+        setChanges(i)
+        // setRChanges(-1)
+
+        // alert ('s'+i)
+    }
+    const handleMouseLeave = (i) => {
+        setRChanges(i)
+        // setChanges(-1)
+
+    }
+
 
     const pfe = useRef(null)
     // const [screenLG,setScreenLG] = useState(true)
@@ -251,6 +278,22 @@ const Buy = () => {
                     <div className='w-full flex  mt-[1.0625rem]'>
                         <div className='w-[91.75rem] flex flex-wrap gap-x-[2.5rem] gap-y-[5rem] mx-auto mt-[0rem] transition-all' ref={container}>
                             {/* <div> */}
+                            {
+                                new Array(9).fill(0).map((item,index) => {
+                                    // alert(index)<>
+                                    return (<div className='transition-all cursor-pointer' id={`elmnt${index}`} onMouseEnter={()=>handleMouseEnter(0)} onMouseLeave={()=>handleMouseLeave(0)}>
+
+                                                <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
+                                            </div>)
+
+
+                                })
+                            }
+                            <div className='transition-all cursor-pointer' id={`elmnt${9}`} onMouseEnter={()=>handleMouseEnter(1)} onMouseLeave={()=>handleMouseLeave(1)}>
+
+                                <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
+                            </div>
+                                {/* <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
                                 <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
                                 <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
                                 <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
@@ -258,21 +301,20 @@ const Buy = () => {
                                 <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
                                 <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
                                 <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
-                                <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
-                                <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
-                                <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/>
+                                <BuyCard cardMB='0rem' cardMT='0rem' cardML='0rem'/> */}
                             {/* </div> */}
                         </div>
 
                         <div className='w-0 h-0 relative top-[0rem] right-0 transition-all mt-[0rem] mb-[0.3rem]' ref={map} id='ayo'>
 
                             <div className='w-[50vw] h-[100vh] rounded-[0.9375rem] overflow-hidden transition-all' >
-                                <Map
+                                <MapListing
                                     points={points}
-                                    // changes={changes}
-                                    // rchanges={rchanges}
+                                    changes={changes}
+                                    rchanges={rchanges}
                                     // zoom={zoom}
                                     isZoom={true}
+                                    // refs={refs}
                                 />
                             </div>
                         </div>

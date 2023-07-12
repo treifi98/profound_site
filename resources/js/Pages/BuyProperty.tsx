@@ -51,6 +51,7 @@ const BuyProperty = () => {
     const [scaleFactor,setScaleFactor] = useState(1.0)
     const [mainScreen,setMainScreen] = useState(375)
     const [changer,setChanger] = useState(1)
+    
     // const [currentScreen,setCurrentScreen] = useState(375)
     const initChange = () => {
         setChanger(window.innerWidth)
