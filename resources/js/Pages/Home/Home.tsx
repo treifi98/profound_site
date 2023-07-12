@@ -447,12 +447,12 @@ const Home = () => {
             </>
         ):
             <>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[60px]'>
-                <BarMobile img={krane} title='Off-plan Latest Launches' seperatorML='5px'/>
-                <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center overflow-hidden'>
+            <div className='w-full h-[42.5625rem] rounded-[0px]  mt-[60px]'>
+                <BarMobile img={krane} title='Off-plan Latest Launches' seperatorML='5px' />
+                <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center '>
                     <div className='w-[100%]  mx-auto scale-[1.009]'>
 
-                    <SwiperMobile bottom='-20px'>
+                    <SwiperMobile bottom='-24px' >
                         <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                             <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
@@ -1218,7 +1218,7 @@ const Home = () => {
             </div>
 
 
-            <div className='w-full h-max bg-[#002D31] mt-[40px]   relative'>
+            <div className='w-full h-max bg-[#002D31] mt-[70px]   relative'>
                 <div className='w-full h-[57px]  shadow-[0px_0px_0px_#04626B,_0px_4px_3px_#011618] bg-[#002D31]  flex items-center relative z-[2]'>
                     <img src={handImage} alt="" className='w-[2.84625rem] h-[2.38rem] ml-[0.625rem]' />
                     <div className='h-full ml-[0.77875rem]'>
@@ -1320,7 +1320,7 @@ const Home = () => {
 
             </div>
 
-            <div className='!w-[375px] h-[526px] rounded-[0.625rem] shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px] '>
+            <div className='!w-[375px] h-[525px]  shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[50px] '>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
                 <div className='w-full h-[24.02875rem] flex justify-center items-center '>
                     <div className='w-[100%] h-[24.02875rem]  mx-auto'>

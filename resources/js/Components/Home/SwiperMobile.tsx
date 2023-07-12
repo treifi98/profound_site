@@ -157,7 +157,7 @@ const SwiperMobile = (props:Props) => {
                 <SliderPagination numberOfItems={props.children.length} outerNavigation={outerNavigation} innerNavigation={innerNavigation}/>
 
             </div>
-    <div/>
+    {/* <div/> */}
 </div>
   )
 }

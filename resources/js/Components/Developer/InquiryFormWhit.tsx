@@ -81,7 +81,7 @@ const InquiryFormWiht = (props:Props) => {
                                     <textarea name="message" id="" className='text-[#7D8989] bg-[#E6EDED] rounded-[0.425rem] w-[19.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[5.342816352844238px_5.342816352844238px_10.685632705688477px_0px_#BABFBF_inset,-5.342816352844238px_-5.342816352844238px_10.685632705688477px_2.671408176422119px_#FFF_inset] text-[1rem]' placeholder='Your message .....' ></textarea>
                                 </div>
 
-                                <div className='h-[17.9375rem] w-[339px] rounded-[0.55rem] shadow-[4.910526275634766px_4.910526275634766px_9.821052551269531px_0px_#BABFBF_inset,-4.910526275634766px_-4.910526275634766px_9.821052551269531px_2.455263137817383px_#FFF_inset] flex justify-center items-center txet-[1rem] mt-[25px]'>
+                                <div className='h-[17.9375rem] w-[339px] rounded-[8px] shadow-[4.910526275634766px_4.910526275634766px_9.821052551269531px_0px_#BABFBF_inset,-4.910526275634766px_-4.910526275634766px_9.821052551269531px_2.455263137817383px_#FFF_inset] flex justify-center items-center txet-[1rem] mt-[25px]'>
                                     <div className='w-[325px] mx-auto'>
 
                                         <div className='text-grade w-[94%] mx-auto text-[16px] leading-[175%]'>
@@ -117,7 +117,7 @@ const InquiryFormWiht = (props:Props) => {
                         </div>
                     </div>
 
-                        <div className='h-[17.9375rem] w-[339px] rounded-[8px] shadow-[3.298856496810913px_3.298856496810913px_6.597712993621826px_0px_#BABFBF,-3.298856496810913px_-3.298856496810913px_6.597712993621826px_1.6494282484054565px_#FFF]  flex justify-center items-center !mx-auto'>
+                        <div className='h-[17.9375rem] w-[339px] rounded-[8px] border-[1px] border-[#DCE3E3] shadow-[2.598856496810913px_2.598856496810913px_5.097712993621826px_0px_#BABFBF,-3.298856496810913px_-3.298856496810913px_6.597712993621826px_1.6494282484054565px_#FFF]  flex justify-center items-center !mx-auto'>
                             <div className='w-[319px] h-[267px] shadow-[3.298856496810913px_3.298856496810913px_6.597712993621826px_0px_#BABFBF_inset,-3.298856496810913px_-3.298856496810913px_6.597712993621826px_1.6494282484054565px_#FFF_inset] flex justify-center items-center rounded-[8px] border-[1px] border-[#DCE3E3]'>
                                 <div className='w-[299px] h-[245px] flex justify-center items-center rounded-[8px] '>
 

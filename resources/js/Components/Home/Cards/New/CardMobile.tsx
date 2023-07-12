@@ -431,7 +431,7 @@ const CardMobile = (props:Props) => {
                     </div>
                 </div>
                 <div className='w-full flex justify-between mt-[-4.2rem] ' style={{ marginTop:props.tagsWrapperMT?props.tagsWrapperMT:'0.11rem' }}>
-                    <TagSwiper textSize='0.6875'/>
+                    <TagSwiper textSize='0.75'/>
                 </div>
                 <div className='w-[100%] flex flex-wrap justify-center ' style={{ marginTop:props.boxWrapperMT?props.boxWrapperMT:'0.483125rem',columnGap:props.boxGapX?props.boxGapX:'1.01125rem',rowGap:props.boxGapY?props.boxGapY:'1.136875rem' }}>
                     <div className=' scale-[1.0524]'>

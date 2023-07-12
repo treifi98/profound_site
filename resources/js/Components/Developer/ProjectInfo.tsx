@@ -412,13 +412,13 @@ const ProjectInfo = (props:Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full flex justify-start gap-x-[18px] gap-y-[12px] flex-wrap'>
-                                <CardTag text='High ROI' textSize='0.6875' height='20.5px' MY='0px'/>
-                                <CardTag text='Luxury' textSize='0.6875' height='20.5px' MY='0px'/>
-                                <CardTag text='Appartment Luxery ' textSize='0.6875' height='20.5px' MY='0px'/>
-                                <CardTag text='Appartment' textSize='0.6875' height='20.5px' MY='0px'/>
-                                <CardTag text='Luxury' textSize='0.6875' height='20.5px' MY='0px'/>
-                                <CardTag text='High ROI' textSize='0.6875' height='20.5px' MY='0px'/>
+                        <div className='w-full flex justify-start gap-x-[16px] gap-y-[12px] flex-wrap'>
+                                <CardTag text='High ROI' textSize='0.75' height='22px' MY='0px'/>
+                                <CardTag text='Luxury' textSize='0.75' height='22px' MY='0px'/>
+                                <CardTag text='Appartment Luxery ' textSize='0.75' height='22px' MY='0px'/>
+                                <CardTag text='Appartment' textSize='0.75' height='22px' MY='0px'/>
+                                <CardTag text='Luxury' textSize='0.75' height='22px' MY='0px'/>
+                                <CardTag text='High ROI' textSize='0.75' height='22px' MY='0px'/>
                                 {/* <CardTag text='High ROI' textSize='0.6875' height='20.5px' MY='0px'/> */}
                         </div>
                     </div>

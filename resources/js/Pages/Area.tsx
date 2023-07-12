@@ -177,12 +177,12 @@ const Area = () => {
             <div className='w-min mx-auto mt-[0.5rem]'>
                     <NoCrooked screen={screenLG}/>
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[50px]'>
-                <BarMobile img={krane} title='Off-plan Latest Launches'/>
-                {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
-                    <div className='w-[100%]  mx-auto'>
+            <div className='w-[375px] h-[42.5625rem] rounded-[0px]  mt-[60px] mb-[10px] '>
+                    <BarMobile img={krane} title='Off-plan Latest Launches' seperatorML='5px' />
+                    <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center '>
+                        <div className='w-[100%]  mx-auto scale-[1.009]'>
 
-                        <SwiperMobile>
+                        <SwiperMobile bottom='-24px' >
                             <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
@@ -196,10 +196,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -220,10 +220,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -244,10 +244,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -268,10 +268,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -297,10 +297,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -309,7 +309,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -334,7 +334,7 @@ const Area = () => {
                                 }}
                                 />
                             </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                             args:{
@@ -347,10 +347,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -371,10 +371,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -395,10 +395,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -419,10 +419,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -448,10 +448,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -460,7 +460,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -485,7 +485,7 @@ const Area = () => {
                                 }}
                                 />
                             </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                             args:{
@@ -498,10 +498,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -522,10 +522,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -546,10 +546,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -570,10 +570,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -599,10 +599,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -611,7 +611,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -636,7 +636,7 @@ const Area = () => {
                                 }}
                                 />
                             </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                             args:{
@@ -649,10 +649,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -673,10 +673,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -697,10 +697,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -721,10 +721,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -750,10 +750,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -762,7 +762,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -787,43 +787,195 @@ const Area = () => {
                                 }}
                                 />
                             </div>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
+
+                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                            args:{
+                                img:priceIcon,
+                                text:'Price starting From AED',
+                                lowerText:'1,125,0000',
+                                textMT:'0.19875rem',
+                                textMB:'0.213125rem',
+                                lineHeight:'0.718125rem',
+                                imgWidth:'1.535rem',
+                                imgHeight:'1.535rem',
+                                imgMT:'0.295rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                                isPrice:true,
+
+
+                            }
+                        }}
+                        bedBox={{
+                            args:{
+                                img:bed_icon,
+                                text:'Number of Bedrooms',
+                                lowerText:'1,2,3,4,5,6',
+                                imgWidth:'1.705rem',
+                                imgHeight:'1.27875rem',
+                                imgMT:'0.393125rem',
+                                textMT:'0.316875rem',
+                                textMB:'0.271875rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        sizeBox={{
+                            args:{
+                                img:size_icon,
+                                text:'Area in Sq.ft (Min-Max)',
+                                lowerText:'881 - 4590',
+                                imgWidth:'1.6925rem',
+                                imgHeight:'1.544375rem',
+                                imgMT:'0.360725rem',
+                                lineHeight:'0.718125rem',
+                                textMT:'0.16rem',
+                                textMB:'0.16rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        paymentBox={{
+                            args:{
+                                img:paymentIcon,
+                                text:'Payment Plan',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.621875rem',
+                                imgHeight:'1.621875rem',
+                                textMT:'0.1375rem',
+                                textMB:'0.206875rem',
+                                imgMT:'0.295rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'min-content',
+
+
+                            },
+                            flipArgs:{
+                                // text:'The handover of the properties',
+                                // lowerText:'Q1 / 2024 ',
+                                // lowerSectionHeight:'1.326875rem',
+                                // textHeight:'3.5rem',
+                                // textSize:'0.625rem',
+                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
+
+
+                            }
+                        }}
+                        compleationBox={{
+                            args:{
+                                img:compleationIcon,
+                                text:'Completion Date',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.420625rem',
+                                imgHeight:'1.451875rem',
+                                imgMT:'0.26625rem',
+                                textMB:'0.21625rem',
+                                textMT:'0.295625rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+
+                            },
+                            flipArgs:{
+                                text:'The handover of the properties',
+                                lowerText:'Q1 / 2024 ',
+                                lowerSectionHeight:'1.326875rem',
+                                textHeight:'3.5rem',
+                                textSize:'10.5px'
+
+
+                            }
+                        }}
+                        agentBox={{
+                            Args:{
+                                langs:['Arabic', 'English',],
+                                name:'Nassif',
+                                speciality:'Downtown',
+                                imgWrapperWidth:'3.48875rem',
+                                imgWrapperHeight:'2.9975rem',
+                                img1Width:'3.2925rem',
+                                img1Height:'2.800625rem',
+                                img2Width:'0rem',
+                                img2Height:'3.42875rem',
+                                agentSectionHeight:'1.326875rem',
+                                lineHeight:'1.0675rem',
+                                nameTextSize:'0.688125rem',
+                                nameFontWaight:'0.688125rem'
+
+                            }
+                                }}
+                                />
+                            </div>
+
 
 
                         </SwiperMobile>
+                        </div>
+
                     </div>
+                </div>
 
-                {/* </div> */}
-            </div>
-
-            <div className='!w-[100%] h-[31.1875rem] rounded-[0.625rem]  mt-[50px] mb-[1rem]'>
+            <div className='!w-[375px] h-[525px]  shadow-[-4.56609px_-4.56609px_7.30575px_#FFFFFF,_4.56609px_4.56609px_6.39253px_#B6C3C5] mt-[60px] '>
                 <BarMobile img={devSec} title='Dubai Developers' seperatorML='-0.3rem'/>
-                <div className='w-full h-[24.02875rem] flex justify-center items-center'>
+                <div className='w-full h-[24.02875rem] flex justify-center items-center '>
                     <div className='w-[100%] h-[24.02875rem]  mx-auto'>
-                        <SwiperMobile height='26.52875rem' MT='0.125rem' bottom='-0.93375rem' shadow='none' mainWidth='19.125rem'>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
+                        <SwiperMobile height='26.52875rem' MT='0px' bottom='-30px' shadow='none' mainWidth='19.125rem'>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
 
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
-
-                                    <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
-                                </div>
-                            </div>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
-
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
 
                                     <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
                                 </div>
                             </div>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
 
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
 
                                     <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
                                 </div>
                             </div>
-                            <div className='scale-[0.78461] origin-[40%_-5%] mt-[2rem]  mx-auto'>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
 
-                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem]'>
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
+
+                                    <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
+                                </div>
+                            </div>
+                            <div className='scale-[0.784589] origin-[43%_0%] mt-[30px]  mx-auto'>
+
+                                <div className=' mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[0px] rounded-[0.625rem]'>
 
                                     <DeveloperCard  img={emar_logo} name="Meraas" established='Established 2007' projectNumber='Developed projects 33+' priceFrom='Price from AED 1,290,000' button={{  }} MY='0rem'/>
                                 </div>
@@ -837,12 +989,13 @@ const Area = () => {
                 </div>
 
             </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[50px]'>
-                <BarMobile img={krane} title='Off-plan Latest Launches'/>
-                {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
-                    <div className='w-[100%]  mx-auto'>
 
-                        <SwiperMobile>
+            <div className='w-[375px] h-[42.5625rem] rounded-[0px]  mt-[60px] mb-[10px] '>
+                    <BarMobile img={krane} title='Off-plan Latest Launches' seperatorML='5px' />
+                    <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center '>
+                        <div className='w-[100%]  mx-auto scale-[1.009]'>
+
+                        <SwiperMobile bottom='-24px' >
                             <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
@@ -856,10 +1009,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -880,10 +1033,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -904,10 +1057,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -928,10 +1081,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -957,10 +1110,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -969,7 +1122,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -994,472 +1147,6 @@ const Area = () => {
                                 }}
                                 />
                             </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
-
-                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
-                            args:{
-                                img:priceIcon,
-                                text:'Price starting From AED',
-                                lowerText:'1,125,0000',
-                                textMT:'0.19875rem',
-                                textMB:'0.213125rem',
-                                lineHeight:'0.718125rem',
-                                imgWidth:'1.535rem',
-                                imgHeight:'1.535rem',
-                                imgMT:'0.295rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
-
-                            },
-                            flipArgs:{
-                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
-                                isPrice:true,
-
-
-                            }
-                        }}
-                        bedBox={{
-                            args:{
-                                img:bed_icon,
-                                text:'Number of Bedrooms',
-                                lowerText:'1,2,3,4,5,6',
-                                imgWidth:'1.705rem',
-                                imgHeight:'1.27875rem',
-                                imgMT:'0.393125rem',
-                                textMT:'0.316875rem',
-                                textMB:'0.271875rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
-
-                            },
-                            flipArgs:{
-                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
-                                isPrice:false,
-
-
-                            }
-                        }}
-                        sizeBox={{
-                            args:{
-                                img:size_icon,
-                                text:'Area in Sq.ft (Min-Max)',
-                                lowerText:'881 - 4590',
-                                imgWidth:'1.6925rem',
-                                imgHeight:'1.544375rem',
-                                imgMT:'0.360725rem',
-                                lineHeight:'0.718125rem',
-                                textMT:'0.16rem',
-                                textMB:'0.16rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
-
-                            },
-                            flipArgs:{
-                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
-                                isPrice:false,
-
-
-                            }
-                        }}
-                        paymentBox={{
-                            args:{
-                                img:paymentIcon,
-                                text:'Payment Plan',
-                                lowerText:'60% / 40%',
-                                imgWidth:'1.621875rem',
-                                imgHeight:'1.621875rem',
-                                textMT:'0.1375rem',
-                                textMB:'0.206875rem',
-                                imgMT:'0.295rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
-
-
-                            },
-                            flipArgs:{
-                                // text:'The handover of the properties',
-                                // lowerText:'Q1 / 2024 ',
-                                // lowerSectionHeight:'1.326875rem',
-                                // textHeight:'3.5rem',
-                                // textSize:'0.625rem',
-                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
-
-
-                            }
-                        }}
-                        compleationBox={{
-                            args:{
-                                img:compleationIcon,
-                                text:'Completion Date',
-                                lowerText:'60% / 40%',
-                                imgWidth:'1.420625rem',
-                                imgHeight:'1.451875rem',
-                                imgMT:'0.26625rem',
-                                textMB:'0.21625rem',
-                                textMT:'0.295625rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
-
-
-                            },
-                            flipArgs:{
-                                text:'The handover of the properties',
-                                lowerText:'Q1 / 2024 ',
-                                lowerSectionHeight:'1.326875rem',
-                                textHeight:'3.5rem',
-                                textSize:'0.589375rem'
-
-
-                            }
-                        }}
-                        agentBox={{
-                            Args:{
-                                langs:['Arabic', 'English',],
-                                name:'Nassif',
-                                speciality:'Downtown',
-                                imgWrapperWidth:'3.48875rem',
-                                imgWrapperHeight:'2.9975rem',
-                                img1Width:'3.2925rem',
-                                img1Height:'2.800625rem',
-                                img2Width:'0rem',
-                                img2Height:'3.42875rem',
-                                agentSectionHeight:'1.326875rem',
-                                lineHeight:'1.0675rem',
-                                nameTextSize:'0.688125rem',
-                                nameFontWaight:'0.688125rem'
-
-                            }
-                                }}
-                                />
-                            </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
-
-                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
-                            args:{
-                                img:priceIcon,
-                                text:'Price starting From AED',
-                                lowerText:'1,125,0000',
-                                textMT:'0.19875rem',
-                                textMB:'0.213125rem',
-                                lineHeight:'0.718125rem',
-                                imgWidth:'1.535rem',
-                                imgHeight:'1.535rem',
-                                imgMT:'0.295rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
-
-                            },
-                            flipArgs:{
-                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
-                                isPrice:true,
-
-
-                            }
-                        }}
-                        bedBox={{
-                            args:{
-                                img:bed_icon,
-                                text:'Number of Bedrooms',
-                                lowerText:'1,2,3,4,5,6',
-                                imgWidth:'1.705rem',
-                                imgHeight:'1.27875rem',
-                                imgMT:'0.393125rem',
-                                textMT:'0.316875rem',
-                                textMB:'0.271875rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
-
-                            },
-                            flipArgs:{
-                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
-                                isPrice:false,
-
-
-                            }
-                        }}
-                        sizeBox={{
-                            args:{
-                                img:size_icon,
-                                text:'Area in Sq.ft (Min-Max)',
-                                lowerText:'881 - 4590',
-                                imgWidth:'1.6925rem',
-                                imgHeight:'1.544375rem',
-                                imgMT:'0.360725rem',
-                                lineHeight:'0.718125rem',
-                                textMT:'0.16rem',
-                                textMB:'0.16rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
-
-                            },
-                            flipArgs:{
-                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
-                                isPrice:false,
-
-
-                            }
-                        }}
-                        paymentBox={{
-                            args:{
-                                img:paymentIcon,
-                                text:'Payment Plan',
-                                lowerText:'60% / 40%',
-                                imgWidth:'1.621875rem',
-                                imgHeight:'1.621875rem',
-                                textMT:'0.1375rem',
-                                textMB:'0.206875rem',
-                                imgMT:'0.295rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
-
-
-                            },
-                            flipArgs:{
-                                // text:'The handover of the properties',
-                                // lowerText:'Q1 / 2024 ',
-                                // lowerSectionHeight:'1.326875rem',
-                                // textHeight:'3.5rem',
-                                // textSize:'0.625rem',
-                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
-
-
-                            }
-                        }}
-                        compleationBox={{
-                            args:{
-                                img:compleationIcon,
-                                text:'Completion Date',
-                                lowerText:'60% / 40%',
-                                imgWidth:'1.420625rem',
-                                imgHeight:'1.451875rem',
-                                imgMT:'0.26625rem',
-                                textMB:'0.21625rem',
-                                textMT:'0.295625rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
-
-
-                            },
-                            flipArgs:{
-                                text:'The handover of the properties',
-                                lowerText:'Q1 / 2024 ',
-                                lowerSectionHeight:'1.326875rem',
-                                textHeight:'3.5rem',
-                                textSize:'0.589375rem'
-
-
-                            }
-                        }}
-                        agentBox={{
-                            Args:{
-                                langs:['Arabic', 'English',],
-                                name:'Nassif',
-                                speciality:'Downtown',
-                                imgWrapperWidth:'3.48875rem',
-                                imgWrapperHeight:'2.9975rem',
-                                img1Width:'3.2925rem',
-                                img1Height:'2.800625rem',
-                                img2Width:'0rem',
-                                img2Height:'3.42875rem',
-                                agentSectionHeight:'1.326875rem',
-                                lineHeight:'1.0675rem',
-                                nameTextSize:'0.688125rem',
-                                nameFontWaight:'0.688125rem'
-
-                            }
-                                }}
-                                />
-                            </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
-
-                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
-                            args:{
-                                img:priceIcon,
-                                text:'Price starting From AED',
-                                lowerText:'1,125,0000',
-                                textMT:'0.19875rem',
-                                textMB:'0.213125rem',
-                                lineHeight:'0.718125rem',
-                                imgWidth:'1.535rem',
-                                imgHeight:'1.535rem',
-                                imgMT:'0.295rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
-
-                            },
-                            flipArgs:{
-                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
-                                isPrice:true,
-
-
-                            }
-                        }}
-                        bedBox={{
-                            args:{
-                                img:bed_icon,
-                                text:'Number of Bedrooms',
-                                lowerText:'1,2,3,4,5,6',
-                                imgWidth:'1.705rem',
-                                imgHeight:'1.27875rem',
-                                imgMT:'0.393125rem',
-                                textMT:'0.316875rem',
-                                textMB:'0.271875rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
-
-                            },
-                            flipArgs:{
-                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
-                                isPrice:false,
-
-
-                            }
-                        }}
-                        sizeBox={{
-                            args:{
-                                img:size_icon,
-                                text:'Area in Sq.ft (Min-Max)',
-                                lowerText:'881 - 4590',
-                                imgWidth:'1.6925rem',
-                                imgHeight:'1.544375rem',
-                                imgMT:'0.360725rem',
-                                lineHeight:'0.718125rem',
-                                textMT:'0.16rem',
-                                textMB:'0.16rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
-
-                            },
-                            flipArgs:{
-                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
-                                isPrice:false,
-
-
-                            }
-                        }}
-                        paymentBox={{
-                            args:{
-                                img:paymentIcon,
-                                text:'Payment Plan',
-                                lowerText:'60% / 40%',
-                                imgWidth:'1.621875rem',
-                                imgHeight:'1.621875rem',
-                                textMT:'0.1375rem',
-                                textMB:'0.206875rem',
-                                imgMT:'0.295rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
-
-
-                            },
-                            flipArgs:{
-                                // text:'The handover of the properties',
-                                // lowerText:'Q1 / 2024 ',
-                                // lowerSectionHeight:'1.326875rem',
-                                // textHeight:'3.5rem',
-                                // textSize:'0.625rem',
-                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
-
-
-                            }
-                        }}
-                        compleationBox={{
-                            args:{
-                                img:compleationIcon,
-                                text:'Completion Date',
-                                lowerText:'60% / 40%',
-                                imgWidth:'1.420625rem',
-                                imgHeight:'1.451875rem',
-                                imgMT:'0.26625rem',
-                                textMB:'0.21625rem',
-                                textMT:'0.295625rem',
-                                lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
-                                lowerSectionHeight:'1.326875rem',
-                                lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
-
-
-                            },
-                            flipArgs:{
-                                text:'The handover of the properties',
-                                lowerText:'Q1 / 2024 ',
-                                lowerSectionHeight:'1.326875rem',
-                                textHeight:'3.5rem',
-                                textSize:'0.589375rem'
-
-
-                            }
-                        }}
-                        agentBox={{
-                            Args:{
-                                langs:['Arabic', 'English',],
-                                name:'Nassif',
-                                speciality:'Downtown',
-                                imgWrapperWidth:'3.48875rem',
-                                imgWrapperHeight:'2.9975rem',
-                                img1Width:'3.2925rem',
-                                img1Height:'2.800625rem',
-                                img2Width:'0rem',
-                                img2Height:'3.42875rem',
-                                agentSectionHeight:'1.326875rem',
-                                lineHeight:'1.0675rem',
-                                nameTextSize:'0.688125rem',
-                                nameFontWaight:'0.688125rem'
-
-                            }
-                                }}
-                                />
-                            </div>
-
-
-                        </SwiperMobile>
-                    </div>
-
-                {/* </div> */}
-            </div>
-            <div className='w-full h-[42.5625rem] rounded-[0.625rem]  mt-[50px]'>
-                <BarMobile img={krane} title='Off-plan Latest Launches'/>
-                {/* <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center'> */}
-                    <div className='w-[100%]  mx-auto'>
-
-                        <SwiperMobile>
                             <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
@@ -1473,10 +1160,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1497,10 +1184,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1521,10 +1208,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1545,10 +1232,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -1574,10 +1261,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -1586,7 +1273,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -1611,7 +1298,7 @@ const Area = () => {
                                 }}
                                 />
                             </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                             args:{
@@ -1624,10 +1311,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1648,10 +1335,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1672,10 +1359,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1696,10 +1383,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -1725,10 +1412,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -1737,7 +1424,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -1762,7 +1449,7 @@ const Area = () => {
                                 }}
                                 />
                             </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                             args:{
@@ -1775,10 +1462,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1799,10 +1486,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1823,10 +1510,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1847,10 +1534,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -1876,10 +1563,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -1888,7 +1575,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -1913,7 +1600,7 @@ const Area = () => {
                                 }}
                                 />
                             </div>
-                            <div className='mx-auto w-max shadow-[-4px_-4px_8px_#FFFFFF,_4px_4px_8px_#BABFBF] my-[1rem] rounded-[0.625rem] '>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
 
                                 <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
                             args:{
@@ -1926,10 +1613,10 @@ const Area = () => {
                                 imgWidth:'1.535rem',
                                 imgHeight:'1.535rem',
                                 imgMT:'0.295rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.48875rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1950,10 +1637,10 @@ const Area = () => {
                                 textMT:'0.316875rem',
                                 textMB:'0.271875rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.8125rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1974,10 +1661,10 @@ const Area = () => {
                                 lineHeight:'0.718125rem',
                                 textMT:'0.16rem',
                                 textMB:'0.16rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.97rem',
+                                textWidth:'100%',
 
                             },
                             flipArgs:{
@@ -1998,10 +1685,10 @@ const Area = () => {
                                 textMB:'0.206875rem',
                                 imgMT:'0.295rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'2.3125rem',
+                                textWidth:'min-content',
 
 
                             },
@@ -2027,10 +1714,10 @@ const Area = () => {
                                 textMB:'0.21625rem',
                                 textMT:'0.295625rem',
                                 lineHeight:'0.718125rem',
-                                textSize:'0.589375rem',
+                                textSize:'10.5px',
                                 lowerSectionHeight:'1.326875rem',
                                 lowerTextSize:'0.688125rem',
-                                textWidth:'3.04625rem',
+                                textWidth:'100%',
 
 
                             },
@@ -2039,7 +1726,7 @@ const Area = () => {
                                 lowerText:'Q1 / 2024 ',
                                 lowerSectionHeight:'1.326875rem',
                                 textHeight:'3.5rem',
-                                textSize:'0.589375rem'
+                                textSize:'10.5px'
 
 
                             }
@@ -2064,19 +1751,789 @@ const Area = () => {
                                 }}
                                 />
                             </div>
+
 
 
                         </SwiperMobile>
-                    </div>
+                        </div>
 
-                {/* </div> */}
-            </div>
+                    </div>
+                </div>
+                <div className='w-[375px] h-[42.5625rem] rounded-[0px]  mt-[60px] mb-[10px] '>
+                    <BarMobile img={krane} title='Off-plan Latest Launches' seperatorML='5px' />
+                    <div className='w-full h-[calc(100%-2.625rem)] flex justify-center items-center '>
+                        <div className='w-[100%]  mx-auto scale-[1.009]'>
+
+                        <SwiperMobile bottom='-24px' >
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
+
+                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                            args:{
+                                img:priceIcon,
+                                text:'Price starting From AED',
+                                lowerText:'1,125,0000',
+                                textMT:'0.19875rem',
+                                textMB:'0.213125rem',
+                                lineHeight:'0.718125rem',
+                                imgWidth:'1.535rem',
+                                imgHeight:'1.535rem',
+                                imgMT:'0.295rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                                isPrice:true,
+
+
+                            }
+                        }}
+                        bedBox={{
+                            args:{
+                                img:bed_icon,
+                                text:'Number of Bedrooms',
+                                lowerText:'1,2,3,4,5,6',
+                                imgWidth:'1.705rem',
+                                imgHeight:'1.27875rem',
+                                imgMT:'0.393125rem',
+                                textMT:'0.316875rem',
+                                textMB:'0.271875rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        sizeBox={{
+                            args:{
+                                img:size_icon,
+                                text:'Area in Sq.ft (Min-Max)',
+                                lowerText:'881 - 4590',
+                                imgWidth:'1.6925rem',
+                                imgHeight:'1.544375rem',
+                                imgMT:'0.360725rem',
+                                lineHeight:'0.718125rem',
+                                textMT:'0.16rem',
+                                textMB:'0.16rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        paymentBox={{
+                            args:{
+                                img:paymentIcon,
+                                text:'Payment Plan',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.621875rem',
+                                imgHeight:'1.621875rem',
+                                textMT:'0.1375rem',
+                                textMB:'0.206875rem',
+                                imgMT:'0.295rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'min-content',
+
+
+                            },
+                            flipArgs:{
+                                // text:'The handover of the properties',
+                                // lowerText:'Q1 / 2024 ',
+                                // lowerSectionHeight:'1.326875rem',
+                                // textHeight:'3.5rem',
+                                // textSize:'0.625rem',
+                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
+
+
+                            }
+                        }}
+                        compleationBox={{
+                            args:{
+                                img:compleationIcon,
+                                text:'Completion Date',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.420625rem',
+                                imgHeight:'1.451875rem',
+                                imgMT:'0.26625rem',
+                                textMB:'0.21625rem',
+                                textMT:'0.295625rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+
+                            },
+                            flipArgs:{
+                                text:'The handover of the properties',
+                                lowerText:'Q1 / 2024 ',
+                                lowerSectionHeight:'1.326875rem',
+                                textHeight:'3.5rem',
+                                textSize:'10.5px'
+
+
+                            }
+                        }}
+                        agentBox={{
+                            Args:{
+                                langs:['Arabic', 'English',],
+                                name:'Nassif',
+                                speciality:'Downtown',
+                                imgWrapperWidth:'3.48875rem',
+                                imgWrapperHeight:'2.9975rem',
+                                img1Width:'3.2925rem',
+                                img1Height:'2.800625rem',
+                                img2Width:'0rem',
+                                img2Height:'3.42875rem',
+                                agentSectionHeight:'1.326875rem',
+                                lineHeight:'1.0675rem',
+                                nameTextSize:'0.688125rem',
+                                nameFontWaight:'0.688125rem'
+
+                            }
+                                }}
+                                />
+                            </div>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
+
+                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                            args:{
+                                img:priceIcon,
+                                text:'Price starting From AED',
+                                lowerText:'1,125,0000',
+                                textMT:'0.19875rem',
+                                textMB:'0.213125rem',
+                                lineHeight:'0.718125rem',
+                                imgWidth:'1.535rem',
+                                imgHeight:'1.535rem',
+                                imgMT:'0.295rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                                isPrice:true,
+
+
+                            }
+                        }}
+                        bedBox={{
+                            args:{
+                                img:bed_icon,
+                                text:'Number of Bedrooms',
+                                lowerText:'1,2,3,4,5,6',
+                                imgWidth:'1.705rem',
+                                imgHeight:'1.27875rem',
+                                imgMT:'0.393125rem',
+                                textMT:'0.316875rem',
+                                textMB:'0.271875rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        sizeBox={{
+                            args:{
+                                img:size_icon,
+                                text:'Area in Sq.ft (Min-Max)',
+                                lowerText:'881 - 4590',
+                                imgWidth:'1.6925rem',
+                                imgHeight:'1.544375rem',
+                                imgMT:'0.360725rem',
+                                lineHeight:'0.718125rem',
+                                textMT:'0.16rem',
+                                textMB:'0.16rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        paymentBox={{
+                            args:{
+                                img:paymentIcon,
+                                text:'Payment Plan',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.621875rem',
+                                imgHeight:'1.621875rem',
+                                textMT:'0.1375rem',
+                                textMB:'0.206875rem',
+                                imgMT:'0.295rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'min-content',
+
+
+                            },
+                            flipArgs:{
+                                // text:'The handover of the properties',
+                                // lowerText:'Q1 / 2024 ',
+                                // lowerSectionHeight:'1.326875rem',
+                                // textHeight:'3.5rem',
+                                // textSize:'0.625rem',
+                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
+
+
+                            }
+                        }}
+                        compleationBox={{
+                            args:{
+                                img:compleationIcon,
+                                text:'Completion Date',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.420625rem',
+                                imgHeight:'1.451875rem',
+                                imgMT:'0.26625rem',
+                                textMB:'0.21625rem',
+                                textMT:'0.295625rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+
+                            },
+                            flipArgs:{
+                                text:'The handover of the properties',
+                                lowerText:'Q1 / 2024 ',
+                                lowerSectionHeight:'1.326875rem',
+                                textHeight:'3.5rem',
+                                textSize:'10.5px'
+
+
+                            }
+                        }}
+                        agentBox={{
+                            Args:{
+                                langs:['Arabic', 'English',],
+                                name:'Nassif',
+                                speciality:'Downtown',
+                                imgWrapperWidth:'3.48875rem',
+                                imgWrapperHeight:'2.9975rem',
+                                img1Width:'3.2925rem',
+                                img1Height:'2.800625rem',
+                                img2Width:'0rem',
+                                img2Height:'3.42875rem',
+                                agentSectionHeight:'1.326875rem',
+                                lineHeight:'1.0675rem',
+                                nameTextSize:'0.688125rem',
+                                nameFontWaight:'0.688125rem'
+
+                            }
+                                }}
+                                />
+                            </div>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
+
+                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                            args:{
+                                img:priceIcon,
+                                text:'Price starting From AED',
+                                lowerText:'1,125,0000',
+                                textMT:'0.19875rem',
+                                textMB:'0.213125rem',
+                                lineHeight:'0.718125rem',
+                                imgWidth:'1.535rem',
+                                imgHeight:'1.535rem',
+                                imgMT:'0.295rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                                isPrice:true,
+
+
+                            }
+                        }}
+                        bedBox={{
+                            args:{
+                                img:bed_icon,
+                                text:'Number of Bedrooms',
+                                lowerText:'1,2,3,4,5,6',
+                                imgWidth:'1.705rem',
+                                imgHeight:'1.27875rem',
+                                imgMT:'0.393125rem',
+                                textMT:'0.316875rem',
+                                textMB:'0.271875rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        sizeBox={{
+                            args:{
+                                img:size_icon,
+                                text:'Area in Sq.ft (Min-Max)',
+                                lowerText:'881 - 4590',
+                                imgWidth:'1.6925rem',
+                                imgHeight:'1.544375rem',
+                                imgMT:'0.360725rem',
+                                lineHeight:'0.718125rem',
+                                textMT:'0.16rem',
+                                textMB:'0.16rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        paymentBox={{
+                            args:{
+                                img:paymentIcon,
+                                text:'Payment Plan',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.621875rem',
+                                imgHeight:'1.621875rem',
+                                textMT:'0.1375rem',
+                                textMB:'0.206875rem',
+                                imgMT:'0.295rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'min-content',
+
+
+                            },
+                            flipArgs:{
+                                // text:'The handover of the properties',
+                                // lowerText:'Q1 / 2024 ',
+                                // lowerSectionHeight:'1.326875rem',
+                                // textHeight:'3.5rem',
+                                // textSize:'0.625rem',
+                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
+
+
+                            }
+                        }}
+                        compleationBox={{
+                            args:{
+                                img:compleationIcon,
+                                text:'Completion Date',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.420625rem',
+                                imgHeight:'1.451875rem',
+                                imgMT:'0.26625rem',
+                                textMB:'0.21625rem',
+                                textMT:'0.295625rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+
+                            },
+                            flipArgs:{
+                                text:'The handover of the properties',
+                                lowerText:'Q1 / 2024 ',
+                                lowerSectionHeight:'1.326875rem',
+                                textHeight:'3.5rem',
+                                textSize:'10.5px'
+
+
+                            }
+                        }}
+                        agentBox={{
+                            Args:{
+                                langs:['Arabic', 'English',],
+                                name:'Nassif',
+                                speciality:'Downtown',
+                                imgWrapperWidth:'3.48875rem',
+                                imgWrapperHeight:'2.9975rem',
+                                img1Width:'3.2925rem',
+                                img1Height:'2.800625rem',
+                                img2Width:'0rem',
+                                img2Height:'3.42875rem',
+                                agentSectionHeight:'1.326875rem',
+                                lineHeight:'1.0675rem',
+                                nameTextSize:'0.688125rem',
+                                nameFontWaight:'0.688125rem'
+
+                            }
+                                }}
+                                />
+                            </div>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
+
+                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                            args:{
+                                img:priceIcon,
+                                text:'Price starting From AED',
+                                lowerText:'1,125,0000',
+                                textMT:'0.19875rem',
+                                textMB:'0.213125rem',
+                                lineHeight:'0.718125rem',
+                                imgWidth:'1.535rem',
+                                imgHeight:'1.535rem',
+                                imgMT:'0.295rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                                isPrice:true,
+
+
+                            }
+                        }}
+                        bedBox={{
+                            args:{
+                                img:bed_icon,
+                                text:'Number of Bedrooms',
+                                lowerText:'1,2,3,4,5,6',
+                                imgWidth:'1.705rem',
+                                imgHeight:'1.27875rem',
+                                imgMT:'0.393125rem',
+                                textMT:'0.316875rem',
+                                textMB:'0.271875rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        sizeBox={{
+                            args:{
+                                img:size_icon,
+                                text:'Area in Sq.ft (Min-Max)',
+                                lowerText:'881 - 4590',
+                                imgWidth:'1.6925rem',
+                                imgHeight:'1.544375rem',
+                                imgMT:'0.360725rem',
+                                lineHeight:'0.718125rem',
+                                textMT:'0.16rem',
+                                textMB:'0.16rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        paymentBox={{
+                            args:{
+                                img:paymentIcon,
+                                text:'Payment Plan',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.621875rem',
+                                imgHeight:'1.621875rem',
+                                textMT:'0.1375rem',
+                                textMB:'0.206875rem',
+                                imgMT:'0.295rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'min-content',
+
+
+                            },
+                            flipArgs:{
+                                // text:'The handover of the properties',
+                                // lowerText:'Q1 / 2024 ',
+                                // lowerSectionHeight:'1.326875rem',
+                                // textHeight:'3.5rem',
+                                // textSize:'0.625rem',
+                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
+
+
+                            }
+                        }}
+                        compleationBox={{
+                            args:{
+                                img:compleationIcon,
+                                text:'Completion Date',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.420625rem',
+                                imgHeight:'1.451875rem',
+                                imgMT:'0.26625rem',
+                                textMB:'0.21625rem',
+                                textMT:'0.295625rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+
+                            },
+                            flipArgs:{
+                                text:'The handover of the properties',
+                                lowerText:'Q1 / 2024 ',
+                                lowerSectionHeight:'1.326875rem',
+                                textHeight:'3.5rem',
+                                textSize:'10.5px'
+
+
+                            }
+                        }}
+                        agentBox={{
+                            Args:{
+                                langs:['Arabic', 'English',],
+                                name:'Nassif',
+                                speciality:'Downtown',
+                                imgWrapperWidth:'3.48875rem',
+                                imgWrapperHeight:'2.9975rem',
+                                img1Width:'3.2925rem',
+                                img1Height:'2.800625rem',
+                                img2Width:'0rem',
+                                img2Height:'3.42875rem',
+                                agentSectionHeight:'1.326875rem',
+                                lineHeight:'1.0675rem',
+                                nameTextSize:'0.688125rem',
+                                nameFontWaight:'0.688125rem'
+
+                            }
+                                }}
+                                />
+                            </div>
+                            <div className='mx-auto w-max shadow-[4px_4px_8px_0px_#BABFBF,_-4px_-4px_7px_0px_#FFF] my-[1rem] rounded-[0.625rem] '>
+
+                                <CardMobile img={dubai} title='Creek Rise tower 2 west side' subTitle='New project coming soon High ROI ' brochure={{  }} priceBox={{
+                            args:{
+                                img:priceIcon,
+                                text:'Price starting From AED',
+                                lowerText:'1,125,0000',
+                                textMT:'0.19875rem',
+                                textMB:'0.213125rem',
+                                lineHeight:'0.718125rem',
+                                imgWidth:'1.535rem',
+                                imgHeight:'1.535rem',
+                                imgMT:'0.295rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:[{bed:'studio',price:'11,000,000'},{bed:"one bed",price:'11,000,000'},{bed:"one bed",price:'11,000,000'}],
+                                isPrice:true,
+
+
+                            }
+                        }}
+                        bedBox={{
+                            args:{
+                                img:bed_icon,
+                                text:'Number of Bedrooms',
+                                lowerText:'1,2,3,4,5,6',
+                                imgWidth:'1.705rem',
+                                imgHeight:'1.27875rem',
+                                imgMT:'0.393125rem',
+                                textMT:'0.316875rem',
+                                textMB:'0.271875rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['Studio','One Bedroom','Tow Bedrooms','Penthouses','Townhouse'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        sizeBox={{
+                            args:{
+                                img:size_icon,
+                                text:'Area in Sq.ft (Min-Max)',
+                                lowerText:'881 - 4590',
+                                imgWidth:'1.6925rem',
+                                imgHeight:'1.544375rem',
+                                imgMT:'0.360725rem',
+                                lineHeight:'0.718125rem',
+                                textMT:'0.16rem',
+                                textMB:'0.16rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+                            },
+                            flipArgs:{
+                                content:['1 BR','800 sq.ft','2 BR','1200 sq.ft','3 BR','2200 sq.ft'],
+                                isPrice:false,
+
+
+                            }
+                        }}
+                        paymentBox={{
+                            args:{
+                                img:paymentIcon,
+                                text:'Payment Plan',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.621875rem',
+                                imgHeight:'1.621875rem',
+                                textMT:'0.1375rem',
+                                textMB:'0.206875rem',
+                                imgMT:'0.295rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'min-content',
+
+
+                            },
+                            flipArgs:{
+                                // text:'The handover of the properties',
+                                // lowerText:'Q1 / 2024 ',
+                                // lowerSectionHeight:'1.326875rem',
+                                // textHeight:'3.5rem',
+                                // textSize:'0.625rem',
+                                content:[{installment:'Down Payment',precentage:'20%'},{installment:'During Construction',precentage:'40%'},{installment:'Pricre Starting',precentage:'40%'}]
+
+
+                            }
+                        }}
+                        compleationBox={{
+                            args:{
+                                img:compleationIcon,
+                                text:'Completion Date',
+                                lowerText:'60% / 40%',
+                                imgWidth:'1.420625rem',
+                                imgHeight:'1.451875rem',
+                                imgMT:'0.26625rem',
+                                textMB:'0.21625rem',
+                                textMT:'0.295625rem',
+                                lineHeight:'0.718125rem',
+                                textSize:'10.5px',
+                                lowerSectionHeight:'1.326875rem',
+                                lowerTextSize:'0.688125rem',
+                                textWidth:'100%',
+
+
+                            },
+                            flipArgs:{
+                                text:'The handover of the properties',
+                                lowerText:'Q1 / 2024 ',
+                                lowerSectionHeight:'1.326875rem',
+                                textHeight:'3.5rem',
+                                textSize:'10.5px'
+
+
+                            }
+                        }}
+                        agentBox={{
+                            Args:{
+                                langs:['Arabic', 'English',],
+                                name:'Nassif',
+                                speciality:'Downtown',
+                                imgWrapperWidth:'3.48875rem',
+                                imgWrapperHeight:'2.9975rem',
+                                img1Width:'3.2925rem',
+                                img1Height:'2.800625rem',
+                                img2Width:'0rem',
+                                img2Height:'3.42875rem',
+                                agentSectionHeight:'1.326875rem',
+                                lineHeight:'1.0675rem',
+                                nameTextSize:'0.688125rem',
+                                nameFontWaight:'0.688125rem'
+
+                            }
+                                }}
+                                />
+                            </div>
+
+
+
+                        </SwiperMobile>
+                        </div>
+
+                    </div>
+                </div>
         </>
       }
 
 
 
-      <div className='w-min mx-auto mt-[50px] '>
+      <div className='w-min mx-auto mt-[60px] '>
         <div className=' w-min'>
 
             <AboutDeveloper screen={screenLG}/>

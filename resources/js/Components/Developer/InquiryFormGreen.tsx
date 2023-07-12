@@ -80,7 +80,7 @@ const InquiryFormGreen = (props:Props) => {
                                         <textarea name="message" id="" className='text-[#fff] bg-[#002D31] rounded-[0.425rem] w-[19.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[inset_-0.137583125rem_-0.137583125rem_0.228848125rem_-1.22052px_#007580,inset_0.137583125rem_0.137583125rem_0.179920625rem_#011618] text-[1rem]' placeholder='Your message .....' ></textarea>
                                     </div>
 
-                                    <div className='h-[17.1875rem] w-[339px] mb-[25px] rounded-[0.55rem] shadow-[4.387387752532959px_4.387387752532959px_7.019820690155029px_0px_#011618_inset,-4.387387752532959px_-4.387387752532959px_7.019820690155029px_0px_#04626B_inset] flex justify-center items-center'>
+                                    <div className='h-[17.1875rem] w-[339px] mb-[25px] rounded-[8px] shadow-[4.387387752532959px_4.387387752532959px_7.019820690155029px_0px_#011618_inset,-4.387387752532959px_-4.387387752532959px_7.019820690155029px_0px_#04626B_inset] flex justify-center items-center'>
                                         <div className='w-[325px] mx-auto'>
 
                                             <div className='text-[16px] mx-auto leading-[175%] w-[94%] text-[#fff] '>

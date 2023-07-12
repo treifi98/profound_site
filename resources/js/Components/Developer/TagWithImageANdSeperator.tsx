@@ -58,7 +58,7 @@ const TagWithImageANdSeperator = (props:Props) => {
 
                 <InElementSeperator width={props.seperatorWidth?props.seperatorWidth:'0.3125rem'}/>
             </div>
-            <div className='h-full flex justify-center items-center rounded-[0rem_5.70761875rem_5.70761875rem_0rem] ' style={{ width:props.textWidth?props.textWidth:'8.3125rem' }} ref={shadowPart}>
+            <div className='h-full flex justify-center items-center rounded-[0rem_5.70761875rem_5.70761875rem_0rem] ' style={{ width:props.textWidth?props.textWidth:'143px' }} ref={shadowPart}>
 
                 <div className='text-grade' style={{ fontSize:props.textSize ? props.textSize : '0.8125rem' ,fontWeight:props.textWeight ? props.textWeight : '600'}} >
                     {props.text}

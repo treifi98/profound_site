@@ -89,7 +89,7 @@ const MapListing = (props:Props) => {
 
 
             const pricetit = document.createElement('div')
-                pricetit.innerText = "AED 100,150,000"
+                pricetit.innerText = "AED 1,150,000"
                 pricetit.style.color = "#9e9e9e"
                 pricetit.style.fontSize = '14px'
                 pricetit.style.fontWeight = '400'
@@ -124,7 +124,7 @@ const MapListing = (props:Props) => {
         const el = document.createElement('div');
         el.style.backgroundColor = color;
         el.id = `iddiv${index}`;
-        el.style.width = '115.767px';
+        el.style.width = '135.767px';
         el.style.transition = 'all';
         el.style.minHeight = '40px';
         el.style.padding = '10px';

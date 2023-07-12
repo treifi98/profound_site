@@ -82,68 +82,68 @@ const SmallSwiperMobile = (props:Props) => {
 
 
                             <SwiperSlide className='except '>
-                                <div className='w-[83.8px] h-[84.59px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[90px] h-[90px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
 
-                                    <div className='except w-[77.98px] h-[78.46px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
-                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[77.98px] h-[78.46px] rounded-[3px]' />
-
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide className='except '>
-                                <div className='w-[83.8px] h-[84.59px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
-
-                                    <div className='except w-[77.98px] h-[78.46px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
-                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[77.98px] h-[78.46px] rounded-[3px]' />
+                                    <div className='except w-[85px] h-[85px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
+                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[85px] h-[85px] rounded-[3px]' />
 
                                     </div>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide className='except '>
-                                <div className='w-[83.8px] h-[84.59px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[90px] h-[90px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
 
-                                    <div className='except w-[77.98px] h-[78.46px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
-                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[77.98px] h-[78.46px] rounded-[3px]' />
-
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide className='except '>
-                                <div className='w-[83.8px] h-[84.59px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
-
-                                    <div className='except w-[77.98px] h-[78.46px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
-                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[77.98px] h-[78.46px] rounded-[3px]' />
+                                    <div className='except w-[85px] h-[85px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
+                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[85px] h-[85px] rounded-[3px]' />
 
                                     </div>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide className='except '>
-                                <div className='w-[83.8px] h-[84.59px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[90px] h-[90px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
 
-                                    <div className='except w-[77.98px] h-[78.46px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
-                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[77.98px] h-[78.46px] rounded-[3px]' />
+                                    <div className='except w-[85px] h-[85px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
+                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[85px] h-[85px] rounded-[3px]' />
+
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide className='except '>
+                                <div className='w-[90px] h-[90px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
+
+                                    <div className='except w-[85px] h-[85px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
+                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[85px] h-[85px] rounded-[3px]' />
+
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide className='except '>
+                                <div className='w-[90px] h-[90px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
+
+                                    <div className='except w-[85px] h-[85px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
+                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[85px] h-[85px] rounded-[3px]' />
 
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className='except '>
-                                <div className='w-[83.8px] h-[84.59px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[90px] h-[90px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
 
-                                    <div className='except w-[77.98px] h-[78.46px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
-                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[77.98px] h-[78.46px] rounded-[3px]' />
+                                    <div className='except w-[85px] h-[85px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
+                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[85px] h-[85px] rounded-[3px]' />
 
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className='except '>
-                                <div className='w-[83.8px] h-[84.59px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
+                                <div className='w-[90px] h-[90px]  rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF_inset,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF_inset] flex justify-center items-center'>
 
-                                    <div className='except w-[77.98px] h-[78.46px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
-                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[77.98px] h-[78.46px] rounded-[3px]' />
+                                    <div className='except w-[85px] h-[85px] rounded-[3px] shadow-[0.7634681463241577px_0.7634681463241577px_1.5269362926483154px_0px_#BABFBF,-0.7634681463241577px_-0.7634681463241577px_1.5269362926483154px_0.38173407316207886px_#FFF]' >
+                                        <img src={beatchFront} alt="" className='except  object-cover object-center   w-[85px] h-[85px] rounded-[3px]' />
 
                                     </div>
                                 </div>

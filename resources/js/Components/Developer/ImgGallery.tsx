@@ -125,26 +125,26 @@ const ImgGallery = (props:Props) => {
                             <NewCardImage rounded='0.5' src={dubai} />
                         </div>
                     </div>
-                    <div className='mt-[18px] ml-[17px] w-[calc(100%-17px)] h-[84.59px]'>
+                    <div className='mt-[18px] ml-[15px] w-[calc(100%-15px)] h-[90px]'>
                         <SmallSwiperMobile/>
                     </div>
-                    <div className='mt-[17px] mx-auto flex justify-between items-start gap-y-[18px] flex-wrap w-[calc(100%-34px)]'>
-                        <div className='h-[22px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
+                    <div className='mt-[17px] mx-auto flex justify-between items-start gap-y-[18px] flex-wrap w-[calc(100%-30px)]'>
+                        <div className='h-[23px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
-                        <div className='h-[22px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
+                        <div className='h-[23px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
-                        <div className='h-[22px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
+                        <div className='h-[23px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
-                        <div className='h-[22px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
+                        <div className='h-[23px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
-                        <div className='h-[22px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
+                        <div className='h-[23px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
-                        <div className='h-[22px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
+                        <div className='h-[23px] shadow-[2.588012933731079px_2.588012933731079px_3.623217821121216px_0px_#B6C3C5,-2.588012933731079px_-2.588012933731079px_4.140820503234863px_0px_#FFF] rounded-[2.125rem]' style={{ width:'6.618125rem' }}>
                             <TagWithImageANdSeperator img={mapIcon} imgWidth='15.3px' imgHeight='15.3px' imgML='7.37px' seperatorWidth='2.83px' text='Location' textSize='10.5px' />
                         </div>
                     </div>
